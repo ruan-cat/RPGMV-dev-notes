@@ -19,8 +19,10 @@ module.exports = {
   // base: "/https://hechicollegecomputerassociation.gitee.io/",
   // base: "/",
   // base: ".",
-  base: "/RPGMV-dev-notes/",
+  // base: "/RPGMV-dev-notes/",
+  base: "./",
 
+  port: 8888,
 
   // 主题和它的配置
   theme: '@vuepress/theme-default',
