@@ -16,7 +16,10 @@ module.exports = {
   description: '阮中楠的RPGMV开发笔记',
 
   // base: "/blog/",
-  base: ".",
+  // base: "/https://hechicollegecomputerassociation.gitee.io/",
+  // base: "/",
+  // base: ".",
+  base: "/RPGMV-dev-notes/",
 
 
   // 主题和它的配置
