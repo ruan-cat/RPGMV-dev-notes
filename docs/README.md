@@ -20,3 +20,6 @@ title: 阮中楠的RPGMV开发笔记
 ### 作者介绍与联系方式
 B站同名UP主，阮中楠。
 联系方式：暂无
+
+<!-- [README](/docs/JavaScript%20ES6+/README.md) -->
+[README](./JavaScript%20ES6+/README.md)

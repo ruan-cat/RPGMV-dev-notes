@@ -18,9 +18,9 @@ module.exports = {
   // base: "/blog/",
   // base: "/https://hechicollegecomputerassociation.gitee.io/",
   // base: "/",
-  // base: ".",
+  base: ".",
   // base: "/RPGMV-dev-notes/",
-  base: "./",
+  // base: "./",
 
   port: 8888,
 
@@ -29,7 +29,7 @@ module.exports = {
   themeConfig: {
     logo: 'https://vuejs.org/images/logo.png',
     nav,
-    sidebar: 'auto'
+    // sidebar: 'auto'
   },
 
   plugins: [
