@@ -7,5 +7,14 @@ module.exports = [
         "link": "/JavaScript ES6+/"
       }
     ]
+  },
+  {
+    "text": "自查资源",
+    "items": [
+      {
+        "text": "自查资源",
+        "link": "/自查资源/"
+      }
+    ]
   }
 ];
