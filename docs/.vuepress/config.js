@@ -12,8 +12,8 @@ const nav = require("./nav.js");
 module.exports = {
   // 站点配置
   lang: 'zh-CN',
-  title: 'dirll插件使用文档',
-  description: '这是我的第一个 VuePress 站点',
+  title: '阮中楠的RPGMV开发笔记',
+  description: '阮中楠的RPGMV开发笔记',
 
   // 主题和它的配置
   theme: '@vuepress/theme-default',
