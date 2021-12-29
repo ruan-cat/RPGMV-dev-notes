@@ -15,6 +15,10 @@ module.exports = {
   title: '阮中楠的RPGMV开发笔记',
   description: '阮中楠的RPGMV开发笔记',
 
+  // base: "/blog/",
+  base: ".",
+
+
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
