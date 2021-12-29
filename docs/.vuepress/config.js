@@ -16,7 +16,7 @@ module.exports = {
   description: '阮中楠的RPGMV开发笔记',
 
   // base: "/blog/",
-  base: "./dist/assets",
+  base: "/assets/",
 
 
   // 主题和它的配置
