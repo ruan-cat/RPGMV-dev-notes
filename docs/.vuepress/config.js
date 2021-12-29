@@ -22,14 +22,13 @@ module.exports = {
   // base: "/RPGMV-dev-notes/",
   // base: "./",
 
-  port: 8888,
 
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
     logo: 'https://vuejs.org/images/logo.png',
     nav,
-    // sidebar: 'auto'
+    sidebar: 'auto'
   },
 
   plugins: [
