@@ -18,7 +18,7 @@ module.exports = {
   // base: "/blog/",
   // base: "/https://hechicollegecomputerassociation.gitee.io/",
   // base: "/",
-  base: ".",
+  // base: ".",
   // base: "/RPGMV-dev-notes/",
   // base: "./",
 
