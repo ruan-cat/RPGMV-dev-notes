@@ -7,7 +7,8 @@
     "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
     "docs:nav": "vuepress nav docs",
-    "docs:nav-cover": "vuepress nav docs -f"
+    "docs:nav-cover": "vuepress nav docs -f",
+    "deploy": "bash deploy.sh"
   },
   "author": "阮中楠",
   "license": "ISC",
