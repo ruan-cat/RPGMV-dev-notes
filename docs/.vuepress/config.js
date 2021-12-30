@@ -31,7 +31,17 @@ module.exports = {
   themeConfig: {
     logo: 'https://vuejs.org/images/logo.png',
     nav,
-    sidebar: 'auto'
+    sidebar: 'auto',
+    lastUpdated: '上一次更新',
+
+    // 不使用 因为1版本的VuePress不提供更加细致的仓库地址配置，2版本提供。
+    // repo: 'HechiCollegeComputerAssociation/RPGMV-dev-notes',
+    // repo: 'https://gitee.com/HechiCollegeComputerAssociation/RPGMV-dev-notes',
+    // docsRepo: 'HechiCollegeComputerAssociation/RPGMV-dev-notes',
+    // docsBranch: 'main-dev-notes',
+    // editLinks: true,
+    // editLinkText: '帮助我们完善文档！'
+
   },
 
   plugins: [

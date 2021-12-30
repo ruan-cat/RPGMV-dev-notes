@@ -9,6 +9,15 @@ module.exports = [
     ]
   },
   {
+    "text": "拓展技术",
+    "items": [
+      {
+        "text": "拓展技术",
+        "link": "/拓展技术/"
+      }
+    ]
+  },
+  {
     "text": "插件开发",
     "items": [
       {
