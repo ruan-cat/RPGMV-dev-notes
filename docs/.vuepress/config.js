@@ -21,6 +21,7 @@ module.exports = {
   // base: ".",
   // base: "/RPGMV-dev-notes/",
   // base: "./",
+  base: "/RPGMV开发笔记/",
 
 
   // 主题和它的配置
