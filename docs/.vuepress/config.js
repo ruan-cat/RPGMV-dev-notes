@@ -21,6 +21,8 @@ module.exports = {
   // base: ".",
   // base: "/RPGMV-dev-notes/",
   // base: "./",
+
+  // https://blog.csdn.net/qq_28584685/article/details/88017069
   base: "/rpgmv-dev-notes/",
 
 
