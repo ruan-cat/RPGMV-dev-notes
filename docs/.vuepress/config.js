@@ -13,7 +13,7 @@ module.exports = {
   // 站点配置
   lang: 'zh-CN',
   title: '阮中楠的RPGMV开发笔记',
-  description: '阮中楠的RPGMV开发笔记',
+  description: '整合RMMV生态，从现在开始',
 
   // base: "/blog/",
   // base: "/https://hechicollegecomputerassociation.gitee.io/",

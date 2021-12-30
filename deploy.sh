@@ -25,6 +25,6 @@ git commit -m '阮中楠自动化部署'
 # old
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
-git push -f https://gitee.com/HechiCollegeComputerAssociation/RPGMV-dev-notes.git main-dev-notes-page
+git push -f https://gitee.com/HechiCollegeComputerAssociation/RPGMV-dev-notes.git main-dev-notes
 
 cd -
