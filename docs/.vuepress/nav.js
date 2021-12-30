@@ -1,10 +1,19 @@
 module.exports = [
   {
-    "text": "JavaScript ES6+",
+    "text": "RMMV入门",
     "items": [
       {
-        "text": "JavaScript ES6+",
-        "link": "/JavaScript ES6+/"
+        "text": "RMMV入门",
+        "link": "/RMMV入门/"
+      }
+    ]
+  },
+  {
+    "text": "插件开发",
+    "items": [
+      {
+        "text": "插件开发",
+        "link": "/插件开发/"
       }
     ]
   },

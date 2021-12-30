@@ -43,6 +43,8 @@ module.exports = {
       },
       // sidebarDepth: 1
     }],
+
+    ['@vuepress/back-to-top']
   ]
 
 }
