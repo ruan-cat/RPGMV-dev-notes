@@ -44,6 +44,10 @@ module.exports = {
 
   },
 
+  markdown: {
+    lineNumbers: true
+  },
+
   plugins: [
     ["vuepress-plugin-auto-sidebar", {
       title: {
