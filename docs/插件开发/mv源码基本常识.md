@@ -53,6 +53,13 @@ console.log('Is rect an instance of Shape?',
 rect.move(1, 1); // Outputs, 'Shape moved.'
 ```
 
+## mv继承的简单示例
+mv采用了"寄生组合式继承"，即————通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。以```Scene_Base```为例：
+
+```Scene_Base```类通过```Stage.prototype.initialize.call(this);```的方式，来继承来自父类```Stage```的属性。
+
+通过```Scene_Base.prototype = Object.create(Stage.prototype);``` 和 ```Scene_Base.prototype.constructor = Scene_Base;``` 的原型链方式继承来自父类Stage的方法。
+
 ## 对mv源码的总体理解
 以下内容为作者自己的理解，不一定准确。
 
@@ -85,10 +92,10 @@ rect.move(1, 1); // Outputs, 'Shape moved.'
 
 - CSDN
   
-  https://blog.csdn.net/weixin_36465540/article/details/90176318
+  [JS基础--组合继承，寄生组合式继承](https://blog.csdn.net/weixin_36465540/article/details/90176318)
 
-  https://blog.csdn.net/qq_35718410/article/details/91412908
+  [寄生组合式继承](https://blog.csdn.net/qq_35718410/article/details/91412908)
 
-  https://blog.csdn.net/lixiaosenlin/article/details/108140634
+  [javascript 的七种继承方式（六）寄生组合式继承](https://blog.csdn.net/lixiaosenlin/article/details/108140634)
 
-  https://blog.csdn.net/xgy123xx/article/details/106019671
+  [https://blog.csdn.net/xgy123xx/article/details/106019671](https://blog.csdn.net/xgy123xx/article/details/106019671)

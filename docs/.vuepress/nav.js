@@ -1,10 +1,14 @@
 module.exports = [
   {
-    "text": "RMMV入门",
+    "text": "入门",
     "items": [
       {
         "text": "RMMV入门",
-        "link": "/RMMV入门/"
+        "link": "/入门/RMMV入门/"
+      },
+      {
+        "text": "基于mv的JavaScript基础",
+        "link": "/入门/基于mv的JavaScript基础/"
       }
     ]
   },
