@@ -62,7 +62,11 @@ module.exports = {
     ['@vuepress/back-to-top'],
 
     // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-active-header-links.html#vuepress-plugin-active-header-links
-    ['@vuepress/active-header-links']
+    ['@vuepress/active-header-links'],
+
+    ["@vuepress/plugin-medium-zoom"],
+
+    ['@vuepress-reco/vuepress-plugin-loading-page']
   ]
 
 }
