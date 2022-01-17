@@ -96,6 +96,17 @@ module.exports = {
       height: 220,
     }],
 
+    ['vuepress-plugin-sponsor',
+      {
+        theme: 'simple',
+        alipay: '/sponsor-qrcode/qrcode-alipay.png',
+        wechat: '/sponsor-qrcode/qrcode-wechat.png',
+        qq: '/sponsor-qrcode/qrcode-qq.png',
+        paypal: 'https://www.paypal.me/yokefellow',
+        duration: 2000
+      }
+    ]
+
     // ['@vuepress-reco/vuepress-plugin-bulletin-popover',
     //   {
     //     width: '300px', // 默认 260px
