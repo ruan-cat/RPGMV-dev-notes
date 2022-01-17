@@ -88,10 +88,41 @@ module.exports = {
         bottom: '-20px',
         opacity: '0.9'
       },
-
+      btnStyle: {
+        right: '90px',
+        bottom: '40px'
+      },
+      width: 150,
+      height: 220,
     }],
 
-    ['@vuepress-reco/vuepress-plugin-bulletin-popover']
+    // ['@vuepress-reco/vuepress-plugin-bulletin-popover',
+    //   {
+    //     width: '300px', // 默认 260px
+    //     title: '消息提示',
+    //     body: [{
+    //         type: 'title',
+    //         content: '欢迎加入QQ交流群 🎉🎉🎉',
+    //         style: 'text-aligin: center;'
+    //       },
+    //       {
+    //         type: 'image',
+    //         // src: '/rvcode_qq.png'
+    //       }
+    //     ],
+    //     footer: [{
+    //         type: 'button',
+    //         text: '打赏',
+    //         link: '/donate'
+    //       },
+    //       {
+    //         type: 'button',
+    //         text: '打赏',
+    //         link: '/donate'
+    //       }
+    //     ]
+    //   }
+    // ]
   ]
 
 }
