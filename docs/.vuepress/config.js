@@ -96,6 +96,7 @@ module.exports = {
       height: 220,
     }],
 
+    // https://github.com/yokefellow/vuepress-plugin-sponsor
     ['vuepress-plugin-sponsor',
       {
         theme: 'simple',
@@ -105,7 +106,15 @@ module.exports = {
         paypal: 'https://www.paypal.me/yokefellow',
         duration: 2000
       }
-    ]
+    ],
+
+    // https://www.npmjs.com/package/vuepress-plugin-one-click-copy
+    ['one-click-copy', {
+      copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+      copyMessage: 'Copied successfully!', // default is 'Copied successfully!'
+      toolTipMessage: 'Copy to clipboard', // default is ''Copy to clipboard'
+      duration: 300, // prompt message display time
+    }]
 
     // ['@vuepress-reco/vuepress-plugin-bulletin-popover',
     //   {

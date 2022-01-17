@@ -21,6 +21,7 @@
     "@vuepress/plugin-medium-zoom": "^1.9.5",
     "vuepress": "^1.9.5",
     "vuepress-plugin-auto-sidebar": "^2.3.2",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-sponsor": "^1.0.0"
   }
 }
