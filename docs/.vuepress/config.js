@@ -96,17 +96,18 @@ module.exports = {
       height: 220,
     }],
 
+    // 赞助打赏 暂时不用
     // https://github.com/yokefellow/vuepress-plugin-sponsor
-    ['vuepress-plugin-sponsor',
-      {
-        theme: 'simple',
-        alipay: '/sponsor-qrcode/qrcode-alipay.png',
-        wechat: '/sponsor-qrcode/qrcode-wechat.png',
-        qq: '/sponsor-qrcode/qrcode-qq.png',
-        paypal: 'https://www.paypal.me/yokefellow',
-        duration: 2000
-      }
-    ],
+    // ['vuepress-plugin-sponsor',
+    //   {
+    //     theme: 'simple',
+    //     alipay: '/sponsor-qrcode/qrcode-alipay.png',
+    //     wechat: '/sponsor-qrcode/qrcode-wechat.png',
+    //     qq: '/sponsor-qrcode/qrcode-qq.png',
+    //     paypal: 'https://www.paypal.me/yokefellow',
+    //     duration: 2000
+    //   }
+    // ],
 
     // https://www.npmjs.com/package/vuepress-plugin-one-click-copy
     ['one-click-copy', {
@@ -114,7 +115,9 @@ module.exports = {
       copyMessage: 'Copied successfully!', // default is 'Copied successfully!'
       toolTipMessage: 'Copy to clipboard', // default is ''Copy to clipboard'
       duration: 300, // prompt message display time
-    }]
+    }],
+
+    ['go-top'],
 
     // ['@vuepress-reco/vuepress-plugin-bulletin-popover',
     //   {
