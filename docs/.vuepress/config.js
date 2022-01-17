@@ -66,7 +66,9 @@ module.exports = {
 
     ["@vuepress/plugin-medium-zoom"],
 
-    ['@vuepress-reco/vuepress-plugin-loading-page']
+    ['@vuepress-reco/vuepress-plugin-loading-page'],
+
+    ['@vuepress-reco/vuepress-plugin-kan-ban-niang']
   ]
 
 }
