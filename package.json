@@ -13,6 +13,7 @@
   "author": "阮中楠",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.0",
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "@vuepress-reco/vuepress-plugin-loading-page": "^1.6.0",
     "@vuepress/plugin-active-header-links": "^1.9.5",

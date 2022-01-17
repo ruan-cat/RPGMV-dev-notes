@@ -32,6 +32,7 @@ module.exports = {
     lastUpdated: '上一次更新',
     smoothScroll: true
 
+
     // 不使用 因为1版本的VuePress不提供更加细致的仓库地址配置，2版本提供。
     // repo: 'HechiCollegeComputerAssociation/RPGMV-dev-notes',
     // repo: 'https://gitee.com/HechiCollegeComputerAssociation/RPGMV-dev-notes',
@@ -68,7 +69,29 @@ module.exports = {
 
     ['@vuepress-reco/vuepress-plugin-loading-page'],
 
-    ['@vuepress-reco/vuepress-plugin-kan-ban-niang']
+    // https://github.com/vuepress-reco/vuepress-plugin-kan-ban-niang/
+    ['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
+      theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+      clean: false,
+      messages: {
+        welcome: '你好，这里是《阮中楠的RPGMV开发笔记》',
+        home: '立刻闪现到主页',
+        theme: '好吧，希望你能喜欢我的其他小伙伴。',
+        close: '立刻关闭此内容，防止分心'
+      },
+      messageStyle: {
+        right: '68px',
+        bottom: '190px'
+      },
+      modelStyle: {
+        right: '90px',
+        bottom: '-20px',
+        opacity: '0.9'
+      },
+
+    }],
+
+    ['@vuepress-reco/vuepress-plugin-bulletin-popover']
   ]
 
 }
