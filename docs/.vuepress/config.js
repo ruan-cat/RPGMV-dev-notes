@@ -117,15 +117,16 @@ module.exports = {
       duration: 300, // prompt message display time
     }],
 
-    // 一只小狗 返回顶部
-    ['go-top'],
+    // 一只小狗 返回顶部 暂时关闭
+    // ['go-top'],
 
+    // 背景绶带 暂时关闭
     // https://moefyit.github.io/moefy-vuepress/packages/ribbon.html#usage
-    ['ribbon', {
-      size: 90, // width of the ribbon, default: 90
-      opacity: 0.8, // opacity of the ribbon, default: 0.3
-      zIndex: -1, // z-index property of the background, default: -1
-    }],
+    // ['ribbon', {
+    //   size: 90, // width of the ribbon, default: 90
+    //   opacity: 0.8, // opacity of the ribbon, default: 0.3
+    //   zIndex: -1, // z-index property of the background, default: -1
+    // }],
 
     // npm i vuepress-plugin-cursor-effects -D
     ['cursor-effects', {
