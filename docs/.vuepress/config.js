@@ -117,7 +117,15 @@ module.exports = {
       duration: 300, // prompt message display time
     }],
 
+    // 一只小狗 返回顶部
     ['go-top'],
+
+    // https://moefyit.github.io/moefy-vuepress/packages/ribbon.html#usage
+    ['ribbon', {
+      size: 90, // width of the ribbon, default: 90
+      opacity: 0.8, // opacity of the ribbon, default: 0.3
+      zIndex: -1, // z-index property of the background, default: -1
+    }],
 
     // ['@vuepress-reco/vuepress-plugin-bulletin-popover',
     //   {
