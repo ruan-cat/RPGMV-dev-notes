@@ -30,6 +30,7 @@ module.exports = {
     nav,
     sidebar: 'auto',
     lastUpdated: '上一次更新',
+    smoothScroll: true
 
     // 不使用 因为1版本的VuePress不提供更加细致的仓库地址配置，2版本提供。
     // repo: 'HechiCollegeComputerAssociation/RPGMV-dev-notes',
