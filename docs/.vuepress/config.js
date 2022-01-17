@@ -143,6 +143,16 @@ module.exports = {
       recoverTime: 2000,
     }, ],
 
+    ['vuepress-plugin-medium-zoom', {
+      selector: '.my-wrapper .my-img',
+      delay: 1000,
+      options: {
+        margin: 24,
+        background: '#BADA55',
+        scrollOffset: 0,
+      },
+    }, ],
+
     // ['@vuepress-reco/vuepress-plugin-bulletin-popover',
     //   {
     //     width: '300px', // 默认 260px
