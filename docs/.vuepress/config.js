@@ -15,21 +15,18 @@ module.exports = {
   title: '阮中楠的RPGMV开发笔记',
   description: '整合RMMV生态，从现在开始',
 
-  // base: "/blog/",
-  // base: "/https://hechicollegecomputerassociation.gitee.io/",
-  // base: "/",
-  // base: ".",
-  // base: "/RPGMV-dev-notes/",
-  // base: "./",
-
   // https://blog.csdn.net/qq_28584685/article/details/88017069
   base: "/rpgmv-dev-notes/",
-
 
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
-    logo: 'https://vuejs.org/images/logo.png',
+    // old
+    // logo: 'https://vuejs.org/images/logo.png',
+    // new
+    // logo: '/ruanCat-logo.jpg',
+    // 目前可以导入图片 但是自己的网站不提供，可以为drillpage增加logo配置
+
     nav,
     sidebar: 'auto',
     lastUpdated: '上一次更新',
