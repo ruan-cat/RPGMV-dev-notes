@@ -22,6 +22,7 @@
     "vuepress": "^1.9.5",
     "vuepress-plugin-auto-sidebar": "^2.3.2",
     "vuepress-plugin-cursor-effects": "^1.0.2",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
     "vuepress-plugin-go-top": "^1.0.4",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-ribbon": "^1.0.4",

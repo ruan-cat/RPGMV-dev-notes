@@ -135,6 +135,14 @@ module.exports = {
       zIndex: 999999999, // z-index property of the canvas, default: 999999999
     }],
 
+    ['dynamic-title', {
+      showIcon: '/favicon.ico',
+      showText: '(/≧▽≦/)咦！又好了！',
+      hideIcon: '/failure.ico',
+      hideText: '(●—●)喔哟，崩溃啦！',
+      recoverTime: 2000,
+    }, ],
+
     // ['@vuepress-reco/vuepress-plugin-bulletin-popover',
     //   {
     //     width: '300px', // 默认 260px
