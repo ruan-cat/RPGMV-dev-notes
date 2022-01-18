@@ -27,6 +27,7 @@
     "vuepress-plugin-medium-zoom": "^1.1.9",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-ribbon": "^1.0.4",
-    "vuepress-plugin-sponsor": "^1.0.0"
+    "vuepress-plugin-sponsor": "^1.0.0",
+    "vuepress-theme-reco": "^1.6.10"
   }
 }

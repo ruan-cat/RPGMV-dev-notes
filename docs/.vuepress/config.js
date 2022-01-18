@@ -160,33 +160,35 @@ module.exports = {
       },
     }, ],
 
-    // ['@vuepress-reco/vuepress-plugin-bulletin-popover',
-    //   {
-    //     width: '300px', // 默认 260px
-    //     title: '消息提示',
-    //     body: [{
-    //         type: 'title',
-    //         content: '欢迎加入QQ交流群 🎉🎉🎉',
-    //         style: 'text-aligin: center;'
-    //       },
-    //       {
-    //         type: 'image',
-    //         // src: '/rvcode_qq.png'
-    //       }
-    //     ],
-    //     footer: [{
-    //         type: 'button',
-    //         text: '打赏',
-    //         link: '/donate'
-    //       },
-    //       {
-    //         type: 'button',
-    //         text: '打赏',
-    //         link: '/donate'
-    //       }
-    //     ]
-    //   }
-    // ]
+    /**
+     * 打赏侧边栏插件
+     * 目前总是无法合适的使用
+     */
+    // ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
+    //   width: '300px', // 默认 260px
+    //   title: '消息提示',
+    //   body: [{
+    //       type: 'title',
+    //       content: '欢迎加入QQ交流群 🎉🎉🎉',
+    //       style: 'text-aligin: center;'
+    //     },
+    //     // {
+    //     //   type: 'image',
+    //     //   src: '/rvcode_qq.png'
+    //     // }
+    //   ],
+    //   footer: [{
+    //       type: 'button',
+    //       text: '打赏',
+    //       link: '/donate'
+    //     },
+    //     {
+    //       type: 'button',
+    //       text: '打赏',
+    //       link: '/donate'
+    //     }
+    //   ]
+    // }]
   ]
 
 }

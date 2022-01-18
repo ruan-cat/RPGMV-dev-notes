@@ -28,6 +28,11 @@ footer: MIT Licensed | Copyright © 2022-present 阮中楠
   https://jackiehao.blog.csdn.net/article/details/106633226
  -->
 
+<!-- https://blog.csdn.net/qq_41327483/article/details/119103300#t15 -->
+<style>
+   background-image: url('https://img-blog.csdnimg.cn/img_convert/6602d9cf3ab2ce79293484b2b871138f.gif');
+</style>
+
 
 
 
