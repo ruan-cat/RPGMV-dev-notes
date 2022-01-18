@@ -71,20 +71,6 @@ module.exports = {
     // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-active-header-links.html#vuepress-plugin-active-header-links
     ['@vuepress/active-header-links'],
 
-    // 失效 不好用 准备替换。
-    // ["@vuepress/plugin-medium-zoom"],
-
-    // https://vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html#usage
-    // ["@vuepress/medium-zoom", {
-    //   selector: 'img.zoom-custom-imgs',
-    //   options: {
-    //     margin: 16
-    //   }
-    // }],
-
-
-
-
     ['@vuepress-reco/vuepress-plugin-loading-page'],
 
     // https://github.com/vuepress-reco/vuepress-plugin-kan-ban-niang/
