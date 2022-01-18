@@ -109,7 +109,10 @@ module.exports = {
     //   }
     // ],
 
-    // https://www.npmjs.com/package/vuepress-plugin-one-click-copy
+    /**
+     * 代码域一键复制插件
+     * https: //www.npmjs.com/package/vuepress-plugin-one-click-copy
+     */
     ['one-click-copy', {
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
       copyMessage: 'Copied successfully!', // default is 'Copied successfully!'
@@ -128,7 +131,10 @@ module.exports = {
     //   zIndex: -1, // z-index property of the background, default: -1
     // }],
 
-    // npm i vuepress-plugin-cursor-effects -D
+    /**
+     * 鼠标点击效果插件 
+     * npm i vuepress - plugin - cursor - effects - D
+     */
     ['cursor-effects', {
       size: 2, // size of the particle, default: 2
       shape: ['star'], // shape of the particle, default: 'star'
