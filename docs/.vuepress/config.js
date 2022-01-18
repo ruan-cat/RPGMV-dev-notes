@@ -22,7 +22,6 @@ module.exports = {
     // 设置 favicon.ico，注意图片放在 public 文件夹下
     ['link', {
       rel: 'icon',
-      // href: '/little-alice-icon.png'
       href: 'little-alice-icon.png'
     }]
   ],
@@ -160,10 +159,10 @@ module.exports = {
 
     // 动态标题插件 即网站标签的动态变化插件
     ['dynamic-title', {
-      // 暂时考虑用原生的方式调整icon
+      // 考虑用原生的方式调整icon 不使用插件的方式导入icon值
       // showIcon: '/little-alice-icon.png',
-      showText: '喵喵~',
       // hideIcon: '/little-alice-icon.png',
+      showText: '喵喵~',
       hideText: '呜呜..',
       recoverTime: 2000,
     }],
