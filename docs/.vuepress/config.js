@@ -19,7 +19,9 @@ module.exports = {
   base: "/rpgmv-dev-notes/",
 
   // 主题和它的配置
-  theme: '@vuepress/theme-default',
+  // theme: '@vuepress/theme-default',
+  theme: 'reco',
+
   themeConfig: {
     // old
     // logo: 'https://vuejs.org/images/logo.png',
@@ -159,6 +161,11 @@ module.exports = {
         scrollOffset: 0,
       },
     }, ],
+
+    ["permalink-pinyin", {
+      lowercase: true, // Converted into lowercase, default: true
+      separator: "-", // Separator of the slug, default: '-'
+    }],
 
     /**
      * 打赏侧边栏插件
