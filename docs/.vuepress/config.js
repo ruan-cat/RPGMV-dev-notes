@@ -32,8 +32,12 @@ module.exports = {
     nav,
     sidebar: 'auto',
     lastUpdated: '上一次更新',
-    smoothScroll: true
-
+    smoothScroll: true,
+    /**
+     * https: //vuepress-theme-reco.recoluan.com/views/1.x/sidebar.html
+     * 在所有页面中启用自动生成子侧边栏， 原 sidebar 仍然兼容
+     */
+    subSidebar: 'auto',
 
     // 不使用 因为1版本的VuePress不提供更加细致的仓库地址配置，2版本提供。
     // repo: 'HechiCollegeComputerAssociation/RPGMV-dev-notes',
@@ -67,7 +71,8 @@ module.exports = {
     // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-active-header-links.html#vuepress-plugin-active-header-links
     ['@vuepress/active-header-links'],
 
-    ["@vuepress/plugin-medium-zoom"],
+    // 失效 不好用 准备替换。
+    // ["@vuepress/plugin-medium-zoom"],
 
     ['@vuepress-reco/vuepress-plugin-loading-page'],
 
