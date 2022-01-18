@@ -18,7 +18,7 @@
     "@vuepress-reco/vuepress-plugin-loading-page": "^1.6.0",
     "@vuepress/plugin-active-header-links": "^1.9.5",
     "@vuepress/plugin-back-to-top": "^1.9.5",
-    "@vuepress/plugin-medium-zoom": "^1.9.5",
+    "@vuepress/plugin-medium-zoom": "^1.9.6",
     "vuepress": "^1.9.5",
     "vuepress-plugin-auto-sidebar": "^2.3.2",
     "vuepress-plugin-cursor-effects": "^1.0.2",
