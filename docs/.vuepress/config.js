@@ -27,8 +27,6 @@ module.exports = {
     // 目前可以导入图片 但是自己的网站不提供，可以为drillpage增加logo配置
     // logo: '/ruanCat-logo.jpg',
 
-    // 全部的插件配置
-    plugins,
     nav,
     sidebar: 'auto',
     lastUpdated: '上一次更新',
@@ -69,5 +67,8 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
+
+  // 全部的插件配置
+  plugins,
 
 }
