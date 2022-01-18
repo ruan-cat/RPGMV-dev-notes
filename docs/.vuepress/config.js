@@ -18,6 +18,15 @@ module.exports = {
   // https://blog.csdn.net/qq_28584685/article/details/88017069
   base: "/rpgmv-dev-notes/",
 
+  head: [
+    // 设置 favicon.ico，注意图片放在 public 文件夹下
+    ['link', {
+      rel: 'icon',
+      // href: '/little-alice-icon.png'
+      href: 'little-alice-icon.png'
+    }]
+  ],
+
   // 默认主题
   // theme: '@vuepress/theme-default',
 
@@ -151,9 +160,10 @@ module.exports = {
 
     // 动态标题插件 即网站标签的动态变化插件
     ['dynamic-title', {
-      showIcon: '/little-alice-icon.png',
+      // 暂时考虑用原生的方式调整icon
+      // showIcon: '/little-alice-icon.png',
       showText: '喵喵~',
-      hideIcon: '/little-alice-icon.png',
+      // hideIcon: '/little-alice-icon.png',
       hideText: '呜呜..',
       recoverTime: 2000,
     }],
