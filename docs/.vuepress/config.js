@@ -18,8 +18,10 @@ module.exports = {
   // https://blog.csdn.net/qq_28584685/article/details/88017069
   base: "/rpgmv-dev-notes/",
 
-  // 主题和它的配置
+  // 默认主题
   // theme: '@vuepress/theme-default',
+
+  // reco主题
   theme: 'reco',
 
   themeConfig: {
@@ -118,10 +120,12 @@ module.exports = {
      * https: //www.npmjs.com/package/vuepress-plugin-one-click-copy
      */
     ['one-click-copy', {
-      copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-      copyMessage: 'Copied successfully!', // default is 'Copied successfully!'
+      // String or Array
+      copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'],
+      copyMessage: '复制成功！',
       toolTipMessage: 'Copy to clipboard', // default is ''Copy to clipboard'
-      duration: 300, // prompt message display time
+      // 提示文本留存1.5s
+      duration: 1500,
     }],
 
     // 一只小狗 返回顶部 暂时关闭
@@ -152,7 +156,7 @@ module.exports = {
       hideIcon: '/little-alice-icon.png',
       hideText: '呜呜..',
       recoverTime: 2000,
-    }, ],
+    }],
 
     ['vuepress-plugin-medium-zoom', {
       selector: '.my-wrapper .my-img',
@@ -164,9 +168,12 @@ module.exports = {
       },
     }, ],
 
+    // 中文名路由路径转换拼音路径 兼容reco主题
     ["permalink-pinyin", {
-      lowercase: true, // Converted into lowercase, default: true
-      separator: "-", // Separator of the slug, default: '-'
+      // Converted into lowercase, default: true
+      lowercase: true,
+      // Separator of the slug, default: '-'
+      separator: "-",
     }],
 
     /**
