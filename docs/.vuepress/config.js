@@ -1,12 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2021-12-28 11:43:14
- * @LastEditTime: 2021-12-29 15:20:41
- * @LastEditors: Please set LastEditors
- * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: \try-learn-vuepress\docs\.vuepress\config.js
- */
-
 const nav = require("./nav.js");
 
 module.exports = {
@@ -50,12 +41,12 @@ module.exports = {
     subSidebar: 'auto',
 
     // 不使用 因为1版本的VuePress不提供更加细致的仓库地址配置，2版本提供。
-    // repo: 'HechiCollegeComputerAssociation/RPGMV-dev-notes',
+    repo: 'gitee/HechiCollegeComputerAssociation/RPGMV-dev-notes',
     // repo: 'https://gitee.com/HechiCollegeComputerAssociation/RPGMV-dev-notes',
-    // docsRepo: 'HechiCollegeComputerAssociation/RPGMV-dev-notes',
-    // docsBranch: 'main-dev-notes',
-    // editLinks: true,
-    // editLinkText: '帮助我们完善文档！'
+    docsRepo: 'gitee/HechiCollegeComputerAssociation/RPGMV-dev-notes',
+    docsBranch: 'main-dev-notes',
+    editLinks: true,
+    editLinkText: '帮助我们完善文档！'
 
   },
 
@@ -184,6 +175,11 @@ module.exports = {
       // Separator of the slug, default: '-'
       separator: "-",
     }],
+
+    // 百度统计插件 
+    ['vuepress-plugin-baidu-tongji', {
+      hm: 'abcdefghijklmnopqrstuvwxyz123456'
+    }]
 
     /**
      * 打赏侧边栏插件
