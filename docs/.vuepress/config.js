@@ -135,11 +135,12 @@ module.exports = {
       zIndex: 999999999, // z-index property of the canvas, default: 999999999
     }],
 
+    // 动态标题插件 即网站标签的动态变化插件
     ['dynamic-title', {
-      showIcon: '/favicon.ico',
-      showText: '(/≧▽≦/)咦！又好了！',
-      hideIcon: '/failure.ico',
-      hideText: '(●—●)喔哟，崩溃啦！',
+      showIcon: '/little-alice-icon.png',
+      showText: '喵喵~',
+      hideIcon: '/little-alice-icon.png',
+      hideText: '呜呜..',
       recoverTime: 2000,
     }, ],
 
