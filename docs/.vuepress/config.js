@@ -75,14 +75,12 @@ module.exports = {
     // ["@vuepress/plugin-medium-zoom"],
 
     // https://vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html#usage
-    ["@vuepress/medium-zoom", {
-      selector: 'img.zoom-custom-imgs',
-      // medium-zoom options here
-      // See: https://github.com/francoischalifour/medium-zoom#options
-      options: {
-        margin: 16
-      }
-    }],
+    // ["@vuepress/medium-zoom", {
+    //   selector: 'img.zoom-custom-imgs',
+    //   options: {
+    //     margin: 16
+    //   }
+    // }],
 
 
 
