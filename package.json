@@ -1,7 +1,7 @@
 {
-  "name": "try-learn-vuepress-v1",
+  "name": "rzn-rpgmv-notes",
   "version": "1.0.0",
-  "description": "",
+  "description": "阮中楠的个人RPGMV笔记",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs --temp .temp",

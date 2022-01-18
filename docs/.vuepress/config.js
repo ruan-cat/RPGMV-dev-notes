@@ -2,7 +2,6 @@ const nav = require("./nav.js");
 const plugins = require("./plugins.js");
 
 module.exports = {
-  // 站点配置
   lang: 'zh-CN',
   title: '阮中楠的RPGMV开发笔记',
   description: '整合RMMV生态，从现在开始',
@@ -25,11 +24,8 @@ module.exports = {
   theme: 'reco',
 
   themeConfig: {
-    // old
-    // logo: 'https://vuejs.org/images/logo.png',
-    // new
-    // logo: '/ruanCat-logo.jpg',
     // 目前可以导入图片 但是自己的网站不提供，可以为drillpage增加logo配置
+    // logo: '/ruanCat-logo.jpg',
 
     // 全部的插件配置
     plugins,
@@ -65,15 +61,13 @@ module.exports = {
         email: 'recoluan@qq.com',
         link: 'https://www.recoluan.com'
       },
-      // ...
     ]
 
   },
 
+  // 代码行数配置
   markdown: {
     lineNumbers: true
   },
-
-
 
 }
