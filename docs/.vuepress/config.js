@@ -37,6 +37,13 @@ module.exports = {
      */
     subSidebar: 'auto',
 
+    valineConfig: {
+      appId: 'fOpA1EMy75xXVnyBBfNopgul-9Nh9j0Va',
+      appKey: '1hzgeHXNTCtDNQ9XLkPwAlN8',
+      // 不显示评论 不提供评论 只使用浏览量显示功能
+      showComment: false
+    },
+
     // 不使用 因为1版本的VuePress不提供更加细致的仓库地址配置，2版本提供。
     // repo: 'gitee/HechiCollegeComputerAssociation/RPGMV-dev-notes',
     // repo: 'https://gitee.com/HechiCollegeComputerAssociation/RPGMV-dev-notes',
