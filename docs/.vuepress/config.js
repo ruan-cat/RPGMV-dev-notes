@@ -37,6 +37,9 @@ module.exports = {
      */
     subSidebar: 'auto',
 
+    // 全局作者姓名配置
+    author: '阮中楠',
+
     valineConfig: {
       appId: 'fOpA1EMy75xXVnyBBfNopgul-9Nh9j0Va',
       appKey: '1hzgeHXNTCtDNQ9XLkPwAlN8',
@@ -51,6 +54,29 @@ module.exports = {
     // docsBranch: 'main-dev-notes',
     // editLinks: true,
     // editLinkText: '帮助我们完善文档！'
+
+    blogConfig: {
+      category: {
+        location: 1, // 在导航栏菜单中所占的位置，默认2
+        text: 'Category' // 默认文案 “分类”
+      },
+
+      tag: {
+        location: 2, // 在导航栏菜单中所占的位置，默认3
+        text: '文章' // 默认文案 “标签”
+      },
+
+      socialLinks: [ // 信息栏展示社交信息
+        {
+          icon: 'reco-github',
+          link: 'https://github.com/recoluan'
+        },
+        {
+          icon: 'reco-npm',
+          link: 'https://www.npmjs.com/~reco_luan'
+        }
+      ]
+    },
 
     // type: 'blog',
 
