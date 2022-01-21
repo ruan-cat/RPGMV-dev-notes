@@ -120,30 +120,19 @@ module.exports = [
     separator: "-",
   }],
 
+  // 音乐播放插件
   ['@vuepress-reco/vuepress-plugin-bgm-player', {
-    audios: [
-      // 本地文件示例
-      // {
-      //   name: '장가갈 수 있을까',
-      //   artist: '咖啡少年',
-      //   url: '/bgm/1.mp3',
-      //   cover: '/bgm/1.jpg'
-      // },
-      // 网络文件示例
-      {
-        name: '강남역 4번 출구',
-        artist: 'Plastic / Fallin` Dild',
-        url: 'https://assets.smallsunnyfox.com/music/2.mp3',
-        cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
-      },
-      {
-        name: '用胳膊当枕头',
-        artist: '최낙타',
-        url: 'https://assets.smallsunnyfox.com/music/3.mp3',
-        cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
-      }
-    ]
+    // 自动播放 是 （无法自动播放）
+    autoplay: true,
+    audios: [{
+      name: 'S - Falling Sky',
+      artist: '作者列表 和 封面需要替换配置',
+      url: '/bgm/S - Falling Sky.ogg',
+      cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+    }]
   }]
+
+
 
   // https://valine.js.org/vuepress.html 评论插件 不需要手动引入并配置
   // ['vuepress-plugin-comment',

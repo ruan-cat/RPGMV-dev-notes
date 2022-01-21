@@ -47,6 +47,14 @@ module.exports = {
       showComment: false
     },
 
+    // 正在学习配置
+    algolia: {
+      apiKey: '00b93f0976fee99faecdc1c6165756b5',
+      indexName: 'RPGMV-dev-notes',
+      // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
+      appId: 'N62BQRC6XH',
+    },
+
     // 不使用 因为1版本的VuePress不提供更加细致的仓库地址配置，2版本提供。
     // repo: 'gitee/HechiCollegeComputerAssociation/RPGMV-dev-notes',
     // repo: 'https://gitee.com/HechiCollegeComputerAssociation/RPGMV-dev-notes',
@@ -55,28 +63,29 @@ module.exports = {
     // editLinks: true,
     // editLinkText: '帮助我们完善文档！'
 
-    blogConfig: {
-      category: {
-        location: 1, // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认文案 “分类”
-      },
+    // 不实用 容易报错
+    // blogConfig: {
+    //   category: {
+    //     location: 1, // 在导航栏菜单中所占的位置，默认2
+    //     text: 'Category' // 默认文案 “分类”
+    //   },
 
-      tag: {
-        location: 2, // 在导航栏菜单中所占的位置，默认3
-        text: '文章' // 默认文案 “标签”
-      },
+    //   tag: {
+    //     location: 2, // 在导航栏菜单中所占的位置，默认3
+    //     text: '文章' // 默认文案 “标签”
+    //   },
 
-      socialLinks: [ // 信息栏展示社交信息
-        {
-          icon: 'reco-github',
-          link: 'https://github.com/recoluan'
-        },
-        {
-          icon: 'reco-npm',
-          link: 'https://www.npmjs.com/~reco_luan'
-        }
-      ]
-    },
+    //   socialLinks: [ // 信息栏展示社交信息
+    //     {
+    //       icon: 'reco-github',
+    //       link: 'https://github.com/recoluan'
+    //     },
+    //     {
+    //       icon: 'reco-npm',
+    //       link: 'https://www.npmjs.com/~reco_luan'
+    //     }
+    //   ]
+    // },
 
     // type: 'blog',
 
