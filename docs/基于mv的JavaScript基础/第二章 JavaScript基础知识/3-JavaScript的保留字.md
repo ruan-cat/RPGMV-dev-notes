@@ -23,13 +23,13 @@ debugger        implements        protected        volatile
 double        import        public
 ```
 
-第5 版把在非严格模式下运行时的保留字缩减为下列这些：
+第5 版把在**非严格模式**下运行时的保留字缩减为下列这些：
 ``` js
 class        enum        extends        super
 const        export        import
 ```
 
-在严格模式下，第5 版还对以下保留字施加了限制：
+在**严格模式**下，第5 版还对以下保留字施加了限制：
 ``` js
 implements        package        public        interface
 private        static        let        protected
@@ -37,3 +37,15 @@ yield
 ```
 
 总之，这些词都不要使用做自己的变量名字就好，否则会跟系统预定义的功能起冲突。
+
+
+
+::: tip 拓展
+以下是关于严格模式的知识点
+
+- [严格模式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)
+
+- [向严格模式过渡](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode)
+:::
+
+
