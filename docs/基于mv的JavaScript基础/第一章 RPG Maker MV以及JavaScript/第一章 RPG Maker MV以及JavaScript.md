@@ -31,7 +31,6 @@ JavaScript是一种属于网络的脚本语言,已经被广泛用于Web应用开
 
 ## RPG Maker MV中使用插件
 首先先明确mv项目的目录结构，如下图；
-<!-- ![](https://i.bmp.ovh/imgs/2022/01/855df61179cdf9c7.png) -->
 ![](https://rpg.blue/data/attachment/forum/201608/15/162940b3og0z9ha819o1ot.png)
 
 - **audio** 视频资源
@@ -136,7 +135,25 @@ libs文件夹下，其内容如下图所示。其中，```fpsmeter.js```用于�
 一个好的编辑器可以帮助你完成一些繁琐的任务，使得编程事半功倍。
 ![](https://rpg.blue/data/attachment/forum/201608/15/162945psts26b6flbsoe9l.png)
 
-上图展示的是未汉化的```VScode```，```VScode```是可以通过插件配置设置成中文的。点此阅读```VScode```的汉化教程。（待补充）
+上图展示的是未汉化的```VScode```，```VScode```是可以通过插件配置设置成中文的。[点此阅读```VScode```的汉化教程。](https://blog.csdn.net/qq_24118527/article/details/82793610)
+
+::: tip 务必学会VScode或者是其他现代化的JavaScript代码打开软件
+第二版作者更愿意称呼为学习使用一款**代码编辑器**来打开并编辑```JavaScript```。
+
+第二版会大量地使用关于```VScode```的**插件**，**快捷键**等工具来教学，请务必学会```VScode```。[点此下载VScode。](https://code.visualstudio.com/)
+
+笔者跟推荐各位使用更加现代化的，专业的```WebStorm```来打开```mv```项目。笔者希望大家打开的是一个```mv```项目，而不是单独的，孤立的一份```JavaScript```代码。希望大家能够用整体的思想来看待```mv```项目
+:::
+
+
+
+
+## 快速运行JavaScript代码 <badge text='拓展' />
+```mv```项目是运行在浏览器内的游戏，你可以按```F12```键，在浏览器提供的控制台内直接输入一些```JavaScript```代码并运行。这个技巧也可以用于mv项目的快速调试。
+
+
+
+
 
 
 ## 在事件中使用脚本
