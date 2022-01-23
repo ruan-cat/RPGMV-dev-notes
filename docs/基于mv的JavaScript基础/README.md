@@ -15,7 +15,7 @@
 
 第二版在语言措辞上会更加的简练，会详细的说明执行步骤。
 
-关于插件开发的视频教程，你可以去B站[搜索](https://search.bilibili.com/all?keyword=SIAKO.Mobi)SIAKO.Mobi。他的视频还包括了JavaScript的基础学习教程。
+关于插件开发的视频教程，你可以去B站[搜索](https://search.bilibili.com/all?keyword=SIAKO.Mobi)SIAKO.Mobi。他的视频还包括了```JavaScript```的基础学习教程。
 
 ## 参与mv插件开发的讨论
 (目前暂时不提供相关的QQ讨论群，未来网站逐步完善时，会在此处补录QQ群，欢迎各位开发者进群讨论插件开发技术！)
