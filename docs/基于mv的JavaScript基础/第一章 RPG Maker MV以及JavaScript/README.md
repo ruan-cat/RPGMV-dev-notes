@@ -1,0 +1,2 @@
+# 章节简介
+本章节主要简单介绍RPGMV和JavaScript
