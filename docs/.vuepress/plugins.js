@@ -7,7 +7,8 @@ module.exports = [
     },
     // https://shanyuhai123.github.io/vuepress-plugin-auto-sidebar/zh/features/plugin-options.html#sidebardepth-标题深度
     // 侧边栏的深度为2 即 h2 h3 标题被提取
-    sidebarDepth: 2
+    // sidebarDepth: 2
+    sidebarDepth: 3
   }],
 
   // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-back-to-top.html#vuepress-plugin-back-to-top
