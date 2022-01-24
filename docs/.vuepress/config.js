@@ -112,5 +112,4 @@ module.exports = {
 
   // 全部的插件配置
   plugins,
-
 }
