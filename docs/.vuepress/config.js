@@ -7,8 +7,7 @@ module.exports = {
   description: '整合RMMV生态，从现在开始',
 
   // https://blog.csdn.net/qq_28584685/article/details/88017069
-  // base: "/rpgmv-dev-notes/",
-  // base: "/rpgmv-dev-notes/",
+  base: "/rpgmv-dev-notes/",
 
   head: [
     // 设置 favicon.ico，注意图片放在 public 文件夹下
