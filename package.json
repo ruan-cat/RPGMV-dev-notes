@@ -4,7 +4,8 @@
   "description": "阮中楠的个人RPGMV笔记",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:dev --temp": "vuepress dev docs --temp .temp",
+    "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:nav": "vuepress nav docs",
     "docs:nav-cover": "vuepress nav docs -f",
