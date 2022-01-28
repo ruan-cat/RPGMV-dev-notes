@@ -113,3 +113,28 @@ module.exports = {
   // 全部的插件配置
   plugins,
 }
+
+/** @description 这是一辆车 */
+const car = {
+  // 推荐使用字符串的方式来明确地定义车辆的名称
+  name: 'Fiat',
+  model: 500,
+  weight: 850,
+  // 第二版推荐用CSS的颜色样式写法来描述颜色。
+  color: 'rgb(255,255,255)',
+
+  /** @description 汽车启动 */
+  start() {
+    console.log(" 启动 ");
+  },
+
+  /** @description 汽车行驶 */
+  drive() {
+    console.log(" 行驶 ");
+  },
+
+  /** @description 汽车刹车 */
+  brake() {
+    console.log(" 刹车 ");
+  },
+};
