@@ -115,11 +115,5 @@ module.exports = {
 }
 
 
-let myCar = {
-  status: 'stop',
-  start() {
-    if (this.status === 'stop') {
-      this.status = 'start'
-    }
-  }
-};
+let str = '1121';
+str = str * 1;
