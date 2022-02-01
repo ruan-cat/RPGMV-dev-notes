@@ -1,7 +1,14 @@
 # 序言
 
+
+
+
+
+
+
+
 ## 第二版前言
-目前尚未得到aasll的明确授权以继承并重写系列教程。目前假设已经得到授权，来编写以下文章。
+目前已得到[aasll](https://rpg.blue/home.php?mod=space&uid=2647944)的明确授权以继承并重写系列教程。[点此阅览位于project1的第一版教程](https://rpg.blue/thread-395487-1-1.html)。
 
 这是*基于**RPGMakerMV**的**JavaScript**基础*，第二版作者：**阮中楠**
 
@@ -17,10 +24,42 @@
 
 关于插件开发的视频教程，你可以去B站[搜索](https://search.bilibili.com/all?keyword=SIAKO.Mobi)SIAKO.Mobi。他的视频还包括了```JavaScript```的基础学习教程。
 
+
+
+
+
+
+
+## 在project1论坛的帖子内联系作者、提出问题、或提供建议
+第二版的教程采用了个人网站的形式来展示内容，但是并没有提供回复功能。为了方便来自project1论坛的开发者提问，特新建了一个帖子来专门收集回复，[点此进入帖子并提问](https://rpg.blue/thread-488548-1-1.html)。
+
+
+
+
+
+
 ## 参与mv插件开发的讨论
 (目前暂时不提供相关的QQ讨论群，未来网站逐步完善时，会在此处补录QQ群，欢迎各位开发者进群讨论插件开发技术！)
+
+
+
+
+
+
 
 ## 联系作者，共同维护优化第二版教程
 本教程目前以```gitee page```的形式存续，如果你懂得使用```gitee```，欢迎提交```issue```或```PR```。
 
 [点此进入仓库](https://gitee.com/HechiCollegeComputerAssociation/RPGMV-dev-notes)。
+
+
+
+
+
+
+
+## 致谢
+首先感谢第一版的作者**aasll**，我是在18年大二的时候开始阅读他的文章并开始逐步学习```RPGMV```插件开发的，可以说我对```JavaScript```的最初印象就来自于他的文章。
+
+其次感谢*drill系列插件*的开发者——**drill up**，关于```mv```类之间的继承关系与插件重写原理是*drill*指导我的。没有他恐怕就没有我对```mv```源码的理解了。
+

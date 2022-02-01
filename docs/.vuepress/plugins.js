@@ -1,3 +1,4 @@
+/** 侧边栏插件的排序函数 */
 const sortFn = (a, b) => {
   const lastA = a.filename.split("-")[0] * 1;
   const lastB = b.filename.split("-")[0] * 1;
@@ -77,10 +78,9 @@ module.exports = [
    * https: //www.npmjs.com/package/vuepress-plugin-one-click-copy
    */
   ['one-click-copy', {
-    // String or Array
     copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'],
-    copyMessage: '复制成功！',
-    toolTipMessage: 'Copy to clipboard', // default is ''Copy to clipboard'
+    copyMessage: '复制成功',
+    toolTipMessage: '复制在剪贴板内',
     // 提示文本留存1.5s
     duration: 1500,
   }],
@@ -111,8 +111,9 @@ module.exports = [
     // 考虑用原生的方式调整icon 不使用插件的方式导入icon值
     // showIcon: '/little-alice-icon.png',
     // hideIcon: '/little-alice-icon.png',
-    showText: '喵喵~',
-    hideText: '呜呜..',
+    showText: '欢迎回来',
+    hideText: '正在翻阅MDN和CSDN么？',
+    // 恢复时长
     recoverTime: 2000,
   }],
 

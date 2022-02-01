@@ -16,12 +16,16 @@ module.exports = [
         "link": "/基于mv的JavaScript基础/"
       },
       {
-        "text": "第一章 RPG Maker MV以及JavaScript",
-        "link": "/基于mv的JavaScript基础/第一章 RPG Maker MV以及JavaScript/"
+        "text": "第1章 RPG Maker MV以及JavaScript",
+        "link": "/基于mv的JavaScript基础/第1章 RPG Maker MV以及JavaScript/"
       },
       {
-        "text": "第二章 JavaScript基础知识",
-        "link": "/基于mv的JavaScript基础/第二章 JavaScript基础知识/"
+        "text": "第2章 JavaScript基础知识",
+        "link": "/基于mv的JavaScript基础/第2章 JavaScript基础知识/"
+      },
+      {
+        "text": "第3章 插件及插件参数和命令",
+        "link": "/基于mv的JavaScript基础/第3章 插件及插件参数和命令/"
       }
     ]
   },
