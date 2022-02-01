@@ -1,3 +1,9 @@
+const sortFn = (a, b) => {
+  const lastA = a.filename.split("-")[0] * 1;
+  const lastB = b.filename.split("-")[0] * 1;
+  return lastA > lastB ? 1 : -1;
+};
+
 module.exports = [
   ["vuepress-plugin-auto-sidebar", {
     title: {
@@ -5,10 +11,17 @@ module.exports = [
       // `default`、`lowercase`、`uppercase`、`capitalize`、`camelcase`、`kebabcase`、`titlecase`
       mode: "titlecase"
     },
+
     // https://shanyuhai123.github.io/vuepress-plugin-auto-sidebar/zh/features/plugin-options.html#sidebardepth-标题深度
     // 侧边栏的深度为2 即 h2 h3 标题被提取
     // sidebarDepth: 2
-    sidebarDepth: 3
+    sidebarDepth: 3,
+
+    // 侧边栏插件 使用自定义排序
+    sort: {
+      mode: 'custom',
+      fn: sortFn
+    },
   }],
 
   // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-back-to-top.html#vuepress-plugin-back-to-top
