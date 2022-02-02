@@ -101,9 +101,12 @@ module.exports = [
    * npm i vuepress - plugin - cursor - effects - D
    */
   ['cursor-effects', {
-    size: 2, // size of the particle, default: 2
-    shape: ['star'], // shape of the particle, default: 'star'
-    zIndex: 999999999, // z-index property of the canvas, default: 999999999
+    // size of the particle, default: 2
+    size: 2,
+    // shape of the particle, default: 'star'
+    shape: ['star'],
+    // z-index property of the canvas, default: 999999999
+    zIndex: 999999999,
   }],
 
   // 动态标题插件 即网站标签的动态变化插件
@@ -137,14 +140,32 @@ module.exports = [
 
   // 音乐播放插件
   ['@vuepress-reco/vuepress-plugin-bgm-player', {
-    // 自动播放 是 （无法自动播放）
+    // 自动播放 是
     autoplay: true,
-    audios: [{
-      name: 'S - Falling Sky',
-      artist: '作者列表 和 封面需要替换配置',
-      url: '/bgm/S - Falling Sky.ogg',
-      cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
-    }]
+    audios: [
+
+      {
+        name: "傀儡",
+        artist: "A.LOVE",
+        url: "/bgm/A.LOVE - 傀儡.mp3",
+        cover: "/bgm-cover-img/A.LOVE.jpg"
+      },
+
+      {
+        name: "In the Darkness",
+        artist: "A.LOVE",
+        url: "/bgm/A.LOVE - In the Darkness.mp3",
+        cover: "/bgm-cover-img/A.LOVE.jpg"
+      },
+
+      {
+        name: "Breather ( Remix)",
+        artist: "B站-av25123096",
+        url: "/bgm/Breather (Remix).mp3",
+        cover: "/bgm-cover-img/Breather (Remix).jpg"
+      },
+
+    ]
   }]
 
 
