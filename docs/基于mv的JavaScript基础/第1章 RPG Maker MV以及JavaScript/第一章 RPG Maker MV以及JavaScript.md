@@ -1,17 +1,39 @@
 # 第一章 RPG Maker MV以及JavaScript
 
+
+
+
+
+
+
 ## RPG Maker MV简介
 制作游戏需要专业的游戏引擎，这样可以事半功倍，若要想制作```RPG```类型的游戏，那么```RPG Maker MV```是一个不错的选择。
 
-```RPG Maker```，又名**RPG制作大师**、**RPGツークル**、**RPG Tsukuru**。是一款Enterbrain Incorporation公司出品的RPG游戏制作工具，分为RPG Maker 2000，RPG Maker 2003，RPG Maker XP，RPG Maker VX，RPG Maker VX Ace，RPG Maker MV。
+```RPG Maker```，又名**RPG制作大师**、**RPGツークル**、**RPG Tsukuru**。是一款**Enterbrain Incorporation**公司出品的RPG游戏制作工具，分为RPG Maker 2000，RPG Maker 2003，RPG Maker XP，RPG Maker VX，RPG Maker VX Ace，RPG Maker MV。
 
-我们现在要介绍的是最新版的RPG Maker MV，这个版本可以实现的功能与前作基本一致，但最大的不同在于使用的语言由Ruby变成了JavaScript，以及由此带来的与Html5结合的便利。
+我们现在要介绍的是最新版的RPG Maker MV，这个版本可以实现的功能与前作基本一致，但最大的不同在于使用的语言由Ruby变成了```JavaScript```，以及由此带来的与Html5结合的便利。
 
 现在，我们可以借助Html5+JavaScript，将制作的游戏部署到PC端，Android端，IOS端。通俗来讲，凡是可以浏览网页的设备，只要配置足够，都可以运行MV制作的游戏。
+
 
 ::: tip mv源码的技术栈
 HTML5 + JavaScript ES5
 :::
+
+::: warning 最新版的开发工具
+截止第二版教程开始编纂，最新版的```RPG Maker```是```RPGMZ```。其源码使用了一定程度上的```ES6```语法。
+:::
+
+
+
+
+
+
+
+
+
+
+
 
 ## JavaScript简介
 
@@ -28,6 +50,16 @@ JavaScript是一种属于网络的脚本语言,已经被广泛用于Web应用开
 我们使用JavaScript，也应当遵守标准。目前，js的最新标准是es6。
 
 截止第二版重构，JavaScript的版本已经到了```ES10```。读者可自行[搜索](https://so.csdn.net/so/search?q=JavaScript%20%E7%89%88%E6%9C%AC)```JavaScript```的最新版本以及更新的语法。第二版教程不会详细的解释、说明、介绍、教学高版本的```JavaScript```语法。
+
+
+
+
+
+
+
+
+
+
 
 ## RPG Maker MV中使用插件
 首先先明确mv项目的目录结构，如下图；
@@ -130,6 +162,15 @@ libs文件夹下，其内容如下图所示。其中，```fpsmeter.js```用于�
 :::
 
 
+
+
+
+
+
+
+
+
+
 ## 如何编辑JavaScript
 事实上，任何文本编辑器都可以打开并编辑后缀名为```.js```的```JavaScript```的脚本文件，但笔者在这里推荐使用专业的编辑器，比如```notepad++```，以及笔者用的```visual studio code```，如图所示。
 一个好的编辑器可以帮助你完成一些繁琐的任务，使得编程事半功倍。
@@ -148,8 +189,13 @@ libs文件夹下，其内容如下图所示。其中，```fpsmeter.js```用于�
 
 
 
+
+
+
 ## 快速运行JavaScript代码 <Badge text="拓展" />
 ```mv```项目是运行在浏览器内的游戏，你可以按```F12```键，在浏览器提供的控制台内直接输入一些```JavaScript```代码并运行。这个技巧也可以用于mv项目的快速调试。
+
+
 
 
 

@@ -15,8 +15,8 @@ module.exports = [
 
     // https://shanyuhai123.github.io/vuepress-plugin-auto-sidebar/zh/features/plugin-options.html#sidebardepth-标题深度
     // 侧边栏的深度为2 即 h2 h3 标题被提取
-    // sidebarDepth: 2
-    sidebarDepth: 3,
+    sidebarDepth: 2,
+    // sidebarDepth: 3,
 
     // 侧边栏插件 使用自定义排序
     sort: {
@@ -148,21 +148,21 @@ module.exports = [
         name: "傀儡",
         artist: "A.LOVE",
         url: "/bgm/A.LOVE - 傀儡.mp3",
-        cover: "/bgm-cover-img/A.LOVE.jpg"
+        // cover: "/bgm-cover-img/A.LOVE.jpg"
       },
 
       {
         name: "In the Darkness",
         artist: "A.LOVE",
         url: "/bgm/A.LOVE - In the Darkness.mp3",
-        cover: "/bgm-cover-img/A.LOVE.jpg"
+        // cover: "/bgm-cover-img/A.LOVE.jpg"
       },
 
       {
         name: "Breather ( Remix)",
         artist: "B站-av25123096",
         url: "/bgm/Breather (Remix).mp3",
-        cover: "/bgm-cover-img/Breather (Remix).jpg"
+        // cover: "/bgm-cover-img/Breather (Remix).jpg"
       },
 
     ]
