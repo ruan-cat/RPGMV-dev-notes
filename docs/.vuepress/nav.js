@@ -1,14 +1,5 @@
 module.exports = [
   {
-    "text": "RPGMV使用",
-    "items": [
-      {
-        "text": "RMMV入门",
-        "link": "/RPGMV使用/RMMV入门/"
-      }
-    ]
-  },
-  {
     "text": "基于mv的JavaScript基础",
     "items": [
       {
