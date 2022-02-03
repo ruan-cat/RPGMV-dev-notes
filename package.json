@@ -24,7 +24,6 @@
     "vuepress": "^1.9.5",
     "vuepress-plugin-auto-sidebar": "^2.3.2",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
-    "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-cursor-effects": "^1.0.2",
     "vuepress-plugin-dynamic-title": "^1.0.0",
     "vuepress-plugin-go-top": "^1.0.4",
@@ -32,8 +31,8 @@
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-plugin-ribbon": "^1.0.4",
-    "vuepress-plugin-serve": "^2.0.4",
     "vuepress-plugin-sponsor": "^1.0.0",
+    "vuepress-plugin-comment": "^0.7.3",
     "vuepress-theme-reco": "^1.6.10"
   }
 }
