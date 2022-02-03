@@ -23,10 +23,10 @@ module.exports = [
   }],
 
   // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-back-to-top.html#vuepress-plugin-back-to-top
-  ['@vuepress/back-to-top'],
+  // ['@vuepress/back-to-top'],
 
   // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-active-header-links.html#vuepress-plugin-active-header-links
-  ['@vuepress/active-header-links'],
+  // ['@vuepress/active-header-links'],
 
   ['@vuepress-reco/vuepress-plugin-loading-page'],
 
