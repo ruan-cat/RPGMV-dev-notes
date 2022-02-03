@@ -8,8 +8,6 @@ const sortFn = (a, b) => {
 module.exports = [
   ["vuepress-plugin-auto-sidebar", {
     title: {
-      // 更多选项: 
-      // `default`、`lowercase`、`uppercase`、`capitalize`、`camelcase`、`kebabcase`、`titlecase`
       mode: "titlecase"
     },
 
@@ -60,18 +58,6 @@ module.exports = [
     height: 220,
   }],
 
-  // 赞助打赏 暂时不用
-  // https://github.com/yokefellow/vuepress-plugin-sponsor
-  // ['vuepress-plugin-sponsor',
-  //   {
-  //     theme: 'simple',
-  //     alipay: '/sponsor-qrcode/qrcode-alipay.png',
-  //     wechat: '/sponsor-qrcode/qrcode-wechat.png',
-  //     qq: '/sponsor-qrcode/qrcode-qq.png',
-  //     paypal: 'https://www.paypal.me/yokefellow',
-  //     duration: 2000
-  //   }
-  // ],
 
   /**
    * 代码域一键复制插件
@@ -84,17 +70,6 @@ module.exports = [
     // 提示文本留存1.5s
     duration: 1500,
   }],
-
-  // 一只小狗 返回顶部 暂时关闭
-  // ['go-top'],
-
-  // 背景绶带 暂时关闭
-  // https://moefyit.github.io/moefy-vuepress/packages/ribbon.html#usage
-  // ['ribbon', {
-  //   size: 90, // width of the ribbon, default: 90
-  //   opacity: 0.8, // opacity of the ribbon, default: 0.3
-  //   zIndex: -1, // z-index property of the background, default: -1
-  // }],
 
   /**
    * 鼠标点击效果插件 
@@ -167,55 +142,4 @@ module.exports = [
 
     ]
   }]
-
-
-
-  // https://valine.js.org/vuepress.html 评论插件 不需要手动引入并配置
-  // ['vuepress-plugin-comment',
-  //   {
-  //     choosen: 'valine',
-  //     // options选项中的所有参数，会传给Valine的配置
-  //     options: {
-  //       el: '#valine-vuepress-comment',
-  //       appId: 'fOpA1EMy75xXVnyBBfNopgul-9Nh9j0Va',
-  //       appKey: '1hzgeHXNTCtDNQ9XLkPwAlN8',
-  //       visitor: true
-  //     }
-  //   }
-  // ]
-
-  // 百度统计插件 
-  // ['vuepress-plugin-baidu-tongji', {
-  //   hm: 'abcdefghijklmnopqrstuvwxyz123456'
-  // }]
-
-  /**
-   * 打赏侧边栏插件
-   * 目前总是无法合适的使用
-   */
-  // ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
-  //   width: '300px', // 默认 260px
-  //   title: '消息提示',
-  //   body: [{
-  //       type: 'title',
-  //       content: '欢迎加入QQ交流群 🎉🎉🎉',
-  //       style: 'text-aligin: center;'
-  //     },
-  //     // {
-  //     //   type: 'image',
-  //     //   src: '/rvcode_qq.png'
-  //     // }
-  //   ],
-  //   footer: [{
-  //       type: 'button',
-  //       text: '打赏',
-  //       link: '/donate'
-  //     },
-  //     {
-  //       type: 'button',
-  //       text: '打赏',
-  //       link: '/donate'
-  //     }
-  //   ]
-  // }]
 ];
