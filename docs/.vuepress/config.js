@@ -36,6 +36,7 @@ module.exports = {
      * 在所有页面中启用自动生成子侧边栏， 原 sidebar 仍然兼容
      */
     subSidebar: 'auto',
+    sidebarDepth: 4,
 
     // 全局作者姓名配置
     author: '阮中楠',
