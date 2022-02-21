@@ -7,7 +7,7 @@ const sortFn = (a, b) => {
 
 module.exports = [
   // 尝试： 不使用自动生成的侧边栏插件
-  ["vuepress-plugin-auto-sidebar", {
+  ["vuepress-plugin-auto-sidebar", false, {
     title: {
       mode: "titlecase"
     },

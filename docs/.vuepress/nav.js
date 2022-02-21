@@ -1,27 +1,24 @@
 module.exports = [
   {
-    "text": "基于mv的JavaScript基础",
+    "text": "drill-api",
     "items": [
       {
+        "text": "主内容",
+        "link": "/drill-api/2.7.1/主内容/"
+      },
+      {
         "text": "2 6 1",
-        "link": "/基于mv的JavaScript基础/temp-file/2.6.1/"
+        "link": "/drill-api/2.6.1/"
       },
       {
         "text": "2 7 1",
-        "link": "/基于mv的JavaScript基础/temp-file/2.7.1/"
-      },
-      {
-        "text": "Branch",
-        "link": "/基于mv的JavaScript基础/temp-file/2.6.1/branch/"
-      },
-      {
-        "text": "Main",
-        "link": "/基于mv的JavaScript基础/temp-file/2.6.1/main/"
-      },
-      {
-        "text": "主内容",
-        "link": "/基于mv的JavaScript基础/temp-file/2.7.1/主内容/"
-      },
+        "link": "/drill-api/2.7.1/"
+      }
+    ]
+  },
+  {
+    "text": "基于mv的JavaScript基础",
+    "items": [
       {
         "text": "基于mv的JavaScript基础",
         "link": "/基于mv的JavaScript基础/"

@@ -38,6 +38,75 @@ module.exports = {
     subSidebar: 'auto',
     sidebarDepth: 2,
 
+    sidebar: {
+      '/drill-api/2.6.1/': [
+
+        {
+          title: 'default-config',
+          // path: '/default-config/',
+          collapsable: true,
+          children: [
+            // 暂时无法显示 因为文件暂时隐藏了
+            // 'abstract',
+            // 'syntax',
+            // 'customStyleAndScript'
+
+            // default-config/ 成功
+            'default-config/abstract',
+            'default-config/syntax',
+            'default-config/customStyleAndScript'
+          ]
+        },
+
+        {
+          title: '基础',
+          collapsable: true,
+          children: [
+            '',
+            'installUse',
+            'blog',
+            'frontMatter'
+          ]
+        },
+
+        {
+          title: '进阶',
+          collapsable: true,
+          children: [
+            'timeline',
+            'valine',
+            'password',
+            'configJs',
+            'home',
+            'notfound',
+            'mode',
+            'local',
+            'codeTheme',
+            'sidebar'
+          ]
+        },
+
+        // {
+        //   title: '默认主题配置',
+        //   collapsable: true,
+        //   children: [
+        //     'abstract',
+        //     'syntax',
+        //     'customStyleAndScript'
+        //   ]
+        // },
+
+        {
+          title: '其他',
+          collapsable: true,
+          children: [
+            'updatetoone',
+            'recommend'
+          ]
+        }
+      ],
+    },
+
     // 全局作者姓名配置
     author: '阮中楠',
 

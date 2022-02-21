@@ -12,7 +12,6 @@ date: 2019-04-09
 ## Option API
 
 ### Home
-![home.png](../images/1.png)
 
 #### 1. 如果您的heroImage具有您的网站标题，则可能需要设置 `heroText: null` 以使标题不显示。
 
@@ -45,7 +44,6 @@ heroImageStyle: {
 ```
 
 ### Home-Blog
-![home.png](../images/home-blog.png)
 
 > `heroImage` 在此模式下仍然有效。
 
