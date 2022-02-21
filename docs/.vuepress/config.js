@@ -39,9 +39,7 @@ module.exports = {
     sidebarDepth: 2,
 
     sidebar: {
-      '/drill-api/2.6.1/': [
-
-        {
+      '/drill-api/2.6.1/': [{
           title: '默认配置',
           collapsable: true,
           children: [

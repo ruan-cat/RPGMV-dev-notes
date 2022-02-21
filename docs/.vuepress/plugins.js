@@ -7,7 +7,7 @@ const sortFn = (a, b) => {
 
 module.exports = [
   // 尝试： 不使用自动生成的侧边栏插件
-  ["vuepress-plugin-auto-sidebar", false, {
+  ["vuepress-plugin-auto-sidebar", true, {
     title: {
       mode: "titlecase"
     },
@@ -23,6 +23,19 @@ module.exports = [
       mode: 'custom',
       fn: sortFn
     },
+
+    // 自动生成的侧边栏文件名
+    output: {
+      filename: 'sidebar-auto'
+    },
+
+    ignore: [
+      // 忽略 `/menu3/menu3-3/` 目录下以 `ignore-` 开头的文件
+      {
+        menu: "/drill-api/2.6.1/",
+        regex: "*"
+      }
+    ]
   }],
 
   ['@vuepress-reco/vuepress-plugin-loading-page'],
