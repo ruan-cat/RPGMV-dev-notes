@@ -42,19 +42,27 @@ module.exports = {
       '/drill-api/2.6.1/': [
 
         {
-          title: 'default-config',
-          // path: '/default-config/',
+          title: '默认配置',
           collapsable: true,
           children: [
-            // 暂时无法显示 因为文件暂时隐藏了
-            // 'abstract',
-            // 'syntax',
-            // 'customStyleAndScript'
-
             // default-config/ 成功
-            'default-config/abstract',
-            'default-config/syntax',
-            'default-config/customStyleAndScript'
+            // 'default-config/abstract',
+            // 'default-config/syntax',
+            // 'default-config/customStyleAndScript',
+
+            {
+              title: '测试-摘要',
+              // path: 'default-config/abstract'
+              path: 'default-config/摘要'
+            },
+            {
+              title: '测试-syntax',
+              path: 'default-config/syntax'
+            },
+            {
+              title: '测试-customStyleAndScript',
+              path: 'default-config/customStyleAndScript'
+            },
           ]
         },
 
@@ -85,16 +93,6 @@ module.exports = {
             'sidebar'
           ]
         },
-
-        // {
-        //   title: '默认主题配置',
-        //   collapsable: true,
-        //   children: [
-        //     'abstract',
-        //     'syntax',
-        //     'customStyleAndScript'
-        //   ]
-        // },
 
         {
           title: '其他',
