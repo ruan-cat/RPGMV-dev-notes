@@ -6,10 +6,16 @@ const sortFn = (a, b) => {
 };
 
 module.exports = [
+  // 尝试： 不使用自动生成的侧边栏插件
   ["vuepress-plugin-auto-sidebar", {
     title: {
       mode: "titlecase"
     },
+
+    collapse: {
+      open: true
+    },
+
     sidebarDepth: 2,
 
     // 侧边栏插件 使用自定义排序
