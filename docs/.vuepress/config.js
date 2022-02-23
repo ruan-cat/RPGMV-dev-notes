@@ -36,7 +36,7 @@ module.exports = {
      * 在所有页面中启用自动生成子侧边栏， 原 sidebar 仍然兼容
      */
     subSidebar: 'auto',
-    sidebarDepth: 2,
+    sidebarDepth: 4,
 
     sidebar: {
       '/drill-api/2.6.1/': [{

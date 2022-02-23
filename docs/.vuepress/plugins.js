@@ -16,7 +16,7 @@ module.exports = [
       open: true
     },
 
-    sidebarDepth: 2,
+    sidebarDepth: 4,
 
     // 侧边栏插件 使用自定义排序
     sort: {
