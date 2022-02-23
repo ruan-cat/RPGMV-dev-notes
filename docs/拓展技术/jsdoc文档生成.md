@@ -154,3 +154,11 @@ node ./node_modules/jsdoc/jsdoc.js -c conf.json
 
 上述命令行的配置写法参考于[此文章](https://blog.csdn.net/weixin_34128839/article/details/91934667)。此时生成的静态网页在```rpgmv-api-doc```文件夹内，因为作者在```conf.json```内的```destination```配置项中指明了输出文件夹目录。
 
+
+
+
+
+
+
+## jsdoc的高阶配置 <Badge type='error' text='进阶' />
+本节内容展示的是进阶版本

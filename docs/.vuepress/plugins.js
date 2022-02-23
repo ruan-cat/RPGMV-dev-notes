@@ -122,6 +122,8 @@ module.exports = [
     separator: "-",
   }],
 
+  ['@vuepress/pwa']
+
   // 音乐播放插件
   // ['@vuepress-reco/vuepress-plugin-bgm-player', {
   //   autoplay: true,
