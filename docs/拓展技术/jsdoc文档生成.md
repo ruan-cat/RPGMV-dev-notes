@@ -161,4 +161,93 @@ node ./node_modules/jsdoc/jsdoc.js -c conf.json
 
 
 ## jsdoc的高阶配置 <Badge type='error' text='进阶' />
-本节内容展示的是进阶版本
+本节内容展示的是进阶版本```jsdoc```配置，默认你已经阅读完了上述的全部内容。本节内容几乎就是为了给**专业程序员**阅读的，如果你本身没有相当过硬的基础，这些内容对你来说属于天书，请不要在此浪费时间。
+
+默认你具有这样的基础或能力
+- 翻墙阅览```github```仓库
+- 能够阅读简单的**纯英文**```API```文档
+
+
+
+### 参考资料
+- [jsdoc官方文档](https://jsdoc.app/)
+- [jsdoc的github仓库](https://github.com/jsdoc/jsdoc)
+
+
+
+### 使用更加易于配置的.js格式替代.json格式的配置文件
+[此文档](https://jsdoc.app/about-configuring-jsdoc.html#configuration-file-formats)指出，高版本以上的jsdoc是支持CommonJS module模块的，参照文档要求自行改造配置文件即可。页面如下图：
+![image-20220223191359178](https://gitee.com/HechiCollegeComputerAssociation/image-store/raw/master/picgo-file/image-20220223191359178.png)
+
+作者的可参考写法如下：
+``` js
+'use strict';
+
+module.exports = {
+  tags: {
+    allowUnknownTags: true,
+    dictionaries: ['jsdoc', 'closure'],
+  },
+
+  source: {
+    include: ['sourceCodeFile'],
+    exclude: [],
+    includePattern: '.+\\.js(doc)?$',
+    excludePattern: '(^|\\/|\\\\)_',
+  },
+
+  plugins: [],
+
+  templates: {
+    cleverLinks: false,
+    monospaceLinks: false,
+
+    // 使用主题插件 better-docs 的名称配置
+    'better-docs': {
+      name: '阮中楠文档',
+    },
+
+    // 使用主题插件 tui-jsdoc-template 的配置
+    name: '阮中楠的文档',
+    footerText: '底部导航栏文字',
+  },
+
+  opts: {
+    /**
+     * 可用的一些模板 需要自行安装下载 自行去github搜索相关细节
+     * templates/default
+     * node_modules/minami
+     * node_modules/better-docs
+     * node_modules/tui-jsdoc-template
+     */
+    template: 'node_modules/tui-jsdoc-template',
+    encoding: 'utf8',
+    destination: 'rpgmv-api-doc',
+    recurse: true,
+    readme: './README.md',
+    verbose: true,
+    // "tutorials": "path/to/tutorials"
+  },
+};
+```
+
+
+
+### 使用更加炫酷的主题插件
+```jsdoc```作为一款文档自动化生成工具，自然是可以配置文档主题的。文档主题样式同样以```node```包安装。这里不介绍如何配置。
+
+[点此查阅如何在jsdoc配置文件中配置主题插件](https://jsdoc.app/about-plugins.html#creating-and-enabling-a-plugin)。
+
+[点此查阅官方推荐的一些主题插件](https://github.com/jsdoc/jsdoc#templates)。
+
+
+
+
+
+### 主页的readme.md文档配置
+自动生成的文档主页一般总是配置成项目的```readme.md```文件，使用以下配置即可引用文档：
+```js
+opts: {
+  readme: './README.md'
+}
+```
