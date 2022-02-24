@@ -115,7 +115,10 @@ module.exports = [
 
   ['@vuepress/pwa'],
 
-  ['fulltext-search'],
+  // 全文搜索插件 目前失效
+  // ['fulltext-search'],
+
+  ['flexsearch'],
 
   // 音乐播放插件
   // ['@vuepress-reco/vuepress-plugin-bgm-player', {
