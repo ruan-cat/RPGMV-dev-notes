@@ -38,11 +38,12 @@ module.exports = [
     ]
   }],
 
-  ['@vuepress-reco/vuepress-plugin-loading-page'],
+  ['@vuepress-reco/vuepress-plugin-loading-page', true],
 
   // https://github.com/vuepress-reco/vuepress-plugin-kan-ban-niang/
-  ['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
-    theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+  ['@vuepress-reco/vuepress-plugin-kan-ban-niang', true, {
+    // hibiki 可能的取值 从别人的插件教程中预览
+    theme: ['hibiki', 'blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
     clean: false,
     messages: {
       welcome: '你好，这里是《阮中楠的RPGMV开发笔记》',
@@ -76,7 +77,6 @@ module.exports = [
     copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'],
     copyMessage: '复制成功',
     toolTipMessage: '复制在剪贴板内',
-    // 提示文本留存1.5s
     duration: 1500,
   }],
 
@@ -85,22 +85,15 @@ module.exports = [
    * npm i vuepress - plugin - cursor - effects - D
    */
   ['cursor-effects', {
-    // size of the particle, default: 2
     size: 2,
-    // shape of the particle, default: 'star'
     shape: ['star'],
-    // z-index property of the canvas, default: 999999999
     zIndex: 999999999,
   }],
 
   // 动态标题插件 即网站标签的动态变化插件
   ['dynamic-title', {
-    // 考虑用原生的方式调整icon 不使用插件的方式导入icon值
-    // showIcon: '/little-alice-icon.png',
-    // hideIcon: '/little-alice-icon.png',
     showText: '欢迎回来',
     hideText: '正在翻阅MDN和CSDN么？',
-    // 恢复时长
     recoverTime: 2000,
   }],
 
@@ -116,13 +109,13 @@ module.exports = [
 
   // 中文名路由路径转换拼音路径 兼容reco主题
   ["permalink-pinyin", {
-    // Converted into lowercase, default: true
     lowercase: true,
-    // Separator of the slug, default: '-'
     separator: "-",
   }],
 
-  ['@vuepress/pwa']
+  ['@vuepress/pwa'],
+
+  ['fulltext-search'],
 
   // 音乐播放插件
   // ['@vuepress-reco/vuepress-plugin-bgm-player', {
