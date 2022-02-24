@@ -176,7 +176,7 @@ node ./node_modules/jsdoc/jsdoc.js -c conf.json
 
 
 ### 使用更加易于配置的.js格式替代.json格式的配置文件
-[此文档](https://jsdoc.app/about-configuring-jsdoc.html#configuration-file-formats)指出，高版本以上的jsdoc是支持CommonJS module模块的，参照文档要求自行改造配置文件即可。页面如下图：
+[此文档](https://jsdoc.app/about-configuring-jsdoc.html#configuration-file-formats)指出，高版本以上的```jsdoc```是支持```CommonJS module```模块的，参照文档要求自行改造配置文件即可。页面如下图：
 ![image-20220223191359178](https://gitee.com/HechiCollegeComputerAssociation/image-store/raw/master/picgo-file/image-20220223191359178.png)
 
 作者的可参考写法如下：
@@ -229,6 +229,16 @@ module.exports = {
     // "tutorials": "path/to/tutorials"
   },
 };
+```
+
+
+
+
+
+
+### 使用新的命令行来生成文档
+``` bash
+node ./node_modules/jsdoc/jsdoc.js -c jsdoc.js
 ```
 
 
