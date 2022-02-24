@@ -1,3 +1,7 @@
+// const lang = require('../../node_modules/flexsearch/dist/lang/cjk/default.min.js');
+
+// const charset = require('../../node_modules/flexsearch/dist/lang/latin/extra.min.js');
+
 /** 侧边栏插件的排序函数 */
 const sortFn = (a, b) => {
   const lastA = a.filename.split("-")[0] * 1;
@@ -116,9 +120,30 @@ module.exports = [
   ['@vuepress/pwa'],
 
   // 全文搜索插件 目前失效
-  // ['fulltext-search'],
+  // ['fulltext-search', {
+  //   tokenize: 'full',
+  //   // split: /\s+/,
+  //   encode: 'icase',
+  //   language: 'zh-cn'
+  // }],
 
-  ['flexsearch'],
+  ['flexsearch', {
+    search_options: {
+      // encode: "icase",
+      // encode: str => str.replace(/^[\u4e00-\u9fa5_a-zA-Z0-9]+$/g, "").split(""),
+      // encode: str => str.replace(/[\x00-\x7F]/g, "").split(""),
+
+      // lang: lang,
+      // charset: charset,
+      // language: "zh",
+      // tokenize: "forward",
+      resolution: 9,
+      doc: {
+        id: "key",
+        field: ["title", "content", "headers"]
+      }
+    }
+  }],
 
   // 音乐播放插件
   // ['@vuepress-reco/vuepress-plugin-bgm-player', {
