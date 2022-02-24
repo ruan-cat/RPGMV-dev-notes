@@ -114,12 +114,12 @@ module.exports = {
     },
 
     // 正在学习配置
-    // algolia: {
-    //   apiKey: '00b93f0976fee99faecdc1c6165756b5',
-    //   indexName: 'RPGMV-dev-notes',
-    //   // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
-    //   appId: 'N62BQRC6XH',
-    // },
+    algolia: {
+      apiKey: '6d2809cce481a42771539d8823524569',
+      indexName: 'RPGMV-dev-notes',
+      // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
+      // appId: 'N62BQRC6XH',
+    },
 
   },
 
