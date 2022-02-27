@@ -128,7 +128,7 @@ module.exports = [
   }],
 
   // 暂时关闭此插件 目前不清楚为什么不能实现中文字符的全局搜索
-  ['flexsearch', true, {
+  ['flexsearch', false, {
     search_options: {
       // encode: "icase",
       // encode: str => str.replace(/^[\u4e00-\u9fa5_a-zA-Z0-9]+$/g, "").split(""),
@@ -138,7 +138,7 @@ module.exports = [
       // charset: charset,
       // language: "zh",
       // tokenize: "forward",
-      resolution: 9,
+      // resolution: 9,
       doc: {
         id: "key",
         field: ["title", "content", "headers"]
