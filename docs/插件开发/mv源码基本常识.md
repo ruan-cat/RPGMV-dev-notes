@@ -2,17 +2,40 @@
 title: mv源码基本常识
 ---
 
+
+
+
+
 ## 项目调试方式
 按F8进行debug。
+
+
+
+
+
+
 
 ## update方法原理
 update一帧运行一次、refresh一般是需要的时候、调用一下刷新。
 
+
+
+
+
 ## 类的定义方式
 mv项目的绝大多数类采用[混合的构造函数/原型方式](https://blog.csdn.net/iteye_9339/article/details/81473212)来定义。
 
+
+
+
+
 ## 类的继承方式
 mv项目中的绝大多数类采用[寄生组合式继承](https://blog.csdn.net/xgy123xx/article/details/106019671)的方式来完成类的继承。
+
+
+
+
+
 
 ### 寄生组合式继承定义
 所谓寄生组合式继承，即通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。其背后的基本思路是：不必为了指定子类型的原型而调用超类型的构造函数，我们所需要的无非就是超类型原型的一个副本而已。本质上，就是使用寄生式继承来继承超类型的原型，然后再将结果指定给子类型的原型。[引自《JavaScript高级程序设计》](https://blog.csdn.net/qq_35718410/article/details/91412908)
@@ -26,8 +49,15 @@ mv项目中的绝大多数类采用[寄生组合式继承](https://blog.csdn.net
 方法的定义与继承均在```prototype```原型链完成，属性则是在```function```类本身中定义，且继承的时候也是用构造函数来完成属性的继承。
 :::
 
+
+
+
+
+
+
+
 ## Object.create()实现继承的例子
-由于作者水平有限，尚不能理解透彻该部分的继承。这里粘贴了和mv项目几乎相同的继承例子，作为本小节内容。[MDN.Object.create()](https://developer.mozilla.org/zh-CN/docs/orphaned/Web/JavaScript/Reference/Global_Objects/Object/create)
+这里粘贴了和`mv`项目几乎相同的继承例子，作为本小节内容。[MDN.Object.create()](https://developer.mozilla.org/zh-CN/docs/orphaned/Web/JavaScript/Reference/Global_Objects/Object/create)
 
 ``` js
 // Shape - 父类(superclass)
@@ -53,12 +83,25 @@ console.log('Is rect an instance of Shape?',
 rect.move(1, 1); // Outputs, 'Shape moved.'
 ```
 
+
+
+
+
+
+
 ## mv继承的简单示例
-mv采用了"寄生组合式继承"，即————通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。以```Scene_Base```为例：
+`mv`采用了"寄生组合式继承"，即————通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。以```Scene_Base```为例：
 
 ```Scene_Base```类通过```Stage.prototype.initialize.call(this);```的方式，来继承来自父类```Stage```的属性。
 
-通过```Scene_Base.prototype = Object.create(Stage.prototype);``` 和 ```Scene_Base.prototype.constructor = Scene_Base;``` 的原型链方式继承来自父类Stage的方法。
+通过```Scene_Base.prototype = Object.create(Stage.prototype);``` 和 ```Scene_Base.prototype.constructor = Scene_Base;``` 的原型链方式继承来自父类`Stage`的方法。
+
+
+
+
+
+
+
 
 ## 对mv源码的总体理解
 以下内容为作者自己的理解，不一定准确。
@@ -74,6 +117,13 @@ mv采用了"寄生组合式继承"，即————通过借用构造函数来�
 
 - mv插件写法的本质是**直接修改mv源码**。
 :::
+
+
+
+
+
+
+
 
 
 

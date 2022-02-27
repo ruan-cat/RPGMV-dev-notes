@@ -1,26 +1,5 @@
 module.exports = [
   {
-    "text": "drill-api",
-    "items": [
-      {
-        "text": "Default Config",
-        "link": "/drill-api/2.6.1/default-config/"
-      },
-      {
-        "text": "主内容",
-        "link": "/drill-api/2.7.1/主内容/"
-      },
-      {
-        "text": "2 6 1",
-        "link": "/drill-api/2.6.1/"
-      },
-      {
-        "text": "2 7 1",
-        "link": "/drill-api/2.7.1/"
-      }
-    ]
-  },
-  {
     "text": "基于mv的JavaScript基础",
     "items": [
       {
