@@ -5,31 +5,32 @@ title: mv源码基本常识
 
 
 
+## 源码基础常识
 
-## 项目调试方式
+### 项目调试方式
 按F8进行debug。
 
 
-
-
-
-
-
-## update方法原理
+### update方法原理
 update一帧运行一次、refresh一般是需要的时候、调用一下刷新。
 
 
 
 
 
-## 类的定义方式
+
+
+## 源码类的基础语法知识
+
+
+### 类的定义方式
 mv项目的绝大多数类采用[混合的构造函数/原型方式](https://blog.csdn.net/iteye_9339/article/details/81473212)来定义。
 
 
 
 
 
-## 类的继承方式
+### 类的继承方式
 mv项目中的绝大多数类采用[寄生组合式继承](https://blog.csdn.net/xgy123xx/article/details/106019671)的方式来完成类的继承。
 
 
@@ -56,7 +57,7 @@ mv项目中的绝大多数类采用[寄生组合式继承](https://blog.csdn.net
 
 
 
-## Object.create()实现继承的例子
+### Object.create()实现继承的例子
 这里粘贴了和`mv`项目几乎相同的继承例子，作为本小节内容。[MDN.Object.create()](https://developer.mozilla.org/zh-CN/docs/orphaned/Web/JavaScript/Reference/Global_Objects/Object/create)
 
 ``` js
@@ -89,7 +90,96 @@ rect.move(1, 1); // Outputs, 'Shape moved.'
 
 
 
-## mv继承的简单示例
+### 用ES5的原型链语法实现类的定义与继承
+本小节是上一节内容的拓展。这里使用了拓展性质的`jsdoc`注释语法，在实际的`mv`插件开发中建议使用。
+``` js
+/**
+ * 小萝莉类
+ * @class LittleGirl
+ * @classdesc 小萝莉类，作为小女孩的基础类
+ * @description
+ * 类的命名规范，我们总是默认让类的命名遵循大驼峰命名法
+ */
+function LittleGirl() {
+  this.defaultLines = "嘤嘤嘤";
+};
+
+/**
+ * 撒娇方法
+ * @memberof LittleGirl
+ * @description 小萝莉对象撒娇
+ */
+LittleGirl.prototype.coquetry = function () {
+  console.log(" 发出了： " + this.defaultLines + " 的声音。");
+};
+
+/**
+ * 小爱丽丝类
+ * @class LittleAlice
+ * @classdesc 小爱丽丝类，特指钻头的小爱丽丝。
+ */
+function LittleAlice() {
+  LittleGirl.call(this);
+  this.defaultLines = "不可以涩涩哦~";
+};
+
+// 用Object.create方法实现原型链的继承
+LittleAlice.prototype = Object.create(LittleGirl.prototype);
+// 指定小爱丽丝类的构造器为小萝莉
+LittleAlice.prototype.constructor = LittleGirl;
+
+/**
+ * 阮喵喵 属于一种小爱丽丝
+ * @description
+ * 用new关键字执行构造函数 实例化对象
+ */
+var ruanCat = new LittleAlice();
+// 阮喵喵开始撒娇
+ruanCat.coquetry();
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 用ES6的语法糖优化类的定义与继承
+本小节是上一节的优化写法。在实际的`mv`插件开发中，不一定要使用这样的写法。
+``` js
+class LittleGirl {
+  constructor() {
+    this.defaultLines = "嘤嘤嘤";
+  }
+  coquetry() {
+    console.log(" 发出了： " + this.defaultLines + " 的声音。");
+  }
+}
+
+class LittleAlice extends LittleGirl {
+  constructor() {
+    super();
+    this.defaultLines = "不可以涩涩哦~";
+  }
+}
+
+const ruanCat = new LittleAlice();
+ruanCat.coquetry();
+```
+
+
+
+
+
+
+
+### mv继承的简单示例
 `mv`采用了"寄生组合式继承"，即————通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。以```Scene_Base```为例：
 
 ```Scene_Base```类通过```Stage.prototype.initialize.call(this);```的方式，来继承来自父类```Stage```的属性。

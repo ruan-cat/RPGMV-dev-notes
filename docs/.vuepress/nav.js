@@ -19,6 +19,10 @@ module.exports = [
         "link": "/基于mv的JavaScript基础/第3章 插件及插件参数和命令/"
       },
       {
+        "text": "第4章 绘制窗口",
+        "link": "/基于mv的JavaScript基础/第4章 绘制窗口/"
+      },
+      {
         "text": "第7章 待整理的现代化代码写法",
         "link": "/基于mv的JavaScript基础/第7章 待整理的现代化代码写法/"
       }
