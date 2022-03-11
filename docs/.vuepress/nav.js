@@ -1,5 +1,14 @@
 module.exports = [
   {
+    "text": "vue-elementUI",
+    "items": [
+      {
+        "text": "Vue Element UI",
+        "link": "/vue-elementUI/"
+      }
+    ]
+  },
+  {
     "text": "基于mv的JavaScript基础",
     "items": [
       {
