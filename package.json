@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "阮中楠的个人RPGMV笔记",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev --temp": "vuepress dev docs --temp .temp",
-    "docs:dev": "vuepress dev docs",
+    "docs:dev --temp hot-update": "vuepress dev docs --temp .temp",
+    "docs:dev once": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:nav": "vuepress nav docs",
-    "docs:nav-cover": "vuepress nav docs -f",
+    "docs:nav create-nav": "vuepress nav docs",
+    "docs:nav-cover update-nav": "vuepress nav docs -f",
     "deploy": "bash deploy.sh"
   },
   "author": "阮中楠",
