@@ -1,5 +1,14 @@
 module.exports = [
   {
+    "text": "TypeScript",
+    "items": [
+      {
+        "text": "Type Script",
+        "link": "/TypeScript/"
+      }
+    ]
+  },
+  {
     "text": "vue-elementUI",
     "items": [
       {
