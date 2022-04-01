@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "阮中楠的个人RPGMV笔记",
   "scripts": {
-    "docs:dev --temp": "vuepress dev docs --temp .temp",
-    "docs:dev once": "vuepress dev docs",
+    "serve hot-update": "vuepress dev docs --temp .temp",
+    "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:nav create-nav": "vuepress nav docs",
     "docs:nav-cover update-nav": "vuepress nav docs -f",
