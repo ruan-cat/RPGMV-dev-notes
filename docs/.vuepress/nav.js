@@ -1,5 +1,14 @@
 module.exports = [
   {
+    "text": "JavaScript",
+    "items": [
+      {
+        "text": "Java Script",
+        "link": "/JavaScript/"
+      }
+    ]
+  },
+  {
     "text": "TypeScript",
     "items": [
       {
