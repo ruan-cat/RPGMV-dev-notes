@@ -7,8 +7,9 @@ title: TypeScript学习
 
 ## 网站：
 
-网站《tslang》：https://www.tslang.cn/ 
-仓库：https://github.com/zhongsp/TypeScript
+
+[**tslang**](https://www.tslang.cn/)
+[仓库](https://github.com/zhongsp/TypeScript)
 
 网站《TypeScript 入门教程》：https://ts.xcatliu.com/
 仓库：https://github.com/xcatliu/typescript-tutorial
