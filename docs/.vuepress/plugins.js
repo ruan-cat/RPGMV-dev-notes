@@ -39,10 +39,10 @@ module.exports = [
 
       ignore: [
         // 忽略 `/menu3/menu3-3/` 目录下以 `ignore-` 开头的文件
-        {
-          menu: '/drill-api/2.6.1/',
-          regex: '*',
-        },
+        // {
+        //   menu: '/drill-api/2.6.1/',
+        //   regex: '*',
+        // },
       ],
     },
   ],
