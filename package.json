@@ -5,7 +5,7 @@
   "scripts": {
     "serve hot-update": "vuepress dev docs --temp .temp",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "production": "vuepress build docs",
     "docs:nav create-nav": "vuepress nav docs",
     "docs:nav-cover update-nav": "vuepress nav docs -f",
     "deploy": "bash deploy.sh"
