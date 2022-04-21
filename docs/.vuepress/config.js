@@ -19,6 +19,10 @@ module.exports = {
     // ],
     // ['script', { src: 'https://cdn.jsdelivr.net/npm/@docsearch/js@alpha' }],
 
+    // 注入到页面<head> 中的标签,[tagName, { attrName: attrValue }]
+    // https://doc.xugaoyi.com/pages/26997d/
+    ['meta', { name: 'keywords', content: 'rpgmv' }],
+
     // 设置 favicon.ico，注意图片放在 public 文件夹下
     [
       'link',
@@ -73,6 +77,7 @@ module.exports = {
   // 代码行数配置
   markdown: {
     lineNumbers: true,
+    extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'],
   },
 
   // 全部的插件配置
