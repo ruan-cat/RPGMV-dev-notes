@@ -12,6 +12,10 @@
   },
   "author": "阮中楠",
   "license": "ISC",
+  "dependencies": {
+    "vuepress-plugin-flexsearch": "^0.3.0",
+    "vuepress-plugin-fulltext-search": "^2.2.1"
+  },
   "devDependencies": {
     "@docsearch/js": "^3.0.0",
     "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
@@ -28,8 +32,6 @@
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-cursor-effects": "^1.0.2",
     "vuepress-plugin-dynamic-title": "^1.0.0",
-    "vuepress-plugin-flexsearch": "^0.3.0",
-    "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-go-top": "^1.0.4",
     "vuepress-plugin-medium-zoom": "^1.1.9",
     "vuepress-plugin-one-click-copy": "^1.0.6",

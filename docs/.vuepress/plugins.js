@@ -159,39 +159,10 @@ module.exports = [
   ['@vuepress/pwa'],
 
   // 全文搜索插件 目前失效 目前不清楚为什么不能实现中文字符的全局搜索
-  [
-    'fulltext-search',
-    false,
-    // {
-    //   tokenize: 'full',
-    //   // split: /\s+/,
-    //   encode: 'icase',
-    //   language: 'zh-cn',
-    // },
-  ],
+  // ['fulltext-search'],
 
   // 暂时关闭此插件 目前不清楚为什么不能实现中文字符的全局搜索
-  [
-    'flexsearch',
-    false,
-    {
-      search_options: {
-        // encode: "icase",
-        // encode: str => str.replace(/^[\u4e00-\u9fa5_a-zA-Z0-9]+$/g, "").split(""),
-        // encode: str => str.replace(/[\x00-\x7F]/g, "").split(""),
-
-        // lang: lang,
-        // charset: charset,
-        // language: "zh",
-        // tokenize: "forward",
-        // resolution: 9,
-        doc: {
-          id: 'key',
-          field: ['title', 'content', 'headers'],
-        },
-      },
-    },
-  ],
+  // ['flexsearch'],
 
   // 音乐播放插件
   // ['@vuepress-reco/vuepress-plugin-bgm-player', {
