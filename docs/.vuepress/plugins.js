@@ -162,12 +162,12 @@ module.exports = [
   [
     'fulltext-search',
     false,
-    {
-      tokenize: 'full',
-      // split: /\s+/,
-      encode: 'icase',
-      language: 'zh-cn',
-    },
+    // {
+    //   tokenize: 'full',
+    //   // split: /\s+/,
+    //   encode: 'icase',
+    //   language: 'zh-cn',
+    // },
   ],
 
   // 暂时关闭此插件 目前不清楚为什么不能实现中文字符的全局搜索

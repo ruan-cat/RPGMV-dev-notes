@@ -1,5 +1,5 @@
-const nav = require("./nav.js");
-const plugins = require("./plugins.js");
+const nav = require('./nav.js');
+const plugins = require('./plugins.js');
 
 module.exports = {
   lang: 'zh-CN',
@@ -7,14 +7,26 @@ module.exports = {
   description: '整合RMMV生态，从现在开始',
 
   // https://blog.csdn.net/qq_28584685/article/details/88017069
-  base: "/rpgmv-dev-notes/",
+  base: '/rpgmv-dev-notes/',
 
   head: [
+    // [
+    //   'link',
+    //   {
+    //     href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@alpha',
+    //     rel: 'stylesheet',
+    //   },
+    // ],
+    // ['script', { src: 'https://cdn.jsdelivr.net/npm/@docsearch/js@alpha' }],
+
     // 设置 favicon.ico，注意图片放在 public 文件夹下
-    ['link', {
-      rel: 'icon',
-      href: 'little-alice-icon.png'
-    }]
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: 'little-alice-icon.png',
+      },
+    ],
   ],
 
   // 默认主题
@@ -45,24 +57,24 @@ module.exports = {
       appId: 'fOpA1EMy75xXVnyBBfNopgul-9Nh9j0Va',
       appKey: '1hzgeHXNTCtDNQ9XLkPwAlN8',
       // 不显示评论 不提供评论 只使用浏览量显示功能
-      showComment: false
+      showComment: false,
     },
 
+    // https://blog.csdn.net/weixin_55475226/article/details/123363042 可能的配置
     // 正在学习配置
-    algolia: {
-      apiKey: '6d2809cce481a42771539d8823524569',
-      indexName: 'RPGMV-dev-notes',
-      // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
-      // appId: 'N62BQRC6XH',
-    },
-
+    // algolia: {
+    //   apiKey: '6d2809cce481a42771539d8823524569',
+    //   indexName: 'RPGMV-dev-notes',
+    //   // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
+    //   appId: 'N62BQRC6XH',
+    // },
   },
 
   // 代码行数配置
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
   },
 
   // 全部的插件配置
   plugins,
-}
+};
