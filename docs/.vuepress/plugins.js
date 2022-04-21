@@ -162,7 +162,7 @@ module.exports = [
   // ['fulltext-search'],
 
   // 暂时关闭此插件 目前不清楚为什么不能实现中文字符的全局搜索
-  // ['flexsearch'],
+  ['flexsearch'],
 
   // 音乐播放插件
   // ['@vuepress-reco/vuepress-plugin-bgm-player', {
