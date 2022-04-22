@@ -58,7 +58,7 @@ module.exports = {
      * 在所有页面中启用自动生成子侧边栏， 原 sidebar 仍然兼容
      */
     subSidebar: 'auto',
-    sidebarDepth: 3,
+    sidebarDepth: 2,
 
     // 搜索结果显示最大数
     searchMaxSuggestions: 10,
@@ -82,22 +82,6 @@ module.exports = {
 
   // 全部的插件配置
   plugins: [
-    /** 代码域一键复制插件
-     * https: //www.npmjs.com/package/vuepress-plugin-one-click-copy
-     */
-    [
-      'one-click-copy',
-      {
-        copySelector: [
-          'div[class*="language-"] pre',
-          'div[class*="aside-code"] aside',
-        ],
-        copyMessage: '复制成功',
-        toolTipMessage: '复制在剪贴板内',
-        duration: 1500,
-      },
-    ],
-
     /** 侧边栏插件 */
     [
       'vuepress-plugin-auto-sidebar',
@@ -134,51 +118,11 @@ module.exports = {
       },
     ],
 
-    // 动态标题插件 即网站标签的动态变化插件
-    [
-      'dynamic-title',
-      {
-        showText: '欢迎回来',
-        hideText: '正在翻阅MDN和CSDN么？',
-        recoverTime: 2000,
-      },
-    ],
-
-    // 中文名路由路径转换拼音路径 兼容reco主题
-    ['permalink-pinyin', { lowercase: true, separator: '-' }],
-
-    ['@vuepress/pwa'],
-
-    /** 鼠标点击效果插件
-     * npm i vuepress-plugin-cursor-effects -D
-     */
-    ['cursor-effects'],
-
-    // 全文搜索插件
-    ['fulltext-search'],
-
-    [
-      'vuepress-plugin-medium-zoom',
-      {
-        selector: '.my-wrapper .my-img',
-        delay: 1000,
-        options: {
-          margin: 24,
-          background: '#BADA55',
-          scrollOffset: 0,
-        },
-      },
-    ],
-
-    ['@vuepress-reco/vuepress-plugin-loading-page'],
-
     // https://github.com/vuepress-reco/vuepress-plugin-kan-ban-niang/
     [
       '@vuepress-reco/vuepress-plugin-kan-ban-niang',
       {
-        // hibiki 可能的取值 从别人的插件教程中预览
         theme: [
-          'hibiki',
           'blackCat',
           'whiteCat',
           'haru1',
@@ -215,6 +159,60 @@ module.exports = {
         height: 220,
       },
     ],
+
+    /** 代码域一键复制插件
+     * https: //www.npmjs.com/package/vuepress-plugin-one-click-copy
+     */
+    [
+      'one-click-copy',
+      {
+        copySelector: [
+          'div[class*="language-"] pre',
+          'div[class*="aside-code"] aside',
+        ],
+        copyMessage: '复制成功',
+        toolTipMessage: '复制在剪贴板内',
+        duration: 1500,
+      },
+    ],
+
+    // 动态标题插件 即网站标签的动态变化插件
+    [
+      'dynamic-title',
+      {
+        showText: '欢迎回来',
+        hideText: '正在翻阅MDN和CSDN么？',
+        recoverTime: 2000,
+      },
+    ],
+
+    // 中文名路由路径转换拼音路径 兼容reco主题
+    ['permalink-pinyin', { lowercase: true, separator: '-' }],
+
+    ['@vuepress/pwa'],
+
+    /** 鼠标点击效果插件
+     * npm i vuepress-plugin-cursor-effects -D
+     */
+    ['cursor-effects'],
+
+    [
+      'vuepress-plugin-medium-zoom',
+      {
+        selector: '.my-wrapper .my-img',
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: '#BADA55',
+          scrollOffset: 0,
+        },
+      },
+    ],
+
+    ['@vuepress-reco/vuepress-plugin-loading-page'],
+
+    // 全文搜索插件
+    ['fulltext-search'],
 
     // 音乐播放插件
     // ['@vuepress-reco/vuepress-plugin-bgm-player', {
