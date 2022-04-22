@@ -48,7 +48,7 @@ module.exports = {
     sidebarDepth: 2,
 
     // 搜索结果显示最大数
-    searchMaxSuggestions: 10,
+    searchMaxSuggestions: 30,
 
     // 全局作者姓名配置
     author: '阮中楠',
