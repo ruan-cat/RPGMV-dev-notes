@@ -40,10 +40,10 @@ module.exports = {
   ],
 
   // 默认主题
-  theme: '@vuepress/theme-default',
+  // theme: '@vuepress/theme-default',
 
   // reco主题
-  // theme: 'reco',
+  theme: 'reco',
 
   themeConfig: {
     // 目前可以导入图片 但是自己的网站不提供，可以为drillpage增加logo配置
