@@ -22,7 +22,6 @@
     "@vuepress/plugin-back-to-top": "^1.9.5",
     "@vuepress/plugin-medium-zoom": "^1.9.6",
     "@vuepress/plugin-pwa": "^1.9.7",
-    "flexsearch": "^0.7.21",
     "vuepress": "^1.9.5",
     "vuepress-plugin-auto-sidebar": "^2.3.2",
     "vuepress-plugin-comment": "^0.7.3",

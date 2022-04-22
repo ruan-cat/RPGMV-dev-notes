@@ -4,7 +4,6 @@ const nav = require('./nav.js');
 const sortFn = (a, b) => {
   const lastA = Number(a.filename.split('-')[0]);
   const lastB = Number(b.filename.split('-')[0]);
-  // console.log(' now : lastA lastB ', lastA, lastB);
   return lastA > lastB ? 1 : -1;
 };
 
@@ -60,6 +59,9 @@ module.exports = {
      */
     subSidebar: 'auto',
     sidebarDepth: 3,
+
+    // 搜索结果显示最大数
+    searchMaxSuggestions: 10,
 
     // 全局作者姓名配置
     author: '阮中楠',
@@ -125,12 +127,11 @@ module.exports = {
       },
     ],
 
-    ['@vuepress-reco/vuepress-plugin-loading-page', true],
+    ['@vuepress-reco/vuepress-plugin-loading-page'],
 
     // https://github.com/vuepress-reco/vuepress-plugin-kan-ban-niang/
     [
       '@vuepress-reco/vuepress-plugin-kan-ban-niang',
-      true,
       {
         // hibiki 可能的取值 从别人的插件教程中预览
         theme: [
@@ -237,10 +238,10 @@ module.exports = {
     ['@vuepress/pwa'],
 
     // 全文搜索插件 目前失效 目前不清楚为什么不能实现中文字符的全局搜索
-    // ['fulltext-search'],
+    ['fulltext-search'],
 
     // 暂时关闭此插件 目前不清楚为什么不能实现中文字符的全局搜索
-    ['flexsearch'],
+    // ['flexsearch'],
 
     // 音乐播放插件
     // ['@vuepress-reco/vuepress-plugin-bgm-player', {
