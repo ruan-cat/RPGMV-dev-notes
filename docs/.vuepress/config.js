@@ -74,7 +74,7 @@ module.exports = {
       'vuepress-plugin-auto-sidebar',
       {
         title: { mode: 'titlecase' },
-        collapse: { open: false },
+        collapse: { open: true },
 
         // 尽量不再调整
         sidebarDepth: 2,
