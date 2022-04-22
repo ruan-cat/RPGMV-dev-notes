@@ -101,7 +101,7 @@ module.exports = {
     ],
 
     // 中文名路由路径转换拼音路径 兼容reco主题
-    ['permalink-pinyin', { lowercase: true, separator: '-' }],
+    ['permalink-pinyin', { lowercase: true, separator: '.' }],
 
     // https://github.com/vuepress-reco/vuepress-plugin-kan-ban-niang/
     [
