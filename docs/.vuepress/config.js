@@ -72,15 +72,6 @@ module.exports = {
       // 不显示评论 不提供评论 只使用浏览量显示功能
       showComment: false,
     },
-
-    // https://blog.csdn.net/weixin_55475226/article/details/123363042 可能的配置
-    // 正在学习配置
-    // algolia: {
-    //   apiKey: '6d2809cce481a42771539d8823524569',
-    //   indexName: 'RPGMV-dev-notes',
-    //   // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
-    //   appId: 'N62BQRC6XH',
-    // },
   },
 
   // 代码行数配置
@@ -91,7 +82,23 @@ module.exports = {
 
   // 全部的插件配置
   plugins: [
-    // 尝试： 不使用自动生成的侧边栏插件
+    /** 代码域一键复制插件
+     * https: //www.npmjs.com/package/vuepress-plugin-one-click-copy
+     */
+    [
+      'one-click-copy',
+      {
+        copySelector: [
+          'div[class*="language-"] pre',
+          'div[class*="aside-code"] aside',
+        ],
+        copyMessage: '复制成功',
+        toolTipMessage: '复制在剪贴板内',
+        duration: 1500,
+      },
+    ],
+
+    /** 侧边栏插件 */
     [
       'vuepress-plugin-auto-sidebar',
       {
@@ -124,6 +131,49 @@ module.exports = {
           //   regex: '*',
           // },
         ],
+      },
+    ],
+
+    // 动态标题插件 即网站标签的动态变化插件
+    [
+      'dynamic-title',
+      {
+        showText: '欢迎回来',
+        hideText: '正在翻阅MDN和CSDN么？',
+        recoverTime: 2000,
+      },
+    ],
+
+    // 中文名路由路径转换拼音路径 兼容reco主题
+    ['permalink-pinyin', { lowercase: true, separator: '-' }],
+
+    ['@vuepress/pwa'],
+
+    // 全文搜索插件
+    ['fulltext-search'],
+
+    /** 鼠标点击效果插件
+     * npm i vuepress - plugin - cursor - effects - D
+     */
+    [
+      'cursor-effects',
+      {
+        size: 2,
+        shape: ['star'],
+        zIndex: 999999999,
+      },
+    ],
+
+    [
+      'vuepress-plugin-medium-zoom',
+      {
+        selector: '.my-wrapper .my-img',
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: '#BADA55',
+          scrollOffset: 0,
+        },
       },
     ],
 
@@ -172,70 +222,6 @@ module.exports = {
         height: 220,
       },
     ],
-
-    /**
-     * 代码域一键复制插件
-     * https: //www.npmjs.com/package/vuepress-plugin-one-click-copy
-     */
-    [
-      'one-click-copy',
-      {
-        copySelector: [
-          'div[class*="language-"] pre',
-          'div[class*="aside-code"] aside',
-        ],
-        copyMessage: '复制成功',
-        toolTipMessage: '复制在剪贴板内',
-        duration: 1500,
-      },
-    ],
-
-    /**
-     * 鼠标点击效果插件
-     * npm i vuepress - plugin - cursor - effects - D
-     */
-    [
-      'cursor-effects',
-      {
-        size: 2,
-        shape: ['star'],
-        zIndex: 999999999,
-      },
-    ],
-
-    // 动态标题插件 即网站标签的动态变化插件
-    [
-      'dynamic-title',
-      {
-        showText: '欢迎回来',
-        hideText: '正在翻阅MDN和CSDN么？',
-        recoverTime: 2000,
-      },
-    ],
-
-    [
-      'vuepress-plugin-medium-zoom',
-      {
-        selector: '.my-wrapper .my-img',
-        delay: 1000,
-        options: {
-          margin: 24,
-          background: '#BADA55',
-          scrollOffset: 0,
-        },
-      },
-    ],
-
-    // 中文名路由路径转换拼音路径 兼容reco主题
-    ['permalink-pinyin', { lowercase: true, separator: '-' }],
-
-    ['@vuepress/pwa'],
-
-    // 全文搜索插件 目前失效 目前不清楚为什么不能实现中文字符的全局搜索
-    ['fulltext-search'],
-
-    // 暂时关闭此插件 目前不清楚为什么不能实现中文字符的全局搜索
-    // ['flexsearch'],
 
     // 音乐播放插件
     // ['@vuepress-reco/vuepress-plugin-bgm-player', {
