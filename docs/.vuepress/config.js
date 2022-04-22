@@ -149,20 +149,13 @@ module.exports = {
 
     ['@vuepress/pwa'],
 
+    /** 鼠标点击效果插件
+     * npm i vuepress-plugin-cursor-effects -D
+     */
+    ['cursor-effects'],
+
     // 全文搜索插件
     ['fulltext-search'],
-
-    /** 鼠标点击效果插件
-     * npm i vuepress - plugin - cursor - effects - D
-     */
-    [
-      'cursor-effects',
-      {
-        size: 2,
-        shape: ['star'],
-        zIndex: 999999999,
-      },
-    ],
 
     [
       'vuepress-plugin-medium-zoom',
