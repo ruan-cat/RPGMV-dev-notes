@@ -13,6 +13,8 @@
   "author": "阮中楠",
   "license": "ISC",
   "devDependencies": {
+    "vuepress": "^1.9.5",
+    "vuepress-theme-reco": "^1.6.10",
     "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
     "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.0",
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
@@ -21,7 +23,6 @@
     "@vuepress/plugin-back-to-top": "^1.9.5",
     "@vuepress/plugin-medium-zoom": "^1.9.6",
     "@vuepress/plugin-pwa": "^1.9.7",
-    "vuepress": "^1.9.5",
     "vuepress-plugin-auto-sidebar": "^2.3.2",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-cursor-effects": "^1.0.2",
@@ -30,7 +31,6 @@
     "vuepress-plugin-medium-zoom": "^1.1.9",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
-    "vuepress-theme-reco": "^1.6.10",
     "vuepress-plugin-fulltext-search": "^2.2.1"
   }
 }
