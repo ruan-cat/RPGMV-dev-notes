@@ -15,20 +15,13 @@ module.exports = {
   // https://blog.csdn.net/qq_28584685/article/details/88017069
   base: '/rpgmv-dev-notes/',
 
+  // reco主题
+  theme: 'reco',
+
+  // 默认主题
+  // theme: '@vuepress/theme-default',
+
   head: [
-    // [
-    //   'link',
-    //   {
-    //     href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@alpha',
-    //     rel: 'stylesheet',
-    //   },
-    // ],
-    // ['script', { src: 'https://cdn.jsdelivr.net/npm/@docsearch/js@alpha' }],
-
-    // 注入到页面<head> 中的标签,[tagName, { attrName: attrValue }]
-    // https://doc.xugaoyi.com/pages/26997d/
-    ['meta', { name: 'keywords', content: 'rpgmv' }],
-
     // 设置 favicon.ico，注意图片放在 public 文件夹下
     [
       'link',
@@ -39,17 +32,11 @@ module.exports = {
     ],
   ],
 
-  // 默认主题
-  // theme: '@vuepress/theme-default',
-
-  // reco主题
-  theme: 'reco',
-
   themeConfig: {
     // 目前可以导入图片 但是自己的网站不提供，可以为drillpage增加logo配置
     // logo: '/ruanCat-logo.jpg',
-
     nav,
+
     lastUpdated: '上一次更新',
     smoothScroll: true,
     sidebar: 'auto',
@@ -86,15 +73,10 @@ module.exports = {
     [
       'vuepress-plugin-auto-sidebar',
       {
-        title: {
-          mode: 'titlecase',
-        },
+        title: { mode: 'titlecase' },
+        collapse: { open: false },
 
-        collapse: {
-          open: true,
-        },
-
-        // 尽量不在调整
+        // 尽量不再调整
         sidebarDepth: 2,
 
         // 侧边栏插件 使用自定义排序
@@ -117,6 +99,9 @@ module.exports = {
         ],
       },
     ],
+
+    // 中文名路由路径转换拼音路径 兼容reco主题
+    ['permalink-pinyin', { lowercase: true, separator: '-' }],
 
     // https://github.com/vuepress-reco/vuepress-plugin-kan-ban-niang/
     [
@@ -185,9 +170,6 @@ module.exports = {
         recoverTime: 2000,
       },
     ],
-
-    // 中文名路由路径转换拼音路径 兼容reco主题
-    ['permalink-pinyin', { lowercase: true, separator: '-' }],
 
     ['@vuepress/pwa'],
 
