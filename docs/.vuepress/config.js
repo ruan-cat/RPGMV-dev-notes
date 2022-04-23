@@ -196,6 +196,9 @@ module.exports = {
     // 全文搜索插件
     ['fulltext-search'],
 
+    // 使用流程图插件
+    ['mermaidjs'],
+
     // 音乐播放插件
     // ['@vuepress-reco/vuepress-plugin-bgm-player', {
     //   autoplay: true,
