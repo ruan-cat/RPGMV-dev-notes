@@ -1,5 +1,5 @@
 ---
-title: ..else...语句
+title: 8-if-else语句
 date: 2022-04-22 09:00:25
 permalink: /pages/70fbcf/
 categories:
@@ -8,10 +8,11 @@ categories:
 tags:
   - 
 ---
-# 8-if...else...语句
+
+# 8-if-else语句
 
 
-## if...else...语句
+## if-else语句
 上一节的最后的例子，实际上可以写成```if-else```形式的，如下所示：
 ``` js
 if (visitor == "PRES") {
