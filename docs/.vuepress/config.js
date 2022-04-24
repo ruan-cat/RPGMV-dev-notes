@@ -10,7 +10,7 @@ const sortFn = (a, b) => {
 module.exports = {
   lang: 'zh-CN',
   title: '阮中楠的RPGMV开发笔记',
-  description: '整合RMMV生态，从现在开始',
+  description: '前端流行技术在rmmv的实战应用开发经验总结',
 
   // https://blog.csdn.net/qq_28584685/article/details/88017069
   base: '/rpgmv-dev-notes/',
@@ -69,6 +69,9 @@ module.exports = {
 
   // 全部的插件配置
   plugins: [
+    // 使用流程图插件
+    ['mermaidjs', { gantt: { barHeight: 40 } }],
+
     /** 侧边栏插件 */
     [
       'vuepress-plugin-auto-sidebar',
@@ -195,9 +198,6 @@ module.exports = {
 
     // 全文搜索插件
     ['fulltext-search'],
-
-    // 使用流程图插件
-    ['mermaidjs'],
 
     // 音乐播放插件
     // ['@vuepress-reco/vuepress-plugin-bgm-player', {

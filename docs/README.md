@@ -7,16 +7,16 @@ actionLink: /再版前言.html
 features:
 
 - title: 基于mv的JavaScript基础（第二版）
-  details: 不断维护更新的project1论坛经典教程续作。帮助萌新快速构建对mv的JavaScript基础。
+  details: 不断维护更新的project1论坛经典教程续作，帮助萌新快速学习简单的rmmv插件开发。
 
 - title: ES2015+
-  details: 以 JavaScript ES6+ 版本为主插件开发教程，拥抱现代化JavaScript语言。
+  details: 以 JavaScript ES6+ 版本为主插件开发教程，拥抱现代化、模块化的JavaScript。
 
 - title: Drill plugins+
-  details: 以不断更新迭代 Drill 系列插件为主。立巨人之肩，推波助澜，勇攀高峰。
+  details: 以不断更新迭代 Drill 系列插件为例子。立巨人之肩，推波助澜，勇攀高峰。
 
-- title: vue + axios + element-ui
-  details: 将前端流行框架整合到mv，让未来，现在就来。
+- title: vue.js + axios.js + element-ui.js
+  details: 将现代前端开发流行的框架整合到mv中。尝试在全新思路下拓展mv的无限可能。
 
 - title: QJ-Bullet.js
   details: 用仇九的弹幕插件来快速实现简单的战斗系统。
