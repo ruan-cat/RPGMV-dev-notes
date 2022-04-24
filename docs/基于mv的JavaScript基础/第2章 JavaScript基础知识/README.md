@@ -1,3 +1,13 @@
+---
+title: README
+date: 2022-04-22 09:00:25
+permalink: /pages/cbac44/
+categories:
+  - 基于mv的JavaScript基础
+  - 第2章 JavaScript基础知识
+tags:
+  - 
+---
 # 0-章节简介
 本章会涉及一些基础的语法。这些语法和其他多数的编程语言相似或相同，如果你学过或接触过其他类似的编程语言，建议快速浏览即可。
 

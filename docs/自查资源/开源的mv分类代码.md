@@ -1,3 +1,12 @@
+---
+title: 开源的mv分类代码
+date: 2022-04-22 09:00:25
+permalink: /pages/4e74f5/
+categories:
+  - 自查资源
+tags:
+  - 
+---
 # 开源的mv分类代码
 
 作者稍微整理的mv代码分类与翻译，目前保存在以下的开源仓库内。[点此进入仓库。](https://gitee.com/HechiCollegeComputerAssociation/RPGMV_project)

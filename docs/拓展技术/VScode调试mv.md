@@ -1,5 +1,11 @@
 ---
 title: VScode调试mv
+date: 2022-04-22 09:00:25
+permalink: /pages/b5cd47/
+categories: 
+  - 拓展技术
+tags: 
+  - 
 ---
 
 # 用VScode的方式来运行调试mv项目

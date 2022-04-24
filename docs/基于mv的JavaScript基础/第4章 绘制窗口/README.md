@@ -1,3 +1,13 @@
+---
+title: README
+date: 2022-04-22 09:00:25
+permalink: /pages/0f2721/
+categories:
+  - 基于mv的JavaScript基础
+  - 第4章 绘制窗口
+tags:
+  - 
+---
 # 0-章节简介
 本章主要讲解绘制一个自定义的窗口。
 

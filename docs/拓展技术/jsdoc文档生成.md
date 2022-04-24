@@ -1,5 +1,11 @@
 ---
 title: jsdoc文档生成
+date: 2022-04-22 09:00:25
+permalink: /pages/a77a14/
+categories: 
+  - 拓展技术
+tags: 
+  - 
 ---
 
 # 如何使用基于node.js的JSDoc制作自己写的mv项目插件代码的API网页版说明文档

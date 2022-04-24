@@ -1,5 +1,14 @@
 module.exports = [
   {
+    "text": "@pages",
+    "items": [
+      {
+        "text": "@pages",
+        "link": "/@pages/"
+      }
+    ]
+  },
+  {
     "text": "JavaScript",
     "items": [
       {

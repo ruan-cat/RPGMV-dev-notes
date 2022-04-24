@@ -1,5 +1,11 @@
 ---
 title: 使用现代前端流行的开发工具或技术栈拓展mv项目
+date: 2022-04-22 09:00:25
+permalink: /pages/bf34d4/
+categories: 
+  - 拓展技术
+tags: 
+  - 
 ---
 
 # 前言

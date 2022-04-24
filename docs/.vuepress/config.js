@@ -16,10 +16,11 @@ module.exports = {
   base: '/rpgmv-dev-notes/',
 
   // reco主题
-  theme: 'reco',
-
+  // theme: 'reco',
   // 默认主题
   // theme: '@vuepress/theme-default',
+  // reco主题
+  theme: 'vdoing',
 
   head: [
     // 设置 favicon.ico，注意图片放在 public 文件夹下

@@ -1,5 +1,11 @@
 ---
 title: 让Chrome浏览器支持本地访问数据
+date: 2022-04-22 09:00:25
+permalink: /pages/e20810/
+categories: 
+  - 拓展技术
+tags: 
+  - 
 ---
 
 ## 具体解释与实现方式

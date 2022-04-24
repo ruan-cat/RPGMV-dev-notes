@@ -1,5 +1,11 @@
 ---
 title: TypeScript学习
+date: 2022-04-22 09:00:25
+permalink: /pages/3d37b7/
+categories: 
+  - TypeScript
+tags: 
+  - 
 ---
 
 # 阮中楠自己的一些 TypeScript 笔记

@@ -1,3 +1,13 @@
+---
+title: 2-JavaScript语句
+date: 2022-04-22 09:00:25
+permalink: /pages/6fe34d/
+categories:
+  - 基于mv的JavaScript基础
+  - 第2章 JavaScript基础知识
+tags:
+  - 
+---
 # 2-JavaScript语句
 JavaScript有两种语句，简单语句和复合语句。简单语句就是看着简单的，例如：
 ``` js

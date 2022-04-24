@@ -1,3 +1,13 @@
+---
+title: README
+date: 2022-04-22 09:00:25
+permalink: /pages/2dd403/
+categories:
+  - 基于mv的JavaScript基础
+  - 第3章 插件及插件参数和命令
+tags:
+  - 
+---
 # 0-章节简介
 本章主要讲解一些简单的插件编写，以及编写常见的**插件参数**与**插件指令**。
 

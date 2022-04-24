@@ -1,5 +1,11 @@
 ---
 title: mv项目的性质与定位
+date: 2022-04-22 09:00:25
+permalink: /pages/3fac57/
+categories: 
+  - 插件开发
+tags: 
+  - 
 ---
 
 

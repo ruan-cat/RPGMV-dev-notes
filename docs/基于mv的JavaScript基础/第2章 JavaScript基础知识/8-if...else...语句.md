@@ -1,3 +1,13 @@
+---
+title: ..else...语句
+date: 2022-04-22 09:00:25
+permalink: /pages/70fbcf/
+categories:
+  - 基于mv的JavaScript基础
+  - 第2章 JavaScript基础知识
+tags:
+  - 
+---
 # 8-if...else...语句
 
 
