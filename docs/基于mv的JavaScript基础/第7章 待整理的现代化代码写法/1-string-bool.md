@@ -1,0 +1,57 @@
+---
+title: 1-string-bool
+date: 2022-04-26 11:10:53
+permalink: /pages/9bbe71/
+categories:
+  - 基于mv的JavaScript基础
+  - 第7章 待整理的现代化代码写法
+tags:
+  - 
+---
+
+
+
+
+# 1-string-bool.md
+
+
+
+## 反例1
+不要使用[逻辑非运算符](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)来实现字符串类型转换。这个只能用作于判断空字符串。
+``` js
+console.log(!'false', !'true');
+// false false
+```
+
+
+
+
+## 反例2
+不要使用构造对象的方式实现类型转换。[点此学习关于Boolean构造函数的细节](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Boolean)。
+``` js
+console.log(new Boolean('false'), new Boolean('true'));
+// [Boolean: true] [Boolean: true]
+```
+
+
+
+
+
+## 反例3
+不要使用`Boolean`函数来实现字符串的转换。
+``` js
+console.log(Boolean('false'), Boolean('true'));
+// true true
+```
+
+
+
+
+## 标准答案
+使用[JSON.parse](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)函数实现类型转换。
+``` js
+console.log(JSON.parse('false'), JSON.parse('true'));
+// false true
+```
+
+
