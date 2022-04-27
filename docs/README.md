@@ -26,19 +26,14 @@ features:
   details: 用仇九的弹幕插件来快速实现简单的战斗系统。
 
 
-
+postList: none
+bannerBg: none
+hideRightBar: false
 footer: MIT Licensed | Copyright © 2022-present 阮中楠
 ---
 
-<!-- 
-  首页的编写参考文章：
-  https://jackiehao.blog.csdn.net/article/details/106633226
- -->
-
-<!-- https://blog.csdn.net/qq_41327483/article/details/119103300#t15 -->
-<style>
-   background-image: url('https://img-blog.csdnimg.cn/img_convert/6602d9cf3ab2ce79293484b2b871138f.gif');
-</style>
+## 友情链接
+等待阮中楠看情况添加
 
 
 
