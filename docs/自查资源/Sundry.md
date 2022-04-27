@@ -148,3 +148,29 @@ https://rpg.blue/thread-488642-1-1.html
 
 
 2月2号-2月4号我回老家过年，那几天我同时肚子痛，落枕，头晕……
+
+
+
+## 重构别人的网站
+
+### consolelog rmdoc 网站的信息
+目标网站：https://consolelog.gitee.io/rmdoc/rmmv/
+仓库：https://gitee.com/consolelog/rmdoc
+仓库维护者 B站个人空间： https://space.bilibili.com/261142262
+
+### 文件目录结构理解
+核心要转换的目标是成体系的，由.adoc生成的html。处理docs文件夹下面仅有的，有意义的3个html文件。
+
+### 重构策略
+- 使用pandoc对已经上述声明的3个文件转换成md格式的文件。
+- 使用VuePress文档框架构建界面
+
+### 合作重构
+- 与`大胃王`沟通，新建一个全新的仓库。该仓库的全部初始化文件全部由阮中楠提供。
+  - 阮中楠提供3个有意义的md文件，包括附属的img图片
+  - 阮中楠提供全套的，开箱即用的VuePress项目全套配置
+  - 阮中楠声明VuePress文档框架的使用方式，
+- 由大胃王熟悉新的文档编辑框架，用VuePress替换asciidoctor
+- 由大胃王打包生成文档，并使用gitee page推出全新版本的网站
+- 由阮中楠联系9梦菌，让B站视频[【RMMV脚本】（一）了解RPG Maker MV的JS脚本框架与如何编写脚本插件](https://www.bilibili.com/video/BV1dJ41117Tp)置顶新的网站
+
