@@ -32,8 +32,10 @@ hideRightBar: false
 footer: MIT Licensed | Copyright © 2022-present 阮中楠
 ---
 
+
+
 ## 友情链接
-等待阮中楠看情况添加
+- [《阮中楠的RPGMV开发笔记》](https://hechicollegecomputerassociation.gitee.io/justbiubiubiul-rmmv-docs/)
 
 
 
