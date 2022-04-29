@@ -32,3 +32,21 @@ async function getProcessedData(url) {
   return processDataInWorker(v);
 }
 ```
+
+
+## Promise+setTimeout
+我们总是用Promise去封装setTimeout，[点此阅读解释](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Using_promises#在旧式回调_api_中创建_promise)。
+
+下面是一个封装示例：
+``` js
+const wait = (delay = 1000, presetReturnValue = "") =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => resolve(presetReturnValue), delay);
+  });
+const use = async () => {
+  const res = await wait(2 * 1000, true);
+  console.log(" in use : ", res);
+};
+use();
+```
+
