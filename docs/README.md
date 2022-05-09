@@ -12,7 +12,7 @@ features:
 
 - title: 基于mv的JavaScript基础(第二版)
   details: 不断维护更新的project1论坛经典教程续作，帮助萌新快速学习简单的mv插件开发。
-  link: '/基于mv的JavaScript基础/'
+  link: '/基于mv的JavaScript基础/第0章 序言/'
 
 - title: ES2015+
   details: 以 JavaScript ES6+ 版本为主插件开发教程，拥抱现代化、模块化的JavaScript。
