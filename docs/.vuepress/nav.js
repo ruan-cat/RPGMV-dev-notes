@@ -47,8 +47,8 @@ module.exports = [
     "text": "基于mv的JavaScript基础",
     "items": [
       {
-        "text": "基于mv的JavaScript基础",
-        "link": "/基于mv的JavaScript基础/"
+        "text": "第0章 序言",
+        "link": "/基于mv的JavaScript基础/第0章 序言/"
       },
       {
         "text": "第1章 RPG Maker MV以及JavaScript",
