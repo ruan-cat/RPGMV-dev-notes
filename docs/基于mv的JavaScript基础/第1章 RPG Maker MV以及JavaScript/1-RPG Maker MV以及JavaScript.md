@@ -1,5 +1,5 @@
 ---
-title: 第一章 RPG Maker MV以及JavaScript
+title: 1-RPG Maker MV以及JavaScript
 date: 2022-04-22 09:00:25
 permalink: /pages/599f64/
 categories:
@@ -8,7 +8,7 @@ categories:
 tags:
   - 
 ---
-# 第一章 RPG Maker MV以及JavaScript
+# 1-RPG Maker MV以及JavaScript
 
 
 

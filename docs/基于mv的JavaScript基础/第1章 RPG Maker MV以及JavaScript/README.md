@@ -1,5 +1,5 @@
 ---
-title: README
+title: 0-章节简介
 date: 2022-04-22 09:00:25
 permalink: /pages/473aaa/
 categories:
@@ -8,5 +8,5 @@ categories:
 tags:
   - 
 ---
-# 章节简介
+# 0-章节简介
 本章节主要简单介绍RPGMV和JavaScript
