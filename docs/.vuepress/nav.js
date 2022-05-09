@@ -30,6 +30,14 @@ module.exports = [
     "text": "vue-elementUI",
     "items": [
       {
+        "text": "Element Ui",
+        "link": "/vue-elementUI/element-ui/"
+      },
+      {
+        "text": "Vue",
+        "link": "/vue-elementUI/vue/"
+      },
+      {
         "text": "Vue Element UI",
         "link": "/vue-elementUI/"
       }
@@ -67,6 +75,10 @@ module.exports = [
   {
     "text": "拓展技术",
     "items": [
+      {
+        "text": "V Scode",
+        "link": "/拓展技术/VScode/"
+      },
       {
         "text": "拓展技术",
         "link": "/拓展技术/"

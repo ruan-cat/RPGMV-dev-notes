@@ -1,0 +1,11 @@
+---
+title: README
+date: 2022-05-07 17:02:33
+permalink: /pages/18c3c9/
+tags:
+  - 
+---
+
+
+# VScode的使用
+阮中楠只是在这里记录一下VScode的东西。和rmmv关系不大。未来会考虑在教程内专门增加，细化一个VScode的使用配置教程。
