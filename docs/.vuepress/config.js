@@ -51,8 +51,20 @@ module.exports = {
     // 搜索结果显示最大数
     searchMaxSuggestions: 30,
 
-    // 是否打开分类功能，默认true
+    // 是否打开分类功能？ 默认true
     category: false,
+    // 是否打开标签功能？ 默认true
+    tag: false,
+    // 是否打开归档功能？ 默认true
+    archive: false,
+    // 文章内容块的背景底纹 方格
+    contentBgStyle: 1,
+
+    // 最近更新栏
+    updateBar: {
+      // 不显示
+      showToArticle: false,
+    },
 
     // 全局作者姓名配置
     author: '阮中楠',
@@ -202,6 +214,20 @@ module.exports = {
 
     // 全文搜索插件
     ['fulltext-search'],
+
+    // 评论区插件
+    [
+      'vuepress-plugin-comment',
+      {
+        choosen: 'valine',
+        // options选项中的所有参数，会传给Valine的配置
+        options: {
+          el: '#valine-vuepress-comment',
+          appId: 'fOpA1EMy75xXVnyBBfNopgul-9Nh9j0Va',
+          appKey: '1hzgeHXNTCtDNQ9XLkPwAlN8',
+        },
+      },
+    ],
 
     // 音乐播放插件
     // ['@vuepress-reco/vuepress-plugin-bgm-player', {

@@ -1,14 +1,5 @@
 module.exports = [
   {
-    "text": "@pages",
-    "items": [
-      {
-        "text": "@pages",
-        "link": "/@pages/"
-      }
-    ]
-  },
-  {
     "text": "JavaScript",
     "items": [
       {
@@ -27,19 +18,19 @@ module.exports = [
     ]
   },
   {
-    "text": "vue-elementUI",
+    "text": "vue.js",
     "items": [
       {
         "text": "Element Ui",
-        "link": "/vue-elementUI/element-ui/"
+        "link": "/vue.js/element-ui/"
       },
       {
         "text": "Vue",
-        "link": "/vue-elementUI/vue/"
+        "link": "/vue.js/vue/"
       },
       {
-        "text": "Vue Element UI",
-        "link": "/vue-elementUI/"
+        "text": "Vue Js",
+        "link": "/vue.js/"
       }
     ]
   },
