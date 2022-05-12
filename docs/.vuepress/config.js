@@ -86,7 +86,8 @@ module.exports = {
   // 全部的插件配置
   plugins: [
     // 使用流程图插件
-    ['mermaidjs', { gantt: { barHeight: 40 } }],
+    // { gantt: { barHeight: 40 } }
+    ['mermaidjs'],
 
     /** 侧边栏插件 */
     [

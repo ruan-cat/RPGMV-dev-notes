@@ -29,7 +29,7 @@
     "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-go-top": "^1.0.4",
     "vuepress-plugin-medium-zoom": "^1.1.9",
-    "vuepress-plugin-mermaidjs": "^2.0.0-beta.2",
+    "vuepress-plugin-mermaidjs": "1.9.1",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-theme-reco": "^1.6.10",
