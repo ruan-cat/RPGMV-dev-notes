@@ -40,13 +40,15 @@ module.exports = {
 
     lastUpdated: '上一次更新',
     smoothScroll: true,
-    sidebar: 'auto',
+    sidebar: { mode: 'structuring', collapsable: true },
     /**
      * https: //vuepress-theme-reco.recoluan.com/views/1.x/sidebar.html
      * 在所有页面中启用自动生成子侧边栏， 原 sidebar 仍然兼容
      */
     subSidebar: 'auto',
     sidebarDepth: 2,
+    // 右侧文章大纲栏 这里设计成左侧全部的侧边栏 临时使用
+    rightMenuBar: false,
 
     // 搜索结果显示最大数
     searchMaxSuggestions: 30,
