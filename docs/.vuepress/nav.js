@@ -18,6 +18,15 @@ module.exports = [
     ]
   },
   {
+    "text": "cmd",
+    "items": [
+      {
+        "text": "Cmd",
+        "link": "/cmd/"
+      }
+    ]
+  },
+  {
     "text": "vue.js",
     "items": [
       {
@@ -69,6 +78,10 @@ module.exports = [
       {
         "text": "V Scode",
         "link": "/拓展技术/VScode/"
+      },
+      {
+        "text": "Webpack Rmmv",
+        "link": "/拓展技术/webpack-rmmv/"
       },
       {
         "text": "拓展技术",
