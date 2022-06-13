@@ -9,7 +9,7 @@ const sortFn = (a, b) => {
 
 module.exports = {
   lang: 'zh-CN',
-  title: '阮中楠的RPGMV开发笔记',
+  title: '阮喵喵的rmmv开发笔记',
   description: '前端流行技术在rmmv的实战应用开发经验总结',
 
   // https://blog.csdn.net/qq_28584685/article/details/88017069
@@ -48,7 +48,7 @@ module.exports = {
     subSidebar: 'auto',
     sidebarDepth: 2,
     // 右侧文章大纲栏 这里设计成左侧全部的侧边栏 临时使用
-    rightMenuBar: false,
+    // rightMenuBar: false,
 
     // 搜索结果显示最大数
     searchMaxSuggestions: 30,
@@ -144,7 +144,7 @@ module.exports = {
         ],
         clean: false,
         messages: {
-          welcome: '你好，这里是《阮中楠的RPGMV开发笔记》',
+          welcome: '你好，这里是《阮喵喵的rmmv开发笔记》',
           home: '立刻闪现到主页',
           theme: '好吧，希望你能喜欢我的其他小伙伴。',
           close: '立刻关闭此内容，防止分心',
