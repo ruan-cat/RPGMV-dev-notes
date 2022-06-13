@@ -17732,7 +17732,7 @@
             Wa('Layout', 'v-9594f22a').then(e);
           },
         },
-        { path: '/再版前言.html', redirect: '/zai.ban.qian.yan.html' },
+        { path: '/网站说明.html', redirect: '/zai.ban.qian.yan.html' },
         {
           name: 'v-216e929a',
           path: '/pages/599f64/',
@@ -18364,7 +18364,7 @@
               heroText: '阮喵喵的rmmv开发笔记',
               tagline: '前端流行技术在rmmv的实战应用开发经验总结',
               actionText: '立刻阅读',
-              actionLink: '/再版前言.html',
+              actionLink: '/网站说明.html',
               features: [
                 {
                   title: '基于mv的JavaScript基础(第二版)',
@@ -19369,7 +19369,7 @@
             title: '再版说明',
             frontmatter: { title: '再版说明' },
             regularPath: '/%E5%86%8D%E7%89%88%E5%89%8D%E8%A8%80.html',
-            relativePath: '再版前言.md',
+            relativePath: '网站说明.md',
             key: 'v-9594f22a',
             path: '/zai.ban.qian.yan.html',
             headers: [

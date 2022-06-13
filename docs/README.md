@@ -7,7 +7,7 @@ tagline: 前端流行技术在rmmv的实战应用开发经验总结
 # 可以配置首页的图标值 但是由于图片问题，这里不配置
 # heroImage: /ruanCat-logo.jpg
 actionText: 立刻阅读
-actionLink: /再版前言.html
+actionLink: /网站说明.html
 features:
 
 - title: 基于mv的JavaScript基础(第二版)

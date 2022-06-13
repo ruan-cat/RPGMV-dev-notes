@@ -40,7 +40,10 @@ module.exports = {
 
     lastUpdated: '上一次更新',
     smoothScroll: true,
-    sidebar: { mode: 'structuring', collapsable: true },
+    sidebar: {
+      mode: 'structuring',
+      collapsable: true,
+    },
     /**
      * https: //vuepress-theme-reco.recoluan.com/views/1.x/sidebar.html
      * 在所有页面中启用自动生成子侧边栏， 原 sidebar 仍然兼容
@@ -95,8 +98,12 @@ module.exports = {
     [
       'vuepress-plugin-auto-sidebar',
       {
-        title: { mode: 'titlecase' },
-        collapse: { open: true },
+        title: {
+          mode: 'titlecase',
+        },
+        collapse: {
+          open: true,
+        },
 
         // 尽量不再调整
         sidebarDepth: 2,
@@ -123,7 +130,13 @@ module.exports = {
     ],
 
     // 中文名路由路径转换拼音路径 兼容reco主题
-    ['permalink-pinyin', { lowercase: true, separator: '.' }],
+    [
+      'permalink-pinyin',
+      {
+        lowercase: true,
+        separator: '.',
+      },
+    ],
 
     // https://github.com/vuepress-reco/vuepress-plugin-kan-ban-niang/
     [
