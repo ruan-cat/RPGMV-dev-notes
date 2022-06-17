@@ -1,7 +1,7 @@
 ---
 title: 序言
 date: 2022-04-22 09:00:25
-permalink: /pages/fb5fc5/
+permalink: /preface
 categories:
   - 基于mv的JavaScript基础
 tags:
@@ -23,7 +23,7 @@ tags:
 
 第二版相比于第一版的的内容，增加了以下内容：
 - JavaScript ES6+ 语法的使用
-- 现代前端开发工具VScode的使用
+- 现代前端开发工具`VScode`的使用
 
 第二版在大部分内容上，会和第一版相同，并会删除一些多余的内容。
 
@@ -31,7 +31,7 @@ tags:
 
 第二版在语言措辞上会更加的简练，会详细的说明执行步骤。
 
-关于插件开发的视频教程，你可以去B站[搜索](https://search.bilibili.com/all?keyword=SIAKO.Mobi)SIAKO.Mobi。他的视频还包括了```JavaScript```的基础学习教程。
+关于插件开发的视频教程，你可以去B站[搜索](https://search.bilibili.com/all?keyword=SIAKO.Mobi)`SIAKO.Mobi`。他的视频还包括了```JavaScript```的基础学习教程。
 
 
 
@@ -43,6 +43,9 @@ tags:
 第二版的教程采用了个人网站的形式来展示内容，但是并没有提供回复功能。为了方便来自project1论坛的开发者提问，特新建了一个帖子来专门收集回复，[点此进入帖子并提问](https://rpg.blue/thread-488548-1-1.html)。
 
 
+
+## 在gitee直接提出issue
+如果你熟练地使用`issue`，可以直接在`issue`内提出问题。[点此开始提问](https://gitee.com/HechiCollegeComputerAssociation/RPGMV-dev-notes/issues)。
 
 
 

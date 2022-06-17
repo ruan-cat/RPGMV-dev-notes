@@ -7,17 +7,14 @@ permalink: /pages/a6ca3a/
 
 # ???
 
-## 对addChild()方法的理解以及与addWindow()方法的联系，addWindow()方法的必要性说明
-
-在Stage基类和Window基类中，他们都是对PIXI.Container类的实现，在PIXI.Container中，都具有addChild()方法。所以绝大部分的用Stage类和Window类作为超类的子类都可以使用addChild()方法。
-事实上，addWindow()方法其本质也是实现addChild()方法。因此，我们可以尝试全部使用addChild方法来代替使用addWindow方法，减少使用新的方法，减少记忆。源码如下：
-Scene_Base.prototype.addWindow = function(window) {
-    this._windowLayer.addChild(window);
-};
-
-但是我们最好还是使用addWindow方法。因为addWindow方法是建立在Scene_Base类的_windowLayer成员变量，只要控制了_windowLayer变量，就可以对一个场景内部的全体窗口进行统一的控制了。这就是addWindow的必要性。
 
 
+
+## 在`github`内`rmmv`的关键词
+用合适的关键词在g`ithub`内快速搜索合适的`开源插件`，`示例`。
+[`rpg-maker-mv`](https://github.com/topics/rpg-maker-mv) 
+[`rpgmakermv`](https://github.com/topics/rpgmakermv) 
+[`rpg-mv`](https://github.com/topics/rpg-mv) 
 
 
 
