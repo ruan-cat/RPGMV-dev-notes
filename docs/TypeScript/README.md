@@ -21,3 +21,11 @@ tags:
 
 [**《TypeScript 使用指南手册》**](http://www.patrickzhong.com/TypeScript/)
 [点此进入对应仓库](https://github.com/zhongsp/TypeScript)
+
+
+## 疑惑？
+import语句导入时，会在本地构建一个浅拷贝还是一个深拷贝？
+
+import导入的模块可以被修改么？
+
+
