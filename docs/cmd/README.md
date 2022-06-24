@@ -15,6 +15,9 @@ https://blog.csdn.net/qq_31319235/article/details/119725835
 树状图输出命令
 https://blog.csdn.net/weixin_43900833/article/details/86565085
 
+常用命令
+`tree \f > list.md`
+输出全部的文件和文件夹，并将结果保存输出到`list.md`文件内。
 
 
 ## del 
