@@ -1,13 +1,16 @@
 ---
-title: 开源的mv分类代码
+title: rmmv源码翻译
 date: 2022-04-22 09:00:25
-permalink: /pages/4e74f5/
+permalink: /resources/rmmv-source-code-translation/
 categories:
   - 自查资源
 tags:
   - 
 ---
-# 开源的mv分类代码
+
+
+
+# rmmv源码翻译
 
 作者稍微整理的mv代码分类与翻译，目前保存在以下的开源仓库内。[点此进入仓库。](https://gitee.com/HechiCollegeComputerAssociation/RPGMV_project)
 
@@ -17,5 +20,26 @@ tags:
 
 
 作者用JSDoc的方式注释了一部分的方法，为了方便阅读，可以选择下载out文件夹并运行index.html文件来阅读API文档。[点此进入目标文件。](https://gitee.com/HechiCollegeComputerAssociation/RPGMV_project/blob/master/out/index.html)
+
+
+
+
+# 更多的翻译源
+rmmv有很多的源码翻译，网站维护者会持续地搜集更多的源码解析，这里列举一些已经做的比较完善的rmmv源码解析。
+
+## rmmv-doc-web
+[点此浏览国外的，现成的rmmv源码翻译](https://kinoar.github.io/rmmv-doc-web/globals.html)。
+
+
+## 9梦菌
+[点此阅览9梦菌整理编纂的rmmv源码翻译。](https://gitee.com/jiumengjun/rmmv)
+
+[点此观看相关的B站视频。](https://www.bilibili.com/video/BV1dJ41117Tp)
+
+
+
+
+
+
 
 
