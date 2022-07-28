@@ -34,6 +34,10 @@ module.exports = [
         "link": "/vue.js/element-ui/"
       },
       {
+        "text": "Node Sass",
+        "link": "/vue.js/node-sass/"
+      },
+      {
         "text": "Vue",
         "link": "/vue.js/vue/"
       },
