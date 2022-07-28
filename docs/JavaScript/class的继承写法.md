@@ -1,5 +1,8 @@
-
-
+---
+title: class的继承写法
+date: 2022-07-28 11:18:50
+permalink: /pages/JavaScript/class-inherit-overwrite
+---
 
 
 # class的继承写法

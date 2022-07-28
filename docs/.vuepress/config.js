@@ -22,6 +22,9 @@ module.exports = {
   // reco主题
   theme: 'vdoing',
 
+  // 重新指定端口号 尽可能不要占用8080端口
+  port: 6312,
+
   head: [
     // 设置 favicon.ico，注意图片放在 public 文件夹下
     [
