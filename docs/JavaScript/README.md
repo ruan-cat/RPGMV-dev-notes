@@ -2,10 +2,6 @@
 title: JavaScript学习
 date: 2022-04-22 09:00:25
 permalink: /pages/09ccca/
-categories: 
-  - JavaScript
-tags: 
-  - 
 ---
 
 # 阮中楠自己的一些JavaScript笔记
@@ -34,6 +30,10 @@ async function getProcessedData(url) {
 ```
 
 
+
+
+
+
 ## Promise+setTimeout
 我们总是用Promise去封装setTimeout，[点此阅读解释](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Using_promises#在旧式回调_api_中创建_promise)。
 
@@ -49,4 +49,8 @@ const use = async () => {
 };
 use();
 ```
+
+
+
+
 
