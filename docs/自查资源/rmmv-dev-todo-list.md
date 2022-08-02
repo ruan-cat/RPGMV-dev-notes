@@ -1,7 +1,7 @@
 ---
 title: rmmv-dev-todo-list
 date: 2022-07-06 11:46:31
-permalink: /pages/4c52ff/
+permalink: /rmmv-dev-todo-list
 ---
 
 ## 作者对于rmmv的工作目标（rmmv开发待办）
