@@ -1,11 +1,8 @@
 ---
 title: VScode使用快捷键
 date: 2022-04-22 09:00:25
-permalink: /pages/c73398/
-categories:
-  - 拓展技术
+permalink: /vscode/shortcut-key/
 tags:
-  - 
 ---
 
 # VScode使用快捷键
@@ -13,9 +10,8 @@ tags:
 
 
 
-
-
-
+## 快速文件定位
+默认`Ctrl+Shift+E`聚焦到文件列表。需要先聚焦到被打开的文件内，才能快速定位侧边栏的文件夹目录位置。[点此查看参考原文。](https://blog.csdn.net/xuchaoxin1375/article/details/112059873#t10)
 
 
 
