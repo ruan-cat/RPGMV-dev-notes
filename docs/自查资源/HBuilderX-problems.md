@@ -1,7 +1,7 @@
 
 
 # 现象
-运行HBuilder X时也出现了类似的错误。如下图：
+运行`HBuilder X`时也出现了类似的错误。如下图：
 ![img](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220727143320834.png)
 
 错误关键词：
@@ -12,11 +12,19 @@ c:\ws\src\util-inl.h:372: Assertion `!(n > 0) || (ret != nullptr)' failed.
 
 
 # 解决方案
-我自己都迷迷糊糊的处理了此问题。只能猜测是HBuilder X本身自带的node有问题，需要替换。这里我猜测是32位的不合适，需要手动换成64位。
+我自己都迷迷糊糊的处理了此问题。只能猜测是`HBuilder X`本身自带的`node`有问题，需要替换。这里我猜测是`32`位的不合适，需要手动换成`64`位。
+
+
+
 
 ## 找到目标并确认版本号
-在路径HBuilderX\plugins\node内，查询node.exe的版本，我这里是12.22.1.0。如下图：
+在路径`HBuilderX\plugins\node`内，查询`node.exe`的版本，我这里是`12.22.1.0`。如下图：
 ![image-20220805151441567](D:\common-software\typora-img-temp-store\image-20220805151441567.png)
+
+
+
+
+
 
 
 ## 到官网内下载node.exe
@@ -26,11 +34,20 @@ c:\ws\src\util-inl.h:372: Assertion `!(n > 0) || (ret != nullptr)' failed.
 下载链接为：[https://nodejs.org/download/release/](https://nodejs.org/download/release/)
 
 
+
+
+
+
 ## 直接替换node.exe
-解压缩安装包，并直接替换node.exe文件。选择的文件如下图所示：
+解压缩安装包，并直接替换`node.exe`文件。选择的文件如下图所示：
 ![image-20220805152040764](D:\common-software\typora-img-temp-store\image-20220805152040764.png)
 
-我们仅替换一个node.exe即可。
+我们仅替换一个`node.exe`即可。
+
+
+
+
+
 
 
 ## 运行项目
