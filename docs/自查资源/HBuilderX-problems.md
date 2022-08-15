@@ -1,3 +1,8 @@
+---
+title: HBuilderX-problems
+date: 2022-08-05 15:08:24
+permalink: /pages/956375/
+---
 
 
 # 现象

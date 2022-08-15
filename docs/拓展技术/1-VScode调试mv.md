@@ -49,14 +49,14 @@ tags:
 
 #### Live Server
 具体截图如下：
-![](https://gitee.com/HechiCollegeComputerAssociation/image-store/raw/master/picgo-file/image-20220223091736226-16455790913541.png)
+![image-20220815124912429](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220815124912429.png)
+
+
 
 
 #### Debugger for Chrome
 具体截图如下：
-![image-20220223091933586](https://gitee.com/HechiCollegeComputerAssociation/image-store/raw/master/picgo-file/image-20220223091933586.png)
-
-
+![image-20220815125004409](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220815125004409.png)
 
 
 
