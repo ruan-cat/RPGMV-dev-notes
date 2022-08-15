@@ -75,7 +75,7 @@ JavaScript是一种属于网络的脚本语言,已经被广泛用于Web应用开
 首先先明确mv项目的目录结构，如下图；
 ![](https://rpg.blue/data/attachment/forum/201608/15/162940b3og0z9ha819o1ot.png)
 
-- **audio** 视频资源
+- **audio** 声效资源
 - **data** mv数据库，如装备数据
 - **fonts** 字体
 - **icon** 项目运行的图标

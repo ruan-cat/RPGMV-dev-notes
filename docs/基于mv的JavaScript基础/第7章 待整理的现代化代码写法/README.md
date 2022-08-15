@@ -19,7 +19,7 @@ tags:
 
 ### 例子1
 
-![image-20220224091726292](https://gitee.com/HechiCollegeComputerAssociation/image-store/raw/master/picgo-file/image-20220224091726292.png)
+![image-20220224091726292](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220224091726292.png)
 
 我们在对象字面量内为```obj```的```sayname```属性赋值，其中赋值的是```fun```函数的返回值。```fun```函数的返回值是```undefined```，所以我们的```obj.sayname```取值是```undefined```。这是一个有意义的的取值，取值为```undefined```。赋值有效，不报错。
 
@@ -32,7 +32,7 @@ tags:
 
 ### 例子2
 
-![image-20220224091808996](https://gitee.com/HechiCollegeComputerAssociation/image-store/raw/master/picgo-file/image-20220224091808996.png)
+![image-20220224091808996](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220224091808996.png)
 
 结合[例子1](#例子1)，```sayname```变量是明确的，确定的```undefined```值，```undefined```不是一个函数，因此报错。
 
@@ -47,7 +47,7 @@ tags:
 
 ### 例子3
 
-![image-20220224091655389](https://gitee.com/HechiCollegeComputerAssociation/image-store/raw/master/picgo-file/image-20220224091655389.png)
+![image-20220224091655389](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220224091655389.png)
 
 我们在对象字面量内为```obj```的```sayname```属性赋值，其中赋值的是```fun```函数，是一个类型为函数的，取名为```fun```的变量。```sayname```是函数，而不是[例子1](#例子1)的函数返回值了。
 
@@ -65,7 +65,7 @@ tags:
 
 ### 例子4 <Badge text='标准正解' />
 
-![image-20220224091823178](https://gitee.com/HechiCollegeComputerAssociation/image-store/raw/master/picgo-file/image-20220224091823178.png)
+![image-20220224091823178](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220224091823178.png)
 
 在[例子3](#例子3)的基础上，我们调用一个函数，并得到了想要的结果。我们首先对属性赋值为函数，然后执行函数。
 
@@ -79,7 +79,7 @@ tags:
 
 ### 例子5 <Badge type='error' text='拓展写法' />
 
-![image-20220224091837224](https://gitee.com/HechiCollegeComputerAssociation/image-store/raw/master/picgo-file/image-20220224091837224.png)
+![image-20220224091837224](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220224091837224.png)
 
 使用```getter```函数来定义伪属性。此例子的内容会颠覆上述的全部4个例子。仅作为拓展学习内容。
 
