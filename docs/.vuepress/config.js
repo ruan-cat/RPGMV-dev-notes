@@ -100,6 +100,8 @@ module.exports = {
     /** 侧边栏插件 */
     [
       'vuepress-plugin-auto-sidebar',
+      // 暂时开启侧边栏配置，在新的分支内会提供新的方案，避免使用传统的侧边栏插件
+      // false,
       {
         title: { mode: 'titlecase' },
         collapse: { open: true },
@@ -121,7 +123,6 @@ module.exports = {
           // },
         ],
       },
-      false,
     ],
 
     // 中文名路由路径转换拼音路径 兼容reco主题
