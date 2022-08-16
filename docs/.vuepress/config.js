@@ -101,26 +101,17 @@ module.exports = {
     [
       'vuepress-plugin-auto-sidebar',
       {
-        title: {
-          mode: 'titlecase',
-        },
-        collapse: {
-          open: true,
-        },
+        title: { mode: 'titlecase' },
+        collapse: { open: true },
 
         // 尽量不再调整
         sidebarDepth: 2,
 
         // 侧边栏插件 使用自定义排序
-        sort: {
-          mode: 'custom',
-          fn: sortFn,
-        },
+        sort: { mode: 'custom', fn: sortFn },
 
         // 自动生成的侧边栏文件名
-        output: {
-          filename: 'sidebar-auto',
-        },
+        output: { filename: 'sidebar-auto' },
 
         ignore: [
           // 忽略 `/menu3/menu3-3/` 目录下以 `ignore-` 开头的文件
@@ -130,6 +121,7 @@ module.exports = {
           // },
         ],
       },
+      false,
     ],
 
     // 中文名路由路径转换拼音路径 兼容reco主题
