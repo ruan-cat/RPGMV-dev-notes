@@ -1,12 +1,5 @@
 const nav = require('./nav.js');
 
-/** 侧边栏插件的排序函数 */
-const sortFn = (a, b) => {
-  const lastA = Number(a.filename.split('-')[0]);
-  const lastB = Number(b.filename.split('-')[0]);
-  return lastA > lastB ? 1 : -1;
-};
-
 module.exports = {
   lang: 'zh-CN',
   title: '阮喵喵的rmmv开发笔记',
@@ -98,33 +91,6 @@ module.exports = {
     // 使用流程图插件
     // { gantt: { barHeight: 40 } }
     ['mermaidjs'],
-
-    /** 侧边栏插件 */
-    [
-      'vuepress-plugin-auto-sidebar',
-      false,
-      {
-        title: { mode: 'titlecase' },
-        collapse: { open: true },
-
-        // 尽量不再调整
-        sidebarDepth: 2,
-
-        // 侧边栏插件 使用自定义排序
-        sort: { mode: 'custom', fn: sortFn },
-
-        // 自动生成的侧边栏文件名
-        output: { filename: 'sidebar-auto' },
-
-        ignore: [
-          // 忽略 `/menu3/menu3-3/` 目录下以 `ignore-` 开头的文件
-          // {
-          //   menu: '/drill-api/2.6.1/',
-          //   regex: '*',
-          // },
-        ],
-      },
-    ],
 
     // 中文名路由路径转换拼音路径 兼容reco主题
     [
