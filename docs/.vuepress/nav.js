@@ -47,6 +47,17 @@ module.exports = [
       },
     ],
   },
+
+  {
+    text: 'rmmv',
+    items: [
+      { text: '基于mv的JavaScript基础', link: '/rmmv-base-js-course/' },
+      { text: '插件开发' },
+      { text: '拓展技术' },
+      { text: '自查资源' },
+    ],
+  },
+
   {
     text: '基于mv的JavaScript基础',
     items: [
@@ -76,6 +87,7 @@ module.exports = [
       },
     ],
   },
+
   {
     text: '拓展技术',
     items: [
