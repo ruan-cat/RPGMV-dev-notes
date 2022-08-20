@@ -58,6 +58,8 @@ module.exports = {
 
     // 搜索结果显示最大数
     searchMaxSuggestions: 30,
+    // 搜索栏预设值
+    searchPlaceholder: '按下 𝑺 搜索',
 
     // 是否打开分类功能？ 默认true
     category: false,

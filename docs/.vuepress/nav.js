@@ -1,5 +1,15 @@
 module.exports = [
   {
+    text: 'rmmv',
+    items: [
+      { text: '基于mv的JavaScript基础', link: '/rmmv-base-js-course/' },
+      { text: '插件开发' },
+      { text: '拓展技术', link: '/extend-tech/' },
+      { text: '自查资源' },
+    ],
+  },
+
+  {
     text: 'JavaScript',
     items: [
       {
@@ -44,46 +54,6 @@ module.exports = [
       {
         text: 'Vue Js',
         link: '/vue.js/',
-      },
-    ],
-  },
-
-  {
-    text: 'rmmv',
-    items: [
-      { text: '基于mv的JavaScript基础', link: '/rmmv-base-js-course/' },
-      { text: '插件开发' },
-      { text: '拓展技术' },
-      { text: '自查资源' },
-    ],
-  },
-
-  {
-    text: '基于mv的JavaScript基础',
-    items: [
-      {
-        text: '第0章 序言',
-        link: '/基于mv的JavaScript基础/第0章 序言/',
-      },
-      {
-        text: '第1章 RPG Maker MV以及JavaScript',
-        link: '/基于mv的JavaScript基础/第1章 RPG Maker MV以及JavaScript/',
-      },
-      {
-        text: '第2章 JavaScript基础知识',
-        link: '/基于mv的JavaScript基础/第2章 JavaScript基础知识/',
-      },
-      {
-        text: '第3章 插件及插件参数和命令',
-        link: '/基于mv的JavaScript基础/第3章 插件及插件参数和命令/',
-      },
-      {
-        text: '第4章 绘制窗口',
-        link: '/基于mv的JavaScript基础/第4章 绘制窗口/',
-      },
-      {
-        text: '第7章 待整理的现代化代码写法',
-        link: '/基于mv的JavaScript基础/第7章 待整理的现代化代码写法/',
       },
     ],
   },
