@@ -6,8 +6,8 @@
  * 类的命名规范，我们总是默认让类的命名遵循大驼峰命名法
  */
 function LittleGirl() {
-  this.defaultLines = "嘤嘤嘤";
-};
+  this.defaultLines = '嘤嘤嘤';
+}
 
 /**
  * 撒娇方法
@@ -15,12 +15,8 @@ function LittleGirl() {
  * @description 小萝莉对象撒娇
  */
 LittleGirl.prototype.coquetry = function () {
-  console.log(" 发出了： " + this.defaultLines + " 的声音。");
+  console.log(' 发出了： ' + this.defaultLines + ' 的声音。');
 };
-
-
-
-
 
 /**
  * 小爱丽丝类
@@ -29,13 +25,13 @@ LittleGirl.prototype.coquetry = function () {
  */
 function LittleAlice() {
   LittleGirl.call(this);
-  this.defaultLines = "不可以涩涩哦~";
-};
+  this.defaultLines = '不可以涩涩哦~';
+}
 
 // 用Object.create方法实现原型链的继承
 LittleAlice.prototype = Object.create(LittleGirl.prototype);
-// 指定小爱丽丝类的构造器为小萝莉
-LittleAlice.prototype.constructor = LittleGirl;
+// 指定小爱丽丝类的构造器上面刚定义的构造函数
+LittleAlice.prototype.constructor = LittleAlice;
 
 /**
  * 阮喵喵 属于一种小爱丽丝
