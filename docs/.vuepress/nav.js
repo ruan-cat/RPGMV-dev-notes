@@ -1,11 +1,13 @@
 module.exports = [
   {
     text: 'rmmv',
+    // ariaLabel: 'Language Menu',
     items: [
       { text: '基于mv的JavaScript基础', link: '/rmmv-base-js-course/' },
       { text: '插件开发' },
       { text: '拓展技术', link: '/extend-tech/' },
-      { text: '自查资源' },
+      { text: '源码解析', link: '/reading-source-code/' },
+      { text: '自查资源', link: '/rmmv-resource/' },
     ],
   },
 
@@ -72,28 +74,6 @@ module.exports = [
       {
         text: '拓展技术',
         link: '/拓展技术/',
-      },
-    ],
-  },
-  {
-    text: '插件开发',
-    items: [
-      {
-        text: '原理解析',
-        link: '/插件开发/原理解析/',
-      },
-      {
-        text: '插件开发',
-        link: '/插件开发/',
-      },
-    ],
-  },
-  {
-    text: '自查资源',
-    items: [
-      {
-        text: '自查资源',
-        link: '/自查资源/',
       },
     ],
   },

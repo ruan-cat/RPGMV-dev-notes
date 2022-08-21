@@ -20,11 +20,13 @@ module.exports = {
 
   head: [
     // 设置 favicon.ico，注意图片放在 public 文件夹下
+    ['link', { rel: 'icon', href: 'little-alice-icon.png' }],
+    ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
     [
       'link',
       {
-        rel: 'icon',
-        href: 'little-alice-icon.png',
+        rel: 'stylesheet',
+        href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css',
       },
     ],
   ],
