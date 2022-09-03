@@ -12,7 +12,8 @@ module.exports = {
   description: '前端流行技术在rmmv的实战应用开发经验总结',
 
   // https://blog.csdn.net/qq_28584685/article/details/88017069
-  base: '/rpgmv-dev-notes/',
+  // base: '/rpgmv-dev-notes/',
+  base: '/',
 
   // reco主题
   // theme: 'reco',
