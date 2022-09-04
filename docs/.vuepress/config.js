@@ -11,7 +11,13 @@ module.exports = {
   title: '阮喵喵的rmmv开发笔记',
   description: '前端流行技术在rmmv的实战应用开发经验总结',
 
-  // https://blog.csdn.net/qq_28584685/article/details/88017069
+  /** 静态网页在服务器域名内的根路径
+   * 这里的路径不再取值为与gitee仓库相同的仓库名 因为目前该网站部署到github上，不再需要此配置
+   * 如果需要考虑gitee站点的部署，那么静态文件就必须提交到gitee仓库上，这很有问题，不利于自动化部署
+   *
+   * 该配置的参考资料如下：
+   * https://blog.csdn.net/qq_28584685/article/details/88017069
+   */
   // base: '/rpgmv-dev-notes/',
   base: '/',
 
