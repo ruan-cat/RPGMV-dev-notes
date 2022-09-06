@@ -67,6 +67,15 @@ module.exports = {
     // 右侧文章大纲栏 这里设计成左侧全部的侧边栏 临时使用
     // rightMenuBar: false,
 
+    // 当你提供了 themeConfig.repo 选项，将会自动在每个页面的导航栏生成生成一个 GitHub 链接，
+    // 以及在页面的底部生成一个 "Edit this page" 链接。
+    repo: 'RuanZhongNan/RPGMV-dev-notes',
+    repoLabel: 'github',
+    lastUpdated: '上次更新',
+    // 不提供github文件编辑路径 该路径指向不准确
+    editLinks: false,
+    // editLinkText: '帮助我们改善此页面！',
+
     // 搜索结果显示最大数
     searchMaxSuggestions: 30,
     // 搜索栏预设值
