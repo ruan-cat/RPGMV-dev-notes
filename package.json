@@ -34,5 +34,9 @@
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-theme-reco": "^1.6.10",
     "vuepress-theme-vdoing": "^1.11.2"
+  },
+  "dependencies": {
+    "@vssue/api-gitee-v5": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8"
   }
 }
