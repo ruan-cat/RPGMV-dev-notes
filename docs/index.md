@@ -33,6 +33,7 @@ features:
 
 
 postList: none
+# bannerBg: /background-image/alice-1.jpg
 bannerBg: none
 hideRightBar: false
 footer: MIT Licensed | Copyright © 2022-present 阮中楠

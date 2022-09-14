@@ -90,6 +90,9 @@ module.exports = {
     // 文章内容块的背景底纹 方格
     contentBgStyle: 1,
 
+    // 每个文章背后的背景图片 目前默认使用全部的小爱丽丝
+    bodyBgImg: '/background-image/alice-1.jpg',
+
     // 最近更新栏
     updateBar: {
       // 不显示
