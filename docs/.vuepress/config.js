@@ -233,19 +233,35 @@ module.exports = {
     // 全文搜索插件
     ['fulltext-search'],
 
-    // 评论区插件
     [
-      'vuepress-plugin-comment',
+      'vuepress-plugin-vssue-global',
       {
-        choosen: 'valine',
-        // options选项中的所有参数，会传给Valine的配置
-        options: {
-          el: '#valine-vuepress-comment',
-          appId: 'fOpA1EMy75xXVnyBBfNopgul-9Nh9j0Va',
-          appKey: '1hzgeHXNTCtDNQ9XLkPwAlN8',
-        },
+        platform: 'gitee',
+        title: '[Comment]<%- frontmatter.title %>',
+        needComments: true,
+        // 其他的 Vssue 配置 来自于阮中楠的gitee第三方应用配置
+        clientId:
+          '0b6402f3b4d11e5f3a79d51b5689a19c0410382784f4a1945e0164778b5d5725',
+        clientSecret:
+          '56e8f65284b1c1a11a13fa41350395c3943c415e31dd97948514590e793e868a',
+        owner: 'HechiCollegeComputerAssociation',
+        repo: 'RPGMV-dev-notes',
       },
     ],
+
+    // 评论区插件 目前不使用这种评论区插件 使用的是上面的插件
+    // [
+    //   'vuepress-plugin-comment',
+    //   {
+    //     choosen: 'valine',
+    //     // options选项中的所有参数，会传给Valine的配置
+    //     options: {
+    //       el: '#valine-vuepress-comment',
+    //       appId: 'fOpA1EMy75xXVnyBBfNopgul-9Nh9j0Va',
+    //       appKey: '1hzgeHXNTCtDNQ9XLkPwAlN8',
+    //     },
+    //   },
+    // ],
 
     [
       {
