@@ -201,6 +201,28 @@ module.exports = {
       },
     ],
 
+    /** 图片单点放大插件 来自官方插件
+     * https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html
+     * 暂时不使用 使用新的插件实现该功能
+     */
+    // ['@vuepress/medium-zoom'],
+
+    /** 图片单点放大插件 来自社区
+     * https://vuepress-community.netlify.app/zh/plugins/medium-zoom/
+     */
+    [
+      'vuepress-plugin-medium-zoom',
+      {
+        selector: 'img',
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: '#7e7e7e',
+          scrollOffset: 0,
+        },
+      },
+    ],
+
     // 动态标题插件 即网站标签的动态变化插件
     [
       'dynamic-title',
@@ -217,19 +239,6 @@ module.exports = {
      * npm i vuepress-plugin-cursor-effects -D
      */
     ['cursor-effects'],
-
-    [
-      'vuepress-plugin-medium-zoom',
-      {
-        selector: '.my-wrapper .my-img',
-        delay: 1000,
-        options: {
-          margin: 24,
-          background: '#BADA55',
-          scrollOffset: 0,
-        },
-      },
-    ],
 
     ['@vuepress-reco/vuepress-plugin-loading-page'],
 
