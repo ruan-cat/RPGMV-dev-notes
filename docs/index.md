@@ -22,6 +22,7 @@ features:
 
 - title: Drill plugins+
   details: 以不断更新迭代 Drill 系列插件为例子。立巨人之肩，推波助澜，勇攀高峰。
+  # 目前 首页的内容无法跳转外部链接
   # link: 'https://rpg.blue/thread-409713-1-1.html'
 
 - title: vue.js + axios.js + element-ui.js
