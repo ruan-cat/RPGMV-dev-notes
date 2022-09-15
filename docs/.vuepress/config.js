@@ -92,6 +92,8 @@ module.exports = {
 
     // 每个文章背后的背景图片 目前默认使用全部的小爱丽丝
     bodyBgImg: '/background-image/alice-1.jpg',
+    // 图片不做任何透明滤镜效果
+    bodyBgImgOpacity: 1,
 
     // 最近更新栏
     updateBar: {
