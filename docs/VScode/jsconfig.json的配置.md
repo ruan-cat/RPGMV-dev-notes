@@ -1,0 +1,4 @@
+
+
+# Vscode中alias跳转（别名路径跳转-解决@跳转）
+https://blog.csdn.net/Sheng_zhenzhen/article/details/109377431
