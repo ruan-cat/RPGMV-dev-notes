@@ -32,6 +32,7 @@
     "vuepress-plugin-mermaidjs": "1.9.1",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
+    "vuepress-plugin-reading-progress": "^1.0.10",
     "vuepress-theme-reco": "^1.6.10",
     "vuepress-theme-vdoing": "^1.11.2"
   },
