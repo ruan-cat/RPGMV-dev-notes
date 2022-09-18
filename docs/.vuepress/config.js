@@ -87,8 +87,8 @@ module.exports = {
     tag: false,
     // 是否打开归档功能？ 默认true
     archive: false,
-    // 文章内容块的背景底纹 方格
-    contentBgStyle: 1,
+    // 文章内容块的背景底纹 方格 目前使用了背景图 故这里不提供底部方格线
+    // contentBgStyle: 1,
 
     // 每个文章背后的背景图片 目前默认使用全部的小爱丽丝
     bodyBgImg: '/background-image/alice-1.jpg',
@@ -136,6 +136,9 @@ module.exports = {
     // { gantt: { barHeight: 40 } }
     ['mermaidjs'],
 
+    // 位于页面顶部的进度条
+    ['reading-progress'],
+
     // 中文名路由路径转换拼音路径 兼容reco主题
     [
       'permalink-pinyin',
@@ -148,6 +151,8 @@ module.exports = {
     // https://github.com/vuepress-reco/vuepress-plugin-kan-ban-niang/
     [
       '@vuepress-reco/vuepress-plugin-kan-ban-niang',
+      // 由于现在使用了背景图，看板娘插件有遮挡，故取消了该插件的使用
+      false,
       {
         theme: [
           'blackCat',

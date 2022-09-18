@@ -1,0 +1,31 @@
+// 调整不同主题模式下的颜色样式代码
+// 参考资料： https://notes.youngkbt.cn/about/website/style/#样式代码
+
+// TODO: 未来可能需要频繁地调整首页透明度的取值
+
+// 明亮主题模式
+.theme-mode-light
+  --mainBg: rgba(255,255,255,.75)
+  --sidebarBg: rgba(255,255,255,.75)
+
+// 暗黑主题模式
+.theme-mode-dark
+  --mainBg: rgba(30,30,34,.75)
+  --sidebarBg: rgba(30,30,34,.75)
+  // 在深色模式下 背景图的样式使用和首页语言的灰色滤镜
+  .body-bg
+    filter: brightness(60%);
+
+
+// 根据滚动条插件说明，更改样式
+// 参考资料： https://github.com/tolking/vuepress-plugin-reading-progress#style
+$readingBgColor = transparent
+$readingZIndex = 1000
+$readingSize = 3px
+
+// 等待替换为正常的小爱丽丝蓝
+$readingProgressColor = #b160ea
+
+//  官方给出的渐变色配置
+//  $readingProgressImage = none
+$readingProgressImage = linear-gradient(-120deg, #E50743 0%, #F9870F 15%, #E8ED30 30%, #3FA62E 45%, #3BB4D7 60%, #2F4D9E 75%, #71378A 80%)
