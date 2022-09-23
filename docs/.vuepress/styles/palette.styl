@@ -3,15 +3,18 @@
 
 // TODO: 未来可能需要频繁地调整首页透明度的取值
 
+$mainBg-transparent = 0.94;
+$sidebarBg-transparent = 0.75;
+
 // 明亮主题模式
 .theme-mode-light
-  --mainBg: rgba(255,255,255,.75)
-  --sidebarBg: rgba(255,255,255,.75)
+  --mainBg: rgba(255,255,255, $mainBg-transparent)
+  --sidebarBg: rgba(255,255,255, $sidebarBg-transparent)
 
 // 暗黑主题模式
 .theme-mode-dark
-  --mainBg: rgba(30,30,34,.75)
-  --sidebarBg: rgba(30,30,34,.75)
+  --mainBg: rgba(30,30,34, $mainBg-transparent)
+  --sidebarBg: rgba(30,30,34, $sidebarBg-transparent)
   // 在深色模式下 背景图的样式使用和首页语言的灰色滤镜
   .body-bg
     filter: brightness(60%);
