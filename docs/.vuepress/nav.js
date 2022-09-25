@@ -10,6 +10,7 @@ module.exports = [
       { text: '自查资源', link: '/rmmv-resource/' },
     ],
   },
+  { text: 'cmd命令', link: '/cmd/' },
   { text: 'B站空间', link: 'https://space.bilibili.com/359907572' },
   { text: 'gitee', link: 'https://gitee.com/HechiCollegeComputerAssociation' },
 ];
