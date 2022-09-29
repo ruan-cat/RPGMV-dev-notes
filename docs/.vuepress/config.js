@@ -249,6 +249,9 @@ module.exports = {
 
     ['@vuepress-reco/vuepress-plugin-loading-page'],
 
+    // 百度自动推送插件
+    ['vuepress-plugin-baidu-autopush'],
+
     // 全文搜索插件
     ['fulltext-search'],
 

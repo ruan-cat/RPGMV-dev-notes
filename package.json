@@ -23,6 +23,7 @@
     "@vuepress/plugin-pwa": "^1.9.7",
     "vuepress": "^1.9.5",
     "vuepress-plugin-auto-sidebar": "^2.3.2",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-cursor-effects": "^1.0.2",
     "vuepress-plugin-dynamic-title": "^1.0.0",
