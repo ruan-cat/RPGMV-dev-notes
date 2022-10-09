@@ -8,8 +8,16 @@
 
 - 手动安装指定依赖包
 
+![image-20221009182127742](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20221009182127742.png)
+
+
+
 
 - 在vue-cli指定推荐的babel.config.js内，指定额外插件
+
+![image-20221009182143432](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20221009182143432.png)
+
+
 
 
 
@@ -19,25 +27,23 @@
 目前理解不是很充分，给出以下方式来说明：
 
 - 安装依赖
-开发依赖
-https://www.npmjs.com/package/@vue/cli-plugin-babel
-https://www.npmjs.com/package/@vue/babel-preset-app
+  开发依赖
+  https://www.npmjs.com/package/@vue/cli-plugin-babel
+  https://www.npmjs.com/package/@vue/babel-preset-app
 
-生产依赖
-https://www.npmjs.com/package/core-js
-
-
+  生产依赖
+  https://www.npmjs.com/package/core-js
 
 
 - babel.config.js配置
-``` js
-module.exports = {
-  presets: [
-    // https://github.com/vuejs/vue-cli/tree/master/packages/@vue/babel-preset-app
-    "@vue/cli-plugin-babel/preset"
-  ]
-};
-```
+  ``` js
+  module.exports = {
+    presets: [
+      // https://github.com/vuejs/vue-cli/tree/master/packages/@vue/babel-preset-app
+      "@vue/cli-plugin-babel/preset"
+    ]
+  };
+  ```
 
 
 完成。接下来就可以直接在vue组件内使用高版本的js了，包括可选链运算符、空值合并运算符等。
