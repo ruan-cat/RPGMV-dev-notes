@@ -2,7 +2,9 @@
 title: VScode使用快捷键
 date: 2022-04-22 09:00:25
 permalink: /vscode/shortcut-key/
-tags:
+tags: null
+categories: 
+  - VScode
 ---
 
 # VScode使用快捷键

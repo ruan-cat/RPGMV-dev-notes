@@ -81,8 +81,8 @@ module.exports = {
     // 搜索栏预设值
     searchPlaceholder: '按下 𝑺 搜索',
 
-    // 是否打开分类功能？ 默认 true
-    category: false,
+    // 是否打开分类功能？ 默认 true 目前需要分类，因为文章涉及的开发领域日渐增多
+    category: true,
     // 是否打开标签功能？ 默认 true
     tag: false,
     // 是否打开归档功能？ 默认 true

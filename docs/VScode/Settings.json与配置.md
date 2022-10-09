@@ -2,6 +2,8 @@
 title: Settings.json与配置
 date: 2022-07-08 10:46:05
 permalink: /VScode/settings-json-formatOnSave/
+categories: 
+  - VScode
 ---
 
 

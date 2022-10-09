@@ -2,6 +2,8 @@
 title: json的配置
 date: 2022-09-18 12:35:23
 permalink: /pages/4d1a45/
+categories: 
+  - VScode
 ---
 
 

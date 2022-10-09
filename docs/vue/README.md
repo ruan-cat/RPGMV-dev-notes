@@ -2,6 +2,8 @@
 title: 阮中楠自己的一些vue开发笔记
 date: 2022-04-22 09:00:25
 permalink: /vue.js/
+categories: 
+  - vue
 ---
 
 # 阮中楠自己的一些vue开发笔记

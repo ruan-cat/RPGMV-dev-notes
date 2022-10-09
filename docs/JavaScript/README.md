@@ -2,6 +2,8 @@
 title: JavaScript学习
 date: 2022-04-22 09:00:25
 permalink: /pages/JavaScript/
+categories: 
+  - JavaScript
 ---
 
 # 阮中楠自己的一些JavaScript笔记
