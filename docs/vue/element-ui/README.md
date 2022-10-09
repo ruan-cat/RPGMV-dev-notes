@@ -5,7 +5,6 @@ permalink: /pages/e52753/
 tags: 
   - null
 categories: 
-  - js
   - element-ui
 ---
 

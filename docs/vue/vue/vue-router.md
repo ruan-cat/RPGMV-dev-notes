@@ -2,10 +2,7 @@
 title: vue-router
 date: 2022-05-09 09:51:56
 permalink: /pages/6f9f35/
-tags: 
-  - null
 categories: 
-  - js
   - vue
 ---
 
