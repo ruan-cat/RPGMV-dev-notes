@@ -1,3 +1,9 @@
+---
+title: babel
+date: 2022-10-09 18:48:13
+permalink: /pages/127b11/
+sidebar: auto
+---
 
 
 # vue-cli内使用babel

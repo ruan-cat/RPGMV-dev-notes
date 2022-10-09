@@ -1,3 +1,9 @@
+---
+title: eslint
+date: 2022-10-09 18:48:13
+permalink: /pages/fade30/
+sidebar: auto
+---
 
 
 # git提交时的自动格式化配置
