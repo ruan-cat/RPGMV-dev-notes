@@ -1,11 +1,7 @@
 ---
 title: 阮中楠自己的一些vue开发笔记
 date: 2022-04-22 09:00:25
-permalink: /pages/caf7ae/
-categories: 
-  - vue-elementUI
-tags: 
-  - 
+permalink: /vue.js/
 ---
 
 # 阮中楠自己的一些vue开发笔记
@@ -14,6 +10,16 @@ tags:
 
 ## 前端学习待办：
 FileSaver
+
+
+
+## vue-class-component
+https://github.com/fmfe/vue-class-setup
+
+https://github.com/vuejs/vue-class-component
+
+感觉现在写vue组件的方式很多。需要搞清楚这些是什么东西。
+
 
 
 
