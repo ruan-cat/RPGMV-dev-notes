@@ -89,6 +89,7 @@ module.exports = {
     archive: false,
     // 文章内容块的背景底纹 方格 目前使用了背景图 故这里不提供底部方格线
     // contentBgStyle: 1,
+    categoryText: '尚未分类',
 
     // 每个文章背后的背景图片 目前默认使用全部的小爱丽丝
     bodyBgImg: '/background-image/alice-1.jpg',
