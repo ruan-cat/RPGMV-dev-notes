@@ -2,6 +2,9 @@
 title: lodash使用节流防抖函数
 date: 2022-09-19 10:26:28
 permalink: /pages/0f44a6/
+categories: 
+  - js
+  - vue+lodash
 ---
 在vue项目中，使用lodash的节流防抖函数有一定的误区的：
 
