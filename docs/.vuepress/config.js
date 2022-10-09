@@ -81,11 +81,11 @@ module.exports = {
     // 搜索栏预设值
     searchPlaceholder: '按下 𝑺 搜索',
 
-    // 是否打开分类功能？ 默认true
+    // 是否打开分类功能？ 默认 true
     category: false,
-    // 是否打开标签功能？ 默认true
+    // 是否打开标签功能？ 默认 true
     tag: false,
-    // 是否打开归档功能？ 默认true
+    // 是否打开归档功能？ 默认 true
     archive: false,
     // 文章内容块的背景底纹 方格 目前使用了背景图 故这里不提供底部方格线
     // contentBgStyle: 1,
