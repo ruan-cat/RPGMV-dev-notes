@@ -38,3 +38,18 @@ graph TB
   2[["2号插件"]]-->|执行次序5 1号插件 先回调后执行|1(["1号插件"]);
   1(["1号插件"]) & 3-e["3号插件(结束)"] -->|执行次序1 1号插件 先执行后回调|2[["2号插件"]];
 ```
+
+
+``` mermaid
+gantt
+  title 优化的异步loading写法
+  dateFormat SSS
+  axisFormat %L
+
+  section 任务
+  主异步任务 :active, 000, 500
+  loading加载任务 :active, 300, 500
+```
+
+
+
