@@ -1,3 +1,11 @@
+---
+title: prettier
+date: 2022-10-20 10:02:03
+permalink: /prettier
+sidebar: auto
+categories:
+  - 尚未分类
+---
 
 
 ## 官网
