@@ -36,3 +36,47 @@ categories:
 让vscode的用户或工作区配置，识别出本地的prettier配置。
 
 ![image-20221020100452727](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20221020100452727.png)
+
+
+## vscode + prettier + wxml
+在微信小程序开发中，使用`vscode`，配合`vscode`的`prettier`插件，结合一些配置，实现本地项目的格式化配置。
+
+参考资料：[https://blog.csdn.net/HoweeGoss/article/details/125744750](https://blog.csdn.net/HoweeGoss/article/details/125744750)
+
+
+`.vscode\settings.json`
+``` json
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[wxml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[wxss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.documentSelectors": ["**/*.wxml", "**/*.wxss"]
+}
+```
+
+`.prettierrc`
+``` json
+{
+  "overrides": [
+    {
+      "files": "*.wxml",
+      "options": {
+        "parser": "html"
+      }
+    },
+    {
+      "files": "*.wxss",
+      "options": {
+        "parser": "css"
+      }
+    }
+  ]
+}
+```
+
+支持以完成。目前点击保存即可完成对`wxml`文件的格式化。
