@@ -7,6 +7,10 @@ categories:
 ---
 
 
+## 用dart-sass去替换node-sass
+``` warning
+不应该再使用落后的node-sass，现在有方案来实现node-sass的替换了。相关文档看其他内容。不再本页说明。
+```
 
 # node-sass 
 node-sass 疑难杂症
