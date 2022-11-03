@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d71a5eb-cb6f-441d-bfb0-dcf624f61976" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/VScode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/VScode/01.vscode.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/VScode/Settings.json与配置.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/VScode/03.Settings.json与配置.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/VScode/VScode使用快捷键.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/VScode/04.VScode使用快捷键.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/VScode/jsconfig.json的配置.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/VScode/02.jsconfig.json的配置.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/VScode/插件.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/VScode/05.插件.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/自查资源/05.rmmv-dev-todo-list.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/自查资源/05.rmmv-dev-todo-list.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +16,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,6 +49,7 @@
       <updated>1660212153768</updated>
       <workItem from="1665312157024" duration="697000" />
       <workItem from="1665648340469" duration="13000" />
+      <workItem from="1667438722157" duration="788000" />
     </task>
     <servers />
   </component>

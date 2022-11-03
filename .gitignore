@@ -5,10 +5,14 @@
 !.vscode/extensions.json
 *.code-workspace
 
+.idea/*
+
 # Local History for Visual Studio Code
 .history/
 
 node_modules/
+package-lock.json
+
 .temp/
 .cache/
 
