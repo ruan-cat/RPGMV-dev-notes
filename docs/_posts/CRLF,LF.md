@@ -1,3 +1,11 @@
+---
+title: CRLF,LF
+date: 2022-12-02 11:20:40
+permalink: /pages/00fbf5/
+sidebar: auto
+categories:
+  - 尚未分类
+---
 
 
 ## CRLF,LF
