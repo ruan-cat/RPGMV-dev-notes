@@ -11,3 +11,23 @@
 # 参与者？
 - 阮中楠
 
+
+
+# 测验性质的统计功能
+- 正常的左布局
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=RuanZhongNan&count_private=true&show_icons=true&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
+
+
+
+
+- 正在学习如何使用`vite`+`ts`的架构，来重构`rmmv`项目
+- 重点关注各类文档框架
+
+- 手动指定的的右布局
+
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=RuanZhongNan&count_private=true&show_icons=true&theme=dracula" />
+
+-紧凑的语言卡片布局
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=RuanZhongNan&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
