@@ -20,7 +20,10 @@ export default defineUserConfig({
     docsearchPlugin({
       indexName: 'ruan-cat',
       appId: '26AGWKLS5F,',
-      apiKey: '56468a67aa27242ac177690073ba0e15',
+      // 这是爬虫提供的
+      apiKey: 'c0121d37470f12e725a3cf2b45dda7e7',
+      // 这是邮件提供的
+      // apiKey: '56468a67aa27242ac177690073ba0e15',
 
       locales: {
         '/': {
