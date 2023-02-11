@@ -1,14 +1,3 @@
----
-title: 自定义alert
-date: 2022-09-18 15:11:43
-permalink: /pages/4f58e9/
-categories: 
-  - HTML
----
-
-
-
-
 我这里没有找到‘window.alert’ 的样式调整方案。
 
 目前有这样的方式来实现自定义弹框：
@@ -23,5 +12,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLDialogElement
 《MessageBox 弹框》
 https://element.eleme.cn/#/zh-CN/component/message-box#xiao-xi-ti-shi
 
-
-如果实现了上述效果，并且实现了rmmv的插件化，联系QQ2715305267以通知该用户。
+如果实现了上述效果，并且实现了 rmmv 的插件化，联系 QQ2715305267 以通知该用户。

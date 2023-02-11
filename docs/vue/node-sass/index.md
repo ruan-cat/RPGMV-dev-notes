@@ -1,18 +1,11 @@
----
-title: README
-date: 2022-06-07 16:03:57
-permalink: /pages/68697d/
-categories: 
-  - node-sass
----
+## 用 dart-sass 去替换 node-sass
 
-
-## 用dart-sass去替换node-sass
-``` warning
+```warning
 不应该再使用落后的node-sass，现在有方案来实现node-sass的替换了。相关文档看其他内容。不再本页说明。
 ```
 
-# node-sass 
+# node-sass
+
 node-sass 疑难杂症
 
 ## win32-x64-72_binding.node 文件的下载错误问题
@@ -30,11 +23,14 @@ https://github.com/pnp/sp-dev-fx-webparts/issues/501
 ### 具体的处理
 
 #### 本地下载
-去node-sass的发行版内，下载安装win32-x64-72_binding.node文件，手动下载到本地。一般就下载到本地的node仓库内。
+
+去 node-sass 的发行版内，下载安装 win32-x64-72_binding.node 文件，手动下载到本地。一般就下载到本地的 node 仓库内。
 
 #### 配制命令
+
 模仿这个命令做配置
 npm i node-sass@3.13.1 --sass_binary_path=C:\Users\<username>\Downloads\win32-x64-57_binding.node
 
 #### 结论
-最终可以实现定版本的node-sass依赖包安装。
+
+最终可以实现定版本的 node-sass 依赖包安装。

@@ -1,45 +1,20 @@
 {
-  "name": "rzn-rpgmv-notes",
+  "name": "try-to-use-hope-theme",
   "version": "1.0.0",
-  "description": "阮中楠的个人RPGMV笔记",
+  "description": "try-to-use-hope-theme，尝试使用vuepress-theme-hope主题来改造项目，这个项目一旦成熟，就将迁移代码并开始重构原有的网站项目；",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "serve hot-update": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
     "docs:dev": "vuepress dev docs",
-    "production": "vuepress build docs",
-    "docs:nav create-nav": "vuepress nav docs",
-    "docs:nav-cover update-nav": "vuepress nav docs -f",
-    "deploy": "bash deploy.sh"
+    "docs:update-package": "pnpm dlx vp-update"
   },
-  "author": "阮中楠",
-  "license": "ISC",
   "devDependencies": {
-    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
-    "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.0",
-    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
-    "@vuepress-reco/vuepress-plugin-loading-page": "^1.6.0",
-    "@vuepress/plugin-active-header-links": "^1.9.5",
-    "@vuepress/plugin-back-to-top": "^1.9.5",
-    "@vuepress/plugin-medium-zoom": "^1.9.6",
-    "@vuepress/plugin-pwa": "^1.9.7",
-    "vuepress": "^1.9.5",
-    "vuepress-plugin-auto-sidebar": "^2.3.2",
-    "vuepress-plugin-baidu-autopush": "^1.0.1",
-    "vuepress-plugin-comment": "^0.7.3",
-    "vuepress-plugin-cursor-effects": "^1.0.2",
-    "vuepress-plugin-dynamic-title": "^1.0.0",
-    "vuepress-plugin-fulltext-search": "^2.2.1",
-    "vuepress-plugin-go-top": "^1.0.4",
-    "vuepress-plugin-medium-zoom": "^1.1.9",
-    "vuepress-plugin-mermaidjs": "1.9.1",
-    "vuepress-plugin-one-click-copy": "^1.0.6",
-    "vuepress-plugin-permalink-pinyin": "^1.0.0",
-    "vuepress-plugin-reading-progress": "^1.0.10",
-    "vuepress-theme-reco": "^1.6.10",
-    "vuepress-theme-vdoing": "^1.11.2"
-  },
-  "dependencies": {
-    "@vssue/api-gitee-v5": "^1.4.7",
-    "@vssue/vuepress-plugin-vssue": "^1.4.8",
-    "vuepress-plugin-vssue-global": "0.0.3"
+    "@vuepress/client": "2.0.0-beta.60",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.60",
+    "vue": "^3.2.47",
+    "vuepress": "2.0.0-beta.60",
+    "vuepress-theme-hope": "2.0.0-beta.173"
   }
 }

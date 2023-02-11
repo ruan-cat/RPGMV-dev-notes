@@ -1,14 +1,5 @@
----
-title: TypeScript学习
-date: 2022-04-22 09:00:25
-permalink: /typescript-learn/
-categories: 
-  - TypeScript
-tags: 
-  - 
----
-
 # 阮中楠自己的一些 TypeScript 笔记
+
 阮中楠还没考虑将 TS 加入到 RMMV 中。
 
 ## 网站：
@@ -22,34 +13,36 @@ tags:
 [**《TypeScript 使用指南手册》**](http://www.patrickzhong.com/TypeScript/)
 [点此进入对应仓库](https://github.com/zhongsp/TypeScript)
 
-
 ## 疑惑？
-import语句导入时，会在本地构建一个浅拷贝还是一个深拷贝？
 
-import导入的模块可以被修改么？
+import 语句导入时，会在本地构建一个浅拷贝还是一个深拷贝？
+
+import 导入的模块可以被修改么？
 
 ## 学习待办：
-### tsc命令配置
-通过tsc的文件配置，实现打包编译文件，让指定文件压缩成一个单个的js文件，而不是直接生成多份js文件。目前并没有找到合适的技术实现这样的配置。
 
+### tsc 命令配置
 
-## 项目内的.d.ts配置
+通过 tsc 的文件配置，实现打包编译文件，让指定文件压缩成一个单个的 js 文件，而不是直接生成多份 js 文件。目前并没有找到合适的技术实现这样的配置。
+
+## 项目内的.d.ts 配置
+
 目前的痛点是，自己会经常的设计出一些就较为复杂的配置对象，而这些配置对象本身没有更多的类型提醒，开发效率很低。
 
-希望可以实现自定义的类型配置。实现对某些类复杂参数的自定义类型定义，并且让vscode实现识别。
-比如说在vue-cli内，定义了一个配置类对象：
+希望可以实现自定义的类型配置。实现对某些类复杂参数的自定义类型定义，并且让 vscode 实现识别。
+比如说在 vue-cli 内，定义了一个配置类对象：
 
-``` js
+```js
 const formRenderConfDemo = {
-  layout: "single",
+  layout: 'single',
   form: {
-    vModel: "user",
-    props: "user"
+    vModel: 'user',
+    props: 'user',
   },
   elFormItem: {
-    props: "user",
-    rules: {}
-  }
+    props: 'user',
+    rules: {},
+  },
 };
 class FormRenderConfClass {
   constructor({ layout, form, elFormItem } = formRenderConfDemo) {
@@ -62,7 +55,7 @@ class FormRenderConfClass {
 
 然后实际使用的情况如下：
 
-``` js
+```js
 const myLocalConf = new FormRenderConfClass({
   /* 具体的业务配置对象，希望此处实现类型校验 */
 });
