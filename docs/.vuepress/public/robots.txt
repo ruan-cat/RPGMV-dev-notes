@@ -1,0 +1,6 @@
+
+# Algolia-Crawler-Verif: 9B64CB150B9F574B
+
+User-agent: *
+Allow: /
+Sitemap: https://www.ruan-cat.com/sitemap.xml
