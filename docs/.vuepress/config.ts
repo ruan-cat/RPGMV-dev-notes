@@ -5,14 +5,15 @@ import theme from './theme.js';
 export default defineUserConfig({
   theme,
   base: '/',
+
   shouldPrefetch: false,
   port: 6312,
 
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '博客演示',
-      description: 'vuepress-theme-hope 的博客演示',
+      title: '阮喵喵的rmmv开发笔记',
+      description: '前端流行技术在rmmv的实战应用开发经验总结',
     },
   },
 

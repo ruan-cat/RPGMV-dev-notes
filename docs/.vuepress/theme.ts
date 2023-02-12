@@ -8,6 +8,7 @@ export default hopeTheme({
   // 尝试移除底部的斜线
   hostname: 'https://www.ruan-cat.com',
 
+  fullscreen: true,
   // 开发模式下是否启动热更新，显示所有更改并重新渲染
   hotReload: true,
 
@@ -18,7 +19,8 @@ export default hopeTheme({
 
   iconAssets: 'iconfont',
 
-  logo: '/logo.svg',
+  // logo: '/logo.svg',
+  logo: undefined,
 
   repo: 'vuepress-theme-hope/vuepress-theme-hope',
 
@@ -36,6 +38,13 @@ export default hopeTheme({
       // Weibo: 'https://example.com',
       // Zhihu: 'https://example.com',
     },
+  },
+
+  themeColor: {
+    blue: '#2196f3',
+    red: '#f26d6d',
+    green: '#3eaf7c',
+    orange: '#fb9b5f',
   },
 
   locales: {
