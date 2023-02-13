@@ -1,6 +1,9 @@
 import { sidebar } from 'vuepress-theme-hope';
 
-import { navSideCommonConfList } from '../nav-side-common-conf/index.js';
+import {
+  navSideCommonConfList,
+  sideConfList,
+} from '../nav-side-common-conf/index.js';
 
 // origin config 目前不使用默认提供的demo侧边栏配置，自己尝试配置一下侧边栏
 // export const zhSidebar = sidebar({
@@ -26,20 +29,6 @@ import { navSideCommonConfList } from '../nav-side-common-conf/index.js';
 
 export const zhSidebar = sidebar({
   // '/': 'structure',
-  // '/': [
-  //   {
-  //     text: '阮喵喵自己的笔记',
-  //     children: [],
-  //   },
-
-  //   {
-  //     text: '插件开发',
-  //     // link: 'developing-rmmv-plugins/',
-  //     // prefix: 'developing-rmmv-plugins/',
-  //     // children: 'structure',
-  //     children: ['infrastructure/'],
-  //     collapsible: true,
-  //   },
-  // ],
-  '/': navSideCommonConfList,
+  // '/': navSideCommonConfList,
+  '/': sideConfList,
 });
