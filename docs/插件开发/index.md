@@ -1,5 +1,5 @@
 ---
-permalink: /developing-rmmv-plugins/
+permalink: /developing-rmmv-plugins/index/
 ---
 
 # 插件开发
