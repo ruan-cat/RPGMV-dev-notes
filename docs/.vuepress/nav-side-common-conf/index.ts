@@ -11,7 +11,7 @@ import {
 type CommonArrayOptions = SidebarArrayOptions | NavbarOptions;
 
 /** 顶部导航栏配置数组 */
-export const navConfList = [
+export const navConfList: NavbarOptions = [
   {
     text: '插件开发',
     prefix: '/developing-rmmv-plugins/',
@@ -31,7 +31,7 @@ export const navConfList = [
 // collapsible: true,
 
 /** 左侧侧边栏配置数组 */
-export const sideConfList: SidebarItem[] = [
+export const sideConfList: SidebarArrayOptions = [
   {
     text: '阮喵喵自己的笔记',
     prefix: '阮喵喵自己的笔记/',
