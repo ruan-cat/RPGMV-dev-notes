@@ -31,4 +31,5 @@ export const zhSidebar = sidebar({
   // '/': 'structure',
   // '/': navSideCommonConfList,
   '/': sideConfList,
+  '/ruan-cat-notes': sideConfList,
 });

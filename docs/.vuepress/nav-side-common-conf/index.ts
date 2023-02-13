@@ -13,6 +13,7 @@ export const navSideCommonConfList = [
   {
     text: '阮喵喵自己的笔记',
     children: [],
+    // children: 'structure',
   },
   {
     text: '插件开发',
