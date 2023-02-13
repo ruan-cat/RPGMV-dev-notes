@@ -27,16 +27,13 @@ export const navConfList: NavbarOptions = [
 
 (navConfList as SidebarGroupItem[]).forEach((elm) => (elm.collapsible = true));
 
-//     // 不再此处定义，类型无法兼容此字段
-// collapsible: true,
-
 /** 左侧侧边栏配置数组 */
 export const sideConfList: SidebarArrayOptions = [
+  ...navConfList,
   {
     text: '阮喵喵自己的笔记',
     prefix: '阮喵喵自己的笔记/',
     children: 'structure',
     collapsible: true,
   },
-  ...navConfList,
 ];
