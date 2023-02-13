@@ -23,6 +23,21 @@ export const navConfList: NavbarOptions = [
       'nature/',
     ],
   },
+
+  {
+    text: '源码解析',
+    prefix: '/understand-source-code/',
+    children: [
+      '菜单的背景图为什么是当前场景截图/',
+      '场景类所需的基本函数/',
+      '地图场景与菜单场景之间的切换/',
+      '窗口速查表/',
+      // 'source-code-infrastructure/',
+      // 'plugins-infrastructure/',
+      // 'basic-concept/',
+      // 'nature/',
+    ],
+  },
 ];
 
 (navConfList as SidebarGroupItem[]).forEach((elm) => (elm.collapsible = true));
