@@ -22,7 +22,7 @@ export default hopeTheme({
   // logo: '/logo.svg',
   logo: undefined,
 
-  repo: 'vuepress-theme-hope/vuepress-theme-hope',
+  repo: 'RuanZhongNan/RPGMV-dev-notes',
 
   docsDir: 'docs',
 
