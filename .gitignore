@@ -1,6 +1,10 @@
 dist/
 node_modules/
 
+
 .cache/
 .temp/
+
+# 个人不经常使用webstorm，屏蔽相关的配置文件
+.idea/
 
