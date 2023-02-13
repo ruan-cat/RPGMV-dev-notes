@@ -68,4 +68,22 @@
 }
 ```
 
-支持以完成。目前点击保存即可完成对`wxml`文件的格式化。
+至此已完成。目前点击保存即可完成对`wxml`文件的格式化。
+
+## 待整理的笔记
+
+一般情况下，使用 `vsc` 的 `prettier` 插件和 `prettier.config.js` 来完成 `node` 项目的格式化。
+
+如果是非 `node` 项目，是很普通的 `md`，`js` 文件等内容，就不使用 `prettier.config.js` 来约束其行为，而是用用户本身提供的 `settings.json` 来控制编辑器本身的格式化行为。
+
+因为现在没有项目，没有 `git` 管理，仅仅只需要实现单纯的格式化即可。
+
+`vue2` 的格式化行为用 `vetur` 的 `vscode` 配置实现，而不是 `prettier`。用 `vetur` 去配置 `prettier`，主动声明 `vetur` 的格式化行为为 `prettier` 即可。
+
+代码间距用`.editorconfig` 来配置，而不是 `prettier.config.js`。因为`.editorconfig` 可以同时兼容 `vsc` 和 `webstorm`。
+
+不使用插件 `rvest.vs-code-prettier-eslint` ，因为该插件仅仅针对于 `node` 项目，且要求项目本身安装多个依赖。被限定在 `node` 项目，而不是更多的情况
+
+参考资料：
+https://rileycai.com/不以规矩，不能成方圆-彻底搞懂-eslint-和-prettier/
+https://luzhaoyang.com/zh/posts/dai-ma-gui-fan-zhi-li-jie-eslint-prettier-editorconfig.html
