@@ -90,10 +90,10 @@ export default hopeTheme({
        * Using Giscus
        */
       provider: 'Giscus',
-      repo: 'vuepress-theme-hope/giscus-discussions',
-      repoId: 'R_kgDOG_Pt2A',
+      repo: 'RuanZhongNan/RPGMV-dev-notes',
+      repoId: 'R_kgDOH7md9w',
       category: 'Announcements',
-      categoryId: 'DIC_kwDOG_Pt2M4COD69',
+      categoryId: 'DIC_kwDOH7md984CRo_I',
 
       /**
        * Using Twikoo
