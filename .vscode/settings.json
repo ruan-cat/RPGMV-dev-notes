@@ -1,4 +1,8 @@
 {
+	// 不应该再项目层面上的settings.json内配置任何跟电脑用户路径强耦合的配置
+	// 目前仍旧保留此内容作为参考
 	// "picgo.configPath": "C:\\Users\\ruanzhongnan\\AppData\\Roaming\\picgo\\data.json",
 	// "picgo.dataPath": "C:\\Users\\ruanzhongnan\\vs-picgo-data.json",
+	// "picgo.configPath": "C:\\Users\\Administrator\\AppData\\Roaming\\picgo\\data.json",
+	// "picgo.dataPath": "C:\\Users\\Administrator\\vs-picgo-data.json",
 }
