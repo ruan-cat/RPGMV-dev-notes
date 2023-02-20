@@ -6,3 +6,15 @@
 	// "picgo.configPath": "C:\\Users\\Administrator\\AppData\\Roaming\\picgo\\data.json",
 	// "picgo.dataPath": "C:\\Users\\Administrator\\vs-picgo-data.json",
 }
+// 可参考的工作区配置 注意另存为工作区
+// {
+// 	"folders": [
+// 		{
+// 			"path": "."
+// 		}
+// 	],
+// 	"settings": {
+// 		"picgo.configPath": "C:\\Users\\Administrator\\AppData\\Roaming\\picgo\\data.json",
+// 		"picgo.dataPath": "C:\\Users\\Administrator\\vs-picgo-data.json",
+// 	}
+// }
