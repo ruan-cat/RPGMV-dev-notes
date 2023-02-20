@@ -16,6 +16,12 @@ https://blog.csdn.net/qq_36587420/article/details/114380288
 https://editorconfig.org/#example-file
 在项目根目录下配置.editorconfig 文件。目前暂时不使用，因为配置该例子后，prettier 的格式化似乎受到影响。就会使用双引号而不是期望的单引号。
 
+## 现象记录
+
+目前发现，笔记本电脑和台式电脑对文件的格式差异不同。笔记本是 LF，而台式机是 CRLF。台式机未能够应用本地的 editorconfig 配置文件。
+
+有空需要多观察一下这个细节。目前发现台式机都是 crlf。
+
 ## vscode 本身的配置
 
 在首选项内搜索 eol 来配置。
