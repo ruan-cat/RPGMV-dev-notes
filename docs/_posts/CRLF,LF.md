@@ -20,7 +20,10 @@ https://editorconfig.org/#example-file
 
 目前发现，笔记本电脑和台式电脑对文件的格式差异不同。笔记本是 LF，而台式机是 CRLF。台式机未能够应用本地的 editorconfig 配置文件。
 
-有空需要多观察一下这个细节。目前发现台式机都是 crlf。
+有空需要多观察一下这个细节。
+
+- 目前发现台式机都是 crlf。
+- 目前发现笔记本都是 lf。
 
 ## vscode 本身的配置
 
