@@ -1,22 +1,22 @@
 {
-  "name": "try-to-use-hope-theme",
-  "version": "1.0.0",
-  "description": "try-to-use-hope-theme，尝试使用vuepress-theme-hope主题来改造项目，这个项目一旦成熟，就将迁移代码并开始重构原有的网站项目；",
-  "license": "MIT",
-  "type": "module",
-  "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vuepress dev docs",
-    "docs:update-package": "pnpm dlx vp-update"
-  },
-  "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.60",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.60",
-    "vp-update": "^0.1.0",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.60",
-    "vuepress-plugin-search-pro": "2.0.0-beta.174",
-    "vuepress-theme-hope": "2.0.0-beta.173"
-  }
+	"name": "try-to-use-hope-theme",
+	"version": "1.0.0",
+	"description": "try-to-use-hope-theme，尝试使用vuepress-theme-hope主题来改造项目，这个项目一旦成熟，就将迁移代码并开始重构原有的网站项目；",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"docs:build": "vuepress build docs",
+		"docs:clean-dev": "vuepress dev docs --clean-cache",
+		"docs:dev": "vuepress dev docs",
+		"docs:update-package": "pnpm dlx vp-update"
+	},
+	"devDependencies": {
+		"@vuepress/client": "2.0.0-beta.60",
+		"@vuepress/plugin-docsearch": "2.0.0-beta.60",
+		"vp-update": "^0.1.2",
+		"vue": "^3.2.47",
+		"vuepress": "2.0.0-beta.60",
+		"vuepress-plugin-search-pro": "2.0.0-beta.178",
+		"vuepress-theme-hope": "2.0.0-beta.178"
+	}
 }
