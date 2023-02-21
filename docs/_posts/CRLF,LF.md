@@ -25,3 +25,24 @@ https://editorconfig.org/#example-file
 ## vscode 本身的配置
 
 在首选项内搜索 eol 来配置。
+
+## 截止目前的综合笔记
+
+`CRLF` 和 `LF` 应该被统称为 `eol` 配置问题，即 `endOfLine`，行尾。
+
+能够配置该 `eol` 的方式目前有
+
+- eslint
+- prettier
+- vscode 的 settings.json
+- .gitattributes
+- .editorconfig
+
+目前设置的暂定策略是：
+
+- 关于编辑器本身的行为规范，用`.editorconfig`去规定。
+- `git` 提交时的行尾配置用`.gitattributes`，专门解决 `git` 和 `svn` 文件系统提交时的差异问题。
+- `prettier` 及其任意插件都默认使用`.editorconfig`的配置
+
+参考资料
+https://blog.csdn.net/u010730126/article/details/107968355
