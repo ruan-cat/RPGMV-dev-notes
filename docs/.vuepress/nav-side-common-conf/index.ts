@@ -48,7 +48,7 @@ export const sideConfList: SidebarArrayOptions = [
 
 	{
 		text: "自查资源",
-		prefix: "self-checking-resources/",
+		prefix: "自查资源/",
 		children: "structure",
 		collapsible: true,
 	},
