@@ -35,15 +35,15 @@
 
 ```json
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[wxml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[wxss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.documentSelectors": ["**/*.wxml", "**/*.wxss"]
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[wxml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[wxss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.documentSelectors": ["**/*.wxml", "**/*.wxss"]
 }
 ```
 
@@ -51,20 +51,20 @@
 
 ```json
 {
-  "overrides": [
-    {
-      "files": "*.wxml",
-      "options": {
-        "parser": "html"
-      }
-    },
-    {
-      "files": "*.wxss",
-      "options": {
-        "parser": "css"
-      }
-    }
-  ]
+	"overrides": [
+		{
+			"files": "*.wxml",
+			"options": {
+				"parser": "html"
+			}
+		},
+		{
+			"files": "*.wxss",
+			"options": {
+				"parser": "css"
+			}
+		}
+	]
 }
 ```
 
@@ -87,3 +87,9 @@
 参考资料：
 https://rileycai.com/不以规矩，不能成方圆-彻底搞懂-eslint-和-prettier/
 https://luzhaoyang.com/zh/posts/dai-ma-gui-fan-zhi-li-jie-eslint-prettier-editorconfig.html
+
+## 待研究的配置？
+
+https://juejin.cn/post/7018810975822282760
+
+"javascript.format.insertSpaceBeforeFunctionParenthesis":
