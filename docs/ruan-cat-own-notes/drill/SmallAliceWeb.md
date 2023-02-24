@@ -32,6 +32,10 @@ https://github.com/DrillUp/SmallAliceWeb
 
 先找一下有哪些 vuepress-theme 主题，满足钻头的 UI 样式，先做技术选型。
 
+### ？基于 CMS 的技术选型？
+
+CMS，内容管理系统。我们还有更好的技术选型么？
+
 ### vuepress-theme 主题的技术选型
 
 主题列表
