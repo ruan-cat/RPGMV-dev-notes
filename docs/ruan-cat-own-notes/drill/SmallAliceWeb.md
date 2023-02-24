@@ -9,6 +9,20 @@
 UI 样式，以及业务需求的核心原型
 http://earphones-official.com/
 
+## 需求理解
+
+这是一个相当简单的网页。不需要很多的跳转功能。目前先考虑从一个完善的 hope 主题中做减法，通过减法实现初步的 demo。
+
+钻头着重强调的是样式和审美问题。页面的内容尽可能偏软一点。采用明亮的背景色。增加较多的圆形。
+
+### 暂定的开发策略
+
+- 构建标准的，泛用的 dev 分支。
+- 在 dev 内开一个 theme-hope 分支。
+- 实例化初等的 hope 主题内容。
+- 确定大部分被删减掉的功能。
+- 最后开始考虑样式重构。从 vue 的角度重新捏造侧边栏的样式。
+
 ## 当前情况
 
 项目仓库：
@@ -17,6 +31,9 @@ https://github.com/DrillUp/SmallAliceWeb
 ## 项目进度
 
 先找一下有哪些 vuepress-theme 主题，满足钻头的 UI 样式，先做技术选型。
+
+### vuepress-theme 主题的技术选型
+
 主题列表
 
 - https://www.npmjs.com/search?q=vuepress-theme
@@ -34,3 +51,5 @@ https://github.com/DrillUp/SmallAliceWeb
 
 - vuepress-theme-ting
   > demo https://chenyating.github.io/
+
+### 选型结果
