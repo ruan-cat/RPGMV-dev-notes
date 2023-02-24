@@ -4,7 +4,7 @@
 
 所有网页布局必须遵从这个简洁的理念
 
-这里有新闻发布系统、插件版本系统、文档介绍系统，跳转的网页也必须像封面这样简单
+这里有`新闻发布系统`、`插件版本系统`、`文档介绍系统`，跳转的网页也必须像封面这样简单
 
 UI 样式，以及业务需求的核心原型
 http://earphones-official.com/
@@ -17,4 +17,20 @@ https://github.com/DrillUp/SmallAliceWeb
 ## 项目进度
 
 先找一下有哪些 vuepress-theme 主题，满足钻头的 UI 样式，先做技术选型。
-https://www.npmjs.com/search?q=vuepress-theme
+主题列表
+
+- https://www.npmjs.com/search?q=vuepress-theme
+- https://80shuo.com/vuepress-theme/
+
+- vuepress-theme-qblog
+
+  > 仓库 https://github.com/sanqi377/vuepress-theme-qblog
+  > demo https://www.qblog.cc/
+
+- vuepress-theme-maker
+
+  > https://github.com/80maker/vuepress-theme-maker
+  > demo https://80shuo.com/
+
+- vuepress-theme-ting
+  > demo https://chenyating.github.io/
