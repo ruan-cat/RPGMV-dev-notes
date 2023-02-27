@@ -41,3 +41,11 @@ FileSaver
 watch 或者是 compute 数据。监听数据变化，只要变化了，就更新变量并实现数据的响应式渲染。
 
 韦景堂称该 ref 函数可以克服上述方案的困境。有待尝试。
+
+## vue 组件的即使阅览与单元测试
+
+文章
+https://www.v2ex.com/t/840680
+
+仓库
+https://github.com/jaweii/AutoPreview/blob/main/README-zh.md
