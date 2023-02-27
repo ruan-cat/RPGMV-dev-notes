@@ -49,3 +49,12 @@ https://www.v2ex.com/t/840680
 
 仓库
 https://github.com/jaweii/AutoPreview/blob/main/README-zh.md
+
+### 当前进度
+
+vue2 不行，vue3 生态下可以考虑配置
+
+## 学习 rouyi 的搜索栏功能
+
+在 https://gitee.com/y_project/RuoYi-Vue 内，其顶部导航栏的搜索栏非常有用，有空可以考虑嵌套使用。
+HeaderSearch 组件
