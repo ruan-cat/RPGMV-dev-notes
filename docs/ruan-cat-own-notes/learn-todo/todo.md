@@ -58,3 +58,10 @@ vue2 不行，vue3 生态下可以考虑配置
 
 在 https://gitee.com/y_project/RuoYi-Vue 内，其顶部导航栏的搜索栏非常有用，有空可以考虑嵌套使用。
 HeaderSearch 组件
+
+## 在 vue2 和 vue3 内使用 vueuse 提供的一揽子工具
+
+### 在 vue2 怎么使用？
+
+这个例子等待学习
+https://github.com/vueuse/vueuse-vue2-example
