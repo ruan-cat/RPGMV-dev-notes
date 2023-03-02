@@ -19,14 +19,14 @@ export default defineUserConfig({
 	},
 
 	plugins: [
-		// 目前仍旧无效
+		// 目前有效 缺点是国内使用`algolia`速度稍慢
 		docsearchPlugin({
 			indexName: "ruan-cat",
 			appId: "26AGWKLS5F",
-			// 这是爬虫提供的
-			// apiKey: 'c0121d37470f12e725a3cf2b45dda7e7',
 			// 这是邮件提供的
 			apiKey: "56468a67aa27242ac177690073ba0e15",
+			// 这是爬虫提供的
+			// apiKey: 'c0121d37470f12e725a3cf2b45dda7e7',
 			// 这是用 Search API Key 重新生成的
 			// apiKey: 'd96c038fd76a2f91c146152fbf24a1de',
 			locales: {
@@ -74,6 +74,7 @@ export default defineUserConfig({
 			},
 		}),
 
+		// 该内容暂时保留 目前通过正确的爬虫配置，可以实现后端搜索了。
 		// searchProPlugin({
 		// 	indexContent: true,
 		// 	customFields: [
