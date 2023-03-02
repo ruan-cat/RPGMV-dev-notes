@@ -22,7 +22,7 @@ export default defineUserConfig({
 		// 目前仍旧无效
 		docsearchPlugin({
 			indexName: "ruan-cat",
-			appId: "26AGWKLS5F,",
+			appId: "26AGWKLS5F",
 			// 这是爬虫提供的
 			// apiKey: 'c0121d37470f12e725a3cf2b45dda7e7',
 			// 这是邮件提供的
