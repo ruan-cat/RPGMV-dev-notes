@@ -4,7 +4,11 @@
 
 ## 本地修改无差异显示的错误
 
-修改本地文件时，看不到侧边栏的修改差异提示。可以清空本地的 git 缓存。命令：git clean -df
+修改本地文件时，看不到侧边栏的修改差异提示，这个侧边栏提示叫做[`Gutter indicators`](https://code.visualstudio.com/docs/sourcecontrol/overview#_gutter-indicators)。可以清空本地的 git 缓存。命令：
+
+```bash
+git clean -df
+```
 
 ## 学习待办
 
