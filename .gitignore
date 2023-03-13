@@ -11,4 +11,5 @@ node_modules/
 # 忽略掉电脑层面上的工作区配置 每一个工作区都应该自行实现对应的配置
 this-proj.code-workspace
 
-docs\docs-typedoc
+# 忽略掉总是会自动生成的文件夹 该内容都是用typedoc自动生成的文档；
+docs/docs-typedoc
