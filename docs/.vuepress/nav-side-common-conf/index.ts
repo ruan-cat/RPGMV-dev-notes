@@ -7,6 +7,8 @@ import {
 	SidebarItem,
 } from "vuepress-theme-hope";
 
+import typedocConf from "../../../typedoc.json";
+
 /** 本地自定义的 共同数组类型 @deprecated 实际使用的时候 类型无法共同使用 */
 type CommonArrayOptions = SidebarArrayOptions | NavbarOptions;
 
@@ -58,5 +60,11 @@ export const sideConfList: SidebarArrayOptions = [
 		prefix: "ruan-cat-own-notes/",
 		children: "structure",
 		collapsible: true,
+	},
+
+	{
+		text: "测试用的typedoc结果",
+		prefix: typedocConf.out,
+		children: "structure",
 	},
 ];
