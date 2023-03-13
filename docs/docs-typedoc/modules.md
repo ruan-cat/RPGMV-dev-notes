@@ -31,7 +31,7 @@ rzn
 
 #### Defined in
 
-[index.ts:36](https://github.com/RuanZhongNan/RPGMV-dev-notes/blob/78682872/src/index.ts#L36)
+[index.ts:36](https://github.com/RuanZhongNan/RPGMV-dev-notes/blob/f2985063/src/index.ts#L36)
 
 ___
 
@@ -61,4 +61,4 @@ rzn
 
 #### Defined in
 
-[index.ts:40](https://github.com/RuanZhongNan/RPGMV-dev-notes/blob/78682872/src/index.ts#L40)
+[index.ts:40](https://github.com/RuanZhongNan/RPGMV-dev-notes/blob/f2985063/src/index.ts#L40)

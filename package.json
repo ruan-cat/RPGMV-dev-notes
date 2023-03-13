@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "try-to-use-hope-theme，尝试使用vuepress-theme-hope主题来改造项目，这个项目一旦成熟，就将迁移代码并开始重构原有的网站项目；",
 	"license": "MIT",
-	"type": "commonjs",
+	"type": "module",
 	"scripts": {
 		"docs:build": "vuepress build docs",
 		"docs:clean-dev": "vuepress dev docs --clean-cache",
