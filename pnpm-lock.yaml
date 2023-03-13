@@ -5,6 +5,7 @@ specifiers:
   '@vuepress/plugin-docsearch': 2.0.0-beta.61
   typedoc: ^0.23.26
   typedoc-plugin-markdown: ^3.14.0
+  typescript: ^4.9.5
   vp-update: ^0.1.2
   vue: ^3.2.47
   vuepress: 2.0.0-beta.61
@@ -15,8 +16,9 @@ specifiers:
 devDependencies:
   '@vuepress/client': registry.npmmirror.com/@vuepress/client/2.0.0-beta.61
   '@vuepress/plugin-docsearch': registry.npmmirror.com/@vuepress/plugin-docsearch/2.0.0-beta.61
-  typedoc: registry.npmmirror.com/typedoc/0.23.26
+  typedoc: registry.npmmirror.com/typedoc/0.23.26_typescript@4.9.5
   typedoc-plugin-markdown: registry.npmmirror.com/typedoc-plugin-markdown/3.14.0_typedoc@0.23.26
+  typescript: registry.npmmirror.com/typescript/4.9.5
   vp-update: registry.npmmirror.com/vp-update/0.1.2
   vue: registry.npmmirror.com/vue/3.2.47
   vuepress: registry.npmmirror.com/vuepress/2.0.0-beta.61_zcwlgd45apez724duilctoxt4u
@@ -6839,11 +6841,12 @@ packages:
       typedoc: '>=0.23.0'
     dependencies:
       handlebars: registry.npmmirror.com/handlebars/4.7.7
-      typedoc: registry.npmmirror.com/typedoc/0.23.26
+      typedoc: registry.npmmirror.com/typedoc/0.23.26_typescript@4.9.5
     dev: true
 
-  registry.npmmirror.com/typedoc/0.23.26:
+  registry.npmmirror.com/typedoc/0.23.26_typescript@4.9.5:
     resolution: {integrity: sha512-5m4KwR5tOLnk0OtMaRn9IdbeRM32uPemN9kur7YK9wFqx8U0CYrvO9aVq6ysdZSV1c824BTm+BuQl2Ze/k1HtA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typedoc/-/typedoc-0.23.26.tgz}
+    id: registry.npmmirror.com/typedoc/0.23.26
     name: typedoc
     version: 0.23.26
     engines: {node: '>= 14.14'}
@@ -6855,6 +6858,15 @@ packages:
       marked: registry.npmmirror.com/marked/4.2.12
       minimatch: registry.npmmirror.com/minimatch/7.4.2
       shiki: registry.npmmirror.com/shiki/0.14.1
+      typescript: registry.npmmirror.com/typescript/4.9.5
+    dev: true
+
+  registry.npmmirror.com/typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typescript/-/typescript-4.9.5.tgz}
+    name: typescript
+    version: 4.9.5
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   registry.npmmirror.com/ua-parser-js/1.0.34:
@@ -7753,7 +7765,7 @@ packages:
       typedoc: '>=0.23.0'
       typedoc-plugin-markdown: '>=3.13.0'
     dependencies:
-      typedoc: registry.npmmirror.com/typedoc/0.23.26
+      typedoc: registry.npmmirror.com/typedoc/0.23.26_typescript@4.9.5
       typedoc-plugin-markdown: registry.npmmirror.com/typedoc-plugin-markdown/3.14.0_typedoc@0.23.26
     dev: true
 
