@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "try-to-use-hope-theme，尝试使用vuepress-theme-hope主题来改造项目，这个项目一旦成熟，就将迁移代码并开始重构原有的网站项目；",
 	"license": "MIT",
-	"type": "module",
+	"type": "commonjs",
 	"scripts": {
 		"docs:build": "vuepress build docs",
 		"docs:clean-dev": "vuepress dev docs --clean-cache",
@@ -13,10 +13,13 @@
 	"devDependencies": {
 		"@vuepress/client": "2.0.0-beta.61",
 		"@vuepress/plugin-docsearch": "2.0.0-beta.61",
+		"typedoc": "^0.23.26",
+		"typedoc-plugin-markdown": "^3.14.0",
 		"vp-update": "^0.1.2",
 		"vue": "^3.2.47",
 		"vuepress": "2.0.0-beta.61",
 		"vuepress-plugin-search-pro": "2.0.0-beta.190",
+		"vuepress-plugin-typedoc": "^0.11.2",
 		"vuepress-theme-hope": "2.0.0-beta.190"
 	}
 }
