@@ -1,6 +1,11 @@
 import { defineUserConfig } from "vuepress";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+
+import { typedocPlugin } from "vuepress-plugin-typedoc/next";
+
+import typedocConf from "../../typedoc.config.cjs";
+
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -19,6 +24,9 @@ export default defineUserConfig({
 	},
 
 	plugins: [
+		// 直接导入项目根目录下的配置文件 这样效率更高
+		typedocPlugin(typedocConf),
+
 		// 目前有效 缺点是国内使用`algolia`速度稍慢
 		docsearchPlugin({
 			indexName: "ruan-cat",
