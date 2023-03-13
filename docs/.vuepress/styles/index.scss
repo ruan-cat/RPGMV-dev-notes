@@ -1,1 +1,60 @@
 // place your custom styles here
+
+@import "./palette.scss";
+
+// border边距调整
+@mixin pub-border {
+	border-bottom: 1px solid #eaecef;
+	border-style: dotted;
+
+	border-right: none;
+	border-top: none;
+	border-left: none;
+}
+
+// border圆角调整
+@mixin pub-radius {
+	// 需要圆角边距
+	border-radius: 5px;
+}
+
+// 主页面 背景色换成所需的主题色
+.page {
+	background-color: $theme-color;
+
+	aside {
+		@include pub-radius;
+
+		background-color: #ffaf00;
+	}
+
+	// 内容容器
+	.theme-hope-content {
+		@include pub-radius;
+
+		// 换成所需的蓝色
+		background-color: #36c4e6;
+
+		// 换成白色文本
+		color: white;
+
+		.page-title {
+			// 使用共同的边距调整
+			@include pub-border;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			// 使用共同的边距调整
+			@include pub-border;
+
+			// 原来的文字颜色
+			// color: #2c3e50;
+			// 目标网站的颜色
+			color: #505050;
+		}
+	}
+}
