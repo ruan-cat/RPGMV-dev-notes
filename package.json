@@ -1,7 +1,7 @@
 {
-	"name": "try-to-use-hope-theme",
+	"name": "rpgmv-dev-notes",
 	"version": "1.0.0",
-	"description": "try-to-use-hope-theme，尝试使用vuepress-theme-hope主题来改造项目，这个项目一旦成熟，就将迁移代码并开始重构原有的网站项目；",
+	"description": "阮喵喵的rmmv开发笔记",
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
