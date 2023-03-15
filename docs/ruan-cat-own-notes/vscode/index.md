@@ -10,6 +10,8 @@
 git clean -df
 ```
 
+[diff decorations gutter](https://hjk.life/posts/vscode-git-gutter/)
+
 ## 学习待办
 
 1： Live Preview 插件是否可以更好的运行 VScode？

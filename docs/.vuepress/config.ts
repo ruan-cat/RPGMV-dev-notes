@@ -20,6 +20,10 @@ export default defineUserConfig({
 			lang: "zh-CN",
 			title: "阮喵喵的rmmv开发笔记",
 			description: "前端流行技术在rmmv的实战应用开发经验总结",
+
+			// https://theme-hope.vuejs.press/zh/config/theme/i18n.html
+			// TODO 想设置这个名称 右侧侧边栏名称？
+			// metaLocales
 		},
 	},
 
