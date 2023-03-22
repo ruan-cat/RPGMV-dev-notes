@@ -34,22 +34,22 @@ import 导入的模块可以被修改么？
 
 ```js
 const formRenderConfDemo = {
-  layout: 'single',
-  form: {
-    vModel: 'user',
-    props: 'user',
-  },
-  elFormItem: {
-    props: 'user',
-    rules: {},
-  },
+	layout: "single",
+	form: {
+		vModel: "user",
+		props: "user",
+	},
+	elFormItem: {
+		props: "user",
+		rules: {},
+	},
 };
 class FormRenderConfClass {
-  constructor({ layout, form, elFormItem } = formRenderConfDemo) {
-    this.layout = layout;
-    this.form = form;
-    this.elFormItem = elFormItem;
-  }
+	constructor({ layout, form, elFormItem } = formRenderConfDemo) {
+		this.layout = layout;
+		this.form = form;
+		this.elFormItem = elFormItem;
+	}
 }
 ```
 
@@ -57,8 +57,15 @@ class FormRenderConfClass {
 
 ```js
 const myLocalConf = new FormRenderConfClass({
-  /* 具体的业务配置对象，希望此处实现类型校验 */
+	/* 具体的业务配置对象，希望此处实现类型校验 */
 });
 ```
 
 如上图，希望在新建`FormRenderConfClass`对象时，对其构造函数的形参实现类型提示。目前不太懂如何编写能够被`vscode`识别的`d.ts`。
+
+## 自己写一个 Pick，返回的类型是你传进去的泛型类型和 null
+
+遇到一个问题，我定义了一个类型，定义了后端返回的数据。这些字段可能取值为 null，我该用什么写法来让这些字段适应取值可能为 null 的情况呢？
+
+- 联合类型
+- 自己写一个 Pick，返回的类型是你传进去的泛型类型和 null
