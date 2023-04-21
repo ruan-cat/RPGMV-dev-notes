@@ -76,3 +76,11 @@ https://github.com/tgreyuk/typedoc-plugin-markdown
 ## gasp
 
 这是什么前端动画库？怎么使用？
+
+## vscode 插件 codeium ？
+
+学习该插件的使用
+
+https://marketplace.visualstudio.com/items?itemName=Codeium.codeium
+
+https://codeium.com/
