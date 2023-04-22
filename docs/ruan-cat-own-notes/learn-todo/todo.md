@@ -66,13 +66,6 @@ HeaderSearch 组件
 这个例子等待学习
 https://github.com/vueuse/vueuse-vue2-example
 
-## 使用 typedoc 和相关的依赖包，实现 ts 项目的文档批量生成
-
-学习使用并配置该插件。
-https://github.com/tgreyuk/typedoc-plugin-markdown
-
-直接让 vuepress2 识别使用 typedoc 的配置，直接生成 md，并且再被 vercel 自动部署。
-
 ## gasp
 
 这是什么前端动画库？怎么使用？
