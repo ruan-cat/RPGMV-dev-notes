@@ -12,6 +12,14 @@ git clean -df
 
 [diff decorations gutter](https://hjk.life/posts/vscode-git-gutter/)
 
+### 复现方式
+
+vscode 文件重命名后 gutter indicators 无查看任何内容
+
+发现。只要对文件做重命名。无论是位置重构，还是直接换名称，vscode 都不能很好的实现文件差异查询。侧边的条会消失。
+
+无论是什么文件类型。
+
 ## 学习待办
 
 1： Live Preview 插件是否可以更好的运行 VScode？
