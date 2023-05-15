@@ -1,5 +1,10 @@
 {
-  "recommendations": [
-    "Spades.vs-picgo"
-  ]
+	"recommendations": [
+		"Spades.vs-picgo",
+		"yzhang.markdown-all-in-one",
+		"davidanson.vscode-markdownlint",
+		"bierner.markdown-mermaid",
+		"clover.md-table-editor",
+		"chrischinchilla.vscode-pandoc",
+	]
 }
