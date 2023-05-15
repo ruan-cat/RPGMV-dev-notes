@@ -6,5 +6,6 @@
 		"bierner.markdown-mermaid",
 		"clover.md-table-editor",
 		"chrischinchilla.vscode-pandoc",
+		"dendron.dendron-paste-image",
 	]
 }
