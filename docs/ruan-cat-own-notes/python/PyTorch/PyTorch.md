@@ -84,6 +84,8 @@ failed
 UnsatisfiableError:
 ```
 
+尝试了很多方式更改。目前卡在这里。就是安装不成功。
+
 ## cuda toolkit ？
 
 执行以下命令，出错，找不到内容
