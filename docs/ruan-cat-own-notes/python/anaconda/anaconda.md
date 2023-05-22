@@ -3,3 +3,118 @@
 ## 初始化？
 
 https://zhuanlan.zhihu.com/p/459601766
+
+## 安装
+
+### 参考资料
+
+- [python 最详细的安装与完全卸载](https://blog.csdn.net/hgnuxc_1993/article/details/114675594)
+
+### 官网下载
+
+### 手动删除之前自己安装的 python 环境
+
+需要指定版本。先去官网下载指定版本的安装包，然后再用安装包来卸载。下载安装包的目的是为了卸载。
+
+查看本机的 python 环境。必须写成大写。
+
+```bash
+python -V
+```
+
+### 安装校验
+
+```bash
+conda --version
+conda info
+```
+
+如果校验失败，就自己手动配置以下的环境变量。按照参考资料做即可。
+
+### 环境变量
+
+```bash
+D:\dev-tool\Anaconda\Anaconda3
+D:\dev-tool\Anaconda\Anaconda3\Scripts
+```
+
+### 镜像配置
+
+用`conda info`获取到 .condarc 配置文件的路径，手动配置镜像。
+
+原来的配置
+
+```yaml
+channels:
+  - https://mirrors.bfsu.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+  - defaults
+show_channel_urls: true
+```
+
+按照教程填写的配置。换成国内的清华大学镜像。
+
+```yaml
+channels:
+  - http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - http://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - http://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - defaults
+show_channel_urls: true
+```
+
+## 基础命令
+
+<!-- TODO: 等待查询常用的 conda 命令 -->
+
+- 版本
+
+```bash
+conda --version
+```
+
+- 基础信息
+
+```bash
+conda info
+```
+
+- 查看通道地址
+
+```bash
+conda config --show channels
+```
+
+- 查看所有虚拟环境
+
+```bash
+conda env list
+```
+
+- ？？ 有疑惑
+
+```bash
+conda config --append channels conda-forge
+```
+
+## 常用环境
+
+```bash
+conda activate rpytorch
+```
+
+## 常见错误
+
+### PackagesNotFoundError: The following packages are not available from current channels
+
+```bash
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - pytorch-cuda=11.7
+  - torchaudio
+```
+
+参考资料
+
+https://blog.csdn.net/weixin_45552562/article/details/109668589
