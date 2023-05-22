@@ -4,7 +4,15 @@
 
 一次性完成全部的环境搭建？
 
-https://www.bilibili.com/video/BV1pP41137r1/
+- https://www.bilibili.com/video/BV1pP41137r1/
+  这个教程太简陋了，什么都说不清楚。
+
+- https://www.bilibili.com/video/BV1f44y187Xg/
+  附带有 csdn 文章的教程，正在看。
+  放弃了。不敢看了。太简短，也没有说明清楚更多细节。PyTorch 怎么成功安装的。都没说清楚。
+
+- https://www.bilibili.com/video/BV1S5411X7FY/
+  郭睿提供的教程。正在看。
 
 ## 官方教程
 

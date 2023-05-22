@@ -38,9 +38,15 @@ D:\dev-tool\Anaconda\Anaconda3
 D:\dev-tool\Anaconda\Anaconda3\Scripts
 ```
 
-### 镜像配置
+### 镜像配置 .condarc 文件
 
 用`conda info`获取到 .condarc 配置文件的路径，手动配置镜像。
+
+文件路径
+
+```bash
+C:\Users\ruanzhongnan\.condarc
+```
 
 原来的配置
 
@@ -64,6 +70,19 @@ channels:
 show_channel_urls: true
 ```
 
+根据[文章](https://blog.csdn.net/weixin_42001274/article/details/127209878)增加额外的镜像，
+
+```bash
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/cloud/bioconda/
+conda config --add channels http://mirrors.aliyun.com/anaconda/cloud/bioconda/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+```
+
 ## 基础命令
 
 <!-- TODO: 等待查询常用的 conda 命令 -->
@@ -78,6 +97,12 @@ conda --version
 
 ```bash
 conda info
+```
+
+- 查看配置信息
+
+```bash
+conda config --show
 ```
 
 - 查看通道地址
