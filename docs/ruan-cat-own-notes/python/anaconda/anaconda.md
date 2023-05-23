@@ -126,7 +126,7 @@ conda config --append channels conda-forge
 ## 常用环境
 
 ```bash
-conda activate rpytorch
+conda activate pytorch
 ```
 
 ## 常见错误
@@ -143,3 +143,13 @@ PackagesNotFoundError: The following packages are not available from current cha
 参考资料
 
 https://blog.csdn.net/weixin_45552562/article/details/109668589
+
+## 重新安装用于 pytorch 的环境
+
+参考资料
+
+- https://www.bilibili.com/video/BV1S5411X7FY?p=22
+
+```bash
+conda create -n pytorch python=3.8 -c  https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+```
