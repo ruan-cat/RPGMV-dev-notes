@@ -31,3 +31,11 @@ https://github.com/ultralytics/yolov5/blob/master/README.zh-CN.md
 ![2023-05-22-11-32-58](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-22-11-32-58.png)
 
 ### 权重文件？
+
+## 错误
+
+### NotImplementedError: Could not run 'torchvision::nms' with arguments from the 'CUDA' backend.
+
+- [解决“NotImplementedError: Could not run ‘torchvision::nms‘ with arguments from the ‘CUDA‘ backend.”](https://blog.csdn.net/weixin_51179975/article/details/119082342)
+
+- [Getting "NotImplementedError: Could not run 'torchvision::nms' with arguments from CUDA backend" despite having all necessary libraries and imports](https://stackoverflow.com/questions/75103127/getting-notimplementederror-could-not-run-torchvisionnms-with-arguments-fr)
