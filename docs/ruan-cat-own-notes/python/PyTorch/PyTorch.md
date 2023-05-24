@@ -237,6 +237,15 @@ pip install D:\dev-evn\anaconda\pkgs\torch-2.0.1+cu118-cp38-cp38-win_amd64.whl
 
 初步结论。在已经安装好清华镜像的情况下，就不要再翻墙了。
 
+## 验证
+
+- https://www.bilibili.com/video/BV1S5411X7FY?p=28
+
+```python
+import torch
+torch.cuda.is_available()
+```
+
 ## cuda toolkit ？
 
 执行以下命令，出错，找不到内容
