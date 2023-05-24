@@ -39,3 +39,19 @@ https://github.com/ultralytics/yolov5/blob/master/README.zh-CN.md
 - [解决“NotImplementedError: Could not run ‘torchvision::nms‘ with arguments from the ‘CUDA‘ backend.”](https://blog.csdn.net/weixin_51179975/article/details/119082342)
 
 - [Getting "NotImplementedError: Could not run 'torchvision::nms' with arguments from CUDA backend" despite having all necessary libraries and imports](https://stackoverflow.com/questions/75103127/getting-notimplementederror-could-not-run-torchvisionnms-with-arguments-fr)
+
+- [NotImplementedError: Could not run 'torchvision::nms' with arguments from the 'CUDA' backend.](https://github.com/ultralytics/yolov5/issues/6205)
+
+####
+
+删除包
+
+```bash
+pip uninstall torch torchvision torchaudio
+```
+
+重新安装，不走任何节点加速
+
+```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
