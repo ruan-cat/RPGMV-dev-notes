@@ -32,6 +32,8 @@ https://github.com/ultralytics/yolov5/blob/master/README.zh-CN.md
 
 ### 权重文件？
 
+## yolo 训练速度慢
+
 ## 错误
 
 ### NotImplementedError: Could not run 'torchvision::nms' with arguments from the 'CUDA' backend.
@@ -42,7 +44,7 @@ https://github.com/ultralytics/yolov5/blob/master/README.zh-CN.md
 
 - [NotImplementedError: Could not run 'torchvision::nms' with arguments from the 'CUDA' backend.](https://github.com/ultralytics/yolov5/issues/6205)
 
-####
+#### 本地包冲突 重装 pytorch
 
 删除包
 
@@ -55,3 +57,47 @@ pip uninstall torch torchvision torchaudio
 ```bash
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
+
+### AssertionError: train: No labels found in XXXXX\train.cache, can not start training.
+
+因为文件组织格式错了，文件夹名称应该是强约束的。
+
+- [一文彻底解决 YOLOv5 训练找不到标签问题](https://blog.csdn.net/IYXUAN/article/details/124339385)
+
+### 无法使用 device 参数实现 GPU 训练 重装 pytorch
+
+这里先新建一个新的环境，在新的环境内安装，自己挑选的，低版本的安装命令如下：
+
+```bash
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.6
+```
+
+```bash
+pip install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu116
+```
+
+这里最终选择的是 pip 命令，结果如下：
+
+![2023-05-24-17-34-44](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-24-17-34-44.png)
+
+出现错误：
+
+```bash
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+imgviz 1.7.2 requires matplotlib, which is not installed.
+imgviz 1.7.2 requires PyYAML, which is not installed.
+labelme 5.2.0.post4 requires colorama, which is not installed.
+labelme 5.2.0.post4 requires matplotlib, which is not installed.
+labelme 5.2.0.post4 requires PyYAML, which is not installed.
+labelme 5.2.0.post4 requires qtpy!=1.11.2, which is not installed.
+```
+
+尝试手动安装，但是无法保证版本对应
+
+```bash
+pip install matplotlib PyYAML colorama qtpy!=1.11.2
+```
+
+### AssertionError: Invalid CUDA '--device 1' requested, use '--device cpu' or pass valid CUDA device(s)
+
+- [解决：AssertionError: CUDA unavailable, invalid device gpu requested](https://blog.csdn.net/qq_42709514/article/details/121168753)
