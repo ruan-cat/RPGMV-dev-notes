@@ -85,7 +85,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 
 ## 基础命令
 
-<!-- TODO: 等待查询常用的 conda 命令 -->
+TODO: 等待查询常用的 conda 命令
 
 - 版本
 
