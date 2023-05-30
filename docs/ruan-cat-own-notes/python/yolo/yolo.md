@@ -101,3 +101,13 @@ pip install matplotlib PyYAML colorama qtpy!=1.11.2
 ### AssertionError: Invalid CUDA '--device 1' requested, use '--device cpu' or pass valid CUDA device(s)
 
 - [解决：AssertionError: CUDA unavailable, invalid device gpu requested](https://blog.csdn.net/qq_42709514/article/details/121168753)
+
+### linux 服务器运行出错
+
+```bash
+(pytorch) [root@localhost yolov5-master]# python train.py
+Traceback (most recent call last):
+  File "/home/ai_rzn/code/yolov5-master/train.py", line 33, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
+```
