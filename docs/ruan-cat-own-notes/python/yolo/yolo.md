@@ -32,6 +32,20 @@ https://github.com/ultralytics/yolov5/blob/master/README.zh-CN.md
 
 ### 权重文件？
 
+## linux 环境下常用的命令行
+
+```bash
+conda activate pytorch
+cd /home/ai_rzn/code/yolov5-master/
+nohup python train.py &
+```
+
+查看指定用户的进程
+
+```bash
+ps -u root
+```
+
 ## yolo 训练速度慢
 
 ## 错误
