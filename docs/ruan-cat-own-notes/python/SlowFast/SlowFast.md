@@ -39,3 +39,21 @@ conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11
 ```
 
 ### fvcore
+
+参考资料
+
+- https://blog.csdn.net/weixin_43720054/article/details/126051206#t6
+- https://github.com/facebookresearch/fvcore#install
+
+```bash
+git clone https://github.com/facebookresearch/fvcore
+cd fvcore
+python setup.py install
+```
+
+[这篇文章](https://blog.csdn.net/hxxjxw/article/details/106433907)称 pip 会下载额外所需的子依赖。根据[官方文章](https://pip.pypa.io/en/stable/cli/pip_install/#description)所述，这里选择本地克隆项目，然后让 pip 自己安装指定包依赖，并首先索引到本地目录做安装。
+
+```bash
+git clone https://github.com/facebookresearch/fvcore
+pip install -e fvcore
+```
