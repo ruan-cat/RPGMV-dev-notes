@@ -244,7 +244,7 @@ python setup.py build develop
 python tools/run_net.py --cfg configs/Kinetics/C2D_8x8_R50.yaml NUM_GPUS 1 TRAIN.BATCH_SIZE 8 SOLVER.BASE_LR 0.0125 DATA.PATH_TO_DATA_DIR path_to_your_data_folder
 ```
 
-报错：
+### 报错 `ImportError: DLL load failed while importing _imaging: 找不到指定的模块。`
 
 ```bash
 Traceback (most recent call last):
@@ -269,7 +269,7 @@ ImportError: DLL load failed while importing _imaging: 找不到指定的模块�
 pip install -U pillow
 ```
 
-## 报错 ImportError: cannot import name 'cat_all_gather' from 'pytorchvideo.layers.distributed'
+### 报错 ImportError: cannot import name 'cat_all_gather' from 'pytorchvideo.layers.distributed'
 
 ```bash
 Traceback (most recent call last):
@@ -283,3 +283,149 @@ Traceback (most recent call last):
     from pytorchvideo.layers.distributed import (  # noqa
 ImportError: cannot import name 'cat_all_gather' from 'pytorchvideo.layers.distributed' (D:\dev-evn\anaconda\envs\slowfast\lib\site-packages\pytorchvideo\layers\distributed.py)
 ```
+
+根据[issue](https://github.com/facebookresearch/SlowFast/issues/636#issuecomment-1410492746)，处理方式为
+
+```bash
+git clone https://github.com/facebookresearch/pytorchvideo.git
+cd pytorchvideo
+pip install -e .
+```
+
+根据上述的操作方式，这里改写为以下命令：
+
+```bash
+git clone https://github.com/facebookresearch/pytorchvideo.git
+pip install -e pytorchvideo
+```
+
+### 报错 ModuleNotFoundError: No module named 'scipy'
+
+```bash
+Traceback (most recent call last):
+  File "tools/run_net.py", line 6, in <module>
+    from slowfast.utils.misc import launch_job
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\utils\misc.py", line 21, in <module>
+    from slowfast.datasets.utils import pack_pathway_output
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\datasets\__init__.py", line 4, in <module>
+    from .ava_dataset import Ava  # noqa
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\datasets\ava_dataset.py", line 10, in <module>
+    from . import transform as transform
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\datasets\transform.py", line 14, in <module>
+    from scipy.ndimage import gaussian_filter
+ModuleNotFoundError: No module named 'scipy'
+```
+
+根据报错，自主安装依赖：
+
+```bash
+pip install scipy
+```
+
+### ModuleNotFoundError: No module named 'sklearn'
+
+```bash
+Traceback (most recent call last):
+  File "tools/run_net.py", line 9, in <module>
+    from demo_net import demo
+  File "D:\code\web-dev-work-place\github-desktop-store\SlowFast\tools\demo_net.py", line 10, in <module>
+    from slowfast.visualization.async_predictor import AsyncDemo, AsyncVis
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\visualization\async_predictor.py", line 12, in <module>
+    from slowfast.visualization.predictor import Predictor
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\visualization\predictor.py", line 15, in <module>
+    from slowfast.visualization.utils import process_cv2_inputs
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\visualization\utils.py", line 8, in <module>
+    from sklearn.metrics import confusion_matrix
+ModuleNotFoundError: No module named 'sklearn'
+```
+
+自主编写的命令
+
+```bash
+pip install sklearn
+```
+
+根据[文章](https://blog.csdn.net/liupeng19970119/article/details/106456620)得知，sklearn 是 scikit-learn 的缩写，应该改为：
+
+```bash
+pip install scikit-learn
+```
+
+### RuntimeError: Distributed package doesn't have NCCL built in
+
+注意到 window 必须要用 gloo，linux 用 nccl。
+
+#### try 1
+
+- [Distributed pytorch with mpi](https://discuss.pytorch.org/t/distributed-pytorch-with-mpi/77106)
+
+```bash
+git clone --recursive https://github.com/pytorch/pytorch
+cd pytorch
+pip install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi
+```
+
+这里仅且克隆，但是不安装了。发现 git clone pytorch 会下载太多的子模块。很容易导致后续的失败。这里放弃了。
+
+#### try 2
+
+- https://discuss.pytorch.org/t/runtimeerror-distributed-package-doesnt-have-nccl-built-in/176744
+
+```python
+import torch
+torch.cuda.is_available()
+```
+
+```python
+import torch
+torch.__version__
+# '1.8.0+cu111'
+torch.cuda.nccl.is_available(torch.randn(1).cuda())
+# True
+torch.cuda.nccl.version()
+```
+
+运行了上述代码，为 false：
+
+```bash
+>>> import torch
+>>> torch.__version__
+'1.8.0'
+>>> torch.cuda.nccl.is_available(torch.randn(1).cuda())
+D:\dev-evn\anaconda\envs\slowfast\lib\site-packages\torch\cuda\nccl.py:16: UserWarning: PyTorch is not compiled with NCCL support
+  warnings.warn('PyTorch is not compiled with NCCL support')
+False
+>>> torch.cuda.nccl.version()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "D:\dev-evn\anaconda\envs\slowfast\lib\site-packages\torch\cuda\nccl.py", line 36, in version
+    return torch._C._nccl_version()
+AttributeError: module 'torch._C' has no attribute '_nccl_version'
+```
+
+参考资料的说法无头无尾的。说不清楚到底应该用什么方式处理。都是在分析能不能用，而不是怎么兼容。这个方式不合适，放弃了。
+
+#### try 3
+
+- https://github.com/ray-project/ray_lightning/issues/13
+
+这篇 issue 给出的解决方案是增加环境变量。设置环境变量 PL_TORCH_DISTRIBUTED_BACKEND=gloo
+
+尝试了。效果不好。正如 issue 所述，效果不好。
+
+#### try 4
+
+按照同事郭睿的说法，更改代码。这里先选择在自定义配置内改写为 gloo
+
+D:\code\web-dev-work-place\github-desktop-store\SlowFast\build\lib\slowfast\config\custom_config.py
+
+事实上根本判断不出来，到底是应该在那个地方改动，改成 gloo。内容过多。
+
+### 终止此命令
+
+经过一系列的查询资料。发现在 window 内硬装该项目，太容易暴毙了。环境很不适合。这里考虑参考别人的资料，下载模型权重文件，再看看本地运行效果。
+
+如果情况不好。按照这两个策略来做：
+
+- 笔记本电脑或者是台式机，本地新建 linux 虚拟机，看看是否可以使用到 gpu。在 linux 环境下，再完成 slowfast 的环境搭建和训练。
+- 用云服务器搭建。
