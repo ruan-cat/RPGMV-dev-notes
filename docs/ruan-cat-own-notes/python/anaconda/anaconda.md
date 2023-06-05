@@ -4,6 +4,10 @@
 
 https://zhuanlan.zhihu.com/p/459601766
 
+## anaconda 和 conda
+
+anaconda 是平台。conda 是环境。不过在目前的笔记中，默认把 anaconda 和 conda 混称，相互指代。
+
 ## 安装
 
 ### 参考资料
@@ -85,39 +89,49 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 
 ## 基础命令
 
-TODO: 等待查询常用的 conda 命令
+官方参考资料：
 
-- 版本
+- [Command reference](https://docs.conda.io/projects/conda/en/latest/commands.html)
+
+### 版本
 
 ```bash
 conda --version
 ```
 
-- 基础信息
+### 基础信息
 
 ```bash
 conda info
 ```
 
-- 查看配置信息
+### 查看配置信息
 
 ```bash
 conda config --show
 ```
 
-- 查看通道地址
+### 查看通道地址
 
 ```bash
 conda config --show channels
 ```
 
-- 查看所有虚拟环境
+### 查看所有虚拟环境
 
 ```bash
 conda env list
 ```
 
-- ？？ 有疑惑
+### 新建环境
+
+```bash
+conda create -n 环境名 python=3.7
+```
+
+这里举例为新建的 anaconda 的环境的 python 版本指定为 3.7 。
+
+### ？？ 有疑惑
 
 ```bash
 conda config --append channels conda-forge

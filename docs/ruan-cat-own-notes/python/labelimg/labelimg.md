@@ -17,3 +17,7 @@ github 文件？本地编译？本地运行？
 ## AutoLabelImg ？
 
 https://github.com/wufan-tb/AutoLabelImg/blob/master/readme_CN.md
+
+## label-studio ？
+
+- https://github.com/heartexlabs/label-studio
