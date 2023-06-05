@@ -429,3 +429,242 @@ D:\code\web-dev-work-place\github-desktop-store\SlowFast\build\lib\slowfast\conf
 
 - 笔记本电脑或者是台式机，本地新建 linux 虚拟机，看看是否可以使用到 gpu。在 linux 环境下，再完成 slowfast 的环境搭建和训练。
 - 用云服务器搭建。
+
+## 编纂 SLOWFAST_32x2_R101_50_50.yaml
+
+- https://zhuanlan.zhihu.com/p/484637273
+
+教程的配置：
+
+```yaml
+TRAIN:
+  ENABLE: False
+  DATASET: ava
+  BATCH_SIZE: 16
+  EVAL_PERIOD: 1
+  CHECKPOINT_PERIOD: 1
+  AUTO_RESUME: True
+  # 刚刚下载的官方权重文件的路径
+  CHECKPOINT_FILE_PATH: "D:/python/video_classify/SlowFast-main/weights/SLOWFAST_32x2_R101_50_50.pkl" #path to pretrain model
+  CHECKPOINT_TYPE: pytorch
+DATA:
+  NUM_FRAMES: 32
+  SAMPLING_RATE: 2
+  TRAIN_JITTER_SCALES: [256, 320]
+  TRAIN_CROP_SIZE: 224
+  TEST_CROP_SIZE: 256
+  INPUT_CHANNEL_NUM: [3, 3]
+DETECTION:
+  ENABLE: True
+  ALIGNED: False
+AVA:
+  BGR: False
+  DETECTION_SCORE_THRESH: 0.8
+  TEST_PREDICT_BOX_LISTS:
+    ["person_box_67091280_iou90/ava_detection_val_boxes_and_labels.csv"]
+SLOWFAST:
+  ALPHA: 4
+  BETA_INV: 8
+  FUSION_CONV_CHANNEL_RATIO: 2
+  FUSION_KERNEL_SZ: 5
+RESNET:
+  ZERO_INIT_FINAL_BN: True
+  WIDTH_PER_GROUP: 64
+  NUM_GROUPS: 1
+  DEPTH: 101
+  TRANS_FUNC: bottleneck_transform
+  STRIDE_1X1: False
+  NUM_BLOCK_TEMP_KERNEL: [[3, 3], [4, 4], [6, 6], [3, 3]]
+  SPATIAL_DILATIONS: [[1, 1], [1, 1], [1, 1], [2, 2]]
+  SPATIAL_STRIDES: [[1, 1], [2, 2], [2, 2], [1, 1]]
+NONLOCAL:
+  LOCATION: [[[], []], [[], []], [[6, 13, 20], []], [[], []]]
+  GROUP: [[1, 1], [1, 1], [1, 1], [1, 1]]
+  INSTANTIATION: dot_product
+  POOL:
+    [
+      [[2, 2, 2], [2, 2, 2]],
+      [[2, 2, 2], [2, 2, 2]],
+      [[2, 2, 2], [2, 2, 2]],
+      [[2, 2, 2], [2, 2, 2]],
+    ]
+BN:
+  USE_PRECISE_STATS: False
+  NUM_BATCHES_PRECISE: 200
+SOLVER:
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 1e-7
+  OPTIMIZING_METHOD: sgd
+MODEL:
+  NUM_CLASSES: 80
+  ARCH: slowfast
+  MODEL_NAME: SlowFast
+  LOSS_FUNC: bce
+  DROPOUT_RATE: 0.5
+  HEAD_ACT: sigmoid
+TEST:
+  ENABLE: False
+  DATASET: ava
+  BATCH_SIZE: 8
+DATA_LOADER:
+  NUM_WORKERS: 2
+  PIN_MEMORY: True
+
+NUM_GPUS: 1
+NUM_SHARDS: 1
+RNG_SEED: 0
+OUTPUT_DIR: .
+#TENSORBOARD:
+#  MODEL_VIS:
+#    TOPK: 2
+DEMO:
+  ENABLE: True
+  LABEL_FILE_PATH: "./demo/AVA/ava.json" #刚刚生成的label文件
+  INPUT_VIDEO: "./input/1.mp4" #视频输入路径
+  OUTPUT_FILE: "./output/1.mp4" #视频输出路径
+
+  DETECTRON2_CFG: "COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"
+  DETECTRON2_WEIGHTS: detectron2://COCO-Detection/faster_rcnn_R_50_FPN_3x/137849458/model_final_280758.pkl
+```
+
+当前配置：
+
+```yaml
+TRAIN:
+  ENABLE: False
+  DATASET: ava
+  BATCH_SIZE: 16
+  EVAL_PERIOD: 1
+  CHECKPOINT_PERIOD: 1
+  AUTO_RESUME: True
+  CHECKPOINT_FILE_PATH: ./SLOWFAST_32x2_R101_50_50.pkl #path to pretrain model
+  CHECKPOINT_TYPE: pytorch
+DATA:
+  NUM_FRAMES: 32
+  SAMPLING_RATE: 2
+  TRAIN_JITTER_SCALES: [256, 320]
+  TRAIN_CROP_SIZE: 224
+  TEST_CROP_SIZE: 256
+  INPUT_CHANNEL_NUM: [3, 3]
+DETECTION:
+  ENABLE: True
+  ALIGNED: False
+AVA:
+  BGR: False
+  DETECTION_SCORE_THRESH: 0.8
+  TEST_PREDICT_BOX_LISTS:
+    ["person_box_67091280_iou90/ava_detection_val_boxes_and_labels.csv"]
+SLOWFAST:
+  ALPHA: 4
+  BETA_INV: 8
+  FUSION_CONV_CHANNEL_RATIO: 2
+  FUSION_KERNEL_SZ: 5
+RESNET:
+  ZERO_INIT_FINAL_BN: True
+  WIDTH_PER_GROUP: 64
+  NUM_GROUPS: 1
+  DEPTH: 101
+  TRANS_FUNC: bottleneck_transform
+  STRIDE_1X1: False
+  NUM_BLOCK_TEMP_KERNEL: [[3, 3], [4, 4], [6, 6], [3, 3]]
+  SPATIAL_DILATIONS: [[1, 1], [1, 1], [1, 1], [2, 2]]
+  SPATIAL_STRIDES: [[1, 1], [2, 2], [2, 2], [1, 1]]
+NONLOCAL:
+  LOCATION: [[[], []], [[], []], [[6, 13, 20], []], [[], []]]
+  GROUP: [[1, 1], [1, 1], [1, 1], [1, 1]]
+  INSTANTIATION: dot_product
+  POOL:
+    [
+      [[2, 2, 2], [2, 2, 2]],
+      [[2, 2, 2], [2, 2, 2]],
+      [[2, 2, 2], [2, 2, 2]],
+      [[2, 2, 2], [2, 2, 2]],
+    ]
+BN:
+  USE_PRECISE_STATS: False
+  NUM_BATCHES_PRECISE: 200
+SOLVER:
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 1e-7
+  OPTIMIZING_METHOD: sgd
+MODEL:
+  NUM_CLASSES: 80
+  ARCH: slowfast
+  MODEL_NAME: SlowFast
+  LOSS_FUNC: bce
+  DROPOUT_RATE: 0.5
+  HEAD_ACT: sigmoid
+TEST:
+  ENABLE: False
+  DATASET: ava
+  BATCH_SIZE: 8
+DATA_LOADER:
+  NUM_WORKERS: 2
+  PIN_MEMORY: True
+
+NUM_GPUS: 1
+NUM_SHARDS: 1
+RNG_SEED: 0
+OUTPUT_DIR: .
+TENSORBOARD:
+  MODEL_VIS:
+    TOPK: 2
+DEMO:
+  ENABLE: True
+
+	LABEL_FILE_PATH: "./ava.json" #刚刚生成的label文件
+  INPUT_VIDEO: "./input/demo.mp4"			#视频输入路径
+  OUTPUT_FILE: "./output/demo.mp4"			#视频输出路径
+
+  DETECTRON2_CFG: "COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"
+  DETECTRON2_WEIGHTS: detectron2://COCO-Detection/faster_rcnn_R_50_FPN_3x/137849458/model_final_280758.pkl
+```
+
+执行命令：
+
+```bash
+python tools/run_net.py --cfg demo/AVA/SLOWFAST_32x2_R101_50_50.yaml
+```
+
+### `_pickle.UnpicklingError: pickle data was truncated`
+
+```bash
+Traceback (most recent call last):
+  File "tools/run_net.py", line 57, in <module>
+    main()
+  File "tools/run_net.py", line 53, in main
+    demo(cfg)
+  File "D:\code\web-dev-work-place\github-desktop-store\SlowFast\tools\demo_net.py", line 114, in demo
+    for task in tqdm.tqdm(run_demo(cfg, frame_provider)):
+  File "D:\dev-evn\anaconda\envs\slowfast\lib\site-packages\tqdm\std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "D:\code\web-dev-work-place\github-desktop-store\SlowFast\tools\demo_net.py", line 59, in run_demo
+    model = ActionPredictor(cfg=cfg, async_vis=async_vis)
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\visualization\predictor.py", line 132, in __init__
+    self.predictor = Predictor(cfg=cfg, gpu_id=gpu_id)
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\visualization\predictor.py", line 46, in __init__
+    cu.load_test_checkpoint(cfg, self.model)
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\utils\checkpoint.py", line 692, in load_test_checkpoint
+    load_checkpoint(
+  File "d:\code\web-dev-work-place\github-desktop-store\slowfast\slowfast\utils\checkpoint.py", line 298, in load_checkpoint
+    checkpoint = torch.load(f, map_location="cpu")
+  File "D:\dev-evn\anaconda\envs\slowfast\lib\site-packages\torch\serialization.py", line 593, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "D:\dev-evn\anaconda\envs\slowfast\lib\site-packages\torch\serialization.py", line 762, in _legacy_load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+_pickle.UnpicklingError: pickle data was truncated
+```
+
+- https://github.com/pytorch/pytorch/issues/18104
+
+根据 issue，
+
+```bash
+python tools/run_net.py --cfg demo/AVA/SLOWFAST_32x2_R101_50_50.yaml long_size=8
+```
+
+无效。
+
+- https://github.com/pytorch/pytorch/issues/18104#issuecomment-480599656
+
+此讨论说明不要再 window 系统内加载数据。而是在 linux 内就加载。
