@@ -5,10 +5,19 @@
 
 ## 快速启动工作流？
 
+### v1
+
 ```bash
 conda activate label-studio
 set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
 set LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=D:/img-store-4-ai/air-inflation-labeling-1
+label-studio
+```
+
+### v2
+
+```bash
+conda activate label-studio
 label-studio
 ```
 
@@ -76,6 +85,12 @@ label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 ![2023-06-06-13-55-12](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-06-13-55-12.png)
 
 进入后，发现之前注册的账户不行了。准备重新新建一个账户。但是不清楚是不是真正意义上的注册。
+
+经过自测，发现不填写上述路径时，就会进入默认在 C 盘的目录。以后按照命令启动时，应该提供明确的数据存储路径。
+
+只要是出现新的数据存储路径，就会需要创建一个新的账号。可以推测这个账号是局部本地账号。如果未来实现了部署 label-studio 到服务器，那么应该要有严格的账号管理。
+
+关于账号管理的细节，等未来实现了 label-studio 服务器部署之后再说吧。
 
 ## 学习待办
 
