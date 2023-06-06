@@ -18,7 +18,7 @@ label-studio
 
 ```bash
 conda activate label-studio
-label-studio
+label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 ```
 
 ## 快速激活本地的 anaconda 环境
@@ -91,5 +91,18 @@ label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 只要是出现新的数据存储路径，就会需要创建一个新的账号。可以推测这个账号是局部本地账号。如果未来实现了部署 label-studio 到服务器，那么应该要有严格的账号管理。
 
 关于账号管理的细节，等未来实现了 label-studio 服务器部署之后再说吧。
+
+## 自定义标签快捷键
+
+- https://labelstud.io/tags/label.html#Parameters
+- https://labelstud.io/guide/setup.html#Add-a-labeling-config-from-the-command-line
+
+实际工作时，发现这些标签行为控制起来很麻烦。这里可以自定义标签按钮组件的行为，自定义打标 UI。自定义功能。
+
+这里自定义的是快捷键。对`<Label>`组件的 hotkey props 做设置。
+
+TODO: https://labelstud.io/guide/start.html
+
+还需要专门学习保存上述组件配置文件。 --label-config
 
 ## 学习待办
