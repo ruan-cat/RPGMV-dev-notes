@@ -1,6 +1,7 @@
 # label-studio
 
 - https://github.com/heartexlabs/label-studio
+- https://blog.csdn.net/qq_36670734/article/details/122510886
 
 ## 快速启动工作流？
 
@@ -47,3 +48,41 @@ LOCAL_FILES_DOCUMENT_ROOT 是什么环境变量？
 ## 目前项目存储的路径
 
 C:\Users\ruanzhongnan\AppData\Local\label-studio\label-studio\media\upload\1
+
+注意到每次启动 label-studio 时，都是出现以下内容。东西总是存储在 C 盘。
+
+```bash
+Can't load sqlite3.dll from current directory
+=> Database and media directory: C:\Users\ruanzhongnan\AppData\Local\label-studio\label-studio
+=> Static URL is set to: /static/
+=> Database and media directory: C:\Users\ruanzhongnan\AppData\Local\label-studio\label-studio
+=> Static URL is set to: /static/
+```
+
+可能的解决方案：
+
+- https://blog.csdn.net/qq_36670734/article/details/122510886
+
+## 尝试变更项目文件默认的存储路径
+
+根据参考资料，打算在启动时增加该命令，指定数据库存储路径，再手动的新建项目：
+
+```bash
+label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
+```
+
+如图所示：存储路径有改动：
+
+![2023-06-06-13-55-12](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-06-13-55-12.png)
+
+进入后，发现之前注册的账户不行了。准备重新新建一个账户。但是不清楚是不是真正意义上的注册。
+
+## 学习待办
+
+TODO:
+
+怎么让本地的项目文件保存到指定的目录，而不是默认的 C 盘？
+
+怎么实现文件存储路径的自定义？
+
+怎么实现 window 环境下，自定义图片集的导入？导入本地的图片文件？
