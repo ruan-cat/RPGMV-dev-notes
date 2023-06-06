@@ -18,6 +18,6 @@ github 文件？本地编译？本地运行？
 
 https://github.com/wufan-tb/AutoLabelImg/blob/master/readme_CN.md
 
-## label-studio ？
+## 当前进度
 
-- https://github.com/heartexlabs/label-studio
+考虑用 label-studio 来实现打标了。而不是 labelimg。这个太容易出错，而且没有完善的文档。
