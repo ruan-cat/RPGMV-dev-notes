@@ -93,11 +93,3 @@ label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 关于账号管理的细节，等未来实现了 label-studio 服务器部署之后再说吧。
 
 ## 学习待办
-
-TODO:
-
-怎么让本地的项目文件保存到指定的目录，而不是默认的 C 盘？
-
-怎么实现文件存储路径的自定义？
-
-怎么实现 window 环境下，自定义图片集的导入？导入本地的图片文件？
