@@ -124,4 +124,10 @@ label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 
 尝试了一次，效果不好。
 
+## 数据切割？
+
+我现在可以按照 yolo 格式直接打包出所需的文件了。能否额外实现指定格式的数据分割？
+
+目前没有发现 label-studio 可以直接实现文件拆分的功能，暂时借助 chatGPT 生成的代码段实现业务。
+
 ## 学习待办
