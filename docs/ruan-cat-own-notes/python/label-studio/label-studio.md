@@ -29,12 +29,12 @@ label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 
 增加 --label-config 配置文件命令。
 
-TODO: 等待研究配置
-
 ```bash
 conda activate label-studio
-label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db --label-config=config.xml
+label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db --label-config=D:/temp-label-studio-proj/label-studio-db/config.xml
 ```
+
+该命令效果不好。配置的格式化内容没有直接被识别进去。暂时不考虑该配置了。毕竟现在确实没有复杂标签关系需要处理。
 
 ## 快速激活本地的 anaconda 环境
 
@@ -118,8 +118,10 @@ label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 
 这里自定义的是快捷键。对`<Label>`组件的 hotkey props 做设置。
 
-TODO: https://labelstud.io/guide/start.html
+## --label-config 自定义标签配置 ？
 
-还需要专门学习保存上述组件配置文件。 --label-config
+- https://labelstud.io/guide/start.html
+
+尝试了一次，效果不好。
 
 ## 学习待办
