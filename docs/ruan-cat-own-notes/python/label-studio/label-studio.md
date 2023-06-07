@@ -3,9 +3,11 @@
 - https://github.com/heartexlabs/label-studio
 - https://blog.csdn.net/qq_36670734/article/details/122510886
 
-## 快速启动工作流？
+## 项目启动命令
 
 ### v1
+
+尝试用 window 环境变量的方式设置存储路径。效果不好。无反应。
 
 ```bash
 conda activate label-studio
@@ -16,9 +18,22 @@ label-studio
 
 ### v2
 
+用 --data-dir 命令来设置存储路径。可用。
+
 ```bash
 conda activate label-studio
 label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
+```
+
+### v3 ？
+
+增加 --label-config 配置文件命令。
+
+TODO: 等待研究配置
+
+```bash
+conda activate label-studio
+label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db --label-config=config.xml
 ```
 
 ## 快速激活本地的 anaconda 环境
@@ -54,9 +69,13 @@ D:\img-store-4-ai\air-inflation-labeling-1\images
 
 LOCAL_FILES_DOCUMENT_ROOT 是什么环境变量？
 
-## 目前项目存储的路径
+## 尝试变更项目文件默认的存储路径
 
+目前项目存储的路径：
+
+```bash
 C:\Users\ruanzhongnan\AppData\Local\label-studio\label-studio\media\upload\1
+```
 
 注意到每次启动 label-studio 时，都是出现以下内容。东西总是存储在 C 盘。
 
@@ -71,8 +90,6 @@ Can't load sqlite3.dll from current directory
 可能的解决方案：
 
 - https://blog.csdn.net/qq_36670734/article/details/122510886
-
-## 尝试变更项目文件默认的存储路径
 
 根据参考资料，打算在启动时增加该命令，指定数据库存储路径，再手动的新建项目：
 

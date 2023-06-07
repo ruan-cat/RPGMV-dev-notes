@@ -93,3 +93,19 @@ https://luzhaoyang.com/zh/posts/dai-ma-gui-fan-zhi-li-jie-eslint-prettier-editor
 https://juejin.cn/post/7018810975822282760
 
 "javascript.format.insertSpaceBeforeFunctionParenthesis":
+
+## 在 vscode 的 prettier 插件内对 .xml 文件做格式化
+
+结论，在无 node 项目，无 prettier 配置文件的前提下，做不到让 esbenp.prettier-vscode 插件实现对单文件 .xml 的格式化处理。
+
+- https://github.com/prettier/prettier-vscode#plugins
+  这篇文章称，esbenp.prettier-vscode 插件可以识别出 package.json 配置的插件。可是不符合当前业务场景。
+
+- https://prettier.io/docs/en/configuration.html#setting-the-parserdocsenoptionshtmlparser-option
+  官方文档说明了特定文件类型的格式化配置写法。可是我们无法提供格式化配置文件。
+
+- https://prettier.io/docs/en/plugins.html#official-plugins
+  针对 .xml 是有官方插件的。
+
+- https://github.com/prettier/plugin-xml#getting-started
+  官方插件 .xml 默认总是在 node 项目内作用。
