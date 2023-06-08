@@ -17,3 +17,7 @@ github 文件？本地编译？本地运行？
 ## AutoLabelImg ？
 
 https://github.com/wufan-tb/AutoLabelImg/blob/master/readme_CN.md
+
+## 当前进度
+
+考虑用 label-studio 来实现打标了。而不是 labelimg。这个太容易出错，而且没有完善的文档。
