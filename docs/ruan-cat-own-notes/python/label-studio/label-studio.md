@@ -36,6 +36,14 @@ label-studio --data-dir=D:/code/web-dev-work-place/github-desktop-store/Image-Do
 
 --allow-serving-local-files 这个命令不能用 出错了
 
+### try2
+
+```bash
+conda activate label-studio
+cd D:\code\web-dev-work-place\github-desktop-store\Image-Downloader\images\person-drop-litter\try-1
+label-studio --data-dir=D:/code/web-dev-work-place/github-desktop-store/Image-Downloader/images/person-drop-litter/try-1/label-studio-temp-proj --username=root@root.com --password=root@root.com
+```
+
 ## 项目启动命令
 
 ### v1
@@ -137,10 +145,6 @@ conda env config vars list
 ```bash
 [ErrorDetail(string='Path D:\\img-store-4-ai\\air-inflation-labeling-1\\images must start with LOCAL_FILES_DOCUMENT_ROOT=C:\\ and must be a child, e.g.: C:\\abc', code='invalid')]
 ```
-
-经过一系列的尝试，处理方式如下：
-
-conda activate label-studio
 
 ## 尝试变更项目文件默认的存储路径
 
