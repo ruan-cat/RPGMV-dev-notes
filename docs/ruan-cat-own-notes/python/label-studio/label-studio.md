@@ -3,6 +3,39 @@
 - https://github.com/heartexlabs/label-studio
 - https://blog.csdn.net/qq_36670734/article/details/122510886
 
+## 不同业务下的快速启动命令
+
+### try1
+
+```bash
+conda activate label-studio
+cd D:\code\web-dev-work-place\github-desktop-store\Image-Downloader\images\person-drop-litter\try-1
+
+# v1 s
+set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+set LOCAL_FILES_SERVING_ENABLED=true
+
+# set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=True
+# set LOCAL_FILES_SERVING_ENABLED=True
+
+set LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=D:/code/web-dev-work-place/github-desktop-store/Image-Downloader/images/person-drop-litter/try-1
+# v1 e
+
+# v2 s
+conda env config vars set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+conda env config vars set LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=D:/code/web-dev-work-place/github-desktop-store/Image-Downloader/images/person-drop-litter/try-1
+conda env config vars list
+conda activate label-studio
+# v2 e
+
+echo %LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED%
+echo %LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT%
+
+label-studio --data-dir=D:/code/web-dev-work-place/github-desktop-store/Image-Downloader/images/person-drop-litter/try-1/label-studio-temp-proj --username=root@root.com --password=root@root.com
+```
+
+--allow-serving-local-files 这个命令不能用 出错了
+
 ## 项目启动命令
 
 ### v1
@@ -57,9 +90,47 @@ echo %LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT%
 
 发现在每次打开的按 anaconda 终端中，上述的环境变量在关闭终端时，就失效了。不清楚该命令是不是局部的，临时设置环境变量。
 
-D:\img-store-4-ai\air-inflation-labeling-1\images
+经过一系列的尝试，发现上述做法在 anaconda 启动的项目内无效，无意义。针对 anaconda 环境，设置环境变量要另外处理。
 
-### 设置本地存储
+## 针对 anaconda 启动的 label-studio 本地项目设置基于 anaconda 环境的环境变量
+
+参考资料
+
+- https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#setting-environment-variables
+
+### 设置
+
+在 Anaconda Powershell Prompt，不能用以下的 window 命令来设置环境变量。无效。
+
+```bash
+set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+```
+
+要用 conda 提供的命令，比如：
+
+```bash
+conda env config vars set my_var=value
+```
+
+设置完环境变量后，应该重新激活环境。具体看[官方文档](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#setting-environment-variables)。
+
+### 查看
+
+在 Anaconda Powershell Prompt，不能用以下的 window 命令来查看环境变量。无效。
+
+```bash
+echo %LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED%
+```
+
+要用 conda 提供的命令：
+
+```bash
+conda env config vars list
+```
+
+尽管官方文档说了可以用 echo 命令来查看，但是在我这里就是无效。
+
+## 设置本地存储
 
 错误：
 
@@ -67,7 +138,9 @@ D:\img-store-4-ai\air-inflation-labeling-1\images
 [ErrorDetail(string='Path D:\\img-store-4-ai\\air-inflation-labeling-1\\images must start with LOCAL_FILES_DOCUMENT_ROOT=C:\\ and must be a child, e.g.: C:\\abc', code='invalid')]
 ```
 
-LOCAL_FILES_DOCUMENT_ROOT 是什么环境变量？
+经过一系列的尝试，处理方式如下：
+
+conda activate label-studio
 
 ## 尝试变更项目文件默认的存储路径
 
