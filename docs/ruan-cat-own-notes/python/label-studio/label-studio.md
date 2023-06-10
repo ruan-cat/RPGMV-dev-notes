@@ -3,6 +3,30 @@
 - https://github.com/heartexlabs/label-studio
 - https://blog.csdn.net/qq_36670734/article/details/122510886
 
+## 尝试重新配置一次初始化的，正式的工作区？
+
+```bash
+# 激活环境
+conda activate label-studio
+# 进入特定分配的 专属于label-studio的工作区
+cd D:\common-dev-workspace\label-studio-workspace
+
+# 设置环境变量 允许读取本地数据
+conda env config vars set LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+# 设置环境变量 设置label-studio能够读取的本地文件夹路径
+conda env config vars set LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=D:\common-dev-workspace\label-studio-workspace
+
+# 查看刚刚设置的环境变量
+conda env config vars list
+
+# 重新激活环境
+conda activate label-studio
+
+# 启动项目
+# 设置项目数据库存储路径 账号和密码
+label-studio --data-dir=D:\common-dev-workspace\label-studio-workspace --username=root@root.com --password=root@root.com
+```
+
 ## 不同业务下的快速启动命令
 
 ### try1
