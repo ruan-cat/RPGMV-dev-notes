@@ -46,6 +46,12 @@ nohup python train.py &
 ps -u root
 ```
 
+### 常用的路径
+
+/home/ai_rzn/code/yolov5-master/business/person-drop-litter/
+
+/home/ai_rzn/code/yolov5-master/
+
 ## yolo 训练速度慢
 
 ## 错误
@@ -125,3 +131,9 @@ Traceback (most recent call last):
     import yaml
 ModuleNotFoundError: No module named 'yaml'
 ```
+
+50954
+51033
+51053
+
+60427
