@@ -132,8 +132,12 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'yaml'
 ```
 
-50954
-51033
-51053
+## 早停机制（Early Stopping）
 
-60427
+TODO: 待学习
+
+- https://blog.csdn.net/flyfish1986/article/details/120163286
+
+```bash
+Stopping training early as no improvement observed in last 100 epochs. Best results observed at epoch 110, best model saved as best.pt. To update EarlyStopping(patience=100) pass a new patience value, i.e. `python train.py --patience 300` or use `--patience 0` to disable EarlyStopping.
+```
