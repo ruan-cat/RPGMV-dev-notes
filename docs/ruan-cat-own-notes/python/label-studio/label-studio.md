@@ -3,7 +3,7 @@
 - https://github.com/heartexlabs/label-studio
 - https://blog.csdn.net/qq_36670734/article/details/122510886
 
-## 尝试重新配置一次初始化的，正式的工作区？
+## 根据人工划分的工作区，重新配置一次
 
 ```bash
 # 激活环境
@@ -28,6 +28,14 @@ label-studio --data-dir=D:\common-dev-workspace\label-studio-workspace --usernam
 ```
 
 ## 不同业务下的快速启动命令
+
+### 当前的最佳实践 current best practices
+
+```bash
+conda activate label-studio
+cd D:\common-dev-workspace\label-studio-workspace
+label-studio --data-dir=D:\common-dev-workspace\label-studio-workspace --username=root@root.com --password=root@root.com
+```
 
 ### try1
 
