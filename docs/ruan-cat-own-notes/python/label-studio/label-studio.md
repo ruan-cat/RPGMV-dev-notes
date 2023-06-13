@@ -240,3 +240,9 @@ label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 目前没有发现 label-studio 可以直接实现文件拆分的功能，暂时借助 chatGPT 生成的代码段实现业务。
 
 ## 学习待办
+
+### 奇怪的索引取值
+
+在重新构建一个拓展的打标任务时，url 和图片的 id 出现了不理解的数值，如下：
+
+![2023-06-13-09-41-11](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-13-09-41-11.png)
