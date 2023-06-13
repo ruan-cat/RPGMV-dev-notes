@@ -2,7 +2,7 @@
 
 ## 初始化？
 
-https://zhuanlan.zhihu.com/p/459601766
+- https://zhuanlan.zhihu.com/p/459601766
 
 ## anaconda 和 conda
 
@@ -41,6 +41,10 @@ conda info
 D:\dev-tool\Anaconda\Anaconda3
 D:\dev-tool\Anaconda\Anaconda3\Scripts
 ```
+
+### 解决.condarc 文件找不到的问题
+
+- https://blog.csdn.net/ljx0951/article/details/104121844
 
 ### 镜像配置 .condarc 文件
 
