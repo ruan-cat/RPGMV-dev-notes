@@ -8,10 +8,6 @@ https://zhuanlan.zhihu.com/p/421726412
 
 快捷键配置？快捷项目包管理？版本切换？
 
-## Conda
+## 一些通用性的开发经验
 
-这什么东西？
-
-## Anaconda
-
-这什么东西？
+工具类的 python 包，建议 git clone 跑本地。基于本地的项目来跑本地。
