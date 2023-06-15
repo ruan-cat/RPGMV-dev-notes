@@ -109,3 +109,13 @@ https://juejin.cn/post/7018810975822282760
 
 - https://github.com/prettier/plugin-xml#getting-started
   官方插件 .xml 默认总是在 node 项目内作用。
+
+## prittier 格式化代码报错
+
+- https://blog.csdn.net/qq_42309685/article/details/121821177
+
+我不知道为什么是 prettierrc.config.js 文件
+
+TODO:
+
+目前无法让 vscode 的 prettier 插件和 npm 安装 prettier 共同使用。 prettier --write 命令无效。
