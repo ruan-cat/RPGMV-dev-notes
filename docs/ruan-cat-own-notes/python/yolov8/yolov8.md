@@ -26,3 +26,34 @@ yolo detect mode=predict
 ```
 
 该命令不会去调用 cfg 配置声明的额外覆盖配置。没有找到合适的方式，实现复杂命令参数的统一配置。
+
+## 根据教程开始搭建环境
+
+- [YOLOv8 教程系列！](https://www.bilibili.com/read/cv23913741/)
+
+笔记本电脑可用的命令行：
+
+### 训练
+
+```bash
+yolo task=detect mode=train model=models/yolov8n.pt data=business/-temp-try/conf.yaml project=business/-temp-try/res batch=8 epochs=1 workers=8 imgsz=640
+```
+
+### 验证
+
+```bash
+yolo task=detect mode=val model=business/-temp-try/res/train2/weights/best.pt data=business/-temp-try/conf.yaml project=business/-temp-try/res
+```
+
+### 预测
+
+```bash
+yolo task=detect mode=predict model=business/-temp-try/res/train2/weights/best.pt source=business/-temp-try/images project=business/-temp-try/res
+```
+
+## 目前的工作流
+
+- 打标。不管用哪种打标工具，只要结果用 VOC，xml 格式导出即可。这远比单纯的 yolo，text 格式要好得多。
+- 数据处理。拆分数据集和格式转换。事实上可以随便更改其次序。
+  - splitDataset.py 拆分数据
+  - xml-2-txt-chatgpt-v1.py 数据格式转换 同时录入打标的标签。
