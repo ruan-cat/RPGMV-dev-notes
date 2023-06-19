@@ -154,6 +154,12 @@ pip install matplotlib==3.2.1
 
 经过一系列的配置后，无论是 yolov5、slowfast、还是 yolov8。这些模型的多平台部署都让人非常恼火。现在打算学习 docker 来一次性完成环境部署了。累了。
 
+其他同事在 matplotlib3.2.1 版本下，成功运行，其运行命令如下：
+
+```bash
+yolo task=detect mode=train model=yolov8n.pt data=business/person-drop-litter/conf.yaml batch=4 epochs=200 imgsz=640 workers=0
+```
+
 ## YOLOv5 和 YOLOv8 使用体验
 
 YOLOv8 用起来更加轻松，不用动脑子。
