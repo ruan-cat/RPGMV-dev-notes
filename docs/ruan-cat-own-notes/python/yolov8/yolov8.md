@@ -157,3 +157,15 @@ pip install matplotlib==3.2.1
 ## YOLOv5 和 YOLOv8 使用体验
 
 YOLOv8 用起来更加轻松，不用动脑子。
+
+- 项目运行根目录
+  /home/ai_rzn/code/ultralytics/
+
+- 图片文件路径
+  /home/ai_rzn/code/ultralytics/business/person-drop-litter/images/
+
+- 训练配置文件路径
+  /home/ai_rzn/code/ultralytics/business/person-drop-litter/conf.yaml
+
+- 实际执行的命令
+  nohup yolo task=detect mode=train model=models/yolov8n.pt data=business/person-drop-litter/conf.yaml project=business/person-drop-litter/res batch=8 epochs=350 workers=8 imgsz=640 &
