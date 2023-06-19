@@ -57,3 +57,45 @@ yolo task=detect mode=predict model=business/-temp-try/res/train2/weights/best.p
 - 数据处理。拆分数据集和格式转换。事实上可以随便更改其次序。
   - splitDataset.py 拆分数据
   - xml-2-txt-chatgpt-v1.py 数据格式转换 同时录入打标的标签。
+
+## linux 训练
+
+使用同一套运行命令。
+
+## linux 环境下常用的命令行
+
+```bash
+conda activate pytorch
+cd /home/ai_rzn/code/ultralytics/
+nohup 运行命令 &
+```
+
+查看指定用户的进程
+
+```bash
+ps -u root
+```
+
+在指定目录内，查看日志。这里默认特指 /home/ai_rzn/code/yolov5-master/ 目录
+
+```bash
+cat nohup.out
+```
+
+### 常用的路径
+
+数据集存储在 business 文件夹内
+
+/home/ai_rzn/code/ultralytics/business/
+
+/home/ai_rzn/code/ultralytics/
+
+yolo task=detect mode=train model=models/yolov8n.pt data=business/person-drop-litter/conf.yaml project=business/person-drop-litter/res batch=8 epochs=1 workers=8 imgsz=640
+
+```bash
+nohup yolo task=detect mode=train model=models/yolov8n.pt data=business/person-drop-litter/conf.yaml project=business/person-drop-litter/res batch=8 epochs=350 workers=8 imgsz=640 &
+```
+
+## YOLOv5 和 YOLOv8 使用体验
+
+YOLOv8 用起来更加轻松，不用动脑子。
