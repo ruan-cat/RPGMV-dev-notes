@@ -92,9 +92,67 @@ cat nohup.out
 
 yolo task=detect mode=train model=models/yolov8n.pt data=business/person-drop-litter/conf.yaml project=business/person-drop-litter/res batch=8 epochs=1 workers=8 imgsz=640
 
+训练：
+
 ```bash
 nohup yolo task=detect mode=train model=models/yolov8n.pt data=business/person-drop-litter/conf.yaml project=business/person-drop-litter/res batch=8 epochs=350 workers=8 imgsz=640 &
 ```
+
+预测：
+
+```bash
+yolo task=detect mode=predict model=business/person-drop-litter/res/train2/weights/best.pt source=business/person-drop-litter/images project=business/person-drop-litter/res
+```
+
+## ImportError: Cannot load backend 'TkAgg' which requires the 'tk' interactive framework, as 'headless' is currently running
+
+在 linux 内出现此问题。在训练到最后时出现该错误：
+
+```bash
+Traceback (most recent call last):
+  File "/home/anaconda3/envs/pytorch/bin/yolo", line 33, in <module>
+    sys.exit(load_entry_point('ultralytics', 'console_scripts', 'yolo')())
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/cfg/__init__.py", line 398, in entrypoint
+    getattr(model, mode)(**overrides)  # default args from model
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/engine/model.py", line 371, in train
+    self.trainer.train()
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/engine/trainer.py", line 192, in train
+    self._do_train(world_size)
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/engine/trainer.py", line 370, in _do_train
+    self.metrics, self.fitness = self.validate()
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/engine/trainer.py", line 476, in validate
+    metrics = self.validator(self)
+  File "/home/anaconda3/envs/pytorch/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/engine/validator.py", line 177, in __call__
+    stats = self.get_stats()
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/v8/detect/val.py", line 128, in get_stats
+    self.metrics.process(*stats)
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/utils/metrics.py", line 710, in process
+    results = ap_per_class(tp,
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/utils/metrics.py", line 523, in ap_per_class
+    plot_pr_curve(px, py, ap, save_dir / f'{prefix}PR_curve.png', names, on_plot=on_plot)
+  File "/home/ai_rzn/code/ultralytics/ultralytics/yolo/utils/__init__.py", line 197, in wrapper
+    plt.switch_backend(original_backend)
+  File "/home/anaconda3/envs/pytorch/lib/python3.9/site-packages/matplotlib/pyplot.py", line 279, in switch_backend
+    raise ImportError(
+ImportError: Cannot load backend 'TkAgg' which requires the 'tk' interactive framework, as 'headless' is currently running
+```
+
+- https://www.coder.work/article/6322766
+- https://www.cnblogs.com/gy77/p/15740857.html
+- https://github.com/open-mmlab/mmdetection/issues/5885
+
+```bash
+# 显示包版本
+pip show matplotlib
+# 移除
+pip uninstall matplotlib
+# 指定安装定版本
+pip install matplotlib==3.2.1
+```
+
+经过一系列的配置后，无论是 yolov5、slowfast、还是 yolov8。这些模型的多平台部署都让人非常恼火。现在打算学习 docker 来一次性完成环境部署了。累了。
 
 ## YOLOv5 和 YOLOv8 使用体验
 
