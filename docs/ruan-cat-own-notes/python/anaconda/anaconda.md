@@ -42,9 +42,21 @@ D:\dev-tool\Anaconda\Anaconda3
 D:\dev-tool\Anaconda\Anaconda3\Scripts
 ```
 
-### 解决.condarc 文件找不到的问题
+### 解决 .condarc 文件找不到的问题
 
 - https://blog.csdn.net/ljx0951/article/details/104121844
+
+如下图，看不到 .condarc 文件：
+
+![2023-06-15-14-57-20](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-15-14-57-20.jpg)
+
+运行一次 conda config 命令：
+
+![2023-06-15-14-58-09](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-15-14-58-09.jpg)
+
+好了。可以看到了：
+
+![2023-06-15-14-58-37](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-15-14-58-37.jpg)
 
 ### 镜像配置 .condarc 文件
 

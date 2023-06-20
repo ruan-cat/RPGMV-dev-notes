@@ -46,6 +46,12 @@ nohup python train.py &
 ps -u root
 ```
 
+在指定目录内，查看日志。这里默认特指 /home/ai_rzn/code/yolov5-master/ 目录
+
+```bash
+cat nohup.out
+```
+
 ### 常用的路径
 
 /home/ai_rzn/code/yolov5-master/business/person-drop-litter/
