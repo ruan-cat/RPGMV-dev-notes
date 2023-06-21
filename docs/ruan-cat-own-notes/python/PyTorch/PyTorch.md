@@ -262,3 +262,9 @@ CUDA Toolkit 安装教程（Windows）
 值得注意的是，包括了环境变量等内容。
 
 https://blog.csdn.net/qq_42951560/article/details/116131410
+
+## TODO 尝试实现 docker 镜像安装 pytorch 环境
+
+bing keys：
+
+docker Python 机器学习环境搭建 最佳实践
