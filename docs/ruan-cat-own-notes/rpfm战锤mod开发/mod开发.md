@@ -28,6 +28,10 @@ wh2_main_hef_longbow_arrow
 
 all_campaign_experience
 
+## mod 创意工坊 文件下载目录
+
+- https://jingyan.baidu.com/article/fec7a1e5ad52f51190b4e703.html
+
 ## unit_attributes_to_groups_junctions_tables
 
 这里记录常用的军队属性。比如引发恐惧。
