@@ -6,8 +6,6 @@ TODO:
 
 ## 需要尝试实现的网站爬虫功能
 
-TODO:
-
 比如关键词 随手扔垃圾
 
 - https://www.bing.com/images/search?q=随手扔垃圾
