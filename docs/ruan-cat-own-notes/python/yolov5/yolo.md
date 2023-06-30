@@ -147,3 +147,9 @@ TODO: 待学习
 ```bash
 Stopping training early as no improvement observed in last 100 epochs. Best results observed at epoch 110, best model saved as best.pt. To update EarlyStopping(patience=100) pass a new patience value, i.e. `python train.py --patience 300` or use `--patience 0` to disable EarlyStopping.
 ```
+
+## 数据增强
+
+- https://blog.csdn.net/flyfish1986/article/details/119968461
+
+对于 yolov8，这里也借用和 yolov5 相同的参数。

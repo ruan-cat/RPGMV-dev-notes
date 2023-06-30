@@ -6,14 +6,15 @@
 
 ## git 对 CRLF 差异的配置
 
-参考资料
-https://blog.csdn.net/qq_36587420/article/details/114380288
+- https://blog.csdn.net/qq_36587420/article/details/114380288
+- https://docs.github.com/zh/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
 
 目前没有查询到更多相关的配置。猜测很多东西都可以配置 CRLF 和 LF。
 
 ## 用 editorconfig 来配置
 
-https://editorconfig.org/#example-file
+- https://editorconfig.org/#example-file
+
 在项目根目录下配置.editorconfig 文件。目前暂时不使用，因为配置该例子后，prettier 的格式化似乎受到影响。就会使用双引号而不是期望的单引号。
 
 ## 现象记录
