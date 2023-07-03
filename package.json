@@ -19,7 +19,7 @@
     "vp-update": "^0.1.2",
     "vue": "^3.3.4",
     "vuepress": "2.0.0-beta.63",
-    "vuepress-plugin-search-pro": "2.0.0-beta.228",
+    "vuepress-plugin-search-pro": "2.0.0-beta.229",
     "vuepress-plugin-typedoc": "0.12.1",
     "vuepress-theme-hope": "2.0.0-beta.228"
   }
