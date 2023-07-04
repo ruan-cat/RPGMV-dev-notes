@@ -7,6 +7,7 @@
 这里有`新闻发布系统`、`插件版本系统`、`文档介绍系统`，跳转的网页也必须像封面这样简单
 
 UI 样式，以及业务需求的核心原型
+
 http://earphones-official.com/
 
 ## 需求理解
@@ -25,8 +26,7 @@ http://earphones-official.com/
 
 ## 当前情况
 
-项目仓库：
-https://github.com/DrillUp/SmallAliceWeb
+- [项目仓库](https://github.com/DrillUp/SmallAliceWeb)
 
 ## 项目进度
 
