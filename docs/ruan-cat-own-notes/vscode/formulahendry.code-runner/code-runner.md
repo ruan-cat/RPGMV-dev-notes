@@ -18,6 +18,8 @@ npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --fil
 
 在 package.json 中只输入下边这一句就可以了 { "type": "module" }
 
+在某些有特殊的项目中，不能设置该值。这会导致其他的错误。该配置还是很有局限性的。
+
 ### ts-node 换成 ts-node-esm
 
 参考资料不记得了，就记得换成 esm 的
