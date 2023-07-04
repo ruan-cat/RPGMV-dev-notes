@@ -22,15 +22,27 @@
 
 ```json {2}
 {
-  "editor.formatOnSave": true,
-  "formattingToggle.affects": [
-    "editor.formatOnPaste",
-    "editor.formatOnSave",
-    "editor.formatOnType"
-  ]
+	"editor.formatOnSave": true,
+	"formattingToggle.affects": [
+		"editor.formatOnPaste",
+		"editor.formatOnSave",
+		"editor.formatOnType"
+	]
 }
 ```
 
 ### 参考资料
 
 https://blog.csdn.net/weixin_43343144/article/details/105345307
+
+## path-intellisense.mappings
+
+TODO:
+
+```json
+{
+	"path-intellisense.mappings": {
+		"/@/": "${workspaceRoot}/src"
+	}
+}
+```
