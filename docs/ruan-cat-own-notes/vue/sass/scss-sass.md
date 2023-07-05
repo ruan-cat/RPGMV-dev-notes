@@ -14,24 +14,28 @@ Syntax Error: TypeError: this.getOptions is not a function
 
 ## implementation 的问题
 
+- https://juejin.cn/post/6990170277162254372
+
 在目前的 vue-cli 情况下，implementation 可能会有错误。vue.config.js 需要配置
 
 ```js
 conf = {
-  css: {
-    loaderOptions: {
-      sass: {
-        implementation: require('sass'),
-      },
-    },
-  },
+	css: {
+		loaderOptions: {
+			sass: {
+				implementation: require("sass"),
+			},
+		},
+	},
 };
 ```
 
-参考资料：
-https://juejin.cn/post/6990170277162254372
-
 ## 用 sass-migrator 批处理错误
 
-参考资料：
-https://blog.csdn.net/qq_38951259/article/details/127278847
+- https://blog.csdn.net/qq_38951259/article/details/127278847
+
+## Sass @use 替代 @import ？
+
+TODO
+
+- https://juejin.cn/post/7119019352149458974
