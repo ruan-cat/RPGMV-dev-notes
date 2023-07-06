@@ -22,5 +22,10 @@
     "vuepress-plugin-search-pro": "2.0.0-beta.228",
     "vuepress-plugin-typedoc": "0.12.1",
     "vuepress-theme-hope": "2.0.0-beta.228"
+  },
+  "dependencies": {
+    "element-plus": "^2.3.7",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21"
   }
 }
