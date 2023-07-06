@@ -21,3 +21,23 @@ TODO:
   > 可以进入了。
 
 ## 已经有了 WSl 了，怎么初始化基础的 ML 环境？
+
+## wsl2 ?
+
+升级到 WSL2 ？
+
+- https://zhuanlan.zhihu.com/p/337104547
+
+现在期望使用[WSL 2 上的 Docker 远程容器入门](https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-containers)。
+
+### Error code: Wsl/Service/CreateVm/HCS_E_SERVICE_NOT_AVAILABLE
+
+- https://blog.csdn.net/qq_36191272/article/details/119191992
+
+### 开启 Hyper-V 服务 ？
+
+- https://learn.microsoft.com/zh-cn/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v#enable-hyper-v-using-powershell
+
+### 暂停
+
+发现这个升级要弄的配置很多。不弄 WSL2 了。
