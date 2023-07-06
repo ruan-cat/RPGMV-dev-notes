@@ -1,6 +1,6 @@
 {
 	"recommendations": [
-		"Spades.vs-picgo",
+		"spades.vs-picgo",
 		"yzhang.markdown-all-in-one",
 		"davidanson.vscode-markdownlint",
 		"bierner.markdown-mermaid",
@@ -8,5 +8,6 @@
 		"chrischinchilla.vscode-pandoc",
 		"dendron.dendron-paste-image",
 		"shd101wyy.markdown-preview-enhanced",
+		"vue.vscode-typescript-vue-plugin"
 	]
 }
