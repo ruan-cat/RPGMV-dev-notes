@@ -1,33 +1,33 @@
 {
-  "name": "rpgmv-dev-notes",
-  "version": "1.0.0",
-  "description": "阮喵喵的rmmv开发笔记",
-  "license": "MIT",
-  "type": "module",
-  "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vuepress dev docs",
-    "docs:update-package": "pnpm dlx vp-update"
-  },
-  "devDependencies": {
-    "@types/lodash": "^4.14.195",
-    "@types/lodash-es": "^4.17.7",
-    "@vuepress/client": "2.0.0-beta.63",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.63",
-    "typedoc": "^0.24.8",
-    "typedoc-plugin-markdown": "^3.15.3",
-    "typescript": "^4.9.5",
-    "vp-update": "^0.1.2",
-    "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.63",
-    "vuepress-plugin-search-pro": "2.0.0-beta.228",
-    "vuepress-plugin-typedoc": "0.12.1",
-    "vuepress-theme-hope": "2.0.0-beta.228"
-  },
-  "dependencies": {
-    "element-plus": "^2.3.7",
-    "lodash": "^4.17.21",
-    "lodash-es": "^4.17.21"
-  }
+	"name": "rpgmv-dev-notes",
+	"version": "1.0.0",
+	"description": "阮喵喵的rmmv开发笔记",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"docs:build": "vuepress build docs",
+		"docs:clean-dev": "vuepress dev docs --clean-cache",
+		"docs:dev": "vuepress dev docs",
+		"docs:update-package": "pnpm dlx vp-update"
+	},
+	"dependencies": {
+		"element-plus": "^2.3.7",
+		"lodash": "^4.17.21",
+		"lodash-es": "^4.17.21"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.195",
+		"@types/lodash-es": "^4.17.7",
+		"@vuepress/client": "2.0.0-beta.63",
+		"@vuepress/plugin-docsearch": "2.0.0-beta.63",
+		"typedoc": "^0.24.8",
+		"typedoc-plugin-markdown": "^3.15.3",
+		"typescript": "^4.9.5",
+		"vp-update": "^0.1.2",
+		"vue": "^3.3.4",
+		"vuepress": "2.0.0-beta.63",
+		"vuepress-plugin-search-pro": "2.0.0-beta.228",
+		"vuepress-plugin-typedoc": "0.12.1",
+		"vuepress-theme-hope": "2.0.0-beta.228"
+	}
 }
