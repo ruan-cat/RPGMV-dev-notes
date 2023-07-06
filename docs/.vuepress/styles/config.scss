@@ -1,3 +1,5 @@
+@use "./palette.scss" as palette;
+
 // you can change config here
 $colors: #c0392b, #d35400, #f39c12, #27ae60, #16a085, #2980b9, #8e44ad, #2c3e50,
 	#7f8c8d !default;
@@ -15,3 +17,8 @@ $sidebar-width: 18.5rem;
 
 // 主要内容的宽度
 $content-width: 1150px;
+
+// $code-bg-color: (
+// 	light: $drillup-bg-yellow,
+// 	dark: #282c34,
+// ) !default;
