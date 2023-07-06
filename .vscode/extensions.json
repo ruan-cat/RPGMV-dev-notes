@@ -1,5 +1,9 @@
 {
 	"recommendations": [
+		"vue.volar",
+		"vue.vscode-typescript-vue-plugin",
+		"hollowtree.vue-snippets",
+		"jingwang37.element-plus-snippets",
 		"spades.vs-picgo",
 		"yzhang.markdown-all-in-one",
 		"davidanson.vscode-markdownlint",
@@ -8,6 +12,5 @@
 		"chrischinchilla.vscode-pandoc",
 		"dendron.dendron-paste-image",
 		"shd101wyy.markdown-preview-enhanced",
-		"vue.vscode-typescript-vue-plugin"
 	]
 }

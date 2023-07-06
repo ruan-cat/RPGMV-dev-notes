@@ -5,6 +5,11 @@
 	// "picgo.dataPath": "C:\\Users\\ruanzhongnan\\vs-picgo-data.json",
 	// "picgo.configPath": "C:\\Users\\Administrator\\AppData\\Roaming\\picgo\\data.json",
 	// "picgo.dataPath": "C:\\Users\\Administrator\\vs-picgo-data.json",
+	// 在vue3项目中，要求其格式化采用prettier来实现
+	// 有疑惑 是否应该在vue2中，让格式化换成纯粹的prettier，而不是vetur加层的？
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 }
 // 可参考的工作区配置 注意另存为工作区
 // {
