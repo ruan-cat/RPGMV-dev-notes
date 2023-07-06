@@ -19,4 +19,8 @@
 
 直接在 vuepress-theme-hope 内注册组件，直接在本 md 页面引入文件，直接实现一个简单的，可以交互的 demo。就用 element-plus 组件库。
 
+## 语法参考资料
+
+- https://theme-hope.vuejs.press/zh/cookbook/customize/component.html
+
 ## 可交互案例
