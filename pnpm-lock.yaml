@@ -16,6 +16,12 @@ dependencies:
     version: 4.17.21
 
 devDependencies:
+  '@types/lodash':
+    specifier: ^4.14.195
+    version: 4.14.195
+  '@types/lodash-es':
+    specifier: ^4.17.7
+    version: 4.17.7
   '@vuepress/client':
     specifier: 2.0.0-beta.63
     version: 2.0.0-beta.63
@@ -2087,11 +2093,9 @@ packages:
     resolution: {integrity: sha512-z0ptr6UI10VlU6l5MYhGwS4mC8DZyYer2mCoyysZtSF7p26zOX8UpbrV0YpNYLGS8K4PUFIyEr62IMFFjveSiQ==}
     dependencies:
       '@types/lodash': 4.14.195
-    dev: false
 
   /@types/lodash@4.14.195:
     resolution: {integrity: sha512-Hwx9EUgdwf2GLarOjQp5ZH8ZmblzcbTBC2wtQWNKARBSxM9ezRIAUpeDTgoQRAFB0+8CNWXVA9+MaSOzOF3nPg==}
-    dev: false
 
   /@types/markdown-it-emoji@2.0.2:
     resolution: {integrity: sha512-2ln8Wjbcj/0oRi/6VnuMeWEHHuK8uapFttvcLmDIe1GKCsFBLOLBX+D+xhDa9oWOQV0IpvxwrSfKKssAqqroog==}
