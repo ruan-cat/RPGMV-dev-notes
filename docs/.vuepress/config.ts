@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "@vuepress/utils";
+import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
@@ -36,6 +37,10 @@ export default defineUserConfig({
 			"./components/drill-goods/DrillGoods.vue"
 		),
 	},
+
+	bundler: viteBundler({
+		viteOptions: {},
+	}),
 
 	plugins: [
 		// 直接导入项目根目录下的配置文件 这样效率更高

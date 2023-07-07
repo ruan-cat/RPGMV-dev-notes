@@ -22,6 +22,9 @@ devDependencies:
   '@types/lodash-es':
     specifier: ^4.17.7
     version: 4.17.7
+  '@vitejs/plugin-vue':
+    specifier: ^4.2.3
+    version: 4.2.3(vite@4.3.9)(vue@3.3.4)
   '@vuepress/bundler-vite':
     specifier: 2.0.0-beta.64
     version: 2.0.0-beta.64
