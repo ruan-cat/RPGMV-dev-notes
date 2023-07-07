@@ -44,21 +44,21 @@ export default defineUserConfig({
 		),
 	},
 
-	bundler: viteBundler({
-		viteOptions: {
-			// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
-			// plugins: [vue()],
-
-			plugins: [
-				AutoImport({
-					resolvers: [ElementPlusResolver()],
-				}),
-				Components({
-					resolvers: [ElementPlusResolver()],
-				}),
-			],
-		},
-	}),
+	// 用更加好的方式实现element-plus的导入。
+	// bundler: viteBundler({
+	// 	viteOptions: {
+	// 		// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
+	// 		// plugins: [vue()],
+	// 		plugins: [
+	// 			AutoImport({
+	// 				resolvers: [ElementPlusResolver()],
+	// 			}),
+	// 			Components({
+	// 				resolvers: [ElementPlusResolver()],
+	// 			}),
+	// 		],
+	// 	},
+	// }),
 
 	plugins: [
 		// 直接导入项目根目录下的配置文件 这样效率更高
