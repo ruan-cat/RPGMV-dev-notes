@@ -1,4 +1,6 @@
-<!-- script -->
+<script setup lang="ts">
+import DrillGoods from "@DrillGoods";
+</script>
 
 # 钻头的商品管理页面
 
@@ -26,3 +28,7 @@
 - https://theme-hope.vuejs.press/zh/cookbook/customize/component.html
 
 ## 可交互案例
+
+<DrillGoods />
+
+<!-- 有疑惑 -->

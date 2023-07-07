@@ -5,7 +5,7 @@
 
 <template>
 	<section>
-		<h3>你哈</h3>
+		<h3>校验是否正确使用</h3>
 	</section>
 </template>
 
