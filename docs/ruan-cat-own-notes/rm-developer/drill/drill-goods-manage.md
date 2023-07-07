@@ -30,5 +30,3 @@ import DrillGoods from "@DrillGoods";
 ## 可交互案例
 
 <DrillGoods />
-
-<!-- 有疑惑 -->
