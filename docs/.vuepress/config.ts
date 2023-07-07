@@ -4,6 +4,8 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
+import vue from "@vitejs/plugin-vue";
+
 import { typedocPlugin } from "vuepress-plugin-typedoc/next";
 
 import typedocConf from "../../typedoc.config.cjs";
@@ -39,7 +41,10 @@ export default defineUserConfig({
 	},
 
 	bundler: viteBundler({
-		viteOptions: {},
+		viteOptions: {
+			// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
+			// plugins: [vue()],
+		},
 	}),
 
 	plugins: [
