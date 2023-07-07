@@ -1,4 +1,5 @@
 import { defineUserConfig } from "vuepress";
+import { getDirname, path } from "@vuepress/utils";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
@@ -7,6 +8,8 @@ import { typedocPlugin } from "vuepress-plugin-typedoc/next";
 import typedocConf from "../../typedoc.config.cjs";
 
 import theme from "./theme.js";
+
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
 	theme,
@@ -25,6 +28,13 @@ export default defineUserConfig({
 			// TODO 想设置这个名称 右侧侧边栏名称？
 			// metaLocales
 		},
+	},
+
+	alias: {
+		"@DrillGoods": path.resolve(
+			__dirname,
+			"./components/drill-goods/DrillGoods.vue"
+		),
 	},
 
 	plugins: [
