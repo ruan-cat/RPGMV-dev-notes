@@ -6,6 +6,10 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 import vue from "@vitejs/plugin-vue";
 
+import AutoImport from "unplugin-auto-import/vite";
+import Components from "unplugin-vue-components/vite";
+import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
+
 import { typedocPlugin } from "vuepress-plugin-typedoc/next";
 
 import typedocConf from "../../typedoc.config.cjs";
@@ -44,6 +48,15 @@ export default defineUserConfig({
 		viteOptions: {
 			// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
 			// plugins: [vue()],
+
+			plugins: [
+				AutoImport({
+					resolvers: [ElementPlusResolver()],
+				}),
+				Components({
+					resolvers: [ElementPlusResolver()],
+				}),
+			],
 		},
 	}),
 
