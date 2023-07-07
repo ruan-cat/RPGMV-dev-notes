@@ -22,6 +22,9 @@ devDependencies:
   '@types/lodash-es':
     specifier: ^4.17.7
     version: 4.17.7
+  '@vuepress/bundler-vite':
+    specifier: 2.0.0-beta.64
+    version: 2.0.0-beta.64
   '@vuepress/client':
     specifier: 2.0.0-beta.64
     version: 2.0.0-beta.64
@@ -2152,7 +2155,7 @@ packages:
   /@types/sax@1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.4.0
     dev: true
 
   /@types/trusted-types@2.0.3:
