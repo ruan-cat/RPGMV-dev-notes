@@ -1,7 +1,16 @@
 import { defineStore } from "pinia";
 
 import { ref } from "vue";
+import { merge, cloneDeep } from "lodash";
 
+import type { Ref } from "vue";
+
+/** 默认的图标色 这里不清楚如何实现scss的ts模块导入 */
+export const defIconColor = "#096dd9";
+// import palette from "../../../styles/palette.scss";
+// $theme-color
+
+/** 商品类 特指单个商品 */
 export type Commodity = {
 	/** 商品名称 */
 	name: string;
@@ -19,16 +28,23 @@ export type Commodity = {
 	iconColor?: string;
 };
 
-// export const defCommodity =
+export const defCommodity: Ref<Commodity[]> = ref([
+	{
+		name: "apple",
+		price: 2.86,
+		desc: "fancy apple",
+		icon: "♂️",
+	},
+]);
 
 /** 使用 商品单品 管理store */
-export const uesSingleCommodity = defineStore(
+export const useSingleCommodity = defineStore(
 	"singleCommodity",
 	() => {
-		// const l
+		const commodity = ref(cloneDeep(defCommodity));
 
 		const someState = ref("你好 pinia");
-		return { someState };
+		return { someState, commodity };
 	},
 
 	{
