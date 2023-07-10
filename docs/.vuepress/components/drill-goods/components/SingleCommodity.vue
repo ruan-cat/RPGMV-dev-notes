@@ -10,12 +10,12 @@ console.log("  in SingleCommodity ", commodity.value);
 </script>
 
 <template>
-	<section>
+	<section class="SingleCommodity-root">
 		<!-- style="width: 100%" -->
 		<el-table :data="commodity">
-			<el-table-column prop="name" label="名称" min-width="180" />
+			<el-table-column prop="name" label="名称" width="180" />
 
-			<el-table-column prop="desc" label="描述" width="180" />
+			<el-table-column prop="desc" label="描述" min-width="180" />
 
 			<el-table-column prop="icon" label="标签">
 				<template #default="scope">
@@ -26,4 +26,13 @@ console.log("  in SingleCommodity ", commodity.value);
 	</section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.SingleCommodity-root {
+	:deep(.el-table) {
+		table {
+			// 清除边距
+			margin: 0 0;
+		}
+	}
+}
+</style>
