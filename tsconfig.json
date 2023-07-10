@@ -6,11 +6,13 @@
 		"declaration": true,
 		"composite": true,
 		"emitDeclarationOnly": true,
+		"moduleResolution": "Node",
 		"typeRoots": [
 			"./types"
 		]
 	},
 	"include": [
+		"./docs/.vuepress/components/drill-goods/**/*.ts",
 		"docs/**/*.ts",
 		"docs/**/*.d.ts",
 		"docs/**/*.tsx",

@@ -59,10 +59,10 @@ export const useSingleCommodity = defineStore(
 
 		const someState = ref("你好 pinia");
 		return { someState, commodity };
-	},
-
-	{
-		// 目前没能够实现 localstorage 的兼容问题。同时兼容vite 浏览器 node。故不使用持久化。
-		persist: false,
 	}
+
+	// {
+	// 	// 目前没能够实现 localstorage 的兼容问题。同时兼容vite 浏览器 node。故不使用持久化。
+	// 	persist: false,
+	// }
 );

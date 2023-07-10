@@ -2,6 +2,7 @@ import { ref } from "vue";
 
 export type Mode = "info" | "edit";
 
+/** 使用模式 */
 export const useMode = function () {
 	const mode = ref<Mode>("info");
 
