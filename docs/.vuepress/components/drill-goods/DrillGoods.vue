@@ -3,6 +3,9 @@
 import { ref, reactive, computed } from "vue";
 // import { storeToRefs } from "pinia";
 
+import SetMenu from "./components/SetMenu.vue";
+import SingleCommodity from "./components/SingleCommodity.vue";
+
 const tabBusinessConfList = [
 	{
 		name: "singleCommodity",
@@ -20,11 +23,9 @@ const selected = ref(tabBusinessConfList[0].name);
 
 <template>
 	<section>
-		<h3>校验是否正确使用</h3>
-
 		<el-tabs v-model="selected">
 			<el-tab-pane label="商品单品管理" name="singleCommodity">
-				<h2>商品单品管理</h2>
+				<SingleCommodity></SingleCommodity>
 			</el-tab-pane>
 
 			<el-tab-pane label="套餐组合管理" name="setMenu">

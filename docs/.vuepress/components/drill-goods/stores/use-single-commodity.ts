@@ -30,10 +30,24 @@ export type Commodity = {
 
 export const defCommodity: Ref<Commodity[]> = ref([
 	{
-		name: "apple",
-		price: 2.86,
-		desc: "fancy apple",
-		icon: "♂️",
+		name: "土豆",
+		desc: "小爱丽丝在鹅萝斯-东伯利亚种的土豆。",
+		icon: "fluent-emoji-high-contrast:potato",
+		price: 50,
+	},
+
+	{
+		name: "橘子",
+		desc: "进口自QQ飞车的橘子。",
+		icon: "game-icons:orange-slice",
+		price: 20,
+	},
+
+	{
+		name: "葡萄",
+		desc: "在旧疆生产的紫水晶葡萄",
+		icon: "fluent-emoji-high-contrast:grapes",
+		price: 30,
 	},
 ]);
 
