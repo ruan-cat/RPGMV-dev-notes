@@ -18,6 +18,8 @@
     "pinia-plugin-persistedstate": "^3.1.0"
   },
   "devDependencies": {
+    "@iconify/json": "^2.2.88",
+    "@iconify/vue": "^4.1.1",
     "@types/lodash": "^4.14.195",
     "@types/lodash-es": "^4.17.7",
     "@vitejs/plugin-vue": "^4.2.3",
