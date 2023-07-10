@@ -18,7 +18,8 @@ export default defineClientConfig({
 		// https://prazdevs.github.io/pinia-plugin-persistedstate/zh/guide/advanced.html#启用所有-store-默认持久化
 		pinia.use(
 			createPersistedState({
-				storage: localStorage,
+				// 不指定存储的工具了 这里没有找到合适的方案，实现node环境内的兼容
+				// storage: localStorage,
 				auto: false,
 			})
 		);
