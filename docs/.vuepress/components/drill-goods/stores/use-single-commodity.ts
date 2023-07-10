@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 
 import { ref } from "vue";
-import { merge, cloneDeep } from "lodash";
+import { merge, cloneDeep } from "lodash-es";
 
 import type { Ref } from "vue";
 
