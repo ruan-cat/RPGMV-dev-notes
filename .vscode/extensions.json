@@ -1,7 +1,9 @@
 {
 	"recommendations": [
 		"antfu.vite",
+		"antfu.iconify",
 		"vue.volar",
+		"yoavbls.pretty-ts-errors",
 		"vue.vscode-typescript-vue-plugin",
 		"hollowtree.vue-snippets",
 		"jingwang37.element-plus-snippets",
