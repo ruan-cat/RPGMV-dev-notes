@@ -13,10 +13,10 @@ import piniaPluginPersistedstate, {
 
 import DrillGoods from "./components/drill-goods/DrillGoods.vue";
 
-const piniaUseLocalStorage =
-	typeof window !== "undefined"
-		? window.localStorage
-		: new LocalStorage("./scratch");
+// const piniaUseLocalStorage =
+// 	typeof window !== "undefined"
+// 		? window.localStorage
+// 		: new LocalStorage("./scratch");
 
 export default defineClientConfig({
 	enhance: ({ app, router, siteData }) => {
