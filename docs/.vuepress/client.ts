@@ -3,12 +3,20 @@ import { defineClientConfig } from "@vuepress/client";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 
+// https://stackoverflow.com/questions/10358100/how-to-access-localstorage-in-node-js
+import { LocalStorage } from "node-localstorage";
+
 import { createPinia } from "pinia";
 import piniaPluginPersistedstate, {
 	createPersistedState,
 } from "pinia-plugin-persistedstate";
 
 import DrillGoods from "./components/drill-goods/DrillGoods.vue";
+
+const piniaUseLocalStorage =
+	typeof window !== "undefined"
+		? window.localStorage
+		: new LocalStorage("./scratch");
 
 export default defineClientConfig({
 	enhance: ({ app, router, siteData }) => {
@@ -19,7 +27,7 @@ export default defineClientConfig({
 		pinia.use(
 			createPersistedState({
 				// 不指定存储的工具了 这里没有找到合适的方案，实现node环境内的兼容
-				// storage: localStorage,
+				storage: piniaUseLocalStorage,
 				auto: false,
 			})
 		);
