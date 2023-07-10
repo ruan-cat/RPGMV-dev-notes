@@ -1,5 +1,6 @@
 {
 	"recommendations": [
+		"antfu.vite",
 		"vue.volar",
 		"vue.vscode-typescript-vue-plugin",
 		"hollowtree.vue-snippets",
