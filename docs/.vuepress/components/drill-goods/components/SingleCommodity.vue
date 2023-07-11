@@ -11,6 +11,9 @@ console.log("  in SingleCommodity ", commodity.value);
 
 <template>
 	<section class="SingleCommodity-root">
+		<!-- 导出文件 -->
+		<el-button type="primary" size="default"> </el-button>
+
 		<el-table :data="commodity">
 			<el-table-column prop="name" label="名称" width="180" />
 
