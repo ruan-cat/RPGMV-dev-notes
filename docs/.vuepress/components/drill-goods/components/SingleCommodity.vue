@@ -11,7 +11,14 @@ console.log("  in SingleCommodity ", commodity.value);
 
 <template>
 	<section class="SingleCommodity-root">
-		<!-- 导出文件 -->
+		<!-- 
+			导出文件
+			https://www.npmjs.com/package/vue-json-excel3
+			https://github.com/pratik227/vue3-json-excel
+			前端 vue 导出为excel
+
+			TODO: 实现导出为Excel文件
+		-->
 		<el-button type="primary" size="default"> </el-button>
 
 		<el-table :data="commodity">
