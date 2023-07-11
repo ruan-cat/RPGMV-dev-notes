@@ -23,6 +23,9 @@ dependencies:
   pinia-plugin-persistedstate:
     specifier: ^3.1.0
     version: 3.1.0(pinia@2.1.4)
+  vue-json-excel3:
+    specifier: ^0.0.9
+    version: 0.0.9
 
 devDependencies:
   '@iconify/json':
@@ -3667,6 +3670,10 @@ packages:
       domhandler: 5.0.3
     dev: true
 
+  /downloadjs@1.4.7:
+    resolution: {integrity: sha512-LN1gO7+u9xjU5oEScGFKvXhYf7Y/empUIIEAGBs1LzUq/rg5duiDrkuH5A2lQGd5jfMOb9X9usDa2oVXwJ0U/Q==}
+    dev: false
+
   /echarts@5.4.2:
     resolution: {integrity: sha512-2W3vw3oI2tWJdyAz+b8DuWS0nfXtSDqlDmqgin/lfzbkB01cuMEN66KWBlmur3YMp5nEDEEt5s23pllnAzB4EA==}
     dependencies:
@@ -6386,6 +6393,12 @@ packages:
         optional: true
     dependencies:
       vue: 3.3.4
+
+  /vue-json-excel3@0.0.9:
+    resolution: {integrity: sha512-Fuufu+AvPvhrowx2t3kQzqXgE1ZzWBiVQTnUq5g7IgVxBL7lyrgjr1p1IKx1bH+qm8aryCQk6iQ4Cv0QrDU4wQ==}
+    dependencies:
+      downloadjs: 1.4.7
+    dev: false
 
   /vue-router@4.2.4(vue@3.3.4):
     resolution: {integrity: sha512-9PISkmaCO02OzPVOMq2w82ilty6+xJmQrarYZDkjZBfl4RvYAlt4PKnEX21oW4KTtWfa9OuO/b3qk1Od3AEdCQ==}
