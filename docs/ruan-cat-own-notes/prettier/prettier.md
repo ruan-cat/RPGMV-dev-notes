@@ -119,3 +119,15 @@ https://juejin.cn/post/7018810975822282760
 TODO:
 
 目前无法让 vscode 的 prettier 插件和 npm 安装 prettier 共同使用。 prettier --write 命令无效。
+
+## 标签总是另起一行
+
+- https://blog.csdn.net/shd_0310/article/details/120769177
+
+处理方式是在用户全局 vscode 配置文件中写死。
+
+## prettier 依赖包和 vsc 的 prettier 在格式化时的细节差异？
+
+TODO: prettier 依赖包和 vsc 的 prettier 在格式化时的细节差异？
+
+这导致了 vue 组件在使用时，有着不同的操作行为。
