@@ -5,9 +5,12 @@ import { storeToRefs } from "pinia";
 import { Icon } from "@iconify/vue";
 import JsonExcel from "vue-json-excel3";
 
+import { useMode } from "../hooks/use-mode";
 import { useSingleCommodity } from "../stores/use-single-commodity";
+import SwitchMode from "../components/SwitchMode.vue";
 
 const { commodity } = storeToRefs(useSingleCommodity());
+const { mode } = useMode();
 
 console.log("  in SingleCommodity ", commodity.value);
 
@@ -49,6 +52,8 @@ const json_data = ref([
 
 <template>
 	<section class="SingleCommodity-root">
+		<SwitchMode :mode="mode"></SwitchMode>
+
 		<!-- 
 			导出文件
 			https://www.npmjs.com/package/vue-json-excel3

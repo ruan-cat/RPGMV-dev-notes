@@ -1,10 +1,9 @@
 <script lang="ts" setup>
 import { ref } from "vue";
+import { useVModel } from "@vueuse/core";
 
 import { useMode } from "../hooks/use-mode";
 import type { Mode } from "../hooks/use-mode";
-
-const { mode } = useMode();
 
 type SwitchModeProps = {
 	mode: Mode;
@@ -14,8 +13,9 @@ const props = withDefaults(defineProps<SwitchModeProps>(), {
 	mode: "info",
 });
 
-const switcher = mode;
-switcher.value = "info";
+const emit = defineEmits(["update:mode"]);
+
+const switcher = useVModel(props, "mode", emit);
 
 const activeValue = ref<Mode>("info");
 const inactiveValue = ref<Mode>("edit");
@@ -35,6 +35,7 @@ const inactiveValue = ref<Mode>("edit");
 			:inactive-value="inactiveValue"
 			@change=""
 		>
+			{{ switcher }}
 		</el-switch>
 	</section>
 </template>
