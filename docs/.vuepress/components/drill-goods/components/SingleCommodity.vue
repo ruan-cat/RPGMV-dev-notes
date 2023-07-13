@@ -52,7 +52,7 @@ const json_data = ref([
 
 <template>
 	<section class="SingleCommodity-root">
-		<SwitchMode :mode="mode"></SwitchMode>
+		<SwitchMode v-model:mode="mode"></SwitchMode>
 
 		<!-- 
 			导出文件

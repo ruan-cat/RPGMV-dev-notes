@@ -33,7 +33,6 @@ const inactiveValue = ref<Mode>("edit");
 			v-model="switcher"
 			:active-value="activeValue"
 			:inactive-value="inactiveValue"
-			@change=""
 		>
 			{{ switcher }}
 		</el-switch>
