@@ -26,7 +26,7 @@
     "@types/lodash": "^4.14.195",
     "@types/lodash-es": "^4.17.8",
     "@vitejs/plugin-vue": "^4.2.3",
-    "@vuepress/bundler-vite": "2.0.0-beta.64",
+    "@vuepress/bundler-vite": "2.0.0-beta.66",
     "@vuepress/client": "2.0.0-beta.64",
     "@vuepress/plugin-docsearch": "2.0.0-beta.64",
     "@vuepress/utils": "2.0.0-beta.64",
