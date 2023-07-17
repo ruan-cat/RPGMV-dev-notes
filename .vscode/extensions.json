@@ -2,9 +2,11 @@
 	"recommendations": [
 		"antfu.vite",
 		"antfu.iconify",
+		// vue3的 .vue SFCs 的 LSP 语言支持服务
 		"vue.volar",
-		"yoavbls.pretty-ts-errors",
+		// 针对vue3 typescript语言的插件
 		"vue.vscode-typescript-vue-plugin",
+		"yoavbls.pretty-ts-errors",
 		"hollowtree.vue-snippets",
 		"jingwang37.element-plus-snippets",
 		"spades.vs-picgo",
