@@ -14,6 +14,8 @@ TODO:
 
 - https://github.com/vue-styleguidist/vue-styleguidist
 
+- https://www.cnblogs.com/mfyngu/p/13049965.html
+
 ## vuedoc
 
 - https://github.com/vuedoc/md
@@ -21,6 +23,34 @@ TODO:
 ## vuepress-apidoc
 
 - https://gitee.com/DoLaMi/vuepress-apidoc
+
+## libpack
+
+- https://github.com/Zenquan/libpack
+
+## vuepress-jsdoc
+
+- https://github.com/ph1p/vuepress-jsdoc
+
+## vuese
+
+- https://github.com/vuese/vuese
+
+- https://juejin.cn/post/6892314449488576520
+
+## jsdoc-vue
+
+- https://github.com/QingWei-Li/jsdoc-vue
+
+## jsdoc-vuejs
+
+- https://github.com/Kocal/jsdoc-vuejs
+
+- https://zhuanlan.zhihu.com/p/205225678
+
+## vite-plugin-vue-docs-2
+
+- https://github.com/meetqy/vite-plugin-vue-docs-2
 
 ## 自动化文档生成的整体进度
 
