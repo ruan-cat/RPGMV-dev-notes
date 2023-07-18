@@ -104,3 +104,7 @@ const c = {
 	],
 };
 ```
+
+## Redirected when going from "/login" to "/dashboard" via a navigation guard.
+
+- https://www.cnblogs.com/zyh2333/p/14714031.html
