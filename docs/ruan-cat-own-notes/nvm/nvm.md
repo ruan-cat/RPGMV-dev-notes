@@ -1,14 +1,13 @@
 # nvm node 包管理器
 
-## 自动生成基于项目的 .nvmrc 文件
+- https://github.com/nvm-sh/nvm/blob/master/README.md
 
-在对应的 node 项目根目录下面直接运行此命令，即可快速生成该文件。不再需要手动创建。这行命令运用的是 window 命令行写入文件的方式实现的。
+## 看清楚文档
 
-```bash
-node -v > .nvmrc
-```
+- https://github.com/nvm-sh/nvm/blob/master/README.md#about
+- https://github.com/coreybutler/nvm-windows
 
-https://zhuanlan.zhihu.com/p/369253314
+nvm-sh 不是用于 window 系统的，nvm-windows 才是。所以很多功能都没有。
 
 ## 下载最新版的指定 node 版本
 
