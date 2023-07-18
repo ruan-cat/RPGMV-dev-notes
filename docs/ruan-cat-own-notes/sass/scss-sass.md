@@ -39,3 +39,11 @@ conf = {
 TODO
 
 - https://juejin.cn/post/7119019352149458974
+- [Sass 之模块化](https://juejin.cn/post/7051936281315508260)
+
+### 进度
+
+尝试使用模块化的 scss，但是不清楚该怎么写，怎么让 vscode 能够准确实现识别。
+
+- 更多合适的语法说明文章？
+- vscode 识别？
