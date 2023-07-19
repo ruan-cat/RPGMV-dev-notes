@@ -1,7 +1,9 @@
 <script lang="ts" setup></script>
 
 <template>
-	<section></section>
+	<section class="flex-box-transition-root">
+		<h2>练习动画</h2>
+	</section>
 </template>
 
 <style lang="scss" scoped>

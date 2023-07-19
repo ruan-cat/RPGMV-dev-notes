@@ -3,6 +3,7 @@ import { getDirname, path } from "@vuepress/utils";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
 import vue from "@vitejs/plugin-vue";
 
@@ -61,6 +62,11 @@ export default defineUserConfig({
 	// }),
 
 	plugins: [
+		// https://vuejs.press/zh/reference/plugin/register-components.html
+		registerComponentsPlugin({
+			componentsDir: path.resolve(__dirname, "./components"),
+		}),
+
 		// 直接导入项目根目录下的配置文件 这样效率更高
 		typedocPlugin(typedocConf),
 
