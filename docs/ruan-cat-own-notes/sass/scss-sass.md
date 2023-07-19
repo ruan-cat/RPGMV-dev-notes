@@ -34,6 +34,25 @@ conf = {
 
 - https://blog.csdn.net/qq_38951259/article/details/127278847
 
+## vue-cli 使用 sass 依赖包导致热更新与编译时速度缓慢
+
+```bash
+Deprecation Warning: $weight: Passing a number without unit % (0) is deprecated.
+
+To preserve current behavior: $weight * 1%
+
+More info: https://sass-lang.com/d/function-units
+
+   ╷
+24 │     color: mix($--tag-info-color, $--color-white, $fontColorWeight);
+   │            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+```
+
+总是出这个问题。而且每次热更新都非常缓慢。
+
+目前的处理方式是，避免直接使用来自 element-ui 提供的 scss 文件。其语法实现依赖于 node-sass，这和我们正在使用的 dart-sass 截然不同。
+
 ## Sass @use 替代 @import ？
 
 TODO
