@@ -3,6 +3,8 @@ import { defineClientConfig } from "@vuepress/client";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 
+import "animate.css";
+
 // https://stackoverflow.com/questions/10358100/how-to-access-localstorage-in-node-js
 // import { LocalStorage } from "node-localstorage";
 

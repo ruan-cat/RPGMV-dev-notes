@@ -2,6 +2,7 @@
 	"recommendations": [
 		"antfu.vite",
 		"antfu.iconify",
+		"antfu.browse-lite",
 		// vue3的 .vue SFCs 的 LSP 语言支持服务
 		"vue.volar",
 		// 针对vue3 typescript语言的插件
