@@ -63,6 +63,10 @@ $classNamePrefix: "rzn";
 
 			// transition: all v-bind(transitionTime) ease-in-out 1s;
 
+			transition: all $transitionTime ease-in-out $transitionTime;
+			animation-duration: calc($transitionTime * 2);
+			animation-delay: $transitionTime;
+
 			background-color: gray;
 			width: $aside-width;
 			height: 100%;
@@ -79,22 +83,25 @@ $classNamePrefix: "rzn";
 		}
 	}
 
-	.#{$classNamePrefix}-enter-from {
+	.#{$classNamePrefix}-enter-from,
+	.#{$classNamePrefix}-leave-to {
 		&.aside {
 			width: 0px;
 			opacity: 0;
 		}
 	}
 
-	.#{$classNamePrefix}-enter-active {
+	.#{$classNamePrefix}-enter-active,
+	.#{$classNamePrefix}-leave-active {
 		animation-name: slideInLeft;
 
-		animation-duration: calc($transitionTime * 2);
-		animation-delay: $transitionTime;
-		transition: all $transitionTime ease-in-out $transitionTime;
+		// animation-duration: calc($transitionTime * 2);
+		// animation-delay: $transitionTime;
+		// transition: all $transitionTime ease-in-out $transitionTime;
 	}
 
-	.#{$classNamePrefix}-enter-to {
+	.#{$classNamePrefix}-enter-to,
+	.#{$classNamePrefix}-leave-from {
 		&.aside {
 			width: $aside-width;
 			opacity: 1;
