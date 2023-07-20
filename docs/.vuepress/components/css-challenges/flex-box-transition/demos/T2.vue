@@ -36,6 +36,10 @@ $aside-width: 25% !default;
 
 $transitionTime: v-bind(transitionTime);
 
+// v-bind的值是hash后的值 会增加额外的变量值。而不是所期望的写死字符串值。
+// $classNamePrefix: v-bind(transitionClassNamePrefix);
+$classNamePrefix: "rzn";
+
 .T2-root {
 	.main {
 		position: relative;
@@ -75,14 +79,14 @@ $transitionTime: v-bind(transitionTime);
 		}
 	}
 
-	.rzn-enter-from {
+	.#{$classNamePrefix}-enter-from {
 		&.aside {
 			width: 0px;
 			opacity: 0;
 		}
 	}
 
-	.rzn-enter-active {
+	.#{$classNamePrefix}-enter-active {
 		animation-name: slideInLeft;
 
 		animation-duration: calc($transitionTime * 2);
@@ -90,7 +94,7 @@ $transitionTime: v-bind(transitionTime);
 		transition: all $transitionTime ease-in-out $transitionTime;
 	}
 
-	.rzn-enter-to {
+	.#{$classNamePrefix}-enter-to {
 		&.aside {
 			width: $aside-width;
 			opacity: 1;

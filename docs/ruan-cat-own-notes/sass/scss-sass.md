@@ -66,3 +66,7 @@ TODO
 
 - 更多合适的语法说明文章？
 - vscode 识别？
+
+## 差值语法
+
+- https://blog.csdn.net/hide_in_darkness/article/details/107539805
