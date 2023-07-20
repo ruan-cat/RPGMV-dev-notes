@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.2.1",
+    "animate.css": "^4.1.1",
     "element-plus": "^2.3.8",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
