@@ -3,6 +3,7 @@ import { ref, computed } from "vue";
 // import type { AnimateControlVueProps } from "./types/AnimateControlVueProps";
 
 import Try1 from "./demos/T1.vue";
+import Try2 from "./demos/T2.vue";
 
 const isOpenAside = ref(false);
 
@@ -29,7 +30,8 @@ const transitionTime: `${number}s` = `${0.28}s`;
 			{{ buttonText }}
 		</el-button>
 
-		<Try1 :is-open-aside="isOpenAside" :transition-time="transitionTime"></Try1>
+		<!-- <Try1 :is-open-aside="isOpenAside" :transition-time="transitionTime"></Try1> -->
+		<Try2 :is-open-aside="isOpenAside" :transition-time="transitionTime"></Try2>
 	</section>
 </template>
 
