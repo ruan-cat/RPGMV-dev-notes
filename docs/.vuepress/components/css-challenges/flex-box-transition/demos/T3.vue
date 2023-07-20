@@ -40,8 +40,6 @@ $classNamePrefix: "rzn";
 
 .T3-root {
 	.main {
-		position: relative;
-
 		display: flex;
 		justify-content: flex-start;
 
@@ -51,20 +49,14 @@ $classNamePrefix: "rzn";
 		gap: 0;
 
 		.content {
-			z-index: 2;
-
 			transition: all $time1 ease-in-out $time1;
 
 			background-color: #f2f2f2;
 			width: 100%;
-			// height: 100%;
-
-			// flex-grow: 1;
+			height: 100%;
 		}
 
 		.aside {
-			z-index: 1;
-
 			transition: all $time1 ease-in-out;
 
 			background-color: gray;
@@ -80,14 +72,12 @@ $classNamePrefix: "rzn";
 				transition: all $time1 ease-in-out;
 
 				width: calc(100% - $aside-width - $gap);
-				// flex-grow: 3;
 			}
 
 			.aside {
 				transition: all $time1 ease-in-out $time1;
 
 				width: $aside-width;
-				// flex-grow: 1;
 			}
 		}
 	}
