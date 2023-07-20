@@ -91,13 +91,12 @@ $classNamePrefix: "rzn";
 		}
 	}
 
-	.#{$classNamePrefix}-enter-active,
-	.#{$classNamePrefix}-leave-active {
+	.#{$classNamePrefix}-enter-active {
 		animation-name: slideInLeft;
+	}
 
-		// animation-duration: calc($transitionTime * 2);
-		// animation-delay: $transitionTime;
-		// transition: all $transitionTime ease-in-out $transitionTime;
+	.#{$classNamePrefix}-leave-active {
+		animation-name: animate__slideOutLeft;
 	}
 
 	.#{$classNamePrefix}-enter-to,
