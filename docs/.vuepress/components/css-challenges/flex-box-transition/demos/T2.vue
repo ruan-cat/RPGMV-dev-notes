@@ -38,7 +38,6 @@ $transitionTime: v-bind(transitionTime);
 
 .T2-root {
 	.main {
-		// $aside-width: 25% !default;
 		position: relative;
 
 		display: flex;
@@ -48,7 +47,7 @@ $transitionTime: v-bind(transitionTime);
 
 		.content {
 			z-index: 2;
-			transition: all v-bind(transitionTime) ease-in-out;
+			transition: all $transitionTime ease-in-out;
 
 			background-color: #f2f2f2;
 			width: 100%;
@@ -59,6 +58,7 @@ $transitionTime: v-bind(transitionTime);
 			z-index: 1;
 
 			// transition: all v-bind(transitionTime) ease-in-out 1s;
+
 			background-color: gray;
 			width: $aside-width;
 			height: 100%;
@@ -84,12 +84,10 @@ $transitionTime: v-bind(transitionTime);
 
 	.rzn-enter-active {
 		animation-name: slideInLeft;
-		// animation-duration: v-bind(transitionTime);
-		animation-duration: calc($transitionTime * 2);
-		// animation-delay: v-bind(transitionTime);
-		animation-delay: 1s;
 
-		transition: all v-bind(transitionTime) ease-in-out 1s;
+		animation-duration: calc($transitionTime * 2);
+		animation-delay: $transitionTime;
+		transition: all $transitionTime ease-in-out $transitionTime;
 	}
 
 	.rzn-enter-to {
