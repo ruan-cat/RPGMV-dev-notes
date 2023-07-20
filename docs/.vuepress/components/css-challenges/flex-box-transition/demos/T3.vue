@@ -27,6 +27,7 @@ const transitionClassNamePrefix = "rzn";
 
 <style lang="scss" scoped>
 $aside-width: 25% !default;
+$gap: 20px !default;
 
 $transitionTime: v-bind(transitionTime);
 
@@ -46,6 +47,9 @@ $classNamePrefix: "rzn";
 
 		height: 400px;
 
+		transition: all $time1 ease-in-out;
+		gap: 0;
+
 		.content {
 			z-index: 2;
 
@@ -53,7 +57,9 @@ $classNamePrefix: "rzn";
 
 			background-color: #f2f2f2;
 			width: 100%;
-			height: 100%;
+			// height: 100%;
+
+			// flex-grow: 1;
 		}
 
 		.aside {
@@ -67,16 +73,21 @@ $classNamePrefix: "rzn";
 		}
 
 		&.has-aside {
+			transition: all $time1 ease-in-out;
+			gap: $gap;
+
 			.content {
 				transition: all $time1 ease-in-out;
 
-				width: calc(100% - $aside-width);
+				width: calc(100% - $aside-width - $gap);
+				// flex-grow: 3;
 			}
 
 			.aside {
 				transition: all $time1 ease-in-out $time1;
 
-				width: $aside-width !important;
+				width: $aside-width;
+				// flex-grow: 1;
 			}
 		}
 	}
