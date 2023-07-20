@@ -63,8 +63,10 @@ export default defineUserConfig({
 
 	plugins: [
 		// https://vuejs.press/zh/reference/plugin/register-components.html
+		// FIXME: 目前没有实现指定文件夹下全部vue组件的全局注册。在相应的讨论群内也有人提出，但是未有处理方案。
 		registerComponentsPlugin({
 			componentsDir: path.resolve(__dirname, "./components"),
+			componentsPatterns: ["**/*.vue", "./components/**/*.vue"],
 		}),
 
 		// 直接导入项目根目录下的配置文件 这样效率更高
