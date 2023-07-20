@@ -4,6 +4,7 @@ import { ref, computed } from "vue";
 
 import Try1 from "./demos/T1.vue";
 import Try2 from "./demos/T2.vue";
+import Try3 from "./demos/T3.vue";
 
 const isOpenAside = ref(false);
 
@@ -31,7 +32,8 @@ const transitionTime: `${number}s` = `${0.28}s`;
 		</el-button>
 
 		<!-- <Try1 :is-open-aside="isOpenAside" :transition-time="transitionTime"></Try1> -->
-		<Try2 :is-open-aside="isOpenAside" :transition-time="transitionTime"></Try2>
+		<!-- <Try2 :is-open-aside="isOpenAside" :transition-time="transitionTime"></Try2> -->
+		<Try3 :is-open-aside="isOpenAside" :transition-time="transitionTime" />
 	</section>
 </template>
 
