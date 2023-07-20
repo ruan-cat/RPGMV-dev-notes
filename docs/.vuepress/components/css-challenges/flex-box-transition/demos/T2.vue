@@ -22,7 +22,9 @@ const transitionClassNamePrefix = "rzn";
 			<section class="content"></section>
 
 			<!-- :name="transitionClassNamePrefix" -->
-			<Transition name="rzn">
+			<!-- animate__animated -->
+			<!-- name="rzn" -->
+			<Transition :name="transitionClassNamePrefix">
 				<section class="aside" v-if="isOpenAside"></section>
 			</Transition>
 		</section>
@@ -32,9 +34,12 @@ const transitionClassNamePrefix = "rzn";
 <style lang="scss" scoped>
 $aside-width: 25% !default;
 
+$transitionTime: v-bind(transitionTime);
+
 .T2-root {
 	.main {
 		// $aside-width: 25% !default;
+		position: relative;
 
 		display: flex;
 		justify-content: flex-start;
@@ -42,6 +47,7 @@ $aside-width: 25% !default;
 		height: 400px;
 
 		.content {
+			z-index: 2;
 			transition: all v-bind(transitionTime) ease-in-out;
 
 			background-color: #f2f2f2;
@@ -50,9 +56,11 @@ $aside-width: 25% !default;
 		}
 
 		.aside {
+			z-index: 1;
+
 			// transition: all v-bind(transitionTime) ease-in-out 1s;
 			background-color: gray;
-			width: 0px;
+			width: $aside-width;
 			height: 100%;
 		}
 
@@ -66,19 +74,29 @@ $aside-width: 25% !default;
 			// }
 		}
 	}
-}
 
-.rzn-enter-from {
-	// width: 0px;
-}
+	.rzn-enter-from {
+		&.aside {
+			width: 0px;
+			opacity: 0;
+		}
+	}
 
-.rzn-enter-active {
-	animation-name: slideInLeft;
-	animation-duration: v-bind(transitionTime);
-	animation-delay: v-bind(transitionTime);
-}
+	.rzn-enter-active {
+		animation-name: slideInLeft;
+		// animation-duration: v-bind(transitionTime);
+		animation-duration: calc($transitionTime * 2);
+		// animation-delay: v-bind(transitionTime);
+		animation-delay: 1s;
 
-.rzn-enter-to {
-	// width: $aside-width;
+		transition: all v-bind(transitionTime) ease-in-out 1s;
+	}
+
+	.rzn-enter-to {
+		&.aside {
+			width: $aside-width;
+			opacity: 1;
+		}
+	}
 }
 </style>
