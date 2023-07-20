@@ -49,7 +49,6 @@ $classNamePrefix: "rzn";
 		.content {
 			z-index: 2;
 
-			// transition: all $time1 ease-in-out;
 			transition: all $time1 ease-in-out $time1;
 
 			background-color: #f2f2f2;
@@ -60,11 +59,9 @@ $classNamePrefix: "rzn";
 		.aside {
 			z-index: 1;
 
-			// transition: all $time1 ease-in-out;
 			transition: all $time1 ease-in-out;
 
 			background-color: gray;
-			// width: $aside-width;
 			width: 0;
 			height: 100%;
 		}
@@ -72,10 +69,7 @@ $classNamePrefix: "rzn";
 		&.has-aside {
 			.content {
 				transition: all $time1 ease-in-out;
-				// animation-duration: calc($transitionTime * 2);
-				// animation-delay: $transitionTime;
 
-				// width: calc(100% - $aside-width) !important;
 				width: calc(100% - $aside-width);
 			}
 
