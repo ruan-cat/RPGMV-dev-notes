@@ -39,3 +39,5 @@
 	}
 }
 ```
+
+目前在特定的项目内，使用 vue2.7 以及 sass，和较高版本的 vue-loader、 scss-lodors 后，上述的 ::v-deep 写法有效了。
