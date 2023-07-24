@@ -38,7 +38,7 @@ export default defineClientConfig({
 		app.use(ElementPlus);
 		app.component("DrillGoods", DrillGoods);
 
-		// 手动全局注册
-		app.component("FlexBoxTransition", FlexBoxTransition);
+		// 手动全局注册 目前发现可以实现自动全局导入了
+		// app.component("FlexBoxTransition", FlexBoxTransition);
 	},
 });

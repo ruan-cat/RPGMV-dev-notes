@@ -67,6 +67,9 @@ export default defineUserConfig({
 		registerComponentsPlugin({
 			componentsDir: path.resolve(__dirname, "./components"),
 			componentsPatterns: ["**/*.vue", "./components/**/*.vue"],
+			getComponentName(filename) {
+				return path.trimExt(filename.replace(/.*\//, ""));
+			},
 		}),
 
 		// 直接导入项目根目录下的配置文件 这样效率更高
