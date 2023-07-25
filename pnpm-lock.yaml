@@ -68,8 +68,8 @@ devDependencies:
     specifier: ^0.24.8
     version: 0.24.8(typescript@5.1.6)
   typedoc-plugin-markdown:
-    specifier: ^3.15.3
-    version: 3.15.3(typedoc@0.24.8)
+    specifier: ^3.15.4
+    version: 3.15.4(typedoc@0.24.8)
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
@@ -93,7 +93,7 @@ devDependencies:
     version: 2.0.0-beta.233(vuepress@2.0.0-beta.66)
   vuepress-plugin-typedoc:
     specifier: 0.12.1
-    version: 0.12.1(typedoc-plugin-markdown@3.15.3)(typedoc@0.24.8)
+    version: 0.12.1(typedoc-plugin-markdown@3.15.4)(typedoc@0.24.8)
   vuepress-theme-hope:
     specifier: 2.0.0-beta.233
     version: 2.0.0-beta.233(vuepress@2.0.0-beta.66)
@@ -6139,8 +6139,8 @@ packages:
       is-typed-array: 1.1.12
     dev: true
 
-  /typedoc-plugin-markdown@3.15.3(typedoc@0.24.8):
-    resolution: {integrity: sha512-idntFYu3vfaY3eaD+w9DeRd0PmNGqGuNLKihPU9poxFGnATJYGn9dPtEhn2QrTdishFMg7jPXAhos+2T6YCWRQ==}
+  /typedoc-plugin-markdown@3.15.4(typedoc@0.24.8):
+    resolution: {integrity: sha512-KpjFL/NDrQAbY147oIoOgob2vAdEchsMcTVd6+e6H2lC1l5xhi48bhP/fMJI7qYQ8th5nubervgqw51z7gY66A==}
     peerDependencies:
       typedoc: '>=0.24.0'
     dependencies:
@@ -6992,14 +6992,14 @@ packages:
       - supports-color
     dev: true
 
-  /vuepress-plugin-typedoc@0.12.1(typedoc-plugin-markdown@3.15.3)(typedoc@0.24.8):
+  /vuepress-plugin-typedoc@0.12.1(typedoc-plugin-markdown@3.15.4)(typedoc@0.24.8):
     resolution: {integrity: sha512-x1HM0160esty5R38yLDtX5aZielP+qy8r1aQsHVGhRbL9oau2Rr0Iv50Rkgo1rzrxVyd6bLLwW/+uWryULaHTw==}
     peerDependencies:
       typedoc: '>=0.24.0'
       typedoc-plugin-markdown: '>=3.15.0'
     dependencies:
       typedoc: 0.24.8(typescript@5.1.6)
-      typedoc-plugin-markdown: 3.15.3(typedoc@0.24.8)
+      typedoc-plugin-markdown: 3.15.4(typedoc@0.24.8)
     dev: true
 
   /vuepress-shared@2.0.0-beta.233(vuepress@2.0.0-beta.66):
