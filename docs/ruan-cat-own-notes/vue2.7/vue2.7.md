@@ -43,11 +43,15 @@
 
 ## 目前涌现出来的 vue 代码编写风格选型？
 
-事实上出现了
+事实上出现了多种多样的代码写法了，我们需要权衡利弊。
 
 ### vue2.6 + export default {option} + js + vetur <Badge text="还行" type="info" />
 
 这是最传统的代码写法。由 vetur 提供 vue 的语言服务。还算可以。
+
+该写法是大家所熟知的写法。大家都会写，都熟悉。上来就能写，并实现业务。
+
+该写法在规模化的组件内，确实被诟病。这是选项式 api 本身的弊端。
 
 ### vue2.7 + export default defineComponent({option}) + js + volar <Badge text="推荐" type="tip" />
 
@@ -55,11 +59,11 @@
 
 ### vue2.7 + `<script setup>` + js + volar <Badge text="坐牢" type="danger" />
 
-不做赘述。
+不做赘述。自我阉割，废物一个。垃圾玩意。
 
 ### vue3 + `<script setup>` + ts + volar <Badge text="做不到" type="note" />
 
-客观来说我们做不到。
+很抱歉，客观来说我们做不到。我做得到，我们做不到。
 
 #### 旧项目本身的升级成本过大
 
