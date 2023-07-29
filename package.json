@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.2.1",
-    "element-plus": "^2.3.7",
+    "animate.css": "^4.1.1",
+    "element-plus": "^2.3.8",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "node-localstorage": "^2.2.1",
@@ -21,15 +22,16 @@
     "vue-json-excel3": "^0.0.9"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.88",
+    "@iconify/json": "^2.2.92",
     "@iconify/vue": "^4.1.1",
     "@types/lodash": "^4.14.195",
-    "@types/lodash-es": "^4.17.7",
+    "@types/lodash-es": "^4.17.8",
     "@vitejs/plugin-vue": "^4.2.3",
-    "@vuepress/bundler-vite": "2.0.0-beta.64",
-    "@vuepress/client": "2.0.0-beta.64",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.64",
-    "@vuepress/utils": "2.0.0-beta.64",
+    "@vuepress/bundler-vite": "2.0.0-beta.66",
+    "@vuepress/client": "2.0.0-beta.66",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.66",
+    "@vuepress/plugin-register-components": "2.0.0-beta.66",
+    "@vuepress/utils": "2.0.0-beta.66",
     "typedoc": "^0.24.8",
     "typedoc-plugin-markdown": "^3.15.3",
     "typescript": "^5.1.6",
@@ -37,9 +39,9 @@
     "unplugin-vue-components": "^0.25.1",
     "vp-update": "^0.1.2",
     "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.64",
-    "vuepress-plugin-search-pro": "2.0.0-beta.230",
+    "vuepress": "2.0.0-beta.66",
+    "vuepress-plugin-search-pro": "2.0.0-beta.233",
     "vuepress-plugin-typedoc": "0.12.1",
-    "vuepress-theme-hope": "2.0.0-beta.230"
+    "vuepress-theme-hope": "2.0.0-beta.233"
   }
 }

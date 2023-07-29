@@ -33,3 +33,7 @@ TODO:
 这篇文章称可以让 vue-cli 和 vscode 实现断点调试。等待学习使用。
 
 - https://github.com/Microsoft/vscode-recipes/tree/master/vuejs-cli
+
+## vue-cli 版本升级 4.X 到 5.X 问题
+
+- https://www.jianshu.com/p/0f4f3e1d95ed

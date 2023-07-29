@@ -50,3 +50,61 @@ children: [
 https://github.com/pillarjs/path-to-regexp/tree/v1.7.0#optional
 
 需要去测试实验路由选项配置的写法。实现多参数的任意配置。
+
+## 升级路由管理方案为动态导入方式
+
+- https://panjiachen.github.io/vue-element-admin-site/zh/guide/advanced/lazy-loading.html
+
+尝试 把 require 升级成 import 的动态导入写法。
+
+### 结论
+
+不做。或者说很难做。
+
+#### 最新版的 vue-element-admin 对路由的处理方案变化了
+
+- https://github.com/PanJiaChen/vue-element-admin
+
+整个路由的处理方案完全地，同步地使用了 vue-router 本身提供的动态路由添加方案。和目前我们使用的框架截然不同。
+
+这已经不是单纯的 require 改写成 import 了。还要考虑权限管理、全局路由守卫等地方的更改了。实操时，恐怕没有时间去这样改动。需要折腾的内容实在是太多了。
+
+新版 import 写法：
+
+```js
+const c = {
+	path: "/icon",
+	component: Layout,
+	children: [
+		{
+			path: "index",
+			component: () => import("@/views/icons/index"),
+			name: "Icons",
+			meta: { title: "Icons", icon: "icon", noCache: true },
+		},
+	],
+};
+```
+
+旧版 require 写法：
+
+```js
+// 示例 example
+const c = {
+	path: "/example",
+	component: Layout,
+	hidden: true,
+	children: [
+		{
+			path: "/example/",
+			name: "Example",
+			component: (resolve) => require(["@/views/example/index.vue"], resolve),
+			meta: { title: "示例", noCache: true },
+		},
+	],
+};
+```
+
+## Redirected when going from "/login" to "/dashboard" via a navigation guard.
+
+- https://www.cnblogs.com/zyh2333/p/14714031.html

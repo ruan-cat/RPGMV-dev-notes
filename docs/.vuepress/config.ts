@@ -3,6 +3,7 @@ import { getDirname, path } from "@vuepress/utils";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
 import vue from "@vitejs/plugin-vue";
 
@@ -61,6 +62,16 @@ export default defineUserConfig({
 	// }),
 
 	plugins: [
+		// https://vuejs.press/zh/reference/plugin/register-components.html
+		// FIXME: 目前没有实现指定文件夹下全部vue组件的全局注册。在相应的讨论群内也有人提出，但是未有处理方案。
+		registerComponentsPlugin({
+			componentsDir: path.resolve(__dirname, "./components"),
+			componentsPatterns: ["**/*.vue", "./components/**/*.vue"],
+			getComponentName(filename) {
+				return path.trimExt(filename.replace(/.*\//, ""));
+			},
+		}),
+
 		// 直接导入项目根目录下的配置文件 这样效率更高
 		typedocPlugin(typedocConf),
 

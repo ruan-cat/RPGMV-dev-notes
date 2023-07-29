@@ -3,6 +3,8 @@ import { defineClientConfig } from "@vuepress/client";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 
+import "animate.css";
+
 // https://stackoverflow.com/questions/10358100/how-to-access-localstorage-in-node-js
 // import { LocalStorage } from "node-localstorage";
 
@@ -12,6 +14,7 @@ import piniaPluginPersistedstate, {
 } from "pinia-plugin-persistedstate";
 
 import DrillGoods from "./components/drill-goods/DrillGoods.vue";
+import FlexBoxTransition from "./components/css-challenges/flex-box-transition/FlexBoxTransition.vue";
 
 // const piniaUseLocalStorage =
 // 	typeof window !== "undefined"
@@ -34,5 +37,8 @@ export default defineClientConfig({
 		app.use(pinia);
 		app.use(ElementPlus);
 		app.component("DrillGoods", DrillGoods);
+
+		// 手动全局注册 目前发现可以实现自动全局导入了
+		// app.component("FlexBoxTransition", FlexBoxTransition);
 	},
 });
