@@ -20,6 +20,10 @@ TODO:
 
 - https://github.com/vuedoc/md
 
+有专门的配置文件。
+
+能识别 jsdoc
+
 ## vuepress-apidoc
 
 - https://gitee.com/DoLaMi/vuepress-apidoc
