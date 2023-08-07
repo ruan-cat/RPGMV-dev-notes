@@ -8,3 +8,6 @@
 
 - https://www.npmjs.com/package/vue-json-excel3
 - https://github.com/pratik227/vue3-json-excel
+
+- [xlsx 库实现纯前端导入导出 Excel](https://juejin.cn/post/7097426696365670430)
+- [十分钟上手 xlsx，4 种方法实现 Excel 导入导出](https://juejin.cn/post/6998000575203770376)
