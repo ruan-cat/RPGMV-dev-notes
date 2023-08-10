@@ -1,8 +1,8 @@
-# 阮中楠自己的一些 TypeScript 笔记
+# typescript
 
-阮中楠还没考虑将 TS 加入到 RMMV 中。
+笔者现在还不考虑将 typescript 加入到 rmmv 项目中。
 
-## 网站：
+## 网站
 
 [**《tslang》**](https://www.tslang.cn/)
 [点此进入对应仓库](https://github.com/zhongsp/TypeScript)
