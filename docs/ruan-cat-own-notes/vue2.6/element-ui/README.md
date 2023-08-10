@@ -1,3 +1,0 @@
-# element-ui
-
-element-ui
