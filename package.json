@@ -18,7 +18,7 @@
     "lodash-es": "^4.17.21",
     "node-localstorage": "^2.2.1",
     "pinia": "^2.1.4",
-    "pinia-plugin-persistedstate": "^3.1.0",
+    "pinia-plugin-persistedstate": "^3.2.0",
     "vue-json-excel3": "^0.0.9",
     "xlsx": "^0.18.5"
   },
