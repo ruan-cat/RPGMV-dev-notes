@@ -10,13 +10,13 @@
 
 ```js
 async function getProcessedData(url) {
-  let v;
-  try {
-    v = await downloadData(url);
-  } catch (e) {
-    v = await downloadFallbackData(url);
-  }
-  return processDataInWorker(v);
+	let v;
+	try {
+		v = await downloadData(url);
+	} catch (e) {
+		v = await downloadFallbackData(url);
+	}
+	return processDataInWorker(v);
 }
 ```
 
@@ -27,13 +27,20 @@ async function getProcessedData(url) {
 下面是一个封装示例：
 
 ```js
-const wait = (delay = 1000, presetReturnValue = '') =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => resolve(presetReturnValue), delay);
-  });
+const wait = (delay = 1000, presetReturnValue = "") =>
+	new Promise((resolve, reject) => {
+		setTimeout(() => resolve(presetReturnValue), delay);
+	});
 const use = async () => {
-  const res = await wait(2 * 1000, true);
-  console.log(' in use : ', res);
+	const res = await wait(2 * 1000, true);
+	console.log(" in use : ", res);
 };
 use();
 ```
+
+## 空值 与 假值
+
+- https://developer.mozilla.org/zh-CN/docs/Glossary/Nullish
+- https://developer.mozilla.org/zh-CN/docs/Glossary/Falsy
+
+TODO: 怎么去实现有意义的空值，假值的判断？有哪些 js 原生技术？lodash 有哪些好的方案实现？
