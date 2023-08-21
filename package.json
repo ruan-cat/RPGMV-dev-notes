@@ -11,38 +11,38 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "dependencies": {
-    "@vueuse/core": "^10.2.1",
+    "@vueuse/core": "^10.3.0",
     "animate.css": "^4.1.1",
-    "element-plus": "^2.3.8",
+    "element-plus": "^2.3.9",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "node-localstorage": "^2.2.1",
-    "pinia": "^2.1.4",
-    "pinia-plugin-persistedstate": "^3.1.0",
+    "pinia": "^2.1.6",
+    "pinia-plugin-persistedstate": "^3.2.0",
     "vue-json-excel3": "^0.0.9",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.92",
+    "@iconify/json": "^2.2.103",
     "@iconify/vue": "^4.1.1",
-    "@types/lodash": "^4.14.195",
+    "@types/lodash": "^4.14.197",
     "@types/lodash-es": "^4.17.8",
-    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue": "^4.3.1",
     "@vuepress/bundler-vite": "2.0.0-beta.66",
     "@vuepress/client": "2.0.0-beta.66",
     "@vuepress/plugin-docsearch": "2.0.0-beta.66",
     "@vuepress/plugin-register-components": "2.0.0-beta.66",
     "@vuepress/utils": "2.0.0-beta.66",
     "typedoc": "^0.24.8",
-    "typedoc-plugin-markdown": "^3.15.3",
+    "typedoc-plugin-markdown": "^3.15.4",
     "typescript": "^5.1.6",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.1",
     "vp-update": "^0.1.2",
     "vue": "^3.3.4",
     "vuepress": "2.0.0-beta.66",
-    "vuepress-plugin-search-pro": "2.0.0-beta.233",
+    "vuepress-plugin-search-pro": "2.0.0-beta.235",
     "vuepress-plugin-typedoc": "0.12.1",
-    "vuepress-theme-hope": "2.0.0-beta.233"
+    "vuepress-theme-hope": "2.0.0-beta.235"
   }
 }
