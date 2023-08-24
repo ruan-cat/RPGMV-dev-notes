@@ -23,7 +23,7 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.92",
+    "@iconify/json": "^2.2.105",
     "@iconify/vue": "^4.1.1",
     "@types/lodash": "^4.14.195",
     "@types/lodash-es": "^4.17.8",
