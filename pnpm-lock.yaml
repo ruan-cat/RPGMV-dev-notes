@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@vueuse/core':
     specifier: ^10.2.1
@@ -34,8 +38,8 @@ dependencies:
 
 devDependencies:
   '@iconify/json':
-    specifier: ^2.2.92
-    version: 2.2.92
+    specifier: ^2.2.106
+    version: 2.2.106
   '@iconify/vue':
     specifier: ^4.1.1
     version: 4.1.1(vue@3.3.4)
@@ -1687,8 +1691,8 @@ packages:
       '@floating-ui/core': 1.3.1
     dev: false
 
-  /@iconify/json@2.2.92:
-    resolution: {integrity: sha512-90skjzsGcOObfKIkRc+JWjMdI+BI8jfB5tbXk825+aNscWwDYSCuEaN2EWaDnmHHB+S2bMXQbUDeBoQiUjojcA==}
+  /@iconify/json@2.2.106:
+    resolution: {integrity: sha512-VZXCBmSrtwutVmzgkCk6Yr9CVfl5AbEOZ/APjZbnG8+21vt91Px/nf3yXnfL6e1DAdNeZtn+iuLlVp+7cP0a3Q==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.1
@@ -7508,7 +7512,3 @@ packages:
     dependencies:
       tslib: 2.3.0
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
