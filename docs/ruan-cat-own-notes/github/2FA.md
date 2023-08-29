@@ -8,7 +8,8 @@ GitHub users are now required to enable two-factor authentication as an addition
 
 ## 解决方案
 
-- https://zhuanlan.zhihu.com/p/615693483
+- [知乎：GitHub 强制要求开启两步验证了，但是 1password 要收费，怎么办？](https://zhuanlan.zhihu.com/p/615693483)
+- [github 文档： 配置双重身份验证](https://docs.github.com/zh/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication)
 
 ## 步骤简要说明
 
