@@ -20,3 +20,22 @@
 这里重点考虑的用 ref 来实现初始化图表。
 
 ## 尝试在 vue2.7 + 组合式 api + jsdoc + typescript（类型） 的方案实现初始化
+
+```js
+/** @type { Ref<HTMLElement | undefined> } 获取dom元素 */
+const chartRef = ref();
+
+/** @type { Ref<import("echarts").EChartsType | null> } chart图表实例 */
+const chartInstance = ref(null);
+
+/** @type { import("echarts").EChartsOption } */
+const chartOpions = {};
+
+onMounted(() => {
+	// 在获取到dom时，初始化实例
+	chartInstance.value = echarts.init(chartRef.value);
+
+	// 设置值
+	chartInstance.value.setOption(chartOpions);
+});
+```
