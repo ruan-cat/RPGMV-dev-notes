@@ -22,6 +22,9 @@
 ## 尝试在 vue2.7 + 组合式 api + jsdoc + typescript（类型） 的方案实现初始化
 
 ```js
+/** @see https://echarts.apache.org/handbook/zh/basics/release-note/v5-upgrade-guide/#引用-echarts */
+import * as echarts from "echarts";
+
 /** @type { Ref<HTMLElement | undefined> } 获取dom元素 */
 const chartRef = ref();
 
