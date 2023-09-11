@@ -56,6 +56,13 @@ export const sideConfList: SidebarArrayOptions = [
 	},
 
 	{
+		text: "拓展技术",
+		prefix: "拓展技术/",
+		children: "structure",
+		collapsible: true,
+	},
+
+	{
 		text: "阮喵喵自己的笔记",
 		prefix: "ruan-cat-own-notes/",
 		children: "structure",
