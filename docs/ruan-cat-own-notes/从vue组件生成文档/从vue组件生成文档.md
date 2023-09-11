@@ -28,19 +28,31 @@ TODO:
 
 - https://gitee.com/DoLaMi/vuepress-apidoc
 
+目前不会直接使用此工具，基于以下缘故：
+
+- 是 gitee 而不是 github，没有足够的反馈
+
+但是本项目的 readme 却提供了很多类似的框架，可以作为一个目录。
+
 ## libpack
 
 - https://github.com/Zenquan/libpack
 
+不考虑。这个更加倾向于作为一个模板。没有看到去生成 doc 的配置。
+
 ## vuepress-jsdoc
 
 - https://github.com/ph1p/vuepress-jsdoc
+
+称可以对 javascript、typescript 和 vue 一起做 md 生成。通过阅读源码发现，其 jsdoc 配置了和 babel-jsdoc。很奇怪。
 
 ## vuese
 
 - https://github.com/vuese/vuese
 
 - https://juejin.cn/post/6892314449488576520
+
+不能接受。因为要使用其专属的注释语法。不是通用的 jsdoc 语法。
 
 ## jsdoc-vue
 
