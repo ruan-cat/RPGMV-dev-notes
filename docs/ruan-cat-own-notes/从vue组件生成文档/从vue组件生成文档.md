@@ -37,6 +37,10 @@ https://gitlab.com/vuedoc/parser#features
 - 强制要求 node16，esm 格式。
 - 跨度大。vue2.6、vue2.7 和 vue3 的写法均能够覆盖。
 
+### 进度
+
+相关细节[点此](./vuedoc/vuedoc.md)。
+
 ## vuepress-apidoc <Badge type="info" text="值得商榷" />
 
 - https://gitee.com/DoLaMi/vuepress-apidoc
