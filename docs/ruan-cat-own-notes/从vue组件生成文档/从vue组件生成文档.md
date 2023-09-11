@@ -16,13 +16,26 @@ TODO:
 
 - https://www.cnblogs.com/mfyngu/p/13049965.html
 
-## vuedoc
+## vuedoc <Badge type="tip" text="优选" />
 
+### 相关仓库
+
+- https://github.com/vuedoc
 - https://github.com/vuedoc/md
+- https://github.com/vuedoc/parser
 
-有专门的配置文件。
+### 文档
 
-能识别 jsdoc
+https://gitlab.com/vuedoc/parser#features
+
+### 评价
+
+感觉有点东西：
+
+- 有专门的配置文件。
+- 能识别 jsdoc
+- 强制要求 node16，esm 格式。
+- 跨度大。vue2.6、vue2.7 和 vue3 的写法均能够覆盖。
 
 ## vuepress-apidoc <Badge type="info" text="值得商榷" />
 
@@ -34,17 +47,25 @@ TODO:
 
 但是本项目的 readme 却提供了很多类似的框架，可以作为一个目录。
 
-## libpack <Badge type="danger" text="不考虑" />
-
-- https://github.com/Zenquan/libpack
-
-不考虑。这个更加倾向于作为一个模板。没有看到去生成 doc 的配置。
-
 ## vuepress-jsdoc <Badge type="info" text="值得商榷" />
 
 - https://github.com/ph1p/vuepress-jsdoc
 
 称可以对 javascript、typescript 和 vue 一起做 md 生成。通过阅读源码发现，其 jsdoc 配置了和 babel-jsdoc。很奇怪。
+
+## jsdoc-vuedoc
+
+- https://github.com/ccqgithub/jsdoc-vuedoc
+
+## rollup-plugin-vuedoc
+
+- https://github.com/h-ikeda/rollup-plugin-vuedoc
+
+## libpack <Badge type="danger" text="不考虑" />
+
+- https://github.com/Zenquan/libpack
+
+不考虑。这个更加倾向于作为一个模板。没有看到去生成 doc 的配置。
 
 ## vuese <Badge type="danger" text="不考虑" />
 
@@ -68,9 +89,11 @@ TODO:
 
 不能接受。因为要写专有的标签才能识别。
 
-## vite-plugin-vue-docs-2
+## vite-plugin-vue-docs-2 <Badge type="danger" text="不考虑" />
 
 - https://github.com/meetqy/vite-plugin-vue-docs-2
+
+文档没说清楚怎么使用。在 vite 项目内不敢使用。
 
 ## 自动化文档生成的整体进度
 
