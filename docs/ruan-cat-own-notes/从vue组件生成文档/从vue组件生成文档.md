@@ -24,7 +24,7 @@ TODO:
 
 能识别 jsdoc
 
-## vuepress-apidoc
+## vuepress-apidoc <Badge type="info" text="值得商榷" />
 
 - https://gitee.com/DoLaMi/vuepress-apidoc
 
@@ -34,19 +34,19 @@ TODO:
 
 但是本项目的 readme 却提供了很多类似的框架，可以作为一个目录。
 
-## libpack
+## libpack <Badge type="danger" text="不考虑" />
 
 - https://github.com/Zenquan/libpack
 
 不考虑。这个更加倾向于作为一个模板。没有看到去生成 doc 的配置。
 
-## vuepress-jsdoc
+## vuepress-jsdoc <Badge type="info" text="值得商榷" />
 
 - https://github.com/ph1p/vuepress-jsdoc
 
 称可以对 javascript、typescript 和 vue 一起做 md 生成。通过阅读源码发现，其 jsdoc 配置了和 babel-jsdoc。很奇怪。
 
-## vuese
+## vuese <Badge type="danger" text="不考虑" />
 
 - https://github.com/vuese/vuese
 
@@ -54,15 +54,19 @@ TODO:
 
 不能接受。因为要使用其专属的注释语法。不是通用的 jsdoc 语法。
 
-## jsdoc-vue
+## jsdoc-vue <Badge type="danger" text="不考虑" />
 
 - https://github.com/QingWei-Li/jsdoc-vue
 
-## jsdoc-vuejs
+不考虑。这个仓库废弃了。
+
+## jsdoc-vuejs <Badge type="danger" text="不考虑" />
 
 - https://github.com/Kocal/jsdoc-vuejs
 
 - https://zhuanlan.zhihu.com/p/205225678
+
+不能接受。因为要写专有的标签才能识别。
 
 ## vite-plugin-vue-docs-2
 
