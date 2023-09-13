@@ -1,4 +1,4 @@
-# valor 插件在每次 vscode 工作区内的固定配置
+# volar 插件在每次 vscode 工作区内的固定配置
 
 参考资料
 https://cn.vuejs.org/guide/typescript/overview.html#volar-takeover-mode
@@ -10,7 +10,7 @@ https://cn.vuejs.org/guide/typescript/overview.html#volar-takeover-mode
 ## 能否实现工作区固定配置？
 
 有疑惑
-实现一个 vue3 的 vscode 工作区配置文件，固定安装 valor，禁用 vetur，配置 volar？
+实现一个 vue3 的 vscode 工作区配置文件，固定安装 volar，禁用 vetur，配置 volar？
 
 ## bug v4.1.2
 
