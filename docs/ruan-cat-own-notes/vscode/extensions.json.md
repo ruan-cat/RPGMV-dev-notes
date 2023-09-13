@@ -27,6 +27,8 @@
 		"wayou.vscode-todo-highlight",
 		// 优化开发体验： tags标签匹配高亮
 		"vincaslt.highlight-matching-tag",
+		// 优化开发体验： TODO待办任务统计
+		"fabiospampinato.vscode-todo-plus",
 		// 优化开发体验： i18n字符串翻译高亮
 		"lokalise.i18n-ally",
 		// 优化开发体验： icon字符串语义化转换
