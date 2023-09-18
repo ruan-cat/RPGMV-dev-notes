@@ -4,6 +4,8 @@ import { ref } from "vue";
 import { storeToRefs } from "pinia";
 import { Icon } from "@iconify/vue";
 import JsonExcel from "vue-json-excel3";
+import * as XLSX from "xlsx";
+import { ElTable } from "element-plus";
 
 import { useMode } from "../hooks/use-mode";
 import { useSingleCommodity } from "../stores/use-single-commodity";
@@ -48,6 +50,29 @@ const json_data = ref([
 		},
 	},
 ]);
+
+/**
+ * 类型声明写法
+ * - https://juejin.cn/post/6978035248487464974#heading-2
+ */
+const tableRef = ref<null | InstanceType<typeof ElTable>>(null);
+
+/**
+ * 参考资料
+ * - https://juejin.cn/post/7097426696365670430
+ * - https://zhuanlan.zhihu.com/p/632551852
+ */
+function exportFn() {
+	// const table1 = document.querySelector("#table1");
+	const table1 = tableRef.value.$el;
+
+	console.log("table1", tableRef.value.$el);
+
+	const ws = XLSX.utils.table_to_sheet(table1);
+	const wb = XLSX.utils.book_new();
+	XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+	XLSX.writeFile(wb, "i18n.xlsx");
+}
 </script>
 
 <template>
@@ -66,6 +91,7 @@ const json_data = ref([
 		-->
 
 		<JsonExcel
+			v-if="false"
 			:data="json_data"
 			:fields="json_fields"
 			worksheet="My Worksheet"
@@ -74,7 +100,11 @@ const json_data = ref([
 			<el-button type="primary" size="default">下载导出文件 </el-button>
 		</JsonExcel>
 
-		<el-table :data="commodity">
+		<el-button type="primary" size="default" @click="exportFn()">
+			下载导出文件
+		</el-button>
+
+		<el-table :data="commodity" ref="tableRef">
 			<el-table-column prop="name" label="名称" width="180" />
 
 			<el-table-column prop="desc" label="描述" min-width="180" />
