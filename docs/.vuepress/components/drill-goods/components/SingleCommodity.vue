@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { ref } from "vue";
-
+import { ref, computed } from "vue";
 import { storeToRefs } from "pinia";
 import { Icon } from "@iconify/vue";
 import * as XLSX from "xlsx";
-import { ElTable } from "element-plus";
+import { ElTable, ElMessage } from "element-plus";
+import { debounce } from "lodash-es";
 
 import { useMode } from "../hooks/use-mode";
 import { useSingleCommodity } from "../stores/use-single-commodity";
@@ -21,6 +21,12 @@ console.log("  in SingleCommodity ", commodity.value);
  */
 const tableRef = ref<null | InstanceType<typeof ElTable>>(null);
 
+/** 表格文件后缀 */
+const tableFileSuffix = <const>"xlsx";
+
+/** 导出的文件名称 */
+const xlsxFilename = computed(() => `小爱丽丝商品表-.${tableFileSuffix}`);
+
 /**
  * 参考资料
  * - https://juejin.cn/post/7097426696365670430
@@ -31,7 +37,25 @@ function exportFn() {
 	const ws = XLSX.utils.table_to_sheet(tableDom);
 	const wb = XLSX.utils.book_new();
 	XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-	XLSX.writeFile(wb, "i18n.xlsx");
+	XLSX.writeFile(wb, xlsxFilename.value);
+
+	ElMessage({
+		type: "success",
+		message: "导出成功",
+		showClose: true,
+		grouping: true,
+		duration: 2000,
+	});
+}
+
+const debounceExportFn = debounce(exportFn, 1500, {
+	// 点击的一瞬间会立刻执行一次，在连续的点击后，最后一次经过延迟时间后，导出最后一次。
+	leading: true,
+});
+
+/** 防抖的按钮点击 */
+function debounceBtnClick() {
+	debounceExportFn();
 }
 </script>
 
@@ -59,14 +83,16 @@ function exportFn() {
 			<el-button type="primary" size="default">下载导出文件 </el-button>
 		</JsonExcel> -->
 
-		<el-button type="primary" size="default" @click="exportFn()">
-			下载导出文件
+		<el-button type="primary" size="default" @click="debounceBtnClick()">
+			导出文件
 		</el-button>
 
 		<el-table :data="commodity" ref="tableRef">
 			<el-table-column prop="name" label="名称" width="180" />
 
 			<el-table-column prop="desc" label="描述" min-width="180" />
+
+			<el-table-column prop="price" label="价格" min-width="180" />
 
 			<el-table-column prop="icon" label="标签">
 				<template #default="scope">
