@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import DrillGoods from "@DrillGoods";
-</script>
-
 # 钻头的商品管理页面
 
 ## 业务需求

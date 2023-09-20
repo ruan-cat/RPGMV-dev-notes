@@ -29,5 +29,7 @@
 		"src/**/*.d.ts",
 		"src/**/*.tsx",
 		"src/**/*.vue",
+		// 尝试增加指定目录下的vue组件 期望让ts识别出vue组件
+		"docs/.vuepress/components/**/*.vue",
 	],
 }
