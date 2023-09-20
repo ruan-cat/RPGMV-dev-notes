@@ -3,7 +3,6 @@ import { ref } from "vue";
 
 import { storeToRefs } from "pinia";
 import { Icon } from "@iconify/vue";
-import JsonExcel from "vue-json-excel3";
 import * as XLSX from "xlsx";
 import { ElTable } from "element-plus";
 
@@ -15,41 +14,6 @@ const { commodity } = storeToRefs(useSingleCommodity());
 const { mode } = useMode();
 
 console.log("  in SingleCommodity ", commodity.value);
-
-const json_fields = ref({
-	"Complete name": "name",
-	City: "city",
-	Telephone: "phone.mobile",
-	"Telephone 2": {
-		field: "phone.landline",
-		callback: (value) => {
-			return `Landline Phone - ${value}`;
-		},
-	},
-});
-
-const json_data = ref([
-	{
-		name: "Tony Peña",
-		city: "New York",
-		country: "United States",
-		birthdate: "1978-03-15",
-		phone: {
-			mobile: "1-541-754-3010",
-			landline: "(541) 754-3010",
-		},
-	},
-	{
-		name: "Thessaloniki",
-		city: "Athens",
-		country: "Greece",
-		birthdate: "1987-11-23",
-		phone: {
-			mobile: "+1 855 275 5071",
-			landline: "(2741) 2621-244",
-		},
-	},
-]);
 
 /**
  * 类型声明写法
@@ -63,12 +27,8 @@ const tableRef = ref<null | InstanceType<typeof ElTable>>(null);
  * - https://zhuanlan.zhihu.com/p/632551852
  */
 function exportFn() {
-	// const table1 = document.querySelector("#table1");
-	const table1 = tableRef.value.$el;
-
-	console.log("table1", tableRef.value.$el);
-
-	const ws = XLSX.utils.table_to_sheet(table1);
+	const tableDom = tableRef.value?.$el;
+	const ws = XLSX.utils.table_to_sheet(tableDom);
 	const wb = XLSX.utils.book_new();
 	XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
 	XLSX.writeFile(wb, "i18n.xlsx");
@@ -84,13 +44,12 @@ function exportFn() {
 			https://www.npmjs.com/package/vue-json-excel3
 			https://github.com/pratik227/vue3-json-excel
 			前端 vue 导出为excel
-
-			TODO: 实现导出为Excel文件
 			
 			初步实现了导出 但是发现这个导出 是依赖于组件的 不是那种通过执行函数实现的。
-		-->
 
-		<JsonExcel
+			不使用依赖于组件的文件导出
+		-->
+		<!-- <JsonExcel
 			v-if="false"
 			:data="json_data"
 			:fields="json_fields"
@@ -98,7 +57,7 @@ function exportFn() {
 			name="filename.xls"
 		>
 			<el-button type="primary" size="default">下载导出文件 </el-button>
-		</JsonExcel>
+		</JsonExcel> -->
 
 		<el-button type="primary" size="default" @click="exportFn()">
 			下载导出文件
