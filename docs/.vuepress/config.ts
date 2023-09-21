@@ -81,8 +81,9 @@ export default defineUserConfig({
 			},
 		}),
 
+		// FIXME: 高版本配置 导致bug
 		// 直接导入项目根目录下的配置文件 这样效率更高
-		typedocPlugin(typedocConf),
+		// typedocPlugin(typedocConf),
 
 		// 目前有效 缺点是国内使用`algolia`速度稍慢
 		docsearchPlugin({
