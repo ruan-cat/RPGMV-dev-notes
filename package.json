@@ -13,7 +13,7 @@
   "dependencies": {
     "@vueuse/core": "^10.3.0",
     "animate.css": "^4.1.1",
-    "element-plus": "^2.3.9",
+    "element-plus": "^2.3.14",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "node-localstorage": "^2.2.1",

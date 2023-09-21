@@ -6,7 +6,6 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
 import vue from "@vitejs/plugin-vue";
-
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
@@ -18,6 +17,9 @@ import typedocConf from "../../typedoc.config.cjs";
 import theme from "./theme.js";
 
 const __dirname = getDirname(import.meta.url);
+
+/** 设置开始识别根目录在 */
+const pathSrc = path.resolve(__dirname, "types");
 
 export default defineUserConfig({
 	theme,
@@ -45,21 +47,29 @@ export default defineUserConfig({
 		),
 	},
 
-	// 用更加好的方式实现element-plus的导入。
-	// bundler: viteBundler({
-	// 	viteOptions: {
-	// 		// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
-	// 		// plugins: [vue()],
-	// 		plugins: [
-	// 			AutoImport({
-	// 				resolvers: [ElementPlusResolver()],
-	// 			}),
-	// 			Components({
-	// 				resolvers: [ElementPlusResolver()],
-	// 			}),
-	// 		],
-	// 	},
-	// }),
+	/**
+	 * 尝试实现element-plus的类型生成，并导入。而不是单纯的组件导入和注册。
+	 * 组件全局注册，已经由vuepress另外实现了。
+	 * 想实现针对组件的类型生成与识别。
+	 */
+	bundler: viteBundler({
+		viteOptions: {
+			// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
+			// plugins: [vue()],
+			plugins: [
+				vue(),
+				AutoImport({
+					resolvers: [ElementPlusResolver()],
+					dts: path.resolve(pathSrc, "auto-imports.d.ts"),
+					imports: ["vue"],
+				}),
+				Components({
+					resolvers: [ElementPlusResolver()],
+					dts: path.resolve(pathSrc, "components.d.ts"),
+				}),
+			],
+		},
+	}),
 
 	plugins: [
 		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */
