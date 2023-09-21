@@ -1,6 +1,6 @@
-type FilterType = "contain" | "exclude" | "congruence";
-type FilterTarget = "FullLink" | "Domain";
-interface FilterRule {
+export type FilterType = "contain" | "exclude" | "congruence";
+export type FilterTarget = "FullLink" | "Domain";
+export interface FilterRule {
 	// good
 	type: FilterType;
 	target: FilterTarget;
@@ -12,7 +12,11 @@ interface FilterRule {
 	value: string;
 }
 
-/** 参考资料 https://segmentfault.com/q/1010000020263396 */
+/**
+ * 参考资料
+ * https://segmentfault.com/q/1010000020263396
+ * https://stackoverflow.com/a/57022514/18167453
+ */
 function handle<T extends keyof FilterRule>(
 	value: FilterRule[T],
 	index: number,
