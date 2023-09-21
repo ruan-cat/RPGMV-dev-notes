@@ -51,25 +51,27 @@ export default defineUserConfig({
 	 * 尝试实现element-plus的类型生成，并导入。而不是单纯的组件导入和注册。
 	 * 组件全局注册，已经由vuepress另外实现了。
 	 * 想实现针对组件的类型生成与识别。
+	 *
+	 * 暂时又取消注释了 这个导致代码又莫名其妙跑不起来了
 	 */
-	bundler: viteBundler({
-		viteOptions: {
-			// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
-			// plugins: [vue()],
-			plugins: [
-				vue(),
-				AutoImport({
-					resolvers: [ElementPlusResolver()],
-					dts: path.resolve(pathSrc, "auto-imports.d.ts"),
-					imports: ["vue"],
-				}),
-				Components({
-					resolvers: [ElementPlusResolver()],
-					dts: path.resolve(pathSrc, "components.d.ts"),
-				}),
-			],
-		},
-	}),
+	// bundler: viteBundler({
+	// 	viteOptions: {
+	// 		// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
+	// 		// plugins: [vue()],
+	// 		plugins: [
+	// 			vue(),
+	// 			AutoImport({
+	// 				resolvers: [ElementPlusResolver()],
+	// 				dts: path.resolve(pathSrc, "auto-imports.d.ts"),
+	// 				imports: ["vue"],
+	// 			}),
+	// 			Components({
+	// 				resolvers: [ElementPlusResolver()],
+	// 				dts: path.resolve(pathSrc, "components.d.ts"),
+	// 			}),
+	// 		],
+	// 	},
+	// }),
 
 	plugins: [
 		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */
