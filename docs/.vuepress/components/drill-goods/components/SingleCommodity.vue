@@ -3,15 +3,26 @@ import { ref, computed } from "vue";
 import { storeToRefs } from "pinia";
 import { Icon } from "@iconify/vue";
 import * as XLSX from "xlsx";
-import { ElTable, ElMessage } from "element-plus";
+import {
+	ElTable,
+	ElMessage,
+	ElTableColumn,
+	ElButton,
+	ElForm,
+	ElFormItem,
+	type FormRules,
+} from "element-plus";
 import { debounce } from "lodash-es";
 
 import { useMode } from "../hooks/use-mode";
-import { useSingleCommodity } from "../stores/use-single-commodity";
+import {
+	useSingleCommodity,
+	type Commodity,
+} from "../stores/use-single-commodity";
 import SwitchMode from "../components/SwitchMode.vue";
 
 const { commodity } = storeToRefs(useSingleCommodity());
-const { mode } = useMode();
+const { mode, isEdit, isInfo } = useMode();
 
 console.log("  in SingleCommodity ", commodity.value);
 
@@ -57,6 +68,15 @@ const debounceExportFn = debounce(exportFn, 1500, {
 function debounceBtnClick() {
 	debounceExportFn();
 }
+
+const form = ref({
+	list: commodity.value,
+});
+const rules = ref<FormRules<Commodity>>({
+	// list: [{ required: true, message: "请输入商品名称" }],
+	desc: [{ required: true, message: "请输入商品描述" }],
+	price: [{ required: true, message: "请输入商品价格" }],
+});
 </script>
 
 <template>
@@ -87,8 +107,20 @@ function debounceBtnClick() {
 			导出文件
 		</el-button>
 
+		<el-form :model="form" ref="form" :rules="rules" :inline="false">
+			<!-- <el-form-item label="">
+				<el-input v-model="form."></el-input>
+			</el-form-item>
+			<el-form-item>
+				<el-button type="primary" @click="onSubmit">立即创建</el-button>
+				<el-button>取消</el-button>
+			</el-form-item> -->
+		</el-form>
+
 		<el-table :data="commodity" ref="tableRef">
-			<el-table-column prop="name" label="名称" width="180" />
+			<el-table-column prop="name" label="名称" width="180">
+				<template #default> </template>
+			</el-table-column>
 
 			<el-table-column prop="desc" label="描述" min-width="180" />
 
