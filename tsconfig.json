@@ -13,6 +13,9 @@
 		"typeRoots": [
 			"./types"
 		],
+		"types": [
+			"element-plus/global",
+		],
 		"paths": {
 			"@docs/*": [
 				"./docs/*"
