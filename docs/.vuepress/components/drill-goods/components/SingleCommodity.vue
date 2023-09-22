@@ -119,7 +119,8 @@ const rules = ref<FormRules<Commodity>>({
 
 		<el-table :data="commodity" ref="tableRef">
 			<el-table-column prop="name" label="名称" width="180">
-				<template #default> </template>
+				<!-- 警告 scope 无类型提示 -->
+				<template #default="scope"> </template>
 			</el-table-column>
 
 			<el-table-column prop="desc" label="描述" min-width="180" />
