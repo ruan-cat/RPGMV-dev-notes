@@ -30,8 +30,8 @@ dependencies:
     specifier: ^3.2.0
     version: 3.2.0(pinia@2.1.6)
   vue-json-excel3:
-    specifier: ^0.0.9
-    version: 0.0.9
+    specifier: ^1.0.18
+    version: 1.0.18
   xlsx:
     specifier: ^0.18.5
     version: 0.18.5
@@ -4053,6 +4053,10 @@ packages:
       is-unicode-supported: 1.3.0
     dev: true
 
+  /file-saver@2.0.5:
+    resolution: {integrity: sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==}
+    dev: false
+
   /filelist@1.0.4:
     resolution: {integrity: sha512-w1cEuf3S+DrLCQL7ET6kz+gmlJdbq9J7yXCSjK/OZCPA+qEN1WyF4ZAf0YYJa4/shHJra2t/d/r8SV4Ji+x+8Q==}
     dependencies:
@@ -6588,10 +6592,12 @@ packages:
     dependencies:
       vue: 3.3.4
 
-  /vue-json-excel3@0.0.9:
-    resolution: {integrity: sha512-Fuufu+AvPvhrowx2t3kQzqXgE1ZzWBiVQTnUq5g7IgVxBL7lyrgjr1p1IKx1bH+qm8aryCQk6iQ4Cv0QrDU4wQ==}
+  /vue-json-excel3@1.0.18:
+    resolution: {integrity: sha512-CBEpqkuKL1OiC01gXsysu/FtT3okjxXYq9Z/yydPtxPAVs+aHXPsk42DlCnfvi9t/xj9r9LfxNAj2LWiH+62ew==}
     dependencies:
       downloadjs: 1.4.7
+      file-saver: 2.0.5
+      xlsx: 0.18.5
     dev: false
 
   /vue-router@4.2.4(vue@3.3.4):
