@@ -1,3 +1,5 @@
+# vue-router
+
 ## 动态匹配路由参数的例子
 
 ```js
@@ -108,3 +110,34 @@ const c = {
 ## Redirected when going from "/login" to "/dashboard" via a navigation guard.
 
 - https://www.cnblogs.com/zyh2333/p/14714031.html
+
+## 在 vue2.7 内使用组合式 api 的方式来使用 vue-router
+
+### 不推荐的
+
+- https://v3.router.vuejs.org/zh/api/#router-currentroute
+
+这个方法还要绕一圈。而且实际使用时发现，不是响应式的值，不是当前实时变化的路由。
+
+### 用官方的方式来使用组合式 api
+
+- https://github.com/vuejs/vue-router/blob/dev/CHANGELOG.md
+
+现在假定依赖版本号如下：
+
+- vue2.7
+- vue-router3.6.5
+
+我们使用 vue-router3.6 提供的组合式 api 来替代。
+
+```js
+import {
+	useRoute,
+	useRouter,
+	useLink,
+	onBeforeRouteUpdate,
+	onBeforeRouteLeave,
+} from "vue-router/composables";
+```
+
+剩下的用法看 vue-router4 文档即可。
