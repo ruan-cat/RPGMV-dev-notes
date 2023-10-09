@@ -111,6 +111,22 @@ const c = {
 
 - https://www.cnblogs.com/zyh2333/p/14714031.html
 
+## Error: Navigation cancelled from "A" to "B" with a new navigation.
+
+```js
+/**
+ * @description
+ * 用于处理bug：
+ * Error: Navigation cancelled from "A" to "B" with a new navigation.
+ *
+ * @see https://blog.csdn.net/weixin_47084275/article/details/108205775
+ */
+const originalPush = Router.prototype.push;
+Router.prototype.push = function push(location) {
+	return originalPush.call(this, location).catch((err) => err);
+};
+```
+
 ## 在 vue2.7 内使用组合式 api 的方式来使用 vue-router
 
 ### 不推荐的
