@@ -14,3 +14,8 @@
 	}
 }
 ```
+
+## monorepo 单仓架构下怎么编写 tsconfig.json 文件？
+
+- extends
+- references

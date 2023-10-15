@@ -46,3 +46,33 @@ python labelImg.py
 ## 闪退
 
 - [labelimg 安装过程中遇到的问题及解决方法](https://blog.csdn.net/qq_43251723/article/details/130220192)
+
+## labelimg 常用快捷键
+
+- https://blog.csdn.net/wangmj_hdu/article/details/116992986
+
+Ctrl + u 选择要标注的文件目录；
+
+Ctrl + r 选择标注好的标签存放的目录；
+
+Ctrl + s 保存标注好的标签（自动保存模式下会自动保存）；
+
+Ctrl + d 复制当前标签和矩形框；
+
+Ctrl + Shift + d 删除当前图片；
+
+Space 将当前图像标记为已验证；
+
+w 开始创建矩形框；
+
+d 切换到下一张图；
+
+a 切换到上一张图；
+
+del 删除选中的标注矩形框；
+
+Ctrl++ 放大图片；
+
+Ctrl-- 缩小图片；
+
+↑→↓← 移动选中的矩形框的位置；

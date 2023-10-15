@@ -19,6 +19,12 @@
  *
  * https://github.com/tgreyuk/typedoc-plugin-markdown/tree/master/packages/vuepress-plugin-typedoc#v2x
  */
+
+// FIXME: 高版本配置 导致bug
+// ⠋ Initializing and preparing data[error] Tried to set an option (sidebar) that was not declared. You may have meant:
+//         sidebarLinks
+//         sort
+// [error] Documentation could not be generated due to the errors above.
 module.exports = {
 	entryPoints: [
 		"./src/index.ts",

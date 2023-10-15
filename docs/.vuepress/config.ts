@@ -6,7 +6,6 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
 import vue from "@vitejs/plugin-vue";
-
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
@@ -18,6 +17,9 @@ import typedocConf from "../../typedoc.config.cjs";
 import theme from "./theme.js";
 
 const __dirname = getDirname(import.meta.url);
+
+/** 设置开始识别根目录在 */
+const pathSrc = path.resolve(__dirname, "types");
 
 export default defineUserConfig({
 	theme,
@@ -45,25 +47,34 @@ export default defineUserConfig({
 		),
 	},
 
-	// 用更加好的方式实现element-plus的导入。
+	/**
+	 * 尝试实现element-plus的类型生成，并导入。而不是单纯的组件导入和注册。
+	 * 组件全局注册，已经由vuepress另外实现了。
+	 * 想实现针对组件的类型生成与识别。
+	 *
+	 * 暂时又取消注释了 这个导致代码又莫名其妙跑不起来了
+	 */
 	// bundler: viteBundler({
 	// 	viteOptions: {
 	// 		// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
 	// 		// plugins: [vue()],
 	// 		plugins: [
+	// 			vue(),
 	// 			AutoImport({
 	// 				resolvers: [ElementPlusResolver()],
+	// 				dts: path.resolve(pathSrc, "auto-imports.d.ts"),
+	// 				imports: ["vue"],
 	// 			}),
 	// 			Components({
 	// 				resolvers: [ElementPlusResolver()],
+	// 				dts: path.resolve(pathSrc, "components.d.ts"),
 	// 			}),
 	// 		],
 	// 	},
 	// }),
 
 	plugins: [
-		// https://vuejs.press/zh/reference/plugin/register-components.html
-		// FIXME: 目前没有实现指定文件夹下全部vue组件的全局注册。在相应的讨论群内也有人提出，但是未有处理方案。
+		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */
 		registerComponentsPlugin({
 			componentsDir: path.resolve(__dirname, "./components"),
 			componentsPatterns: ["**/*.vue", "./components/**/*.vue"],
@@ -72,8 +83,9 @@ export default defineUserConfig({
 			},
 		}),
 
+		// FIXME: 高版本配置 导致bug
 		// 直接导入项目根目录下的配置文件 这样效率更高
-		typedocPlugin(typedocConf),
+		// typedocPlugin(typedocConf),
 
 		// 目前有效 缺点是国内使用`algolia`速度稍慢
 		docsearchPlugin({

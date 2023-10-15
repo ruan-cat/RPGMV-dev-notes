@@ -1,4 +1,4 @@
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 export type Mode = "info" | "edit";
 
@@ -11,20 +11,23 @@ export const useMode = function () {
 	}
 
 	/** 参考资料 自定义类型守卫 */
-	function isInfo(p: Mode): p is "info" {
+	function isInfoJudge(p: Mode): p is "info" {
 		return (p as Mode) === "info";
 	}
 
-	function isEdit(p: Mode): p is "edit" {
+	function isEditJudge(p: Mode): p is "edit" {
 		return (p as Mode) === "edit";
 	}
 
+	const isInfo = computed(() => isInfoJudge(mode.value));
+	const isEdit = computed(() => isEditJudge(mode.value));
+
 	function switchMode() {
-		if (isEdit(mode.value)) {
+		if (isInfoJudge(mode.value)) {
 			mode.value = "info";
 		}
 
-		if (isInfo(mode.value)) {
+		if (isEditJudge(mode.value)) {
 			mode.value = "edit";
 		}
 	}
@@ -33,8 +36,11 @@ export const useMode = function () {
 		mode,
 
 		getMode,
+		isInfoJudge,
+		isEditJudge,
+		switchMode,
+
 		isInfo,
 		isEdit,
-		switchMode,
 	};
 };

@@ -15,3 +15,7 @@
 	"i18n-ally.enabledFrameworks": ["vue"]
 }
 ```
+
+## 识别失败的情况
+
+在项目内，vue-i18n 至少要 8 版本，typescript 至少要 5 版本才可以使用。

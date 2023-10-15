@@ -1,17 +1,32 @@
 {
 	"compilerOptions": {
-		"module": "ES2015",
-		"target": "ES2015",
+		"module": "ESNext",
+		"target": "ESNext",
+		"moduleResolution": "Node",
 		"baseUrl": ".",
 		"strict": true,
 		"declaration": true,
 		"composite": true,
-		"moduleResolution": "Node",
+		"useDefineForClassFields": true,
+		"resolveJsonModule": true,
 		"allowImportingTsExtensions": true,
+		"allowSyntheticDefaultImports": true,
+		"isolatedModules": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
 		"noEmit": true,
 		"emitDeclarationOnly": true,
+		"lib": [
+			"ESNext",
+			"DOM"
+		],
 		"typeRoots": [
 			"./types"
+		],
+		"types": [
+			/** https://juejin.cn/post/7262322846252613693 */
+			"element-plus/global",
+			// "element-plus/global.d.ts"
 		],
 		"paths": {
 			"@docs/*": [
@@ -29,5 +44,15 @@
 		"src/**/*.d.ts",
 		"src/**/*.tsx",
 		"src/**/*.vue",
+		// 尝试增加指定目录下的vue组件 期望让ts识别出vue组件
+		"docs/.vuepress/components/**/*.vue",
+		"docs/.vuepress/types/**/*.d.ts",
+		"docs/.vuepress/types/auto-imports.d.ts",
+		"docs/.vuepress/types/components.d.ts",
+	],
+	/* 模仿其他项目加上的排除配置 */
+	"exclude": [
+		"node_modules",
+		"dist"
 	],
 }
