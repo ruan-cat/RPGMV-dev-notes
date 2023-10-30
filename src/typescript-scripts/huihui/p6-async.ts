@@ -21,6 +21,7 @@ async function main() {
 }
 
 async function runner() {
-	await main();
+	const res = await main();
+	console.log(" in runner res ", res);
 }
 runner();
