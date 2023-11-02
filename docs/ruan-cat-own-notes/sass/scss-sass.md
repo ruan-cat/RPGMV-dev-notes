@@ -1,3 +1,5 @@
+# scss-sass 预处理语言
+
 ## 用 dart-sass 去替换 node-sass
 
 现在使用的是 vue-element-admin 后台管理系统，所以可以参考此方案做升级。[Node Sass to Dart Sass | vue-element-admin](https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/advanced/sass.html#升级方案)
@@ -55,10 +57,19 @@ More info: https://sass-lang.com/d/function-units
 
 ## Sass @use 替代 @import ？
 
-TODO
+TODO:
 
 - https://juejin.cn/post/7119019352149458974
 - [Sass 之模块化](https://juejin.cn/post/7051936281315508260)
+
+### 新语法？
+
+这几个语法怎么使用，搞不清楚之间的联系：
+
+- @use
+- @import
+- @mixin
+- @include
 
 ### 进度
 
