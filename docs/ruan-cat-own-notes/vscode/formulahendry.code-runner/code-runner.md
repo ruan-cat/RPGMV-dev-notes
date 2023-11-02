@@ -29,3 +29,29 @@ npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --fil
 ### 加上 --files 指令
 
 参考资料不记得了。
+
+## 运行模块导入的 typescript -2
+
+学习新的配置方式了。通过阅读 code-runner 插件的配置细节，得知 code-runner 想要运行 typescript 文件，本质上是运行命令来运行 typescript 单文件。
+
+问题就可以转换为以下方向：
+
+- 怎么使用 node 运行 typescript 文件？
+  - 运行普通的 typescript 文件？
+  - 运行含有 esm 模块的文件？
+
+### 最佳实践
+
+截止目前，最佳实践如下：
+
+- https://www.cnblogs.com/bzsheng/p/14535080.html
+
+```json
+{
+	"code-runner.executorMap": {
+		"typescript": "node --loader ts-node/esm $fullFileName --files"
+	}
+}
+```
+
+使用 code-runner 插件提供的变量，获取要运行的文件路径。剩下的就是想办法用命令式的方式运行 typescript 了。

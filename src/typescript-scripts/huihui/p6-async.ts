@@ -1,3 +1,5 @@
+import { uniqueId } from "lodash-es";
+
 /** 判断阮喵喵是否参与impart？ */
 async function ajax3() {
 	return true;
@@ -22,6 +24,6 @@ async function main() {
 
 async function runner() {
 	const res = await main();
-	console.log(" in runner res ", res);
+	console.log(" in runner res ", res, uniqueId("fuck_"));
 }
 runner();
