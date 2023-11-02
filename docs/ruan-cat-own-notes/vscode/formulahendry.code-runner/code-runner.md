@@ -1,7 +1,5 @@
 # code-runner
 
-## 运行 typescript
-
 ## 运行模块导入的 typescript
 
 期望使用该插件实现模块化内容的识别和运行。
@@ -30,7 +28,7 @@ npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --fil
 
 参考资料不记得了。
 
-## 运行模块导入的 typescript -2
+## 用基于 ts-node/esm 的方式来运行 typescript 单文件脚本
 
 学习新的配置方式了。通过阅读 code-runner 插件的配置细节，得知 code-runner 想要运行 typescript 文件，本质上是运行命令来运行 typescript 单文件。
 
@@ -55,3 +53,9 @@ npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --fil
 ```
 
 使用 code-runner 插件提供的变量，获取要运行的文件路径。剩下的就是想办法用命令式的方式运行 typescript 了。
+
+## vite-node ？
+
+vite-node
+
+- https://stackoverflow.com/a/75970462/18167453

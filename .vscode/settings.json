@@ -11,12 +11,7 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"code-runner.executorMap": {
-		// "typescript": "tsc $fileName && node $fileNameWithoutExt.js"
-		// npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --files
-		// "typescript": "npx ts-node-esm $fullFileName --files"
-		// https://www.cnblogs.com/bzsheng/p/14535080.html 还行 还能用
 		"typescript": "node --loader ts-node/esm $fullFileName --files"
-		// ? --experimental-loader
 	},
 }
 // 可参考的工作区配置 注意另存为工作区
