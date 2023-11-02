@@ -11,7 +11,12 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"code-runner.executorMap": {
-		"typescript": "node --loader ts-node/esm $fullFileName --files"
+		// "typescript": "node --loader ts-node/esm $fullFileName --files"
+		// "typescript": "npx vite-node $fullFileName --files"
+		// "typescript": "pnpx vite-node $fullFileName --files"
+		// 似乎快了一点点 3秒左右吧
+		"typescript": "pnpm vite-node $fullFileName --files"
+		// "typescript": "pnpm vite-node $fullFileName"
 	},
 }
 // 可参考的工作区配置 注意另存为工作区
