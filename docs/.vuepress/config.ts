@@ -76,8 +76,17 @@ export default defineUserConfig({
 	plugins: [
 		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */
 		registerComponentsPlugin({
-			componentsDir: path.resolve(__dirname, "./components"),
-			componentsPatterns: ["**/*.vue", "./components/**/*.vue"],
+			// 有疑惑 可以写多个文件夹路径么？
+			componentsDir: path.resolve(
+				__dirname,
+				"./components",
+				"../ruan-cat-own-notes/50projects50days-vue3"
+			),
+			componentsPatterns: [
+				"**/*.vue",
+				"./components/**/*.vue",
+				"../ruan-cat-own-notes/50projects50days-vue3/**/*.vue",
+			],
 			getComponentName(filename) {
 				return path.trimExt(filename.replace(/.*\//, ""));
 			},
