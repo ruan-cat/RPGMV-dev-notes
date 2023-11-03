@@ -47,5 +47,11 @@
 		"vuepress-plugin-search-pro": "2.0.0-beta.237",
 		"vuepress-plugin-typedoc": "^0.13.0",
 		"vuepress-theme-hope": "2.0.0-beta.237"
+	},
+	"packageManager": ">=pnpm@8.0.0",
+	"engines": {
+		"node": ">=16.0.0",
+		"vscode": "^1.22.0",
+		"pnpm": ">=8.0.0"
 	}
 }
