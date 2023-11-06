@@ -13,8 +13,8 @@ import piniaPluginPersistedstate, {
 	createPersistedState,
 } from "pinia-plugin-persistedstate";
 
-import DrillGoods from "./components/drill-goods/DrillGoods.vue";
-import FlexBoxTransition from "./components/css-challenges/flex-box-transition/FlexBoxTransition.vue";
+// import DrillGoods from "./components/drill-goods/DrillGoods.vue";
+// import FlexBoxTransition from "./components/css-challenges/flex-box-transition/FlexBoxTransition.vue";
 
 // const piniaUseLocalStorage =
 // 	typeof window !== "undefined"
@@ -36,7 +36,9 @@ export default defineClientConfig({
 
 		app.use(pinia);
 		app.use(ElementPlus);
-		app.component("DrillGoods", DrillGoods);
+
+		// 不再手动全局注册
+		// app.component("DrillGoods", DrillGoods);
 
 		// 手动全局注册 目前发现可以实现自动全局导入了
 		// app.component("FlexBoxTransition", FlexBoxTransition);
