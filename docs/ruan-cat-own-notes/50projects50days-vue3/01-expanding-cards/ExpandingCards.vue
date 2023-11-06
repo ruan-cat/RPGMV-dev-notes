@@ -39,26 +39,15 @@ const imageApi = imageApiList[0];
 
 async function getImage() {
 	return await axios.get<GetImageResponse>(imageApi).then((response) => {
-		console.log(" in getImage ");
 		return response;
 	});
 }
-// onMounted(async () => {
-// 	await getImage();
-// });
 
 const items = ref<Item[]>([]);
 
 const itemNumber = 5;
 
 async function initItems() {
-	// items.value = new Array(itemNumber).fill(1).map((elm) => {
-	// 	return {
-	// 		image: image.value,
-	// 		id: uuidv4(),
-	// 	};
-	// });
-
 	const asyncList = new Array(itemNumber).fill(1).map((elm) => {
 		return getImage();
 	});
@@ -72,6 +61,7 @@ async function initItems() {
 		});
 	});
 }
+
 onMounted(async () => {
 	await initItems();
 });
@@ -110,8 +100,14 @@ onMounted(async () => {
 			flex: 1 0 auto;
 			height: 100%;
 
-			background-size: 100% 100%;
+			// 参考资料 https://blog.csdn.net/m0_47097190/article/details/131306821
+
+			// 保持原有比例
+			background-size: cover;
+			// 不重复
 			background-repeat: no-repeat;
+			// 图片居中
+			background-position: center;
 		}
 	}
 }
