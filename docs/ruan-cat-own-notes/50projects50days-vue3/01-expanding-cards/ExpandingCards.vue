@@ -1,51 +1,80 @@
 <script lang="ts" setup>
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, onMounted } from "vue";
 import { v4 as uuidv4 } from "uuid";
 
 import axios from "axios";
 
+/** @see https://www.dmoe.cc/ */
+type GetImageResponse = {
+	code: string;
+	imgurl: string;
+	width: string;
+	height: string;
+};
+
 /** 遍历的图片项 */
 type Item = {
 	image: string;
-
 	id: string;
 };
 
 /**
- * 随机图片接口
+ * 随机图片接口 数据集
  * @description
  *
  * @see https://www.laoluowl.cn/archives/35
  * @see https://blog.csdn.net/SectSnow/article/details/115835711
  * @see https://www.dmoe.cc/
  */
-const imageApi = [
+const imageApiList = [
 	// 樱花随机二次元图片API
-	"https://www.dmoe.cc/random.php",
-	// "https://www.dmoe.cc/random.php?return=json",
+	// "https://www.dmoe.cc/random.php",
+	"https://www.dmoe.cc/random.php?return=json",
 
 	// 随机二次元图片API接口
 	"https://api.vvhan.com/api/acgimg",
 ];
 
-const image = computed(
-	// () => imageApi[Math.floor(Math.random() * imageApi.length)]
-	() => imageApi[0]
-);
+const imageApi = imageApiList[0];
+
+async function getImage() {
+	return await axios.get<GetImageResponse>(imageApi).then((response) => {
+		console.log(" in getImage ");
+		return response;
+	});
+}
+// onMounted(async () => {
+// 	await getImage();
+// });
 
 const items = ref<Item[]>([]);
 
 const itemNumber = 5;
 
-function initItems() {
-	items.value = new Array(itemNumber).fill(1).map((elm) => {
-		return {
-			image: image.value,
-			id: uuidv4(),
-		};
+async function initItems() {
+	// items.value = new Array(itemNumber).fill(1).map((elm) => {
+	// 	return {
+	// 		image: image.value,
+	// 		id: uuidv4(),
+	// 	};
+	// });
+
+	const asyncList = new Array(itemNumber).fill(1).map((elm) => {
+		return getImage();
+	});
+
+	await Promise.all(asyncList).then((response) => {
+		items.value = response.map((res) => {
+			return {
+				image: res.data.imgurl,
+				id: uuidv4(),
+			};
+		});
 	});
 }
-initItems();
+onMounted(async () => {
+	await initItems();
+});
 </script>
 
 <template>
