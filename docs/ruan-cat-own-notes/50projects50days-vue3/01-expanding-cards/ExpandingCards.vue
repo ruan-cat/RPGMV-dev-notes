@@ -80,8 +80,8 @@ onMounted(async () => {
 				v-for="item in items"
 				:key="item.id"
 				fit="cover"
+				loading="lazy"
 				:src="item.image"
-				:lazy="true"
 				:preview-src-list="previewSrcList"
 			>
 				<template #error> </template>
