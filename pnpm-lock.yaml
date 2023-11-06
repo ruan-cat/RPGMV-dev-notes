@@ -29,6 +29,9 @@ dependencies:
   pinia-plugin-persistedstate:
     specifier: ^3.2.0
     version: 3.2.0(pinia@2.1.7)
+  uuid:
+    specifier: ^9.0.1
+    version: 9.0.1
   vue-json-excel3:
     specifier: ^0.0.9
     version: 0.0.9
@@ -100,9 +103,6 @@ devDependencies:
   vuepress:
     specifier: 2.0.0-beta.67
     version: 2.0.0-beta.67(@types/node@20.8.10)(@vuepress/client@2.0.0-beta.67)(ts-node@10.9.1)(typescript@5.2.2)(vue@3.3.7)
-  vuepress-plugin-components:
-    specifier: 2.0.0-beta.245
-    version: 2.0.0-beta.245(typescript@5.2.2)(vuepress@2.0.0-beta.67)
   vuepress-plugin-search-pro:
     specifier: 2.0.0-beta.245
     version: 2.0.0-beta.245(typescript@5.2.2)(vuepress@2.0.0-beta.67)
@@ -6171,6 +6171,11 @@ packages:
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
+
+  /uuid@9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
+    dev: false
 
   /v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
