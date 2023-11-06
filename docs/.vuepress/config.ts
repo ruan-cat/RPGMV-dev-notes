@@ -3,6 +3,7 @@ import { getDirname, path } from "@vuepress/utils";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { componentsPlugin } from "vuepress-plugin-components";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
 import vue from "@vitejs/plugin-vue";
@@ -147,6 +148,10 @@ export default defineUserConfig({
 				},
 			},
 		}),
+
+		// componentsPlugin({
+		// 	components: ["BiliBili"],
+		// }),
 
 		// 该内容暂时保留 目前通过正确的爬虫配置，可以实现后端搜索了。
 		// searchProPlugin({
