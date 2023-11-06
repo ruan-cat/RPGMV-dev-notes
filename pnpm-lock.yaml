@@ -52,6 +52,9 @@ devDependencies:
   '@types/lodash-es':
     specifier: ^4.17.10
     version: 4.17.10
+  '@types/uuid':
+    specifier: ^9.0.6
+    version: 9.0.6
   '@vitejs/plugin-vue':
     specifier: ^4.4.0
     version: 4.4.0(vite@4.5.0)(vue@3.3.7)
@@ -2417,6 +2420,10 @@ packages:
     resolution: {integrity: sha512-ToldSfJ6wxO21cakcz63oFD1GjqQbKzhZCD57eH7zWuYT5UEZvfUoqvrjX5d+jB9g4a/sFO0n6QSVzzn5sMsjg==}
     dependencies:
       source-map: 0.6.1
+    dev: true
+
+  /@types/uuid@9.0.6:
+    resolution: {integrity: sha512-BT2Krtx4xaO6iwzwMFUYvWBWkV2pr37zD68Vmp1CDV196MzczBRxuEpD6Pr395HAgebC/co7hOphs53r8V7jew==}
     dev: true
 
   /@types/web-bluetooth@0.0.16:
