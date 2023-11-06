@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, computed, watch, onMounted } from "vue";
 import { v4 as uuidv4 } from "uuid";
+import { ElImage } from "element-plus";
 
 import axios from "axios";
 
@@ -47,6 +48,9 @@ const items = ref<Item[]>([]);
 
 const itemNumber = 5;
 
+/** `<el-image>` 的 preview-src-list 配置 */
+const previewSrcList = computed(() => items.value.map((elm) => elm.image));
+
 async function initItems() {
 	const asyncList = new Array(itemNumber).fill(1).map((elm) => {
 		return getImage();
@@ -70,13 +74,26 @@ onMounted(async () => {
 <template>
 	<section class="ExpandingCards-root">
 		<section class="container">
-			<section
+			<!-- @click="" -->
+			<el-image
+				class="item"
+				v-for="item in items"
+				:key="item.id"
+				fit="cover"
+				:src="item.image"
+				:lazy="true"
+				:preview-src-list="previewSrcList"
+			>
+				<template #error> </template>
+			</el-image>
+
+			<!-- <section
 				class="item"
 				@click=""
 				v-for="item in items"
 				:key="item.id"
 				:style="{ backgroundImage: `url(${item.image})` }"
-			></section>
+			></section> -->
 		</section>
 	</section>
 </template>
@@ -97,17 +114,19 @@ onMounted(async () => {
 		flex-direction: row;
 
 		.item {
-			flex: 1 0 auto;
+			flex: 1 0;
 			height: 100%;
 
-			// 参考资料 https://blog.csdn.net/m0_47097190/article/details/131306821
-
-			// 保持原有比例
-			background-size: cover;
-			// 不重复
-			background-repeat: no-repeat;
-			// 图片居中
-			background-position: center;
+			/**
+				参考资料 https://blog.csdn.net/m0_47097190/article/details/131306821 
+				使用背景图片时 样式设置才有效
+			 */
+			// 	// 保持原有比例
+			// 	background-size: cover;
+			// 	// 不重复
+			// 	background-repeat: no-repeat;
+			// 	// 图片居中
+			// 	background-position: center;
 		}
 	}
 }
