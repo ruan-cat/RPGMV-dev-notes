@@ -2,7 +2,7 @@
 import { ref, computed, watch } from "vue";
 import { v4 as uuidv4 } from "uuid";
 
-// import {  } from "axios";
+import axios from "axios";
 
 /** 遍历的图片项 */
 type Item = {
@@ -17,12 +17,12 @@ type Item = {
  *
  * @see https://www.laoluowl.cn/archives/35
  * @see https://blog.csdn.net/SectSnow/article/details/115835711
- * @ses https://www.dmoe.cc/
+ * @see https://www.dmoe.cc/
  */
 const imageApi = [
 	// 樱花随机二次元图片API
-	// "https://www.dmoe.cc/random.php",
-	"https://www.dmoe.cc/random.php?return=json",
+	"https://www.dmoe.cc/random.php",
+	// "https://www.dmoe.cc/random.php?return=json",
 
 	// 随机二次元图片API接口
 	"https://api.vvhan.com/api/acgimg",
@@ -56,7 +56,7 @@ initItems();
 				@click=""
 				v-for="item in items"
 				:key="item.id"
-				:style="{ backgroundImage: item.image }"
+				:style="{ backgroundImage: `url(${item.image})` }"
 			></section>
 		</section>
 	</section>
