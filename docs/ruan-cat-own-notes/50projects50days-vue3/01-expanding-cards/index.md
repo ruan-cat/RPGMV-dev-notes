@@ -1,8 +1,20 @@
 # 01-expanding-cards 展开卡片
 
-## 演示 demo
+## 自写重构 demo
 
 <ExpandingCards />
+
+## 官方演示 demo
+
+<iframe
+	src="https://50projects50days.com/projects/expanding-cards/"
+	width="100%"
+  height="500px"
+  frameborder="0"
+  scrolling="No"
+  leftmargin="0"
+  topmargin="0"
+></iframe>
 
 ## 文章教程
 

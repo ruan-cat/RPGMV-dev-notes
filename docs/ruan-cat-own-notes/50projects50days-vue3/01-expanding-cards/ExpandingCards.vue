@@ -93,7 +93,6 @@ onMounted(async () => {
 <template>
 	<section class="ExpandingCards-root">
 		<section class="container" v-loading="isLoading">
-			<!-- @click="" -->
 			<!-- :preview-src-list="previewSrcList" -->
 			<el-image
 				class="item"
@@ -134,7 +133,7 @@ onMounted(async () => {
 			flex: 0.5 0;
 			height: 100%;
 			cursor: pointer;
-			transition: all 0.3s ease-in-out;
+			transition: all 0.5s ease-in;
 
 			&.isClicked {
 				flex: 4 0;
