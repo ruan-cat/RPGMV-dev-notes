@@ -38,6 +38,8 @@ const imageApiList = [
 
 const imageApi = imageApiList[0];
 
+const isLoading = ref(false);
+
 async function getImage() {
 	return await axios.get<GetImageResponse>(imageApi).then((response) => {
 		return response;
@@ -56,44 +58,57 @@ async function initItems() {
 		return getImage();
 	});
 
-	await Promise.all(asyncList).then((response) => {
-		items.value = response.map((res) => {
-			return {
-				image: res.data.imgurl,
-				id: uuidv4(),
-			};
+	isLoading.value = true;
+	await Promise.all(asyncList)
+		.then((response) => {
+			items.value = response.map((res) => {
+				return {
+					image: res.data.imgurl,
+					id: uuidv4(),
+				};
+			});
+		})
+		.finally(() => {
+			isLoading.value = false;
 		});
-	});
+}
+
+/** 被点击图片项的id值 */
+const itemIdClicked = ref<Item["id"]>("");
+
+function initItemIdClicked() {
+	itemIdClicked.value = items.value?.[0]?.id ?? "";
+}
+
+function handleClick(params: Item) {
+	itemIdClicked.value = params.id;
 }
 
 onMounted(async () => {
 	await initItems();
+	initItemIdClicked();
 });
 </script>
 
 <template>
 	<section class="ExpandingCards-root">
-		<section class="container">
+		<section class="container" v-loading="isLoading">
 			<!-- @click="" -->
+			<!-- :preview-src-list="previewSrcList" -->
 			<el-image
 				class="item"
-				v-for="item in items"
-				:key="item.id"
 				fit="cover"
 				loading="lazy"
+				v-for="item in items"
+				:key="item.id"
 				:src="item.image"
-				:preview-src-list="previewSrcList"
+				:class="{
+					isClicked: itemIdClicked === item.id,
+				}"
+				@click="handleClick(item)"
 			>
 				<template #error> </template>
 			</el-image>
-
-			<!-- <section
-				class="item"
-				@click=""
-				v-for="item in items"
-				:key="item.id"
-				:style="{ backgroundImage: `url(${item.image})` }"
-			></section> -->
 		</section>
 	</section>
 </template>
@@ -113,9 +128,22 @@ onMounted(async () => {
 		align-items: center;
 		flex-direction: row;
 
+		gap: 20px;
+
 		.item {
-			flex: 1 0;
+			flex: 0.5 0;
 			height: 100%;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+
+			&.isClicked {
+				flex: 4 0;
+			}
+
+			// 该写法无效
+			// &:deep(.el-image) {
+			// 	opacity: 0.4;
+			// }
 
 			/**
 				参考资料 https://blog.csdn.net/m0_47097190/article/details/131306821 
@@ -130,4 +158,11 @@ onMounted(async () => {
 		}
 	}
 }
+
+// 该深度作用选择器写法才是有效的
+// .ExpandingCards-root {
+// 	:deep(.el-image) {
+// 		opacity: 0.4;
+// 	}
+// }
 </style>
