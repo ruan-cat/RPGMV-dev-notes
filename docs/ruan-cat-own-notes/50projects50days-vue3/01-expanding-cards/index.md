@@ -8,6 +8,6 @@
 
 - https://juejin.cn/post/7262726113083752503#heading-3
 
-## 相关参考 B 站视频
+## B 站视频教程
 
 <BiliBili bvid="BV1BN4y1j77w" />
