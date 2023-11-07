@@ -139,6 +139,11 @@ onMounted(async () => {
 				flex: 4 0;
 			}
 
+			// 反选择器 只要没选择的 就应用 灰色滤镜 和 模糊
+			&:not(.isClicked) {
+				filter: grayscale(100%) blur(3px);
+			}
+
 			// 该写法无效
 			// &:deep(.el-image) {
 			// 	opacity: 0.4;
