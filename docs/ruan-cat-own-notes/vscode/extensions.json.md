@@ -33,8 +33,10 @@
 		"lokalise.i18n-ally",
 		// 优化开发体验： icon字符串语义化转换
 		"antfu.iconify",
-		// 优化开发体验：增强的typescript报错提示
+		// 优化开发体验： 增强的typescript报错提示
 		"yoavbls.pretty-ts-errors",
+		// 优化开发体验： 增强报错提示
+		"usernamehw.errorlens",
 		// 代码片段： 针对element-ui组件库的代码片段。
 		"oibit.element-ui-helper",
 		// 小工具： 根据js的json字面量，生成ts类型
