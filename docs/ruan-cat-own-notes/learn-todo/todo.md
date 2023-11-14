@@ -77,3 +77,16 @@ https://github.com/vueuse/vueuse-vue2-example
 https://marketplace.visualstudio.com/items?itemName=Codeium.codeium
 
 https://codeium.com/
+
+## storybook
+
+这是一个实现组件库的工具。可以考虑以下的技术栈实现组件库：
+
+- storybook
+- typescript
+- vue3
+- vite
+
+目前还不是很懂这个组件库的生成。我没有找到类似的，可以参考的 github 例子。
+
+- https://storybook.js.org/blog/storybook-vue3/
