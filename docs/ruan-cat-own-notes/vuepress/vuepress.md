@@ -1,7 +1,8 @@
 # VuePress 优化待办
 
 1： 功能细节优化：
-notes.youngkbt.cn/about/website/introduce
+
+- notes.youngkbt.cn/about/website/introduce
 
 参照这个链接内的教程配置。逐步地优化网站的交互效果。
 
@@ -12,8 +13,10 @@ notes.youngkbt.cn/about/website/introduce
 ## 主内容设置的更宽
 
 注意到这个项目：这个博客网站的宽度更加合适。更加适合大屏显示。
-http://magical-time-space.gitee.io/my-blog/
+
+- http://magical-time-space.gitee.io/my-blog/
 
 需要配置的内容：
-https://vuepress-theme-hope.github.io/v2/zh/cookbook/customize/layout.html#主题断点
-https://vuepress-theme-hope.github.io/v2/zh/config/theme/appearance.html#pcbreakpoint
+
+- https://vuepress-theme-hope.github.io/v2/zh/cookbook/customize/layout.html#主题断点
+- https://vuepress-theme-hope.github.io/v2/zh/config/theme/appearance.html#pcbreakpoint
