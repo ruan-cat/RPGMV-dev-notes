@@ -1,12 +1,4 @@
 {
-	// 不应该再项目层面上的settings.json内配置任何跟电脑用户路径强耦合的配置
-	// 目前仍旧保留此内容作为参考
-	// "picgo.configPath": "C:\\Users\\ruanzhongnan\\AppData\\Roaming\\picgo\\data.json",
-	// "picgo.dataPath": "C:\\Users\\ruanzhongnan\\vs-picgo-data.json",
-	// "picgo.configPath": "C:\\Users\\Administrator\\AppData\\Roaming\\picgo\\data.json",
-	// "picgo.dataPath": "C:\\Users\\Administrator\\vs-picgo-data.json",
-	// 在vue3项目中，要求其格式化采用prettier来实现
-	// 有疑惑 是否应该在vue2中，让格式化换成纯粹的prettier，而不是vetur加层的？
 	"[vue]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -18,16 +10,9 @@
 		"typescript": "pnpm vite-node $fullFileName --files"
 		// "typescript": "pnpm vite-node $fullFileName"
 	},
+	"todo-tree.tree.disableCompactFolders": false,
+	"todo-tree.tree.showCountsInTree": true,
+	"todo-tree.tree.showBadges": true,
+	"vue.codeActions.enabled": false,
+	"svn.ignoreMissingSvnWarning": true,
 }
-// 可参考的工作区配置 注意另存为工作区
-// {
-// 	"folders": [
-// 		{
-// 			"path": "."
-// 		}
-// 	],
-// 	"settings": {
-// 		"picgo.configPath": "C:\\Users\\Administrator\\AppData\\Roaming\\picgo\\data.json",
-// 		"picgo.dataPath": "C:\\Users\\Administrator\\vs-picgo-data.json",
-// 	}
-// }
