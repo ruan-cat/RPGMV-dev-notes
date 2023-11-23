@@ -2,6 +2,12 @@
 	"[vue]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"picgo": {
+		"picBed": {
+			"current": "github",
+			"uploader": "github",
+		},
+	},
 	"code-runner.executorMap": {
 		// "typescript": "node --loader ts-node/esm $fullFileName --files"
 		// "typescript": "npx vite-node $fullFileName --files"
