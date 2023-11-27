@@ -25,3 +25,9 @@ nvm install 14 lts
 node_mirror: https://npm.taobao.org/mirrors/node/
 npm_mirror: https://npm.taobao.org/mirrors/npm/
 ```
+
+## 当前困境
+
+维护多个不同 node 版本的项目时，切换 node 版本很麻烦。
+
+比如维护基于 node-sass 的项目，需要 node14 环境；维护 vite4 项目时，需要 node16 环境；而在维护 vite5 项目时，又需要 node18 环境。反复切换项目时，不能自动自适应 node 版本。每次都需要手动切换版本，很难受。
