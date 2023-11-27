@@ -17,6 +17,19 @@ nvm-sh 不是用于 window 系统的，nvm-windows 才是。所以很多功能�
 nvm install 14 lts
 ```
 
+注意，该功能来自于 nvm 1.11.8 版本。请注意版本。
+
+## 切换到 nvm 管控的最新 node 环境
+
+- https://github.com/coreybutler/nvm-windows/releases/tag/1.1.10
+- https://github.com/coreybutler/nvm-windows/pull/709
+
+比如，直接使用以下命令切换到 nvm 管控的最新 node14 环境。
+
+```bash
+nvm use 14
+```
+
 ## 配置镜像
 
 - https://blog.csdn.net/qq_41409353/article/details/109553940
