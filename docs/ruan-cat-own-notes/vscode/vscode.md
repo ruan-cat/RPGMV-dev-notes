@@ -25,6 +25,16 @@ vscode 文件重命名后 gutter indicators 无查看任何内容
 - Live Preview 插件是否可以更好的运行 VScode？
 - Live Share 是什么？怎么实现 VScode 的快速在线分享？
 
+## 设置管理员权限
+
+在 win10 系统内，一般这样操作：
+
+![2023-11-29-23-37-32](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-29-23-37-32.png)
+
+因为某些行为需要管理员权限。
+
+该配置会带来新的问题，即`vscode 没有检查更新按钮`。
+
 ## vscode 没有检查更新按钮
 
 - https://blog.csdn.net/admans/article/details/126671210
