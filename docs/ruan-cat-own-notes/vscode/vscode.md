@@ -20,7 +20,25 @@ vscode 文件重命名后 gutter indicators 无查看任何内容
 
 无论是什么文件类型。
 
-## 学习待办
+## TODO: 学习待办
 
-1： Live Preview 插件是否可以更好的运行 VScode？
-2： Live Share 是什么？怎么实现 VScode 的快速在线分享？
+- Live Preview 插件是否可以更好的运行 VScode？
+- Live Share 是什么？怎么实现 VScode 的快速在线分享？
+
+## vscode 没有检查更新按钮
+
+- https://blog.csdn.net/admans/article/details/126671210
+- https://www.jianshu.com/p/dd6602d454ba
+- https://github.com/microsoft/vscode/issues/157624
+
+### 解决方案
+
+我们应该安装 system 类型的 vscode，而不是 user 类型的 vscode。
+
+这是 system 类型的 vscode：
+
+![2023-11-29-23-31-45](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-29-23-31-45.png)
+
+这是 user 类型的 vscode：
+
+![2023-11-29-23-32-54](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-29-23-32-54.png)
