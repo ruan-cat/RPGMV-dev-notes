@@ -1,4 +1,8 @@
-# code-runner
+# code-runner 代码片段运行插件
+
+- https://zhuanlan.zhihu.com/p/533004101
+
+不过这个参考质量，仅仅是考虑了单纯的 ts 代码片段，而不考虑使用模块的情形，有局限性。
 
 ## 运行模块导入的 typescript
 
@@ -38,9 +42,9 @@ npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --fil
   - 运行普通的 typescript 文件？
   - 运行含有 esm 模块的文件？
 
-### 最佳实践
+### 基于 ts-node/esm 的最佳实践
 
-截止目前，最佳实践如下：
+在使用 ts-node/esm 依赖的前提下，其最佳实践如下：
 
 - https://www.cnblogs.com/bzsheng/p/14535080.html
 
@@ -54,8 +58,20 @@ npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --fil
 
 使用 code-runner 插件提供的变量，获取要运行的文件路径。剩下的就是想办法用命令式的方式运行 typescript 了。
 
-## vite-node ？
-
-vite-node
+## 用基于 vite-node 的方案高效率地运行 typescript 单文件脚本
 
 - https://stackoverflow.com/a/75970462/18167453
+
+时隔太久了，我有点不太记得当初是怎么配置了。
+
+在 vite-node 的方案下，运行导入外部模块的 typescript 代码片段时，是这样配置的：
+
+```json
+{
+	"code-runner.executorMap": {
+		"typescript": "pnpm vite-node $fullFileName --files"
+	}
+}
+```
+
+使用 pnpm 安装全局依赖 vite-node。然后运行即可。
