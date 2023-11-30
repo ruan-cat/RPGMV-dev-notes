@@ -52,3 +52,18 @@ vscode 文件重命名后 gutter indicators 无查看任何内容
 这是 user 类型的 vscode：
 
 ![2023-11-29-23-32-54](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-29-23-32-54.png)
+
+### 下载 system 类型的 vscode
+
+我们应该去专门的下载页面内，找到专门的分类来下载。
+
+- https://code.visualstudio.com/download
+
+![2023-11-30-09-25-07](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-30-09-25-07.png)
+
+有两种安装包，下载时注意区分：
+
+- VSCodeSetup-x64-1.84.2.exe
+- VSCodeUserSetup-x64-1.84.2.exe
+
+![2023-11-30-09-28-41](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-30-09-28-41.png)
