@@ -25,6 +25,21 @@ vscode 文件重命名后 gutter indicators 无查看任何内容
 - Live Preview 插件是否可以更好的运行 VScode？
 - Live Share 是什么？怎么实现 VScode 的快速在线分享？
 
+### Draw.io ? 学习绘制流程图？ 集成值 vscode？
+
+### 在 vscode 查看 office 的插件？
+
+各种 vscode 查看插件？
+
+vscode-pdf
+Excel Viewer
+office viewer
+
+https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office
+https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
+
+目前选择的是 office viewer ，能查看就行了。暂时不考虑在 vscode 内编辑 office 的文件。
+
 ## 设置管理员权限
 
 在 win10 系统内，一般这样操作：
