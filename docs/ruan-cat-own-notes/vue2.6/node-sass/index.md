@@ -1,24 +1,17 @@
-## 用 dart-sass 去替换 node-sass
-
-```warning
-不应该再使用落后的node-sass，现在有方案来实现node-sass的替换了。相关文档看其他内容。不再本页说明。
-```
-
 # node-sass
 
-node-sass 疑难杂症
+这里专门记录 node-sass 疑难杂症。
+
+## 用 dart-sass 去替换 node-sass
+
+不应该再使用落后的 node-sass，现在有方案来实现 node-sass 的替换了。相关文档看其他内容，不再本页说明。
 
 ## win32-x64-72_binding.node 文件的下载错误问题
 
-参考资料
-https://blog.csdn.net/mmm333zzz/article/details/103251155
-
-https://blog.csdn.net/y_k_y/article/details/86535268
-
-https://blog.csdn.net/sinat_36227086/article/details/107412317
-
-github：
-https://github.com/pnp/sp-dev-fx-webparts/issues/501
+- https://blog.csdn.net/mmm333zzz/article/details/103251155
+- https://blog.csdn.net/y_k_y/article/details/86535268
+- https://blog.csdn.net/sinat_36227086/article/details/107412317
+- https://github.com/pnp/sp-dev-fx-webparts/issues/501
 
 ### 具体的处理
 
