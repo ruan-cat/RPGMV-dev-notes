@@ -4,4 +4,8 @@
 
 ## 安装网络函数库并使用特定的函数
 
-- https://zhuanlan.zhihu.com/p/658641423
+- [Excel 网络函数库安装教程](https://zhuanlan.zhihu.com/p/658641423)
+
+## 常用函数
+
+- [Excel 中如何去掉字符串中的空格](https://zhuanlan.zhihu.com/p/569441364)
