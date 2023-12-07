@@ -54,6 +54,16 @@
 
 ## 开启聚光灯功能增强交互
 
+这里特指是 wps 的聚光灯功能
+
+- 视图的阅读按钮
+
+  ![2023-12-07-11-23-58](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-07-11-23-58.png)
+
+- 设置颜色
+
+  ![2023-12-07-11-23-25](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-07-11-23-25.png)
+
 ## 常用函数
 
 - [Excel 中如何去掉字符串中的空格](https://zhuanlan.zhihu.com/p/569441364)
