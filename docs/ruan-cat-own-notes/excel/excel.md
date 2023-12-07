@@ -34,6 +34,24 @@
 
 ## 锁定指定表格列
 
+- 如下图所示
+
+  1.  选中表格列
+  2.  右键选择单元格格式
+  3.  保护 tab
+  4.  锁定
+
+  ![2023-12-07-11-17-19](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-07-11-17-19.png)
+
+  5. 审阅
+  6. 保护工作表
+
+  ![2023-12-07-11-20-47](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-07-11-20-47.png)
+
+  7. 无密码
+
+  ![2023-12-07-11-21-34](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-07-11-21-34.png)
+
 ## 开启聚光灯功能增强交互
 
 ## 常用函数
