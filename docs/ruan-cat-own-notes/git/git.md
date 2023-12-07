@@ -82,16 +82,6 @@ git config --global --list
 > fatal: unable to access 'https://github.com/RuanZhongNan/RPGMV-dev-notes.git/': SSL certificate problem: unable to get local issuer certificate
 ```
 
-## 用 rebase 代替 merge
-
-阅读了一些文章。称最好用 git rebase 功能来做代码合并。用 rebase 变基功能代替单纯的分支合并。这个功能能更好的让 git 提交记录简洁清晰，呈现单线的提交记录。
-
-良好清晰的 git 提交记录能够有效地记录开源项目的历史提交内容。
-
-TODO:
-
-尚不清楚 rebase 功能能否克服 svn 识别文件冗余的情况。仍需要自测一次。
-
 ## git 部分克隆
 
 在此文章内看到该内容：
