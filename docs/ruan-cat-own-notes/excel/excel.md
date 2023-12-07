@@ -14,6 +14,28 @@
 
 ![2023-12-06-11-35-40](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-06-11-35-40.png)
 
+## 表格列设置仅允许填写少数枚举值，并提供下拉列表交互功能
+
+- 先选中要操作的表格块，在`数据`内选择`有效性`
+
+  ![2023-12-07-11-06-31](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-07-11-06-31.png)
+
+- 选择`序列`
+
+  ![2023-12-07-11-07-39](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-07-11-07-39.png)
+
+- 配置下拉列表。该下拉列表的枚举值排序，被字符串排序控制。
+
+  ![2023-12-07-11-08-46](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-07-11-08-46.png)
+
+- 为了增强交互，默认总是增加报错提示。类似于用 element-ui 开发表单，需要增加人性化的交互提示。
+
+  ![2023-12-07-11-09-51](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-07-11-09-51.png)
+
+## 锁定指定表格列
+
+## 开启聚光灯功能增强交互
+
 ## 常用函数
 
 - [Excel 中如何去掉字符串中的空格](https://zhuanlan.zhihu.com/p/569441364)
