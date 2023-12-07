@@ -67,3 +67,7 @@
 ## 常用函数
 
 - [Excel 中如何去掉字符串中的空格](https://zhuanlan.zhihu.com/p/569441364)
+
+## 常用快捷键
+
+- [Office 小技巧-Excel 快速选中单元格大全](https://zhuanlan.zhihu.com/p/30842001)
