@@ -244,3 +244,25 @@ git config --global core.fileMode false
 ## 文件损坏
 
 全部的 png 文件全部都出错了。打不开。
+
+经过检查，发现情况如下：
+
+- 先用笔记本电脑上传图片文件资源
+- 然后用台式机 git 仓库同步
+- 发现在台式机内的 git 仓库，图片文件全部损坏
+
+### 初步的处理策略
+
+1. 用命令查看两台机器的文件配置。
+
+```bash
+git config --system --list
+git config --global --list
+```
+
+2. 直接重置两台机器的 git。直接重新安装一次。
+
+### 可能的参考资料
+
+- https://www.coder.work/article/187908
+- https://stackoverflow.com/questions/19411981/images-corrupt-after-git-push
