@@ -266,3 +266,4 @@ git config --global --list
 
 - https://www.coder.work/article/187908
 - https://stackoverflow.com/questions/19411981/images-corrupt-after-git-push
+- https://juejin.cn/post/7084885453920272398
