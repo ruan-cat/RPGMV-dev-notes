@@ -11,10 +11,10 @@
 		"docs:update-package": "pnpm dlx vp-update"
 	},
 	"dependencies": {
-		"@vueuse/core": "^10.6.1",
+		"@vueuse/core": "^10.7.0",
 		"animate.css": "^4.1.1",
 		"axios": "^1.6.2",
-		"element-plus": "^2.4.2",
+		"element-plus": "^2.4.3",
 		"lodash": "^4.17.21",
 		"lodash-es": "^4.17.21",
 		"node-localstorage": "^2.2.1",
@@ -25,7 +25,7 @@
 		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.147",
+		"@iconify/json": "^2.2.157",
 		"@iconify/vue": "^4.1.1",
 		"@types/lodash": "^4.14.202",
 		"@types/lodash-es": "^4.17.12",
@@ -40,10 +40,10 @@
 		"ts-node-esm": "^0.0.6",
 		"typedoc": "^0.25.4",
 		"typedoc-plugin-markdown": "^3.17.1",
-		"typescript": "^5.3.2",
+		"typescript": "^5.3.3",
 		"unplugin-auto-import": "^0.16.7",
 		"unplugin-vue-components": "^0.25.2",
-		"vite-node": "^0.34.6",
+		"vite-node": "^0.34.7",
 		"vp-update": "^0.1.2",
 		"vue": "^3.3.9",
 		"vuepress": "2.0.0-rc.0",
