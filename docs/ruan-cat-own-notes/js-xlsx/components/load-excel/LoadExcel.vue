@@ -84,7 +84,7 @@ const list = computed(() => {
 });
 
 const reverseList = computed(() => {
-	const storeMap = new Map<string, string[] | string>();
+	const storeMap = new Map<string, string[]>();
 
 	list.value.forEach((elm) => {
 		const roles = elm.角色.split(",");
@@ -94,19 +94,21 @@ const reverseList = computed(() => {
 				storeMap.set(role, []);
 			}
 
-			(storeMap.get(role) as string[])?.push(elm.用户名);
+			storeMap.get(role)?.push(elm.用户名);
 		});
 	});
 
-	storeMap.forEach((value, key, map) => {
-		if (isArray(value)) {
-			map.set(key, value.join(","));
-		}
-	});
+	// 不预设成字符串了
+	// storeMap.forEach((value, key, map) => {
+	// 	if (isArray(value)) {
+	// 		map.set(key, value.join(","));
+	// 	}
+	// });
 
 	return Object.entries(Object.fromEntries(storeMap.entries())).map((elm) => ({
 		角色: elm[0],
-		用户名: elm[1] as string,
+		用户名: elm[1].join(","),
+		总数: elm[1].length,
 	}));
 });
 
@@ -140,7 +142,7 @@ const layoutConf = ref({
 		</el-upload>
 
 		<el-row :gutter="20">
-			<el-col :span="12" :offset="0">
+			<el-col :span="8" :offset="0">
 				<el-table
 					style="width: 100%"
 					:data="list"
@@ -154,7 +156,7 @@ const layoutConf = ref({
 				</el-table>
 			</el-col>
 
-			<el-col :span="12" :offset="0">
+			<el-col :span="16" :offset="0">
 				<el-table
 					style="width: 100%"
 					:data="reverseList"
@@ -165,6 +167,7 @@ const layoutConf = ref({
 				>
 					<el-table-column prop="角色" label="角色" width="180" />
 					<el-table-column prop="用户名" label="用户名" min-width="180" />
+					<el-table-column prop="总数" label="总数" width="80" fixed="right" />
 				</el-table>
 			</el-col>
 		</el-row>
