@@ -82,3 +82,30 @@ https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
 - VSCodeUserSetup-x64-1.84.2.exe
 
 ![2023-11-30-09-28-41](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-30-09-28-41.png)
+
+## 开启侧边栏的`粘性滚动功能`
+
+- https://code.visualstudio.com/updates/v1_85#_sticky-scroll-in-trees
+
+1. before 侧边栏无粘性滚动。
+
+![2023-12-14-09-32-20](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-14-09-32-20.png)
+
+2. 根据更新内容，做配置。这里给个人的用户全局配置文件内做配置，而不是工作局局部配置文件。
+
+![2023-12-14-09-33-33](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-14-09-33-33.png)
+
+```json
+{
+	"workbench.tree.enableStickyScroll": true,
+	"workbench.tree.stickyScrollMaxItemCount": 7
+}
+```
+
+3. after 侧边栏开启了粘性滚动。
+
+![2023-12-14-09-34-33](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-14-09-34-33.png)
+
+4. 插件的右侧侧边栏，也同样包含此功能。
+
+![2023-12-14-09-35-05](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-14-09-35-05.png)
