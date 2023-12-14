@@ -2,6 +2,7 @@
 import { ref, computed, watch } from "vue";
 
 import {
+	ElMessage,
 	ElAlert,
 	ElButton,
 	ElUpload,
@@ -115,6 +116,17 @@ const reverseList = computed(() => {
 const layoutConf = ref({
 	maxHeight: "100vh",
 });
+
+// MouseEvent
+async function dblclickCopy($event) {
+	/** 参考资料： https://blog.csdn.net/weixin_45022563/article/details/127392836 */
+	await navigator.clipboard.writeText($event.target.innerHTML).then((res) => {
+		ElMessage({
+			type: "success",
+			message: " 复制成功！ ",
+		});
+	});
+}
 </script>
 
 <template>
@@ -151,8 +163,23 @@ const layoutConf = ref({
 					:border="true"
 					:highlight-current-row="true"
 				>
-					<el-table-column prop="用户名" label="用户名" width="180" />
-					<el-table-column prop="角色" label="角色" min-width="180" />
+					<el-table-column type="index" label="序号" width="50" />
+
+					<el-table-column prop="用户名" label="用户名" width="180">
+						<template #default="{ row, column, $index }">
+							<section @dblclick="dblclickCopy($event)">
+								{{ row["用户名"] }}
+							</section>
+						</template>
+					</el-table-column>
+
+					<el-table-column prop="角色" label="角色" min-width="180">
+						<template #default="{ row, column, $index }">
+							<section @dblclick="dblclickCopy($event)">
+								{{ row["角色"] }}
+							</section>
+						</template>
+					</el-table-column>
 				</el-table>
 			</el-col>
 
@@ -165,8 +192,24 @@ const layoutConf = ref({
 					:border="true"
 					:highlight-current-row="true"
 				>
-					<el-table-column prop="角色" label="角色" width="180" />
-					<el-table-column prop="用户名" label="用户名" min-width="180" />
+					<el-table-column type="index" label="序号" width="50" />
+
+					<el-table-column prop="角色" label="角色" width="180">
+						<template #default="{ row, column, $index }">
+							<section @dblclick="dblclickCopy($event)">
+								{{ row["角色"] }}
+							</section>
+						</template>
+					</el-table-column>
+
+					<el-table-column prop="用户名" label="用户名" min-width="180">
+						<template #default="{ row, column, $index }">
+							<section @dblclick="dblclickCopy($event)">
+								{{ row["用户名"] }}
+							</section>
+						</template>
+					</el-table-column>
+
 					<el-table-column prop="总数" label="总数" width="80" fixed="right" />
 				</el-table>
 			</el-col>
