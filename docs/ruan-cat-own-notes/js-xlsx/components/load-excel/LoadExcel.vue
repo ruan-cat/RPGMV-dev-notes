@@ -9,7 +9,7 @@ import {
 	ElTableColumn,
 } from "element-plus";
 
-import { pick } from "lodash-es";
+import { pick, isArray } from "lodash-es";
 
 import * as XLSX from "xlsx";
 
@@ -79,6 +79,34 @@ const list = computed(() => {
 				// "用户是否存在",
 			])
 		);
+});
+
+const reverseList = computed(() => {
+	const storeMap = new Map<string, string[] | string>();
+
+	list.value.forEach((elm) => {
+		const roles = elm.角色.split(",");
+
+		roles.forEach((role) => {
+			if (!storeMap.has(role)) {
+				storeMap.set(role, []);
+			}
+
+			(storeMap.get(role) as string[])?.push(elm.用户名);
+		});
+	});
+
+	storeMap.forEach((value, key, map) => {
+		if (isArray(value)) {
+			map.set(key, value.join(","));
+		}
+	});
+
+	return Object.entries(Object.fromEntries(storeMap.entries())).map((elm) => ({
+		角色: elm[0],
+		用户名: elm[1] as string,
+		// 用户名: elm[1],
+	}));
 });
 </script>
 
