@@ -168,7 +168,7 @@ async function dblclickCopy($event) {
 					:border="true"
 					:highlight-current-row="true"
 				>
-					<el-table-column type="index" label="序号" width="50" />
+					<el-table-column type="index" label="序号" width="80" />
 
 					<el-table-column prop="用户名" label="用户名" width="180">
 						<template #default="{ row, column, $index }">
@@ -197,7 +197,7 @@ async function dblclickCopy($event) {
 					:border="true"
 					:highlight-current-row="true"
 				>
-					<el-table-column type="index" label="序号" width="50" />
+					<el-table-column type="index" label="序号" width="80" />
 
 					<el-table-column prop="角色" label="角色" width="180">
 						<template #default="{ row, column, $index }">
