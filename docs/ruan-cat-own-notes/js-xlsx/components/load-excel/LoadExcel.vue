@@ -1,9 +1,15 @@
 <script lang="ts" setup>
 import { ref, computed, watch } from "vue";
 
-import { ElAlert, ElButton, ElUpload } from "element-plus";
+import {
+	ElAlert,
+	ElButton,
+	ElUpload,
+	ElTable,
+	ElTableColumn,
+} from "element-plus";
 
-import {} from "lodash-es";
+import { pick } from "lodash-es";
 
 import * as XLSX from "xlsx";
 
@@ -50,11 +56,30 @@ function readXLSX(file) {
 async function beforeUpload(file) {
 	const result = await readXLSX(file);
 	console.log(result);
-	tableData.value = result as TableData;
+	tableData.value = result as TableData[];
 	return false;
 }
 
-const list = computed(() => {});
+/**
+ * 按照条件过滤 筛选出来的表格数据
+ */
+const list = computed(() => {
+	return tableData.value
+		.filter((elm) => elm.账号使用状态 === "启用")
+		.filter((elm) => elm.用户是否存在 === "存在")
+		.map((elm) =>
+			pick(elm, [
+				"用户名",
+				"角色",
+				// "登陆账号",
+				// "部门",
+				// "手机号",
+				// "账号使用状态",
+				// "已经存在的用户数据",
+				// "用户是否存在",
+			])
+		);
+});
 </script>
 
 <template>
@@ -80,6 +105,19 @@ const list = computed(() => {});
 				<el-button type="primary">选择文件</el-button>
 			</template>
 		</el-upload>
+
+		<!-- max-height: 50vh; -->
+		<el-table
+			:data="list"
+			style="width: 100%"
+			max-height="50vh"
+			:stripe="true"
+			:border="true"
+			:highlight-current-row="true"
+		>
+			<el-table-column prop="用户名" label="用户名" width="180" />
+			<el-table-column prop="角色" label="角色" min-width="180" />
+		</el-table>
 	</section>
 </template>
 
