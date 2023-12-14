@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, h } from "vue";
 
 import {
 	ElMessage,
@@ -123,7 +123,12 @@ async function dblclickCopy($event) {
 	await navigator.clipboard.writeText($event.target.innerHTML).then((res) => {
 		ElMessage({
 			type: "success",
-			message: " 复制成功！ ",
+			message: h("section", null, [
+				h("section", null, "复制成功！"),
+				h("section", null, "文本已保存在粘贴板内，随时可以复制粘贴。"),
+				h("section", null, "使用快捷键 win+v 来打开粘贴板。"),
+			]),
+			// message: " 复制成功！ 文本已保存在粘贴板内，随时可以复制粘贴。  ",
 		});
 	});
 }
