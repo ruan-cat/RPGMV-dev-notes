@@ -3,13 +3,28 @@ import { ref, computed, watch } from "vue";
 
 import { ElAlert, ElButton, ElUpload } from "element-plus";
 
+import {} from "lodash-es";
+
 import * as XLSX from "xlsx";
 
-type TableData = unknown[];
+/** 表格的数据类型 */
+interface TableData {
+	用户名: string;
+	登陆账号: string;
+	部门: string;
+	手机号: number;
+	角色: string;
+	账号使用状态: string;
+	已经存在的用户数据: string;
+	用户是否存在: string;
+}
 
 const title = ref("你好 这是临时使用的文件导入工具");
 
-const tableData = ref<TableData>([]);
+/**
+ * https://zhuanlan.zhihu.com/p/632551852
+ */
+const tableData = ref<TableData[]>([]);
 
 function readXLSX(file) {
 	return new Promise((resolve, reject) => {
@@ -38,6 +53,8 @@ async function beforeUpload(file) {
 	tableData.value = result as TableData;
 	return false;
 }
+
+const list = computed(() => {});
 </script>
 
 <template>
