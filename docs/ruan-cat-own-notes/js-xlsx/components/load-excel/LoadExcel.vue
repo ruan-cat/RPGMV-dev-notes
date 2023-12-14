@@ -7,6 +7,8 @@ import {
 	ElUpload,
 	ElTable,
 	ElTableColumn,
+	ElRow,
+	ElCol,
 } from "element-plus";
 
 import { pick, isArray } from "lodash-es";
@@ -105,8 +107,11 @@ const reverseList = computed(() => {
 	return Object.entries(Object.fromEntries(storeMap.entries())).map((elm) => ({
 		角色: elm[0],
 		用户名: elm[1] as string,
-		// 用户名: elm[1],
 	}));
+});
+
+const layoutConf = ref({
+	maxHeight: "100vh",
 });
 </script>
 
@@ -134,22 +139,53 @@ const reverseList = computed(() => {
 			</template>
 		</el-upload>
 
-		<!-- max-height: 50vh; -->
-		<el-table
-			:data="list"
-			style="width: 100%"
-			max-height="50vh"
-			:stripe="true"
-			:border="true"
-			:highlight-current-row="true"
-		>
-			<el-table-column prop="用户名" label="用户名" width="180" />
-			<el-table-column prop="角色" label="角色" min-width="180" />
-		</el-table>
+		<el-row :gutter="20">
+			<el-col :span="12" :offset="0">
+				<el-table
+					style="width: 100%"
+					:data="list"
+					:max-height="layoutConf.maxHeight"
+					:stripe="true"
+					:border="true"
+					:highlight-current-row="true"
+				>
+					<el-table-column prop="用户名" label="用户名" width="180" />
+					<el-table-column prop="角色" label="角色" min-width="180" />
+				</el-table>
+			</el-col>
+
+			<el-col :span="12" :offset="0">
+				<el-table
+					style="width: 100%"
+					:data="reverseList"
+					:max-height="layoutConf.maxHeight"
+					:stripe="true"
+					:border="true"
+					:highlight-current-row="true"
+				>
+					<el-table-column prop="角色" label="角色" width="180" />
+					<el-table-column prop="用户名" label="用户名" min-width="180" />
+				</el-table>
+			</el-col>
+		</el-row>
 	</section>
 </template>
 
 <style lang="scss" scoped>
 .LoadExcel-root {
+	:deep(.el-table) {
+		table {
+			// 清除边距
+			margin: 0 0;
+		}
+
+		.el-scrollbar__bar.is-vertical {
+			width: 10px;
+
+			.el-scrollbar__thumb:hover {
+				background-color: gray;
+			}
+		}
+	}
 }
 </style>
