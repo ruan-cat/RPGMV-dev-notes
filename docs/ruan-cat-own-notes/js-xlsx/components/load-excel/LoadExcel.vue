@@ -17,6 +17,16 @@ import { pick, isUndefined } from "lodash-es";
 
 import * as XLSX from "xlsx";
 
+type Conditions = Array<(...args: any[]) => boolean>;
+
+function isConditionsEvery(conditions: Conditions) {
+	return conditions.every((condition) => condition());
+}
+
+function isConditionsSome(conditions: Conditions) {
+	return conditions.some((condition) => condition());
+}
+
 /** 表格的数据类型 */
 interface TableData {
 	用户名: string;
@@ -27,16 +37,6 @@ interface TableData {
 	账号使用状态: string;
 	已经存在的用户数据: string;
 	用户是否存在?: string;
-}
-
-type Conditions = Array<(...args: any[]) => boolean>;
-
-function isConditionsEvery(conditions: Conditions) {
-	return conditions.every((condition) => condition());
-}
-
-function isConditionsSome(conditions: Conditions) {
-	return conditions.some((condition) => condition());
 }
 
 const title = ref("你好 这是临时使用的文件导入工具");
@@ -68,9 +68,17 @@ function readXLSX(file: UploadRawFile) {
 
 async function beforeUpload(file: UploadRawFile) {
 	const result = await readXLSX(file);
-	console.log(result);
 	tableData.value = result as TableData[];
 	return false;
+}
+
+function createFilterUseConditions(elm: TableData): Conditions {
+	return [
+		() => (!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true),
+
+		() =>
+			!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "不存在" : true,
+	];
 }
 
 /**
@@ -78,14 +86,7 @@ async function beforeUpload(file: UploadRawFile) {
  */
 const list = computed(() => {
 	return tableData.value
-		.filter((elm) => elm.账号使用状态 === "启用")
-		.filter((elm) => {
-			if (!isUndefined(elm.用户是否存在)) {
-				return elm.用户是否存在 === "不存在";
-			} else {
-				return true;
-			}
-		})
+		.filter((elm) => isConditionsEvery(createFilterUseConditions(elm)))
 		.map((elm) =>
 			pick(elm, [
 				"用户名",
