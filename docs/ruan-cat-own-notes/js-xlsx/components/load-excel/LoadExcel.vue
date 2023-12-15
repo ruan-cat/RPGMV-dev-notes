@@ -27,6 +27,9 @@ function isConditionsSome(conditions: Conditions) {
 	return conditions.some((condition) => condition());
 }
 
+type 账号使用状态_type = "启用" | "禁用";
+type 用户是否存在_type = "存在" | "缺漏";
+
 /** 表格的数据类型 */
 interface TableData {
 	用户名: string;
@@ -34,9 +37,9 @@ interface TableData {
 	部门: string;
 	手机号: number;
 	角色: string;
-	账号使用状态: string;
+	账号使用状态: 账号使用状态_type;
 	已经存在的用户数据: string;
-	用户是否存在?: string;
+	用户是否存在?: 用户是否存在_type;
 }
 
 const title = ref("你好 这是临时使用的文件导入工具");
@@ -75,9 +78,7 @@ async function beforeUpload(file: UploadRawFile) {
 function createFilterUseConditions(elm: TableData): Conditions {
 	return [
 		() => (!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true),
-
-		() =>
-			!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "不存在" : true,
+		() => (!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true),
 	];
 }
 
