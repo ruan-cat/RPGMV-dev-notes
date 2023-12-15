@@ -13,7 +13,7 @@ import {
 	type UploadRawFile,
 } from "element-plus";
 
-import { pick, isArray } from "lodash-es";
+import { pick, isUndefined } from "lodash-es";
 
 import * as XLSX from "xlsx";
 
@@ -26,7 +26,7 @@ interface TableData {
 	角色: string;
 	账号使用状态: string;
 	已经存在的用户数据: string;
-	用户是否存在: string;
+	用户是否存在?: string;
 }
 
 const title = ref("你好 这是临时使用的文件导入工具");
@@ -69,7 +69,13 @@ async function beforeUpload(file: UploadRawFile) {
 const list = computed(() => {
 	return tableData.value
 		.filter((elm) => elm.账号使用状态 === "启用")
-		.filter((elm) => elm.用户是否存在 === "存在")
+		.filter((elm) => {
+			if (!isUndefined(elm.用户是否存在)) {
+				return elm.用户是否存在 === "不存在";
+			} else {
+				return true;
+			}
+		})
 		.map((elm) =>
 			pick(elm, [
 				"用户名",
