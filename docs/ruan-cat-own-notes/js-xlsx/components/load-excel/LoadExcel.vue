@@ -10,6 +10,7 @@ import {
 	ElTableColumn,
 	ElRow,
 	ElCol,
+	type UploadRawFile,
 } from "element-plus";
 
 import { pick, isArray } from "lodash-es";
@@ -35,7 +36,7 @@ const title = ref("你好 这是临时使用的文件导入工具");
  */
 const tableData = ref<TableData[]>([]);
 
-function readXLSX(file) {
+function readXLSX(file: UploadRawFile) {
 	return new Promise((resolve, reject) => {
 		const reader = new FileReader();
 
@@ -56,7 +57,7 @@ function readXLSX(file) {
 	});
 }
 
-async function beforeUpload(file) {
+async function beforeUpload(file: UploadRawFile) {
 	const result = await readXLSX(file);
 	console.log(result);
 	tableData.value = result as TableData[];
@@ -117,20 +118,26 @@ const layoutConf = ref({
 	maxHeight: "100vh",
 });
 
-// MouseEvent
-async function dblclickCopy($event) {
+/**
+ * EventTarget
+ * MouseEvent
+ * Event
+ */
+async function dblclickCopy($event: MouseEvent) {
 	/** 参考资料： https://blog.csdn.net/weixin_45022563/article/details/127392836 */
-	await navigator.clipboard.writeText($event.target.innerHTML).then((res) => {
-		ElMessage({
-			type: "success",
-			message: h("section", null, [
-				h("section", null, "复制成功！"),
-				h("section", null, "文本已保存在粘贴板内，随时可以复制粘贴。"),
-				h("section", null, "使用快捷键 win+v 来打开粘贴板。"),
-			]),
-			// message: " 复制成功！ 文本已保存在粘贴板内，随时可以复制粘贴。  ",
+	await navigator.clipboard
+		.writeText(($event.target as HTMLElement).innerHTML)
+		.then((res) => {
+			ElMessage({
+				type: "success",
+				message: h("section", null, [
+					h("section", null, "复制成功！"),
+					h("section", null, "文本已保存在粘贴板内，随时可以复制粘贴。"),
+					h("section", null, "使用快捷键 win+v 来打开粘贴板。"),
+				]),
+				// message: " 复制成功！ 文本已保存在粘贴板内，随时可以复制粘贴。  ",
+			});
 		});
-	});
 }
 </script>
 
