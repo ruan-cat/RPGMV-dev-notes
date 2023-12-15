@@ -46,7 +46,6 @@ function readXLSX(file: UploadRawFile) {
 
 			const wb = XLSX.read(data, { type: "binary" });
 
-			// const ws = workbook.Sheets[workbook.SheetNames[0]];
 			const ws = wb.Sheets[wb.SheetNames[0]];
 			const jsonData = XLSX.utils.sheet_to_json(ws);
 
@@ -135,7 +134,6 @@ async function dblclickCopy($event: MouseEvent) {
 					h("section", null, "文本已保存在粘贴板内，随时可以复制粘贴。"),
 					h("section", null, "使用快捷键 win+v 来打开粘贴板。"),
 				]),
-				// message: " 复制成功！ 文本已保存在粘贴板内，随时可以复制粘贴。  ",
 			});
 		});
 }
@@ -150,8 +148,6 @@ async function dblclickCopy($event: MouseEvent) {
 			:title="title"
 			:closable="false"
 		></el-alert>
-
-		<!-- <el-button type="primary" size="large" @click=""> 导入文件 </el-button> -->
 
 		<el-upload
 			ref="upload"
