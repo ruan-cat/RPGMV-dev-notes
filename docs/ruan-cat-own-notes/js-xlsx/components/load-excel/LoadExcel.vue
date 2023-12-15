@@ -29,6 +29,16 @@ interface TableData {
 	用户是否存在?: string;
 }
 
+type Conditions = Array<(...args: any[]) => boolean>;
+
+function isConditionsEvery(conditions: Conditions) {
+	return conditions.every((condition) => condition());
+}
+
+function isConditionsSome(conditions: Conditions) {
+	return conditions.some((condition) => condition());
+}
+
 const title = ref("你好 这是临时使用的文件导入工具");
 
 /**
