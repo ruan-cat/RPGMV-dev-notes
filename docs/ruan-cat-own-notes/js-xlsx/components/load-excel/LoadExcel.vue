@@ -57,9 +57,13 @@ const showingUseFields = <const>["用户名", "角色"];
 /** 过滤的 表列字段 */
 const filterUseFields = <const>["账号使用状态", "用户是否存在"];
 type FilterUseFields = (typeof filterUseFields)[number];
+type FilterUseFieldsSwitchable = `is${FilterUseFields}`;
 
 /** 过滤配置表单 */
 type FilterConfigForm = Pick<Required<TableData>, FilterUseFields>;
+type FilterConditionSwitch = Required<
+	Record<FilterUseFieldsSwitchable, boolean>
+>;
 
 type FilterConfig = {
 	[key in FilterUseFields]: (params: TableData) => boolean;
@@ -133,7 +137,7 @@ async function beforeUpload(file: UploadRawFile) {
 }
 
 /** 过滤条件开关 是否开启过滤条件 */
-const filterConditionSwitch = ref({
+const filterConditionSwitch = ref<FilterConditionSwitch>({
 	is账号使用状态: true,
 	is用户是否存在: true,
 });
@@ -157,6 +161,7 @@ const filterConfig = ref<FilterConfig>({
 });
 
 function createFilterUseConditions(elm: TableData): Conditions {
+	// return  Object filterConfig.value
 	// TODO: 优化此部分的代码
 	return [
 		() => (!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true),
