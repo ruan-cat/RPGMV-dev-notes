@@ -148,7 +148,7 @@ const filterConfigForm = ref<FilterConfigForm>({
 });
 
 function removeIsPrefix(params: FilterUseFieldsSwitchable): FilterUseFields {
-	return <FilterUseFields>params.slice(1);
+	return <FilterUseFields>params.slice(2);
 }
 
 /** 过滤配置 */
