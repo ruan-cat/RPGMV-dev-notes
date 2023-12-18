@@ -261,6 +261,7 @@ async function dblclickCopy($event: MouseEvent) {
 		<el-row :gutter="20">
 			<el-col :span="12" :offset="0">
 				<ElTag type="success"> 是否开启筛选 </ElTag>
+				<ElTag type="warning"> 账号使用状态 </ElTag>
 
 				<ElSwitch
 					v-model="filterConditionSwitch.is账号使用状态"
@@ -292,6 +293,7 @@ async function dblclickCopy($event: MouseEvent) {
 		<el-row :gutter="20">
 			<el-col :span="12" :offset="0">
 				<ElTag type="success"> 是否开启筛选 </ElTag>
+				<ElTag type="warning"> 用户是否存在 </ElTag>
 
 				<ElSwitch
 					v-model="filterConditionSwitch.is用户是否存在"
