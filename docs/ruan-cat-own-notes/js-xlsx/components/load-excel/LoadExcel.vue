@@ -56,14 +56,14 @@ const showingUseFields = <const>["用户名", "角色"];
 
 /** 过滤的 表列字段 */
 const filterUseFields = <const>["账号使用状态", "用户是否存在"];
+type FilterUseFields = (typeof filterUseFields)[number];
 
 /** 过滤配置表单 */
-type FilterConfigForm = Pick<
-	Required<TableData>,
-	(typeof filterUseFields)[number]
->;
+type FilterConfigForm = Pick<Required<TableData>, FilterUseFields>;
 
-// type FilterConfig =
+type FilterConfig = {
+	[key in FilterUseFields]: (params: TableData) => boolean;
+};
 
 const elementPlusSize = ref<ComponentSize>("large");
 
@@ -144,11 +144,11 @@ const filterConfigForm = ref<FilterConfigForm>({
 });
 
 /** 过滤配置 */
-const filterConfig = ref({
-	is账号使用状态: (elm: TableData) =>
+const filterConfig = ref<FilterConfig>({
+	账号使用状态: (elm) =>
 		!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true,
 
-	is用户是否存在: (elm: TableData) =>
+	用户是否存在: (elm) =>
 		!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true,
 });
 
