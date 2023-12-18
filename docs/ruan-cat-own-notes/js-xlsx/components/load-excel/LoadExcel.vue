@@ -51,24 +51,30 @@ interface TableData {
 	用户是否存在?: 用户是否存在_type;
 }
 
+/** 显示的 表列字段 */
+const showingUseFields = <const>["用户名", "角色"];
+
+/** 过滤的 表列字段 */
+const filterUseFields = <const>["账号使用状态", "用户是否存在"];
+
 /** 过滤配置表单 */
 type FilterConfigForm = Pick<
 	Required<TableData>,
-	"账号使用状态" | "用户是否存在"
+	(typeof filterUseFields)[number]
 >;
+
+// type FilterConfig =
 
 const elementPlusSize = ref<ComponentSize>("large");
 
 const title = ref("你好 这是临时使用的文件导入工具");
 
 /**
- * https://zhuanlan.zhihu.com/p/632551852
+ * @see https://zhuanlan.zhihu.com/p/632551852
  */
 const tableData = ref<TableData[]>([]);
 
-const pickFields = <const>["用户名", "角色"];
-
-type List = Pick<TableData, (typeof pickFields)[number]>[];
+type List = Pick<TableData, (typeof showingUseFields)[number]>[];
 
 /**
  * 按照条件过滤 筛选出来的表格数据
@@ -252,6 +258,8 @@ async function dblclickCopy($event: MouseEvent) {
 					v-model="filterConfigForm.账号使用状态"
 					active-text="启用"
 					inactive-text="禁用"
+					active-value="启用"
+					inactive-value="禁用"
 					:size="elementPlusSize"
 				>
 				</ElSwitch>
@@ -279,6 +287,8 @@ async function dblclickCopy($event: MouseEvent) {
 					v-model="filterConfigForm.用户是否存在"
 					active-text="存在"
 					inactive-text="缺漏"
+					active-value="存在"
+					inactive-value="缺漏"
 					:size="elementPlusSize"
 				>
 				</ElSwitch>
