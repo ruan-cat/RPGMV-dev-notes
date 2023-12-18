@@ -147,6 +147,10 @@ const filterConfigForm = ref<FilterConfigForm>({
 	用户是否存在: "缺漏",
 });
 
+function removeIsPrefix(params: FilterUseFieldsSwitchable): FilterUseFields {
+	return <FilterUseFields>params.slice(1);
+}
+
 /** 过滤配置 */
 const filterConfig = ref<FilterConfig>({
 	账号使用状态: (elm) =>
@@ -161,12 +165,19 @@ const filterConfig = ref<FilterConfig>({
 });
 
 function createFilterUseConditions(elm: TableData): Conditions {
-	// return  Object filterConfig.value
+	return (<[FilterUseFieldsSwitchable, boolean][]>(
+		Object.entries(filterConditionSwitch.value)
+	)).map(([key, bool], indx, arr) => {
+		return bool
+			? () => filterConfig.value[removeIsPrefix(key)](elm)
+			: () => true;
+	});
+
 	// TODO: 优化此部分的代码
-	return [
-		() => (!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true),
-		() => (!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true),
-	];
+	// return [
+	// 	() => (!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true),
+	// 	() => (!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true),
+	// ];
 }
 
 const reverseList = computed(() => {
