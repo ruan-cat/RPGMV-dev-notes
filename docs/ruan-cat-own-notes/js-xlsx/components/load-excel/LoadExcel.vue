@@ -146,10 +146,14 @@ const filterConfigForm = ref<FilterConfigForm>({
 /** 过滤配置 */
 const filterConfig = ref<FilterConfig>({
 	账号使用状态: (elm) =>
-		!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true,
+		!isUndefined(elm.账号使用状态)
+			? elm.账号使用状态 === filterConfigForm.value.账号使用状态
+			: true,
 
 	用户是否存在: (elm) =>
-		!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true,
+		!isUndefined(elm.用户是否存在)
+			? elm.用户是否存在 === filterConfigForm.value.用户是否存在
+			: true,
 });
 
 function createFilterUseConditions(elm: TableData): Conditions {
