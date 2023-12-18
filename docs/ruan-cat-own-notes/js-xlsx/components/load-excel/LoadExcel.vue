@@ -2,9 +2,11 @@
 import { ref, computed, watch, h } from "vue";
 
 import {
+	// 数据展示
 	ElMessage,
 	ElAlert,
 	ElButton,
+	ElTag,
 	// 表格
 	ElTable,
 	ElTableColumn,
@@ -49,6 +51,12 @@ interface TableData {
 	用户是否存在?: 用户是否存在_type;
 }
 
+/** 过滤配置表单 */
+type FilterConfigForm = Pick<
+	Required<TableData>,
+	"账号使用状态" | "用户是否存在"
+>;
+
 const elementPlusSize = ref<ComponentSize>("large");
 
 const title = ref("你好 这是临时使用的文件导入工具");
@@ -57,54 +65,6 @@ const title = ref("你好 这是临时使用的文件导入工具");
  * https://zhuanlan.zhihu.com/p/632551852
  */
 const tableData = ref<TableData[]>([]);
-
-function readXLSX(file: UploadRawFile) {
-	return new Promise((resolve, reject) => {
-		const reader = new FileReader();
-
-		reader.readAsBinaryString(file);
-		reader.onload = (evt) => {
-			const data = evt?.target?.result;
-
-			const wb = XLSX.read(data, { type: "binary" });
-
-			const ws = wb.Sheets[wb.SheetNames[0]];
-			const jsonData = XLSX.utils.sheet_to_json(ws);
-
-			console.warn(` 检查导入的数据？ `, jsonData);
-
-			resolve(jsonData);
-		};
-	});
-}
-
-async function beforeUpload(file: UploadRawFile) {
-	const result = await readXLSX(file);
-	tableData.value = result as TableData[];
-	return false;
-}
-
-/** 过滤条件开关 */
-const filterConditionSwitch = ref({
-	is账号使用状态: true,
-	is用户是否存在: true,
-});
-
-/** 过滤配置 */
-const filterConfig = ref({
-	is账号使用状态: (elm: TableData) =>
-		!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true,
-
-	is用户是否存在: (elm: TableData) =>
-		!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true,
-});
-
-function createFilterUseConditions(elm: TableData): Conditions {
-	return [
-		() => (!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true),
-		() => (!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true),
-	];
-}
 
 const pickFields = <const>["用户名", "角色"];
 
@@ -137,6 +97,60 @@ function resetList() {
 				// "用户是否存在",
 			])
 		);
+}
+
+function readXLSX(file: UploadRawFile) {
+	return new Promise((resolve, reject) => {
+		const reader = new FileReader();
+
+		reader.readAsBinaryString(file);
+		reader.onload = (evt) => {
+			const data = evt?.target?.result;
+
+			const wb = XLSX.read(data, { type: "binary" });
+
+			const ws = wb.Sheets[wb.SheetNames[0]];
+			const jsonData = XLSX.utils.sheet_to_json(ws);
+
+			console.warn(` 检查导入的数据？ `, jsonData);
+
+			resolve(jsonData);
+		};
+	});
+}
+
+async function beforeUpload(file: UploadRawFile) {
+	const result = await readXLSX(file);
+	tableData.value = result as TableData[];
+	resetList();
+	return false;
+}
+
+/** 过滤条件开关 是否开启过滤条件 */
+const filterConditionSwitch = ref({
+	is账号使用状态: true,
+	is用户是否存在: true,
+});
+
+const filterConfigForm = ref<FilterConfigForm>({
+	账号使用状态: "启用",
+	用户是否存在: "缺漏",
+});
+
+/** 过滤配置 */
+const filterConfig = ref({
+	is账号使用状态: (elm: TableData) =>
+		!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true,
+
+	is用户是否存在: (elm: TableData) =>
+		!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true,
+});
+
+function createFilterUseConditions(elm: TableData): Conditions {
+	return [
+		() => (!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true),
+		() => (!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true),
+	];
 }
 
 const reverseList = computed(() => {
@@ -217,27 +231,59 @@ async function dblclickCopy($event: MouseEvent) {
 			</template>
 		</el-upload>
 
-		<el-form
-			:model="filterConditionSwitch"
-			ref="form"
-			label-width="80px"
-			:inline="true"
-			:size="elementPlusSize"
-		>
-			<el-form-item label="">
-				<!-- <el-input v-model=""></el-input> -->
-			</el-form-item>
+		<el-row :gutter="20">
+			<el-col :span="12" :offset="0">
+				<ElTag type="success"> 是否开启筛选 </ElTag>
 
-			<el-form-item label="用户是否存在？" prop="is用户是否存在">
+				<ElSwitch
+					v-model="filterConditionSwitch.is账号使用状态"
+					active-text="开启"
+					inactive-text="关闭"
+					:active-value="true"
+					:inactive-value="false"
+					:size="elementPlusSize"
+				>
+				</ElSwitch>
+			</el-col>
+
+			<el-col :span="12" :offset="0">
+				<ElSwitch
+					v-show="filterConditionSwitch.is账号使用状态"
+					v-model="filterConfigForm.账号使用状态"
+					active-text="启用"
+					inactive-text="禁用"
+					:size="elementPlusSize"
+				>
+				</ElSwitch>
+			</el-col>
+		</el-row>
+
+		<el-row :gutter="20">
+			<el-col :span="12" :offset="0">
+				<ElTag type="success"> 是否开启筛选 </ElTag>
+
 				<ElSwitch
 					v-model="filterConditionSwitch.is用户是否存在"
+					active-text="开启"
+					inactive-text="关闭"
+					:active-value="true"
+					:inactive-value="false"
+					:size="elementPlusSize"
+				>
+				</ElSwitch>
+			</el-col>
+
+			<el-col :span="12" :offset="0">
+				<ElSwitch
+					v-show="filterConditionSwitch.is用户是否存在"
+					v-model="filterConfigForm.用户是否存在"
 					active-text="存在"
 					inactive-text="缺漏"
 					:size="elementPlusSize"
 				>
 				</ElSwitch>
-			</el-form-item>
-		</el-form>
+			</el-col>
+		</el-row>
 
 		<el-row :gutter="20">
 			<el-col :span="8" :offset="0">
