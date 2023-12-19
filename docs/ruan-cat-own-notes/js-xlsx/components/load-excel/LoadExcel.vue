@@ -93,20 +93,13 @@ const list = ref<List>([]);
 
 /** 重设经过处理后的列表 */
 function resetList() {
-	list.value = tableData.value
-		.filter((elm) => isConditionsEvery(createFilterUseConditions(elm)))
-		.map((elm) =>
-			pick(elm, [
-				"用户名",
-				"角色",
-				// "登陆账号",
-				// "部门",
-				// "手机号",
-				// "账号使用状态",
-				// "已经存在的用户数据",
-				// "用户是否存在",
-			])
-		);
+	const afterFilter = tableData.value.filter((elm) =>
+		isConditionsEvery(createFilterUseConditions(elm))
+	);
+
+	const afterMap = afterFilter.map((elm) => pick(elm, ["用户名", "角色"]));
+
+	list.value = afterMap;
 }
 
 function readXLSX(file: UploadRawFile) {
