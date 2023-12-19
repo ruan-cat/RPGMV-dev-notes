@@ -20,6 +20,12 @@
 	}
 }
 
+html {
+	::-webkit-scrollbar {
+		width: 14px;
+	}
+}
+
 aside#sidebar {
 	&::-webkit-scrollbar {
 		// 有疑惑 不生效
