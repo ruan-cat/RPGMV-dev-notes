@@ -22,7 +22,7 @@ import {
 	type ComponentSize,
 } from "element-plus";
 
-import { pick, isUndefined } from "lodash-es";
+import { isUndefined, pick, uniq } from "lodash-es";
 
 import * as XLSX from "xlsx";
 
@@ -194,6 +194,11 @@ const reverseList = computed(() => {
 	// 		map.set(key, value.join(","));
 	// 	}
 	// });
+
+	// 对人名数组做去重 因为可能出现人名重复的的情况。
+	storeMap.forEach((value, key, map) => {
+		map.set(key, uniq(value));
+	});
 
 	return Object.entries(Object.fromEntries(storeMap.entries())).map((elm) => ({
 		角色: elm[0],
