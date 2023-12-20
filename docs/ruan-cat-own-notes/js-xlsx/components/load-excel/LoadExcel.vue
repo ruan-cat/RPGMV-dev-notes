@@ -264,8 +264,7 @@ async function dblclickCopy($event: MouseEvent) {
 					:inactive-value="false"
 					:size="elementPlusSize"
 					@change="resetList()"
-				>
-				</ElSwitch>
+				/>
 			</el-col>
 
 			<el-col :span="12" :offset="0">
@@ -278,8 +277,7 @@ async function dblclickCopy($event: MouseEvent) {
 					inactive-value="禁用"
 					:size="elementPlusSize"
 					@change="resetList()"
-				>
-				</ElSwitch>
+				/>
 			</el-col>
 		</el-row>
 
@@ -296,8 +294,7 @@ async function dblclickCopy($event: MouseEvent) {
 					:inactive-value="false"
 					:size="elementPlusSize"
 					@change="resetList()"
-				>
-				</ElSwitch>
+				/>
 			</el-col>
 
 			<el-col :span="12" :offset="0">
@@ -310,8 +307,7 @@ async function dblclickCopy($event: MouseEvent) {
 					inactive-value="缺漏"
 					:size="elementPlusSize"
 					@change="resetList()"
-				>
-				</ElSwitch>
+				/>
 			</el-col>
 		</el-row>
 
