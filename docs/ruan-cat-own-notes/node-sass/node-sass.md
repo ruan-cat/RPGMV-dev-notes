@@ -22,7 +22,10 @@
 #### 配制命令
 
 模仿这个命令做配置
+
+```bash
 npm i node-sass@3.13.1 --sass_binary_path=C:\Users\<username>\Downloads\win32-x64-57_binding.node
+```
 
 #### 结论
 
