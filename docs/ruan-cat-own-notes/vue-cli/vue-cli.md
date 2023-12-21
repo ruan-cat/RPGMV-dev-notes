@@ -37,3 +37,9 @@ TODO:
 ## vue-cli 版本升级 4.X 到 5.X 问题
 
 - https://www.jianshu.com/p/0f4f3e1d95ed
+
+## 用 node18 启动项目
+
+无法启动。解决方案多涉及到 `set NODE_OPTIONS=--openssl-legacy-provider` 的配置
+
+- https://blog.csdn.net/fengyuyeguirenenen/article/details/128319228
