@@ -171,14 +171,14 @@ const reverseList = computed(() => {
 	const storeMap = new Map<string, string[]>();
 
 	list.value.forEach((elm) => {
-		const roles = elm.角色.split(",");
+		const roles = elm.角色.trim().split(",");
 
 		roles.forEach((role) => {
 			if (!storeMap.has(role)) {
 				storeMap.set(role, []);
 			}
 
-			storeMap.get(role)?.push(elm.用户名);
+			storeMap.get(role)?.push(elm.用户名.trim());
 		});
 	});
 
