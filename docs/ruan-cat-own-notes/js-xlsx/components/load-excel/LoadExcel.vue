@@ -165,12 +165,6 @@ function createFilterUseConditions(elm: TableData): Conditions {
 			? () => filterConfig.value[removeIsPrefix(key)](elm)
 			: () => true;
 	});
-
-	// TODO: 优化此部分的代码
-	// return [
-	// 	() => (!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === "启用" : true),
-	// 	() => (!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === "缺漏" : true),
-	// ];
 }
 
 const reverseList = computed(() => {
