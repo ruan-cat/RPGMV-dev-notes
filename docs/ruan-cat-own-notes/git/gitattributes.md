@@ -62,6 +62,15 @@
 *.woff binary
 *.pyc binary
 *.pdf binary
+
+# 增加办公常用文件的二进制配置
+*.xls binary
+*.wps binary
+*.doc binary
+
+*.docx binary
+*.xlsx binary
+*.pptx binary
 ```
 
 ## 配置更新策略
