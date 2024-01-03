@@ -155,6 +155,7 @@ export default hopeTheme({
 		// 禁用不需要的配置
 		mdEnhance: {
 			align: true,
+			alert: true,
 			attrs: true, // 使用特殊标记为 Markdown 元素添加属性
 			container: true,
 			gfm: true,
