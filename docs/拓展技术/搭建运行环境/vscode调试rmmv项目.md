@@ -44,27 +44,27 @@
 
 ```json
 {
-  // 使用 IntelliSense 了解相关属性。
-  // 悬停以查看现有属性的描述。
-  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-  // 更多配置教程，请访问：
-  // https://www.bilibili.com/video/BV1jJ411c7zK
-  // https://www.bilibili.com/video/BV11A411n7Lq
+	// 使用 IntelliSense 了解相关属性。
+	// 悬停以查看现有属性的描述。
+	// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+	// 更多配置教程，请访问：
+	// https://www.bilibili.com/video/BV1jJ411c7zK
+	// https://www.bilibili.com/video/BV11A411n7Lq
 
-  // 版本号 暂无意义 直接复制粘贴即可
-  "version": "0.2.0",
-  "configurations": [
-    {
-      // 以Chrome浏览器来启动
-      "type": "chrome",
-      "request": "launch",
-      // 调试器名称 可以自己任意取名 尽量不要取名为空字符串
-      "name": "阮喵喵项目调试器(该名称在launch.json设置)",
-      // VScode 的 live server 插件所提供的默认本地服务器端口为5500。
-      "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}"
-    }
-  ]
+	// 版本号 暂无意义 直接复制粘贴即可
+	"version": "0.2.0",
+	"configurations": [
+		{
+			// 以Chrome浏览器来启动
+			"type": "chrome",
+			"request": "launch",
+			// 调试器名称 可以自己任意取名 尽量不要取名为空字符串
+			"name": "阮喵喵项目调试器(该名称在launch.json设置)",
+			// VScode 的 live server 插件所提供的默认本地服务器端口为5500。
+			"url": "http://localhost:8080",
+			"webRoot": "${workspaceFolder}"
+		}
+	]
 }
 ```
 
