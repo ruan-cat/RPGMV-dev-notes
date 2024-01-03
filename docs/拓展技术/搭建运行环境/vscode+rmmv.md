@@ -2,6 +2,10 @@
 
 ## 单纯的运行 html 文件
 
+### 原理解释
+
+其配置的本质是借用 vscode 的插件启动本地服务器，然后打开浏览器访问本地服务器。
+
 ### 安装 ms-vscode.live-server 插件
 
 - [vscode 插件 ms-vscode.live-server](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
@@ -31,6 +35,12 @@
 ## 使用 vscode 的调试功能
 
 - https://blog.csdn.net/lvyiwuhen/article/details/115867663
+
+### 原理解释
+
+其配置的本质是以 chrome 浏览器文件协议的方式打开 html 文件。
+
+### 配置 launch.json 文件
 
 在 `.vscode/launch.json` 内填写一下配置：
 
@@ -63,3 +73,13 @@
 	]
 }
 ```
+
+### 以调试模式运行项目
+
+启动该调试配置即可。
+
+![2024-01-03-12-41-43](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-01-03-12-41-43.png)
+
+会自己打开 chrome 浏览器。可以做断点调试了。
+
+![2024-01-03-12-45-30](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-01-03-12-45-30.png)
