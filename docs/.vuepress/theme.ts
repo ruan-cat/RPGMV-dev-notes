@@ -31,12 +31,6 @@ export default hopeTheme({
 			BiliBili: "https://space.bilibili.com/359907572",
 			Gitee: "https://gitee.com/HechiCollegeComputerAssociation",
 			GitHub: "https://github.com/RuanZhongNan",
-
-			// TODO: 等待应用使用
-			// Steam: 'https://example.com',
-			// Wechat: 'https://example.com',
-			// Weibo: 'https://example.com',
-			// Zhihu: 'https://example.com',
 		},
 	},
 
