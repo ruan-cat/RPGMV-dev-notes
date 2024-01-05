@@ -1,4 +1,14 @@
+@use "@sass-palette/hope-config";
+
 @import "./config.scss";
+
+// 参考资料 https://github.com/orgs/vuepress-theme-hope/discussions/3742
+// FIXME: 出错 无法运行
+// @media (min-width: hope-config.$wide) {
+// 	html {
+// 		--content-width: calc(100vw - 40rem) !important;
+// 	}
+// }
 
 // TODO: 临时注释
 // 使用专门封装好的钻头样式
@@ -13,7 +23,6 @@
 .theme-hope-content:not(.custom) {
 	max-width: 95vw;
 }
-
 @media (min-width: $pc) {
 	.toggle-sidebar-wrapper {
 		display: unset;
