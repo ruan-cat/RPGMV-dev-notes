@@ -72,3 +72,21 @@ jobs:
           vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
           alias-domains: dev-test.ruan-cat.com
 ```
+
+## 在 monorepo 内部署项目？
+
+上面的可以了，可以在 dev 分支内部署了。但是我不清楚在 monorepo 内实现多项目的部署。
+
+可能的路径配置？
+
+### `vercel-action` 的 `working-directory` 配置？
+
+- https://github.com/marketplace/actions/vercel-action#inputs
+
+工作流的配置可以考虑配置路径地址，让多个不同的物理地址映射到多个不同的 url。
+
+### `vercel.json` 的 `outputDirectory` 配置？
+
+- https://vercel.com/docs/projects/project-configuration#outputdirectory
+
+在配置文件内指定部署的目录。但是发现这个配置只能去指定一个物理地址，不能指定更多的地址。
