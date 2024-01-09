@@ -13,3 +13,6 @@ this-proj.code-workspace
 
 # 忽略掉总是会自动生成的文件夹 该内容都是用typedoc自动生成的文档；
 docs/docs-typedoc
+
+# 忽略掉 @vitest/ui 生成的本地测试页面
+html
