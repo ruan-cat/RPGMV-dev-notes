@@ -21,7 +21,7 @@
 		"pinia": "^2.1.7",
 		"pinia-plugin-persistedstate": "^3.2.1",
 		"uuid": "^9.0.1",
-		"vue-json-excel3": "^0.0.9",
+		"vue-json-excel3": "^1.0.19",
 		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {
