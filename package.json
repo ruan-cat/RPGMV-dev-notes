@@ -43,7 +43,7 @@
 		"typescript": "^5.3.3",
 		"unplugin-auto-import": "^0.16.7",
 		"unplugin-vue-components": "^0.25.2",
-		"vite-node": "^0.34.7",
+		"vite-node": "^1.2.0",
 		"vp-update": "^0.1.2",
 		"vue": "^3.4.3",
 		"vuepress": "2.0.0-rc.0",
