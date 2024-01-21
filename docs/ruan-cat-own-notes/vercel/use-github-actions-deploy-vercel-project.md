@@ -6,9 +6,9 @@
 
 目前用钻头的小爱丽丝官网来做测试。
 
-## try1
+## 第一次尝试
 
-尝试。发现效果不太好。
+发现效果不太好。我应该尽量避免自己在 linux 端上用 vercel cli 来部署项目。
 
 ```yaml
 # 参考资料
@@ -45,7 +45,7 @@ jobs:
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} && vercel alias set dev-test ruan-cat.com
 ```
 
-## try2
+## 第二次尝试
 
 ```yaml
 # 参考资料
@@ -72,6 +72,10 @@ jobs:
           vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
           alias-domains: dev-test.ruan-cat.com
 ```
+
+### 结论
+
+用现成的 `amondnet/vercel-action@v19` 确实可以了。不过需要让 `dev-test.ruan-cat.com` 配置 DNS，配置来自 vercel 提供的 cname 才行。略有被动。
 
 ## 在 monorepo 内部署项目？
 
