@@ -109,3 +109,10 @@ https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
 4. 插件的右侧侧边栏，也同样包含此功能。
 
 ![2023-12-14-09-35-05](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-14-09-35-05.png)
+
+## 跳转到嵌体提示的定义
+
+- https://code.visualstudio.com/updates/v1_85#_jump-to-definition-for-inlay-hints
+- https://code.visualstudio.com/docs/editor/editingevolved#_inlay-hints
+
+在 vscode 的 `1.85.1` 版本内，提供了该功能。对于增强跳转有很大的帮助。
