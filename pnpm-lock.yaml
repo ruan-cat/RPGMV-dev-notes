@@ -104,8 +104,8 @@ devDependencies:
     specifier: ^0.25.2
     version: 0.25.2(rollup@2.79.1)(vue@3.4.15)
   vite-node:
-    specifier: ^0.34.7
-    version: 0.34.7(@types/node@20.11.6)
+    specifier: ^1.2.1
+    version: 1.2.1(@types/node@20.11.6)
   vitest:
     specifier: ^1.2.1
     version: 1.2.1(@types/node@20.11.6)(@vitest/ui@1.2.1)
@@ -4601,28 +4601,6 @@ packages:
 
   /v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
-    dev: true
-
-  /vite-node@0.34.7(@types/node@20.11.6):
-    resolution: {integrity: sha512-0Yzb96QzHmqIKIs/x2q/sqG750V/EF6yDkS2p1WjJc1W2bgRSuQjf5vB9HY8h2nVb5j4pO5paS5Npcv3s69YUg==}
-    engines: {node: '>=v14.18.0'}
-    hasBin: true
-    dependencies:
-      cac: 6.7.14
-      debug: 4.3.4
-      mlly: 1.5.0
-      pathe: 1.1.2
-      picocolors: 1.0.0
-      vite: 5.0.12(@types/node@20.11.6)
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
     dev: true
 
   /vite-node@1.2.1(@types/node@20.11.6):
