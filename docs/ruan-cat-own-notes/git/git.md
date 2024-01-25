@@ -190,3 +190,5 @@ https://juejin.cn/post/6981733889664368677
 ### 重设远程默认分支
 
 https://blog.csdn.net/wujj200884/article/details/84999006
+
+## TODO: git 文件名大小写配置？
