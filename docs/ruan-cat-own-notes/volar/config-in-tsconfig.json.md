@@ -12,3 +12,18 @@ volar 毕竟是针对 vue 的语言服务，贴别是 vue3 的语言服务。
 - https://vue-macros.sxzz.moe/zh-CN/guide/bundler-integration.html#volar-支持
 
 在 tsconfig.json 的 vueCompilerOptions.plugins 内，还有那些可以用的配置？相关的文档在哪里能找到？
+
+### 可能的配置
+
+- https://vscode.dev/github.com/oku-ui/primitives/blob/main/packages/tsconfig/ts.js
+
+```json
+{
+	"vueCompilerOptions": {
+		"plugins": [
+			"@vue-macros/volar/define-model",
+			"@vue-macros/volar/define-slots"
+		]
+	}
+}
+```
