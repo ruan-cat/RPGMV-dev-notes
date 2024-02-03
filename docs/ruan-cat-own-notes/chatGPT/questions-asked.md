@@ -1609,8 +1609,27 @@ function findStateinfo(stateId) {
 在自己定义的 global.d.ts 内，期望用 vue3 的 defineComponent 类型声明，替换掉 vue2.7 的 defineComponent 类型声明。我是这样写的：
 
 ```ts
+import { defineComponent as defineComponent3 } from "vue3";
 declare module "vue" {
-	import { defineComponent as defineComponent3 } from "vue3";
 	// 请问接下来我该怎么写？才能实现类型声明的替换？
 }
 ```
+
+### 1
+
+抱歉，这不符合我的期望。defineComponent 是一个函数，我希望对这个函数做类型拓展，或者是类型覆盖。
+
+目前的写法，导致 vue 导出的其他模块均报错，报错如下：
+
+```text
+模块“"vue"”没有导出的成员“onMounted”
+```
+
+请更改写法，至少满足以下要求：
+
+1. 仅仅更改 vue 模块内 defineComponent 函数的类型。其他的 vue 模块导出来的模块，均不受影响。
+2. defineComponent 是函数，不允许使用 const 变量的方式做导出。defineComponent 的类型推导仍旧是函数。
+
+### 2
+
+请使用函数重载的方式实现。
