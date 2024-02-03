@@ -45,7 +45,7 @@
 		"typedoc-plugin-markdown": "^3.17.1",
 		"typescript": "^5.3.3",
 		"unplugin-auto-import": "^0.16.7",
-		"unplugin-vue-components": "^0.25.2",
+		"unplugin-vue-components": "^0.26.0",
 		"vite-node": "^1.2.1",
 		"vitest": "^1.2.1",
 		"vp-update": "^0.1.2",
