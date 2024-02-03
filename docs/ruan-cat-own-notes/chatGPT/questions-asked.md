@@ -1588,3 +1588,29 @@ function findStateinfo(stateId) {
 ## typedoc
 
 在 monorepo 仓库内， typedoc 怎么实现对单仓项目内其他子包的文档生成？
+
+## typescript 特定模块导出的函数，做类型覆盖
+
+你好，我想询问的问题是在 typescript 内，怎么实现对模块类型覆盖？
+
+我在 package.json 内安装了 vue3 的依赖，并重命名。我目前的项目主要使用的 vue 版本是 vue2.7，如下：
+
+```json
+// in package.json
+{
+	"devDependencies": {
+		"vue3": "npm:vue@^3.4.15"
+	}
+}
+```
+
+在 tsconfig.json 内导入了 global.d.ts。
+
+在自己定义的 global.d.ts 内，期望用 vue3 的 defineComponent 类型声明，替换掉 vue2.7 的 defineComponent 类型声明。我是这样写的：
+
+```ts
+declare module "vue" {
+	import { defineComponent as defineComponent3 } from "vue3";
+	// 请问接下来我该怎么写？才能实现类型声明的替换？
+}
+```
