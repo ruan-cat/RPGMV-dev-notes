@@ -10,3 +10,7 @@
 import { ElTable } from "element-plus";
 const tableRef = ref<null | InstanceType<typeof ElTable>>(null);
 ```
+
+### 更好的封装方案
+
+- https://www.bilibili.com/video/BV1XV411D7Hv/
