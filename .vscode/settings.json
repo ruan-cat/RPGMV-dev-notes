@@ -21,4 +21,10 @@
 	"todo-tree.tree.showBadges": true,
 	"vue.codeActions.enabled": false,
 	"svn.ignoreMissingSvnWarning": true,
+	// 尝试实现指定文本的屏蔽 但是无效
+	"todo-tree.highlights.customHighlight": {
+		"参考资料": {
+			"type": "none"
+		},
+	}
 }

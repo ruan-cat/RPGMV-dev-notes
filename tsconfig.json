@@ -16,6 +16,7 @@
 		"esModuleInterop": true,
 		"noEmit": true,
 		"emitDeclarationOnly": true,
+		"allowJs": true,
 		"lib": [
 			"ESNext",
 			"DOM"
