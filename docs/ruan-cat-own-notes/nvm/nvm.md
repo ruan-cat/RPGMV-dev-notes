@@ -39,6 +39,18 @@ node_mirror: https://npm.taobao.org/mirrors/node/
 npm_mirror: https://npm.taobao.org/mirrors/npm/
 ```
 
+### 配置镜像
+
+- https://juejin.cn/post/7095318124433506341
+
+```bash
+nvm npm_mirror https://npmmirror.com/mirrors/npm/
+```
+
+```bash
+nvm node_mirror https://npmmirror.com/mirrors/node/
+```
+
 ## 当前困境
 
 维护多个不同 node 版本的项目时，切换 node 版本很麻烦。

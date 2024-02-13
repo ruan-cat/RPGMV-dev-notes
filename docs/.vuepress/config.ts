@@ -22,12 +22,14 @@ const __dirname = getDirname(import.meta.url);
 /** 设置开始识别根目录在 */
 const pathSrc = path.resolve(__dirname, "types");
 
+const port = 6312;
+
 export default defineUserConfig({
 	theme,
 	base: "/",
 
 	shouldPrefetch: false,
-	port: 6312,
+	port,
 
 	locales: {
 		"/": {
@@ -40,7 +42,6 @@ export default defineUserConfig({
 			// metaLocales
 		},
 	},
-
 
 	markdown: {
 		headers: {
@@ -80,6 +81,20 @@ export default defineUserConfig({
 	// 		],
 	// 	},
 	// }),
+
+	bundler: viteBundler({
+		viteOptions: {
+			server: {
+				proxy: {
+					"/api": {
+						target: `https://localhost:${port}/`,
+						changeOrigin: true,
+						rewrite: (path) => path.replace(/^\/api/, ""), // 不可以省略rewrite
+					},
+				},
+			},
+		},
+	}),
 
 	plugins: [
 		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */

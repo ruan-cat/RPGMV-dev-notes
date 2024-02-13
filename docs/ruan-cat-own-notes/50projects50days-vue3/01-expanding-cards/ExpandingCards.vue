@@ -36,12 +36,20 @@ const imageApiList = [
 	"https://api.vvhan.com/api/acgimg",
 ];
 
-const imageApi = imageApiList[0];
+const imageApi = imageApiList[1];
 
 const isLoading = ref(false);
 
+const service = axios.create({
+	withCredentials: false,
+	// Access-Control-Allow-Origin
+	headers: {
+		"Access-Control-Allow-Origin": "*",
+	},
+});
+
 async function getImage() {
-	return await axios.get<GetImageResponse>(imageApi).then((response) => {
+	return await service.get<GetImageResponse>(imageApi).then((response) => {
 		return response;
 	});
 }
