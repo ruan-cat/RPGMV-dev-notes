@@ -82,19 +82,23 @@ export default defineUserConfig({
 	// 	},
 	// }),
 
-	bundler: viteBundler({
-		viteOptions: {
-			server: {
-				proxy: {
-					"/api": {
-						target: `https://localhost:${port}/`,
-						changeOrigin: true,
-						rewrite: (path) => path.replace(/^\/api/, ""), // 不可以省略rewrite
-					},
-				},
-			},
-		},
-	}),
+	// 尝试处理跨域问题 请求公共的图片接口报错
+	// bundler: viteBundler({
+	// 	viteOptions: {
+	// 		server: {
+	// 			proxy: {
+	// 				// https://api.vvhan.com/api/acgimg
+	// 				"/vvhan-img": {
+	// 					// target: `https://localhost:${port}/`,
+	// 					target: "https://api.vvhan.com/",
+	// 					changeOrigin: true,
+	// 					// 不可以省略rewrite
+	// 					rewrite: (path) => path.replace(/^\/vvhan-img/, ""),
+	// 				},
+	// 			},
+	// 		},
+	// 	},
+	// }),
 
 	plugins: [
 		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */

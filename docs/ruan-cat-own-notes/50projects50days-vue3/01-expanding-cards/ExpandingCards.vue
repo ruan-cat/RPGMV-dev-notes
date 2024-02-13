@@ -36,7 +36,7 @@ const imageApiList = [
 	"https://api.vvhan.com/api/acgimg",
 ];
 
-const imageApi = imageApiList[1];
+const imageApi = imageApiList[0];
 
 const isLoading = ref(false);
 
@@ -45,13 +45,23 @@ const service = axios.create({
 	// Access-Control-Allow-Origin
 	headers: {
 		"Access-Control-Allow-Origin": "*",
+		// "Access-Control-Allow-Origin": "http://localhost:6312",
+		"Access-Control-Allow-Credentials": "true",
+		// "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+		// "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token",
 	},
 });
 
 async function getImage() {
-	return await service.get<GetImageResponse>(imageApi).then((response) => {
-		return response;
-	});
+	// vvhan-img
+	// imageApi
+	return await service
+		// .get<GetImageResponse>("/vvhan-img/api/acgimg")
+		// .get<GetImageResponse>("https://api.vvhan.com/api/acgimg")
+		.get<GetImageResponse>(imageApi)
+		.then((response) => {
+			return response;
+		});
 }
 
 const items = ref<Item[]>([]);
@@ -102,13 +112,16 @@ onMounted(async () => {
 	<section class="ExpandingCards-root">
 		<section class="container" v-loading="isLoading">
 			<!-- :preview-src-list="previewSrcList" -->
+			<!-- https://api.vvhan.com/api/acgimg -->
+			<!-- src="https://api.vvhan.com/api/acgimg" -->
+			<!-- https://www.dmoe.cc/random.php -->
 			<el-image
 				class="item"
 				fit="cover"
 				loading="lazy"
 				v-for="item in items"
 				:key="item.id"
-				:src="item.image"
+				src="https://api.vvhan.com/api/acgimg"
 				:class="{
 					isClicked: itemIdClicked === item.id,
 				}"
