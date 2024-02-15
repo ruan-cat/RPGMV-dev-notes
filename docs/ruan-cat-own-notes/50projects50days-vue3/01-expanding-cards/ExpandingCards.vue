@@ -103,8 +103,31 @@ function handleClick(params: Item) {
 }
 
 onMounted(async () => {
-	await initItems();
-	initItemIdClicked();
+	// await initItems();
+	// initItemIdClicked();
+
+	// https://api.oick.cn/random/api.php?type=pc
+	// https://www.dmoe.cc/random.php?return=json
+
+	fetch("https://api.oick.cn/random/api.php?type=pc", {
+		mode: "no-cors",
+		// headers: {
+		// 	"Content-Type": "application/json",
+		// 	"Access-Control-Allow-Origin": "*",
+		// 	"Access-Control-Allow-Credentials": true,
+		// },
+		headers: {
+			"Content-Type": "application/json",
+		},
+	})
+		.then((response) => response.json())
+		.then((data) => {
+			console.log("???", data);
+		});
+
+	// axios.get("https://api.oick.cn/random/api.php?type=pc").then((response) => {
+	// 	console.log("???", response);
+	// });
 });
 </script>
 
@@ -115,17 +138,29 @@ onMounted(async () => {
 			<!-- https://api.vvhan.com/api/acgimg -->
 			<!-- src="https://api.vvhan.com/api/acgimg" -->
 			<!-- https://www.dmoe.cc/random.php -->
-			<el-image
+			<!-- https://api.oick.cn/random/api.php?type=pc -->
+			<!-- src="https://api.oick.cn/random/api.php?type=pc" -->
+			<!-- <el-image
 				class="item"
 				fit="cover"
 				loading="lazy"
 				v-for="item in items"
+				:src="item.image"
 				:key="item.id"
-				src="https://api.vvhan.com/api/acgimg"
 				:class="{
 					isClicked: itemIdClicked === item.id,
 				}"
 				@click="handleClick(item)"
+			>
+				<template #error> </template>
+			</el-image> -->
+
+			<el-image
+				class="item"
+				fit="cover"
+				loading="lazy"
+				v-for="item in 5"
+				src="https://api.oick.cn/random/api.php?type=pc"
 			>
 				<template #error> </template>
 			</el-image>
