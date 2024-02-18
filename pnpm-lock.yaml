@@ -82,9 +82,15 @@ devDependencies:
   '@vuepress/utils':
     specifier: 2.0.0-rc.0
     version: 2.0.0-rc.0
+  cac:
+    specifier: ^6.7.14
+    version: 6.7.14
   moment:
     specifier: ^2.30.1
     version: 2.30.1
+  semver:
+    specifier: ^7.6.0
+    version: 7.6.0
   ts-node:
     specifier: ^10.9.2
     version: 10.9.2(@types/node@20.11.19)(typescript@5.3.3)
