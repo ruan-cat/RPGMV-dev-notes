@@ -40,10 +40,28 @@ const imageApi = imageApiList[0];
 
 const isLoading = ref(false);
 
+const service = axios.create({
+	withCredentials: false,
+	// Access-Control-Allow-Origin
+	headers: {
+		"Access-Control-Allow-Origin": "*",
+		// "Access-Control-Allow-Origin": "http://localhost:6312",
+		"Access-Control-Allow-Credentials": "true",
+		// "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+		// "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token",
+	},
+});
+
 async function getImage() {
-	return await axios.get<GetImageResponse>(imageApi).then((response) => {
-		return response;
-	});
+	// vvhan-img
+	// imageApi
+	return await service
+		// .get<GetImageResponse>("/vvhan-img/api/acgimg")
+		// .get<GetImageResponse>("https://api.vvhan.com/api/acgimg")
+		.get<GetImageResponse>(imageApi)
+		.then((response) => {
+			return response;
+		});
 }
 
 const items = ref<Item[]>([]);
@@ -85,8 +103,31 @@ function handleClick(params: Item) {
 }
 
 onMounted(async () => {
-	await initItems();
-	initItemIdClicked();
+	// await initItems();
+	// initItemIdClicked();
+
+	// https://api.oick.cn/random/api.php?type=pc
+	// https://www.dmoe.cc/random.php?return=json
+
+	fetch("https://api.oick.cn/random/api.php?type=pc", {
+		mode: "no-cors",
+		// headers: {
+		// 	"Content-Type": "application/json",
+		// 	"Access-Control-Allow-Origin": "*",
+		// 	"Access-Control-Allow-Credentials": true,
+		// },
+		headers: {
+			"Content-Type": "application/json",
+		},
+	})
+		.then((response) => response.json())
+		.then((data) => {
+			console.log("???", data);
+		});
+
+	// axios.get("https://api.oick.cn/random/api.php?type=pc").then((response) => {
+	// 	console.log("???", response);
+	// });
 });
 </script>
 
@@ -94,17 +135,32 @@ onMounted(async () => {
 	<section class="ExpandingCards-root">
 		<section class="container" v-loading="isLoading">
 			<!-- :preview-src-list="previewSrcList" -->
-			<el-image
+			<!-- https://api.vvhan.com/api/acgimg -->
+			<!-- src="https://api.vvhan.com/api/acgimg" -->
+			<!-- https://www.dmoe.cc/random.php -->
+			<!-- https://api.oick.cn/random/api.php?type=pc -->
+			<!-- src="https://api.oick.cn/random/api.php?type=pc" -->
+			<!-- <el-image
 				class="item"
 				fit="cover"
 				loading="lazy"
 				v-for="item in items"
-				:key="item.id"
 				:src="item.image"
+				:key="item.id"
 				:class="{
 					isClicked: itemIdClicked === item.id,
 				}"
 				@click="handleClick(item)"
+			>
+				<template #error> </template>
+			</el-image> -->
+
+			<el-image
+				class="item"
+				fit="cover"
+				loading="lazy"
+				v-for="item in 5"
+				src="https://api.oick.cn/random/api.php?type=pc"
 			>
 				<template #error> </template>
 			</el-image>

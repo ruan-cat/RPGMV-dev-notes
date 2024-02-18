@@ -22,12 +22,14 @@ const __dirname = getDirname(import.meta.url);
 /** 设置开始识别根目录在 */
 const pathSrc = path.resolve(__dirname, "types");
 
+const port = 6312;
+
 export default defineUserConfig({
 	theme,
 	base: "/",
 
 	shouldPrefetch: false,
-	port: 6312,
+	port,
 
 	locales: {
 		"/": {
@@ -40,7 +42,6 @@ export default defineUserConfig({
 			// metaLocales
 		},
 	},
-
 
 	markdown: {
 		headers: {
@@ -78,6 +79,24 @@ export default defineUserConfig({
 	// 				dts: path.resolve(pathSrc, "components.d.ts"),
 	// 			}),
 	// 		],
+	// 	},
+	// }),
+
+	// 尝试处理跨域问题 请求公共的图片接口报错
+	// bundler: viteBundler({
+	// 	viteOptions: {
+	// 		server: {
+	// 			proxy: {
+	// 				// https://api.vvhan.com/api/acgimg
+	// 				"/vvhan-img": {
+	// 					// target: `https://localhost:${port}/`,
+	// 					target: "https://api.vvhan.com/",
+	// 					changeOrigin: true,
+	// 					// 不可以省略rewrite
+	// 					rewrite: (path) => path.replace(/^\/vvhan-img/, ""),
+	// 				},
+	// 			},
+	// 		},
 	// 	},
 	// }),
 
