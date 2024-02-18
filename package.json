@@ -30,6 +30,7 @@
 		"@iconify/vue": "^4.1.1",
 		"@types/lodash": "^4.14.202",
 		"@types/lodash-es": "^4.17.12",
+		"@types/node": "^20.11.19",
 		"@types/uuid": "^9.0.7",
 		"@vitejs/plugin-vue": "^4.6.2",
 		"@vitest/ui": "^1.2.1",
