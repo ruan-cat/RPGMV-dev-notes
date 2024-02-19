@@ -45,6 +45,10 @@ export default defineClientConfig({
 		// 手动全局注册 目前发现可以实现自动全局导入了
 		// app.component("FlexBoxTransition", FlexBoxTransition);
 
-		inject();
+		// 参考资料 https://vercel.com/docs/analytics/package
+		// TODO: 学一下怎么配置node环境
+		inject({
+			mode: "production",
+		});
 	},
 });
