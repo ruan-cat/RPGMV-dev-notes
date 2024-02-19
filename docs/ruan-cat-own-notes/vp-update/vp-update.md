@@ -11,3 +11,11 @@
 pnpm exec vp-update
 
 pnpm dlx vp-update
+
+pnpm dlx vp-update@0.1.2
+
+pnpm dlx vp-update@0.5
+
+pnpm dlx vp-update@0.6
+
+pnpm dlx vp-update@latest
