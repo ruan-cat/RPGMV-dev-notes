@@ -12,9 +12,15 @@ pnpm exec vp-update
 
 pnpm dlx vp-update
 
+### 成功
+
 pnpm dlx vp-update@0.1.2
 
 pnpm dlx vp-update@0.5
+
+pnpm dlx vp-update@next
+
+### 出错
 
 pnpm dlx vp-update@0.6
 
