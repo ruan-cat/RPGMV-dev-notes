@@ -18,10 +18,10 @@ pnpm dlx vp-update@0.1.2
 
 pnpm dlx vp-update@0.5
 
-pnpm dlx vp-update@next
-
 ### 出错
 
 pnpm dlx vp-update@0.6
 
 pnpm dlx vp-update@latest
+
+pnpm dlx vp-update@next
