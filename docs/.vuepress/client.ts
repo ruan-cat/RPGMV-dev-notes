@@ -1,5 +1,7 @@
 import { defineClientConfig } from "vuepress/client";
 
+import { inject } from "@vercel/analytics";
+
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 
@@ -42,5 +44,7 @@ export default defineClientConfig({
 
 		// 手动全局注册 目前发现可以实现自动全局导入了
 		// app.component("FlexBoxTransition", FlexBoxTransition);
+
+		inject();
 	},
 });
