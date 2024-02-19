@@ -12,6 +12,7 @@
 		"test": "vitest --ui"
 	},
 	"dependencies": {
+		"@vercel/analytics": "^1.2.1",
 		"@vueuse/core": "^10.7.2",
 		"animate.css": "^4.1.1",
 		"axios": "^1.6.7",
