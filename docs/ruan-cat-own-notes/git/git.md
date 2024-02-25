@@ -1,5 +1,11 @@
 # git
 
+重要的版本控制软件。和 svn 类似。他们统称为 VCS。
+
+## 入门教程
+
+- https://learngitbranching.js.org/?locale=zh_CN
+
 ## 学习待办
 
 https://www.zhihu.com/question/594294987/answer/3024615944
