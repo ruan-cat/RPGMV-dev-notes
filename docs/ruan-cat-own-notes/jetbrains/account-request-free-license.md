@@ -2,7 +2,13 @@
 
 ## 用学生身份来申请 jetbrains 的免费许可证
 
+- [学生和教师授权申请方式](https://sales.jetbrains.com/hc/zh-cn/articles/207154369-学生和教师授权申请方式)
+- [免费教育许可证](https://www.jetbrains.com/zh-cn/community/education/#students)
+- [JetBrains 学习产品](https://www.jetbrains.com/shop/eform/students)
+
 ## 用开源项目来申请 jetbrains 的免费许可证
+
+我目前不是学生了。故考虑使用开源项目来申请免费的 jetbrains 许可证。
 
 - https://juejin.cn/post/6844904046386495502
 
@@ -30,8 +36,16 @@
 
 - https://www.jetbrains.com/shop/eform/opensource
 
-  在这里填写表单。
+  1. 在这里填写表单
 
   具体表单填写如下图所示：
 
   ![2024-02-25-17-38-14](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-02-25-17-38-14.png)
+
+  2. 填写完的反馈
+
+  ![2024-02-25-17-40-16](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-02-25-17-40-16.png)
+
+  3. 邮件通知
+
+  ![2024-02-25-17-41-08](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-02-25-17-41-08.png)
