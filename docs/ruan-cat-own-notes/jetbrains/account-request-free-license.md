@@ -3,3 +3,23 @@
 ## 用学生身份来申请 jetbrains 的免费许可证
 
 ## 用开源项目来申请 jetbrains 的免费许可证
+
+- https://juejin.cn/post/6844904046386495502
+
+- https://www.jetbrains.com/community/opensource/#support
+
+  去这里申请。
+
+  ::: tip 可以重复申请
+  Free licenses for open-source development are valid for one year and can be renewed if your project still meets the program requirements listed above.
+
+  开源开发的免费许可证有效期为一年，如果您的项目仍满足上述计划要求，则可以续订。
+  :::
+
+  > [!tip]
+  > Free licenses for open-source development are valid for one year and can be renewed if your project still meets the program requirements listed above.
+  >
+  > 开源开发的免费许可证有效期为一年，如果您的项目仍满足上述计划要求，则可以续订。
+
+- https://www.jetbrains.com/shop/eform/opensource
+  在这里填写表单。
