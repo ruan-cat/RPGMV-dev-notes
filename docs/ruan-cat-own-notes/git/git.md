@@ -192,3 +192,22 @@ https://juejin.cn/post/6981733889664368677
 https://blog.csdn.net/wujj200884/article/details/84999006
 
 ## TODO: git 文件名大小写配置？
+
+## FIXME: git 报错
+
+![2024-02-25-20-38-37](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-02-25-20-38-37.png)
+
+```text
+fatal: detected dubious ownership in repository at 'E:/code/rzn/test-2024-0224/test'
+'E:/code/rzn/test-2024-0224/test' is owned by:
+        'S-1-5-32-544'
+but the current user is:
+        'S-1-5-21-881890984-3381581715-1393588594-1001'
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory E:/code/rzn/test-2024-0224/test
+```
+
+我用 vscode 打开一个新创建的 git 项目一点问题都没有。但是用 jetbrains 的 idea 打开就有问题，直接给我报这个错误。
+
+除了按照提示增加安全目录以外，还有什么标本兼治的方式么？比如全局设置 jetbrains 公司的产品不再对 git 仓库做任何安全检查？
