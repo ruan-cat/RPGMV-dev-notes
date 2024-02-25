@@ -21,5 +21,17 @@
   >
   > 开源开发的免费许可证有效期为一年，如果您的项目仍满足上述计划要求，则可以续订。
 
+<!--
+	一个是hope主题提供的写法
+	另一个是GFM提供的写法
+
+	GFM不能够提供自定义标题 有点难受
+ -->
+
 - https://www.jetbrains.com/shop/eform/opensource
+
   在这里填写表单。
+
+  具体表单填写如下图所示：
+
+  ![2024-02-25-17-38-14](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-02-25-17-38-14.png)

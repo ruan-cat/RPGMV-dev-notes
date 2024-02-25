@@ -149,8 +149,10 @@ export default hopeTheme({
 		// 禁用不需要的配置
 		mdEnhance: {
 			align: true,
+			// 启用 GFM 警告
 			alert: true,
-			attrs: true, // 使用特殊标记为 Markdown 元素添加属性
+			// 使用特殊标记为 Markdown 元素添加属性
+			attrs: true,
 			hint: true,
 			gfm: true,
 			imgLazyload: true,
