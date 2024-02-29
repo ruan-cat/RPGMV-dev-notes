@@ -2,6 +2,12 @@
 
 我以为我做了程序员就不需要接触 excel 了。但是业务不断的变化，我还是需要接触该技术的。
 
+## 常用快捷键
+
+![2024-02-29-10-21-21](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-02-29-10-21-21.jpg)
+
+- [Office 小技巧-Excel 快速选中单元格大全](https://zhuanlan.zhihu.com/p/30842001)
+
 ## 安装网络函数库并使用特定的函数
 
 - [Excel 网络函数库安装教程](https://zhuanlan.zhihu.com/p/658641423)
@@ -67,7 +73,3 @@
 ## 常用函数
 
 - [Excel 中如何去掉字符串中的空格](https://zhuanlan.zhihu.com/p/569441364)
-
-## 常用快捷键
-
-- [Office 小技巧-Excel 快速选中单元格大全](https://zhuanlan.zhihu.com/p/30842001)
