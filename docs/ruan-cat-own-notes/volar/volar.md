@@ -12,6 +12,11 @@
 
 ### 准备弃用 Takeover 模式，弃用额外的 vue typescript 插件
 
+相关 pr：
+
+- https://github.com/vuejs/language-tools/pull/3788
+- https://github.com/vuejs/language-tools/pull/3788#issuecomment-1933274154
+
 Vue.vscode-typescript-vue-plugin 这个插件被 2.0 版本的插件说不需要安装了。
 
 当内部 TypeScript 扩展被禁用或安装了“TypeScript Vue 插件”扩展时发出警告。
