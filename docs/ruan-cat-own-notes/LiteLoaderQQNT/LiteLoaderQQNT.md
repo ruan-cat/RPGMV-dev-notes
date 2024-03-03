@@ -37,3 +37,13 @@
    > - https://github.com/PRO-2684/Transitio-user-css
 
 这样的插件组织关系很厉害。
+
+## TODO: 预备 pr
+
+目前有自己写简单的全局覆盖 css。
+
+应该这样处理：
+
+1.
+
+- https://github.com/PRO-2684/transitio/blob/main/store.json
