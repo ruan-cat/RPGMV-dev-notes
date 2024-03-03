@@ -48,3 +48,7 @@
 2. pr。填写专用仓库地址。
 
 - https://github.com/PRO-2684/transitio/blob/main/store.json
+
+## transitio 可能的 bug
+
+我的样式不能正常生效。特别是 has 写法的背景阴影样式，毫无作用。点击了不生效。要我点击本地文件监听才生效。
