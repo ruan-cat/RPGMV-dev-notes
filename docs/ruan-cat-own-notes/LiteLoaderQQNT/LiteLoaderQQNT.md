@@ -12,3 +12,28 @@
 ![2024-03-02-18-38-08](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-03-02-18-38-08.png)
 
 ## TODO: 目前正在使用的插件
+
+## 对这些插件生态的理解
+
+插件的插件的插件。
+
+1. QQ-nt 的 LiteLoaderQQNT 插件
+
+   > - https://github.com/LiteLoaderQQNT
+
+2. LiteLoaderQQNT 的 LiteLoaderQQNT-Plugin-Plugin-Store 插件
+
+   > - https://github.com/Night-stars-1/LiteLoaderQQNT-Plugin-Plugin-Store
+
+3. LiteLoaderQQNT-Plugin-Plugin-Store 拓展了与其并列同级的 transitio 插件
+
+   > - https://github.com/Night-stars-1/LiteLoaderQQNT-Plugin-Plugin-Store?tab=readme-ov-file#第三方商店侧载
+   > - [github](https://github.com/PRO-2684/transitio/blob/main/store.json)
+   > - [github.dev](https://github.dev/PRO-2684/transitio/blob/main/store.json)
+   > - [vscode.dev](https://vscode.dev/github/PRO-2684/transitio/blob/main/store.json)
+
+4. transitio 本身的插件仓库在 Transitio-user-css 内定义
+
+   > - https://github.com/PRO-2684/Transitio-user-css
+
+这样的插件组织关系很厉害。
