@@ -44,6 +44,7 @@
 
 应该这样处理：
 
-1.
+1. 创建一个仓库，用于存放自定义的 css
+2. pr。填写专用仓库地址。
 
 - https://github.com/PRO-2684/transitio/blob/main/store.json
