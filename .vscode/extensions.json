@@ -5,8 +5,6 @@
 		"antfu.browse-lite",
 		// vue3的 .vue SFCs 的 LSP 语言支持服务
 		"vue.volar",
-		// 针对vue3 typescript语言的插件 2.0版本的volar
-		// "vue.vscode-typescript-vue-plugin",
 		// vue常用代码片段
 		"hollowtree.vue-snippets",
 		"yoavbls.pretty-ts-errors",
