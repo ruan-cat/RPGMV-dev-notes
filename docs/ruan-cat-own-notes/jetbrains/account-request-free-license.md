@@ -1,4 +1,4 @@
-# account-request-free-license 账户申请免费的许可证
+# 账户申请免费的许可证
 
 ## 用学生身份来申请 jetbrains 的免费许可证
 
@@ -11,7 +11,7 @@
 我目前不是学生了。故考虑使用开源项目来申请免费的 jetbrains 许可证。
 
 - https://juejin.cn/post/6844904046386495502
-
+- https://idea.diqigan.cn/practices/license/open-source-license.html
 - https://www.jetbrains.com/community/opensource/#support
 
   去这里申请。
