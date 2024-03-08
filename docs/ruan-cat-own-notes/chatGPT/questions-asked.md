@@ -1705,3 +1705,21 @@ keyword 填写为 `绩效评分情况表` 。
 要安装什么版本的？
 
 需要安装 @types/node 包。
+
+## Java 字符串转换
+
+请提供给我一个 Java 代码，提供一个函数：
+
+将以下的字符串：
+
+```text
+D:/code/web-dev-work-place/learn/java-pilot-base/gobang/vedio/music.wav
+```
+
+变成以下字符串：
+
+```text
+D:\\code\\web-dev-work-place\\learn\\java-pilot-base\\gobang\\vedio\\music.wav
+```
+
+该字符串将会用于文件读取。
