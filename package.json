@@ -12,6 +12,7 @@
 		"test": "vitest --ui"
 	},
 	"dependencies": {
+		"@commitlint/lint": "^19.0.3",
 		"@vercel/analytics": "^1.2.2",
 		"@vueuse/core": "^10.9.0",
 		"animate.css": "^4.1.1",
