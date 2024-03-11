@@ -35,6 +35,7 @@
 			]
 		},
 	},
+	/** https://www.typescriptlang.org/tsconfig#include */
 	"include": [
 		"./docs/.vuepress/components/drill-goods/**/*.ts",
 		"docs/**/*.ts",
