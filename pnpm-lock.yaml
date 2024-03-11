@@ -55,6 +55,9 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^19.0.3
     version: 19.0.3
+  '@commitlint/types':
+    specifier: ^19.0.3
+    version: 19.0.3
   '@iconify/json':
     specifier: ^2.2.190
     version: 2.2.190
