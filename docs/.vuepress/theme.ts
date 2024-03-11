@@ -1,6 +1,16 @@
+import dayjs from "dayjs";
+
 import { hopeTheme } from "vuepress-theme-hope";
 import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
+
+/** 作者对外称呼 */
+const authorName = "阮喵喵";
+
+/** 页脚模板函数 */
+export function footerTmpl() {
+	return `MIT Licensed | Copyright © ${dayjs().year()}-present ${authorName}`;
+}
 
 export default hopeTheme({
 	// hostname: 'https://mister-hope.github.io',
@@ -13,7 +23,7 @@ export default hopeTheme({
 	hotReload: true,
 
 	author: {
-		name: "阮喵喵",
+		name: authorName,
 		url: "https://github.com/RuanZhongNan",
 	},
 
@@ -26,6 +36,8 @@ export default hopeTheme({
 
 	docsDir: "docs",
 
+	footer: "MIT Licensed | Copyright © 2018-present 阮喵喵",
+
 	blog: {
 		medias: {
 			BiliBili: "https://space.bilibili.com/359907572",
@@ -34,18 +46,10 @@ export default hopeTheme({
 		},
 	},
 
-	themeColor: {
-		blue: "#2196f3",
-		red: "#f26d6d",
-		green: "#3eaf7c",
-		orange: "#fb9b5f",
-	},
-
 	locales: {
 		"/": {
 			navbar: zhNavbar,
 			sidebar: zhSidebar,
-			footer: "默认页脚",
 			displayFooter: true,
 			blog: {
 				description: "一个前端开发者",
