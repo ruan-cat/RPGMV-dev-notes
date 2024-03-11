@@ -1,11 +1,16 @@
+import type { UserConfig } from "@commitlint/types";
+import { RuleConfigSeverity } from "@commitlint/types";
+
 /**
  * @see https://juejin.cn/post/6983191125242675230
+ * @see https://commitlint.js.org/reference/configuration.html#typescript-configuration
  */
-export default {
+const Configuration: UserConfig = {
 	extends: ["@commitlint/config-conventional"],
+	formatter: "@commitlint/format",
 	rules: {
 		"type-enum": [
-			2,
+			RuleConfigSeverity.Error,
 			"always",
 			[
 				"build",
@@ -21,6 +26,7 @@ export default {
 				"test",
 			],
 		],
+
 		"type-case": [0],
 		"type-empty": [0],
 		"scope-empty": [0],
@@ -30,3 +36,5 @@ export default {
 		"header-max-length": [0, "always", 72],
 	},
 };
+
+export default Configuration;
