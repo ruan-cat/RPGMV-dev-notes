@@ -45,8 +45,6 @@
 		"@vuepress/plugin-register-components": "2.0.0-rc.15",
 		"cz-git": "^1.9.0",
 		"moment": "^2.30.1",
-		"ts-node": "^10.9.2",
-		"ts-node-esm": "^0.0.6",
 		"typedoc": "^0.25.12",
 		"typedoc-plugin-markdown": "^3.17.1",
 		"typescript": "^5.4.2",
