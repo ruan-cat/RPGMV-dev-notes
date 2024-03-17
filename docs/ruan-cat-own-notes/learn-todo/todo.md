@@ -90,3 +90,7 @@ https://codeium.com/
 目前还不是很懂这个组件库的生成。我没有找到类似的，可以参考的 github 例子。
 
 - https://storybook.js.org/blog/storybook-vue3/
+
+## twoslash shiki vitepress
+
+这些技术能够让文档站点的 typescript 代码提供惊人的行内提示。有空研究。
