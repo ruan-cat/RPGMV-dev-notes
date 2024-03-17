@@ -31,3 +31,34 @@ pnpm dlx vp-update@next
 经过和作者在 QQ 群的沟通，作者要求我独立完成 pr，因为作者不愿意为了该功能额外导入依赖，而是使用 node 原生的功能。
 
 目前我还是不懂。升级就先用保守的方式升级吧。
+
+## 添加 packageManager 导致 vp-update 出错
+
+- https://github.com/vuepress/vp-update/issues/7
+
+添加 packageManager 导致 vp-update 出错。
+
+```json
+{
+	"name": "java-pilot-base-doc",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"docs:build": "vuepress-vite build src",
+		"docs:clean-dev": "vuepress-vite dev src --clean-cache",
+		"docs:dev": "vuepress-vite dev src",
+		"docs:update-package": "pnpm dlx vp-update"
+	},
+	"devDependencies": {
+		"@vuepress/bundler-vite": "2.0.0-rc.8",
+		"vue": "^3.4.21",
+		"vuepress": "2.0.0-rc.8",
+		"vuepress-theme-hope": "2.0.0-rc.31"
+	},
+	"packageManager": ">=pnpm@8.0.0"
+}
+```
+
+截图如下：
+
+![2024-03-17-17-22-01](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-03-17-17-22-01.png)
