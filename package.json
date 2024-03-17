@@ -12,7 +12,6 @@
 		"test": "vitest --ui"
 	},
 	"dependencies": {
-		"@commitlint/lint": "^19.0.3",
 		"@vercel/analytics": "^1.2.2",
 		"@vueuse/core": "^10.9.0",
 		"animate.css": "^4.1.1",
@@ -31,6 +30,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^19.0.3",
 		"@commitlint/config-conventional": "^19.0.3",
+		"@commitlint/lint": "^19.1.0",
 		"@commitlint/types": "^19.0.3",
 		"@iconify/json": "^2.2.190",
 		"@iconify/vue": "^4.1.1",
