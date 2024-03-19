@@ -225,3 +225,13 @@ PS C:\Windows\system32> pnpm -v
 ### 猜测
 
 不知道是为什么，pnpm 作为全局包，在不同的 node 环境下，有着不同的版本。不知道是不是 nvm 本身的 node 导致全局包的存储全部混乱了。
+
+## 使用 corepack 安装
+
+- https://pnpm.io/zh/installation#使用-npm-安装
+
+```bash
+corepack use pnpm@latest
+```
+
+这里会给 package.json 加上 packageManager。
