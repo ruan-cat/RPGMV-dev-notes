@@ -55,3 +55,9 @@ TODO:
 ```
 
 [点此了解本笔记关于 node 项目包管理器约束的文章](../pnpm/node-project-assign-pkg-manager.md)。
+
+## packageManager
+
+这个字段到底应该写成什么样子比较好？
+
+- https://github.com/botpress/botpress/blob/master/package.json#L35
