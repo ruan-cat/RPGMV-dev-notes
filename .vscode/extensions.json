@@ -3,6 +3,7 @@
 		"antfu.vite",
 		"antfu.iconify",
 		"antfu.browse-lite",
+		"esbenp.prettier-vscode",
 		// vue3的 .vue SFCs 的 LSP 语言支持服务
 		"vue.volar",
 		// vue常用代码片段
