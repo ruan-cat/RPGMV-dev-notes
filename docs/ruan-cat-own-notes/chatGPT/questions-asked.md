@@ -1723,3 +1723,27 @@ D:\\code\\web-dev-work-place\\learn\\java-pilot-base\\gobang\\vedio\\music.wav
 ```
 
 该字符串将会用于文件读取。
+
+## node 创建文件并写入文件
+
+请编写一个 typescript 函数。技术栈为 node
+
+```typescript
+/** 文件格式 */
+type FileFormat = ".md" | ".txt";
+
+/**
+ * 将字符串数组写入以日期为命名的.md文件中
+ * @description
+ * fileFormat 默认取值为 ".md"
+ */
+type WriteInMdFile = (config: {
+	strArr: string[];
+	fileFormat?: FileFormat;
+}) => void;
+
+const writeInMdFile: WriteInMdFile = function writeInMdFile(config) {
+	const fileFormat = config?.fileFormat ?? ".md";
+	// 请补全此函数
+};
+```
