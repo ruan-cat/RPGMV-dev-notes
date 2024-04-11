@@ -5,7 +5,7 @@
 		"antfu.browse-lite",
 		"esbenp.prettier-vscode",
 		// vue3的 .vue SFCs 的 LSP 语言支持服务
-		"vue.volar",
+		"Vue.volar",
 		// vue常用代码片段
 		"hollowtree.vue-snippets",
 		"yoavbls.pretty-ts-errors",
@@ -20,5 +20,9 @@
 		"chrischinchilla.vscode-pandoc",
 		"dendron.dendron-paste-image",
 		"shd101wyy.markdown-preview-enhanced",
+	],
+	"unwantedRecommendations": [
+		// 不使用该插件
+		"Vue.vscode-typescript-vue-plugin"
 	]
 }
