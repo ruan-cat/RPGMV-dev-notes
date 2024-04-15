@@ -100,3 +100,7 @@ jobs:
 阅读了多篇 vercel 官方文档，注意到其 monorepo 的实现方式是，单一 git 存储库连接多个 vercel 项目。这个做法和我的期望不太相符，我不太希望创建多个 vercel 项目。维护麻烦。
 
 另外，根据此[官方文章](https://vercel.com/docs/limits/overview#general-limits)得知，一个单一 git 存储库最多只能连接 3 个 vercel 项目，这个数据量太小了。
+
+其他的 issue 也抱怨这个限制：
+
+- https://github.com/amondnet/vercel-action/issues/103#issuecomment-917137742
