@@ -10,9 +10,6 @@
 // 	}
 // }
 
-// TODO: 临时注释
-// 使用专门封装好的钻头样式
-// @import "./drill-page-style/index.scss";
 // 全局设置滚动条的宽度 设置较宽的。便于选中。
 ::-webkit-scrollbar {
 	width: 14px;
@@ -37,14 +34,20 @@ html {
 	}
 }
 
-aside#sidebar {
+// aside#sidebar.vp-sidebar
+aside {
 	&::-webkit-scrollbar {
 		// 有疑惑 不生效
-		transition: all 0.28s ease-in-out;
+		// transition: all 0.28s ease-in-out;
 		width: 6px;
 	}
 
 	&:hover::-webkit-scrollbar {
 		width: 14px;
+	}
+
+	&::-webkit-scrollbar-track-piece {
+		border-radius: 6px;
+		background: #0000001a;
 	}
 }
