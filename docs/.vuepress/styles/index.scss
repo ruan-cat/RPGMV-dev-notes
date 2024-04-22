@@ -13,9 +13,11 @@
 // TODO: 临时注释
 // 使用专门封装好的钻头样式
 @import "./drill-page-style/index.scss";
-// 全局设置滚动条的宽度 设置较宽的。便于选中。: : -webkit-scrollbar {
-// 	width: 14px;
-// }
+// 全局设置滚动条的宽度 设置较宽的。便于选中。
+
+::-webkit-scrollbar {
+	width: 14px;
+}
 
 .vp-breadcrumb,
 .vp-page-title,
@@ -23,11 +25,12 @@
 .theme-hope-content:not(.custom) {
 	max-width: 95vw;
 }
-@media (min-width: $pc) {
-	.toggle-sidebar-wrapper {
-		display: unset;
-	}
-}
+
+// @media (min-width: $pc) {
+// 	.toggle-sidebar-wrapper {
+// 		display: unset;
+// 	}
+// }
 
 html {
 	::-webkit-scrollbar {

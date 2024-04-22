@@ -1,5 +1,5 @@
 // you can change colors here
-// $theme-color: #096dd9;
+$theme-color: #096dd9;
 
 // 钻头背景 黄色
 $drillup-bg-yellow: #ffcc28;
@@ -28,7 +28,7 @@ $bg-color: $drillup-bg-yellow;
 
 // TODO: 临时注释
 // 主题色设置成钻头所需的黄色
-$theme-color: $drillup-bg-yellow;
+// $theme-color: $drillup-bg-yellow;
 
 :export {
 	themeColor: $theme-color;
