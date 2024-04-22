@@ -12,6 +12,19 @@ $bg-color: $drillup-bg-yellow;
 
 // 不考虑全局的设置文本颜色 因为每一个模块的颜色样式完全不同的
 // $text-color:
+// $theme-color: #096dd9;
+
+// 钻头背景 黄色
+$drillup-bg-yellow: #ffcc28;
+
+// 钻头右侧侧边栏背景 橙色
+$drillup-right-aside-bg: #ffaf00;
+
+// 背景色
+$bg-color: $drillup-bg-yellow;
+
+// 不考虑全局的设置文本颜色 因为每一个模块的颜色样式完全不同的
+// $text-color:
 
 // TODO: 临时注释
 // 主题色设置成钻头所需的黄色

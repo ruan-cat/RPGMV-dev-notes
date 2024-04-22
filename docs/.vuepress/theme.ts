@@ -1,16 +1,6 @@
-import dayjs from "dayjs";
-
 import { hopeTheme } from "vuepress-theme-hope";
 import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
-
-/** 作者对外称呼 */
-const authorName = "阮喵喵";
-
-/** 页脚模板函数 */
-export function footerTmpl() {
-	return `MIT Licensed | Copyright © ${dayjs().year()}-present ${authorName}`;
-}
 
 export default hopeTheme({
 	// hostname: 'https://mister-hope.github.io',
@@ -23,7 +13,7 @@ export default hopeTheme({
 	hotReload: true,
 
 	author: {
-		name: authorName,
+		name: "阮喵喵",
 		url: "https://github.com/RuanZhongNan",
 	},
 
@@ -36,20 +26,32 @@ export default hopeTheme({
 
 	docsDir: "docs",
 
-	footer: "MIT Licensed | Copyright © 2018-present 阮喵喵",
-
 	blog: {
 		medias: {
 			BiliBili: "https://space.bilibili.com/359907572",
 			Gitee: "https://gitee.com/HechiCollegeComputerAssociation",
 			GitHub: "https://github.com/RuanZhongNan",
+
+			// TODO: 等待应用使用
+			// Steam: 'https://example.com',
+			// Wechat: 'https://example.com',
+			// Weibo: 'https://example.com',
+			// Zhihu: 'https://example.com',
 		},
+	},
+
+	themeColor: {
+		blue: "#2196f3",
+		red: "#f26d6d",
+		green: "#3eaf7c",
+		orange: "#fb9b5f",
 	},
 
 	locales: {
 		"/": {
 			navbar: zhNavbar,
 			sidebar: zhSidebar,
+			footer: "默认页脚",
 			displayFooter: true,
 			blog: {
 				description: "一个前端开发者",
@@ -153,11 +155,8 @@ export default hopeTheme({
 		// 禁用不需要的配置
 		mdEnhance: {
 			align: true,
-			// 启用 GFM 警告
-			alert: true,
-			// 使用特殊标记为 Markdown 元素添加属性
-			attrs: true,
-			hint: true,
+			attrs: true, // 使用特殊标记为 Markdown 元素添加属性
+			container: true,
 			gfm: true,
 			imgLazyload: true,
 			imgSize: true,
@@ -169,75 +168,6 @@ export default hopeTheme({
 			sub: true, // 上下角标
 			sup: true,
 		},
-
-		/**
-		 * 按照教程导入组件
-		 * 发现似乎有bug 可能是自己使用了自定义组件导入方案 导致默认的两个组件没了
-		 * 这里手动导入默认提供的 FontIcon 和 Badge
-		 */
-		components: {
-			components: ["BiliBili", "FontIcon", "Badge"],
-		},
-
-		searchPro: {
-			indexContent: true,
-			autoSuggestions: true,
-		},
-
-		// 目前有效 缺点是国内使用`algolia`速度稍慢
-		// docsearch: {
-		// 	indexName: "ruan-cat",
-		// 	appId: "26AGWKLS5F",
-		// 	// 这是邮件提供的
-		// 	apiKey: "56468a67aa27242ac177690073ba0e15",
-		// 	// 这是爬虫提供的
-		// 	// apiKey: 'c0121d37470f12e725a3cf2b45dda7e7',
-		// 	// 这是用 Search API Key 重新生成的
-		// 	// apiKey: 'd96c038fd76a2f91c146152fbf24a1de',
-		// 	locales: {
-		// 		"/": {
-		// 			placeholder: "搜索文档",
-		// 			translations: {
-		// 				button: {
-		// 					buttonText: "搜索文档",
-		// 					buttonAriaLabel: "搜索文档",
-		// 				},
-		// 				modal: {
-		// 					searchBox: {
-		// 						resetButtonTitle: "清除查询条件",
-		// 						resetButtonAriaLabel: "清除查询条件",
-		// 						cancelButtonText: "取消",
-		// 						cancelButtonAriaLabel: "取消",
-		// 					},
-		// 					startScreen: {
-		// 						recentSearchesTitle: "搜索历史",
-		// 						noRecentSearchesText: "没有搜索历史",
-		// 						saveRecentSearchButtonTitle: "保存至搜索历史",
-		// 						removeRecentSearchButtonTitle: "从搜索历史中移除",
-		// 						favoriteSearchesTitle: "收藏",
-		// 						removeFavoriteSearchButtonTitle: "从收藏中移除",
-		// 					},
-		// 					errorScreen: {
-		// 						titleText: "无法获取结果",
-		// 						helpText: "你可能需要检查你的网络连接",
-		// 					},
-		// 					footer: {
-		// 						selectText: "选择",
-		// 						navigateText: "切换",
-		// 						closeText: "关闭",
-		// 						searchByText: "搜索提供者",
-		// 					},
-		// 					noResultsScreen: {
-		// 						noResultsText: "无法找到相关结果",
-		// 						suggestedQueryText: "你可以尝试查询",
-		// 						reportMissingResultsText: "你认为该查询应该有结果？",
-		// 						reportMissingResultsLinkText: "点击反馈",
-		// 					},
-		// 				},
-		// 			},
-		// 		},
-		// 	},
-		// },
 
 		// uncomment these if you want a PWA
 		// pwa: {
