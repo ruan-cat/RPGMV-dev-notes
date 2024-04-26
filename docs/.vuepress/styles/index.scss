@@ -1,6 +1,7 @@
 @use "@sass-palette/hope-config";
 
 @import "./config.scss";
+@import "./palette.scss";
 
 // 参考资料 https://github.com/orgs/vuepress-theme-hope/discussions/3742
 // FIXME: 出错 无法运行
@@ -10,11 +11,6 @@
 // 	}
 // }
 
-// 全局设置滚动条的宽度 设置较宽的。便于选中。
-::-webkit-scrollbar {
-	width: 14px;
-}
-
 .vp-breadcrumb,
 .vp-page-title,
 .toc-place-holder,
@@ -23,27 +19,58 @@
 }
 
 // @media (min-width: $pc) {
-// 	.toggle-sidebar-wrapper {
-// 		display: unset;
-// 	}
+//   .toggle-sidebar-wrapper {
+//     display: unset;
+//   }
 // }
 
-html {
-	::-webkit-scrollbar {
-		width: 14px;
-	}
+$scrollbar-width: 1rem;
+
+/*滚动条样式*/
+::-webkit-scrollbar {
+	width: $scrollbar-width;
 }
 
-// aside#sidebar.vp-sidebar
-aside {
-	&::-webkit-scrollbar {
-		// 有疑惑 不生效
-		// transition: all 0.28s ease-in-out;
-		width: 6px;
+::-webkit-scrollbar-thumb {
+	width: $scrollbar-width;
+	border-radius: calc($scrollbar-width * 0.5);
+
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+	width: $scrollbar-width;
+	border-radius: calc($scrollbar-width * 0.5);
+
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.1);
+}
+
+aside#sidebar {
+	$color: palevioletred;
+	$width-s: 0.4rem;
+	$width-l: 1rem;
+
+	& {
+		&::-webkit-scrollbar {
+			width: $width-s;
+		}
+
+		&::-webkit-scrollbar-track {
+			width: $width-s;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			width: $width-s;
+			background-color: $theme-color;
+		}
 	}
 
-	&:hover::-webkit-scrollbar {
-		width: 14px;
+	&:hover {
+		&::-webkit-scrollbar {
+			width: $width-l;
+		}
 	}
 
 	&::-webkit-scrollbar-track-piece {
