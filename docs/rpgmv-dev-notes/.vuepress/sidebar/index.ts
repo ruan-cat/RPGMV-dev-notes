@@ -1,6 +1,6 @@
 import { sidebar } from 'vuepress-theme-hope';
 
-import { sideConfList } from '../nav-side-common-conf/index.js';
+import { sideConfList } from '../nav-side-common-conf';
 
 // origin config 目前不使用默认提供的demo侧边栏配置，自己尝试配置一下侧边栏
 // export const zhSidebar = sidebar({

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { watch } from "vue";
 import { random } from "lodash-es";
-import { useSingleton } from "./use-singleton";
+import { useSingleton } from "./use-singleton.ts";
 
 const { isAddComputed, singletonData } = useSingleton();
 

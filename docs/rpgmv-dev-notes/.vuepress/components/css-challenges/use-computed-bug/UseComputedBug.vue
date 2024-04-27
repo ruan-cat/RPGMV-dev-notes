@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useSingleton } from "./use-singleton";
+import { useSingleton } from "./use-singleton.ts";
 import UseComputedBugChild from "./UseComputedBugChild.vue";
 
 const { isAddComputed, singletonData } = useSingleton();

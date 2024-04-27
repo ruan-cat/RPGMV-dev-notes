@@ -1,6 +1,6 @@
 import { navbar } from "vuepress-theme-hope";
 
-import { navConfList } from "../nav-side-common-conf/index.js";
+import { navConfList } from "../nav-side-common-conf";
 
 export const zhNavbar = navbar(navConfList);
 

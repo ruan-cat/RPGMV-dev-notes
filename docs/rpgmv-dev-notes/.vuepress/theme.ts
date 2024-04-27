@@ -1,8 +1,8 @@
 import dayjs from "dayjs";
 
 import { hopeTheme } from "vuepress-theme-hope";
-import { zhNavbar } from "./navbar/index.js";
-import { zhSidebar } from "./sidebar/index.js";
+import { zhNavbar } from "./navbar";
+import { zhSidebar } from "./sidebar";
 
 /** 作者对外称呼 */
 const authorName = "阮喵喵";

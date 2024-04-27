@@ -37,7 +37,7 @@
 	},
 	/** https://www.typescriptlang.org/tsconfig#include */
 	"include": [
-		"./docs/.vuepress/components/drill-goods/**/*.ts",
+      "./docs/rpgmv-dev-notes/.vuepress/components/drill-goods/**/*.ts",
 		"docs/**/*.ts",
 		"docs/**/*.d.ts",
 		"docs/**/*.tsx",
@@ -47,12 +47,12 @@
 		"src/**/*.tsx",
 		"src/**/*.vue",
 		// 尝试增加指定目录下的vue组件 期望让ts识别出vue组件
-		"docs/.vuepress/components/**/*.vue",
-		"docs/.vuepress/types/**/*.d.ts",
-		"docs/.vuepress/types/auto-imports.d.ts",
-		"docs/.vuepress/types/components.d.ts",
+      "docs/rpgmv-dev-notes/.vuepress/components/**/*.vue",
+      "docs/rpgmv-dev-notes/.vuepress/types/**/*.d.ts",
+      "docs/rpgmv-dev-notes/.vuepress/types/auto-imports.d.ts",
+      "docs/rpgmv-dev-notes/.vuepress/types/components.d.ts",
 		// 测试文件集
-		"tests/**/*.ts",
+		"tests/**/*.ts"
 	],
 	/* 模仿其他项目加上的排除配置 */
 	"exclude": [

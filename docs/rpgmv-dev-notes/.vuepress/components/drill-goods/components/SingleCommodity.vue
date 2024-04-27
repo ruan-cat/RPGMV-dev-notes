@@ -14,12 +14,12 @@ import {
 } from "element-plus";
 import { debounce } from "lodash-es";
 
-import { useMode } from "../hooks/use-mode";
+import { useMode } from "../hooks/use-mode.ts";
 import {
 	useSingleCommodity,
 	type Commodity,
-} from "../stores/use-single-commodity";
-import SwitchMode from "../components/SwitchMode.vue";
+} from "../stores/use-single-commodity.ts";
+import SwitchMode from "./SwitchMode.vue";
 
 const { commodity } = storeToRefs(useSingleCommodity());
 const { mode, isEdit, isInfo } = useMode();

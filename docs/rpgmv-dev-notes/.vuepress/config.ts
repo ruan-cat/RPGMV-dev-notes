@@ -13,7 +13,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 import { typedocPlugin } from "vuepress-plugin-typedoc/next";
 
-import typedocConf from "../../typedoc.config.cjs";
+import typedocConf from "../../../typedoc.config.cjs";
 
 import theme from "./theme.js";
 

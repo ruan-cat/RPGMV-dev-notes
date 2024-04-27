@@ -1,7 +1,7 @@
 @use "@sass-palette/hope-config";
 
-@import "./config.scss";
-@import "./palette.scss";
+@import "config";
+@import "palette";
 
 // 参考资料 https://github.com/orgs/vuepress-theme-hope/discussions/3742
 // FIXME: 出错 无法运行

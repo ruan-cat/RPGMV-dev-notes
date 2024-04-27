@@ -2,8 +2,8 @@
 import { ref } from "vue";
 import { useVModel } from "@vueuse/core";
 
-import { useMode } from "../hooks/use-mode";
-import type { Mode } from "../hooks/use-mode";
+import { useMode } from "../hooks/use-mode.ts";
+import type { Mode } from "../hooks/use-mode.ts";
 
 import IconsInfo from "./Icons/IconsInfo.vue";
 import IconsSettings from "./Icons/IconsSettings.vue";

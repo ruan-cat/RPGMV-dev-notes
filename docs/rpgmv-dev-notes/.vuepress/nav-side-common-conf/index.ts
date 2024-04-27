@@ -7,7 +7,7 @@ import {
 	SidebarItem,
 } from "vuepress-theme-hope";
 
-import typedocConf from "../../../typedoc.config.cjs";
+import typedocConf from "../../../../typedoc.config.cjs";
 
 /** 本地自定义的 共同数组类型 @deprecated 实际使用的时候 类型无法共同使用 */
 type CommonArrayOptions = SidebarArrayOptions | NavbarOptions;
