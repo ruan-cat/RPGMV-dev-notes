@@ -64,7 +64,7 @@ export const sideConfList: SidebarArrayOptions = [
 
 	{
 		text: "阮喵喵自己的笔记",
-		prefix: "ruan-cat-own-notes/",
+		prefix: "ruan-cat-notes/",
 		children: "structure",
 		collapsible: true,
 	},
