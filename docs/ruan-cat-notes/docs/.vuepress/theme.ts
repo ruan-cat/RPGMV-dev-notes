@@ -10,6 +10,8 @@ export function footerTmpl() {
 	return `MIT Licensed | Copyright © ${dayjs().year()}-present ${authorName}`;
 }
 
+const footer = footerTmpl();
+
 export default hopeTheme({
 	// hostname: 'https://mister-hope.github.io',
 	// hostname: 'https://www.ruan-cat.com/',
@@ -34,7 +36,8 @@ export default hopeTheme({
 
 	docsDir: "docs",
 
-	footer: "MIT Licensed | Copyright © 2018-present 阮喵喵",
+	footer,
+	displayFooter: true,
 
 	blog: {
 		medias: {
