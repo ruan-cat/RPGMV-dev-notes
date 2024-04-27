@@ -1,0 +1,13 @@
+{
+	"name": "@ruan-cat-docs/notes",
+	"version": "1.0.0",
+	"author": "阮喵喵",
+	"license": "MIT",
+	"description": "阮喵喵自己的笔记。",
+	"scripts": {
+		"docs:build": "vuepress-vite build docs",
+		"docs:clean-dev": "vuepress-vite dev docs --clean-cache",
+		"docs:dev": "vuepress-vite dev docs",
+		"docs:update-package": "pnpm dlx vp-update"
+	}
+}

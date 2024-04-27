@@ -1,5 +1,6 @@
 {
-	"name": "rpgmv-dev-notes",
+	"name": "@ruan-cat-docs/root",
+	"private": true,
 	"version": "1.0.0",
 	"description": "阮喵喵的rmmv开发笔记",
 	"license": "MIT",
