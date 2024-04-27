@@ -1,8 +1,6 @@
 import dayjs from "dayjs";
 
 import { hopeTheme } from "vuepress-theme-hope";
-import { zhNavbar } from "./navbar";
-import { zhSidebar } from "./sidebar";
 
 /** 作者对外称呼 */
 const authorName = "阮喵喵";
@@ -43,23 +41,6 @@ export default hopeTheme({
 			BiliBili: "https://space.bilibili.com/359907572",
 			Gitee: "https://gitee.com/HechiCollegeComputerAssociation",
 			GitHub: "https://github.com/RuanZhongNan",
-		},
-	},
-
-	locales: {
-		"/": {
-			navbar: zhNavbar,
-			sidebar: zhSidebar,
-			displayFooter: true,
-			blog: {
-				description: "一个前端开发者",
-				intro: "/zh/intro.html",
-			},
-
-			// page meta
-			metaLocales: {
-				editLink: "在 GitHub 上编辑此页",
-			},
 		},
 	},
 
