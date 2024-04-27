@@ -9,8 +9,5 @@
 		"deploymentEnabled": {
 			"main": false
 		}
-	},
-	"github": {
-		"enabled": false
 	}
 }
