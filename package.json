@@ -2,7 +2,7 @@
 	"name": "@ruan-cat-docs/root",
 	"private": true,
 	"version": "1.0.0",
-	"description": "阮喵喵的rmmv开发笔记",
+	"description": "笔记单仓根目录。",
 	"license": "MIT",
 	"type": "module",
 	"scripts": {

@@ -1,9 +1,9 @@
 {
-	"name": "@ruan-cat-docs/notes",
+	"name": "@ruan-cat-docs/rpgmv-dev-notes",
 	"version": "1.0.0",
 	"author": "阮喵喵",
 	"license": "MIT",
-	"description": "阮喵喵自己的笔记。",
+	"description": "阮喵喵的rmmv开发笔记",
 	"scripts": {
 		"docs:build": "vuepress-vite build docs",
 		"docs:clean-dev": "vuepress-vite dev docs --clean-cache",
