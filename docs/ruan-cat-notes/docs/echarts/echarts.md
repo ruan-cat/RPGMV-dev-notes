@@ -23,22 +23,22 @@
 
 ```js
 /** @see https://echarts.apache.org/handbook/zh/basics/release-note/v5-upgrade-guide/#引用-echarts */
-import * as echarts from "echarts";
+import * as echarts from "docs/ruan-cat-notes/docs/echarts/echarts";
 
 /** @type { Ref<HTMLElement | undefined> } 获取dom元素 */
 const chartRef = ref();
 
-/** @type { Ref<import("echarts").EChartsType | null> } chart图表实例 */
+/** @type { Ref<import("docs/ruan-cat-notes/docs/echarts/echarts").EChartsType | null> } chart图表实例 */
 const chartInstance = ref(null);
 
-/** @type { import("echarts").EChartsOption } */
+/** @type { import("docs/ruan-cat-notes/docs/echarts/echarts").EChartsOption } */
 const chartOpions = {};
 
 onMounted(() => {
-	// 在获取到dom时，初始化实例
-	chartInstance.value = echarts.init(chartRef.value);
+    // 在获取到dom时，初始化实例
+    chartInstance.value = echarts.init(chartRef.value);
 
-	// 设置值
-	chartInstance.value.setOption(chartOpions);
+    // 设置值
+    chartInstance.value.setOption(chartOpions);
 });
 ```
