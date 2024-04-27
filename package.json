@@ -5,6 +5,12 @@
 	"description": "笔记单仓根目录。",
 	"license": "MIT",
 	"type": "module",
+	"engines": {
+		"node": ">=16.0.0",
+		"vscode": "^1.22.0",
+		"pnpm": ">=8.0.0"
+	},
+	"packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589",
 	"scripts": {
 		"test": "vitest --ui"
 	},
@@ -55,11 +61,5 @@
 		"vuepress-plugin-search-pro": "2.0.0-rc.31",
 		"vuepress-plugin-typedoc": "0.13.0",
 		"vuepress-theme-hope": "2.0.0-rc.31"
-	},
-	"engines": {
-		"node": ">=16.0.0",
-		"vscode": "^1.22.0",
-		"pnpm": ">=8.0.0"
-	},
-	"packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
+	}
 }
