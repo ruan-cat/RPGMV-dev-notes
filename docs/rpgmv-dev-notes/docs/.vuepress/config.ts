@@ -4,7 +4,6 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { componentsPlugin } from "vuepress-plugin-components";
-import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
@@ -45,13 +44,6 @@ export default defineUserConfig({
 		headers: {
 			level: [2, 3, 4, 5],
 		},
-	},
-
-	alias: {
-		"@DrillGoods": path.resolve(
-			__dirname,
-			"./components/drill-goods/DrillGoods.vue"
-		),
 	},
 
 	bundler: viteBundler({
@@ -104,25 +96,9 @@ export default defineUserConfig({
 	// }),
 
 	plugins: [
-		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */
-		registerComponentsPlugin({
-			// 有疑惑 可以写多个文件夹路径么？ 目前经过测试不能。
-			componentsDir: path.resolve(__dirname, "../../docs"),
-			componentsPatterns: ["**/*.vue", "./.vuepress/**/*.vue"],
-			getComponentName(filename) {
-				console.log(" in getComponentName filename", filename);
-				const res = path.trimExt(filename.replace(/.*\//, ""));
-
-				console.log(" in getComponentName res", res);
-
-				return res;
-			},
-		}),
-
 		// componentsPlugin({
 		// 	components: ["BiliBili"],
 		// }),
-
 		// 该内容暂时保留 目前通过正确的爬虫配置，可以实现后端搜索了。
 		// searchProPlugin({
 		// 	indexContent: true,
