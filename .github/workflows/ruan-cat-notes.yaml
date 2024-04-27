@@ -14,6 +14,7 @@ jobs:
           vercel-token: ${{ secrets.vercel_token }} # Required
           vercel-org-id: ${{ secrets.vercel_orgId}} #Required
           vercel-project-id: ${{ secrets.vercel_projectId}} #Required
+          vercel-version: 34.1.2
           vercel-args: "--prod"
           working-directory: ./docs/ruan-cat-notes
           # alias-domains: |
