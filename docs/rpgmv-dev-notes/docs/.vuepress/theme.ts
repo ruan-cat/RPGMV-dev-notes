@@ -37,7 +37,7 @@ export default hopeTheme({
 	docsDir: "docs",
 
 	footer,
-	displayFooter: true,
+	displayFooter: false,
 
 	blog: {
 		medias: {
