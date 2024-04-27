@@ -106,3 +106,5 @@ footer: MIT Licensed | Copyright © 2022-present 阮喵喵
 <!-- TODO: 应该重新考虑大胃王笔记在本项目内的定位 -->
 <!-- ## 友情链接
 - [《大胃王的rmmv笔记》](https://hechicollegecomputerassociation.gitee.io/justbiubiubiul-rmmv-docs/) -->
+
+<!-- 触发部署 -->
