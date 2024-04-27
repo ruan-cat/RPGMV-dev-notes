@@ -144,7 +144,20 @@ importers:
 
   docs/rpgmv-dev-notes: {}
 
-  docs/ruan-cat-notes: {}
+  docs/ruan-cat-notes:
+    devDependencies:
+      '@vuepress/bundler-vite':
+        specifier: 2.0.0-rc.8
+        version: 2.0.0-rc.8(@types/node@20.12.7)(typescript@5.4.5)
+      vue:
+        specifier: ^3.4.16
+        version: 3.4.25(typescript@5.4.5)
+      vuepress:
+        specifier: 2.0.0-rc.8
+        version: 2.0.0-rc.8(@vuepress/bundler-vite@2.0.0-rc.8)(typescript@5.4.5)(vue@3.4.25)
+      vuepress-theme-hope:
+        specifier: 2.0.0-rc.31
+        version: 2.0.0-rc.31(@vuepress/plugin-docsearch@2.0.0-rc.19)(markdown-it@14.1.0)(typescript@5.4.5)(vuepress-plugin-search-pro@2.0.0-rc.31)(vuepress@2.0.0-rc.8)
 
 packages:
 
@@ -1734,7 +1747,7 @@ packages:
   /@types/markdown-it-emoji@2.0.5:
     resolution: {integrity: sha512-iJLsmCNpSWKtV6Ia3mLSjcXJPEt7ubGG342z+hGvYx++TpM19oTUrJcI7XjbOqRQ+W2UQ323E7B0eCLwlgT/9g==}
     dependencies:
-      '@types/markdown-it': 13.0.7
+      '@types/markdown-it': 14.0.1
     dev: true
 
   /@types/markdown-it@13.0.7:
