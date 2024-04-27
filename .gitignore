@@ -16,3 +16,6 @@ docs/docs-typedoc
 
 # 忽略掉 @vitest/ui 生成的本地测试页面
 html
+
+# 默认忽略掉本地生成的 vercel 目录
+.vercel
