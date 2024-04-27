@@ -15,6 +15,6 @@ jobs:
           vercel-org-id: ${{ secrets.vercel_orgId}} #Required
           vercel-project-id: ${{ secrets.vercel_projectId}} #Required
           vercel-args: "--prod"
-          working-directory: .docs/rpgmv-dev-notes
+          working-directory: ./docs/rpgmv-dev-notes
           alias-domains: |
             rpgmv-dev-notes.ruancat6312.top
