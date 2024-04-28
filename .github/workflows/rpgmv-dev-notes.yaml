@@ -19,3 +19,5 @@ jobs:
           working-directory: ./docs/rpgmv-dev-notes
           alias-domains: |
             rpgmv-dev-notes.ruancat6312.top
+            rpgmv-dev-notes.ruan-cat.com
+            www.ruan-cat.com
