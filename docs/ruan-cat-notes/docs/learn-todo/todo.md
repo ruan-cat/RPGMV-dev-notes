@@ -94,3 +94,19 @@ https://codeium.com/
 ## twoslash shiki vitepress
 
 这些技术能够让文档站点的 typescript 代码提供惊人的行内提示。有空研究。
+
+## 钻头官网增加小爱丽丝看板娘/桌宠
+
+我应该先去复现几个 vuepress 看板娘例子，随后再开始和钻头沟通相关事宜。
+
+## vuepress 导入自定义组件
+
+在 vuepress 内导入 mo7 提供的自定义组件。学一下怎么深度定制 vuepress
+
+## 修复 md-it 的部署报错
+
+测试单仓项目，部署时出现错误。需要去处理。
+
+## 让 github action + vercel 实现有意义的 pnpm 单仓部署
+
+目前是不能实现有意义的单仓部署的。因为 vercel 工作流要求用指定工作路径实现单仓划分。这个很不合理。
