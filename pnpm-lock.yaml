@@ -26,9 +26,6 @@ importers:
       element-plus:
         specifier: ^2.6.1
         version: 2.7.2(vue@3.4.25)
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -52,13 +49,13 @@ importers:
         version: 0.18.5
     devDependencies:
       '@commitlint/cli':
-        specifier: ^19.2.0
+        specifier: ^19.3.0
         version: 19.3.0(@types/node@20.12.7)(typescript@5.4.5)
       '@commitlint/config-conventional':
-        specifier: ^19.1.0
+        specifier: ^19.2.2
         version: 19.2.2
       '@commitlint/lint':
-        specifier: ^19.1.0
+        specifier: ^19.2.2
         version: 19.2.2
       '@commitlint/types':
         specifier: ^19.0.3
@@ -69,9 +66,6 @@ importers:
       '@iconify/vue':
         specifier: ^4.1.1
         version: 4.1.2(vue@3.4.25)
-      '@types/lodash':
-        specifier: ^4.17.0
-        version: 4.17.0
       '@types/lodash-es':
         specifier: ^4.17.12
         version: 4.17.12
@@ -97,7 +91,7 @@ importers:
         specifier: 2.0.0-rc.15
         version: 2.0.0-rc.15(vuepress@2.0.0-rc.8)
       cz-git:
-        specifier: ^1.9.0
+        specifier: ^1.9.1
         version: 1.9.1
       moment:
         specifier: ^2.30.1
@@ -109,7 +103,7 @@ importers:
         specifier: ^3.17.1
         version: 3.17.1(typedoc@0.25.13)
       typescript:
-        specifier: ^5.4.2
+        specifier: ^5.4.5
         version: 5.4.5
       unplugin-auto-import:
         specifier: ^0.16.7
@@ -121,13 +115,13 @@ importers:
         specifier: 34.1.2
         version: 34.1.2
       vite-node:
-        specifier: ^1.4.0
+        specifier: ^1.5.2
         version: 1.5.2(@types/node@20.12.7)
       vitest:
         specifier: ^1.4.0
         version: 1.5.2(@types/node@20.12.7)(@vitest/ui@1.5.2)
       vue:
-        specifier: ^3.4.21
+        specifier: ^3.4.25
         version: 3.4.25(typescript@5.4.5)
       vuepress:
         specifier: 2.0.0-rc.8
@@ -142,23 +136,7 @@ importers:
         specifier: 2.0.0-rc.31
         version: 2.0.0-rc.31(@vuepress/plugin-docsearch@2.0.0-rc.19)(markdown-it@14.1.0)(typescript@5.4.5)(vuepress-plugin-search-pro@2.0.0-rc.31)(vuepress@2.0.0-rc.8)
 
-  docs/rpgmv-dev-notes:
-    devDependencies:
-      '@vuepress/bundler-vite':
-        specifier: 2.0.0-rc.8
-        version: 2.0.0-rc.8(@types/node@20.12.7)(typescript@5.4.5)
-      dayjs:
-        specifier: ^1.11.10
-        version: 1.11.10
-      vue:
-        specifier: ^3.4.16
-        version: 3.4.25(typescript@5.4.5)
-      vuepress:
-        specifier: 2.0.0-rc.8
-        version: 2.0.0-rc.8(@vuepress/bundler-vite@2.0.0-rc.8)(typescript@5.4.5)(vue@3.4.25)
-      vuepress-theme-hope:
-        specifier: 2.0.0-rc.31
-        version: 2.0.0-rc.31(@vuepress/plugin-docsearch@2.0.0-rc.19)(markdown-it@14.1.0)(typescript@5.4.5)(vuepress-plugin-search-pro@2.0.0-rc.31)(vuepress@2.0.0-rc.8)
+  docs/rpgmv-dev-notes: {}
 
   docs/ruan-cat-notes:
     dependencies:
@@ -180,9 +158,6 @@ importers:
       element-plus:
         specifier: ^2.6.1
         version: 2.7.2(vue@3.4.25)
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -205,27 +180,12 @@ importers:
         specifier: ^0.18.5
         version: 0.18.5
     devDependencies:
-      '@commitlint/cli':
-        specifier: ^19.2.0
-        version: 19.3.0(@types/node@20.12.7)(typescript@5.4.5)
-      '@commitlint/config-conventional':
-        specifier: ^19.1.0
-        version: 19.2.2
-      '@commitlint/lint':
-        specifier: ^19.1.0
-        version: 19.2.2
-      '@commitlint/types':
-        specifier: ^19.0.3
-        version: 19.0.3
       '@iconify/json':
         specifier: ^2.2.192
         version: 2.2.204
       '@iconify/vue':
         specifier: ^4.1.1
         version: 4.1.2(vue@3.4.25)
-      '@types/lodash':
-        specifier: ^4.17.0
-        version: 4.17.0
       '@types/lodash-es':
         specifier: ^4.17.12
         version: 4.17.12
@@ -238,21 +198,6 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^4.6.2
         version: 4.6.2(vite@5.2.10)(vue@3.4.25)
-      '@vitest/ui':
-        specifier: ^1.4.0
-        version: 1.5.2(vitest@1.5.2)
-      '@vuepress/bundler-vite':
-        specifier: 2.0.0-rc.8
-        version: 2.0.0-rc.8(@types/node@20.12.7)(typescript@5.4.5)
-      '@vuepress/plugin-docsearch':
-        specifier: 2.0.0-rc.19
-        version: 2.0.0-rc.19(@algolia/client-search@4.23.3)(search-insights@2.13.0)(typescript@5.4.5)(vuepress@2.0.0-rc.8)
-      '@vuepress/plugin-register-components':
-        specifier: 2.0.0-rc.15
-        version: 2.0.0-rc.15(vuepress@2.0.0-rc.8)
-      cz-git:
-        specifier: ^1.9.0
-        version: 1.9.1
       moment:
         specifier: ^2.30.1
         version: 2.30.1
@@ -262,39 +207,12 @@ importers:
       typedoc-plugin-markdown:
         specifier: ^3.17.1
         version: 3.17.1(typedoc@0.25.13)
-      typescript:
-        specifier: ^5.4.2
-        version: 5.4.5
       unplugin-auto-import:
         specifier: ^0.16.7
         version: 0.16.7(@vueuse/core@10.9.0)
       unplugin-vue-components:
         specifier: ^0.25.2
         version: 0.25.2(vue@3.4.25)
-      vercel:
-        specifier: 34.1.2
-        version: 34.1.2
-      vite-node:
-        specifier: ^1.4.0
-        version: 1.5.2(@types/node@20.12.7)
-      vitest:
-        specifier: ^1.4.0
-        version: 1.5.2(@types/node@20.12.7)(@vitest/ui@1.5.2)
-      vue:
-        specifier: ^3.4.21
-        version: 3.4.25(typescript@5.4.5)
-      vuepress:
-        specifier: 2.0.0-rc.8
-        version: 2.0.0-rc.8(@vuepress/bundler-vite@2.0.0-rc.8)(typescript@5.4.5)(vue@3.4.25)
-      vuepress-plugin-search-pro:
-        specifier: 2.0.0-rc.31
-        version: 2.0.0-rc.31(typescript@5.4.5)(vuepress@2.0.0-rc.8)
-      vuepress-plugin-typedoc:
-        specifier: 0.13.0
-        version: 0.13.0(typedoc-plugin-markdown@3.17.1)(typedoc@0.25.13)
-      vuepress-theme-hope:
-        specifier: 2.0.0-rc.31
-        version: 2.0.0-rc.31(@vuepress/plugin-docsearch@2.0.0-rc.19)(markdown-it@14.1.0)(typescript@5.4.5)(vuepress-plugin-search-pro@2.0.0-rc.31)(vuepress@2.0.0-rc.8)
 
 packages:
 
@@ -5286,6 +5204,7 @@ packages:
   /punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
 
   /qrcode@1.5.3:
