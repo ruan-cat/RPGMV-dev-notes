@@ -32,6 +32,7 @@
 		"pinia": "^2.1.7",
 		"pinia-plugin-persistedstate": "^3.2.1",
 		"uuid": "^9.0.1",
+		"vue": "^3.4.26",
 		"vue-json-excel3": "^0.0.9",
 		"xlsx": "^0.18.5"
 	},
@@ -60,7 +61,6 @@
 		"vercel": "34.1.2",
 		"vite-node": "^1.5.2",
 		"vitest": "^1.4.0",
-		"vue": "^3.4.25",
 		"vuepress": "2.0.0-rc.8",
 		"vuepress-plugin-search-pro": "2.0.0-rc.31",
 		"vuepress-plugin-typedoc": "0.13.0",
