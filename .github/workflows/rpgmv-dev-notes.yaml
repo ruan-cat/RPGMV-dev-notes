@@ -15,8 +15,8 @@ jobs:
           vercel-org-id: ${{ secrets.vercel_orgId}} #Required
           vercel-project-id: ${{ secrets.vercel_projectId}} #Required
           vercel-version: 34.1.2
-          vercel-args: "--prod"
-          working-directory: ./docs/rpgmv-dev-notes
+          vercel-args: "--prod --cwd ./ --local-config ./docs/rpgmv-dev-notes/vercel.json"
+          # working-directory: ./docs/rpgmv-dev-notes
           # 考虑不再主动部署到此路径 该路径预期被 cloudflare 实现域名重定向
           # www.ruan-cat.com
           alias-domains: |

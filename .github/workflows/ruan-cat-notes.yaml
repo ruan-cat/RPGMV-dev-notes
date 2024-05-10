@@ -15,8 +15,8 @@ jobs:
           vercel-org-id: ${{ secrets.vercel_orgId}} #Required
           vercel-project-id: ${{ secrets.vercel_projectId}} #Required
           vercel-version: 34.1.2
-          vercel-args: "--prod"
-          working-directory: ./docs/ruan-cat-notes
+          vercel-args: "--prod --cwd ./ --local-config ./docs/ruan-cat-notes/vercel.json"
+          # working-directory: ./docs/ruan-cat-notes
           alias-domains: |
             ruan-cat-notes.ruancat6312.top
             ruan-cat-notes.ruan-cat.com

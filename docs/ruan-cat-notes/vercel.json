@@ -1,9 +1,9 @@
 {
 	"framework": null,
-	"buildCommand": "vuepress-vite build docs",
+	"buildCommand": "pnpm run build:notes",
 	"installCommand": "pnpm install",
-	"outputDirectory": "docs/.vuepress/dist",
-	"devCommand": "vuepress-vite dev docs --clean-cache",
+	"outputDirectory": "docs/ruan-cat-notes/docs/.vuepress/dist",
+	"devCommand": "",
 	"public": false,
 	"git": {
 		"deploymentEnabled": {
