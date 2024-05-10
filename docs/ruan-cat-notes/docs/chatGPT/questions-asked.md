@@ -1747,3 +1747,17 @@ const writeInMdFile: WriteInMdFile = function writeInMdFile(config) {
 	// 请补全此函数
 };
 ```
+
+## 编写指定规则
+
+请为我编写符合 gitignore syntax 规则的配置。要求如下；
+
+在整个项目内，匹配以下形式的文件：
+
+tsconfig.json
+tsconfig.option.json
+tsconfig.base.json
+tsconfig.eslint.json
+tsconfig.build.json
+tsconfig.foo.json
+···
