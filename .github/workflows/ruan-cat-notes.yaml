@@ -1,8 +1,11 @@
 name: ruan-cat-notes
 on:
   push:
-    branches-ignore:
+    # branches-ignore:
+    #   - main
+    branches:
       - main
+			- dev
 
 jobs:
   deploy:
