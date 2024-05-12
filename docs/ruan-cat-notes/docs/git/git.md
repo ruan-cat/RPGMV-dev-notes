@@ -62,22 +62,25 @@ git push origin -d your-branch-name
 git rm -r --cached .
 ```
 
-## 查看 git 本地配置
+## 查看 git 配置
 
-- 查看系统 config
+- 查看系统配置
 
 ```bash
 git config --system --list
 ```
 
-- 查看本机的全局配置
+- 查看全局配置
 
 ```bash
 git config --global --list
 ```
 
-设置本机的用户名
-`git config --global user.name ruan-cat`
+- 查看本地配置
+
+```bash
+git config --local --list
+```
 
 ## 认证失败
 
