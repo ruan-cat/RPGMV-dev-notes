@@ -5,7 +5,7 @@ on:
     #   - main
     branches:
       - main
-			- dev
+      - dev
 
 jobs:
   deploy:
