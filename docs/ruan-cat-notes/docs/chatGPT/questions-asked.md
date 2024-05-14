@@ -1761,3 +1761,64 @@ tsconfig.eslint.json
 tsconfig.build.json
 tsconfig.foo.json
 ···
+
+## 编写文件批处理 typescript
+
+请为我编写一段 typescript 批处理脚本
+
+### 需求
+
+运行该函数，将当前目录下全部以 `.docx` 或者是 `.doc` 结尾的文件，全部重命名。按照
+
+### 可供你补全的 typescript 代码片段
+
+```ts
+/** 默认 文件后缀名 */
+const defFileSuffixs = ["docx", "doc"];
+
+type RenameTemplate = (params: {
+	/** 原文件名称 */
+	originFilename: string;
+
+	/** 文件后缀名 */
+	suffix: string;
+
+	/** 添加项 */
+	addon: string;
+
+	[key: string]: unknown;
+}) => string;
+
+/** 函数配置 */
+type Config = {
+	/** 要处理的文件后缀名 */
+	fileSuffixs: string[];
+
+	/** 重命名函数模板 */
+	renameTemplate: RenameTemplate;
+};
+
+const defaultRenameTemplate: RenameTemplate = function defaultRenameTemplate(
+	params
+) {
+	const { addon, originFilename, suffix } = params;
+	return `${originFilename}-（${addon}）.${suffix}`;
+};
+
+/** 默认参数配置 */
+const defaultParams: Config = {
+	fileSuffixs: defFileSuffixs,
+	renameTemplate: defaultRenameTemplate,
+};
+
+/**
+ * 重命名当前目录下的文件
+ */
+function renameCurrentDirectoryFiles(params?: Config): void {
+	// 请补全此处代码
+}
+```
+
+### 技术栈
+
+typescript + node
