@@ -1822,3 +1822,104 @@ function renameCurrentDirectoryFiles(params?: Config): void {
 ### 技术栈
 
 typescript + node
+
+## 制作命令行工具
+
+请将以下函数，封装成命令行工具。
+
+```ts
+import fs from "fs";
+import path from "path";
+import dayjs from "dayjs";
+import { merge } from "lodash-es";
+
+/** 默认 文件后缀名 */
+const defFileSuffixs = ["docx", "doc"];
+
+type RenameTemplate = (params: {
+	/** 原文件名称 */
+	originFilename: string;
+
+	/** 文件后缀名 */
+	suffix: string;
+
+	/** 添加项 */
+	addon: string;
+
+	[key: string]: unknown;
+}) => string;
+
+/** 函数配置 */
+type Config = {
+	/** 要处理的文件后缀名 */
+	fileSuffixs?: string[];
+
+	/** 重命名函数模板 */
+	renameTemplate?: RenameTemplate;
+
+	/** 添加的文本说明 */
+	addonCommit: string;
+};
+
+const defaultRenameTemplate: RenameTemplate = function defaultRenameTemplate(
+	params
+) {
+	const { addon, originFilename, suffix } = params;
+	const date = dayjs().format("YYYY-MM-DD");
+	return `${originFilename}-（${date} ${addon}）.${suffix}`;
+};
+
+/** 默认参数配置 */
+const defaultParams: Required<Config> = {
+	fileSuffixs: defFileSuffixs,
+	renameTemplate: defaultRenameTemplate,
+	addonCommit: "",
+};
+
+/**
+ * 重命名当前目录下的文件
+ */
+function renameCurrentDirectoryFiles(params?: Config): void {
+	const currentConfig = merge(defaultParams, params || {});
+	const { fileSuffixs, renameTemplate, addonCommit: addon } = currentConfig;
+
+	const files = fs.readdirSync(__dirname);
+	files.forEach((file) => {
+		const ext = path.extname(file).slice(1);
+		if (fileSuffixs.includes(ext)) {
+			const filename = path.basename(file, `.${ext}`);
+			const newFilename = renameTemplate({
+				originFilename: filename,
+				suffix: ext,
+				addon,
+			});
+			fs.renameSync(
+				path.join(__dirname, file),
+				path.join(__dirname, `${newFilename}`)
+			);
+
+			console.log(" 已重命名文件  ", newFilename);
+		}
+	});
+}
+
+renameCurrentDirectoryFiles({ addonCommit: "test" });
+```
+
+### 使用默认的方式来重命名
+
+使用方式期望如下：
+
+```bash
+rncdf
+```
+
+当我运行该命令时，即可开始重命名当前目录下的文件。
+
+### 根据字符串做重命名
+
+```bash
+rncdf -c="你好"
+```
+
+参数 `-c` 对应的值是上述函数的 addonCommit 参数。
