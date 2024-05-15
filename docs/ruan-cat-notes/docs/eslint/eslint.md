@@ -4,14 +4,14 @@
 
 ```json
 {
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,vue}": ["eslint --fix", "git add"]
-  }
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,vue}": ["eslint --fix", "git add"]
+	}
 }
 ```
 
@@ -20,3 +20,18 @@
 目前这个配置的效果是：每次`git`推送时，都做一次`eslint`的格式化。
 
 这个配置可以规范团队协作时的代码规范，但是目前不敢使用。因为团队不使用`git`来控制代码版本。
+
+## 前端工程化 eslint
+
+- [antfu：为什么我不使用 Prettier](https://antfu.me/posts/why-not-prettier-zh)
+- https://github.com/antfu/eslint-config
+- [前端规范(一)之 ESlint 以及@antfu/eslint-config](https://blog.csdn.net/weixin_42424283/article/details/128806611)
+- [ESLint 扁平化配置使用指南](https://juejin.cn/post/7282606413841580091)
+- [Nuxt 深入浅出 · 配置 antfu.eslint-config](https://juejin.cn/post/7338074027281104936)
+
+## eslint 和 prettier 的依赖包
+
+- eslint-plugin-prettier
+- eslint-config-prettier
+
+这两个依赖包，我一直以来都搞不清楚是什么关系的。
