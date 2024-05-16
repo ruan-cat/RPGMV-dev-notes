@@ -50,6 +50,8 @@
 
 ## @antfu/eslint-config 的使用
 
-可能的包覆盖配置？
+未来我应该要写包的依赖配置，比如我导入了很多 eslint 的插件，但是不清楚该怎么去覆盖其提供的默认配置。
 
-未来我应该要写包的依赖配置
+可能的包覆盖配置教程：
+
+- https://github.com/antfu/eslint-config/blob/main/README.md#rules-overrides
