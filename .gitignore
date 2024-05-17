@@ -20,5 +20,8 @@ docs/docs-typedoc
 # 忽略掉 @vitest/ui 生成的本地测试页面
 html
 
+# 不提供包锁文件 自动生成的文件 不应该提交到仓库中
+pnpm-lock.yaml
+
 # 默认忽略掉本地生成的 vercel 目录
 .vercel

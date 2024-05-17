@@ -6,9 +6,9 @@
 	"license": "MIT",
 	"type": "module",
 	"engines": {
-		"node": ">=16.0.0",
+		"node": ">=18",
 		"vscode": "^1.22.0",
-		"pnpm": ">=8.0.0"
+		"pnpm": ">=8"
 	},
 	"packageManager": "pnpm@8.15.8",
 	"scripts": {
