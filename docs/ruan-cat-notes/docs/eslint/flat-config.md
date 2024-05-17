@@ -21,3 +21,4 @@ eslint 的配置愈发复杂，最近推出了扁平化配置。
 迁移参考资料：
 
 - https://eslint.org/docs/latest/use/configure/migration-guide
+- https://github.com/antfu/eslint-config/blob/main/README.md#rules-overrides
