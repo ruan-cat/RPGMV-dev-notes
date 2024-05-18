@@ -1923,3 +1923,47 @@ rncdf -c="你好"
 ```
 
 参数 `-c` 对应的值是上述函数的 addonCommit 参数。
+
+## 为我新建 monorepo 例子
+
+请在当前项目内的 demos 文件夹内，新建两个基于 pnpm+typescript 的 monorepo 项目。
+
+第一个项目名叫 add-tool，第二个项目名叫 main-app。
+
+main-app 项目引用 add-tool 项目。
+
+### package.json 注意事项
+
+注意两个 package.json 项目的 type 字段必须取值为 module。
+
+```json
+{
+	"type": "module"
+}
+```
+
+### add-tool 项目的 package.json 注意事项
+
+```json
+{
+	"main": "./src/index.ts"
+}
+```
+
+### tsconfig.json
+
+请看情况自由发挥即可。
+
+##
+
+```bash
+TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for E:\code\rzn\github-desktop-store\vercel-monorepo-test\demos\main-app\src\index.ts
+    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:160:9)
+    at defaultGetFormat (node:internal/modules/esm/get_format:203:36)
+    at defaultLoad (node:internal/modules/esm/load:141:22)
+    at async ModuleLoader.load (node:internal/modules/esm/loader:409:7)
+    at async ModuleLoader.moduleProvider (node:internal/modules/esm/loader:291:45)
+    at async link (node:internal/modules/esm/module_job:76:21) {
+  code: 'ERR_UNKNOWN_FILE_EXTENSION'
+}
+```
