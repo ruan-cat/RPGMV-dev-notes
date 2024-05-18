@@ -1954,7 +1954,9 @@ main-app 项目引用 add-tool 项目。
 
 请看情况自由发挥即可。
 
-##
+## 处理 monorepo 运行时产生的错误
+
+在 demo 内的两个子包 add-tool 和 main-app 项目内，运行了 main-app 的 start 命令，出现以下错误：
 
 ```bash
 TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for E:\code\rzn\github-desktop-store\vercel-monorepo-test\demos\main-app\src\index.ts
@@ -1967,3 +1969,11 @@ TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for E:\code
   code: 'ERR_UNKNOWN_FILE_EXTENSION'
 }
 ```
+
+请为我解决。
+
+## tsc 打包产物没有 js 文件
+
+在 demo 目录下的 add-tool 项目内，使用 tsc 打包子包时，dist 文件夹内没有出现任何 js 文件，这影响了另外的子包 main-app 的正常运行。
+
+请修复此问题。
