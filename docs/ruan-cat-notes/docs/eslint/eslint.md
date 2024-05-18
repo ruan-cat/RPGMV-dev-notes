@@ -10,6 +10,8 @@
 
 以后学习 eslint 配置时，自己要意识到什么是旧版配置，什么是新版配置。新旧版本配置如何迁移切换？
 
+在前端工程化的大方向上，学习 eslint。
+
 ## git 提交时的自动格式化配置
 
 在观察别人的后台管理项目时，可以在`package.json`内看到类似的配置：
@@ -35,23 +37,9 @@
 
 ## 前端工程化 eslint
 
-- [antfu：为什么我不使用 Prettier](https://antfu.me/posts/why-not-prettier-zh)
-- https://github.com/antfu/eslint-config
-- [前端规范(一)之 ESlint 以及@antfu/eslint-config](https://blog.csdn.net/weixin_42424283/article/details/128806611)
-- [ESLint 扁平化配置使用指南](https://juejin.cn/post/7282606413841580091)
-- [Nuxt 深入浅出 · 配置 antfu.eslint-config](https://juejin.cn/post/7338074027281104936)
-
 ## eslint 和 prettier 的依赖包
 
 - eslint-plugin-prettier
 - eslint-config-prettier
 
 这两个依赖包，我一直以来都搞不清楚是什么关系的。
-
-## @antfu/eslint-config 的使用
-
-未来我应该要写包的依赖配置，比如我导入了很多 eslint 的插件，但是不清楚该怎么去覆盖其提供的默认配置。
-
-可能的包覆盖配置教程：
-
-- https://github.com/antfu/eslint-config/blob/main/README.md#rules-overrides

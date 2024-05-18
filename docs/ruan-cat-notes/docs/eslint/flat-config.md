@@ -3,6 +3,7 @@
 eslint 的配置愈发复杂，最近推出了扁平化配置。
 
 - https://eslint.org/blog/2023/10/flat-config-rollout-plans/#main
+- [ESLint 扁平化配置使用指南](https://juejin.cn/post/7282606413841580091)
 
 ## 从 .eslintrc 到 eslint.config.js
 
