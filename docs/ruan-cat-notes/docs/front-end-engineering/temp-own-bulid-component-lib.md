@@ -4,5 +4,10 @@
 
 ## 参考资料
 
-- https://zhuanlan.zhihu.com/p/642832357
-- https://juejin.cn/post/7254341178258505788
+- [掘金 【从 0 到 1 搭建 Vue 组件库框架】0. 系列导论](https://juejin.cn/post/7254341178258505788)
+
+## 进度
+
+类型检查
+
+- https://juejin.cn/post/7257517788205367351#heading-9
