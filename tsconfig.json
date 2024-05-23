@@ -51,6 +51,9 @@
 		"docs/rpgmv-dev-notes/.vuepress/types/**/*.d.ts",
 		"docs/rpgmv-dev-notes/.vuepress/types/auto-imports.d.ts",
 		"docs/rpgmv-dev-notes/.vuepress/types/components.d.ts",
+		// 在笔记项目内，增加配置 尝试让typescript识别vue组件的类型
+		// 组件变成绿色的了 但是对于导入的vue模块而言，仍旧无法推断其类型
+		"docs/ruan-cat-notes/docs/.vuepress/components/**/*.vue",
 		// 测试文件集
 		"tests/**/*.ts"
 	],
