@@ -16,3 +16,49 @@
 可能的包覆盖配置教程：
 
 - https://github.com/antfu/eslint-config/blob/main/README.md#rules-overrides
+
+## 安装并配置 eslint-plugin-prettier 和 eslint-config-prettier
+
+- [github.com/prettier/eslint-config-prettier](https://github.com/prettier/eslint-config-prettier/blob/main/README.md)
+- [github.com/prettier/eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier/blob/master/README.md)
+
+根据仓库的教程，结合扁平化配置，配置示例如下。
+
+```js
+import antfu from "@antfu/eslint-config";
+import js from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier";
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import { FlatCompat } from "@eslint/eslintrc";
+
+export default antfu(
+	{
+		// 个人配置
+	},
+
+	// 旧文件格式的迁移配置
+	...compat.config({
+		extends: ["eslint:recommended"],
+	}),
+
+	{
+		rules: {
+			"prettier/prettier": [
+				"off",
+				{
+					usePrettierrc: true,
+				},
+			],
+		},
+	},
+
+	eslintPluginPrettierRecommended,
+	eslintConfigPrettier
+);
+```
+
+## 额外封装 prettier cli 命令
+
+- https://stackoverflow.com/questions/44690308/whats-the-difference-between-prettier-eslint-eslint-plugin-prettier-and-eslint
+
+这篇教程，说明了我们在使用 eslint-config-prettier 时，仍旧需要手动封装命令行。
