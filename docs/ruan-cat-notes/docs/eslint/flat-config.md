@@ -17,7 +17,7 @@ eslint 的配置愈发复杂，最近推出了扁平化配置。
 
 - https://eslint.org/blog/2023/10/flat-config-rollout-plans/#main
 
-###
+### 参考资料
 
 迁移参考资料：
 
