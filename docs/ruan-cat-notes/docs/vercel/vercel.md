@@ -1,5 +1,7 @@
 # vercel
 
+我是 vercel 的重度使用用户，这里记录着关于 vercel 部署的一些实践。
+
 ## vercel.json ？
 
 ## vercel 被墙的 cname 配置
