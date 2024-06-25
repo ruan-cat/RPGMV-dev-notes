@@ -152,7 +152,7 @@ export default hopeTheme({
 			// 上下角标
 			sub: true,
 			sup: true,
-			// mermaid: true,
+			mermaid: true,
 		},
 
 		/**
