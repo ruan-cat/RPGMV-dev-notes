@@ -1,5 +1,4 @@
 import dayjs from "dayjs";
-
 import { hopeTheme } from "vuepress-theme-hope";
 
 /** 作者对外称呼 */
@@ -27,7 +26,7 @@ export default hopeTheme({
 		url: "https://github.com/RuanZhongNan",
 	},
 
-	iconAssets: "iconfont",
+	// iconAssets: "iconfont",
 
 	logo: undefined,
 

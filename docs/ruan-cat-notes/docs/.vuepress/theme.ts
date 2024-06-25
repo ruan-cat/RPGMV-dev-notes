@@ -27,8 +27,6 @@ export default hopeTheme({
 		url: "https://github.com/RuanZhongNan",
 	},
 
-	iconAssets: "iconfont",
-
 	// logo: '/logo.svg',
 	logo: undefined,
 
@@ -146,12 +144,15 @@ export default hopeTheme({
 			imgLazyload: true,
 			imgSize: true,
 			figure: true,
-			include: true, //导入文件
+			//导入文件
+			include: true,
 			mark: true,
 			footnote: true,
 			tasklist: true,
-			sub: true, // 上下角标
+			// 上下角标
+			sub: true,
 			sup: true,
+			// mermaid: true,
 		},
 
 		/**
