@@ -79,6 +79,7 @@ export default hopeTheme({
 			tasklist: true,
 			sub: true, // 上下角标
 			sup: true,
+			mermaid: true,
 		},
 
 		/**

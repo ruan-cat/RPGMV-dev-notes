@@ -54,6 +54,7 @@
 		"@vuepress/plugin-docsearch": "2.0.0-rc.26",
 		"@vuepress/plugin-register-components": "2.0.0-rc.21",
 		"cz-git": "^1.9.1",
+		"mermaid": "^10.9.1",
 		"moment": "^2.30.1",
 		"only-allow": "^1.2.1",
 		"typedoc": "^0.25.13",
