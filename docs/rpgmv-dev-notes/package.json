@@ -1,13 +1,13 @@
 {
-	"name": "@ruan-cat-docs/rpgmv-dev-notes",
-	"version": "1.0.0",
-	"author": "阮喵喵",
-	"license": "MIT",
-	"description": "阮喵喵的rmmv开发笔记",
-	"scripts": {
-		"docs:build": "vuepress-vite build docs",
-		"docs:clean-dev": "vuepress-vite dev docs --clean-cache",
-		"docs:dev": "vuepress-vite dev docs",
-		"docs:update-package": "pnpm dlx vp-update"
-	}
+  "name": "@ruan-cat-docs/rpgmv-dev-notes",
+  "version": "1.0.0",
+  "author": "阮喵喵",
+  "license": "MIT",
+  "description": "阮喵喵的rmmv开发笔记",
+  "scripts": {
+    "docs:build": "vuepress-vite build docs",
+    "docs:clean-dev": "vuepress-vite dev docs --clean-cache",
+    "docs:dev": "vuepress-vite dev docs",
+    "docs:update-package": "pnpm dlx vp-update"
+  }
 }
