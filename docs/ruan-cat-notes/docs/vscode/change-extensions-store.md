@@ -40,14 +40,14 @@ cmd /c mklink /D "C:\Users\ruanzhongnan\.vscode" "E:\store\vscode\"
 
 1. 本机安装了 vercel.turbo-vsc
 
-> ![2024-06-27-16-58-41](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-06-27-16-58-41.png)
+![2024-06-27-16-58-41](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-06-27-16-58-41.png)
 
 2. vercel.turbo-vsc-2.0.0 存在于 E 盘
 
-> ![2024-06-27-16-58-53](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-06-27-16-58-53.png)
+![2024-06-27-16-58-53](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-06-27-16-58-53.png)
 
 3. 手动删除文件，在 vsc 重新安装一次，可以看到 E 盘有文件更新。依赖被成功安装，且安装在 E 盘。
 
-> ![2024-06-27-16-59-07](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-06-27-16-59-07.png)
+![2024-06-27-16-59-07](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-06-27-16-59-07.png)
 
 vsc 软链接配置成功。
