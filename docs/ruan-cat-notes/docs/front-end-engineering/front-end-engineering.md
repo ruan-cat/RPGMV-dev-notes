@@ -7,3 +7,7 @@
 TODO: 认为这个仓库值得学习。看看人家是怎么实现配置的。
 
 - https://github.com/dishait/tov-template
+
+## 整体导论
+
+TODO: 前端工程化肯定有别人整理好的总结、入门概论等。需要去收集并阅读一遍。
