@@ -11,70 +11,64 @@
 // 	}
 // }
 
-.vp-breadcrumb,
-.vp-page-title,
-.toc-place-holder,
-.theme-hope-content:not(.custom) {
-	max-width: 95vw;
-}
-
-// @media (min-width: $pc) {
-//   .toggle-sidebar-wrapper {
-//     display: unset;
-//   }
+// .vp-breadcrumb,
+// .vp-page-title,
+// .toc-place-holder,
+// .theme-hope-content:not(.custom) {
+// 	max-width: 95vw;
 // }
 
-$scrollbar-width: 1rem;
+// $scrollbar-width: 1rem;
 
-/*滚动条样式*/
-::-webkit-scrollbar {
-	width: $scrollbar-width;
-}
+// /*滚动条样式*/
+// ::-webkit-scrollbar {
+// 	width: $scrollbar-width;
+// }
 
-::-webkit-scrollbar-thumb {
-	width: $scrollbar-width;
-	border-radius: calc($scrollbar-width * 0.5);
+// ::-webkit-scrollbar-thumb {
+// 	width: $scrollbar-width;
+// 	border-radius: calc($scrollbar-width * 0.5);
 
-	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-	background: rgba(0, 0, 0, 0.2);
-}
+// 	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+// 	background: rgba(0, 0, 0, 0.2);
+// }
 
-::-webkit-scrollbar-track {
-	width: $scrollbar-width;
-	border-radius: calc($scrollbar-width * 0.5);
+// ::-webkit-scrollbar-track {
+// 	width: $scrollbar-width;
+// 	border-radius: calc($scrollbar-width * 0.5);
 
-	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-	background: rgba(0, 0, 0, 0.1);
-}
+// 	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+// 	background: rgba(0, 0, 0, 0.1);
+// }
 
-aside#sidebar {
-	$color: palevioletred;
-	$width-s: 0.4rem;
-	$width-l: 1rem;
+// aside#sidebar {
+// 	$color: palevioletred;
+// 	$width-s: 0.4rem;
+// 	$width-l: 1rem;
 
-	& {
-		&::-webkit-scrollbar {
-			width: $width-s;
-		}
+// 	& {
+// 		&::-webkit-scrollbar {
+// 			width: $width-s;
+// 		}
 
-		&::-webkit-scrollbar-track {
-			width: $width-s;
-		}
+// 		&::-webkit-scrollbar-track {
+// 			width: $width-s;
+// 		}
 
-		&::-webkit-scrollbar-thumb {
-			width: $width-s;
-			background-color: $theme-color;
-		}
-	}
+// 		&::-webkit-scrollbar-thumb {
+// 			width: $width-s;
+// 			background-color: $theme-color;
+// 		}
+// 	}
 
-	&:hover {
-		&::-webkit-scrollbar {
-			width: $width-l;
-		}
-	}
+// 	&:hover {
+// 		&::-webkit-scrollbar {
+// 			width: $width-l;
+// 		}
+// 	}
 
-	&::-webkit-scrollbar-track-piece {
-		border-radius: 6px;
-		background: #0000001a;
-	}
-}
+// 	&::-webkit-scrollbar-track-piece {
+// 		border-radius: 6px;
+// 		background: #0000001a;
+// 	}
+// }
