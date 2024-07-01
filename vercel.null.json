@@ -1,0 +1,13 @@
+{
+	"framework": null,
+	"buildCommand": null,
+	"installCommand": null,
+	"outputDirectory": null,
+	"devCommand": null,
+	"public": false,
+	"git": {
+		"deploymentEnabled": {
+			"main": false
+		}
+	}
+}
