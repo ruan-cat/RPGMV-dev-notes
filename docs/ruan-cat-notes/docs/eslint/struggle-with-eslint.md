@@ -2,6 +2,13 @@
 
 这里记录配置 eslint 的各种问题，这里会不断优化，迭代最佳实践
 
+## 要安装的依赖
+
+```bash
+pnpm i -D eslint @antfu/eslint-config eslint-config-prettier eslint-plugin-prettier
+pnpm i -D prettier prettier-plugin-lint-md
+```
+
 ## .vscode\settings.json
 
 ```json
@@ -120,18 +127,27 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 ```
 
-## .prettierrc
+## prettier.config.js
 
-```json
-{
-	"singleQuote": false,
-	"printWidth": 120,
-	"semi": true,
-	"jsxSingleQuote": true,
-	"useTabs": true,
-	"tabWidth": 2,
-	"endOfLine": "auto"
-}
+```js
+// @ts-check
+/** @type {import("prettier").Config} */
+const config = {
+	plugins: ["prettier-plugin-lint-md"],
+	singleQuote: false,
+	printWidth: 120,
+	semi: true,
+	jsxSingleQuote: true,
+	useTabs: true,
+	tabWidth: 2,
+	endOfLine: "auto",
+	"space-around-alphabet": true,
+	"space-around-number": true,
+	"no-empty-code-lang": false,
+	"no-empty-code": false,
+};
+
+export default config;
 ```
 
 ## eslint.config.js
@@ -228,6 +244,6 @@ export default antfu(
 	},
 
 	eslintConfigPrettier,
-	eslintPluginPrettierRecommended
+	eslintPluginPrettierRecommended,
 );
 ```
