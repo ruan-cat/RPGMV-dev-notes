@@ -5,7 +5,8 @@
 ## 要安装的依赖
 
 ```bash
-pnpm i -D eslint @antfu/eslint-config eslint-config-prettier eslint-plugin-prettier
+pnpm i -D eslint @antfu/eslint-config eslint-plugin-prettier
+pnpm i -D eslint-config-prettier @types/eslint-config-prettier
 pnpm i -D prettier prettier-plugin-lint-md
 ```
 
@@ -168,8 +169,16 @@ export default antfu(
 		},
 
 		// TypeScript and Vue are auto-detected, you can also explicitly enable them:
+		/**
+		 * @see https://stackoverflow.com/questions/65137939/typescript-eslint-throws-cannot-read-file-tsconfig-json-in-every-project-i-s
+		 */
 		typescript: {
-			tsconfigPath: "tsconfig.json",
+			tsconfigPath: "./tsconfig.json",
+			parserOptions: {
+				project: "tsconfig.json",
+				sourceType: "module",
+				tsconfigRootDir: __dirname,
+			},
 		},
 
 		vue: true,
