@@ -56,8 +56,21 @@ TODO:
 
 [点此了解本笔记关于 node 项目包管理器约束的文章](../pnpm/node-project-assign-pkg-manager.md)。
 
-## packageManager
+## 快速查询包的版本和相关信息
 
-这个字段到底应该写成什么样子比较好？
+快速地使用命令行查询包的信息，避免直接在浏览器内访问 npm 官网，查询比较慢。
 
-- https://github.com/botpress/botpress/blob/master/package.json#L35
+- https://docs.npmjs.com/cli/v10/commands/npm-view
+
+```bash
+npm v you-package-name
+```
+
+### 举例
+
+```bash
+npm v vercel
+
+# pnpm也能够支持该命令简写
+pnpm v vercel
+```

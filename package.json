@@ -66,7 +66,7 @@
 		"moment": "^2.30.1",
 		"only-allow": "^1.2.1",
 		"prettier": "^3.3.2",
-		"prettier-plugin-lint-md": "^1.0.0",
+		"prettier-plugin-lint-md": "^1.0.1",
 		"rimraf": "^5.0.7",
 		"shx": "^0.3.4",
 		"turbo": "^2.0.6",
