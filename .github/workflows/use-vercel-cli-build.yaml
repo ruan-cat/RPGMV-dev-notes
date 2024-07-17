@@ -27,7 +27,7 @@ env:
 on:
   push:
     branches:
-      - monorepo
+      # - monorepo
       - main
 
 jobs:

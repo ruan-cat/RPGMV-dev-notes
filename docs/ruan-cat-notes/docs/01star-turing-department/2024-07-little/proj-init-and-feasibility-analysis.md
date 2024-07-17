@@ -14,4 +14,12 @@ order: 30
 
 ## 前端项目开发环境搭建
 
+### node
+
+使用 nvm 工具设置 node 环境。node 环境为 20.10 版本。
+
+### vscode
+
+开发工具为 vscode。也可以使用 idea 和 webstorm。
+
 ## 预期的数据对象与字段设计
