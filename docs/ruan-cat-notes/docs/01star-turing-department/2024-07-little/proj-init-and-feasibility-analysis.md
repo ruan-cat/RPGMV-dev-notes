@@ -22,4 +22,10 @@ order: 30
 
 开发工具为 vscode。也可以使用 idea 和 webstorm。
 
+- https://code.visualstudio.com/Download
+
 ## 预期的数据对象与字段设计
+
+以下的内容，默认使用 typescript 来描述。
+
+### 订单类型

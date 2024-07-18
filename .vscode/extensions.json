@@ -20,6 +20,10 @@
 		"chrischinchilla.vscode-pandoc",
 		"dendron.dendron-paste-image",
 		"shd101wyy.markdown-preview-enhanced",
+		// svg流程图绘制插件 https://blog.mo7.cc/tools/vscode/vscode_Draw.html
+		"jock.svg",
+		"eightHundreds.vscode-mindmap",
+		"hediet.vscode-drawio"
 	],
 	"unwantedRecommendations": [
 		// 不使用该插件
