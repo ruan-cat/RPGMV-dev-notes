@@ -28,4 +28,8 @@ order: 30
 
 以下的内容，默认使用 typescript 来描述。
 
+### 订单
+
+@[code ts](./data/Order.ts)
+
 ### 订单类型

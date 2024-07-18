@@ -16,9 +16,12 @@
 		"esModuleInterop": true,
 		"noEmit": true,
 		"allowJs": true,
+		// Web 应用需要 DOM 环境
 		"lib": [
 			"ESNext",
-			"DOM"
+			"ES2020",
+			"DOM",
+			"DOM.Iterable"
 		],
 		"typeRoots": [
 			"./types"
@@ -27,8 +30,15 @@
 			/** https://juejin.cn/post/7262322846252613693 */
 			"element-plus/global",
 			// "element-plus/global.d.ts"
+			"vite/client",
 		],
 		"paths": {
+			"@/*": [
+				"./src/*"
+			],
+			"utils/*": [
+				"./src/utils/*"
+			],
 			"@docs/*": [
 				"./docs/*"
 			]
