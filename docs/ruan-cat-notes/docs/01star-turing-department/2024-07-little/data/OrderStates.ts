@@ -5,7 +5,9 @@
 // 	10, // 待支付
 // ];
 
-const enum orderStates {
+/** 订单状态 */
+// const
+export enum OrderStates {
 	/** 未支付 */
 	Unpaid = 10,
 	/** 待支付 */
@@ -15,6 +17,3 @@ const enum orderStates {
 	/** 已完成 */
 	Completed = 40,
 }
-
-/** 订单状态 */
-export type OrderStates = (typeof orderStates)[keyof typeof orderStates];
