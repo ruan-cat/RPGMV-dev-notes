@@ -17,7 +17,7 @@
 		"@vueuse/core": "^10.11.0",
 		"animate.css": "^4.1.1",
 		"axios": "^1.7.2",
-		"dayjs": "^1.11.11",
+		"dayjs": "^1.11.12",
 		"element-plus": "^2.7.7",
 		"lodash-es": "^4.17.21",
 		"node-localstorage": "^2.2.1",
@@ -28,7 +28,7 @@
 		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.228",
+		"@iconify/json": "^2.2.229",
 		"@iconify/vue": "^4.1.2",
 		"@types/lodash-es": "^4.17.12",
 		"@types/node": "^20.14.11",
