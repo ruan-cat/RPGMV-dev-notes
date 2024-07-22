@@ -27,6 +27,14 @@ corepack use pnpm@latest
 pnpm up -g pnpm@latest
 ```
 
+## pnpm 自己认输啦，要依赖于 corepack 了
+
+好像是 9 版本，在 pnpm9 版本内，不能原地升级了，要依赖于 corepack 才行。
+
+```bash
+corepack install -g pnpm@latest
+```
+
 ## 用 corepack 实现当前 node 项目的包管理器设置
 
 - https://lyh543.github.io/posts/2023-04-28-install-pnpm-by-corepack.html

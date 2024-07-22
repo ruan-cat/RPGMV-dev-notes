@@ -155,7 +155,7 @@ C:\Windows\system32>\store\pnpm\global-dir\5\node_modules\pnpm\bin\pnpm.cjs" i -
 
 ## 安装后无法被识别到
 
-```
+```plain
 PS E:\code\rzn\personal-proj\RPGMV-dev-notes> pnpm -v
 pnpm : 无法将“pnpm”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
 所在位置 行:1 字符: 1
@@ -169,7 +169,7 @@ pnpm : 无法将“pnpm”项识别为 cmdlet、函数、脚本文件或可运�
 
 ## cmd 无权限
 
-```
+```plain
 PS C:\Windows\system32> pnpm -v
 pnpm : 无法加载文件 E:\dev-evn\node-store\node_global\pnpm.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:
 /go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
@@ -235,3 +235,17 @@ corepack use pnpm@latest
 ```
 
 这里会给 package.json 加上 packageManager。
+
+## 升级 pnpm
+
+之前的升级方式是，pnpm 原地升级。
+
+```bash
+pnpm up -g pnpm@latest
+```
+
+现在的升级方式改了，变成要依赖于 corepack 的升级方式了。
+
+```bash
+corepack install -g pnpm@latest
+```
