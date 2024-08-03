@@ -18,7 +18,7 @@ axios 的拦截器，可以更改返回值，一般来说返回值是 AxiosRespo
 
 以[该仓库](https://github.com/vbenjs/vue-vben-admin)为例：
 
-::: details 拦截器返回解包后的 data
+::: details 响应拦截器解包 data
 
 ```ts {5}
 client.addResponseInterceptor<HttpResponse>((response) => {
@@ -117,7 +117,7 @@ service.interceptors.response.use(
 
 在使用的时候，针对第一个泛型参数，直接填值为 any。重点为第二个泛型参数的填写，直接填写我们期望的返回值即可：
 
-::: details
+::: details 泛型函数传参
 
 ```ts {2}
 function getPage(queryParams: DictPageQuery) {
