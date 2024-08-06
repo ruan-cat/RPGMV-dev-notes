@@ -36,7 +36,29 @@ cd templates
 git sparse-checkout add worker-d1-api
 ```
 
-参数配置具体含义
+参数配置具体含义见参考资料。
+
+## 其他尝试
+
+上述的方案有点不好用。以下是其他项目的稀疏检出实践：
+
+::: details 参考资料
+
+- https://youwu.today/blog/git-sparse-checkout-for-partial-repository-clone/
+
+:::
+
+::: details github cloudflare/workers-sdk
+
+```bash
+git clone --filter=blob:none --sparse --depth=1 -n https://github.com/cloudflare/workers-sdk
+cd workers-sdk
+git sparse-checkout init --cone
+git sparse-checkout add templates/worker-d1-api
+git checkout
+```
+
+:::
 
 ## 稀疏检出对仓库的支持程度有限么？
 
