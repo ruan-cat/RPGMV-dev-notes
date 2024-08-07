@@ -1,5 +1,17 @@
+$drill-main-color: rgb(115, 173, 255);
+$drill-bg-yellow: rgb(255, 204, 40);
+$drill-bg-orange: rgb(255, 175, 0);
+
 // you can change colors here
-$theme-color: #096dd9;
+// $theme-color: #096dd9;
+$theme-color: $drill-main-color;
+
+$bg-color: (
+	// light: #fff,
+	// dark: #0d1117,
+	light: $drill-bg-yellow,
+	dark: $drill-bg-yellow
+);
 
 :export {
 	themeColor: $theme-color;
