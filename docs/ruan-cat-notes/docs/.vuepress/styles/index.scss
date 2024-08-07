@@ -61,9 +61,11 @@ hr {
 	border-top: 2px dotted var(--border-color);
 }
 
+$border-radius: 5px;
+
 .theme-hope-content {
 	background-color: $drill-content-bgc;
-	border-radius: 5px;
+	border-radius: $border-radius;
 
 	padding: 0 25px;
 	padding-top: 10px !important;
@@ -80,10 +82,16 @@ hr {
 	display: inline;
 	background-color: $drill-bg-orange;
 	padding: 0.5rem 1rem !important;
+
+	border-radius: $border-radius;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 .vp-toc-wrapper {
 	background-color: $drill-bg-orange;
+	border-radius: $border-radius;
+	border-top-left-radius: 0;
 
 	margin: 0 !important;
 	padding: 1rem 1rem;
