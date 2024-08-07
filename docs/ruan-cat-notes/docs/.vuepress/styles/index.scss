@@ -18,28 +18,42 @@
 // 	max-width: 95vw;
 // }
 
-// $scrollbar-width: 1rem;
+$scrollbar-width: 0.9rem;
 
-// /*滚动条样式*/
-// ::-webkit-scrollbar {
-// 	width: $scrollbar-width;
-// }
+:root {
+	scrollbar-width: auto;
+}
 
-// ::-webkit-scrollbar-thumb {
-// 	width: $scrollbar-width;
-// 	border-radius: calc($scrollbar-width * 0.5);
+.vp-sidebar {
+	scrollbar-width: auto;
+}
 
-// 	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-// 	background: rgba(0, 0, 0, 0.2);
-// }
+/*滚动条样式*/
+::-webkit-scrollbar {
+	width: $scrollbar-width;
+	border-radius: 0;
+}
 
-// ::-webkit-scrollbar-track {
-// 	width: $scrollbar-width;
-// 	border-radius: calc($scrollbar-width * 0.5);
+::-webkit-scrollbar-thumb {
+	width: $scrollbar-width;
+	border-radius: 0;
+	// border-radius: calc($scrollbar-width * 0.5);
+	// -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	// background: rgba(0, 0, 0, 0.2);
+}
 
-// 	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-// 	background: rgba(0, 0, 0, 0.1);
-// }
+::-webkit-scrollbar-track {
+	width: $scrollbar-width;
+	border-radius: 0;
+	// border-radius: calc($scrollbar-width * 0.5);
+	// -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	// background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track-piece {
+	width: $scrollbar-width;
+	border-radius: 0;
+}
 
 // aside#sidebar {
 // 	$color: palevioletred;
