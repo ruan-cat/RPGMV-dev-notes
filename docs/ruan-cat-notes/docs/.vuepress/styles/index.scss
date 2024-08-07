@@ -66,6 +66,7 @@ $border-radius: 5px;
 .theme-hope-content {
 	background-color: $drill-content-bgc;
 	border-radius: $border-radius;
+	color: $drill-white;
 
 	padding: 0 25px;
 	padding-top: 10px !important;
@@ -76,12 +77,54 @@ $border-radius: 5px;
 		padding-top: 10px !important;
 		padding-bottom: 30px;
 	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: $drill-black;
+	}
+
+	a:not(.header-anchor) {
+		color: $drill-black;
+		text-decoration: underline;
+
+		&:hover {
+			color: $drill-orange;
+		}
+	}
+}
+
+.external-link-icon .theme-hope-content {
+	a {
+		&[href*="://"],&[target=_blank]
+		{
+			// position: relative;
+
+			&:not(.no-external-link-icon) {
+				&::after {
+					font-size: 1rem;
+					width: 1rem;
+					height: 1rem;
+					background-color: $drill-white;
+				}
+
+				&:hover::after {
+					// TODO: 实现图标变化的动效
+					// font-size: 1.5rem;
+					// width: 1.5rem;
+					// height: 1.5rem;
+					// background-color: $drill-white;
+				}
+			}
+		}
+	}
 }
 
 aside#toc {
 	.vp-toc-header {
 		display: inline;
-		background-color: $drill-bg-orange;
+		background-color: $drill-orange;
 		padding: 0.5rem 1rem !important;
 
 		border-radius: $border-radius;
@@ -95,7 +138,7 @@ aside#toc {
 		$text-color: rgb(80, 80, 80);
 
 		color: $text-color;
-		background-color: $drill-bg-orange;
+		background-color: $drill-orange;
 		border-radius: $border-radius;
 		border-top-left-radius: 0;
 
