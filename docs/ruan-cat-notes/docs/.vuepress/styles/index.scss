@@ -21,6 +21,12 @@
 // 侧边栏宽度
 $scrollbar-width: 0.9rem;
 
+// 圆角-小
+$border-radius-mini: 0.5rem;
+
+// 圆角-大
+$border-radius-large: 1rem;
+
 :root {
 	scrollbar-width: auto;
 }
@@ -61,11 +67,59 @@ hr {
 	border-top: 2px dotted var(--border-color);
 }
 
-$border-radius: 1rem;
+.vp-breadcrumb li {
+	$size: 1rem;
+	$height: 2.5 * $size;
+
+	line-height: $height;
+	height: $height;
+
+	$padding: $size;
+
+	a.route-link {
+		color: $drill-white;
+		// border-radius: $border-radius-mini;
+		// border-radius: $border-radius-large;
+		padding: 0 $padding;
+		padding-right: 0;
+
+		span {
+			display: inline-block;
+
+			&::before {
+				// TODO: 制作箭头
+				width: $size;
+				height: $height;
+			}
+
+			&::after {
+				// TODO: 制作箭头
+				width: $size;
+				height: $height;
+			}
+		}
+	}
+
+	&:nth-child(3n + 1) .route-link {
+		background-color: $drill-main-color;
+	}
+
+	&:nth-child(3n + 2) .route-link {
+		background-color: $drill-pink;
+	}
+
+	&:nth-child(3n + 3) .route-link {
+		background-color: $drill-orange;
+	}
+
+	&:last-child a {
+		padding-inline-end: $padding;
+	}
+}
 
 .theme-hope-content {
 	background-color: $drill-content-bgc;
-	border-radius: $border-radius;
+	border-radius: $border-radius-large;
 	color: $drill-white;
 
 	padding: 0 25px;
@@ -128,7 +182,7 @@ aside#toc {
 		background-color: $drill-orange;
 		padding: 0.5rem 1rem !important;
 
-		border-radius: $border-radius;
+		border-radius: $border-radius-large;
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 
@@ -140,7 +194,7 @@ aside#toc {
 
 		color: $text-color;
 		background-color: $drill-orange;
-		border-radius: $border-radius;
+		border-radius: $border-radius-large;
 		border-top-left-radius: 0;
 
 		margin: 0 !important;
