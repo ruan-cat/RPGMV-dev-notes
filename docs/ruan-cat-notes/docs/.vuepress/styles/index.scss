@@ -61,7 +61,7 @@ hr {
 	border-top: 2px dotted var(--border-color);
 }
 
-$border-radius: 5px;
+$border-radius: 1rem;
 
 .theme-hope-content {
 	background-color: $drill-content-bgc;
@@ -95,6 +95,7 @@ $border-radius: 5px;
 	}
 }
 
+// a标签
 .external-link-icon .theme-hope-content {
 	a {
 		&[href*="://"],&[target=_blank]
@@ -151,6 +152,16 @@ aside#toc {
 			padding-bottom: 1rem;
 		}
 
+		&::before {
+			width: 1rem;
+		}
+
+		.vp-toc-marker {
+			width: 1rem;
+			clip-path: ellipse(100% 50% at 0% 50%);
+			// background-color: $drill-yellow;
+		}
+
 		.vp-toc-item {
 			.vp-toc-link {
 				color: $text-color;
@@ -160,6 +171,13 @@ aside#toc {
 				.vp-toc-link {
 					font-weight: bolder;
 				}
+			}
+		}
+
+		// 移除掉多余的黑色点块
+		li:not(.vp-toc-item) {
+			&::marker {
+				content: "";
 			}
 		}
 	}
