@@ -56,6 +56,45 @@ $scrollbar-width: 0.9rem;
 	border-radius: 0;
 }
 
+hr {
+	border-top: none;
+	border-top: 2px dotted var(--border-color);
+}
+
+.theme-hope-content {
+	background-color: $drill-content-bgc;
+	border-radius: 5px;
+
+	padding: 0 25px;
+	padding-top: 10px !important;
+	padding-bottom: 30px;
+
+	&:not(.custom) {
+		padding: 0 25px;
+		padding-top: 10px !important;
+		padding-bottom: 30px;
+	}
+}
+
+.vp-toc-header {
+	display: inline;
+	background-color: $drill-bg-orange;
+	padding: 0.5rem 1rem !important;
+}
+
+.vp-toc-wrapper {
+	background-color: $drill-bg-orange;
+
+	margin: 0 !important;
+	padding: 1rem 1rem;
+	padding-top: 0.5rem;
+
+	&.open {
+		margin-top: 0 !important;
+		padding-bottom: 1rem;
+	}
+}
+
 // aside#sidebar {
 // 	$color: palevioletred;
 // 	$width-s: 0.4rem;
