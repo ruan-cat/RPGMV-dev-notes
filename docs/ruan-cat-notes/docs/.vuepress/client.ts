@@ -13,6 +13,8 @@ import "animate.css";
 import { createPinia } from "pinia";
 import piniaPluginPersistedstate, { createPersistedState } from "pinia-plugin-persistedstate";
 
+import AliceHover from "./components/alice-hover/alice-hover.vue";
+
 // import DrillGoods from "./components/drill-goods/DrillGoods.vue";
 // import FlexBoxTransition from "./components/css-challenges/flex-box-transition/FlexBoxTransition.vue";
 
@@ -51,5 +53,5 @@ export default defineClientConfig({
 	},
 
 	// TODO: 增加一个全局的组件
-	// rootComponents:[]
+	rootComponents: [AliceHover],
 });

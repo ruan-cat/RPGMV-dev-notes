@@ -19,6 +19,29 @@ defineOptions({
 </template>
 
 <style lang="scss" scoped>
+$size: 10rem;
+
+$width-rate: 400;
+$height-rate: 368;
+
+$unit: calc($size / $width-rate);
+
+$width: calc($width-rate * $unit);
+$height: calc($height-rate * $unit);
+
+// 从其他的vuepress组件内照抄而来
 .alice-hover-root {
+	position: fixed !important;
+	right: 40px;
+	bottom: 2rem;
+	z-index: 100;
+
+	width: $width;
+	height: $height;
+
+	background-color: transparent;
+	background-image: url(./assets/小爱丽丝_70探头_透明底.png);
+	background-size: 100% 100%;
+	background-position: center;
 }
 </style>
