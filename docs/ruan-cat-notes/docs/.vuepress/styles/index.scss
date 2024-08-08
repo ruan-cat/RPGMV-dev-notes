@@ -27,46 +27,71 @@ $border-radius-mini: 0.5rem;
 // 圆角-大
 $border-radius-large: 1rem;
 
+// $rootClassName
+@mixin scrollbar() {
+	scrollbar-width: auto;
+
+	// 滚动条样式
+	::-webkit-scrollbar {
+		width: $scrollbar-width;
+		border-radius: 0;
+	}
+
+	// 滚动条的可拖拽部分（滑块）
+	::-webkit-scrollbar-thumb {
+		width: $scrollbar-width;
+		border-radius: calc($scrollbar-width * 0.5);
+		background-color: $alice-yellow;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:active {
+			cursor: grabbing;
+			background-color: $alice-yellow;
+		}
+	}
+
+	// 滚动条的滚动区域（轨道）
+	::-webkit-scrollbar-track {
+		width: $scrollbar-width;
+		border-radius: calc($scrollbar-width * 0.5);
+		background-color: $drill-main-color;
+	}
+
+	::-webkit-scrollbar-track-piece {
+		width: $scrollbar-width;
+		background-color: $drill-main-color;
+	}
+
+	::-webkit-scrollbar-button {
+		display: none;
+	}
+
+	// .#{$rootClassName} {
+	// }
+}
+
+html {
+	@include scrollbar();
+}
+
 :root {
 	scrollbar-width: auto;
 }
 
-.vp-sidebar {
-	scrollbar-width: auto;
-}
+// FIXME: 无法修改侧边栏的滚动条
+.theme-container {
+	@include scrollbar();
 
-/*滚动条样式*/
-::-webkit-scrollbar {
-	width: $scrollbar-width;
-	border-radius: 0;
-}
+	.vp-sidebar {
+		@include scrollbar();
 
-// 滚动条的可拖拽部分（滑块）
-::-webkit-scrollbar-thumb {
-	width: $scrollbar-width;
-	border-radius: calc($scrollbar-width * 0.5);
-	background-color: $alice-yellow;
-
-	&:hover {
-		cursor: pointer;
+		.vp-sidebar-links {
+			@include scrollbar();
+		}
 	}
-
-	&:active {
-		cursor: grabbing;
-		background-color: $alice-yellow;
-	}
-}
-
-// 滚动条的滚动区域（轨道）
-::-webkit-scrollbar-track {
-	width: $scrollbar-width;
-	border-radius: calc($scrollbar-width * 0.5);
-	background-color: $drill-main-color;
-}
-
-::-webkit-scrollbar-track-piece {
-	width: $scrollbar-width;
-	background-color: $drill-main-color;
 }
 
 hr {
