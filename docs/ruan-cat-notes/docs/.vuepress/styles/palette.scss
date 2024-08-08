@@ -5,7 +5,10 @@ $drill-white: rgb(255, 245, 224);
 $drill-pink: rgb(255, 140, 160);
 $drill-black: rgb(102, 102, 102);
 
-$drill-content-bgc: rgb(54, 196, 230);
+// $drill-content-bgc: rgb(54, 196, 230);
+// 小爱丽丝蓝
+// $drill-content-bgc: rgb(240, 248, 255);
+$drill-content-bgc: $drill-main-color;
 
 // you can change colors here
 // $theme-color: #096dd9;
