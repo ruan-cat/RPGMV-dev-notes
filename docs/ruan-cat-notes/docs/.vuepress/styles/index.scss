@@ -152,8 +152,8 @@ hr {
 .theme-hope-content {
 	background-color: $drill-content-bgc;
 	border-radius: $border-radius-large;
-	color: $drill-white;
-	// color: $drill-black;
+	// color: $drill-white;
+	color: $drill-black;
 
 	padding: 0 25px;
 	padding-top: 10px !important;
@@ -212,21 +212,21 @@ hr {
 aside#toc {
 	.vp-toc-header {
 		display: inline;
-		background-color: $drill-orange;
+		background-color: $drill-main-color;
 		padding: 0.5rem 1rem !important;
 
 		border-radius: $border-radius-large;
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 
-		color: $drill-white;
+		color: white;
 	}
 
 	.vp-toc-wrapper {
-		$text-color: rgb(80, 80, 80);
+		$text-color: $drill-black;
 
 		color: $text-color;
-		background-color: $drill-orange;
+		background-color: $drill-main-color;
 		border-radius: $border-radius-large;
 		border-top-left-radius: 0;
 

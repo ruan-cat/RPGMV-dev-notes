@@ -1,4 +1,10 @@
-$drill-main-color: rgb(115, 173, 255);
+// 小爱丽丝蓝
+$alice-blue: rgb(240, 248, 255);
+
+// 主题色
+// $drill-main-color: rgb(115, 173, 255);
+$drill-main-color: rgb(194, 220, 255);
+
 $drill-yellow: rgb(255, 204, 40);
 $drill-orange: rgb(255, 175, 0);
 $drill-white: rgb(255, 245, 224);
@@ -6,9 +12,8 @@ $drill-pink: rgb(255, 140, 160);
 $drill-black: rgb(102, 102, 102);
 
 // $drill-content-bgc: rgb(54, 196, 230);
-// 小爱丽丝蓝
 // $drill-content-bgc: rgb(240, 248, 255);
-$drill-content-bgc: $drill-main-color;
+$drill-content-bgc: white;
 
 // you can change colors here
 // $theme-color: #096dd9;
@@ -17,7 +22,7 @@ $theme-color: $drill-main-color;
 $bg-color: (
 	// light: #fff,
 	// dark: #0d1117,
-	light: $drill-yellow,
+	light: $alice-blue,
 	dark: $drill-yellow
 );
 
