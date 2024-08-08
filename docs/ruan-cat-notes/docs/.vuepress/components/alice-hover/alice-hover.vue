@@ -15,42 +15,77 @@ defineOptions({
 </script>
 
 <template>
-	<section class="alice-hover-root"></section>
+	<section class="alice-hover-root">
+		<section class="alice"></section>
+	</section>
 </template>
 
 <style lang="scss" scoped>
-$size: 10rem;
+// 定义基础大小
+$base-size: 10rem;
+$padding: 3rem;
+$layout-size: $base-size + $padding;
 
+// 图片尺寸比例
 $width-rate: 400;
 $height-rate: 368;
 
-$unit: calc($size / $width-rate);
+// 计算单位尺寸
+$base-unit: calc($base-size / $width-rate);
+$layout-unit: calc($layout-size / $width-rate);
 
-$width: calc($width-rate * $unit);
-$height: calc($height-rate * $unit);
+@function getlength($rate, $unit: $base-unit) {
+	// @return calc(#{$rate} * #{$unit});
+	@return calc($rate * $unit);
+}
 
-$hidden-rate: -0.65;
-$show-rate: -0.17;
+$layout-w: getlength($width-rate, $layout-unit);
+$layout-h: getlength($height-rate, $layout-unit);
+
+$alice-w: getlength($width-rate, $base-unit);
+$alice-h: getlength($height-rate, $base-unit);
+
+// $hidden-rate: -0.65;
+// $show-rate: -0.17;
+
+$hidden-rate: -0.17;
+$show-rate: -0.65;
 
 // 从其他的vuepress组件内照抄而来
 .alice-hover-root {
 	position: fixed !important;
 	right: 6.5rem;
-	bottom: $height * $hidden-rate;
+	bottom: $layout-h * $hidden-rate;
 	z-index: 100;
 
-	width: $width;
-	height: $height;
+	width: $layout-w;
+	height: $layout-h;
 
-	background-color: transparent;
-	background-image: url(./assets/小爱丽丝_70探头_透明底.png);
-	background-size: 100% 100%;
-	background-position: center;
+	background-color: red;
+	// background-image: url(./assets/小爱丽丝_70探头_透明底.png);
+	// background-size: 100% 100%;
+	// background-position: center;
+	// transition: all 0.3s ease-in-out;
 
-	transition: all 0.3s ease-in-out;
+	.alice {
+		width: $alice-w;
+		height: $alice-h;
+
+		position: relative;
+		bottom: 0;
+
+		background-color: transparent;
+		background-image: url(./assets/小爱丽丝_70探头_透明底.png);
+		background-size: 100% 100%;
+		background-position: center;
+
+		transition: all 0.3s ease-in-out;
+	}
 
 	&:hover {
-		bottom: $height * $show-rate;
+		.alice {
+			// bottom: $height * $show-rate;
+		}
 	}
 }
 </style>
