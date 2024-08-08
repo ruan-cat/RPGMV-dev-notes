@@ -29,11 +29,14 @@ $unit: calc($size / $width-rate);
 $width: calc($width-rate * $unit);
 $height: calc($height-rate * $unit);
 
+$hidden-rate: -0.65;
+$show-rate: -0.17;
+
 // 从其他的vuepress组件内照抄而来
 .alice-hover-root {
 	position: fixed !important;
-	right: 40px;
-	bottom: 2rem;
+	right: 6.5rem;
+	bottom: $height * $hidden-rate;
 	z-index: 100;
 
 	width: $width;
@@ -43,5 +46,11 @@ $height: calc($height-rate * $unit);
 	background-image: url(./assets/小爱丽丝_70探头_透明底.png);
 	background-size: 100% 100%;
 	background-position: center;
+
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		bottom: $height * $show-rate;
+	}
 }
 </style>
