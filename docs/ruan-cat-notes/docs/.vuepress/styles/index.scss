@@ -109,7 +109,7 @@ hr {
 
 		a.route-link {
 			display: flex;
-			color: $drill-white;
+			color: $drill-black;
 			// 清除全部间距
 			padding: 0 0;
 			padding-right: 0;
@@ -253,7 +253,7 @@ aside#toc {
 		.vp-toc-marker {
 			width: 1rem;
 			clip-path: ellipse(100% 50% at 0% 50%);
-			// background-color: $drill-yellow;
+			background-color: $alice-yellow;
 		}
 
 		.vp-toc-item {
