@@ -122,26 +122,33 @@ hr {
 			}
 		}
 
-		&:nth-child(3n + 1) .route-link {
+		// 全部
+		&:nth-child(n) .route-link {
 			@include arrow($drill-main-color);
 			span {
 				background-color: $drill-main-color;
 			}
 		}
 
-		&:nth-child(3n + 2) .route-link {
-			@include arrow($drill-pink);
-			span {
-				background-color: $drill-pink;
-			}
-		}
-
-		&:nth-child(3n + 3) .route-link {
-			@include arrow($drill-orange);
-			span {
-				background-color: $drill-orange;
-			}
-		}
+		// 不提供根据次序实现的颜色差异。
+		// &:nth-child(3n + 1) .route-link {
+		// 	@include arrow($drill-main-color);
+		// 	span {
+		// 		background-color: $drill-main-color;
+		// 	}
+		// }
+		// &:nth-child(3n + 2) .route-link {
+		// 	@include arrow($drill-main-color);
+		// 	span {
+		// 		background-color: $drill-main-color;
+		// 	}
+		// }
+		// &:nth-child(3n + 3) .route-link {
+		// 	@include arrow($drill-main-color);
+		// 	span {
+		// 		background-color: $drill-main-color;
+		// 	}
+		// }
 
 		&:last-child a {
 			// padding-inline-end: $padding;
