@@ -11,9 +11,7 @@ import "animate.css";
 // import { LocalStorage } from "node-localstorage";
 
 import { createPinia } from "pinia";
-import piniaPluginPersistedstate, {
-	createPersistedState,
-} from "pinia-plugin-persistedstate";
+import piniaPluginPersistedstate, { createPersistedState } from "pinia-plugin-persistedstate";
 
 // import DrillGoods from "./components/drill-goods/DrillGoods.vue";
 // import FlexBoxTransition from "./components/css-challenges/flex-box-transition/FlexBoxTransition.vue";
@@ -51,4 +49,7 @@ export default defineClientConfig({
 			mode: "production",
 		});
 	},
+
+	// TODO: 增加一个全局的组件
+	// rootComponents:[]
 });

@@ -50,10 +50,7 @@ export default defineUserConfig({
 	},
 
 	alias: {
-		"@DrillGoods": path.resolve(
-			__dirname,
-			"./components/drill-goods/DrillGoods.vue"
-		),
+		"@DrillGoods": path.resolve(__dirname, "./components/drill-goods/DrillGoods.vue"),
 	},
 
 	bundler: viteBundler({
