@@ -67,6 +67,7 @@ hr {
 	border-top: 2px dotted var(--border-color);
 }
 
+// 顶部导航栏
 .vp-breadcrumb ol {
 	display: flex;
 	flex-direction: row;
@@ -156,6 +157,7 @@ hr {
 	}
 }
 
+// 正文
 .theme-hope-content {
 	background-color: $drill-content-bgc;
 	border-radius: $border-radius-large;
@@ -216,6 +218,22 @@ hr {
 	}
 }
 
+// 左侧边栏
+aside.vp-sidebar {
+	.vp-sidebar-link {
+		&.active {
+			color: $drill-black;
+			font-weight: bolder;
+			background-color: $alice-yellow;
+		}
+
+		&:hover {
+			background-color: $drill-main-color;
+		}
+	}
+}
+
+// 右侧边栏
 aside#toc {
 	.vp-toc-header {
 		display: inline;
