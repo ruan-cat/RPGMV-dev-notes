@@ -34,19 +34,17 @@ $height-rate: 368;
 $base-unit: calc($base-size / $width-rate);
 $layout-unit: calc($layout-size / $width-rate);
 
+// 计算具体长度
 @function getlength($rate, $unit: $base-unit) {
 	// @return calc(#{$rate} * #{$unit});
 	@return calc($rate * $unit);
 }
 
 $layout-w: getlength($width-rate, $layout-unit);
-$layout-h: getlength($height-rate, $layout-unit);
+$layout-h: getlength($height-rate, $layout-unit) - $padding;
 
-$alice-w: getlength($width-rate, $base-unit);
-$alice-h: getlength($height-rate, $base-unit);
-
-// $hidden-rate: -0.65;
-// $show-rate: -0.17;
+$alice-w: getlength($width-rate);
+$alice-h: getlength($height-rate);
 
 $hidden-rate: -0.17;
 $show-rate: -0.65;
@@ -54,25 +52,23 @@ $show-rate: -0.65;
 // 从其他的vuepress组件内照抄而来
 .alice-hover-root {
 	position: fixed !important;
-	right: 6.5rem;
-	bottom: $layout-h * $hidden-rate;
+	right: 5.35rem;
+	bottom: 0;
 	z-index: 100;
 
 	width: $layout-w;
 	height: $layout-h;
 
-	background-color: red;
-	// background-image: url(./assets/小爱丽丝_70探头_透明底.png);
-	// background-size: 100% 100%;
-	// background-position: center;
-	// transition: all 0.3s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: end;
 
 	.alice {
 		width: $alice-w;
 		height: $alice-h;
 
 		position: relative;
-		bottom: 0;
+		bottom: $alice-h * $hidden-rate;
 
 		background-color: transparent;
 		background-image: url(./assets/小爱丽丝_70探头_透明底.png);
@@ -84,7 +80,7 @@ $show-rate: -0.65;
 
 	&:hover {
 		.alice {
-			// bottom: $height * $show-rate;
+			bottom: $alice-h * $show-rate;
 		}
 	}
 }
