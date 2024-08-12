@@ -33,3 +33,20 @@ sqlite3_binary_host_mirror=https://foxgis.oss-cn-shanghai.aliyuncs.com/
 profiler_binary_host_mirror=https://npm.taobao.org/mirrors/node-inspector/
 chromedriver_cdnurl=https://cdn.npm.taobao.org/dist/chromedriver/
 ```
+
+## better-sqlite3 的下载配置
+
+::: details 配置
+
+```bash
+# 作者：zhangjr0575
+# 链接：https://juejin.cn/post/7159085517487734798
+# 来源：稀土掘金
+# 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+better_sqlite3_binary_host=https://registry.npmmirror.com/-/binary/better-sqlite3
+better_sqlite3_binary_host_mirror=https://registry.npmmirror.com/-/binary/better-sqlite3
+better-sqlite3_binary_host=https://registry.npmmirror.com/-/binary/better-sqlite3
+better-sqlite3_binary_host_mirror=https://registry.npmmirror.com/-/binary/better-sqlite3
+```
+
+:::
