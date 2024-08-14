@@ -22,6 +22,13 @@ git 是有部分克隆的方式的。更加专业正式的称呼是： `sparse-c
 
 :::
 
+::: details 其他参考资料
+
+- https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/README.zh-Hans.md#部分克隆
+- https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone/
+
+:::
+
 ## 具体操作
 
 以 cloudflare 的 worker-d1-api 目录举例：

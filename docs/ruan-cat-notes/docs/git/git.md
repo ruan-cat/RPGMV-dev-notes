@@ -86,15 +86,10 @@ git config --local --list
 
 参考资料 https://blog.csdn.net/weixin_44014995/article/details/109900149
 
-```
+```plain
 > git pull --tags origin hope
 > fatal: unable to access 'https://github.com/RuanZhongNan/RPGMV-dev-notes.git/': SSL certificate problem: unable to get local issuer certificate
 ```
-
-## git 部分克隆
-
-在此文章内看到该内容：
-https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/README.zh-Hans.md#部分克隆
 
 ## 更改本机全局的默认主分支名称
 
