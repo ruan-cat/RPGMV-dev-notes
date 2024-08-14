@@ -11,10 +11,10 @@
 
 技术栈选型：
 
-- 边缘运行时 vercel serverless
-- 数据库 vercel postgres
+- 边缘运行时 cloudflare worker
+- 数据库 cloudflare D1
 - ORM drizzle
-- 后端接口实现框架 nuxt（nitro preset with vercel）
+- 后端接口实现框架 nuxt（nitro preset with cloudflare）
 
 ## 目前需要解决的几个问题
 
@@ -74,7 +74,7 @@ drizzle-kit studio
 
 :::
 
-## 跟换技术选型
+## api.cloudflare.com 有故障
 
 不知道怎么回事，家里宽带就是无法弄 api.cloudflare.com 的接口。无论是 nuxthub、drizzle、还是 wrangler，都要使用该接口做数据请求。
 
@@ -99,3 +99,19 @@ wrangler whoami
 :::
 
 目前无法有效的解决该问题。故不得不弃用 cloudflare D1。
+
+## 更换技术选型
+
+技术栈选型：
+
+- 边缘运行时 vercel serverless
+- 数据库 vercel postgres
+- ORM drizzle
+- 后端接口实现框架 nuxt（nitro preset with vercel）
+
+- 模板项目 https://vscode.dev/github/vercel/examples/blob/main/storage/postgres-nuxt
+
+- 参考文档
+  - drizzle+Vercel Postgres https://orm.drizzle.team/docs/get-started-postgresql#usage-with-cloudflare-workers
+  - 从 vercel 初始化模板项目 https://vercel.com/new/ruanzhongnans-projects/templates/nuxt/postgres-nuxt
+  - vercel postgres 入门 https://vercel.com/docs/storage/vercel-postgres/quickstart
