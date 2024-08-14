@@ -114,4 +114,5 @@ wrangler whoami
 - 参考文档
   - drizzle+Vercel Postgres https://orm.drizzle.team/docs/get-started-postgresql#usage-with-cloudflare-workers
   - 从 vercel 初始化模板项目 https://vercel.com/new/ruanzhongnans-projects/templates/nuxt/postgres-nuxt
+  - https://vercel.com/templates/nuxt/postgres-nuxt
   - vercel postgres 入门 https://vercel.com/docs/storage/vercel-postgres/quickstart
