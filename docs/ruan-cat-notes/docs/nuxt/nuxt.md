@@ -5,7 +5,7 @@
 - https://github.com/atinux/nuxt-todos-edge
 - https://github.com/tlebeitsuk/nuxt-cloudflare-lucia
 
-## 尝试全栈开发
+## 尝试全栈开发-1
 
 用 nuxthub、`cloudflare D1`、和 drizzle ORM 实现后端。
 
@@ -100,7 +100,7 @@ wrangler whoami
 
 目前无法有效的解决该问题。故不得不弃用 cloudflare D1。
 
-## 更换技术选型
+## 更换技术选型-2
 
 技术栈选型：
 
@@ -116,3 +116,26 @@ wrangler whoami
   - 从 vercel 初始化模板项目 https://vercel.com/new/ruanzhongnans-projects/templates/nuxt/postgres-nuxt
   - https://vercel.com/templates/nuxt/postgres-nuxt
   - vercel postgres 入门 https://vercel.com/docs/storage/vercel-postgres/quickstart
+
+## vercel postgres 数据库可创建数量不够
+
+仅有 1 个。cloudflare D1 允许我们新建多个数据库，而 vercel 只能新建 1 个。
+
+需要更换数据库选型了。
+
+::: details
+
+![2024-08-15-11-31-40](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-15-11-31-40.png)
+
+- https://vercel.com/docs/storage/vercel-postgres/usage-and-pricing#pricing
+
+:::
+
+## 更换技术选型-3
+
+技术栈选型：
+
+- 边缘运行时 vercel serverless
+- 数据库
+- ORM drizzle
+- 后端接口实现框架 nuxt（nitro preset with vercel）
