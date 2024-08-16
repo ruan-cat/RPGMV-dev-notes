@@ -249,3 +249,9 @@ pnpm up -g pnpm@latest
 ```bash
 corepack install -g pnpm@latest
 ```
+
+经过实验，直接使用 corepack install 安装全局版本的 pnpm 有点问题，目前比较稳妥的全局安装和切换版本的命令如下：
+
+```bash
+corepack prepare pnpm@9.7.0 --activate
+```
