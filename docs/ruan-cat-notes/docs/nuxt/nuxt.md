@@ -141,3 +141,7 @@ wrangler whoami
 - 后端接口实现框架 nuxt（nitro preset with vercel）
 
 - https://neon.tech/docs/get-started-with-neon/connect-neon
+
+## postgresql
+
+TODO: 看看 navicat 怎么去便捷地连接该数据库？现在 neon 创建的数据库，能否便捷地可视化，并且插入大量数据？
