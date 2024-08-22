@@ -30,7 +30,8 @@
 	// 文件打开的默认行为
 	"workbench.editorAssociations": {
 		// "*.svg": "hediet.vscode-drawio-text",
-		"*.svg": "hediet.vscode-drawio",
 		// "*.drawio.svg": "hediet.vscode-drawio",
+		// 正常可用
+		"*.drawio.svg": "hediet.vscode-drawio-text",
 	},
 }
