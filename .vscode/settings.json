@@ -26,5 +26,11 @@
 		"参考资料": {
 			"type": "none"
 		},
-	}
+	},
+	// 文件打开的默认行为
+	"workbench.editorAssociations": {
+		// "*.svg": "hediet.vscode-drawio-text",
+		"*.svg": "hediet.vscode-drawio",
+		// "*.drawio.svg": "hediet.vscode-drawio",
+	},
 }
