@@ -10,7 +10,7 @@ order: 1
 
 ## 代码架构建议
 
-![代码架构示意图](./main.ts.drawio.svg)
+![代码架构示意图](./code/002-cbe-issue.drawio.svg)
 
 ## user-main.js 提案，文件导入
 
