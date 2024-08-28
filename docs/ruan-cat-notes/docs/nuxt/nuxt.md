@@ -5,6 +5,10 @@
 - https://github.com/atinux/nuxt-todos-edge
 - https://github.com/tlebeitsuk/nuxt-cloudflare-lucia
 
+## 踩坑
+
+- https://juejin.cn/post/7236635191379509308
+
 ## 尝试全栈开发-1
 
 用 nuxthub、`cloudflare D1`、和 drizzle ORM 实现后端。

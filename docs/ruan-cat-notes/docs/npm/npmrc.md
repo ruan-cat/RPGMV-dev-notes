@@ -1,21 +1,21 @@
 # .npmrc
 
-.npmrc 是 node 项目针对于 npm 包管理器的配置文件，可以配置 npm 命令行的一些变量，也可以配置依赖包下载的镜像
+.npmrc 是 node 项目针对于 npm 包管理器的配置文件，可以配置 npm 命令行的一些变量，也可以配置依赖包下载的镜像。
 
 ## 淘宝镜像
 
 淘宝镜像变了，值得注意：
-如下参考：
-https://github.com/xlei1123/please-update-cnpm#please-update-cnpm
+
+- https://github.com/xlei1123/please-update-cnpm#please-update-cnpm
 
 npm 太慢， 淘宝 npm 镜像使用方法
-https://blog.csdn.net/quuqu/article/details/64121812
 
-https://npmmirror.com/
+- https://blog.csdn.net/quuqu/article/details/64121812
+- https://npmmirror.com/
 
 ## nw 的淘宝镜像
 
-https://registry.npmmirror.com/binary.html?path=nwjs/
+- https://registry.npmmirror.com/binary.html?path=nwjs/
 
 ## .npmrc 常见配置
 
@@ -50,3 +50,20 @@ better-sqlite3_binary_host_mirror=https://registry.npmmirror.com/-/binary/better
 ```
 
 :::
+
+## 代理问题
+
+安装其他依赖时，称存在代理问题。
+
+- https://github.com/nuxt/cli/issues/159
+- https://github.com/unjs/giget/issues/120
+- https://github.com/unjs/giget/issues/23
+
+```bash
+https-proxy=http://127.0.0.1:10809
+proxy=http://127.0.0.1:10809
+
+http-proxy=http://127.0.0.1:10809
+```
+
+<!-- FORCE_NODE_FETCH=1 -->
