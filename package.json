@@ -28,6 +28,7 @@
 		"on-github-action-flow": "turbo copy-dist"
 	},
 	"dependencies": {
+		"@ruan-cat/utils": "^1.0.1",
 		"@vercel/analytics": "^1.3.1",
 		"@vueuse/core": "^10.11.0",
 		"animate.css": "^4.1.1",
