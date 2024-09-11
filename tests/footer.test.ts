@@ -1,3 +1,5 @@
 import { expect, test } from "vitest";
 
-import {} from "@docs/";
+import { isConditionsEvery } from "@ruan-cat/utils";
+
+// import {} from "@docs/";
