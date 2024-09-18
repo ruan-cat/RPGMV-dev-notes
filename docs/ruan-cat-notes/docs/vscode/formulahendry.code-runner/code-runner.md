@@ -75,3 +75,16 @@ npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --fil
 ```
 
 使用 pnpm 安装全局依赖 vite-node。然后运行即可。
+
+## 运行单独的 typescript 文件
+
+上述的 code-runner 配置，本质上是配置运行 typescript 文件的 cli 命令行，目前能运行 typescript 文件的技术选型如下：
+
+- ts-node
+- vite-node
+- tsc
+- tsx
+- vue-tsc
+- [node](https://nodejs.org/en/learn/typescript/run)
+
+目前（2024-9-18）考虑使用 tsx 和 node（v22.6.0）来运行单独的 typescript 文件，他们速度很快。
