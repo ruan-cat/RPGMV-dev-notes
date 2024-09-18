@@ -2,6 +2,26 @@
 
 - https://github.com/nvm-sh/nvm/blob/master/README.md
 
+这是一个管理 node 版本的工具。
+
+## 不再使用该工具
+
+这个工具在切换 node 环境时，必须要打命令行。不方便。
+
+新的工具提供了可视化的操作界面，更加友好清晰，易于管控。
+
+[点此学习新的工具。](../nvm-desktop/nvm-desktop.md)
+
+### 从 nvm-windows 到 nvm-desktop
+
+我们直接关闭掉 nvm-windows 即可，不再要求他管控 node 环境，也不强求自己去删除这些 node 环境了。
+
+执行以下命令关闭掉 nvm 的管控。接下来全局的 node 就都有别的工具把控了。
+
+```bash
+nvm off
+```
+
 ## 看清楚文档
 
 - https://github.com/nvm-sh/nvm/blob/master/README.md#about
