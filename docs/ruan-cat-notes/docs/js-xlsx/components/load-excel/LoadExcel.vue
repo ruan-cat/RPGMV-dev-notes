@@ -61,9 +61,7 @@ type FilterUseFieldsSwitchable = `is${FilterUseFields}`;
 
 /** 过滤配置表单 */
 type FilterConfigForm = Pick<Required<TableData>, FilterUseFields>;
-type FilterConditionSwitch = Required<
-	Record<FilterUseFieldsSwitchable, boolean>
->;
+type FilterConditionSwitch = Required<Record<FilterUseFieldsSwitchable, boolean>>;
 
 type FilterConfig = {
 	[key in FilterUseFields]: (params: TableData) => boolean;
@@ -93,9 +91,7 @@ const list = ref<List>([]);
 
 /** 重设经过处理后的列表 */
 function resetList() {
-	const afterFilter = tableData.value.filter((elm) =>
-		isConditionsEvery(createFilterUseConditions(elm))
-	);
+	const afterFilter = tableData.value.filter((elm) => isConditionsEvery(createFilterUseConditions(elm)));
 
 	const afterMap = afterFilter.map((elm) => pick(elm, ["用户名", "角色"]));
 
@@ -147,24 +143,18 @@ function removeIsPrefix(params: FilterUseFieldsSwitchable): FilterUseFields {
 /** 过滤配置 */
 const filterConfig = ref<FilterConfig>({
 	账号使用状态: (elm) =>
-		!isUndefined(elm.账号使用状态)
-			? elm.账号使用状态 === filterConfigForm.value.账号使用状态
-			: true,
+		!isUndefined(elm.账号使用状态) ? elm.账号使用状态 === filterConfigForm.value.账号使用状态 : true,
 
 	用户是否存在: (elm) =>
-		!isUndefined(elm.用户是否存在)
-			? elm.用户是否存在 === filterConfigForm.value.用户是否存在
-			: true,
+		!isUndefined(elm.用户是否存在) ? elm.用户是否存在 === filterConfigForm.value.用户是否存在 : true,
 });
 
 function createFilterUseConditions(elm: TableData): Conditions {
-	return (<[FilterUseFieldsSwitchable, boolean][]>(
-		Object.entries(filterConditionSwitch.value)
-	)).map(([key, bool], indx, arr) => {
-		return bool
-			? () => filterConfig.value[removeIsPrefix(key)](elm)
-			: () => true;
-	});
+	return (<[FilterUseFieldsSwitchable, boolean][]>Object.entries(filterConditionSwitch.value)).map(
+		([key, bool], indx, arr) => {
+			return bool ? () => filterConfig.value[removeIsPrefix(key)](elm) : () => true;
+		},
+	);
 }
 
 const reverseList = computed(() => {
@@ -212,18 +202,16 @@ const layoutConf = ref({
  */
 async function dblclickCopy($event: MouseEvent) {
 	/** 参考资料： https://blog.csdn.net/weixin_45022563/article/details/127392836 */
-	await navigator.clipboard
-		.writeText(($event.target as HTMLElement).innerHTML)
-		.then((res) => {
-			ElMessage({
-				type: "success",
-				message: h("section", null, [
-					h("section", null, "复制成功！"),
-					h("section", null, "文本已保存在粘贴板内，随时可以复制粘贴。"),
-					h("section", null, "使用快捷键 win+v 来打开粘贴板。"),
-				]),
-			});
+	await navigator.clipboard.writeText(($event.target as HTMLElement).innerHTML).then((res) => {
+		ElMessage({
+			type: "success",
+			message: h("section", null, [
+				h("section", null, "复制成功！"),
+				h("section", null, "文本已保存在粘贴板内，随时可以复制粘贴。"),
+				h("section", null, "使用快捷键 win+v 来打开粘贴板。"),
+			]),
 		});
+	});
 }
 </script>
 

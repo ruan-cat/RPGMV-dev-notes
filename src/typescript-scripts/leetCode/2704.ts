@@ -3,11 +3,7 @@
 function leetCode_2704_expect(val: unknown) {
 	const source = val;
 
-	function template(params: {
-		val: unknown;
-		judge: (targetVal: unknown) => boolean;
-		errMsg: string;
-	}) {
+	function template(params: { val: unknown; judge: (targetVal: unknown) => boolean; errMsg: string }) {
 		const target = params.val;
 		try {
 			if (params.judge(target)) {

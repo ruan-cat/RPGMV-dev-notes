@@ -3,22 +3,11 @@ import { ref, computed } from "vue";
 import { storeToRefs } from "pinia";
 import { Icon } from "@iconify/vue";
 import * as XLSX from "xlsx";
-import {
-	ElTable,
-	ElMessage,
-	ElTableColumn,
-	ElButton,
-	ElForm,
-	ElFormItem,
-	type FormRules,
-} from "element-plus";
+import { ElTable, ElMessage, ElTableColumn, ElButton, ElForm, ElFormItem, type FormRules } from "element-plus";
 import { debounce } from "lodash-es";
 
 import { useMode } from "../hooks/use-mode.ts";
-import {
-	useSingleCommodity,
-	type Commodity,
-} from "../stores/use-single-commodity.ts";
+import { useSingleCommodity, type Commodity } from "../stores/use-single-commodity.ts";
 import SwitchMode from "./SwitchMode.vue";
 
 const { commodity } = storeToRefs(useSingleCommodity());
@@ -103,9 +92,7 @@ const rules = ref<FormRules<Commodity>>({
 			<el-button type="primary" size="default">下载导出文件 </el-button>
 		</JsonExcel> -->
 
-		<el-button type="primary" size="default" @click="debounceBtnClick()">
-			导出文件
-		</el-button>
+		<el-button type="primary" size="default" @click="debounceBtnClick()"> 导出文件 </el-button>
 
 		<el-form :model="form" ref="form" :rules="rules" :inline="false">
 			<!-- <el-form-item label="">

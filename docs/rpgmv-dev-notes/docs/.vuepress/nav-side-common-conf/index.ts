@@ -18,13 +18,7 @@ export const navConfList: NavbarOptions = [
 	{
 		text: "插件开发",
 		prefix: "/developing-rmmv-plugins/",
-		children: [
-			"index/",
-			"source-code-infrastructure/",
-			"plugins-infrastructure/",
-			"basic-concept/",
-			"nature/",
-		],
+		children: ["index/", "source-code-infrastructure/", "plugins-infrastructure/", "basic-concept/", "nature/"],
 	},
 
 	{

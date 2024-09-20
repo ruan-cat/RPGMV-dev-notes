@@ -2,7 +2,7 @@
 
 ## 360 浏览器总是访问旧页面
 
-针对网址 https://www.ruan-cat.com/，目前360浏览器总是使用旧页面
+针对网址 https://www.ruan-cat.com/，目前 360 浏览器总是使用旧页面
 
 ![image-20230420094355415](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/image-20230420094355415.png)
 

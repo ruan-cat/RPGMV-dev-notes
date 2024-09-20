@@ -33,30 +33,19 @@ type GetterFunCommonRes = [unknown, unknown];
 // /** 工具函数 */
 // type ToolFun = (toolFunParam: ToolFunParam) => unknown;
 
-type GetterFun = (
-	GetterFunParam: BasePropName & DebugParam
-) => DefDateList | GetterFunCommonRes;
+type GetterFun = (GetterFunParam: BasePropName & DebugParam) => DefDateList | GetterFunCommonRes;
 
-type SetterFun = (
-	SetterFunParam: BasePropName & DebugParam & SetterFunParam
-) => void;
+type SetterFun = (SetterFunParam: BasePropName & DebugParam & SetterFunParam) => void;
 
 /** getterFun
  * @author rzn
  */
-export const getterFun: GetterFun = ({
-	startPropName,
-	endPropName,
-	form,
-	isConsole = false,
-}) => {
+export const getterFun: GetterFun = ({ startPropName, endPropName, form, isConsole = false }) => {
 	const resList: GetterFunCommonRes = [form[startPropName], form[endPropName]];
 
 	isConsole ? console.warn(" in getterFun ", resList) : void 0;
 
-	return resList.some((elm) => elm === null || elm === void 0)
-		? _getDefaultList()
-		: resList;
+	return resList.some((elm) => elm === null || elm === void 0) ? _getDefaultList() : resList;
 };
 
 /** setterFun
@@ -64,21 +53,12 @@ export const getterFun: GetterFun = ({
  * @description
  * 一个设置函数
  */
-export const setterFun: SetterFun = ({
-	startPropName,
-	endPropName,
-	form,
-	p,
-	isConsole = false,
-}) => {
+export const setterFun: SetterFun = ({ startPropName, endPropName, form, p, isConsole = false }) => {
 	isConsole ? console.log(" in setterFun p =  ", p) : void 0;
 
-	[form[startPropName], form[endPropName]] =
-		!p || p.length === 1 || p.some((elm) => !elm) ? _getDefaultList() : p;
+	[form[startPropName], form[endPropName]] = !p || p.length === 1 || p.some((elm) => !elm) ? _getDefaultList() : p;
 
-	isConsole
-		? console.log(" in set res =  ", [form[startPropName], form[endPropName]])
-		: void 0;
+	isConsole ? console.log(" in set res =  ", [form[startPropName], form[endPropName]]) : void 0;
 };
 
 const testObj = {

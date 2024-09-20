@@ -66,10 +66,7 @@ children: [
 		path: "/leasingBusiness/appraisalInfo/:appraisalNo*/:reportNo*/:data*",
 		// TODO: 搜索并更改。
 		name: "DetailInfo",
-		component: (resolve) =>
-			require([
-				"@/views/systems/leasing/housing/leasingEvaluation/info/Info",
-			], resolve),
+		component: (resolve) => require(["@/views/systems/leasing/housing/leasingEvaluation/info/Info"], resolve),
 		props: true,
 		meta: {
 			breadcrumb: true,
@@ -149,11 +146,11 @@ const c = {
 };
 ```
 
-## Redirected when going from "/login" to "/dashboard" via a navigation guard.
+## Redirected when going from "/login" to "/dashboard" via a navigation guard
 
 - https://www.cnblogs.com/zyh2333/p/14714031.html
 
-## Error: Navigation cancelled from "A" to "B" with a new navigation.
+## Error: Navigation cancelled from "A" to "B" with a new navigation
 
 ```js
 /**
@@ -189,13 +186,7 @@ Router.prototype.push = function push(location) {
 我们使用 vue-router3.6 提供的组合式 api 来替代。
 
 ```js
-import {
-	useRoute,
-	useRouter,
-	useLink,
-	onBeforeRouteUpdate,
-	onBeforeRouteLeave,
-} from "vue-router/composables";
+import { useRoute, useRouter, useLink, onBeforeRouteUpdate, onBeforeRouteLeave } from "vue-router/composables";
 ```
 
 剩下的用法看 vue-router4 文档即可。

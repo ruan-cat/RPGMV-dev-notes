@@ -270,7 +270,7 @@ export type TreeWithId = {
 - 至少提供 2 种代码重构的例子。
 - 在回答的最后均提供涉及到的语法，技术等内容的参考链接。
 
-## 自动合并多个类型的泛型？并将所有合并泛型的内容均设置成可选属性。
+## 自动合并多个类型的泛型？并将所有合并泛型的内容均设置成可选属性
 
 一个 typescript 领域的问题：
 
@@ -512,10 +512,7 @@ import * as entities from "./entity";
  * @description
  * 为了说明常用默认字段在具体业务内的数据，比如说声明常用字段在短详情列表内`是否显示`，`排序顺序`等信息，故提供此类型。
  */
-type DefCommonFieldConf_withBuziConf = Omit<
-	DefCommonFieldConf,
-	"labelName" | "surveyItemName"
-> & {
+type DefCommonFieldConf_withBuziConf = Omit<DefCommonFieldConf, "labelName" | "surveyItemName"> & {
 	/** 默认字段都已经配置过标签名了，这里不再要求必填标签名 */
 	labelName?: string;
 
@@ -1441,13 +1438,7 @@ Uncaught (in promise) DOMException: Blocked a frame with origin "http://localhos
 
 <template>
 	<section>
-		<Layout
-			:conf="conf"
-			:instance-id="instanceId"
-			:business-key="businessKey"
-			:task-id="taskId"
-			:module="module"
-		>
+		<Layout :conf="conf" :instance-id="instanceId" :business-key="businessKey" :task-id="taskId" :module="module">
 			<template #baseInfo>
 				<VForm
 					ref="vformComponents"
@@ -1737,10 +1728,7 @@ type FileFormat = ".md" | ".txt";
  * @description
  * fileFormat 默认取值为 ".md"
  */
-type WriteInMdFile = (config: {
-	strArr: string[];
-	fileFormat?: FileFormat;
-}) => void;
+type WriteInMdFile = (config: { strArr: string[]; fileFormat?: FileFormat }) => void;
 
 const writeInMdFile: WriteInMdFile = function writeInMdFile(config) {
 	const fileFormat = config?.fileFormat ?? ".md";
@@ -1798,9 +1786,7 @@ type Config = {
 	renameTemplate: RenameTemplate;
 };
 
-const defaultRenameTemplate: RenameTemplate = function defaultRenameTemplate(
-	params
-) {
+const defaultRenameTemplate: RenameTemplate = function defaultRenameTemplate(params) {
 	const { addon, originFilename, suffix } = params;
 	return `${originFilename}-（${addon}）.${suffix}`;
 };
@@ -1861,9 +1847,7 @@ type Config = {
 	addonCommit: string;
 };
 
-const defaultRenameTemplate: RenameTemplate = function defaultRenameTemplate(
-	params
-) {
+const defaultRenameTemplate: RenameTemplate = function defaultRenameTemplate(params) {
 	const { addon, originFilename, suffix } = params;
 	const date = dayjs().format("YYYY-MM-DD");
 	return `${originFilename}-（${date} ${addon}）.${suffix}`;
@@ -1893,10 +1877,7 @@ function renameCurrentDirectoryFiles(params?: Config): void {
 				suffix: ext,
 				addon,
 			});
-			fs.renameSync(
-				path.join(__dirname, file),
-				path.join(__dirname, `${newFilename}`)
-			);
+			fs.renameSync(path.join(__dirname, file), path.join(__dirname, `${newFilename}`));
 
 			console.log(" 已重命名文件  ", newFilename);
 		}

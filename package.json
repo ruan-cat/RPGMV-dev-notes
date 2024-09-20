@@ -15,6 +15,7 @@
 		"preinstall": "npx only-allow pnpm && npm run corepack:pnpm",
 		"corepack:pnpm": "corepack enable && corepack install",
 		"test": "vitest --ui",
+		"prettier": "prettier --write .",
 		"git:monorepo-2-main": "git rebase monorepo main",
 		"git:main-2-monorepo": "git rebase main monorepo",
 		"git:main-2-dev": "git rebase main dev",

@@ -62,7 +62,7 @@ cat nohup.out
 
 ## 错误
 
-### NotImplementedError: Could not run 'torchvision::nms' with arguments from the 'CUDA' backend.
+### NotImplementedError: Could not run 'torchvision::nms' with arguments from the 'CUDA' backend
 
 - [解决“NotImplementedError: Could not run ‘torchvision::nms‘ with arguments from the ‘CUDA‘ backend.”](https://blog.csdn.net/weixin_51179975/article/details/119082342)
 
@@ -84,7 +84,7 @@ pip uninstall torch torchvision torchaudio
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-### AssertionError: train: No labels found in XXXXX\train.cache, can not start training.
+### AssertionError: train: No labels found in XXXXX\train.cache, can not start training
 
 因为文件组织格式错了，文件夹名称应该是强约束的。
 

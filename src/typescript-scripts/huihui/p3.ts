@@ -14,11 +14,6 @@ export interface IFucker {
 // 	index: number;
 // };
 
-function handle<K extends keyof IFucker>(
-	list: Array<IFucker>,
-	index: number,
-	key: K,
-	value: IFucker[K]
-) {
+function handle<K extends keyof IFucker>(list: Array<IFucker>, index: number, key: K, value: IFucker[K]) {
 	list[index][key] = value;
 }

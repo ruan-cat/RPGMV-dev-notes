@@ -23,11 +23,7 @@
 ```json {2}
 {
 	"editor.formatOnSave": true,
-	"formattingToggle.affects": [
-		"editor.formatOnPaste",
-		"editor.formatOnSave",
-		"editor.formatOnType"
-	]
+	"formattingToggle.affects": ["editor.formatOnPaste", "editor.formatOnSave", "editor.formatOnType"]
 }
 ```
 

@@ -3,9 +3,7 @@
 		<div class="main-content" :style="{ width: mainContentWidth + 'px' }">
 			<!-- 左侧主界面内容 -->
 			<!-- 这里可以放置您的主界面内容 -->
-			<button @click="toggleSidebar" class="toggle-button">
-				Toggle Sidebar
-			</button>
+			<button @click="toggleSidebar" class="toggle-button">Toggle Sidebar</button>
 		</div>
 		<transition name="slide">
 			<div v-if="showSidebar" class="sidebar">

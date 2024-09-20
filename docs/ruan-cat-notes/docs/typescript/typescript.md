@@ -31,7 +31,7 @@ npx tsc --target es6 --module es6 src\hooks\useEarlyWarningMapData\useEarlyWarni
 
 在实际的项目内，位于根目录下的 tsconfig.json 文件没有被识别出来。其内部的配置没有被识别出来。
 
-## 学习待办：
+## 学习待办
 
 ### tsc 命令配置
 

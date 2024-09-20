@@ -27,10 +27,10 @@
 - babel.config.js 配置
   ```js
   module.exports = {
-    presets: [
-      // https://github.com/vuejs/vue-cli/tree/master/packages/@vue/babel-preset-app
-      '@vue/cli-plugin-babel/preset',
-    ],
+  	presets: [
+  		// https://github.com/vuejs/vue-cli/tree/master/packages/@vue/babel-preset-app
+  		"@vue/cli-plugin-babel/preset",
+  	],
   };
   ```
 

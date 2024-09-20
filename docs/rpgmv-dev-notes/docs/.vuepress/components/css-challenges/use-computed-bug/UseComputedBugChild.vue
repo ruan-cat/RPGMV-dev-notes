@@ -35,7 +35,7 @@ watch(
 	{
 		deep: true,
 		immediate: true,
-	}
+	},
 );
 </script>
 
@@ -43,13 +43,9 @@ watch(
 	<section class="UseComputedBugChild-root">
 		<h4>内部代码</h4>
 
-		<el-button type="primary" size="default" @click="randomSetValue()">
-			随机设置id值
-		</el-button>
+		<el-button type="primary" size="default" @click="randomSetValue()"> 随机设置id值 </el-button>
 
-		<el-button type="primary" size="default" @click="reset()">
-			清空为空字符串
-		</el-button>
+		<el-button type="primary" size="default" @click="reset()"> 清空为空字符串 </el-button>
 
 		<section>
 			<el-tag type="info" size="normal" effect="dark">

@@ -244,7 +244,7 @@ python setup.py build develop
 python tools/run_net.py --cfg configs/Kinetics/C2D_8x8_R50.yaml NUM_GPUS 1 TRAIN.BATCH_SIZE 8 SOLVER.BASE_LR 0.0125 DATA.PATH_TO_DATA_DIR path_to_your_data_folder
 ```
 
-### 报错 `ImportError: DLL load failed while importing _imaging: 找不到指定的模块。`
+### 报错 ImportError: DLL load failed while importing \_imaging: 找不到指定的模块
 
 ```bash
 Traceback (most recent call last):
@@ -460,8 +460,7 @@ DETECTION:
 AVA:
   BGR: False
   DETECTION_SCORE_THRESH: 0.8
-  TEST_PREDICT_BOX_LISTS:
-    ["person_box_67091280_iou90/ava_detection_val_boxes_and_labels.csv"]
+  TEST_PREDICT_BOX_LISTS: ["person_box_67091280_iou90/ava_detection_val_boxes_and_labels.csv"]
 SLOWFAST:
   ALPHA: 4
   BETA_INV: 8
@@ -481,13 +480,7 @@ NONLOCAL:
   LOCATION: [[[], []], [[], []], [[6, 13, 20], []], [[], []]]
   GROUP: [[1, 1], [1, 1], [1, 1], [1, 1]]
   INSTANTIATION: dot_product
-  POOL:
-    [
-      [[2, 2, 2], [2, 2, 2]],
-      [[2, 2, 2], [2, 2, 2]],
-      [[2, 2, 2], [2, 2, 2]],
-      [[2, 2, 2], [2, 2, 2]],
-    ]
+  POOL: [[[2, 2, 2], [2, 2, 2]], [[2, 2, 2], [2, 2, 2]], [[2, 2, 2], [2, 2, 2]], [[2, 2, 2], [2, 2, 2]]]
 BN:
   USE_PRECISE_STATS: False
   NUM_BATCHES_PRECISE: 200

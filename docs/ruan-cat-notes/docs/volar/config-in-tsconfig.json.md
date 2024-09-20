@@ -20,10 +20,7 @@ volar 毕竟是针对 vue 的语言服务，贴别是 vue3 的语言服务。
 ```json
 {
 	"vueCompilerOptions": {
-		"plugins": [
-			"@vue-macros/volar/define-model",
-			"@vue-macros/volar/define-slots"
-		]
+		"plugins": ["@vue-macros/volar/define-model", "@vue-macros/volar/define-slots"]
 	}
 }
 ```

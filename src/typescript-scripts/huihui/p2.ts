@@ -17,7 +17,7 @@ export interface IFucker {
 
 export type ParamsArraySetter<
 	// T extends Record<string, unknown>
-	T
+	T,
 	// K extends keyof T = keyof T
 > = {
 	list: Array<T>;
@@ -37,7 +37,7 @@ export type ParamsArraySetter<
 // }
 export interface ArraySetter<
 	// T extends Record<string, unknown>
-	T
+	T,
 > {
 	(params: ParamsArraySetter<T>): void;
 }

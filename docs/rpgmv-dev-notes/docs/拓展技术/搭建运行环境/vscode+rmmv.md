@@ -64,10 +64,7 @@
 			// 更改属性名为"file"，属性值此时表示此时打开的文件，就不需要手动改文件路径了。
 			"file": "${workspaceFolder}/index.html",
 			// 需要跨域的话就打开以下注释。预先在源码目录创建文件夹 UserDataDir
-			"runtimeArgs": [
-				"--disable-web-security",
-				"--user-data-dir=${workspaceRoot}\\UserDataDir"
-			],
+			"runtimeArgs": ["--disable-web-security", "--user-data-dir=${workspaceRoot}\\UserDataDir"],
 			"runtimeExecutable": "stable"
 		}
 	]

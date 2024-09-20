@@ -6,7 +6,7 @@
  * 类的命名规范，我们总是默认让类的命名遵循大驼峰命名法
  */
 function LittleGirl() {
-  this.defaultLines = '嘤嘤嘤';
+	this.defaultLines = "嘤嘤嘤";
 }
 
 /**
@@ -15,7 +15,7 @@ function LittleGirl() {
  * @description 小萝莉对象撒娇
  */
 LittleGirl.prototype.coquetry = function () {
-  console.log(' 发出了： ' + this.defaultLines + ' 的声音。');
+	console.log(" 发出了： " + this.defaultLines + " 的声音。");
 };
 
 /**
@@ -24,8 +24,8 @@ LittleGirl.prototype.coquetry = function () {
  * @classdesc 小爱丽丝类，特指钻头的小爱丽丝。
  */
 function LittleAlice() {
-  LittleGirl.call(this);
-  this.defaultLines = '不可以涩涩哦~';
+	LittleGirl.call(this);
+	this.defaultLines = "不可以涩涩哦~";
 }
 
 // 用Object.create方法实现原型链的继承

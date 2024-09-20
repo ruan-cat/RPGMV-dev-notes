@@ -5,8 +5,8 @@
 	"picgo": {
 		"picBed": {
 			"current": "github",
-			"uploader": "github",
-		},
+			"uploader": "github"
+		}
 	},
 	"code-runner.executorMap": {
 		// "typescript": "node --loader ts-node/esm $fullFileName --files"
@@ -25,13 +25,13 @@
 	"todo-tree.highlights.customHighlight": {
 		"参考资料": {
 			"type": "none"
-		},
+		}
 	},
 	// 文件打开的默认行为
 	"workbench.editorAssociations": {
 		// "*.svg": "hediet.vscode-drawio-text",
 		// "*.drawio.svg": "hediet.vscode-drawio",
 		// 正常可用
-		"*.drawio.svg": "hediet.vscode-drawio-text",
-	},
+		"*.drawio.svg": "hediet.vscode-drawio-text"
+	}
 }

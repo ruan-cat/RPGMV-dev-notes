@@ -26,7 +26,7 @@ https://qiankun.umijs.org/zh
 
 一款录制工具。需要检查。看看和 LICEcap 之间的差异？
 
-## 前端学习待办：
+## 前端学习待办
 
 FileSaver
 

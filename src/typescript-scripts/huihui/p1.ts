@@ -17,11 +17,7 @@ export interface FilterRule {
  * https://segmentfault.com/q/1010000020263396
  * https://stackoverflow.com/a/57022514/18167453
  */
-function handle<T extends keyof FilterRule>(
-	value: FilterRule[T],
-	index: number,
-	key: T
-) {
+function handle<T extends keyof FilterRule>(value: FilterRule[T], index: number, key: T) {
 	const data: FilterRule[] = [];
 	data[index][key] = value;
 }

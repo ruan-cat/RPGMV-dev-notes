@@ -13,9 +13,7 @@ export type ParamsArraySetter<T extends { [k: string]: unknown }> = {
 	value: T[keyof T];
 	index: number;
 };
-export type ArraySetter<T extends { [k: string]: unknown }> = (
-	params: ParamsArraySetter<T>
-) => void;
+export type ArraySetter<T extends { [k: string]: unknown }> = (params: ParamsArraySetter<T>) => void;
 
 // function handle<T extends { [k: string]: unknown }>(
 // 	list: Array<T>,
