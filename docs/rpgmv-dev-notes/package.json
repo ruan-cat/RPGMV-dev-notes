@@ -1,15 +1,18 @@
 {
-	"name": "@ruan-cat-docs/rpgmv-dev-notes",
-	"version": "1.0.0",
-	"author": "阮喵喵",
-	"license": "MIT",
-	"description": "阮喵喵的rmmv开发笔记",
-	"scripts": {
-		"build:docs": "vuepress-vite build docs",
-		"docs:clean-dev": "vuepress-vite dev docs --clean-cache",
-		"docs:dev": "vuepress-vite dev docs",
-		"docs:update-package": "pnpm dlx vp-update",
-		"copy-dist": "rimraf .vercel/output/static && mkdirp .vercel/output/static && cpx \"docs/.vuepress/dist/**/*\" .vercel/output/static && shx ls -R .vercel/output/static",
-		"clear": "rimraf dist && rimraf .turbo && rimraf .vercel"
-	}
+  "name": "@ruan-cat-docs/rpgmv-dev-notes",
+  "version": "1.0.0",
+  "author": "阮喵喵",
+  "license": "MIT",
+  "description": "阮喵喵的rmmv开发笔记",
+  "scripts": {
+    "build:docs": "vuepress-vite build docs",
+    "docs:clean-dev": "vuepress-vite dev docs --clean-cache",
+    "docs:dev": "vuepress-vite dev docs",
+    "docs:update-package": "pnpm dlx vp-update",
+    "copy-dist": "rimraf .vercel/output/static && mkdirp .vercel/output/static && cpx \"docs/.vuepress/dist/**/*\" .vercel/output/static && shx ls -R .vercel/output/static",
+    "clear": "rimraf dist && rimraf .turbo && rimraf .vercel"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12"
+  }
 }
