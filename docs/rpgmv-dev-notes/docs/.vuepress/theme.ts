@@ -34,6 +34,8 @@ export default hopeTheme({
 
 	docsDir: "docs",
 
+	sidebar: "structure",
+
 	footer,
 	displayFooter: false,
 
