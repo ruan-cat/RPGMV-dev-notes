@@ -1,6 +1,13 @@
 dist/
 node_modules/
 
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
 # vuepress build output
 .vuepress/dist
 
@@ -28,3 +35,6 @@ pnpm-lock.yaml
 
 # 默认忽略掉本地生成的 vercel 目录
 .vercel
+
+# 忽略自动生成vercel部署配置文件
+vercel.null.def.json

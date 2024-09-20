@@ -65,7 +65,9 @@
 		"docs/ruan-cat-notes/docs/.vuepress/components/**/*.vue",
 		"docs/ruan-cat-notes/.vuepress/**/*.ts",
 		// 测试文件集
-		"tests/**/*.ts"
+		"tests/**/*.ts",
+		"./bin/**/*.ts",
+		"./.config/**/*.ts",
 	],
 	/* 模仿其他项目加上的排除配置 */
 	"exclude": [
