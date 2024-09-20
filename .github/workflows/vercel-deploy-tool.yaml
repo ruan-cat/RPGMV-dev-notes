@@ -1,0 +1,48 @@
+name: 自写的vercel部署工具
+env:
+  VERCEL_TOKEN: ${{ secrets.vercel_token }}
+  # VERCEL_ORG_ID: ${{ secrets.vercel_orgId }}
+  # VERCEL_PROJECT_ID: ${{ secrets.vercel_projectId }}
+
+on:
+  push:
+    branches:
+      - main
+      # - dev-pause
+
+jobs:
+  Deploy-Production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出分支
+        uses: actions/checkout@v4
+
+      - name: 安装pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          # 项目提供了packageManager，故我们不提供该配置
+          # version: 9
+          run_install: |
+            - recursive: true
+            - args: [--global, "vercel", "@dotenvx/dotenvx", "tsx"]
+
+      - name: 安装node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.6.0
+          cache: pnpm
+
+      - name: 检查版本
+        run: |
+          node -v
+          pnpm -v
+          vc -v
+
+      - name: pnpm全局检查依赖包
+        run: pnpm ls -g
+
+      - name: 运行自写的vercel部署工具
+        # https://dotenvx.com/docs/cis/github-actions#install-dotenvx
+        run: |
+          curl -sfS https://dotenvx.sh/install.sh | sh
+          pnpm dotenvx run -- pnpm run deploy-vercel

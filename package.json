@@ -51,6 +51,7 @@
 		"@commitlint/types": "^19.0.3",
 		"@iconify/json": "^2.2.229",
 		"@iconify/vue": "^4.1.2",
+		"@ruan-cat/vercel-deploy-tool": "latest",
 		"@types/lodash-es": "^4.17.12",
 		"@types/node": "^20.14.11",
 		"@types/uuid": "^9.0.8",
