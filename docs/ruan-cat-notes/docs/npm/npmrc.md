@@ -67,3 +67,41 @@ http-proxy=http://127.0.0.1:10809
 ```
 
 <!-- FORCE_NODE_FETCH=1 -->
+
+## 严格引擎判断
+
+可以用以下的配置：
+
+```bash
+engine-strict=true
+```
+
+但是不推荐，因为这个配置很容易导致 github action 的工作流被迫中断。
+
+比如这样的工作流配置：
+
+```yaml
+jobs:
+  Deploy-Production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出分支
+        uses: actions/checkout@v4
+
+      - name: 安装pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: |
+            - recursive: true
+            - args: [--global, "vercel", "@dotenvx/dotenvx", "tsx"]
+
+      - name: 安装node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.15.1
+          cache: pnpm
+```
+
+是先安装 pnpm，然后才是安装 node，缓存 pnpm 的。
+
+在第一个安装 pnpm 的任务内，就因为严格引擎判断，而强制结束掉整个工作流了。
