@@ -17,6 +17,12 @@ jobs:
       - name: 检出分支
         uses: actions/checkout@v4
 
+      - name: 安装node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.15.1
+          cache: pnpm
+
       - name: 安装pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -25,12 +31,6 @@ jobs:
           run_install: |
             - recursive: true
             - args: [--global, "vercel", "@dotenvx/dotenvx", "tsx"]
-
-      - name: 安装node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.15.1
-          cache: pnpm
 
       - name: 检查版本
         run: |
