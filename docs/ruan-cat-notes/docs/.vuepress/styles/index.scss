@@ -246,6 +246,30 @@ hr {
 
 // 左侧边栏
 aside.vp-sidebar {
+	// 标题序号
+	// https://zhuanlan.zhihu.com/p/321430614
+	ul.vp-sidebar-links {
+		counter-reset: list-number 0;
+
+		li {
+			section.vp-sidebar-group {
+				span.vp-sidebar-title {
+					&::before {
+						counter-increment: list-number;
+						content: counters(list-number, ".") ". ";
+					}
+				}
+			}
+
+			a.vp-sidebar-link {
+				&::before {
+					counter-increment: list-number;
+					content: counters(list-number, ".") ". ";
+				}
+			}
+		}
+	}
+
 	.vp-sidebar-link {
 		&.active {
 			color: $drill-black;
