@@ -1,0 +1,39 @@
+{
+	"extends": [
+		"//"
+	],
+	"tasks": {
+		"copy-readme": {
+			"cache": false
+		},
+		"typedoc": {
+			"cache": false
+		},
+		"generate-md": {
+			"dependsOn": [
+				"copy-readme",
+				"typedoc"
+			]
+		},
+		"docs:dev-main": {
+			"dependsOn": [
+				"generate-md"
+			]
+		},
+		"docs:dev": {
+			"dependsOn": [
+				"docs:dev-main"
+			]
+		},
+		"build:docs-main": {
+			"dependsOn": [
+				"generate-md"
+			]
+		},
+		"do-build-docs": {
+			"dependsOn": [
+				"build:docs-main"
+			]
+		}
+	}
+}
