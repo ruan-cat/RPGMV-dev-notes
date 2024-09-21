@@ -16,6 +16,7 @@
 		"corepack:pnpm": "corepack enable && corepack install",
 		"test": "vitest --ui",
 		"prettier": "prettier --write .",
+		"git:fetch": "git fetch -p",
 		"git:dev-2-main": "git rebase dev main",
 		"git:main-2-dev": "git rebase main dev",
 		"update-package": "pnpm dlx vp-update",
