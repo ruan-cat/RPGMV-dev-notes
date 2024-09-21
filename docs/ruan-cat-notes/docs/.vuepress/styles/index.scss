@@ -27,53 +27,15 @@ $border-radius-mini: 0.5rem;
 // 圆角-大
 $border-radius-large: 1rem;
 
-@mixin scrollbar($rootClassName) {
-	#{$rootClassName} {
-		scrollbar-width: auto;
-		scrollbar-color: unset;
-		// 滚动条样式
-		&::-webkit-scrollbar {
-			width: $scrollbar-width;
-			height: $scrollbar-width;
-			border-radius: 0;
-		}
-		// 滚动条的可拖拽部分（滑块）
-		&::-webkit-scrollbar-thumb {
-			width: $scrollbar-width;
-			border-radius: calc($scrollbar-width * 0.5);
-			background-color: $alice-yellow;
-			&:hover {
-				cursor: pointer;
-			}
-			&:active {
-				cursor: grabbing;
-				background-color: $alice-yellow;
-			}
-		}
-		// 滚动条的滚动区域（轨道）
-		&::-webkit-scrollbar-track {
-			width: $scrollbar-width;
-			border-radius: calc($scrollbar-width * 0.5);
-			background-color: $drill-main-color;
-		}
-		&::-webkit-scrollbar-track-piece {
-			width: $scrollbar-width;
-			background-color: $drill-main-color;
-		}
-		&::-webkit-scrollbar-button {
-			display: none;
-		}
-	}
-}
-
-@mixin clear-scrollbar($name) {
+@mixin scrollbar-clear($name) {
 	#{$name} {
 		scrollbar-width: auto !important;
 		scrollbar-color: unset !important;
 	}
 }
 
-@mixin scrollbar-2() {
+@mixin scrollbar() {
+	// 移交给专门的混入来完成重设
 	// scrollbar-width: auto;
 	// scrollbar-color: unset;
 	// 滚动条样式
@@ -110,56 +72,19 @@ $border-radius-large: 1rem;
 	}
 }
 
-@include clear-scrollbar(":root");
+// 强制重设根提供的配置
+@include scrollbar-clear(":root");
 :root {
-	// scrollbar-width: auto !important;
-	// scrollbar-color: unset !important;
 	--sidebar-width: 22rem;
 }
 
-// // 滚动条样式
-// ::-webkit-scrollbar {
-// 	width: $scrollbar-width;
-// 	height: $scrollbar-width;
-// 	border-radius: 0;
-// }
-// // 滚动条的可拖拽部分（滑块）
-// ::-webkit-scrollbar-thumb {
-// 	width: $scrollbar-width;
-// 	border-radius: calc($scrollbar-width * 0.5);
-// 	background-color: $alice-yellow;
-// 	&:hover {
-// 		cursor: pointer;
-// 	}
-// 	&:active {
-// 		cursor: grabbing;
-// 		background-color: $alice-yellow;
-// 	}
-// }
-// // 滚动条的滚动区域（轨道）
-// ::-webkit-scrollbar-track {
-// 	width: $scrollbar-width;
-// 	border-radius: calc($scrollbar-width * 0.5);
-// 	background-color: $drill-main-color;
-// }
-// ::-webkit-scrollbar-track-piece {
-// 	width: $scrollbar-width;
-// 	background-color: $drill-main-color;
-// }
-// ::-webkit-scrollbar-button {
-// 	display: none;
-// }
-
-// @include scrollbar("html");
-// @include scrollbar(":root");
-@include scrollbar-2();
+@include scrollbar();
 
 .theme-container {
-	// @include scrollbar(".vp-sidebar");
-
-	@include clear-scrollbar(".vp-sidebar");
+	// 侧边栏清空冗余的配置
+	@include scrollbar-clear(".vp-sidebar");
 	.vp-sidebar {
-		// @include scrollbar-2();
+		// @include scrollbar();
 	}
 }
 
@@ -234,9 +159,9 @@ hr {
 
 		// 不提供根据次序实现的颜色差异。
 		// &:nth-child(3n + 1) .route-link {
-		// 	@include arrow($drill-main-color);
+		// 	@include arrow($drill-yellow);
 		// 	span {
-		// 		background-color: $drill-main-color;
+		// 		background-color: $drill-yellow;
 		// 	}
 		// }
 		// &:nth-child(3n + 2) .route-link {
@@ -321,9 +246,6 @@ hr {
 
 // 左侧边栏
 aside.vp-sidebar {
-	// background-color: $drill-main-color;
-	// background-color: $gray;
-
 	.vp-sidebar-link {
 		&.active {
 			color: $drill-black;
@@ -351,8 +273,8 @@ aside#toc {
 		color: white;
 	}
 
-	@include scrollbar-2();
-	// @include clear-scrollbar(".vp-toc-wrapper");
+	@include scrollbar();
+	// @include scrollbar-clear(".vp-toc-wrapper");
 
 	.vp-toc-wrapper {
 		$text-color: $drill-black;
@@ -401,35 +323,3 @@ aside#toc {
 		}
 	}
 }
-
-// aside#sidebar {
-// 	$color: palevioletred;
-// 	$width-s: 0.4rem;
-// 	$width-l: 1rem;
-
-// 	& {
-// 		&::-webkit-scrollbar {
-// 			width: $width-s;
-// 		}
-
-// 		&::-webkit-scrollbar-track {
-// 			width: $width-s;
-// 		}
-
-// 		&::-webkit-scrollbar-thumb {
-// 			width: $width-s;
-// 			background-color: $theme-color;
-// 		}
-// 	}
-
-// 	&:hover {
-// 		&::-webkit-scrollbar {
-// 			width: $width-l;
-// 		}
-// 	}
-
-// 	&::-webkit-scrollbar-track-piece {
-// 		border-radius: 6px;
-// 		background: #0000001a;
-// 	}
-// }
