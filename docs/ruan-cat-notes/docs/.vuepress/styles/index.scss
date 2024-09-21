@@ -251,21 +251,25 @@ aside.vp-sidebar {
 	ul.vp-sidebar-links {
 		counter-reset: list-number 0;
 
+		@mixin before($counterName) {
+			&::before {
+				display: inline-block;
+				min-width: 1rem;
+				margin-right: 0.8rem;
+				counter-increment: $counterName;
+				content: counters($counterName, ".") ".";
+			}
+		}
+
 		li {
 			section.vp-sidebar-group {
 				span.vp-sidebar-title {
-					&::before {
-						counter-increment: list-number;
-						content: counters(list-number, ".") ". ";
-					}
+					@include before(list-number);
 				}
 			}
 
 			a.vp-sidebar-link {
-				&::before {
-					counter-increment: list-number;
-					content: counters(list-number, ".") ". ";
-				}
+				@include before(list-number);
 			}
 		}
 	}
