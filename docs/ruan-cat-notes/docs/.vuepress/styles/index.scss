@@ -104,10 +104,8 @@ hr {
 
 		$size: 1rem;
 		$height: 2.5 * $size;
-
 		line-height: $height;
 		height: $height;
-
 		$padding: $size;
 
 		// 箭头
@@ -181,6 +179,14 @@ hr {
 			// padding-inline-end: $padding;
 		}
 	}
+}
+
+.vp-breadcrumb {
+	padding-inline: 0;
+}
+
+.vp-page-title {
+	padding-inline: 0;
 }
 
 // 正文
