@@ -27,71 +27,75 @@ $border-radius-mini: 0.5rem;
 // 圆角-大
 $border-radius-large: 1rem;
 
-// $rootClassName
-@mixin scrollbar() {
-	scrollbar-width: auto;
+@mixin scrollbar($rootClassName) {
+	.#{$rootClassName} {
+		scrollbar-width: auto;
+		scrollbar-color: unset;
 
-	// 滚动条样式
-	::-webkit-scrollbar {
-		width: $scrollbar-width;
-		border-radius: 0;
-	}
-
-	// 滚动条的可拖拽部分（滑块）
-	::-webkit-scrollbar-thumb {
-		width: $scrollbar-width;
-		border-radius: calc($scrollbar-width * 0.5);
-		background-color: $alice-yellow;
-
-		&:hover {
-			cursor: pointer;
+		// 滚动条样式
+		&::-webkit-scrollbar {
+			width: $scrollbar-width;
+			border-radius: 0;
 		}
 
-		&:active {
-			cursor: grabbing;
+		// 滚动条的可拖拽部分（滑块）
+		&::-webkit-scrollbar-thumb {
+			width: $scrollbar-width;
+			border-radius: calc($scrollbar-width * 0.5);
 			background-color: $alice-yellow;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			&:active {
+				cursor: grabbing;
+				background-color: $alice-yellow;
+			}
+		}
+
+		// 滚动条的滚动区域（轨道）
+		&::-webkit-scrollbar-track {
+			width: $scrollbar-width;
+			border-radius: calc($scrollbar-width * 0.5);
+			background-color: $drill-main-color;
+		}
+
+		&::-webkit-scrollbar-track-piece {
+			width: $scrollbar-width;
+			background-color: $drill-main-color;
+		}
+
+		&::-webkit-scrollbar-button {
+			display: none;
 		}
 	}
-
-	// 滚动条的滚动区域（轨道）
-	::-webkit-scrollbar-track {
-		width: $scrollbar-width;
-		border-radius: calc($scrollbar-width * 0.5);
-		background-color: $drill-main-color;
-	}
-
-	::-webkit-scrollbar-track-piece {
-		width: $scrollbar-width;
-		background-color: $drill-main-color;
-	}
-
-	::-webkit-scrollbar-button {
-		display: none;
-	}
-
-	// .#{$rootClassName} {
-	// }
 }
 
 html {
-	@include scrollbar();
+	// @include scrollbar("html");
 }
 
 :root {
-	scrollbar-width: auto;
+	// scrollbar-width: auto;
+	--sidebar-width: 22rem;
 }
 
 // FIXME: 无法修改侧边栏的滚动条
 .theme-container {
-	@include scrollbar();
+	// @include scrollbar("theme-container");
+
+	// .vp-sidebar {
+	// 	// .vp-sidebar-links {
+	// 	// 	@include scrollbar();
+	// 	// }
+	// }
+	@include scrollbar("vp-sidebar");
 
 	.vp-sidebar {
-		@include scrollbar();
-
-		.vp-sidebar-links {
-			@include scrollbar();
-		}
 	}
+
+	// @include scrollbar("vp-sidebar-links");
 }
 
 hr {
