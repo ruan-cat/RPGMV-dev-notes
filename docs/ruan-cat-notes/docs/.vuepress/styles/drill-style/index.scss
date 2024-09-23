@@ -3,29 +3,19 @@
 @use "../tools/tools.scss" as tools;
 @use "./variables.scss" as drillVariables;
 
+// 爱丽丝样式 对基础版本的样式做拓展与覆盖
+@import "../common/index.scss";
+
 // 圆角-小
 $border-radius-mini: 0.5rem;
 
 // 圆角-大
 $border-radius-large: 1rem;
 
-// 强制重设根提供的配置
-@include tools.clearScrollbar(":root");
-
-:root {
-	--sidebar-width: 23vw;
-}
-
-// 设置全体的滚动条样式
+// 设置全体的滚动条样式 用小爱丽丝的颜色
 @include tools.setScrollbar(drillVariables.$alice-yellow, drillVariables.$drill-main-color);
 
-// 侧边栏清空冗余的配置
-@include tools.clearScrollbar(".vp-sidebar");
-
-// 标题序号
-@include tools.setSidebarOrder();
-
-// 间距 和 标识线
+// 间距 和 标识线 用小爱丽丝的颜色
 @include tools.setSidebarIndicatrix(drillVariables.$drill-dark-color);
 
 hr {
