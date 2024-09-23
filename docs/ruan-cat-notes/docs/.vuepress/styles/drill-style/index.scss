@@ -1,9 +1,7 @@
+// 钻头小爱丽丝风格的 样式配置
+
 @use "../tools/tools.scss" as tools;
 @use "./variables.scss" as drillVariables;
-
-@import "./variables.scss";
-
-// 钻头小爱丽丝风格的样式配置
 
 // 圆角-小
 $border-radius-mini: 0.5rem;
@@ -13,19 +11,22 @@ $border-radius-large: 1rem;
 
 // 强制重设根提供的配置
 @include tools.clearScrollbar(":root");
+
 :root {
-	// --sidebar-width: 30rem;
 	--sidebar-width: 23vw;
 }
 
-// 设置根
+// 设置全体的滚动条样式
 @include tools.setScrollbar(drillVariables.$alice-yellow, drillVariables.$drill-main-color);
 
-// 设置主侧边栏的样式
-.theme-container {
-	// 侧边栏清空冗余的配置
-	@include tools.clearScrollbar(".vp-sidebar");
-}
+// 侧边栏清空冗余的配置
+@include tools.clearScrollbar(".vp-sidebar");
+
+// 标题序号
+@include tools.setSidebarOrder();
+
+// 间距 和 标识线
+@include tools.setSidebarIndicatrix(drillVariables.$drill-dark-color);
 
 hr {
 	border-top: none;
@@ -187,12 +188,6 @@ hr {
 		}
 	}
 }
-
-// 标题序号
-@include tools.setSidebarOrder();
-
-// 间距 和 标识线
-@include tools.setSidebarIndicatrix(drillVariables.$drill-dark-color);
 
 // 左侧边栏
 aside.vp-sidebar {
