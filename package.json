@@ -76,7 +76,7 @@
 		"tsx": "^4.19.1",
 		"turbo": "^2.1.2",
 		"typedoc": "^0.25.13",
-		"typedoc-plugin-markdown": "^3.17.1",
+		"typedoc-plugin-markdown": "^4.2.8",
 		"typescript": "^5.6.2",
 		"unplugin-auto-import": "^0.16.7",
 		"unplugin-vue-components": "^0.25.2",
