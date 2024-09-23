@@ -25,8 +25,7 @@
 		"clear": "rimraf dist && rimraf .turbo && rimraf .vercel",
 		"pnpm:clear": "pnpm -r clear && pnpm run clear",
 		"turbo:build-docs": "turbo build:docs",
-		"turbo:copy-dist": "turbo copy-dist",
-		"on-github-action-flow": "turbo copy-dist",
+		"on-github-action-flow": "turbo build-docs",
 		"deploy-vercel": "node --import=tsx ./bin/vercel-deploy-tool.ts"
 	},
 	"dependencies": {

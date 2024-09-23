@@ -75,17 +75,16 @@ $border-radius-large: 1rem;
 // 强制重设根提供的配置
 @include scrollbar-clear(":root");
 :root {
-	--sidebar-width: 30rem;
+	// --sidebar-width: 30rem;
+	--sidebar-width: 25vw;
 }
 
 @include scrollbar();
 
+// 设置主侧边栏的样式
 .theme-container {
 	// 侧边栏清空冗余的配置
 	@include scrollbar-clear(".vp-sidebar");
-	.vp-sidebar {
-		// @include scrollbar();
-	}
 }
 
 hr {
