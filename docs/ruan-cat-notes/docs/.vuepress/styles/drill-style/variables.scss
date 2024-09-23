@@ -1,3 +1,4 @@
+// 变量
 $alice-blue: rgb(240, 248, 255);
 $alice-yellow: rgb(249, 227, 154);
 
@@ -17,18 +18,3 @@ $gray: rgb(230, 230, 230);
 // $drill-content-bgc: rgb(54, 196, 230);
 // $drill-content-bgc: rgb(240, 248, 255);
 $drill-content-bgc: white;
-
-// you can change colors here
-// $theme-color: #096dd9;
-$theme-color: $drill-main-color;
-
-$bg-color: (
-	// light: #fff,
-	// dark: #0d1117,
-	light: $alice-blue,
-	dark: $drill-yellow
-);
-
-:export {
-	themeColor: $theme-color;
-}

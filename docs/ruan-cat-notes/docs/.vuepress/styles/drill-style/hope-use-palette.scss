@@ -1,0 +1,14 @@
+@import "./variables.scss";
+
+// hope主题需要使用的变量配置文件
+// you can change colors here
+// $theme-color: #096dd9;
+$theme-color: $drill-main-color;
+
+$bg-color: (
+	// light: #fff,
+	// light: $drill-pink,
+	// dark: $drill-yellow
+	light: $alice-blue,
+	dark: #0d1117
+);
