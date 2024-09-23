@@ -1,0 +1,46 @@
+/** 清空重设滚动条 */
+@mixin clearScrollbar($name) {
+	#{$name} {
+		scrollbar-width: auto !important;
+		scrollbar-color: unset !important;
+	}
+}
+
+// 侧边栏宽度默认值
+$defScrollbarWidth: 0.9rem;
+
+/** 设置滚动条 */
+@mixin setScrollbar($scrollbarThumbColor, $scrollbarTrackColor, $scrollbarWidth: $defScrollbarWidth) {
+	// 滚动条样式
+	::-webkit-scrollbar {
+		width: $scrollbarWidth;
+		height: $scrollbarWidth;
+		border-radius: 0;
+	}
+	// 滚动条的可拖拽部分（滑块）
+	::-webkit-scrollbar-thumb {
+		width: $scrollbarWidth;
+		border-radius: calc($scrollbarWidth * 0.5);
+		background-color: $scrollbarThumbColor;
+		&:hover {
+			cursor: pointer;
+		}
+		&:active {
+			cursor: grabbing;
+			background-color: $scrollbarThumbColor;
+		}
+	}
+	// 滚动条的滚动区域（轨道）
+	::-webkit-scrollbar-track {
+		width: $scrollbarWidth;
+		border-radius: calc($scrollbarWidth * 0.5);
+		background-color: $scrollbarTrackColor;
+	}
+	::-webkit-scrollbar-track-piece {
+		width: $scrollbarWidth;
+		background-color: $scrollbarTrackColor;
+	}
+	::-webkit-scrollbar-button {
+		display: none;
+	}
+}

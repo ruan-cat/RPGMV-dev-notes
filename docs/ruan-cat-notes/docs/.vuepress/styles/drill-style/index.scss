@@ -1,8 +1,9 @@
+@use "../tools/scrollbar.scss" as scrollbarTools;
+@use "./variables.scss" as drillVariables;
+
 @import "./variables.scss";
 
-// 钻头小爱丽丝风格
-// 侧边栏宽度
-$scrollbar-width: 0.9rem;
+// 钻头小爱丽丝风格的样式配置
 
 // 圆角-小
 $border-radius-mini: 0.5rem;
@@ -10,64 +11,20 @@ $border-radius-mini: 0.5rem;
 // 圆角-大
 $border-radius-large: 1rem;
 
-@mixin scrollbar-clear($name) {
-	#{$name} {
-		scrollbar-width: auto !important;
-		scrollbar-color: unset !important;
-	}
-}
-
-@mixin scrollbar() {
-	// 移交给专门的混入来完成重设
-	// scrollbar-width: auto;
-	// scrollbar-color: unset;
-	// 滚动条样式
-	::-webkit-scrollbar {
-		width: $scrollbar-width;
-		height: $scrollbar-width;
-		border-radius: 0;
-	}
-	// 滚动条的可拖拽部分（滑块）
-	::-webkit-scrollbar-thumb {
-		width: $scrollbar-width;
-		border-radius: calc($scrollbar-width * 0.5);
-		background-color: $alice-yellow;
-		&:hover {
-			cursor: pointer;
-		}
-		&:active {
-			cursor: grabbing;
-			background-color: $alice-yellow;
-		}
-	}
-	// 滚动条的滚动区域（轨道）
-	::-webkit-scrollbar-track {
-		width: $scrollbar-width;
-		border-radius: calc($scrollbar-width * 0.5);
-		background-color: $drill-main-color;
-	}
-	::-webkit-scrollbar-track-piece {
-		width: $scrollbar-width;
-		background-color: $drill-main-color;
-	}
-	::-webkit-scrollbar-button {
-		display: none;
-	}
-}
-
 // 强制重设根提供的配置
-@include scrollbar-clear(":root");
+@include scrollbarTools.clearScrollbar(":root");
 :root {
 	// --sidebar-width: 30rem;
-	--sidebar-width: 25vw;
+	--sidebar-width: 23vw;
 }
 
-@include scrollbar();
+// 设置根
+@include scrollbarTools.setScrollbar(drillVariables.$alice-yellow, drillVariables.$drill-main-color);
 
 // 设置主侧边栏的样式
 .theme-container {
 	// 侧边栏清空冗余的配置
-	@include scrollbar-clear(".vp-sidebar");
+	@include scrollbarTools.clearScrollbar(".vp-sidebar");
 }
 
 hr {
@@ -298,8 +255,7 @@ aside#toc {
 		color: white;
 	}
 
-	@include scrollbar();
-	// @include scrollbar-clear(".vp-toc-wrapper");
+	@include scrollbarTools.setScrollbar(drillVariables.$alice-yellow, drillVariables.$drill-main-color);
 
 	.vp-toc-wrapper {
 		$text-color: $drill-black;
