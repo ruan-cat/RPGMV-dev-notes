@@ -38,3 +38,7 @@ pnpm-lock.yaml
 
 # 忽略自动生成vercel部署配置文件
 vercel.null.def.json
+
+# 忽略自动生成的类型声明文件
+components.d.ts
+auto-imports.d.ts
