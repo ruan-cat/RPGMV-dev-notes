@@ -1,4 +1,4 @@
-@use "../tools/scrollbar.scss" as scrollbarTools;
+@use "../tools/tools.scss" as tools;
 @use "./variables.scss" as drillVariables;
 
 @import "./variables.scss";
@@ -12,19 +12,19 @@ $border-radius-mini: 0.5rem;
 $border-radius-large: 1rem;
 
 // 强制重设根提供的配置
-@include scrollbarTools.clearScrollbar(":root");
+@include tools.clearScrollbar(":root");
 :root {
 	// --sidebar-width: 30rem;
 	--sidebar-width: 23vw;
 }
 
 // 设置根
-@include scrollbarTools.setScrollbar(drillVariables.$alice-yellow, drillVariables.$drill-main-color);
+@include tools.setScrollbar(drillVariables.$alice-yellow, drillVariables.$drill-main-color);
 
 // 设置主侧边栏的样式
 .theme-container {
 	// 侧边栏清空冗余的配置
-	@include scrollbarTools.clearScrollbar(".vp-sidebar");
+	@include tools.clearScrollbar(".vp-sidebar");
 }
 
 hr {
@@ -188,42 +188,14 @@ hr {
 	}
 }
 
+// 标题序号
+@include tools.setSidebarOrder();
+
+// 间距 和 标识线
+@include tools.setSidebarIndicatrix(drillVariables.$drill-dark-color);
+
 // 左侧边栏
 aside.vp-sidebar {
-	// 标题序号
-	// https://zhuanlan.zhihu.com/p/321430614
-	ul.vp-sidebar-links {
-		counter-reset: list-number 0;
-
-		@mixin before($counterName) {
-			&::before {
-				display: inline-block;
-				min-width: 1rem;
-				margin-right: 0.8rem;
-				counter-increment: $counterName;
-				content: counters($counterName, ".") ".";
-			}
-		}
-
-		li {
-			section.vp-sidebar-group {
-				span.vp-sidebar-title {
-					@include before(list-number);
-				}
-			}
-
-			a.vp-sidebar-link {
-				@include before(list-number);
-			}
-		}
-	}
-
-	// 间距 和 标识线
-	ul.vp-sidebar-links {
-		margin: 0 0 0 1.4rem;
-		border-left: 0.08rem solid $drill-dark-color;
-	}
-
 	.vp-sidebar-link {
 		&.active {
 			color: $drill-black;
@@ -251,7 +223,7 @@ aside#toc {
 		color: white;
 	}
 
-	@include scrollbarTools.setScrollbar(drillVariables.$alice-yellow, drillVariables.$drill-main-color);
+	@include tools.setScrollbar(drillVariables.$alice-yellow, drillVariables.$drill-main-color);
 
 	.vp-toc-wrapper {
 		$text-color: $drill-black;

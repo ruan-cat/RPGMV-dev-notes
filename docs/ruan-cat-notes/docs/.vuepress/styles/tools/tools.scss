@@ -44,3 +44,48 @@ $defScrollbarWidth: 0.9rem;
 		display: none;
 	}
 }
+
+@mixin before($counterName) {
+	&::before {
+		display: inline-block;
+		min-width: 1rem;
+		margin-right: 0.8rem;
+		counter-increment: $counterName;
+		content: counters($counterName, ".") ".";
+	}
+}
+
+/** 设置侧边栏 标题序号 */
+@mixin setSidebarOrder() {
+	// 左侧边栏
+	aside.vp-sidebar {
+		// 标题序号
+		// https://zhuanlan.zhihu.com/p/321430614
+		ul.vp-sidebar-links {
+			counter-reset: list-number 0;
+
+			li {
+				section.vp-sidebar-group {
+					span.vp-sidebar-title {
+						@include before(list-number);
+					}
+				}
+
+				a.vp-sidebar-link {
+					@include before(list-number);
+				}
+			}
+		}
+	}
+}
+
+/** 设置侧边栏 标识线 */
+@mixin setSidebarIndicatrix($lineColor: gray) {
+	aside.vp-sidebar {
+		// 间距 和 标识线
+		ul.vp-sidebar-links {
+			margin: 0 0 0 1.4rem;
+			border-left: 0.08rem solid $lineColor;
+		}
+	}
+}
