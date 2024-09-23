@@ -1,1 +1,350 @@
+@import "./palette.scss";
+
 // 钻头小爱丽丝风格
+// 侧边栏宽度
+$scrollbar-width: 0.9rem;
+
+// 圆角-小
+$border-radius-mini: 0.5rem;
+
+// 圆角-大
+$border-radius-large: 1rem;
+
+@mixin scrollbar-clear($name) {
+	#{$name} {
+		scrollbar-width: auto !important;
+		scrollbar-color: unset !important;
+	}
+}
+
+@mixin scrollbar() {
+	// 移交给专门的混入来完成重设
+	// scrollbar-width: auto;
+	// scrollbar-color: unset;
+	// 滚动条样式
+	::-webkit-scrollbar {
+		width: $scrollbar-width;
+		height: $scrollbar-width;
+		border-radius: 0;
+	}
+	// 滚动条的可拖拽部分（滑块）
+	::-webkit-scrollbar-thumb {
+		width: $scrollbar-width;
+		border-radius: calc($scrollbar-width * 0.5);
+		background-color: $alice-yellow;
+		&:hover {
+			cursor: pointer;
+		}
+		&:active {
+			cursor: grabbing;
+			background-color: $alice-yellow;
+		}
+	}
+	// 滚动条的滚动区域（轨道）
+	::-webkit-scrollbar-track {
+		width: $scrollbar-width;
+		border-radius: calc($scrollbar-width * 0.5);
+		background-color: $drill-main-color;
+	}
+	::-webkit-scrollbar-track-piece {
+		width: $scrollbar-width;
+		background-color: $drill-main-color;
+	}
+	::-webkit-scrollbar-button {
+		display: none;
+	}
+}
+
+// 强制重设根提供的配置
+@include scrollbar-clear(":root");
+:root {
+	// --sidebar-width: 30rem;
+	--sidebar-width: 25vw;
+}
+
+@include scrollbar();
+
+// 设置主侧边栏的样式
+.theme-container {
+	// 侧边栏清空冗余的配置
+	@include scrollbar-clear(".vp-sidebar");
+}
+
+hr {
+	border-top: none;
+	border-top: 2px dotted var(--border-color);
+}
+
+// 顶部导航栏
+.vp-breadcrumb ol {
+	display: flex;
+	flex-direction: row;
+
+	li {
+		display: inline-flex;
+		flex-direction: row;
+
+		$size: 1rem;
+		$height: 2.5 * $size;
+		line-height: $height;
+		height: $height;
+		$padding: $size;
+
+		// 箭头
+		@mixin arrow($color) {
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 20px;
+				height: 100%;
+				background-color: $color;
+
+				bottom: 0 !important;
+				margin-inline-end: 0 !important;
+				clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 50%, 0 0);
+			}
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 20px;
+				height: 100%;
+				background-color: $color;
+				clip-path: polygon(100% 50%, 0 0, 0 100%);
+			}
+		}
+
+		a.route-link {
+			display: flex;
+			color: $drill-black;
+			// 清除全部间距
+			padding: 0 0;
+			padding-right: 0;
+			height: 100%;
+			width: 100%;
+
+			span {
+				display: inline-block;
+				padding-left: 0.5rem;
+			}
+		}
+
+		// 全部
+		&:nth-child(n) .route-link {
+			@include arrow($drill-main-color);
+			span {
+				background-color: $drill-main-color;
+			}
+		}
+
+		// 不提供根据次序实现的颜色差异。
+		// &:nth-child(3n + 1) .route-link {
+		// 	@include arrow($drill-yellow);
+		// 	span {
+		// 		background-color: $drill-yellow;
+		// 	}
+		// }
+		// &:nth-child(3n + 2) .route-link {
+		// 	@include arrow($drill-main-color);
+		// 	span {
+		// 		background-color: $drill-main-color;
+		// 	}
+		// }
+		// &:nth-child(3n + 3) .route-link {
+		// 	@include arrow($drill-main-color);
+		// 	span {
+		// 		background-color: $drill-main-color;
+		// 	}
+		// }
+
+		&:last-child a {
+			// padding-inline-end: $padding;
+		}
+	}
+}
+
+.vp-breadcrumb {
+	padding-inline: 0;
+}
+
+.vp-page-title {
+	padding-inline: 0;
+}
+
+// 正文
+.theme-hope-content {
+	background-color: $drill-content-bgc;
+	border-radius: $border-radius-large;
+	// color: $drill-white;
+	color: $drill-black;
+
+	padding: 0 25px;
+	padding-top: 10px !important;
+	padding-bottom: 30px;
+
+	&:not(.custom) {
+		padding: 0 25px;
+		padding-top: 10px !important;
+		padding-bottom: 30px;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: $drill-black;
+	}
+
+	a:not(.header-anchor) {
+		color: $drill-black;
+		text-decoration: underline;
+
+		&:hover {
+			color: $drill-orange;
+		}
+	}
+}
+
+// a标签
+.external-link-icon .theme-hope-content {
+	a {
+		&[href*="://"],&[target=_blank]
+		{
+			// position: relative;
+
+			&:not(.no-external-link-icon) {
+				&::after {
+					font-size: 1rem;
+					width: 1rem;
+					height: 1rem;
+					background-color: $drill-white;
+				}
+
+				&:hover::after {
+					// TODO: 实现图标变化的动效
+					// font-size: 1.5rem;
+					// width: 1.5rem;
+					// height: 1.5rem;
+					// background-color: $drill-white;
+				}
+			}
+		}
+	}
+}
+
+// 左侧边栏
+aside.vp-sidebar {
+	// 标题序号
+	// https://zhuanlan.zhihu.com/p/321430614
+	ul.vp-sidebar-links {
+		counter-reset: list-number 0;
+
+		@mixin before($counterName) {
+			&::before {
+				display: inline-block;
+				min-width: 1rem;
+				margin-right: 0.8rem;
+				counter-increment: $counterName;
+				content: counters($counterName, ".") ".";
+			}
+		}
+
+		li {
+			section.vp-sidebar-group {
+				span.vp-sidebar-title {
+					@include before(list-number);
+				}
+			}
+
+			a.vp-sidebar-link {
+				@include before(list-number);
+			}
+		}
+	}
+
+	// 间距 和 标识线
+	ul.vp-sidebar-links {
+		margin: 0 0 0 1.4rem;
+		border-left: 0.08rem solid $drill-dark-color;
+		// $alice-yellow
+		// $drill-dark-color
+		// $drill-main-color
+	}
+
+	.vp-sidebar-link {
+		&.active {
+			color: $drill-black;
+			font-weight: bolder;
+			background-color: $alice-yellow;
+		}
+
+		&:hover {
+			background-color: $drill-main-color;
+		}
+	}
+}
+
+// 右侧边栏
+aside#toc {
+	.vp-toc-header {
+		display: inline;
+		background-color: $drill-main-color;
+		padding: 0.5rem 1rem !important;
+
+		border-radius: $border-radius-large;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+
+		color: white;
+	}
+
+	@include scrollbar();
+	// @include scrollbar-clear(".vp-toc-wrapper");
+
+	.vp-toc-wrapper {
+		$text-color: $drill-black;
+
+		color: $text-color;
+		background-color: $drill-main-color;
+		border-radius: $border-radius-large;
+		border-top-left-radius: 0;
+
+		margin: 0 !important;
+		padding: 1rem 1rem;
+		padding-top: 0.5rem;
+
+		&.open {
+			margin-top: 0 !important;
+			padding-bottom: 1rem;
+		}
+
+		&::before {
+			width: 1rem;
+		}
+
+		.vp-toc-marker {
+			width: 1rem;
+			clip-path: ellipse(100% 50% at 0% 50%);
+			background-color: $alice-yellow;
+		}
+
+		.vp-toc-item {
+			.vp-toc-link {
+				color: $text-color;
+			}
+
+			& .active {
+				.vp-toc-link {
+					font-weight: bolder;
+				}
+			}
+		}
+
+		// 移除掉多余的黑色点块
+		li:not(.vp-toc-item) {
+			&::marker {
+				content: "";
+			}
+		}
+	}
+}
