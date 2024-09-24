@@ -8,9 +8,9 @@ import "element-plus/dist/index.css";
 import "animate.css";
 
 // 测试 普通样式
-import "@ruan-cat/vuepress-preset-config/src/styles/common/index.scss";
+// import "@ruan-cat/vuepress-preset-config/src/styles/common/index.scss";
 // 测试 爱丽丝样式
-// import "@ruan-cat/vuepress-preset-config/src/styles/drill-style/index.scss";
+import "@ruan-cat/vuepress-preset-config/src/styles/drill-style/index.scss";
 
 // https://stackoverflow.com/questions/10358100/how-to-access-localstorage-in-node-js
 // import { LocalStorage } from "node-localstorage";
@@ -57,6 +57,6 @@ export default defineClientConfig({
 		});
 	},
 
-	// TODO: 增加一个全局的组件
+	// TODO: 考虑迁移到默认vuepress配置内，对外导出一个小爱丽丝工具。
 	rootComponents: [AliceHover],
 });
