@@ -72,6 +72,7 @@
 		"prettier": "^3.3.3",
 		"prettier-plugin-lint-md": "^1.0.1",
 		"rimraf": "^5.0.10",
+		"sass-embedded": "^1.79.3",
 		"shx": "^0.3.4",
 		"tsx": "^4.19.1",
 		"turbo": "^2.1.2",

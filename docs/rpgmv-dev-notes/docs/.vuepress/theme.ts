@@ -66,14 +66,15 @@ export default hopeTheme({
 		mdEnhance: {
 			align: true,
 			// 启用 GFM 警告
-			alert: true,
 			// 使用特殊标记为 Markdown 元素添加属性
 			attrs: true,
-			hint: true,
 			gfm: true,
-			imgLazyload: true,
-			imgSize: true,
-			figure: true,
+			// TODO: 升级
+			// alert: true,
+			// hint: true,
+			// imgLazyload: true,
+			// imgSize: true,
+			// figure: true,
 			include: true, //导入文件
 			mark: true,
 			footnote: true,

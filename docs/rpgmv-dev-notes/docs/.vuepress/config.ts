@@ -1,33 +1,15 @@
-import { defineUserConfig } from "vuepress";
-import { getDirname, path } from "vuepress/utils";
-import { viteBundler } from "@vuepress/bundler-vite";
+import { defineRuanCatVuepressConfig } from "@ruan-cat/vuepress-preset-config";
+import theme from "./theme";
 
-import theme from "./theme.js";
-
-const __dirname = getDirname(import.meta.url);
-
-/** 设置开始识别根目录在 */
-const pathSrc = path.resolve(__dirname, "types");
-
-const port = 6312;
-
-export default defineUserConfig({
-	theme,
+export default defineRuanCatVuepressConfig({
+	title: "阮喵喵的rmmv开发笔记",
 	base: "/",
-
-	shouldPrefetch: false,
-	port,
-
+	lang: "zh-CN",
+	description: "天才小爱丽丝，冲鸭！",
 	markdown: {
 		headers: {
 			level: [2, 3, 4, 5],
 		},
 	},
-
-	bundler: viteBundler({
-		viteOptions: {},
-		vuePluginOptions: {},
-	}),
-
-	plugins: [],
+	theme,
 });
