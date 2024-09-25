@@ -3,11 +3,15 @@ import dayjs from "dayjs";
 import { hopeTheme } from "vuepress-theme-hope";
 
 /** 作者对外称呼 */
-const authorName = "阮喵喵";
+export const authorName = <const>"阮喵喵";
+
+function getYaer() {
+	return dayjs().year();
+}
 
 /** 页脚模板函数 */
 export function footerTmpl() {
-	return `MIT Licensed | Copyright © ${dayjs().year()}-present ${authorName}`;
+	return <const>`MIT Licensed | Copyright © ${getYaer()}-present ${authorName}`;
 }
 
 const footer = footerTmpl();
@@ -136,14 +140,9 @@ export default hopeTheme({
 		mdEnhance: {
 			align: true,
 			// 启用 GFM 警告
-			alert: true,
 			// 使用特殊标记为 Markdown 元素添加属性
 			attrs: true,
-			hint: true,
 			gfm: true,
-			imgLazyload: true,
-			imgSize: true,
-			figure: true,
 			//导入文件
 			include: true,
 			mark: true,
@@ -153,6 +152,12 @@ export default hopeTheme({
 			sub: true,
 			sup: true,
 			mermaid: true,
+			// TODO: 有空迁移配置
+			// hint: true,
+			// alert: true,
+			// imgLazyload: true,
+			// imgSize: true,
+			// figure: true,
 		},
 
 		/**
