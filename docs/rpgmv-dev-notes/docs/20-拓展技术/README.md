@@ -16,3 +16,5 @@ dir:
 - node
   - npm
 - jsdoc
+
+<Catalog />

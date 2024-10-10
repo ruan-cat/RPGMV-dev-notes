@@ -26,3 +26,5 @@ dir:
 
 - `RPGMV` steam 正版
 - `mv` 1.6.2
+
+<Catalog />
