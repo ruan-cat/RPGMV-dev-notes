@@ -1,5 +1,5 @@
 ---
-# order: 20
+permalink: /expansion-technique/
 dir:
   order: 20
 ---
