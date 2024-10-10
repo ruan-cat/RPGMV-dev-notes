@@ -1,3 +1,9 @@
+---
+# permalink: /learn-source-code/menu-background-is-the-current-scene/
+# shortTitle: 章节简述
+order: 1
+---
+
 # 源码解析
 
 本章节涉及到`rmmv`的源码解析部分。
