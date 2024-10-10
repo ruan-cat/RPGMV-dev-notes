@@ -69,6 +69,14 @@ export const hopeThemeConfig: ThemeOptions = {
 				},
 			],
 		},
+
+		// 源码解析  learn-source-code
+		{
+			text: "源码解析",
+			prefix: "/learn-source-code/",
+			collapsible: true,
+			children: "structure",
+		},
 	]),
 
 	footer,
