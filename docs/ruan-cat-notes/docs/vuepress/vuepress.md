@@ -2,7 +2,7 @@
 
 ## 功能细节优化
 
-- notes.youngkbt.cn/about/website/introduce
+- https://notes.youngkbt.cn/about/website/introduce/
 
 参照这个链接内的教程配置。逐步地优化网站的交互效果。
 
@@ -45,3 +45,7 @@
 
 - https://vuepress-theme-hope.github.io/v2/zh/cookbook/customize/layout.html#主题断点
 - https://vuepress-theme-hope.github.io/v2/zh/config/theme/appearance.html#pcbreakpoint
+
+### 不再考虑
+
+如果使用大屏预览，那么显示效果很差的。不考虑该需求。
