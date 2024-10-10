@@ -47,6 +47,16 @@ const sidebarConfig = sidebar([
 		],
 	},
 
+	// 插件开发
+	{
+		text: "插件开发",
+		// prefix: "/developing-rmmv-plugins/",
+		prefix: "/插件开发/",
+		// link: "/developing-rmmv-plugins/",
+		collapsible: true,
+		children: "structure",
+	},
+
 	// 源码解析  learn-source-code
 	{
 		text: "源码解析",
