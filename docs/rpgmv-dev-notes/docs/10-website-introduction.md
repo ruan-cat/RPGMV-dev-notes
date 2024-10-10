@@ -1,5 +1,8 @@
 ---
 permalink: /website-introduction/
+# order: 10
+dir:
+  order: 10
 ---
 
 # 网站说明

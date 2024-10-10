@@ -1,7 +1,9 @@
 ---
 # permalink: /learn-source-code/menu-background-is-the-current-scene/
 # shortTitle: 章节简述
-order: 1
+# order: 40
+dir:
+  order: 40
 ---
 
 # 源码解析
