@@ -64,7 +64,6 @@ children: [
 		 * /:data*
 		 */
 		path: "/leasingBusiness/appraisalInfo/:appraisalNo*/:reportNo*/:data*",
-		// TODO: 搜索并更改。
 		name: "DetailInfo",
 		component: (resolve) => require(["@/views/systems/leasing/housing/leasingEvaluation/info/Info"], resolve),
 		props: true,

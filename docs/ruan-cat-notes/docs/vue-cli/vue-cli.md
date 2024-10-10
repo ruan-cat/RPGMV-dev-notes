@@ -8,9 +8,7 @@
 
 ## 图片下载 ？
 
-TODO:
-
-请求图片链接，为什么有的图片直接展示，有的图片就直接进行下载？
+TODO: 请求图片链接，为什么有的图片直接展示，有的图片就直接进行下载？
 
 - https://blog.csdn.net/lan_yangbi/article/details/116758861
 
@@ -20,17 +18,13 @@ blob 转换格式为 base64
 
 ## 跨域 ？
 
-TODO:
-
-vue+nginx 设置跨域
+TODO: vue+nginx 设置跨域
 
 - https://blog.csdn.net/where_slr/article/details/100071957
 
 ## 断点调试 ？
 
-TODO:
-
-这篇文章称可以让 vue-cli 和 vscode 实现断点调试。等待学习使用。
+TODO: 这篇文章称可以让 vue-cli 和 vscode 实现断点调试。等待学习使用。
 
 - https://github.com/Microsoft/vscode-recipes/tree/master/vuejs-cli
 

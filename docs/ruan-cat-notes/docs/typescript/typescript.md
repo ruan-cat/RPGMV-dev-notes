@@ -39,9 +39,7 @@ npx tsc --target es6 --module es6 src\hooks\useEarlyWarningMapData\useEarlyWarni
 
 ### 用 swagger 生成 ts 类型声明文件？
 
-TODO:
-
-swagger 生成 ts ？看到了很多类似的工具。可以折腾一下。
+TODO: swagger 生成 ts ？看到了很多类似的工具。可以折腾一下。
 
 ## 项目内的.d.ts 配置
 
