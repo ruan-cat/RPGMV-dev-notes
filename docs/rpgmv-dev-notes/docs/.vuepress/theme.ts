@@ -1,4 +1,3 @@
-import dayjs from "dayjs";
 import { hopeTheme, sidebar, type ThemeOptions } from "vuepress-theme-hope";
 
 import { footerTmpl, authorName } from "@ruan-cat/vuepress-preset-config";
@@ -28,36 +27,49 @@ export const hopeThemeConfig: ThemeOptions = {
 
 	docsDir: "docs",
 
-	sidebar: sidebar(
-		// {
-		// 	"/": [""],
-		// },
-		[
-			"/",
-			"/website-introduction",
-			{
-				// "expansion-technique": {},
-				text: "拓展技术",
-				prefix: "/expansion-technique/",
-				// link: "/expansion-technique/",
-				collapsible: true,
-				// children: "structure",
-				children: [
-					"",
-					{
-						text: "工程化",
-						// prefix: "/expansion-technique/engineered/",
-						// prefix: "/engineered/",
-						prefix: "engineered/",
-						// link: "/engineered/",
-						link: "/expansion-technique/engineered/",
-						collapsible: true,
-						children: "structure",
-					},
-				],
-			},
-		],
-	),
+	sidebar: sidebar([
+		// 不直接在侧边栏内提供项目首页
+		// "/",
+		// 网站介绍
+		"/website-introduction",
+
+		// 拓展技术
+		{
+			text: "拓展技术",
+			prefix: "/expansion-technique/",
+			// link: "/expansion-technique/",
+			collapsible: true,
+			children: [
+				"",
+				{
+					text: "工程化",
+					prefix: "engineered/",
+					// link: "/engineered/",
+					// link: "/expansion-technique/engineered/",
+					collapsible: true,
+					children: "structure",
+				},
+				{
+					text: "准备开发环境",
+					prefix: "prepare-develop-environment/",
+					collapsible: true,
+					children: "structure",
+				},
+				{
+					text: "版本控制",
+					prefix: "version-control/",
+					collapsible: true,
+					children: "structure",
+				},
+				{
+					text: "随笔",
+					prefix: "essays/",
+					collapsible: true,
+					children: "structure",
+				},
+			],
+		},
+	]),
 
 	footer,
 	displayFooter: false,
