@@ -116,9 +116,13 @@ https://juejin.cn/post/7018810975822282760
 
 我不知道为什么是 prettierrc.config.js 文件
 
-TODO:
-
 目前无法让 vscode 的 prettier 插件和 npm 安装 prettier 共同使用。 prettier --write 命令无效。
+
+### 已完成
+
+已处理。不清楚是什么时候处理完 eslint 和 prettier 了，现在（2024-10-11）基本上不会去纠结 prettier 问题了。
+
+该问题于 2023-6-15 记录。16 个月之前的问题。
 
 ## 标签总是另起一行
 
