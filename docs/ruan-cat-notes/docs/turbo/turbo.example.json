@@ -1,7 +1,5 @@
 {
-	"extends": [
-		"//"
-	],
+	"extends": ["//"],
 	"tasks": {
 		"copy-readme": {
 			"cache": false
@@ -10,30 +8,19 @@
 			"cache": false
 		},
 		"generate-md": {
-			"dependsOn": [
-				"copy-readme",
-				"typedoc"
-			]
+			"dependsOn": ["copy-readme", "typedoc"]
 		},
 		"docs:dev-main": {
-			"dependsOn": [
-				"generate-md"
-			]
+			"dependsOn": ["generate-md"]
 		},
 		"docs:dev": {
-			"dependsOn": [
-				"docs:dev-main"
-			]
+			"dependsOn": ["docs:dev-main"]
 		},
 		"build:docs-main": {
-			"dependsOn": [
-				"generate-md"
-			]
+			"dependsOn": ["generate-md"]
 		},
 		"do-build-docs": {
-			"dependsOn": [
-				"build:docs-main"
-			]
+			"dependsOn": ["build:docs-main"]
 		}
 	}
 }
