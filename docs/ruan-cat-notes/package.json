@@ -9,7 +9,7 @@
 		"docs:clean-dev": "vuepress-vite dev docs --clean-cache",
 		"docs:dev": "vuepress-vite dev docs",
 		"docs:update-package": "pnpm dlx vp-update",
-		"clear": "rimraf dist && rimraf .turbo && rimraf .vercel"
+		"clear": "rimraf dist .turbo .vercel .cache .temp"
 	},
 	"dependencies": {
 		"@vercel/analytics": "^1.3.1",

@@ -22,7 +22,7 @@
 		"update-package": "pnpm dlx vp-update",
 		"turbo:update-packages": "turbo docs:update-package && pnpm update-package",
 		"rm:node_modules": "pnpm -r rimraf node_modules && rimraf node_modules pnpm-lock.yaml",
-		"clear": "rimraf dist && rimraf .turbo && rimraf .vercel",
+		"clear": "rimraf dist .turbo .vercel .cache .temp",
 		"pnpm:clear": "pnpm -r clear && pnpm run clear",
 		"turbo:build-docs": "turbo build:docs",
 		"on-github-action-flow": "turbo build-docs",
