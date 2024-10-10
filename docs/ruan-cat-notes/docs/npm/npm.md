@@ -33,9 +33,9 @@ npm ls -g --json=true --depth=0
 
 npm 包怎么标记自己为 looking for funding ？
 
-TODO:
+TODO: 如果自己也想让自己的包标记为 funding，对外宣布这些依赖包寻求资助，该怎么实现呢？
 
-如果自己也想让自己的包标记为 funding，对外宣布这些依赖包寻求资助，该怎么实现呢？
+与 2023-07-04 号标记的待办任务。现在（2024-10-11）有能力发包了，标记依赖包寻求资助是很容易的。小事情，有空就做。
 
 ## `Life Cycle Scripts` npm 命令的生命周期
 

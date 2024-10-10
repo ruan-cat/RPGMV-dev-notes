@@ -715,8 +715,6 @@ function findStateinfo(stateId) {
 
 ### pickByFieldNameList
 
-<!-- TODO: 待询问 -->
-
 请编写一个 pickByFieldNameList 函数，用于实现上述的业务取值。实现在对象内取键值，并映射生成出新的字段名，最后生成一个新的对象。
 
 回答要求：
@@ -1550,8 +1548,6 @@ function findStateinfo(stateId) {
 ```
 
 ### pickByFieldNameList
-
-<!-- TODO: 待询问 -->
 
 请编写一个 pickByFieldNameList 函数，用于实现上述的业务取值。实现在对象内取键值，并映射生成出新的字段名，最后生成一个新的对象。
 

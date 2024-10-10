@@ -20,12 +20,17 @@ vscode 文件重命名后 gutter indicators 无查看任何内容
 
 无论是什么文件类型。
 
-## TODO: 学习待办
+## 学习待办
 
 - Live Preview 插件是否可以更好的运行 VScode？
-- Live Share 是什么？怎么实现 VScode 的快速在线分享？
 
-### Draw.io ? 学习绘制流程图？ 集成值 vscode？
+  > 运行 html 的简单工具。已完成学习。
+
+- TODO: Live Share 是什么？怎么实现 VScode 的快速在线分享？
+
+### Draw.io ？ 学习绘制流程图？ 集成值 vscode？
+
+已完成学习。
 
 ### 在 vscode 查看 office 的插件？
 

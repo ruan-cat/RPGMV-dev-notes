@@ -26,7 +26,7 @@ pnpm dlx vp-update@latest
 
 pnpm dlx vp-update@next
 
-## TODO: 独立完成 bug 测试与 pr
+## 独立完成 bug 测试与 pr
 
 经过和作者在 QQ 群的沟通，作者要求我独立完成 pr，因为作者不愿意为了该功能额外导入依赖，而是使用 node 原生的功能。
 
@@ -62,3 +62,15 @@ pnpm dlx vp-update@next
 截图如下：
 
 ![2024-03-17-17-22-01](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-03-17-17-22-01.png)
+
+## 不作处理
+
+是我这边的问题，是我的 packageManager 写错了，其格式不对，没有不等号的。
+
+这个写法是不对的。
+
+```json
+{
+	"packageManager": ">=pnpm@8.0.0"
+}
+```
