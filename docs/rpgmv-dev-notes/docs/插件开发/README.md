@@ -2,8 +2,8 @@
 # permalink: /developing-rmmv-plugins/index/
 permalink: /developing-rmmv-plugins/
 shortTitle: 插件开发
-# dir:
-#   text: 111
+dir:
+	text: 插件开发
 ---
 
 # 本章前言与阅读建议
