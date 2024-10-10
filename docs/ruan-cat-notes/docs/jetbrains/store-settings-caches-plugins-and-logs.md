@@ -50,9 +50,7 @@ idea.log.path=D:\store\jetbrains\WebStorm\idea.log.path
 
 效果不好，webstorm 没有重新识别出插件。可以说整个 jetbrains 产品都烂掉了。
 
-TODO:
-
-应该全部重装一次 jetbrains 的全部产品。然后手动的移除掉 C 盘的数据。
+TODO: 应该全部重装一次 jetbrains 的全部产品。然后手动的移除掉 C 盘的数据。
 
 再重头开始，看看文件存储方案。
 
