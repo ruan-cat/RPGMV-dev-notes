@@ -89,8 +89,8 @@ export const hopeThemeConfig: ThemeOptions = {
 
 	docsDir: "docs",
 
-	// sidebar: "structure",
-	sidebar: sidebarConfig,
+	sidebar: "structure",
+	// sidebar: sidebarConfig,
 
 	footer,
 	displayFooter: false,
