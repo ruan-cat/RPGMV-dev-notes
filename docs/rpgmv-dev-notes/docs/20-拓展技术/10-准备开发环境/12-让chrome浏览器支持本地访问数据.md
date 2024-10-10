@@ -1,3 +1,9 @@
+---
+permalink: /prepare-develop-environment/chrome-launch-mv-by-file-protocol/
+order: 12
+shortTitle: chrome浏览器直接运行mv项目
+---
+
 # 让 Chrome 浏览器支持本地访问数据
 
 ## 具体解释与实现方式

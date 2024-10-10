@@ -1,3 +1,9 @@
+---
+permalink: /prepare-develop-environment/node-launch-mv/
+order: 20
+shortTitle: 用live-server运行mv项目
+---
+
 # 为什么一定要考虑用 node 环境来运行 rmmv？
 
 因为要实现`node`环境下`js`模块化代码加载和**热更新**，所以我们需要让`rmmv`项目代码变成一定程度上的`node`项目。

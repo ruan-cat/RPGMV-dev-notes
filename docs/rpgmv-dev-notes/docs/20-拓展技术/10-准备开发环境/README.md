@@ -1,5 +1,5 @@
 ---
-permalink: /expansion-technique/prepare-develop-environment/
+permalink: /prepare-develop-environment/
 dir:
   order: 10
 ---

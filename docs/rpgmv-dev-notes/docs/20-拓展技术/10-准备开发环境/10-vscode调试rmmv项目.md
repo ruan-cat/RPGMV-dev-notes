@@ -1,4 +1,10 @@
-# 用 VScode 的方式来运行调试 mv 项目
+---
+permalink: /prepare-develop-environment/vscode-launch-mv/
+order: 10
+shortTitle: vscode独立运行mv项目
+---
+
+# 用 vscode 的方式来运行调试 mv 项目
 
 本小节内容涉及到了插件开发的内容，但是并不涉及具体代码编写，只涉及到简单的软件设置。
 

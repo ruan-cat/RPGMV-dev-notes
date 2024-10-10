@@ -1,4 +1,10 @@
-# vscode+rmmv 用 vscode 运行并调试 rmmv 项目
+---
+permalink: /prepare-develop-environment/use-vscode-plugins-launch-mv/
+order: 30
+shortTitle: 用vscode插件运行mv项目
+---
+
+# 用 vscode 运行并调试 rmmv 项目
 
 ## 单纯的运行 html 文件
 
