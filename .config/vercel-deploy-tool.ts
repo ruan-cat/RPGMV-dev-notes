@@ -21,7 +21,7 @@ const config: Config = {
 			type: "userCommands",
 			outputDirectory: "docs/.vuepress/dist/**/*",
 			targetCWD: "./docs/rpgmv-dev-notes",
-			url: ["rpgmv-dev-notes.ruancat6312.top", "rpgmv-dev-notes.ruan-cat.com"],
+			url: ["rpgmv-dev-notes.ruancat6312.top", "rpgmv-dev-notes.ruan-cat.com", "mv.ruan-cat.com"],
 			userCommands: ["pnpm -C=./docs/rpgmv-dev-notes build:docs"],
 		},
 	],
