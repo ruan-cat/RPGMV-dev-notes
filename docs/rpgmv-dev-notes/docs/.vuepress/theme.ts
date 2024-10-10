@@ -1,17 +1,11 @@
 import dayjs from "dayjs";
-import { hopeTheme } from "vuepress-theme-hope";
+import { hopeTheme, sidebar, type ThemeOptions } from "vuepress-theme-hope";
 
-/** 作者对外称呼 */
-const authorName = "阮喵喵";
-
-/** 页脚模板函数 */
-export function footerTmpl() {
-	return `MIT Licensed | Copyright © ${dayjs().year()}-present ${authorName}`;
-}
+import { footerTmpl, authorName } from "@ruan-cat/vuepress-preset-config";
 
 const footer = footerTmpl();
 
-export default hopeTheme({
+export const hopeThemeConfig: ThemeOptions = {
 	// hostname: 'https://mister-hope.github.io',
 	// hostname: 'https://www.ruan-cat.com/',
 	// 尝试移除底部的斜线
@@ -34,7 +28,24 @@ export default hopeTheme({
 
 	docsDir: "docs",
 
-	sidebar: "structure",
+	sidebar: sidebar(
+		// {
+		// 	"/": [""],
+		// },
+		[
+			"/",
+			"/website-introduction",
+			{
+				// "expansion-technique": {},
+				text: "拓展技术",
+				children: "structure",
+				collapsible: true,
+				// children: [""],
+				// link: "/expansion-technique/",
+				prefix: "/expansion-technique/",
+			},
+		],
+	),
 
 	footer,
 	displayFooter: false,
@@ -98,4 +109,6 @@ export default hopeTheme({
 			autoSuggestions: true,
 		},
 	},
-});
+};
+
+export default hopeTheme(hopeThemeConfig);

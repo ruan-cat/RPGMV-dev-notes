@@ -10,7 +10,7 @@ tagline: 前端流行技术在rmmv的实战应用开发经验总结
 
 actions:
   - text: 本站介绍 💡
-    link: /website-introduction/
+    link: /website-introduction
     type: primary
 
 # features:
