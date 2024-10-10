@@ -1,6 +1,5 @@
 ---
-# permalink: /developing-rmmv-plugins/index/
-# permalink: /developing-rmmv-plugins/
+permalink: /developing-rmmv-plugins/
 shortTitle: 插件开发
 dir:
   text: 插件开发
