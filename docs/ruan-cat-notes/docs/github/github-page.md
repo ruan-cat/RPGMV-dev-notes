@@ -2,7 +2,7 @@
 
 ## 用工作流实现 github page 的部署？
 
-TODO: 用工作流实现 github page 的部署？
+用工作流实现 github page 的部署？
 
 - JamesIves/github-pages-deploy-action@v4
 
