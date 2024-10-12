@@ -3,45 +3,38 @@
 ## 动态匹配路由参数的例子
 
 ```js
-children: [
-	{
-		// path: "/leasingBusiness/appraisalInfo/:appraisalNo/:reportNo/:data",
+const config = {
+	children: [
+		{
+			// path: "/leasingBusiness/appraisalInfo/:appraisalNo/:reportNo/:data",
 
-		/**
-		 * https: //v3.router.vuejs.org/zh/guide/essentials/dynamic-matching.html#高级匹配模式
-		 * https: //github.com/pillarjs/path-to-regexp/tree/v1.7.0#parameters
-		 * 尝试使用更好的匹配模式 实现动态参数接收
-		 *
-		 * 匹配一个或多个参数
-		 * /:appraisalNo+
-		 *
-		 * 匹配零个或多个参数
-		 * /:reportNo*
-		 *
-		 * 匹配零个或多个参数
-		 * /:data*
-		 */
-		path: "/leasingBusiness/appraisalInfo/:appraisalNo*/:reportNo*/:data*",
-		name: "DetailInfo",
-		component: (resolve) => require(["@/views/systems/leasing/housing/leasingEvaluation/info/Info"], resolve),
-		props: true,
-		meta: {
-			breadcrumb: true,
-			title: "评估详细信息",
-			isLocalDefineRouter: true,
+			/**
+			 * https: //v3.router.vuejs.org/zh/guide/essentials/dynamic-matching.html#高级匹配模式
+			 * https: //github.com/pillarjs/path-to-regexp/tree/v1.7.0#parameters
+			 * 尝试使用更好的匹配模式 实现动态参数接收
+			 *
+			 * 匹配一个或多个参数
+			 * /:appraisalNo+
+			 *
+			 * 匹配零个或多个参数
+			 * /:reportNo*
+			 *
+			 * 匹配零个或多个参数
+			 * /:data*
+			 */
+			path: "/leasingBusiness/appraisalInfo/:appraisalNo*/:reportNo*/:data*",
+			name: "DetailInfo",
+			component: (resolve) => require(["@/views/systems/leasing/housing/leasingEvaluation/info/Info"], resolve),
+			props: true,
+			meta: {
+				breadcrumb: true,
+				title: "评估详细信息",
+				isLocalDefineRouter: true,
+			},
 		},
-	},
-];
+	];
+}
 ```
-
-## 动态路由导入
-
-学习待办：
-1： webpack 的分包技术。chunk 包拆分配置。
-2： 模块懒加载。异步加载。
-
-目前学习情况：
-在 vue2 的 vue-admin-element 项目中，最新版的路由使用就是用了 import()函数实现的。问题在于当前项目使用的架构过于老旧了。import 函数在 vue-cli 内反而是能用的。关键在于动态路由的数据库存储方案。
 
 ## 路由选项配置
 
