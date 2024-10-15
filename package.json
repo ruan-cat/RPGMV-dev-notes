@@ -89,5 +89,10 @@
 		"vuepress-plugin-search-pro": "2.0.0-rc.57",
 		"vuepress-plugin-typedoc": "0.13.0",
 		"vuepress-theme-hope": "2.0.0-rc.58"
+	},
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-git"
+		}
 	}
 }
