@@ -21,7 +21,7 @@ pip3 install -r requirements.txt  -i http://pypi.douban.com/simple/ --trusted-ho
 
 目前不能在 powershell 内看到 pip 包。
 
-![2023-06-25-11-32-47](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-11-32-47.png)
+![2023-06-25-11-32-47](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-11-32-47.png)
 
 仅能在 Anaconda Powershell Prompt 内看到 pip 包。使用以下[命令](https://pip.pypa.io/en/stable/cli/pip_cache/#usage)查看到 pip 的缓存目录。
 
@@ -31,7 +31,7 @@ pip cache dir
 
 如下图所示：
 
-![2023-06-25-11-33-29](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-11-33-29.png)
+![2023-06-25-11-33-29](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-11-33-29.png)
 
 存储在 C 盘：
 
@@ -43,7 +43,7 @@ c:\users\ruanzhongnan\appdata\local\pip\cache
 
 使用 SpaceSniffer 也能看到 pip 缓存占用的空间很大，约为 5.1G
 
-![2023-06-25-11-36-40](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-11-36-40.png)
+![2023-06-25-11-36-40](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-11-36-40.png)
 
 ### 配置缓存位置
 
@@ -59,10 +59,10 @@ pip config set global.cache-dir "D:\store\pip-pkg-install-cache"
 
 如下图所示：
 
-![2023-06-25-11-46-04](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-11-46-04.png)
+![2023-06-25-11-46-04](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-11-46-04.png)
 
 如期望所示，pip.ini 配置文件被修改了。
 
-![2023-06-25-11-46-38](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-11-46-38.png)
+![2023-06-25-11-46-38](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-11-46-38.png)
 
 最后按照参考资料，手动剪切缓存到新目录下。

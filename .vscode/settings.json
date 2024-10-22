@@ -5,7 +5,7 @@
 	"picgo": {
 		"picBed": {
 			"current": "github",
-			"uploader": "github"
+			"uploader": "github",
 		}
 	},
 	"code-runner.executorMap": {

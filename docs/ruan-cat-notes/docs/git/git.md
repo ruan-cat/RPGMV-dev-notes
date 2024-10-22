@@ -103,7 +103,7 @@ git config --system --list
 
 如下图所示，在 system 级下看到本机默认的 init.defaultBranch 配置，这里默认命名为 master 分支
 
-![2023-05-08-09-46-25](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-08-09-46-25.png)
+![2023-05-08-09-46-25](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-08-09-46-25.png)
 
 使用以下命令修改分支命名。
 
@@ -113,13 +113,13 @@ git config --global init.defaultBranch main
 
 值得注意的是，这里修改的是 global 级全局配置，而不是 system 级的系统配置。
 
-![2023-05-08-10-00-41](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-08-10-00-41.png)
+![2023-05-08-10-00-41](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-08-10-00-41.png)
 
 ### 本地测试
 
 本地初始化 git 仓库，可以看到新创建的 git 仓库，其主分支的默认命名更改为 main 而不是 master。
 
-![2023-05-08-10-05-02](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-08-10-05-02.png)
+![2023-05-08-10-05-02](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-08-10-05-02.png)
 
 ### 参考资料
 
@@ -147,7 +147,7 @@ git push -u origin newName
 
 这里打算重命名 dev 分支为 fuck-dev 分支。暂时不考虑主分支的重命名。
 
-![2023-05-08-11-18-59](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-08-11-18-59.png)
+![2023-05-08-11-18-59](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-08-11-18-59.png)
 
 #### 重命名本地分支
 
@@ -155,7 +155,7 @@ git push -u origin newName
 git branch -m dev fuck-dev
 ```
 
-![2023-05-08-11-20-42](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-08-11-20-42.png)
+![2023-05-08-11-20-42](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-08-11-20-42.png)
 
 #### 删除远程分支
 
@@ -163,7 +163,7 @@ git branch -m dev fuck-dev
 git push -d origin dev
 ```
 
-![2023-05-08-11-22-24](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-08-11-22-24.png)
+![2023-05-08-11-22-24](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-08-11-22-24.png)
 
 #### 推送本地分支并关联远程分支
 
@@ -171,7 +171,7 @@ git push -d origin dev
 git push -u origin fuck-dev
 ```
 
-![2023-05-08-11-23-42](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-08-11-23-42.png)
+![2023-05-08-11-23-42](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-08-11-23-42.png)
 
 至此已完成重命名远程分支的需求。
 
@@ -199,7 +199,7 @@ https://blog.csdn.net/wujj200884/article/details/84999006
 
 ## FIXME: git 报错
 
-![2024-02-25-20-38-37](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-02-25-20-38-37.png)
+![2024-02-25-20-38-37](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-02-25-20-38-37.png)
 
 ```text
 fatal: detected dubious ownership in repository at 'E:/code/rzn/test-2024-0224/test'

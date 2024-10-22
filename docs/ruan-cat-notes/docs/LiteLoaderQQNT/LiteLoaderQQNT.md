@@ -9,7 +9,7 @@
 
 - https://github.com/Mzdyl/LiteLoaderQQNT_Install/
 
-![2024-03-02-18-38-08](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-03-02-18-38-08.png)
+![2024-03-02-18-38-08](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-03-02-18-38-08.png)
 
 ## TODO: 目前正在使用的插件
 

@@ -4,7 +4,7 @@
 
 ## 具体优化示例
 
-![2024-02-28-10-50-00](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-02-28-10-50-00.png)
+![2024-02-28-10-50-00](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-02-28-10-50-00.png)
 
 - drillup 钻头：
 

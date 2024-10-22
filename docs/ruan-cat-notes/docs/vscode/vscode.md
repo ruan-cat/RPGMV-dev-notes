@@ -49,7 +49,7 @@ https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
 
 在 win10 系统内，一般这样操作：
 
-![2023-11-29-23-37-32](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-29-23-37-32.png)
+![2023-11-29-23-37-32](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-11-29-23-37-32.png)
 
 因为某些行为需要管理员权限。
 
@@ -67,11 +67,11 @@ https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
 
 这是 system 类型的 vscode：
 
-![2023-11-29-23-31-45](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-29-23-31-45.png)
+![2023-11-29-23-31-45](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-11-29-23-31-45.png)
 
 这是 user 类型的 vscode：
 
-![2023-11-29-23-32-54](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-29-23-32-54.png)
+![2023-11-29-23-32-54](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-11-29-23-32-54.png)
 
 ### 下载 system 类型的 vscode
 
@@ -79,14 +79,14 @@ https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
 
 - https://code.visualstudio.com/download
 
-![2023-11-30-09-25-07](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-30-09-25-07.png)
+![2023-11-30-09-25-07](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-11-30-09-25-07.png)
 
 有两种安装包，下载时注意区分：
 
 - VSCodeSetup-x64-1.84.2.exe
 - VSCodeUserSetup-x64-1.84.2.exe
 
-![2023-11-30-09-28-41](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-11-30-09-28-41.png)
+![2023-11-30-09-28-41](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-11-30-09-28-41.png)
 
 ## 开启侧边栏的`粘性滚动功能`
 
@@ -94,11 +94,11 @@ https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
 
 1. before 侧边栏无粘性滚动。
 
-![2023-12-14-09-32-20](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-14-09-32-20.png)
+![2023-12-14-09-32-20](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-12-14-09-32-20.png)
 
 2. 根据更新内容，做配置。这里给个人的用户全局配置文件内做配置，而不是工作局局部配置文件。
 
-![2023-12-14-09-33-33](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-14-09-33-33.png)
+![2023-12-14-09-33-33](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-12-14-09-33-33.png)
 
 ```json
 {
@@ -109,11 +109,11 @@ https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
 
 3. after 侧边栏开启了粘性滚动。
 
-![2023-12-14-09-34-33](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-14-09-34-33.png)
+![2023-12-14-09-34-33](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-12-14-09-34-33.png)
 
 4. 插件的右侧侧边栏，也同样包含此功能。
 
-![2023-12-14-09-35-05](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-12-14-09-35-05.png)
+![2023-12-14-09-35-05](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-12-14-09-35-05.png)
 
 ## 跳转到嵌体提示的定义
 

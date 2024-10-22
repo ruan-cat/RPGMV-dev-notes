@@ -208,7 +208,7 @@ label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 
 如图所示：存储路径有改动：
 
-![2023-06-06-13-55-12](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-06-13-55-12.png)
+![2023-06-06-13-55-12](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-06-13-55-12.png)
 
 进入后，发现之前注册的账户不行了。准备重新新建一个账户。但是不清楚是不是真正意义上的注册。
 
@@ -245,4 +245,4 @@ label-studio --data-dir=D:/temp-label-studio-proj/label-studio-db
 
 在重新构建一个拓展的打标任务时，url 和图片的 id 出现了不理解的数值，如下：
 
-![2023-06-13-09-41-11](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-13-09-41-11.png)
+![2023-06-13-09-41-11](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-13-09-41-11.png)

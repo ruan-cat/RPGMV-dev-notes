@@ -16,7 +16,7 @@ TODO: 需要补全显卡驱动升级的方式
 nvidia-smi
 ```
 
-![2023-05-22-14-55-07](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-22-14-55-07.png)
+![2023-05-22-14-55-07](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-22-14-55-07.png)
 
 ## CUDA Toolkit
 

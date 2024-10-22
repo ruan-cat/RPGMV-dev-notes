@@ -57,22 +57,22 @@ corepack install
 
 - 没有配置 packageManager 的 node 项目
 
-![2024-05-12-17-07-27](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-05-12-17-07-27.png)
+![2024-05-12-17-07-27](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-17-07-27.png)
 
 - `"packageManager": "pnpm@8.15.8"`
 
-![2024-05-12-17-08-26](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-05-12-17-08-26.png)
+![2024-05-12-17-08-26](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-17-08-26.png)
 
 - `"packageManager": "pnpm@9.0.4"`
 
-![2024-05-12-17-09-02](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-05-12-17-09-02.png)
+![2024-05-12-17-09-02](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-17-09-02.png)
 
 - `"packageManager": "pnpm@8.14.1"`
 
-![2024-05-12-17-09-47](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-05-12-17-09-47.png)
+![2024-05-12-17-09-47](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-17-09-47.png)
 
 - `"packageManager": "pnpm@8.15.8"`
 
-![2024-05-12-17-10-23](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-05-12-17-10-23.png)
+![2024-05-12-17-10-23](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-17-10-23.png)
 
 上述例子就实现了，不同项目内使用不同版本的包管理器。

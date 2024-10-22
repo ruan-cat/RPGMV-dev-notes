@@ -92,13 +92,13 @@ wrangler whoami
 
 ::: details 笔记本
 
-![2024-08-14-10-32-11](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-14-10-32-11.png)
+![2024-08-14-10-32-11](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-14-10-32-11.png)
 
 :::
 
 ::: details 家用台式机
 
-![2024-08-14-10-38-58](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-14-10-38-58.png)
+![2024-08-14-10-38-58](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-14-10-38-58.png)
 
 :::
 
@@ -129,7 +129,7 @@ wrangler whoami
 
 ::: details
 
-![2024-08-15-11-31-40](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-15-11-31-40.png)
+![2024-08-15-11-31-40](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-15-11-31-40.png)
 
 - https://vercel.com/docs/storage/vercel-postgres/usage-and-pricing#pricing
 

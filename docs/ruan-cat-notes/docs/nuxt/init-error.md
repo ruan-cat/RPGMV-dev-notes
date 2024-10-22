@@ -29,7 +29,7 @@ pnpm dlx nuxi@latest init nuxt-test
 
 ::: details 设置电脑 cdn
 
-![设置电脑cdn](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-28-23-12-15.png)
+![设置电脑cdn](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-28-23-12-15.png)
 
 :::
 
@@ -48,7 +48,7 @@ pnpm dlx nuxi@latest init nuxt-test
 
 ::: details 不做设置
 
-![不设置githubusercontent.com](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-28-23-16-54.png)
+![不设置githubusercontent.com](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-28-23-16-54.png)
 
 :::
 
@@ -64,6 +64,6 @@ pnpm dlx giget@latest gh:unjs/template test-giget-1
 
 ::: details 测试 giget
 
-![giget也能够正常使用](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-28-23-20-13.png)
+![giget也能够正常使用](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-28-23-20-13.png)
 
 :::

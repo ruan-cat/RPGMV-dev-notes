@@ -25,6 +25,6 @@ git clone --depth=1 https://github.com/vercel/examples gh.vercel.examples
 
 该情况很适合去阅读别人的 monorepo，特别是那种 demo 集合。
 
-![2024-08-14-11-39-44](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-14-11-39-44.png)
+![2024-08-14-11-39-44](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-14-11-39-44.png)
 
 :::

@@ -15,7 +15,7 @@
 
 如图：
 
-![2023-09-13-15-50-13](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-09-13-15-50-13.png)
+![2023-09-13-15-50-13](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-09-13-15-50-13.png)
 
 ### 做法
 

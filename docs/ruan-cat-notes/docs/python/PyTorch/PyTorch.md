@@ -25,7 +25,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7
 ```
 
-![2023-05-22-15-52-11](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-22-15-52-11.png)
+![2023-05-22-15-52-11](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-22-15-52-11.png)
 
 ```bash
 PackagesNotFoundError: The following packages are not available from current channels:
@@ -233,7 +233,7 @@ pip install D:\dev-evn\anaconda\pkgs\torch-2.0.1+cu118-cp38-cp38-win_amd64.whl
 
 成功。
 
-![2023-05-23-16-39-29](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-05-23-16-39-29.png)
+![2023-05-23-16-39-29](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-23-16-39-29.png)
 
 初步结论。在已经安装好清华镜像的情况下，就不要再翻墙了。
 

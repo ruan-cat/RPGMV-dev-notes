@@ -4,11 +4,11 @@ viteBundler 的 outDir 配置导致打包失败
 
 在我自己的项目内，错误如下：
 
-![2024-06-25-10-54-16](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-06-25-10-54-16.png)
+![2024-06-25-10-54-16](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-06-25-10-54-16.png)
 
 这是刚才重新新建的项目，填写同样的配置，提供 outDir 路径，项目报错：
 
-![2024-06-25-10-54-39](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-06-25-10-54-39.png)
+![2024-06-25-10-54-39](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-06-25-10-54-39.png)
 
 ## 代码
 

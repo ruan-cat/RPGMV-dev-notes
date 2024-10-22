@@ -61,7 +61,7 @@ pnpm dlx vp-update@next
 
 截图如下：
 
-![2024-03-17-17-22-01](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-03-17-17-22-01.png)
+![2024-03-17-17-22-01](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-03-17-17-22-01.png)
 
 ## 不作处理
 

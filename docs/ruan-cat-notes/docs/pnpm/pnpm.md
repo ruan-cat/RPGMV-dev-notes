@@ -24,11 +24,11 @@ pnpm config list -g
 
 发现 C:\Users\ruanzhongnan\AppData\Local 文件夹里面存在 pnpm-state 和 pnpm-cache 两个文件夹。如下图所示：
 
-![2023-06-25-13-45-28](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-13-45-28.png)
+![2023-06-25-13-45-28](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-13-45-28.png)
 
 同时发现这三个文件夹，在文档内有涉及到配置：
 
-![2023-06-25-13-47-34](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-13-47-34.png)
+![2023-06-25-13-47-34](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-13-47-34.png)
 
 相关文档如下：
 
@@ -59,7 +59,7 @@ store-dir=D:\.pnpm-store
 user-agent=pnpm/8.2.0 npm/? node/v16.19.0 win32 x64
 ```
 
-![2023-06-25-13-57-56](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-13-57-56.png)
+![2023-06-25-13-57-56](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-13-57-56.png)
 
 打算按照以下命令来统一设置 global-dir、global-bin-dir、state-dir、cache-dir 这 4 个目录：
 
@@ -78,11 +78,11 @@ pnpm config set cache-dir D:\store\pnpm\cache-dir -g
 ERROR  The configured global bin directory "D:\store\pnpm\global-bin-dir" is not in PATH
 ```
 
-![2023-06-25-14-06-14](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-14-06-14.png)
+![2023-06-25-14-06-14](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-14-06-14.png)
 
 通过检查 C:\Users\ruanzhongnan\AppData\Local\pnpm\config\rc 的文件，发现仅有两条被配置了。
 
-![2023-06-25-14-07-51](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-14-07-51.png)
+![2023-06-25-14-07-51](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-14-07-51.png)
 
 运行命令 `pnpm config list -g` 之后，还是出现该错误。
 
@@ -134,7 +134,7 @@ You may change the global store location by running "pnpm config set store-dir <
 
 运行 `pnpm install -g` 重新使用依赖存储位置。
 
-![2023-06-25-16-02-43](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-16-02-43.png)
+![2023-06-25-16-02-43](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-16-02-43.png)
 
 重新安装：
 
@@ -143,7 +143,7 @@ C:\Windows\system32>\store\pnpm\global-dir\5\node_modules\pnpm\bin\pnpm.cjs" i -
 系统找不到指定的路径。
 ```
 
-![2023-06-25-16-10-27](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-25-16-10-27.png)
+![2023-06-25-16-10-27](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-25-16-10-27.png)
 
 最后经过检查，可以安装并看到全局依赖。
 
@@ -194,7 +194,7 @@ pnpm : 无法加载文件 E:\dev-evn\node-store\node_global\pnpm.ps1，因为在
 
 如下图所示，这里的 pnpm 想要实现全局依赖管理，就要先切换到 node16。在 node14 下是找不到全局依赖的。
 
-![2023-06-12-14-52-45](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-12-14-52-45.png)
+![2023-06-12-14-52-45](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-12-14-52-45.png)
 
 ## 值得注意的版本差
 
@@ -209,7 +209,7 @@ PS C:\Windows\system32> pnpm -v
 8.2.0
 ```
 
-![2023-06-12-14-56-32](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-12-14-56-32.png)
+![2023-06-12-14-56-32](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-12-14-56-32.png)
 
 ### node14
 
@@ -220,7 +220,7 @@ PS C:\Windows\system32> pnpm -v
 7.22.0
 ```
 
-![2023-06-12-14-58-19](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-06-12-14-58-19.png)
+![2023-06-12-14-58-19](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-12-14-58-19.png)
 
 ### 猜测
 

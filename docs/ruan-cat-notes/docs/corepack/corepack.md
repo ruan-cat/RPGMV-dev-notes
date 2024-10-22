@@ -16,13 +16,13 @@ corepack enable
 
 ::: details 以 node20.15.0 为例
 
-![corepack-enable-with-node-20.15.0](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-26-15-56-47.gif)
+![corepack-enable-with-node-20.15.0](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-26-15-56-47.gif)
 
 :::
 
 ::: details 以 node22.4.1 为例
 
-![corepack-enable-with-node-22.4.1](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-08-26-15-57-02.gif)
+![corepack-enable-with-node-22.4.1](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-26-15-57-02.gif)
 
 :::
 

@@ -18,12 +18,12 @@ https://cn.vuejs.org/guide/typescript/overview.html#volar-takeover-mode
 
 出现莫名其妙的组件库丢失类型、
 
-![2023-04-21-18-10-03](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-04-21-18-10-03.png)
+![2023-04-21-18-10-03](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-04-21-18-10-03.png)
 
 `tsconfig.json`的注释出现错误
 
-![2023-04-21-18-11-20](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-04-21-18-11-20.png)
+![2023-04-21-18-11-20](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-04-21-18-11-20.png)
 
 推测是该插件 vue.vscode-typescript-vue-plugin 导致的 bug。
 
-![2023-04-21-18-10-18](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2023-04-21-18-10-18.png)
+![2023-04-21-18-10-18](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-04-21-18-10-18.png)

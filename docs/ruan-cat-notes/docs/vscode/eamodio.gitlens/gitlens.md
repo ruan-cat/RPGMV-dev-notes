@@ -30,11 +30,11 @@ TODO: 怎么实现 gitlens 的 rebase 功能？还是需要专门花时间学习
 
 1. 选中分支，branch 菜单内，右键点击删除分支。
 
-![2024-05-21-12-57-32](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-05-21-12-57-32.png)
+![2024-05-21-12-57-32](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-21-12-57-32.png)
 
 2. 选择删除本地分支和远程分支。这里不选择强制删除。
 
-![2024-05-21-12-58-43](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-05-21-12-58-43.png)
+![2024-05-21-12-58-43](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-21-12-58-43.png)
 
 可以注意到，其本质还是运行命令行：
 
