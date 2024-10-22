@@ -1,10 +1,10 @@
-## `vscode` 的 `.code-workspace` 工作区配置文件的`"picgo.picBed.current"`配置未能够生效
+# `vscode` 的 `.code-workspace` 工作区配置文件的`"picgo.picBed.current"`配置未能够生效
 
-### Describe the bug
+## Describe the bug
 
 工作区配置文件的`"picgo.picBed.current"`配置未能够覆盖掉当前的预设。当本机的 `PicGo` 默认为 `github` 图床时，工作区配置为`阿里云图床`时，插件未能够如期换成`阿里云图床`，仍旧默认使用 `github` 图床来上传。
 
-### To Reproduce
+## To Reproduce
 
 1. 准备两个独立的项目，且均使用工作区配置文件，分别使用 github 图床和阿里云图床。
 
@@ -22,20 +22,20 @@
 
 3. 分别在两个项目内使用 Ctrl + Alt + U 快捷键来快速上传图片。无论在那个项目，都只能上传 github 图床，而不是按需使用工作区配置的阿里云图床。
 
-### Expected behavior
+## Expected behavior
 
 期望工作区配置文件，或者是项目本地的 `.vscode\settings.json` 配置文件的 current 配置，可以覆盖掉本机全局的 current。用局部的图床配置覆盖掉本机全局的配置文件。
 
-### Screenshots
+## Screenshots
 
 见上。
 
-### System information
+## System information
 
 - OS: `Windows`
 - Version `Windows 10`
 
-### VSCode information
+## VSCode information
 
 - `Help` -> `About` -> `Copy`
 
@@ -99,7 +99,7 @@
   }
   ```
 
-### Additional context
+## Additional context
 
 **Is this bug picBed specific, i.e. only the picBed you use is affected?** No.
 
