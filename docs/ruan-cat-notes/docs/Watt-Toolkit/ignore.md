@@ -41,3 +41,31 @@ fonts.gstatic.com
 ![恢复使用](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-09-02-19-56-57.png)
 
 :::
+
+## api.github.com
+
+目前，是 giget 使用该地址来请求资源。当 Watt Toolkit 开启时，会干扰正常的下载。
+
+### 现象
+
+::: details 现象
+
+![运行别人项目时，称giget报错](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-10-22-23-29-37.png)
+
+:::
+
+### 忽略项
+
+::: details 忽略项
+
+![不设置api.github.com](https://cdn.jsdelivr.net/gh/RuanZhongNan/img-store/img/2024-10-22-23-36-26.png)
+
+:::
+
+### 恢复使用
+
+::: details 恢复使用
+
+![2024-10-22-23-39-53](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-10-22-23-39-53.png)
+
+:::
