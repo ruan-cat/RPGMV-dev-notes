@@ -102,3 +102,5 @@ npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --fil
 - [node](https://nodejs.org/en/learn/typescript/run)
 
 目前（2024-9-18）考虑使用 tsx 和 node（v22.6.0）来运行单独的 typescript 文件，他们速度很快。
+
+换 node 版本，用（22.2.0）来运行。因为 22.6.0 有 bug。但是不记得是什么 bug 了，反正导致项目跑不起来。
