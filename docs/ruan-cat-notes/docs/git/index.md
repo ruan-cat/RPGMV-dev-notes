@@ -1,6 +1,14 @@
+---
+order: 0
+---
+
 # git
 
 重要的版本控制软件。和 svn 类似。他们统称为 VCS。
+
+## 本章节目录
+
+<Catalog />
 
 ## 入门教程
 
@@ -8,7 +16,7 @@
 
 ## 学习待办
 
-https://www.zhihu.com/question/594294987/answer/3024615944
+- https://www.zhihu.com/question/594294987/answer/3024615944
 
 ## 常用的全局配置
 

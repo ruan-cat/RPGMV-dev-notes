@@ -22,30 +22,51 @@ export default hopeTheme({
 	// 尝试移除底部的斜线
 	hostname: "https://www.ruan-cat.com",
 
-	fullscreen: true,
+	iconAssets: "iconify",
+
+	// fullscreen: true,
 	// 开发模式下是否启动热更新，显示所有更改并重新渲染
 	hotReload: true,
 
 	author: {
 		name: authorName,
-		url: "https://github.com/RuanZhongNan",
+		url: "https://github.com/ruan-cat",
 	},
 
 	// logo: '/logo.svg',
 	logo: undefined,
 
-	repo: "RuanZhongNan/RPGMV-dev-notes",
+	repo: "ruan-cat/RPGMV-dev-notes",
 
 	docsDir: "docs",
 
 	footer,
 	displayFooter: false,
 
+	sidebar: "structure",
+	navbar: [
+		{
+			link: "/bug/",
+			text: "遭遇的bug",
+			icon: "streamline:bug-antivirus-debugging",
+		},
+		{
+			link: "/git/",
+			text: "git使用",
+			icon: "devicon:git",
+		},
+	],
+
+	navbarLayout: {
+		start: ["Brand", "Links"],
+		end: ["Language", "Repo", "Outlook", "Search"],
+	},
+
 	blog: {
 		medias: {
 			BiliBili: "https://space.bilibili.com/359907572",
 			Gitee: "https://gitee.com/HechiCollegeComputerAssociation",
-			GitHub: "https://github.com/RuanZhongNan",
+			GitHub: "https://github.com/ruan-cat",
 		},
 	},
 
@@ -74,7 +95,7 @@ export default hopeTheme({
 			 * Using Giscus
 			 */
 			provider: "Giscus",
-			repo: "RuanZhongNan/RPGMV-dev-notes",
+			repo: "ruan-cat/RPGMV-dev-notes",
 			repoId: "R_kgDOH7md9w",
 			category: "Announcements",
 			categoryId: "DIC_kwDOH7md984CRo_I",
