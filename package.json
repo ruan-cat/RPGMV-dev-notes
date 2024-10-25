@@ -5,12 +5,17 @@
 	"description": "笔记单仓根目录。",
 	"license": "MIT",
 	"type": "module",
+	"packageManager": "pnpm@9.10.0",
 	"engines": {
 		"vscode": "^1.22.0",
 		"node": ">=20.15.1",
 		"pnpm": ">=9.5.0"
 	},
-	"packageManager": "pnpm@9.10.0",
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-git"
+		}
+	},
 	"scripts": {
 		"preinstall": "npx only-allow pnpm && npm run corepack:pnpm",
 		"corepack:pnpm": "corepack enable && corepack install",
@@ -95,10 +100,5 @@
 		"vuepress-plugin-search-pro": "2.0.0-rc.57",
 		"vuepress-plugin-typedoc": "0.13.0",
 		"vuepress-theme-hope": "2.0.0-rc.58"
-	},
-	"config": {
-		"commitizen": {
-			"path": "node_modules/cz-git"
-		}
 	}
 }
