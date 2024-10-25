@@ -42,3 +42,6 @@ vercel.null.def.json
 # 忽略自动生成的类型声明文件
 components.d.ts
 auto-imports.d.ts
+
+# 我们自动生成工作区文件 所以不提交到仓库内
+*.code-workspace

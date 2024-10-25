@@ -17,18 +17,31 @@
 		"noEmit": true,
 		"allowJs": true,
 		// Web 应用需要 DOM 环境
-		"lib": ["ESNext", "ES2020", "DOM", "DOM.Iterable"],
-		"typeRoots": ["./types"],
+		"lib": [
+			"ESNext",
+			"ES2020",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"typeRoots": [
+			"./types"
+		],
 		"types": [
 			/** https://juejin.cn/post/7262322846252613693 */
-			"element-plus/global",
+			"element-plus/global.d.ts",
 			// "element-plus/global.d.ts"
 			"vite/client"
 		],
 		"paths": {
-			"@/*": ["./src/*"],
-			"utils/*": ["./src/utils/*"],
-			"@docs/*": ["./docs/*"]
+			"@/*": [
+				"./src/*"
+			],
+			"utils/*": [
+				"./src/utils/*"
+			],
+			"@docs/*": [
+				"./docs/*"
+			]
 		}
 	},
 	/** https://www.typescriptlang.org/tsconfig#include */
@@ -54,8 +67,13 @@
 		// 测试文件集
 		"tests/**/*.ts",
 		"./bin/**/*.ts",
-		"./.config/**/*.ts"
+		"./.config/**/*.ts",
+		// 在node端运行的脚本，不在此处做类型声明
+		// "scripts"
 	],
 	/* 模仿其他项目加上的排除配置 */
-	"exclude": ["node_modules", "dist"]
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
 }
