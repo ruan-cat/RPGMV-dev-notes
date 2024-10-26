@@ -1,15 +1,16 @@
-# vite
+# vite，本地开发环境、打包工具
 
 ## 打包错误
 
-https://juejin.cn/post/7091544102021857288
+- https://juejin.cn/post/7091544102021857288
 
 路由动态模块导入写法需要写成函数
-https://learnku.com/vuejs/t/67885
+
+- https://learnku.com/vuejs/t/67885
 
 ## vite 识别出 node 原生 api
 
-```sh
+```bash
 Error: Module "fs" has been externalized for browser compatibility. Cannot access "fs.readdirSync" in client code.  See http://vitejs.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
     at Object.get (__vite-browser-external:fs:3:11)
     at traverseDirectory (surveyItemFieldLabelConfStore.ts:28:19)
