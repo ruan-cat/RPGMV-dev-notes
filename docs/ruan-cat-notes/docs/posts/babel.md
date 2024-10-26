@@ -6,11 +6,11 @@
 
 - 手动安装指定依赖包
 
-![image-20221009182127742](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20221009182127742.png)
+![image-20221009182127742](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20221009182127742.png)
 
 - 在 vue-cli 指定推荐的 babel.config.js 内，指定额外插件
 
-![image-20221009182143432](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20221009182143432.png)
+![image-20221009182143432](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20221009182143432.png)
 
 ## 暂定的解决方案
 

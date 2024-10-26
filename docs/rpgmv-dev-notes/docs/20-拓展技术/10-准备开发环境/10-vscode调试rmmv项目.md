@@ -36,12 +36,12 @@ shortTitle: vscode独立运行mv项目
 #### Live Server
 
 具体截图如下：
-![image-20220815124912429](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220815124912429.png)
+![image-20220815124912429](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20220815124912429.png)
 
 #### Debugger for Chrome
 
 具体截图如下：
-![image-20220815125004409](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220815125004409.png)
+![image-20220815125004409](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20220815125004409.png)
 
 ### 配置 VScode 的 launch.json
 

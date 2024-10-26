@@ -10,11 +10,11 @@
 
 - 个人全局配置为否：
 
-![image-20220708110100034](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220708110100034.png)
+![image-20220708110100034](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20220708110100034.png)
 
 - 工作区局部配置为真
 
-![image-20220708110118798](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20220708110118798.png)
+![image-20220708110118798](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20220708110118798.png)
 
 ### 手动的 json 配置 <Badge type="warning" text="稳妥的保守配置" />
 

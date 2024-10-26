@@ -38,11 +38,11 @@ https://marketplace.visualstudio.com/items?itemName=niudai.vscode-zhihu
 
 - 能够支持`dts`类型提示的情况
 
-![image-20221129155137613](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20221129155137613.png)
+![image-20221129155137613](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20221129155137613.png)
 
 - 完全不能识别的情况
 
-![image-20221129155202158](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/image-20221129155202158.png)
+![image-20221129155202158](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20221129155202158.png)
 
 ### 来自`eslint`的`vue/multi-word-component-names`报错
 
@@ -125,18 +125,18 @@ https://github.com/formulahendry/vscode-code-runner/issues/632
 
 比如说我们遇到了一个新的项目，如下截图
 
-![2023-02-19-13-07-10](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/2023-02-19-13-07-10.png)
+![2023-02-19-13-07-10](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-19-13-07-10.png)
 
 该项目的间距等格式化相关的信息都不太合适，想要快速格式化，这里是推荐在项目根目录内新建`.editorconfig`文件，并且去配置`indent_style = tab`。
 
 - 右键新建文件
-  > ![2023-02-19-13-19-35](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/2023-02-19-13-19-35.png)
+  > ![2023-02-19-13-19-35](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-19-13-19-35.png)
 - 修改`indent_style`配置
-  > ![2023-02-19-13-20-13](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/2023-02-19-13-20-13.png)
+  > ![2023-02-19-13-20-13](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-19-13-20-13.png)
 
 最后在`prettier`等格式化插件的配置下，就可以格式化本文件了，如下图所示：
 
-![2023-02-19-13-21-51](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/2023-02-19-13-21-51.png)
+![2023-02-19-13-21-51](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-19-13-21-51.png)
 
 ## `vs-picgo`
 
@@ -181,11 +181,11 @@ https://github.com/formulahendry/vscode-code-runner/issues/632
 
 调整后，就不会出现该错误了，可以正常的上传。
 
-![2023-02-20-11-31-06](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/2023-02-20-11-31-06.png)
+![2023-02-20-11-31-06](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-20-11-31-06.png)
 
 ## test - picgo
 
-![2023-02-19-14-28-13](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/2023-02-19-14-28-13.png)
+![2023-02-19-14-28-13](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-19-14-28-13.png)
 
 直接使用 picgo 可以直接上传 bili 的图片，可以生成出有意义的图片
 ![](https://article.biliimg.com/bfs/article/2731e1bc7389c6133f9363c84a9cdb282c2a277a.png)
@@ -193,7 +193,7 @@ https://github.com/formulahendry/vscode-code-runner/issues/632
 ## 学习待办
 
 该插件存在显示问题，需要我们重新配置显示的图标
-![2023-02-20-14-08-42](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/2023-02-20-14-08-42.png)
+![2023-02-20-14-08-42](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-20-14-08-42.png)
 
 ## 测试性质的流程图
 

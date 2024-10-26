@@ -6,7 +6,7 @@
 
 怎么清空项目的本地缓存？像这样的东西用什么命令可以快速清空？
 
-![2023-02-20-11-18-58](https://raw.githubusercontent.com/RuanZhongNan/img-store/main/img/2023-02-20-11-18-58.png)
+![2023-02-20-11-18-58](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-20-11-18-58.png)
 
 ## 输出全局安装的依赖包 npm ls -g
 
