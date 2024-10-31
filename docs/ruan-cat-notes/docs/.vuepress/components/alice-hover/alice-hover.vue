@@ -71,7 +71,7 @@ $show-rate: -0.65;
 		bottom: $alice-h * $hidden-rate;
 
 		background-color: transparent;
-		background-image: url(./assets/小爱丽丝_70探头_透明底.png);
+		background-image: url("./assets/LittleAlice_70Probe_Transparent-bottom.png");
 		background-size: 100% 100%;
 		background-position: center;
 
