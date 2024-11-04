@@ -13,3 +13,7 @@
 ## vue3 配合 tsx 优雅的弹窗方案
 
 - https://juejin.cn/post/7250356064988725309
+
+## vue-final-modal
+
+- https://github.com/vue-final/vue-final-modal
