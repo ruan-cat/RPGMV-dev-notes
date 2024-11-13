@@ -112,6 +112,7 @@ export default defineUserConfig({
 			componentsDir: path.resolve(__dirname, "../../docs"),
 			componentsPatterns: ["**/*.vue", "./.vuepress/**/*.vue"],
 			getComponentName(filename) {
+				// TODO: 实现自定义组件名称 和组件全局导入
 				console.log(" in getComponentName filename", filename);
 				const res = path.trimExt(filename.replace(/.*\//, ""));
 
