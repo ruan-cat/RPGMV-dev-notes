@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"types": [
+			/** https://juejin.cn/post/7262322846252613693 */
+			"element-plus/global.d.ts",
+		]
+	},
+	"include": [
+		"./types",
+		"./docs/**/*.ts",
+		"./docs/**/*.vue",
+	]
+}

@@ -20,7 +20,9 @@ import theme from "./theme.js";
 const __dirname = getDirname(import.meta.url);
 
 /** 设置开始识别根目录在 */
-const pathSrc = path.resolve(__dirname, "types");
+// const pathSrc = path.resolve(__dirname, "types");
+const pathSrc = path.resolve(process.cwd(), "types");
+console.log("  in config.ts pathSrc", pathSrc);
 
 const port = 6312;
 
@@ -49,14 +51,15 @@ export default defineUserConfig({
 		},
 	},
 
-	alias: {
-		"@DrillGoods": path.resolve(__dirname, "./components/drill-goods/DrillGoods.vue"),
-	},
+	// 无需全局注册组件 因为已经通过插件实现了
+	// alias: {
+	// 	"@DrillGoods": path.resolve(__dirname, "./components/drill-goods/DrillGoods.vue"),
+	// },
 
-	bundler: viteBundler({
-		viteOptions: {},
-		vuePluginOptions: {},
-	}),
+	// bundler: viteBundler({
+	// 	viteOptions: {},
+	// 	vuePluginOptions: {},
+	// }),
 
 	/**
 	 * 尝试实现element-plus的类型生成，并导入。而不是单纯的组件导入和注册。
@@ -65,24 +68,24 @@ export default defineUserConfig({
 	 *
 	 * 暂时又取消注释了 这个导致代码又莫名其妙跑不起来了
 	 */
-	// bundler: viteBundler({
-	// 	viteOptions: {
-	// 		// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
-	// 		// plugins: [vue()],
-	// 		plugins: [
-	// 			vue(),
-	// 			AutoImport({
-	// 				resolvers: [ElementPlusResolver()],
-	// 				dts: path.resolve(pathSrc, "auto-imports.d.ts"),
-	// 				imports: ["vue"],
-	// 			}),
-	// 			Components({
-	// 				resolvers: [ElementPlusResolver()],
-	// 				dts: path.resolve(pathSrc, "components.d.ts"),
-	// 			}),
-	// 		],
-	// 	},
-	// }),
+	bundler: viteBundler({
+		vuePluginOptions: {},
+		viteOptions: {
+			// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
+			// plugins: [vue()],
+			plugins: [
+				AutoImport({
+					resolvers: [ElementPlusResolver()],
+					dts: path.resolve(pathSrc, "auto-imports.d.ts"),
+					imports: ["vue", "@vueuse/core"],
+				}),
+				Components({
+					resolvers: [ElementPlusResolver()],
+					dts: path.resolve(pathSrc, "components.d.ts"),
+				}),
+			],
+		},
+	}),
 
 	// 尝试处理跨域问题 请求公共的图片接口报错
 	// bundler: viteBundler({

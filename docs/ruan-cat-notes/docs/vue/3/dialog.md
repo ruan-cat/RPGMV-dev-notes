@@ -10,6 +10,8 @@
 
 - https://juejin.cn/post/7293173815181738022
 
+针对此方案，现（2024-11-14）给出一个[封装案例](../../vueuse/TemplatePromise-and-ElDialog/index.md)。
+
 ## vue3 配合 tsx 优雅的弹窗方案
 
 - https://juejin.cn/post/7250356064988725309
