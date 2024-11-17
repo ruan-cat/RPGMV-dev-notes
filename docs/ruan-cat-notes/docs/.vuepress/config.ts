@@ -1,3 +1,5 @@
+import { fileURLToPath, URL } from "node:url";
+
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
 import { viteBundler } from "@vuepress/bundler-vite";
@@ -9,6 +11,7 @@ import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
+import Markdown from "unplugin-vue-markdown/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 import { typedocPlugin } from "vuepress-plugin-typedoc/next";
@@ -69,11 +72,14 @@ export default defineUserConfig({
 	 * 暂时又取消注释了 这个导致代码又莫名其妙跑不起来了
 	 */
 	bundler: viteBundler({
-		vuePluginOptions: {},
+		vuePluginOptions: {
+			include: [/\.vue$/, /\.md$/],
+		},
 		viteOptions: {
 			// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
 			// plugins: [vue()],
 			plugins: [
+				Markdown({}),
 				AutoImport({
 					resolvers: [ElementPlusResolver()],
 					dts: path.resolve(pathSrc, "auto-imports.d.ts"),
@@ -84,6 +90,12 @@ export default defineUserConfig({
 					dts: path.resolve(pathSrc, "components.d.ts"),
 				}),
 			],
+
+			resolve: {
+				alias: {
+					"@docs": fileURLToPath(new URL("../../docs", import.meta.url)),
+				},
+			},
 		},
 	}),
 

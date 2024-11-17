@@ -3,11 +3,27 @@
 		"types": [
 			/** https://juejin.cn/post/7262322846252613693 */
 			"element-plus/global.d.ts",
-		]
+		],
+		"paths": {
+			"@docs/*": [
+				"./docs/*"
+			],
+		},
 	},
 	"include": [
 		"./types",
 		"./docs/**/*.ts",
 		"./docs/**/*.vue",
-	]
+		// 对全部的md文件做类型识别，现在md文件能够导入vue文件了。对vue提供了类型支持。
+		"./docs/**/*.md"
+	],
+	/**
+		让volar对md提供基础的类型支持
+		- https://vitepress.dev/guide/using-vue#vs-code-intellisense-support
+	*/
+	"vueCompilerOptions": {
+		"vitePressExtensions": [
+			".md"
+		],
+	},
 }

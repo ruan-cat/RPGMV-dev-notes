@@ -11,3 +11,12 @@ declare module "*.vue" {
 	const Component: DefineComponent<{}, {}, any>;
 	export default Component;
 }
+
+/**
+ * @see https://github.com/unplugin/unplugin-vue-markdown#typescript-shim
+ */
+// declare module "*.md" {
+// 	import type { ComponentOptions } from "vue";
+// 	const Component: ComponentOptions;
+// 	export default Component;
+// }

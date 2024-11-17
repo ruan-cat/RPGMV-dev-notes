@@ -23,6 +23,7 @@
 		"node-localstorage": "^2.2.1",
 		"pinia": "^2.2.4",
 		"pinia-plugin-persistedstate": "^3.2.3",
+		"unplugin-vue-markdown": "^0.26.2",
 		"uuid": "^9.0.1",
 		"vue-json-excel3": "^0.0.9",
 		"xlsx": "^0.18.5"

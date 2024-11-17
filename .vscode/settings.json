@@ -9,12 +9,7 @@
 		}
 	},
 	"code-runner.executorMap": {
-		// "typescript": "node --loader ts-node/esm $fullFileName --files"
-		// "typescript": "npx vite-node $fullFileName --files"
-		// "typescript": "pnpx vite-node $fullFileName --files"
-		// 似乎快了一点点 3秒左右吧
-		"typescript": "pnpm vite-node $fullFileName --files"
-		// "typescript": "pnpm vite-node $fullFileName"
+		"typescript": "node --import=tsx $fullFileName"
 	},
 	"todo-tree.tree.disableCompactFolders": false,
 	"todo-tree.tree.showCountsInTree": true,
@@ -33,5 +28,14 @@
 		// "*.drawio.svg": "hediet.vscode-drawio",
 		// 正常可用
 		"*.drawio.svg": "hediet.vscode-drawio-text"
-	}
+	},
+	/** 
+		让volar对md提供基础的类型支持
+		- https://github.com/vuejs/language-tools/tree/master/extensions/vscode#configs
+		- https://vitepress.dev/guide/using-vue#vs-code-intellisense-support
+	*/
+	"vue.server.includeLanguages": [
+		"vue",
+		"markdown"
+	]
 }
