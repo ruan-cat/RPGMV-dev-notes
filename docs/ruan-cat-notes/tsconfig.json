@@ -8,6 +8,9 @@
 			"@docs/*": [
 				"./docs/*"
 			],
+			"@source/*": [
+				"./docs/*"
+			],
 		},
 	},
 	"include": [
