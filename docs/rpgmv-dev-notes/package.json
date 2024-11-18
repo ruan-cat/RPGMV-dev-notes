@@ -1,18 +1,18 @@
 {
-  "name": "@ruan-cat-docs/rpgmv-dev-notes",
-  "version": "1.0.0",
-  "author": "阮喵喵",
-  "license": "MIT",
-  "description": "阮喵喵的rmmv开发笔记",
-  "scripts": {
-    "docs:dev": "vuepress-vite dev docs",
-    "docs:clean-dev": "vuepress-vite dev docs --clean-cache",
-    "build:docs": "vuepress-vite build docs",
-    "docs:update-package": "pnpm dlx vp-update",
-    "clear": "rimraf dist .turbo .vercel .cache .temp",
-    "rm:node_modules": "rimraf node_modules"
-  },
-  "devDependencies": {
-    "@types/lodash-es": "^4.17.12"
-  }
+	"name": "@ruan-cat-docs/rpgmv-dev-notes",
+	"version": "1.0.0",
+	"author": "阮喵喵",
+	"license": "MIT",
+	"description": "阮喵喵的rmmv开发笔记",
+	"scripts": {
+		"docs:dev": "vuepress-vite dev docs",
+		"docs:clean-dev": "vuepress-vite dev docs --clean-cache",
+		"build:docs": "vuepress-vite build docs",
+		"docs:update-package": "pnpm dlx vp-update",
+		"clear": "rimraf dist .turbo .vercel .cache .temp",
+		"rm:node_modules": "rimraf node_modules"
+	},
+	"devDependencies": {
+		"@types/lodash-es": "^4.17.12"
+	}
 }

@@ -5,7 +5,7 @@
 	"picgo": {
 		"picBed": {
 			"current": "github",
-			"uploader": "github",
+			"uploader": "github"
 		}
 	},
 	"code-runner.executorMap": {
@@ -34,8 +34,5 @@
 		- https://github.com/vuejs/language-tools/tree/master/extensions/vscode#configs
 		- https://vitepress.dev/guide/using-vue#vs-code-intellisense-support
 	*/
-	"vue.server.includeLanguages": [
-		"vue",
-		"markdown"
-	]
+	"vue.server.includeLanguages": ["vue", "markdown"]
 }

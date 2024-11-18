@@ -2,16 +2,12 @@
 	"compilerOptions": {
 		"types": [
 			/** https://juejin.cn/post/7262322846252613693 */
-			"element-plus/global.d.ts",
+			"element-plus/global.d.ts"
 		],
 		"paths": {
-			"@docs/*": [
-				"./docs/*"
-			],
-			"@source/*": [
-				"./docs/*"
-			],
-		},
+			"@docs/*": ["./docs/*"],
+			"@source/*": ["./docs/*"]
+		}
 	},
 	"include": [
 		"./types",
@@ -25,8 +21,6 @@
 		- https://vitepress.dev/guide/using-vue#vs-code-intellisense-support
 	*/
 	"vueCompilerOptions": {
-		"vitePressExtensions": [
-			".md"
-		],
-	},
+		"vitePressExtensions": [".md"]
+	}
 }

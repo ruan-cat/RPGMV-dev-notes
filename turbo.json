@@ -8,6 +8,7 @@
 			"dependsOn": ["^build"]
 		},
 		"docs:update-package": {
+			"cache": false,
 			"dependsOn": []
 		},
 		"clear": {
