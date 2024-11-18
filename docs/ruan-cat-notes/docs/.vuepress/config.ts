@@ -1,4 +1,5 @@
 import { fileURLToPath, URL } from "node:url";
+import { dirname, resolve, join } from "node:path";
 
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
@@ -11,7 +12,6 @@ import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
-import Markdown from "unplugin-vue-markdown/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 import { typedocPlugin } from "vuepress-plugin-typedoc/next";
@@ -20,12 +20,9 @@ import { typedocPlugin } from "vuepress-plugin-typedoc/next";
 
 import theme from "./theme.js";
 
-const __dirname = getDirname(import.meta.url);
-
-/** 设置开始识别根目录在 */
-// const pathSrc = path.resolve(__dirname, "types");
-const pathSrc = path.resolve(process.cwd(), "types");
-console.log("  in config.ts pathSrc", pathSrc);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const typesPath = path.resolve(process.cwd(), "types");
 
 const port = 6312;
 
@@ -54,11 +51,6 @@ export default defineUserConfig({
 		},
 	},
 
-	// 无需全局注册组件 因为已经通过插件实现了
-	// alias: {
-	// 	"@DrillGoods": path.resolve(__dirname, "./components/drill-goods/DrillGoods.vue"),
-	// },
-
 	// bundler: viteBundler({
 	// 	viteOptions: {},
 	// 	vuePluginOptions: {},
@@ -72,26 +64,19 @@ export default defineUserConfig({
 	 * 暂时又取消注释了 这个导致代码又莫名其妙跑不起来了
 	 */
 	bundler: viteBundler({
-		vuePluginOptions: {
-			include: [/\.vue$/, /\.md$/],
-		},
-		// vuePluginOptions: {},
+		vuePluginOptions: {},
 		viteOptions: {
 			// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
 			// plugins: [vue()],
 			plugins: [
-				// vue({
-				// 	include: [/\.vue$/, /\.md$/],
-				// }),
-				// Markdown({}),
 				AutoImport({
 					resolvers: [ElementPlusResolver()],
-					dts: path.resolve(pathSrc, "auto-imports.d.ts"),
+					dts: join(typesPath, "auto-imports.d.ts"),
 					imports: ["vue", "@vueuse/core"],
 				}),
 				Components({
 					resolvers: [ElementPlusResolver()],
-					dts: path.resolve(pathSrc, "components.d.ts"),
+					dts: join(typesPath, "components.d.ts"),
 				}),
 			],
 
