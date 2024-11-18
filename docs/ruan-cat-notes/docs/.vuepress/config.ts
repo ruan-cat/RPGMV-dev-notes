@@ -22,6 +22,7 @@ import theme from "./theme.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
 const typesPath = path.resolve(process.cwd(), "types");
 
 const port = 6312;
@@ -109,16 +110,11 @@ export default defineUserConfig({
 	plugins: [
 		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */
 		registerComponentsPlugin({
-			// 有疑惑 可以写多个文件夹路径么？ 目前经过测试不能。
-			componentsDir: path.resolve(__dirname, "../../docs"),
+			componentsDir: join(process.cwd(), "docs"),
 			componentsPatterns: ["**/*.vue", "./.vuepress/**/*.vue"],
 			getComponentName(filename) {
-				// TODO: 实现自定义组件名称 和组件全局导入
-				console.log(" in getComponentName filename", filename);
 				const res = path.trimExt(filename.replace(/.*\//, ""));
-
-				console.log(" in getComponentName res", res);
-
+				console.log("组件名称", res);
 				return res;
 			},
 		}),
