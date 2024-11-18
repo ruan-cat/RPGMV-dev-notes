@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { createTemplatePromise, useToggle, type TemplatePromiseProps } from "@vueuse/core";
 import { merge, isUndefined, cloneDeep, isEmpty } from "lodash-es";
-import { ElMessage, ElButton, ElInput, ElDialog, type DialogProps } from "element-plus";
+import type { DialogProps } from "element-plus";
+import { ElMessage, ElButton, ElInput, ElDialog, ElCollapseTransition } from "element-plus";
 
 /** 可选的弹框props */
 type DialogPropsPartial = Partial<DialogProps>;

@@ -95,11 +95,11 @@ export default defineUserConfig({
 				}),
 			],
 
-			// resolve: {
-			// 	alias: {
-			// 		"@docs": fileURLToPath(new URL("../../docs", import.meta.url)),
-			// 	},
-			// },
+			resolve: {
+				alias: {
+					"@docs": fileURLToPath(new URL("../../docs", import.meta.url)),
+				},
+			},
 		},
 	}),
 
