@@ -155,7 +155,7 @@ onMounted(async () => {
 				<template #error> </template>
 			</el-image> -->
 
-			<el-image
+			<ElImage
 				class="item"
 				fit="cover"
 				loading="lazy"
@@ -163,7 +163,7 @@ onMounted(async () => {
 				src="https://api.oick.cn/random/api.php?type=pc"
 			>
 				<template #error> </template>
-			</el-image>
+			</ElImage>
 		</section>
 	</section>
 </template>

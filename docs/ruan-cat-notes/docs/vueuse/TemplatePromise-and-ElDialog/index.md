@@ -4,10 +4,7 @@
  *  
  * - https://theme-hope.vuejs.press/zh/guide/component/sfc.html#导入文件
  */
-// import DemoTemplatePromiseAndElDialog from "./demo-TemplatePromise-and-ElDialog.vue";
 import DemoTemplatePromiseAndElDialog from "@docs/vueuse/TemplatePromise-and-ElDialog/demo-TemplatePromise-and-ElDialog.vue";
-// FIXME: 该写法无法实现打包 打包失败 文件css识别失败。
-// import DemoTemplatePromiseAndElDialog from "@source/vueuse/TemplatePromise-and-ElDialog/demo-TemplatePromise-and-ElDialog.vue";
 </script>
 
 # createTemplatePromise 和 ELDialog 组件的使用
@@ -23,11 +20,7 @@ createTemplatePromise，用来创建 promise 风格的弹框组件。打开弹�
 
 <!-- 以局部导入的方式注册的vue组件 -->
 
-<DemoTemplatePromiseAndElDialog></DemoTemplatePromiseAndElDialog>
-
-<!-- <ClientOnly>
-	<DemoTemplatePromiseAndElDialog />
-</ClientOnly> -->
+<DemoTemplatePromiseAndElDialog />
 
 ## 案例源码
 

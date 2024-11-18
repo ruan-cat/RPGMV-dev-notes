@@ -1,7 +1,12 @@
+<!-- <script setup>
+import ExpandingCardsL from "@docs/50projects50days-vue3/01-expanding-cards/ExpandingCards.vue";
+</script> -->
+
 # 展开卡片
 
 ## 自写重构 demo
 
+<!-- <ExpandingCardsL /> -->
 <ExpandingCards />
 
 ## 官方演示 demo
