@@ -72,10 +72,10 @@ export default defineUserConfig({
 	 * 暂时又取消注释了 这个导致代码又莫名其妙跑不起来了
 	 */
 	bundler: viteBundler({
-		// vuePluginOptions: {
-		// 	include: [/\.vue$/, /\.md$/],
-		// },
-		vuePluginOptions: {},
+		vuePluginOptions: {
+			include: [/\.vue$/, /\.md$/],
+		},
+		// vuePluginOptions: {},
 		viteOptions: {
 			// 加上此内容后就出错了 不知道是不是vuepress的解析问题。直接说SFC缺少内容。
 			// plugins: [vue()],
