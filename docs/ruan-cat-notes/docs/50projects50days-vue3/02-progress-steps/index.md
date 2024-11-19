@@ -1,3 +1,7 @@
+<script setup >
+import ProgressSteps from "@docs/50projects50days-vue3/02-progress-steps/ProgressSteps.vue";
+</script>
+
 # 步骤器
 
 ## 自写重构 demo

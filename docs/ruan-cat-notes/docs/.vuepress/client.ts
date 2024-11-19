@@ -20,9 +20,6 @@ import piniaPluginPersistedstate, { createPersistedState } from "pinia-plugin-pe
 
 import AliceHover from "./components/alice-hover/alice-hover.vue";
 
-// import DrillGoods from "./components/drill-goods/DrillGoods.vue";
-// import FlexBoxTransition from "./components/css-challenges/flex-box-transition/FlexBoxTransition.vue";
-
 // const piniaUseLocalStorage =
 // 	typeof window !== "undefined"
 // 		? window.localStorage
@@ -43,12 +40,6 @@ export default defineClientConfig({
 
 		app.use(pinia);
 		app.use(ElementPlus);
-
-		// 不再手动全局注册
-		// app.component("DrillGoods", DrillGoods);
-
-		// 手动全局注册 目前发现可以实现自动全局导入了
-		// app.component("FlexBoxTransition", FlexBoxTransition);
 
 		// 参考资料 https://vercel.com/docs/analytics/package
 		// TODO: 学一下怎么配置node环境

@@ -109,24 +109,21 @@ export default defineUserConfig({
 
 	plugins: [
 		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */
-		registerComponentsPlugin({
-			componentsDir: join(process.cwd(), "docs"),
-			componentsPatterns: ["**/*.vue", "./.vuepress/**/*.vue"],
-			getComponentName(filename) {
-				const res = path.trimExt(filename.replace(/.*\//, ""));
-				console.log("组件名称", res);
-				return res;
-			},
-		}),
-
+		// registerComponentsPlugin({
+		// 	componentsDir: join(process.cwd(), "docs"),
+		// 	componentsPatterns: ["**/*.vue", "./.vuepress/**/*.vue"],
+		// 	getComponentName(filename) {
+		// 		const res = path.trimExt(filename.replace(/.*\//, ""));
+		// 		console.log("组件名称", res);
+		// 		return res;
+		// 	},
+		// }),
 		// FIXME: 高版本配置 导致bug
 		// 直接导入项目根目录下的配置文件 这样效率更高
 		// typedocPlugin(typedocConf),
-
 		// componentsPlugin({
 		// 	components: ["BiliBili"],
 		// }),
-
 		// 该内容暂时保留 目前通过正确的爬虫配置，可以实现后端搜索了。
 		// searchProPlugin({
 		// 	indexContent: true,
