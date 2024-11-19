@@ -6,7 +6,9 @@ import ExpandingCards from "@docs/50projects50days-vue3/01-expanding-cards/Expan
 
 ## 自写重构 demo
 
-<ExpandingCards />
+<ClientOnly>
+	<ExpandingCards />
+</ClientOnly>
 
 ## 官方演示 demo
 
