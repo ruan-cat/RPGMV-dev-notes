@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { ElButton } from "element-plus";
 import { ref, computed } from "vue";
 // import type { AnimateControlVueProps } from "./types/AnimateControlVueProps";
 
@@ -27,9 +28,9 @@ const transitionTime: `${number}s` = `${0.28}s`;
 	<section class="flex-box-transition-root">
 		<!-- <h2>练习动画</h2> -->
 
-		<el-button type="primary" size="default" @click="switcher()">
+		<ElButton type="primary" size="default" @click="switcher()">
 			{{ buttonText }}
-		</el-button>
+		</ElButton>
 
 		<!-- <Try1 :is-open-aside="isOpenAside" :transition-time="transitionTime"></Try1> -->
 		<!-- <Try2 :is-open-aside="isOpenAside" :transition-time="transitionTime"></Try2> -->

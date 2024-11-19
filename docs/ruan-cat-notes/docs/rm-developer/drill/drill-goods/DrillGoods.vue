@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-// defineProps, withDefaults,
+import { ElTabs, ElTabPane } from "element-plus";
 import { ref, reactive, computed } from "vue";
-// import { storeToRefs } from "pinia";
 
-import SetMenu from "./components/SetMenu.vue";
 import SingleCommodity from "./components/SingleCommodity.vue";
 
 const tabBusinessConfList = [
@@ -23,23 +21,15 @@ const selected = ref(tabBusinessConfList[0].name);
 
 <template>
 	<section>
-		<el-tabs v-model="selected">
-			<el-tab-pane label="商品单品管理" name="singleCommodity">
+		<ElTabs v-model="selected">
+			<ElTabPane label="商品单品管理" name="singleCommodity">
 				<SingleCommodity></SingleCommodity>
-			</el-tab-pane>
+			</ElTabPane>
 
-			<el-tab-pane label="套餐组合管理" name="setMenu">
+			<ElTabPane label="套餐组合管理" name="setMenu">
 				<h2>套餐组合管理</h2>
-			</el-tab-pane>
-
-			<!-- <el-tab-pane
-				v-for="item in panes"
-				:key="item.key"
-				:label="item.label"
-				:name="item.key"
-			>
-			</el-tab-pane> -->
-		</el-tabs>
+			</ElTabPane>
+		</ElTabs>
 	</section>
 </template>
 

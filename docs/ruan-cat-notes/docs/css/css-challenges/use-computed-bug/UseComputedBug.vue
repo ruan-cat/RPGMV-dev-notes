@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { ElTag } from "element-plus";
 import { useSingleton } from "./use-singleton.js";
 import UseComputedBugChild from "./UseComputedBugChild.vue";
 
@@ -9,12 +10,10 @@ const { isAddComputed, singletonData } = useSingleton();
 	<section class="UseComputedBug-root">
 		<h3>外部组件</h3>
 
-		<!-- <el-tag type="danger" size="normal"  effect="dark" closable @close=""></el-tag> -->
-
-		<el-tag type="danger" size="normal" effect="dark">
+		<ElTag type="danger" size="large" effect="dark">
 			{{ singletonData }}
 			{{ isAddComputed }}
-		</el-tag>
+		</ElTag>
 
 		<UseComputedBugChild></UseComputedBugChild>
 	</section>

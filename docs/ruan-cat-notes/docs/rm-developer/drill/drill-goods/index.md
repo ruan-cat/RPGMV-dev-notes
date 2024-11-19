@@ -1,3 +1,7 @@
+<script setup >
+import DrillGoods from "@docs/rm-developer/drill/drill-goods/DrillGoods.vue";
+</script>
+
 # 钻头的商品管理页面
 
 ## 业务需求
@@ -25,4 +29,6 @@
 
 ## 可交互案例
 
-<DrillGoods />
+<ClientOnly>
+	<DrillGoods />
+</ClientOnly>

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { ElTag, ElButton } from "element-plus";
 import { watch } from "vue";
 import { random } from "lodash-es";
 import { useSingleton } from "./use-singleton.js";
@@ -43,15 +44,15 @@ watch(
 	<section class="UseComputedBugChild-root">
 		<h4>内部代码</h4>
 
-		<el-button type="primary" size="default" @click="randomSetValue()"> 随机设置id值 </el-button>
+		<ElButton type="primary" size="default" @click="randomSetValue()"> 随机设置id值 </ElButton>
 
-		<el-button type="primary" size="default" @click="reset()"> 清空为空字符串 </el-button>
+		<ElButton type="primary" size="default" @click="reset()"> 清空为空字符串 </ElButton>
 
 		<section>
-			<el-tag type="info" size="normal" effect="dark">
+			<ElTag type="info" size="large" effect="dark">
 				{{ singletonData }}
 				{{ isAddComputed }}
-			</el-tag>
+			</ElTag>
 		</section>
 	</section>
 </template>

@@ -6,8 +6,8 @@ import * as XLSX from "xlsx";
 import { ElTable, ElMessage, ElTableColumn, ElButton, ElForm, ElFormItem, type FormRules } from "element-plus";
 import { debounce } from "lodash-es";
 
-import { useMode } from "../hooks/use-mode.ts";
-import { useSingleCommodity, type Commodity } from "../stores/use-single-commodity.ts";
+import { useMode } from "../hooks/use-mode.js";
+import { useSingleCommodity, type Commodity } from "../stores/use-single-commodity.js";
 import SwitchMode from "./SwitchMode.vue";
 
 const { commodity } = storeToRefs(useSingleCommodity());
@@ -92,34 +92,26 @@ const rules = ref<FormRules<Commodity>>({
 			<el-button type="primary" size="default">下载导出文件 </el-button>
 		</JsonExcel> -->
 
-		<el-button type="primary" size="default" @click="debounceBtnClick()"> 导出文件 </el-button>
+		<ElButton type="primary" size="default" @click="debounceBtnClick()"> 导出文件 </ElButton>
 
-		<el-form :model="form" ref="form" :rules="rules" :inline="false">
-			<!-- <el-form-item label="">
-				<el-input v-model="form."></el-input>
-			</el-form-item>
-			<el-form-item>
-				<el-button type="primary" @click="onSubmit">立即创建</el-button>
-				<el-button>取消</el-button>
-			</el-form-item> -->
-		</el-form>
+		<ElForm :model="form" ref="form" :rules="rules" :inline="false"> </ElForm>
 
-		<el-table :data="commodity" ref="tableRef">
-			<el-table-column prop="name" label="名称" width="180">
+		<ElTable :data="commodity" ref="tableRef">
+			<ElTableColumn prop="name" label="名称" width="180">
 				<!-- 警告 scope 无类型提示 -->
 				<template #default="scope"> </template>
-			</el-table-column>
+			</ElTableColumn>
 
-			<el-table-column prop="desc" label="描述" min-width="180" />
+			<ElTableColumn prop="desc" label="描述" min-width="180" />
 
-			<el-table-column prop="price" label="价格" min-width="180" />
+			<ElTableColumn prop="price" label="价格" min-width="180" />
 
-			<el-table-column prop="icon" label="标签">
+			<ElTableColumn prop="icon" label="标签">
 				<template #default="scope">
 					<Icon :icon="scope.row.icon"></Icon>
 				</template>
-			</el-table-column>
-		</el-table>
+			</ElTableColumn>
+		</ElTable>
 	</section>
 </template>
 
