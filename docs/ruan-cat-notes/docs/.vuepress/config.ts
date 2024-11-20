@@ -81,6 +81,14 @@ export default defineUserConfig({
 				}),
 			],
 
+			/**
+			 * 处理element-plus打包时 莫名其妙的css识别错误
+			 * @see https://github.com/vuepress/core/issues/570#issuecomment-1116297227
+			 */
+			ssr: {
+				noExternal: ["element-plus"],
+			},
+
 			resolve: {
 				alias: {
 					"@docs": fileURLToPath(new URL("../../docs", import.meta.url)),

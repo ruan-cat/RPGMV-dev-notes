@@ -109,8 +109,10 @@ onMounted(async () => {
 
 <template>
 	<section class="ExpandingCards-root">
-		<!-- v-loading="isLoading" -->
-		<section class="container">
+		<!-- v-loading="isLoading" 
+			无法使用 局部导入时 导致了识别错误
+		-->
+		<section class="container" v-loading="isLoading">
 			<ElImage
 				class="item"
 				fit="cover"

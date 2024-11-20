@@ -1,14 +1,14 @@
-<!-- <script setup >
+<script setup >
 import ProgressSteps from "@docs/50projects50days-vue3/02-progress-steps/ProgressSteps.vue";
-</script> -->
+</script>
 
 # 步骤器
 
 ## 自写重构 demo
 
-<!-- <ClientOnly>
+<ClientOnly>
 	<ProgressSteps />
-</ClientOnly> -->
+</ClientOnly>
 
 ## 官方演示 demo
 

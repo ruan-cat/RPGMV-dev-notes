@@ -20,9 +20,9 @@ createTemplatePromise，用来创建 promise 风格的弹框组件。打开弹�
 
 <!-- 以局部导入的方式注册的vue组件 -->
 
-<!-- <ClientOnly>
+<ClientOnly>
 	<DemoTemplatePromiseAndElDialog />
-</ClientOnly> -->
+</ClientOnly>
 
 ## 案例源码
 
