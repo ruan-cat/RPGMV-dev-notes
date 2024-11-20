@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref, computed, watch, onMounted } from "vue";
 import { v4 as uuidv4 } from "uuid";
-import { ElImage } from "element-plus";
+import { ElImage, ElLoading } from "element-plus";
 
 import axios from "axios";
 
@@ -109,7 +109,8 @@ onMounted(async () => {
 
 <template>
 	<section class="ExpandingCards-root">
-		<section class="container" v-loading="isLoading">
+		<!-- v-loading="isLoading" -->
+		<section class="container">
 			<ElImage
 				class="item"
 				fit="cover"
