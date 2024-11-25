@@ -30,7 +30,7 @@
 		"clear": "rimraf dist .turbo .vercel .cache .temp",
 		"pnpm:clear": "pnpm -r clear && pnpm run clear",
 		"turbo:build-docs": "turbo build:docs",
-		"on-github-action-flow": "turbo build-docs",
+		"on-github-action-flow": "pnpm turbo:build-docs",
 		"code-workspace:create": "node --import=tsx ./scripts/generate.code-workspace.ts --name=note笔记项目",
 		"deploy-vercel": "node --import=tsx ./scripts/vercel-deploy-tool.ts"
 	},
