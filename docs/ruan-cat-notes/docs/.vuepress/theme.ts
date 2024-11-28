@@ -17,13 +17,14 @@ export function footerTmpl() {
 const footer = footerTmpl();
 
 export default hopeTheme({
-	// hostname: 'https://mister-hope.github.io',
 	// hostname: 'https://www.ruan-cat.com/',
 	// 尝试移除底部的斜线
 	hostname: "https://www.ruan-cat.com",
 
 	iconAssets: "iconify",
 
+	// 不提供深色模式
+	darkmode: "disable",
 	// fullscreen: true,
 	// 开发模式下是否启动热更新，显示所有更改并重新渲染
 	hotReload: true,
