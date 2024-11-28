@@ -13,8 +13,6 @@ import FlexBoxTransition from "@docs/css/css-challenges/001-flex-box-transition/
 ## 动画
 
 <FlexBoxTransition />
-<!-- <ClientOnly>
-</ClientOnly> -->
 
 ## 源码
 
