@@ -3,72 +3,7 @@ import { hopeTheme, sidebar, type ThemeOptions } from "vuepress-theme-hope";
 import { footerTmpl, authorName } from "@ruan-cat/vuepress-preset-config";
 
 const footer = footerTmpl();
-
-const sidebarConfig = sidebar([
-	// 不直接在侧边栏内提供项目首页
-	// "/",
-	// 网站介绍
-	"/website-introduction",
-
-	// 拓展技术
-	{
-		text: "拓展技术",
-		prefix: "/expansion-technique/",
-		// link: "/expansion-technique/",
-		collapsible: true,
-		children: [
-			"",
-			{
-				text: "工程化",
-				prefix: "engineered/",
-				// link: "/engineered/",
-				// link: "/expansion-technique/engineered/",
-				collapsible: true,
-				children: "structure",
-			},
-			{
-				text: "准备开发环境",
-				prefix: "prepare-develop-environment/",
-				collapsible: true,
-				children: "structure",
-			},
-			{
-				text: "版本控制",
-				prefix: "version-control/",
-				collapsible: true,
-				children: "structure",
-			},
-			{
-				text: "随笔",
-				prefix: "essays/",
-				collapsible: true,
-				children: "structure",
-			},
-		],
-	},
-
-	// 插件开发
-	{
-		text: "插件开发",
-		// prefix: "/developing-rmmv-plugins/",
-		prefix: "/插件开发/",
-		// link: "/developing-rmmv-plugins/",
-		collapsible: true,
-		children: "structure",
-	},
-
-	// 源码解析  learn-source-code
-	{
-		text: "源码解析",
-		prefix: "/learn-source-code/",
-		collapsible: true,
-		children: "structure",
-	},
-]);
-
 export const hopeThemeConfig: ThemeOptions = {
-	// hostname: 'https://mister-hope.github.io',
-	// hostname: 'https://www.ruan-cat.com/',
 	// 尝试移除底部的斜线
 	hostname: "https://www.ruan-cat.com",
 
@@ -147,11 +82,6 @@ export const hopeThemeConfig: ThemeOptions = {
 		 */
 		components: {
 			components: ["BiliBili", "FontIcon", "Badge"],
-		},
-
-		searchPro: {
-			indexContent: true,
-			autoSuggestions: true,
 		},
 	},
 };

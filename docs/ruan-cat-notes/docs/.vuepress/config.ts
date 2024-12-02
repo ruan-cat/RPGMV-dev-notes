@@ -6,7 +6,6 @@ import { getDirname, path } from "vuepress/utils";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { slimsearchPlugin } from "@vuepress/plugin-slimsearch";
-// import { searchProPlugin } from "vuepress-plugin-search-pro";
 // import { componentsPlugin } from "vuepress-plugin-components";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
