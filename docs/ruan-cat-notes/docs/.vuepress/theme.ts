@@ -191,10 +191,10 @@ export default hopeTheme({
 			components: ["BiliBili", "FontIcon", "Badge"],
 		},
 
-		searchPro: {
-			indexContent: true,
-			autoSuggestions: true,
-		},
+		// searchPro: {
+		// 	indexContent: true,
+		// 	autoSuggestions: true,
+		// },
 
 		// 目前有效 缺点是国内使用`algolia`速度稍慢
 		// docsearch: {

@@ -8,13 +8,13 @@ const config: Config = {
 
 	deployTargets: [
 		// 笔记项目
-		{
-			type: "userCommands",
-			outputDirectory: "docs/.vuepress/dist/**/*",
-			targetCWD: "./docs/ruan-cat-notes",
-			url: ["notes.ruan-cat.com", "ruan-cat-notes.ruan-cat.com", "ruan-cat-notes.ruancat6312.top"],
-			userCommands: ["pnpm -C=./docs/ruan-cat-notes build:docs"],
-		},
+		// {
+		// 	type: "userCommands",
+		// 	outputDirectory: "docs/.vuepress/dist/**/*",
+		// 	targetCWD: "./docs/ruan-cat-notes",
+		// 	url: ["notes.ruan-cat.com", "ruan-cat-notes.ruan-cat.com", "ruan-cat-notes.ruancat6312.top"],
+		// 	userCommands: ["pnpm -C=./docs/ruan-cat-notes build:docs"],
+		// },
 
 		// rmmv笔记项目
 		{

@@ -5,8 +5,9 @@ import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
-import { componentsPlugin } from "vuepress-plugin-components";
+import { slimsearchPlugin } from "@vuepress/plugin-slimsearch";
+// import { searchProPlugin } from "vuepress-plugin-search-pro";
+// import { componentsPlugin } from "vuepress-plugin-components";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
 import vue from "@vitejs/plugin-vue";
@@ -132,26 +133,33 @@ export default defineUserConfig({
 		// componentsPlugin({
 		// 	components: ["BiliBili"],
 		// }),
+
+		slimsearchPlugin({
+			indexContent: true,
+			autoSuggestions: true,
+		}),
+
 		// 该内容暂时保留 目前通过正确的爬虫配置，可以实现后端搜索了。
 		// searchProPlugin({
 		// 	indexContent: true,
-		// 	customFields: [
-		// 		// 类型报错
-		// 		// {
-		// 		//   getter: (page) => page.frontmatter.category,
-		// 		//   formatter: {
-		// 		//     '/': 'Category: $content',
-		// 		//     '/zh/': '分类：$content',
-		// 		//   },
-		// 		// },
-		// 		// {
-		// 		//   getter: (page) => page.frontmatter.tag,
-		// 		//   formatter: {
-		// 		//     '/': 'Tag: $content',
-		// 		//     '/zh/': '标签：$content',
-		// 		//   },
-		// 		// },
-		// 	],
+		// 	autoSuggestions: true,
+		// 	// customFields: [
+		// 	// 	// 类型报错
+		// 	// 	// {
+		// 	// 	//   getter: (page) => page.frontmatter.category,
+		// 	// 	//   formatter: {
+		// 	// 	//     '/': 'Category: $content',
+		// 	// 	//     '/zh/': '分类：$content',
+		// 	// 	//   },
+		// 	// 	// },
+		// 	// 	// {
+		// 	// 	//   getter: (page) => page.frontmatter.tag,
+		// 	// 	//   formatter: {
+		// 	// 	//     '/': 'Tag: $content',
+		// 	// 	//     '/zh/': '标签：$content',
+		// 	// 	//   },
+		// 	// 	// },
+		// 	// ],
 		// }),
 	],
 });
