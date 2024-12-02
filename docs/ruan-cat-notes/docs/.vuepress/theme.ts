@@ -71,13 +71,6 @@ export default hopeTheme({
 		},
 	},
 
-	encrypt: {
-		config: {
-			"/demo/encrypt.html": ["1234"],
-			"/zh/demo/encrypt.html": ["1234"],
-		},
-	},
-
 	// navbarLayout: {
 	//   start: ['Brand'],
 	//   center: ['Links'],
@@ -190,11 +183,6 @@ export default hopeTheme({
 		components: {
 			components: ["BiliBili", "FontIcon", "Badge"],
 		},
-
-		// searchPro: {
-		// 	indexContent: true,
-		// 	autoSuggestions: true,
-		// },
 
 		// 目前有效 缺点是国内使用`algolia`速度稍慢
 		// docsearch: {
