@@ -8,7 +8,8 @@ https://blog.csdn.net/qq_31319235/article/details/119725835
 ## tree
 
 树状图输出命令
-https://blog.csdn.net/weixin_43900833/article/details/86565085
+
+- https://blog.csdn.net/weixin_43900833/article/details/86565085
 
 常用命令
 
@@ -52,10 +53,8 @@ npm ls -g --json=true >D:\common-dev-workspace\test.json ; start D:\common-dev-w
 
 批量删除文件命令
 
-https://zhuanlan.zhihu.com/p/139746369
+- https://zhuanlan.zhihu.com/p/139746369
 
 ```bash
 del /S *.png
 ```
-
-### 在 vscode 内的终端运行时，出现错误

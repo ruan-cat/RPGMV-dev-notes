@@ -1,4 +1,4 @@
-# 日期库 day.js
+# 日期库
 
 ## typescript 项目内导入
 
