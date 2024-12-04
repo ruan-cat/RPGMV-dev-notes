@@ -29,7 +29,7 @@ Cross origin requests are only supported for protocol schemes: http, data, chrom
 
 ### 使用 ajax 所支持的协议来打开 html 文件
 
-指的是，可以使用 http 的协议来访问该文件。具体做法是：搭建一个本地的服务器，进而访问文件。原理是如此的，具体实现操作可以参考[VScode 调试 mv](https://example.com)。
+指的是，可以使用 http 的协议来访问该文件。具体做法是：搭建一个本地的服务器，进而访问文件。原理是如此的，具体实现操作可以参考[vscode 调试 mv](https://example.com)。
 
 ### 设置浏览器，使其支持 file 协议的浏览
 

@@ -3,7 +3,7 @@
 ## set-ExecutionPolicy RemoteSigned
 
 https://blog.csdn.net/qq_31319235/article/details/119725835
-在 powershell.exe 内设置命令行的权限。即可在 VScode 内使用各类命令。如 vue cli 的命令。
+在 powershell.exe 内设置命令行的权限。即可在 vscode 内使用各类命令。如 vue cli 的命令。
 
 ## tree
 

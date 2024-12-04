@@ -44,6 +44,6 @@ npm i live-server -S
 npm run rmmv-node-serve
 ```
 
-### VScode 点击命令 <Badge text='推荐' />
+### vscode 点击命令 <Badge text='推荐' />
 
-在`VScode`中点击侧边栏的`npm`脚本整理的命令即可运行命令。
+在`vscode`中点击侧边栏的`npm`脚本整理的命令即可运行命令。

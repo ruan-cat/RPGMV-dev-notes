@@ -12,7 +12,7 @@ dir:
 
 截止目前，本章节涉及到的拓展技术有：
 
-- VScode 插件配置与安装
+- vscode 插件配置与安装
 - node
   - npm
 - jsdoc

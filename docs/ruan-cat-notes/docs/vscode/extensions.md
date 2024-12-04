@@ -1,6 +1,6 @@
 # vscode 的插件
 
-各种 VScode 的插件使用记录，包括错误、快捷键、使用技巧等
+各种 vscode 的插件使用记录，包括错误、快捷键、使用技巧等
 
 ## 本文件的重构
 
@@ -22,13 +22,13 @@ https://marketplace.visualstudio.com/items?itemName=niudai.vscode-zhihu
 
 ### 头部注释
 
-`VScode`的`koroFileHeader`插件可以生成代码的头部注释。手动为代码生成头部注释的快捷键是`Ctrl+Window+I`。使用快捷键`Ctrl+Shift+P`输入命令`@command:extension.fileheader`或输入命令`fileheader`也可以生成头部注释。
+`vscode`的`koroFileHeader`插件可以生成代码的头部注释。手动为代码生成头部注释的快捷键是`Ctrl+Window+I`。使用快捷键`Ctrl+Shift+P`输入命令`@command:extension.fileheader`或输入命令`fileheader`也可以生成头部注释。
 
 ## vetur
 
 ### Root file specified for compilation
 
-结论，傻逼问题。VScode 犯病。起因是重命名了 vue 文件，导致插件识别时出现错误。不管即可。
+结论，傻逼问题。vscode 犯病。起因是重命名了 vue 文件，导致插件识别时出现错误。不管即可。
 
 直接去 CSDN 查即可得出结论。
 

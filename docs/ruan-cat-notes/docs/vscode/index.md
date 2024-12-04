@@ -22,7 +22,7 @@ vscode 文件重命名后 gutter indicators 无查看任何内容
 
 ## 学习待办
 
-- TODO: Live Share 是什么？怎么实现 VScode 的快速在线分享？
+- TODO: Live Share 是什么？怎么实现 vscode 的快速在线分享？
 
 ## 设置管理员权限
 

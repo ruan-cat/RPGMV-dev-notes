@@ -15,13 +15,13 @@ shortTitle: vscode独立运行mv项目
 
 ## 技术栈
 
-`VScode` + `Live Server` + `Chrome`
+`vscode` + `Live Server` + `Chrome`
 
 ## 配置流程
 
 下面介绍下面介绍基本流程。下面的安装流程和相关操作可以打乱一下顺序。
 
-### 下载代码编辑器 VScode
+### 下载代码编辑器 vscode
 
 从官网上下载，全称为`Visual Studio Code`。[点此进入官网](https://code.visualstudio.com/)
 
@@ -29,9 +29,9 @@ shortTitle: vscode独立运行mv项目
 
 全称为`Google Chrome`。[点此进入官网](https://www.google.cn/chrome/)
 
-### 下载 VScode 插件
+### 下载 vscode 插件
 
-在`VScode`中下载软件插件`Live Server`和`Debugger for Chrome`。
+在`vscode`中下载软件插件`Live Server`和`Debugger for Chrome`。
 
 #### Live Server
 
@@ -43,7 +43,7 @@ shortTitle: vscode独立运行mv项目
 具体截图如下：
 ![image-20220815125004409](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20220815125004409.png)
 
-### 配置 VScode 的 launch.json
+### 配置 vscode 的 launch.json
 
 在工程文件夹内找到文件夹`.vscode`，若没有则手动创建。新增并修改`launch.json`文件。
 
@@ -69,7 +69,7 @@ shortTitle: vscode独立运行mv项目
 			"request": "launch",
 			// 调试器名称 可以自己任意取名 尽量不要取名为空字符串
 			"name": "阮喵喵项目调试器(该名称在launch.json设置)",
-			// VScode 的 live server 插件所提供的默认本地服务器端口为5500。
+			// vscode 的 live server 插件所提供的默认本地服务器端口为5500。
 			"url": "http://localhost:8080",
 			"webRoot": "${workspaceFolder}"
 		}
@@ -77,7 +77,7 @@ shortTitle: vscode独立运行mv项目
 }
 ```
 
-### 配置 VScode 的 Setting.json
+### 配置 vscode 的 Setting.json
 
 在启动我们本地的 web 项目时，有时需要对`Live Server`插件提供的端口号进行调整，比如说将预设值`5500`调整成自己想要的其他数值。这时我们需要去`settings.json`文件内进行修改。
 
@@ -113,16 +113,16 @@ shortTitle: vscode独立运行mv项目
 下面介绍启动流程：
 
 - 开启本地服务器
-  在`VScode`下启动`Live Server`并开启本地服务器。
+  在`vscode`下启动`Live Server`并开启本地服务器。
 
 - 点击调试
-  在`VScode`中找到`debugger`栏，并选择`debug`的工具。按 F5 运行/调试。
+  在`vscode`中找到`debugger`栏，并选择`debug`的工具。按 F5 运行/调试。
 
 ## 基本原理介绍与答疑
 
 接下来介绍基本原理，并提出几个容易迷糊的问题。
 
-### 为什么需要两个 VScode 插件？单独用一个 Debugger for Chrome 不行么？
+### 为什么需要两个 vscode 插件？单独用一个 Debugger for Chrome 不行么？
 
 我们的目的是为了在自己的电脑上面运行`MV`项目，说稍微专业一点就是：在自己的电脑上面的本地服务器上启动能够访问本地文件的前端代码。而`Debugger for Chrome`插件本身不提供**建立本地服务器**的功能，所以我们才要额外下载一个`Live Server`插件来建立并启动本地服务器。
 
@@ -130,6 +130,6 @@ shortTitle: vscode独立运行mv项目
 
 只有先建立本地服务器才可以使用调试。建立本地服务器的最本质要求是，因为`MV`项目的本质是一个前端网页游戏，还是一个会调用本地的`.json`数据库文件的前端网页游戏，所以才需要建立本地服务器。只有本地服务器才可以调用本地文件。
 
-### 为什么要额外设置 VScode 自动生成的 launch.json？
+### 为什么要额外设置 vscode 自动生成的 launch.json？
 
-`launch.json`的本质是`VScode`提供给项目的*调试工具设置清单*。只有先设置好这个清单内容，告诉`VScode`我需要怎么样的调试工具，我们才可以用`VScode`启动/调试 MV 代码。
+`launch.json`的本质是`vscode`提供给项目的*调试工具设置清单*。只有先设置好这个清单内容，告诉`vscode`我需要怎么样的调试工具，我们才可以用`vscode`启动/调试 MV 代码。
