@@ -1,4 +1,4 @@
-# nvm node 包管理器
+# node 包管理器
 
 - https://github.com/nvm-sh/nvm/blob/master/README.md
 
