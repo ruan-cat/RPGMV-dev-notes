@@ -1,6 +1,6 @@
 # @antfu/eslint-config 的使用
 
-目前（2024 年 5 月 19 日）考虑用 `@antfu/eslint-config` 实现对 eslint 的一揽子配置。
+目前（2024-5-19）考虑用 `@antfu/eslint-config` 实现对 eslint 的一揽子配置。
 
 ## 参考资料
 
