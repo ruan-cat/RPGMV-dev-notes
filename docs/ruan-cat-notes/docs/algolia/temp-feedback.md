@@ -1,4 +1,6 @@
-#
+# algolia
+
+<!-- 尝试配置algolia -->
 
 目前我正在使用`@vuepress/plugin-docsearch`来为我的网站提供搜索功能。按照教程要求，我在`algolia`内申请并获取到相应的 `indexName`、`appId` 和 `apiKey`。
 
@@ -143,3 +145,7 @@ export default defineUserConfig({
 ```
 
 我现在完全不清楚这一组配置在哪里出错了？由于 `algolia` 的相关网站都是英文的，并没有中文的，我在使用的时候比较困难。你们可以帮我找一下在 `appId` 为 `26AGWKLS5F` 时，相应的 `indexName` 和 `apiKey` 应该是多少么？
+
+## 已作废
+
+目前不需要了。目前文档已经使用客户端搜索，暂时不需要云搜索。
