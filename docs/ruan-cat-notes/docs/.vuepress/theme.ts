@@ -47,6 +47,11 @@ export default hopeTheme({
 	sidebar: "structure",
 	navbar: [
 		{
+			link: "/learn-todo/",
+			text: "学习待办",
+			icon: "wpf:todo-list",
+		},
+		{
 			link: "/bug/",
 			text: "遭遇的bug",
 			icon: "streamline:bug-antivirus-debugging",

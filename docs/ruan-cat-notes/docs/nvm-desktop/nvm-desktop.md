@@ -12,4 +12,4 @@
 
 nvm-desktop 使得我们可以随时随地升级最新版本的 node，每次切换一个全新的 node 版本时，都要及时地使用 corepack 来激活全局的 pnpm 工具。
 
-[点此阅读详情。](../corepack/corepack.md)
+[点此阅读详情。](../corepack/index.md)
