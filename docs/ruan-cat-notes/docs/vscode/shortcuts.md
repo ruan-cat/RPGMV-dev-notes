@@ -1,13 +1,8 @@
-## 截屏键
+# 快捷键
 
-- QQ `Ctrl+Alt+A`
-- WeChat `Alt+A`
-- 企业微信 `Shift+Alt+A`
-- 360 浏览器 `Ctrl+Shift+X`
+## 快速文件定位
 
-## vscode
-
-这里的配置是 vscode 默认提供的快捷键。在使用`webstorm`时，也应该默认配置使用`vscode`的按键映射。
+默认`Ctrl+Shift+E`聚焦到文件列表。需要先聚焦到被打开的文件内，才能快速定位侧边栏的文件夹目录位置。[点此查看参考原文。](https://blog.csdn.net/xuchaoxin1375/article/details/112059873#t10)
 
 ### 格式化
 

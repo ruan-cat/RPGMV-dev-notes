@@ -1,6 +1,6 @@
-# vscode 的使用
+# vscode
 
-只是在这里记录一下 VScode 的东西。和 rmmv 关系不大。未来会考虑在教程内专门增加，细化一个 VScode 的使用配置教程。
+吃饭的家伙。
 
 ## 本地修改无差异显示的错误
 
@@ -22,28 +22,7 @@ vscode 文件重命名后 gutter indicators 无查看任何内容
 
 ## 学习待办
 
-- Live Preview 插件是否可以更好的运行 VScode？
-
-  > 运行 html 的简单工具。已完成学习。
-
 - TODO: Live Share 是什么？怎么实现 VScode 的快速在线分享？
-
-### Draw.io ？ 学习绘制流程图？ 集成值 vscode？
-
-已完成学习。
-
-### 在 vscode 查看 office 的插件？
-
-各种 vscode 查看插件？
-
-vscode-pdf
-Excel Viewer
-office viewer
-
-https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office
-https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
-
-目前选择的是 office viewer ，能查看就行了。暂时不考虑在 vscode 内编辑 office 的文件。
 
 ## 设置管理员权限
 
@@ -121,3 +100,18 @@ https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
 - https://code.visualstudio.com/docs/editor/editingevolved#_inlay-hints
 
 在 vscode 的 `1.85.1` 版本内，提供了该功能。对于增强跳转有很大的帮助。
+
+## 在 vscode 查看 office
+
+各种 vscode 查看插件？
+
+- vscode-pdf
+- Excel Viewer
+- office viewer
+
+- https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office
+- https://marketplace.visualstudio.com/items?itemName=robertohuertasm.open-vscode
+
+目前选择的是 office viewer ，能查看就行了。暂时不考虑在 vscode 内编辑 office 的文件。
+
+截止目前（2024-12-5），已经移除此插件。该插件导致了 vscode 无法使用复制粘贴快捷键的严重 bug。

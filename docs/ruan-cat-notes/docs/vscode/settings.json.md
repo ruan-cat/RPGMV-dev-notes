@@ -33,7 +33,9 @@ https://blog.csdn.net/weixin_43343144/article/details/105345307
 
 ## path-intellisense.mappings
 
-TODO:
+不考虑继续学习此方案。现在要实现路径别名配置时，都是在 tsconfig.json 和打包器上面配置路径别名的。
+
+相反，这个配置很生疏奇怪。
 
 ```json
 {
