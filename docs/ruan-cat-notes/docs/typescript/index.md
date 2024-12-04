@@ -1,7 +1,5 @@
 # typescript
 
-笔者现在还不考虑将 typescript 加入到 rmmv 项目中。
-
 ## 网站
 
 [**《tslang》**](https://www.tslang.cn/)
@@ -89,16 +87,21 @@ const myLocalConf = new FormRenderConfClass({
 ## 如何拓展外部第三方的类型声明？
 
 参考资料
-https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation
+
+- https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation
 
 动态添加的属性声明：
-https://juejin.cn/post/6844903925338865678#heading-17
+
+- https://juejin.cn/post/6844903925338865678#heading-17
 
 声明合并（扩展 Vue 声明）：
-https://juejin.cn/post/6844903925338865678#heading-20
+
+- https://juejin.cn/post/6844903925338865678#heading-20
 
 扩展 Npm 包类型：
-https://zhuanlan.zhihu.com/p/542379032
+
+- https://zhuanlan.zhihu.com/p/542379032
 
 typescript 扩展第三方库类型，添加属性成员
-https://blog.csdn.net/palmer_kai/article/details/107687717
+
+- https://blog.csdn.net/palmer_kai/article/details/107687717

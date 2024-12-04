@@ -1,5 +1,9 @@
 # npm
 
+node 的默认包管理器。
+
+自从学了 pnpm 后，就再也没有使用过 npm 了。
+
 ## 清空缓存
 
 怎么清空项目的 node 缓存的？是用`npm cache clean --force`还是`npm cache verify`？

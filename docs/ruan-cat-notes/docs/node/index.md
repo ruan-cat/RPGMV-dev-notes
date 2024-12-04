@@ -1,5 +1,7 @@
 # node
 
+运行环境。
+
 ## 没见过路径导入语法
 
 `import { fileURLToPath, URL } from "node:url";` 这是什么导入方式？
