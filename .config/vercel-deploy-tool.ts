@@ -1,4 +1,5 @@
 import { type Config } from "@ruan-cat/vercel-deploy-tool/src/config.ts";
+import { domains } from "@ruan-cat/domains";
 
 const config: Config = {
 	vercelProjetName: "rpgmv-dev-notes-betd",
@@ -12,7 +13,7 @@ const config: Config = {
 			type: "userCommands",
 			outputDirectory: "docs/.vuepress/dist",
 			targetCWD: "./docs/ruan-cat-notes",
-			url: ["notes.ruan-cat.com", "ruan-cat-notes.ruan-cat.com", "ruan-cat-notes.ruancat6312.top"],
+			url: domains.notes as unknown as string[],
 			userCommands: ["pnpm -C=./docs/ruan-cat-notes build:docs"],
 		},
 
@@ -21,7 +22,7 @@ const config: Config = {
 			type: "userCommands",
 			outputDirectory: "docs/.vuepress/dist",
 			targetCWD: "./docs/rpgmv-dev-notes",
-			url: ["rpgmv-dev-notes.ruancat6312.top", "rpgmv-dev-notes.ruan-cat.com", "mv.ruan-cat.com"],
+			url: domains["rmmv-notes"] as unknown as string[],
 			userCommands: ["pnpm -C=./docs/rpgmv-dev-notes build:docs"],
 		},
 	],
