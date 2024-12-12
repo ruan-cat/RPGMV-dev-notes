@@ -43,3 +43,16 @@ pnpm -r exec rm -rf node_modules
 #### 不得不在 git bash 界面内执行
 
 命令 `rm -rf node_modules` 直接在 vscode 提供的 powershell 终端内，不能直接运行的，只能在 `git bash` 内执行命令。
+
+## 项目存在大量重复的，通用性命令
+
+在 monorepo 实践中，发现有很多这种重复的，冗余的命令。有什么方式实现批量设置么？
+
+```json
+{
+	"clear": "rimraf dist .turbo .vercel .cache .temp",
+	"rm:node_modules": "rimraf node_modules pnpm-lock.yaml"
+}
+```
+
+pnpm 的-r 参数是否适合呢？
