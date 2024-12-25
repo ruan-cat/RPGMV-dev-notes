@@ -53,28 +53,6 @@ export const hopeThemeConfig: ThemeOptions = {
 			categoryId: "DIC_kwDOH7md984CRo_I",
 		},
 
-		// 禁用不需要的配置
-		mdEnhance: {
-			align: true,
-			// 启用 GFM 警告
-			// 使用特殊标记为 Markdown 元素添加属性
-			attrs: true,
-			gfm: true,
-			// TODO: 升级
-			// alert: true,
-			// hint: true,
-			// imgLazyload: true,
-			// imgSize: true,
-			// figure: true,
-			include: true, //导入文件
-			mark: true,
-			footnote: true,
-			tasklist: true,
-			sub: true, // 上下角标
-			sup: true,
-			mermaid: true,
-		},
-
 		/**
 		 * 按照教程导入组件
 		 * 发现似乎有bug 可能是自己使用了自定义组件导入方案 导致默认的两个组件没了
