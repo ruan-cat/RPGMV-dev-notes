@@ -5,7 +5,6 @@ import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
-import { slimsearchPlugin } from "@vuepress/plugin-slimsearch";
 // import { componentsPlugin } from "vuepress-plugin-components";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
