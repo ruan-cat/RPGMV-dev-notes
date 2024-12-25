@@ -82,6 +82,28 @@ export default hopeTheme({
 	//   end: ['Language', 'Repo', 'Outlook', 'Search'],
 	// },
 
+	markdown: {
+		align: true,
+		// 启用 GFM 警告
+		// 使用特殊标记为 Markdown 元素添加属性
+		attrs: true,
+		gfm: true,
+		//导入文件
+		include: true,
+		mark: true,
+		footnote: true,
+		tasklist: true,
+		// 上下角标
+		sub: true,
+		sup: true,
+		mermaid: true,
+		hint: true,
+		alert: true,
+		imgLazyload: true,
+		imgSize: true,
+		figure: true,
+	},
+
 	plugins: {
 		// 目前暂时不考虑使用博客风格 未来拆分出项目笔记后再考虑
 		blog: false,
@@ -112,72 +134,8 @@ export default hopeTheme({
 			// serverURL: "https://vuepress-theme-hope-comment.vercel.app",
 		},
 
-		// Disable features you don’t want here
-		// mdEnhance: {
-		//   align: true,
-		//   attrs: true,
-		//   chart: true,
-		//   codetabs: true,
-		//   container: true,
-		//   demo: true,
-		//   echarts: true,
-		//   figure: true,
-		//   flowchart: true,
-		//   gfm: true,
-		//   imgLazyload: true,
-		//   imgSize: true,
-		//   include: true,
-		//   katex: true,
-		//   mark: true,
-		//   mermaid: true,
-		//   playground: {
-		//     presets: ['ts', 'vue'],
-		//   },
-		//   presentation: {
-		//     plugins: ['highlight', 'math', 'search', 'notes', 'zoom'],
-		//   },
-		//   stylize: [
-		//     {
-		//       matcher: 'Recommended',
-		//       replacer: ({ tag }) => {
-		//         if (tag === 'em')
-		//           return {
-		//             tag: 'Badge',
-		//             attrs: { type: 'tip' },
-		//             content: 'Recommended',
-		//           };
-		//       },
-		//     },
-		//   ],
-		//   sub: true,
-		//   sup: true,
-		//   tabs: true,
-		//   vPre: true,
-		//   vuePlayground: true,
-		// },
-
-		// 禁用不需要的配置
-		mdEnhance: {
-			align: true,
-			// 启用 GFM 警告
-			// 使用特殊标记为 Markdown 元素添加属性
-			attrs: true,
-			gfm: true,
-			//导入文件
-			include: true,
-			mark: true,
-			footnote: true,
-			tasklist: true,
-			// 上下角标
-			sub: true,
-			sup: true,
-			mermaid: true,
-			// TODO: 有空迁移配置
-			// hint: true,
-			// alert: true,
-			// imgLazyload: true,
-			// imgSize: true,
-			// figure: true,
+		slimsearch: {
+			indexContent: true,
 		},
 
 		/**

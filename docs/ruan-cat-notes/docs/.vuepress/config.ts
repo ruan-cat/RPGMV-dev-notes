@@ -132,12 +132,15 @@ export default defineUserConfig({
 		// componentsPlugin({
 		// 	components: ["BiliBili"],
 		// }),
-
-		slimsearchPlugin({
-			indexContent: true,
-			autoSuggestions: true,
-		}),
-
+		/**
+		 * 注释掉 不使用
+		 * You are not allowed to use plugin "@vuepress/plugin-slimsearch" yourself in vuepress config file.
+		 * Set "plugins.slimsearch" in theme options to customize it.
+		 */
+		// slimsearchPlugin({
+		// 	indexContent: true,
+		// 	autoSuggestions: true,
+		// }),
 		// 该内容暂时保留 目前通过正确的爬虫配置，可以实现后端搜索了。
 		// searchProPlugin({
 		// 	indexContent: true,
