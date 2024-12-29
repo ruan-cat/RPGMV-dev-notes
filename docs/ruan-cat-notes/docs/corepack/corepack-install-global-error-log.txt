@@ -1,0 +1,13 @@
+PS E:\code\rzn\tests\2024-12-29\001> corepack install pnpm@9.15.0 -g
+Installing pnpm@9.15.0...
+Internal Error: Error when performing the request to https://registry.npmjs.org/pnpm/-/pnpm-9.15.0.tgz; for troubleshooting help, see https://github.com/nodejs/corepack#troubleshooting  
+    at fetch (E:\store\nvm-desktop\20.18.0\node_modules\corepack\dist\lib\corepack.cjs:21609:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async fetchUrlStream (E:\store\nvm-desktop\20.18.0\node_modules\corepack\dist\lib\corepack.cjs:21639:20)
+    at async download (E:\store\nvm-desktop\20.18.0\node_modules\corepack\dist\lib\corepack.cjs:21762:18)
+    at async installVersion (E:\store\nvm-desktop\20.18.0\node_modules\corepack\dist\lib\corepack.cjs:21854:55)
+    at async Engine.ensurePackageManager (E:\store\nvm-desktop\20.18.0\node_modules\corepack\dist\lib\corepack.cjs:22310:32)
+    at async InstallGlobalCommand.installFromDescriptor (E:\store\nvm-desktop\20.18.0\node_modules\corepack\dist\lib\corepack.cjs:22707:5)
+    at async Promise.all (index 0)
+    at async InstallGlobalCommand.execute (E:\store\nvm-desktop\20.18.0\node_modules\corepack\dist\lib\corepack.cjs:22685:5)
+    at async InstallGlobalCommand.validateAndExecute (E:\store\nvm-desktop\20.18.0\node_modules\corepack\dist\lib\corepack.cjs:19835:22)

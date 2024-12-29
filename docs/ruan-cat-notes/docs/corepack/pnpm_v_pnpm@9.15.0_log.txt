@@ -1,0 +1,29 @@
+PS E:\code\rzn\github-desktop-store\RPGMV-dev-notes> pnpm v pnpm@9.15.0
+
+pnpm@9.15.0 | MIT | deps: none | versions: 1096
+Fast, disk space efficient package manager
+https://pnpm.io
+
+keywords: pnpm9, dependency manager, install, installer, uninstall, remove, link, prune, shrinkwrap, lockfile, fast, 
+rapid, efficient, package.json, packages, dependencies, symlinks, hardlinks, modules, npm, package manager, monorepo, multi-package, workspace:*
+
+bin: pnpm, pnpx
+
+dist
+.tarball: https://registry.npmmirror.com/pnpm/-/pnpm-9.15.0.tgz
+.shasum: 8bfdb6d72b4d5fdf87d21d27f2bfbe2b21dd2629
+.integrity: sha512-duI3l2CkMo7EQVgVvNZije5yevN3mqpMkU45RBVsQpmSGon5djge4QfUHxLPpLZmgcqccY8GaPoIMe1MbYulbA==
+.unpackedSize: 17.5 MB
+
+maintainers:
+- zkochan <z@kochan.io>
+- pnpmuser <publish-bot@pnpm.io>
+
+dist-tags:
+dev: 6.23.7-202112041634  latest-5: 5.18.10         latest: 9.15.2            next-9: 9.15.2
+latest-1: 1.43.1          latest-6: 6.35.1          next-10: 10.0.0-rc.2      pr4475: 0.0.0-pr4475.1
+latest-2: 2.25.7          latest-7: 7.33.5          next-6: 6.35.1
+latest-3: 3.8.1           latest-8: 8.15.9          next-7: 7.33.7
+latest-4: 4.14.4          latest-9: 9.15.2          next-8: 8.15.9
+
+published 3 weeks ago by pnpmuser <publish-bot@pnpm.io>
