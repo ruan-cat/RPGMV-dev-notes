@@ -42,6 +42,10 @@ export const hopeThemeConfig: ThemeOptions = {
 		// 目前暂时不考虑使用博客风格 未来拆分出项目笔记后再考虑
 		blog: false,
 
+		slimsearch: {
+			indexContent: true,
+		},
+
 		comment: {
 			/**
 			 * Using Giscus
