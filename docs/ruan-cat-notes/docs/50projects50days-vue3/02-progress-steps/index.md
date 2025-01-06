@@ -14,6 +14,6 @@ import ProgressSteps from "@docs/50projects50days-vue3/02-progress-steps/Progres
 
 ## 文章教程
 
-## B 站视频教程
+- https://juejin.cn/post/7262726113083752503#heading-6
 
-<!-- <BiliBili bvid="BV1BN4y1j77w" /> -->
+## B 站视频教程
