@@ -17,7 +17,7 @@ const counter = ref(1);
  * @description
  * 进度块的数目
  */
-const circleNumber = ref(4);
+const circleNumber = ref(7);
 
 /**
  * 上一个按钮 是否可用？
@@ -60,17 +60,17 @@ const progressWidth = computed<CSSProperties>(() => {
 	<section class="v1-root">
 		<section class="container">
 			<section class="progress-container">
-				<section class="progress" id="progress" :style="progressWidth"></section>
+				<section class="progress" :style="progressWidth"></section>
 
 				<section class="circle" v-for="i in circleNumber" :key="i" :class="{ active: counter >= i }">
 					{{ i }}
 				</section>
 			</section>
 
-			{{ counter }}
-
-			<ElButton type="primary" class="btn" @click="doLast" :disabled="!isLastBtnActive"> 上一个 </ElButton>
-			<ElButton type="primary" class="btn" @click="doNext" :disabled="!isNextBtnActive"> 下一个 </ElButton>
+			<section class="btns">
+				<ElButton type="primary" @click="doLast" :disabled="!isLastBtnActive"> 上一个 </ElButton>
+				<ElButton type="primary" @click="doNext" :disabled="!isNextBtnActive"> 下一个 </ElButton>
+			</section>
 		</section>
 	</section>
 </template>
@@ -80,68 +80,77 @@ const progressWidth = computed<CSSProperties>(() => {
 	.container {
 		text-align: center;
 
-		// background-color: greenyellow;
-	}
-
-	/* 先定义一个区域 */
-	.progress-container {
-		// 定义一个过渡效果
-		@mixin transition() {
-			transition: 0.4s ease;
-		}
-
 		display: flex;
-		justify-content: space-between; /* 这个里面有圆圈的位置*/
-		position: relative; /* 这是定位使用*/
-		margin-bottom: 30px;
-		max-width: 100%;
-		width: 350px;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 
-		/* 在区域内部,采用伪类画了灰色一条线 */
-		&::before {
-			content: "";
-			// background-color: #eee;
-			background-color: red;
-			position: absolute;
-			top: 50%;
-			left: 0;
-			transform: translateY(-50%);
-			height: 4px;
-			width: 100%;
-			z-index: -1;
+		// 按钮区容器
+		.btns {
+			text-align: center;
 		}
 
-		/* 在区域内部画了一条有颜色的线*/
-		.progress {
-			// background-color: blue;
-			background-color: rebeccapurple;
-			position: absolute;
-			top: 50%;
-			left: 0;
-			transform: translateY(-50%);
-			height: 4px;
-			width: 0%; /* width根据点击进行百分比变化*/
-			@include transition;
-		}
+		/* 先定义一个区域 */
+		.progress-container {
+			// 定义一个过渡效果
+			@mixin transition() {
+				transition: 0.4s ease;
+			}
 
-		/* 对圆圈的字体内部的数据做处理 */
-		.circle {
-			z-index: 1;
-
-			background-color: #fff;
-			color: #999;
-			border-radius: 50%;
-			height: 30px;
-			width: 30px;
 			display: flex;
 			align-items: center;
-			justify-content: center;
-			border: 3px solid #999;
-			@include transition;
+			justify-content: space-between; /* 这个里面有圆圈的位置*/
+			position: relative;
+			margin-bottom: 2rem;
+			// max-width: 100%;
+			width: 75%;
 
-			/* 活跃的圆圈变了颜色 */
-			&.active {
-				border-color: blue;
+			/* 在区域内部,采用伪类画了灰色一条线 */
+			&::before {
+				content: "";
+				// background-color: #eee;
+				background-color: red;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				height: 4px;
+				width: 100%;
+				z-index: -1;
+			}
+
+			/* 在区域内部画了一条有颜色的线*/
+			.progress {
+				// background-color: blue;
+				background-color: rebeccapurple;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				height: 4px;
+				width: 0%; /* width根据点击进行百分比变化*/
+				@include transition;
+			}
+
+			/* 对圆圈的字体内部的数据做处理 */
+			.circle {
+				z-index: 1;
+
+				background-color: #fff;
+				color: #999;
+				border-radius: 50%;
+				height: 30px;
+				width: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 3px solid #999;
+				@include transition;
+
+				/* 活跃的圆圈变了颜色 */
+				&.active {
+					border-color: blue;
+				}
 			}
 		}
 	}
