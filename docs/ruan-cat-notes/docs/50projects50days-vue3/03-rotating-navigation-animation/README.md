@@ -1,3 +1,9 @@
+---
+dir:
+  collapsible: false
+  link: true
+---
+
 <script setup>
 import RotatingNavigationAnimation from "@docs/50projects50days-vue3/03-rotating-navigation-animation/rotating-navigation-animation.vue";
 </script>
