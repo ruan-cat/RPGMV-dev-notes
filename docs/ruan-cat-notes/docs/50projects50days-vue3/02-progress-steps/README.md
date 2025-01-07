@@ -1,3 +1,11 @@
+---
+# order: 2
+dir:
+  collapsible: false
+  link: true
+  order: 20
+---
+
 <script setup >
 import ProgressSteps from "@docs/50projects50days-vue3/02-progress-steps/ProgressSteps.vue";
 </script>

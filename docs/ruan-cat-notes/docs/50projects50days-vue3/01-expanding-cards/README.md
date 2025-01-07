@@ -1,3 +1,11 @@
+---
+# order: 1
+dir:
+  collapsible: false
+  link: true
+  order: 10
+---
+
 <script setup>
 import ExpandingCards from "@docs/50projects50days-vue3/01-expanding-cards/ExpandingCards.vue";
 </script>
