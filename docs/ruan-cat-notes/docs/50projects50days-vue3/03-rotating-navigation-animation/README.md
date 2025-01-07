@@ -1,5 +1,4 @@
 ---
-# order: 3
 dir:
   collapsible: false
   link: true
@@ -19,3 +18,11 @@ import RotatingNavigationAnimation from "@docs/50projects50days-vue3/03-rotating
 ## 文章教程
 
 - https://juejin.cn/post/7262726113083752503#heading-9
+
+## 源码
+
+::: details
+
+@[code vue](./rotating-navigation-animation.vue)
+
+:::

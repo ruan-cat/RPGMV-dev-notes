@@ -1,5 +1,4 @@
 ---
-# order: 1
 dir:
   collapsible: false
   link: true
@@ -37,3 +36,11 @@ import ExpandingCards from "@docs/50projects50days-vue3/01-expanding-cards/Expan
 ## B 站视频教程
 
 <BiliBili bvid="BV1BN4y1j77w" />
+
+## 源码
+
+::: details
+
+@[code vue](./ExpandingCards.vue)
+
+:::

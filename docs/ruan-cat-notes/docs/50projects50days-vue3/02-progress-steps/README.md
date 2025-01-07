@@ -1,5 +1,4 @@
 ---
-# order: 2
 dir:
   collapsible: false
   link: true
@@ -25,3 +24,11 @@ import ProgressSteps from "@docs/50projects50days-vue3/02-progress-steps/Progres
 - https://juejin.cn/post/7262726113083752503#heading-6
 
 ## B 站视频教程
+
+## 源码
+
+::: details
+
+@[code vue](./ProgressSteps.vue)
+
+:::
