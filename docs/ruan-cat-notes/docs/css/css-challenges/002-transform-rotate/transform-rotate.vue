@@ -9,7 +9,9 @@ const circleItemNum = ref(4);
 <template>
 	<section class="transform-rotate-root">
 		<section class="circle">
-			<section class="circle-item" v-for="num in circleItemNum" :key="num" :style="{ '--item-index': num }"></section>
+			<section class="circle-item" v-for="num in circleItemNum" :key="num" :style="{ '--item-index': num }">
+				{{ num }}
+			</section>
 		</section>
 
 		<section class="btns">
@@ -67,8 +69,17 @@ const circleItemNum = ref(4);
 			// 	}
 			// }
 
+			// 一个圆被拆分出来的平均值
 			--sig-deg: calc(360deg / var(--circleItemNum));
-			--curr-deg: calc(var(--sig-deg) * var(--item-index));
+
+			// 当前项的角度
+			--average-deg: calc(var(--sig-deg) * var(--item-index));
+
+			// 额外的仰角
+			--elevation: calc((var(--sig-deg) * -1) - 15deg);
+
+			// 最后旋转的角度
+			--curr-deg: calc(var(--average-deg) + var(--elevation));
 
 			top: 50%;
 			left: 50%;
