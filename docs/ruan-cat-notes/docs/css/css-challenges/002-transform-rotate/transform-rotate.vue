@@ -3,12 +3,25 @@ import { ref, computed, watch } from "vue";
 
 import { ElButton } from "element-plus";
 
+/** 旋转项的总数 */
 const circleItemNum = ref(4);
+
+/** 当前累计旋转的角度 */
+const rotation = ref(0);
+
+function rotateCircle() {
+	// 方向是负的 因为每一个项都是逆时针旋转的
+	rotation.value -= 360 / circleItemNum.value;
+}
+
+/** 正方向旋转 */
+
+/** 反方向旋转 */
 </script>
 
 <template>
 	<section class="transform-rotate-root">
-		<section class="circle">
+		<section class="circle" :style="{ transform: `rotate(${rotation}deg)` }">
 			<section class="circle-item" v-for="num in circleItemNum" :key="num" :style="{ '--item-index': num }">
 				{{ num }}
 			</section>
@@ -17,7 +30,7 @@ const circleItemNum = ref(4);
 		<section class="btns">
 			<ElButton type="danger"> 减少 </ElButton>
 			<ElButton type="success"> 增加 </ElButton>
-			<ElButton type="primary"> 旋转 </ElButton>
+			<ElButton type="primary" @click="rotateCircle()"> 旋转 </ElButton>
 		</section>
 	</section>
 </template>
@@ -51,6 +64,8 @@ const circleItemNum = ref(4);
 		border-radius: 50%;
 
 		position: relative;
+
+		transition: all 0.28s ease-in-out;
 
 		.circle-item {
 			width: $circle-item-size;

@@ -14,6 +14,8 @@ import TransformRotate from "@docs/css/css-challenges/002-transform-rotate/trans
 
 做 50 天 50 项目时，想着把进度条和旋转动效一起实现出来。
 
+目前仅仅是简单实现了旋转动效。圆形的进度条功能先不做。
+
 ## 动画
 
 <TransformRotate />
