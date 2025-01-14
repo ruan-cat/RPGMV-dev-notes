@@ -2,6 +2,7 @@
 import { ref, computed, watch } from "vue";
 
 import { ElButton } from "element-plus";
+import { throttle } from "lodash-es";
 
 /** 旋转项的总数 */
 const circleItemNum = ref(4);
@@ -9,14 +10,18 @@ const circleItemNum = ref(4);
 /** 当前累计旋转的角度 */
 const rotation = ref(0);
 
-function rotateCircle() {
-	// 方向是负的 因为每一个项都是逆时针旋转的
+/** 正方向旋转 */
+function rotateCirclePositive() {
+	rotation.value += 360 / circleItemNum.value;
+}
+
+/** 反方向旋转 */
+function rotateCircleNegative() {
 	rotation.value -= 360 / circleItemNum.value;
 }
 
-/** 正方向旋转 */
-
-/** 反方向旋转 */
+const rotateCirclePositiveToBtn = throttle(rotateCirclePositive, 500);
+const rotateCircleNegativeToBtn = throttle(rotateCircleNegative, 500);
 </script>
 
 <template>
@@ -28,9 +33,8 @@ function rotateCircle() {
 		</section>
 
 		<section class="btns">
-			<ElButton type="danger"> 减少 </ElButton>
-			<ElButton type="success"> 增加 </ElButton>
-			<ElButton type="primary" @click="rotateCircle()"> 旋转 </ElButton>
+			<ElButton type="danger" @click="rotateCirclePositiveToBtn()"> 正旋转 </ElButton>
+			<ElButton type="success" @click="rotateCircleNegativeToBtn()"> 反旋转 </ElButton>
 		</section>
 	</section>
 </template>
