@@ -71,6 +71,8 @@ $bladeSize: ($dartBoxSize - $heartSize) * 0.5;
 			left: 50%;
 			transform: translate(-50%, -50%) rotate(calc(90deg * var(--item-index)))
 				translate(-(($bladeSize + $heartSize) * 0.5), 0);
+
+			clip-path: ellipse(100% 100% at 100% 0%);
 		}
 	}
 }
