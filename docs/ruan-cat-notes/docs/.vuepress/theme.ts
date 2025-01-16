@@ -49,17 +49,27 @@ export default hopeTheme({
 		{
 			link: "/learn-todo/",
 			text: "学习待办",
-			icon: "wpf:todo-list",
+			icon: "flat-color-icons:todo-list",
 		},
 		{
 			link: "/bug/",
 			text: "遭遇的bug",
-			icon: "streamline:bug-antivirus-debugging",
+			icon: "icon-park:bug",
 		},
 		{
 			link: "/git/",
 			text: "git使用",
 			icon: "devicon:git",
+		},
+		{
+			link: "/css/css-challenges/",
+			text: "css训练",
+			icon: "vscode-icons:file-type-css",
+		},
+		{
+			link: "/50projects50days-vue3/",
+			text: "50天50个小项目",
+			icon: "logos:vue",
 		},
 	],
 
