@@ -21,8 +21,6 @@ export default hopeTheme({
 	// 尝试移除底部的斜线
 	hostname: "https://www.ruan-cat.com",
 
-	iconAssets: "iconify",
-
 	// 不提供深色模式
 	darkmode: "disable",
 	// fullscreen: true,
@@ -46,6 +44,14 @@ export default hopeTheme({
 
 	sidebar: "structure",
 	navbar: [
+		{
+			/**
+			 * @see https://theme-hope.vuejs.press/zh/guide/blog/timeline.html
+			 */
+			link: "/timeline/",
+			text: "文章历史记录",
+			icon: "flat-color-icons:timeline",
+		},
 		{
 			link: "/learn-todo/",
 			text: "学习待办",
@@ -115,8 +121,13 @@ export default hopeTheme({
 	},
 
 	plugins: {
-		// 目前暂时不考虑使用博客风格 未来拆分出项目笔记后再考虑
-		blog: false,
+		blog: {
+			excerpt: true,
+		},
+
+		icon: {
+			assets: "iconify",
+		},
 
 		// If you don’t need comment feature, you can remove following option
 		// The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
