@@ -1,5 +1,8 @@
 ---
-order: 3
+dir:
+  collapsible: false
+  link: true
+  order: 30
 ---
 
 # map 函数演示
@@ -46,4 +49,8 @@ const ds = [
 
 ## 代码
 
-@[code ts](./code/003-map.ts)
+::: details
+
+@[code ts](./map.ts)
+
+:::

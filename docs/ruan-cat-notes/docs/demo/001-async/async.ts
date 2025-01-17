@@ -29,6 +29,7 @@ function asyncFun(query: string = "你是笨猪，哈哈哈哈") {
 }
 
 /** 一个具体的对象 */
+// @ts-ignore
 const formState = await asyncFun().then((res) => {
 	return res.data;
 });
