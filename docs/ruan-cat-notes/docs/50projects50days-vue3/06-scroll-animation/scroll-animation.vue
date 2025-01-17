@@ -30,7 +30,9 @@ onMounted(() => {
 	<section class="scroll-animation-root">
 		<!-- :onscroll="checkBoxes()" -->
 		<div class="box-container">
-			<section class="box" v-for="num in 20" :key="num" ref="boxItem"></section>
+			<section class="box" v-for="num in 20" :key="num" ref="boxItem">
+				{{ num }}
+			</section>
 		</div>
 	</section>
 </template>
@@ -56,9 +58,15 @@ onMounted(() => {
 			margin: 10px;
 			border-radius: 10px;
 			box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-			transform: translateX(400%);
 			transition: transform 0.4s ease;
+			font-size: 4rem;
 
+			// 奇数个方块向右滑入
+			&:nth-of-type(odd) {
+				transform: translateX(400%);
+			}
+
+			// 偶数个方块向左滑入
 			&:nth-of-type(even) {
 				transform: translateX(-400%);
 			}
