@@ -68,6 +68,11 @@ export default hopeTheme({
 			icon: "devicon:git",
 		},
 		{
+			link: "/demo/",
+			text: "演示用的demo",
+			icon: "carbon:demo",
+		},
+		{
 			link: "/css/css-challenges/",
 			text: "css训练",
 			icon: "vscode-icons:file-type-css",
