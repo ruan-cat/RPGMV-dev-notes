@@ -1,21 +1,14 @@
 <script lang="ts" setup>
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, useTemplateRef } from "vue";
 
-const boxes = document.querySelectorAll(".box");
-
-window.addEventListener("scroll", checkBoxes);
-
-// 页面加载时执行一次 checkBoxes，以初始化初始状态
-checkBoxes();
+const boxItems = useTemplateRef("boxItem");
 
 function checkBoxes() {
 	// 计算触发点的位置，通常在窗口底部的四分之一位置
 	const triggerBottom = (window.innerHeight / 5) * 4;
-
-	boxes.forEach((box) => {
-		//该盒子离html顶部的距离
+	boxItems.value.forEach((box) => {
+		// 该盒子离html顶部的距离
 		const boxTop = box.getBoundingClientRect().top;
-
 		if (boxTop < triggerBottom) {
 			box.classList.add("show");
 		} else {
@@ -23,14 +16,23 @@ function checkBoxes() {
 		}
 	});
 }
+
+onMounted(() => {
+	// const boxes = document.querySelectorAll(".box");
+	window.addEventListener("scroll", checkBoxes);
+	// 页面加载时执行一次 checkBoxes，以初始化初始状态
+	checkBoxes();
+});
 </script>
 
 <template>
 	<section class="scroll-animation-root">
 		<div class="box-container">
+			<section class="box" v-for="num in 20" :key="num" ref="boxItem"></section>
+
+			<!-- <div class="box"></div>
 			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
+			<div class="box"></div> -->
 			<!-- 添加更多方块元素... -->
 		</div>
 	</section>
