@@ -60,10 +60,10 @@ export const hopeThemeConfig: ThemeOptions = {
 		/**
 		 * 按照教程导入组件
 		 * 发现似乎有bug 可能是自己使用了自定义组件导入方案 导致默认的两个组件没了
-		 * 这里手动导入默认提供的 FontIcon 和 Badge
+		 * 这里手动导入默认提供的 Badge
 		 */
 		components: {
-			components: ["BiliBili", "FontIcon", "Badge"],
+			components: ["BiliBili", "Badge"],
 		},
 	},
 };
