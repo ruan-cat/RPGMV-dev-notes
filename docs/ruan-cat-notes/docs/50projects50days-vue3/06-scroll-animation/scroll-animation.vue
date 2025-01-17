@@ -1,12 +1,74 @@
 <script lang="ts" setup>
 import { ref, computed, watch } from "vue";
+
+const boxes = document.querySelectorAll(".box");
+
+window.addEventListener("scroll", checkBoxes);
+
+// 页面加载时执行一次 checkBoxes，以初始化初始状态
+checkBoxes();
+
+function checkBoxes() {
+	// 计算触发点的位置，通常在窗口底部的四分之一位置
+	const triggerBottom = (window.innerHeight / 5) * 4;
+
+	boxes.forEach((box) => {
+		//该盒子离html顶部的距离
+		const boxTop = box.getBoundingClientRect().top;
+
+		if (boxTop < triggerBottom) {
+			box.classList.add("show");
+		} else {
+			box.classList.remove("show");
+		}
+	});
+}
 </script>
 
 <template>
-	<section class="scroll-animation-root"></section>
+	<section class="scroll-animation-root">
+		<div class="box-container">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<!-- 添加更多方块元素... -->
+		</div>
+	</section>
 </template>
 
 <style lang="scss" scoped>
 .scroll-animation-root {
+	/* 容器样式：使用 Flex 布局、圆角和阴影 */
+	.box-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-top: 100px;
+	}
+
+	.box {
+		background-color: steelblue;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 400px;
+		height: 200px;
+		margin: 10px;
+		border-radius: 10px;
+		box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+		transform: translateX(400%);
+		transition: transform 0.4s ease;
+	}
+
+	.box:nth-of-type(even) {
+		transform: translateX(-400%);
+	}
+
+	/* 添加 show 类时的样式，实现方块滑入效果 */
+	.box.show {
+		transform: translateX(0);
+	}
 }
 </style>

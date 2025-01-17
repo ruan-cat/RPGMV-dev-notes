@@ -10,6 +10,21 @@ order: 1
 
 不能真的用原生的写法来实现业务，逼自己用 vue3 + typescript 的新技术栈来复现，重做这些典型的小项目。
 
+## 训练注意事项
+
+1. 大胆的抄代码。抄代码是学习最快的方式。
+2. 改成 vue3 的写法，慢慢拓展之前没学过的 css 和 javascript 知识点。
+3. 自己再针对性的写简单的 demo，刻意练习没接触过的知识点。
+4. 最后尝试去找现成的工具库，看看有没有现成的库可以优化开发过程，未来尽量学会搬库完成业务。
+
+## 全部目录
+
+::: details
+
+<Catalog />
+
+:::
+
 ## 参考资料
 
 - [官网](https://50projects50days.com/)
@@ -39,5 +54,3 @@ CSS 分段控件：https://codepen.io/fstgerm/pen/Jafyj
 纯 CSS 响应式选项卡：https://codepen.io/Fallupko/pen/ruLdg
 CSS 下列菜单：https://codepen.io/Moslim/pen/gmzvQj
 响应式 CSS 标签：https://codepen.io/imprakash/pen/epZvbQ
-
-<Catalog />
