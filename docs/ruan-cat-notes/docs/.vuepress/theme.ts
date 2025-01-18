@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import { transformerTwoslash } from "@shikijs/twoslash";
 
 import { hopeTheme } from "vuepress-theme-hope";
 
@@ -123,6 +124,10 @@ export default hopeTheme({
 		imgLazyload: true,
 		imgSize: true,
 		figure: true,
+		highlighter: {
+			type: "shiki",
+			transformers: [transformerTwoslash()],
+		},
 	},
 
 	plugins: {

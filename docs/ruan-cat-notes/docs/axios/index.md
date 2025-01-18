@@ -14,7 +14,7 @@ axios 的拦截器，可以更改返回值，一般来说返回值是 AxiosRespo
 
 ::: details 响应拦截器解包 data
 
-```ts {5}
+```txt {5}
 client.addResponseInterceptor<HttpResponse>((response) => {
 	const { data: responseData, status } = response;
 	const { code, data, message: msg } = responseData;
@@ -33,7 +33,7 @@ client.addResponseInterceptor<HttpResponse>((response) => {
 
 ::: details 封装通用请求函数并强制类型转换
 
-```ts {11}
+```txt {11}
 class RequestClient {
 	/**
 	 * 通用的请求方法
@@ -64,7 +64,7 @@ class RequestClient {
 
 ::: details 响应拦截器解包 data
 
-```ts
+```txt
 // 响应拦截器
 service.interceptors.response.use(
 	(response: AxiosResponse) => {
@@ -113,7 +113,7 @@ service.interceptors.response.use(
 
 ::: details 泛型函数传参
 
-```ts {2}
+```txt {2}
 function getPage(queryParams: DictPageQuery) {
 	return request<any, PageResult<DictPageVO[]>>({
 		url: `${DICT_BASE_URL}/page`,

@@ -14,7 +14,6 @@ import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 import { typedocPlugin } from "vuepress-plugin-typedoc/next";
-import vuepressShikiTwoslash from "vuepress-plugin-shiki-twoslash";
 
 // import typedocConf from "../../../../typedoc.config.cjs";
 
@@ -116,9 +115,6 @@ export default defineUserConfig({
 	// }),
 
 	plugins: [
-		vuepressShikiTwoslash({
-			theme: "nord",
-		}),
 		/** 参考资料 https://vuejs.press/zh/reference/plugin/register-components.html */
 		// registerComponentsPlugin({
 		// 	componentsDir: join(process.cwd(), "docs"),
