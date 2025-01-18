@@ -22,7 +22,7 @@ vite 配置开发环境时，基本上是需要配置反向代理的。下面是
 
 ::: details 环境变量
 
-@[code env](./.env.development)
+@[code bash](./.env.development)
 
 :::
 
