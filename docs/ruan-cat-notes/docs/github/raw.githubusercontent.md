@@ -4,7 +4,7 @@ github 的资源可以使用 `https://raw.githubusercontent.com/` 的方式加�
 
 模板案例如下：
 
-```ts
+```txt
 const t = `https://raw.githubusercontent.com/${github用户名}/${github仓库名称}/${分支名称}/${...src文件路径}.${文件格式}`;
 ```
 

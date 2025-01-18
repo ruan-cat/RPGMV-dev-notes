@@ -6,12 +6,12 @@ execa 和 spawnSync 都是运行命令的工具。当我们想用函数运行某
 
 ## execa
 
-```ts
+```js
 import { execa } from "execa";
 ```
 
 ## spawnSync
 
-```ts
+```js
 import { spawnSync } from "node:child_process";
 ```

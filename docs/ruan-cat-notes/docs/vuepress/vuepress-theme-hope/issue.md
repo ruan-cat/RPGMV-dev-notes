@@ -16,6 +16,7 @@ viteBundler 的 outDir 配置导致打包失败
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 
+// @ts-ignore
 import theme from "./theme.js";
 
 export default defineUserConfig({

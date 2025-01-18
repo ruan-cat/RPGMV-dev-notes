@@ -37,7 +37,7 @@ export default defineUserConfig({
 
 别人推荐的，用特定的函数来实现全局导入。
 
-```ts
+```txt
 import { defineClientConfig } from "@vuepress/client";
 
 import ElementPlus from "element-plus";

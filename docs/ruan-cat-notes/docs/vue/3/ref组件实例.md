@@ -6,7 +6,7 @@
 
 在 vue3 + typescript 的项目中，为了获取到组件实例并增加类型，可以使用这样的写法以 element-plus 为例：
 
-```ts
+```txt
 import { ElTable } from "element-plus";
 const tableRef = ref<null | InstanceType<typeof ElTable>>(null);
 ```

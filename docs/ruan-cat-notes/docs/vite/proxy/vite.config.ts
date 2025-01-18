@@ -7,11 +7,13 @@ import { type UserConfig, type ConfigEnv, loadEnv, defineConfig } from "vite";
  * 也可以等效地用 三斜线表达式 实现全量导入
  * <reference types="./types/env.shim.d.ts" />
  */
+// @ts-ignore
 import "./types/env.shim.d.ts";
 
 // https://vitejs.dev/config/
 export default defineConfig(function ({ mode }: ConfigEnv): UserConfig {
 	// 提供类型声明 便于得到使用提示
+	// @ts-ignore
 	const env = loadEnv(mode, process.cwd()) as unknown as ImportMetaEnv;
 
 	const VITE_proxy_prefix = env.VITE_proxy_prefix;

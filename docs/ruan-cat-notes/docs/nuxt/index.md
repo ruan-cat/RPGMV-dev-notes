@@ -45,7 +45,7 @@
 	token: "SFJXyE38Aa8qcMfLpCHueuYB4PAgyN_O14d0vkn7",
 -->
 
-```ts
+```js
 // drizzle.config.ts
 import type { Config } from "drizzle-kit";
 
