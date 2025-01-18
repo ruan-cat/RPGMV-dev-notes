@@ -99,6 +99,7 @@
 		"vitest": "^2.1.8",
 		"vuepress": "2.0.0-rc.19",
 		"vuepress-plugin-md-enhance": "2.0.0-rc.69",
+		"vuepress-plugin-shiki-twoslash": "^1.0.39",
 		"vuepress-plugin-typedoc": "0.13.0",
 		"vuepress-theme-hope": "2.0.0-rc.69"
 	}
