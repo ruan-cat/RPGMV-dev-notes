@@ -28,6 +28,12 @@ import AliceHover from "./components/alice-hover/alice-hover.vue";
 import "@shikijs/twoslash/style-rich.css";
 import "@shikijs/twoslash/style-classic.css";
 
+import TwoslashFloatingVue from "@shikijs/vitepress-twoslash/client";
+/**
+ * https://shiki.tmrs.site/packages/vitepress
+ */
+import "@shikijs/vitepress-twoslash/style.css";
+
 export default defineClientConfig({
 	enhance: ({ app, router, siteData }) => {
 		const pinia = createPinia();
@@ -43,6 +49,7 @@ export default defineClientConfig({
 
 		app.use(pinia);
 		app.use(ElementPlus);
+		app.use(TwoslashFloatingVue);
 
 		// 参考资料 https://vercel.com/docs/analytics/package
 		// TODO: 学一下怎么配置node环境

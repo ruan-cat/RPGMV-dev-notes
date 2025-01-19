@@ -63,6 +63,7 @@
 		"@ruan-cat/vercel-deploy-tool": "^0.5.5",
 		"@ruan-cat/vuepress-preset-config": "^0.1.17",
 		"@shikijs/twoslash": "^1.27.2",
+		"@shikijs/vitepress-twoslash": "^1.27.2",
 		"@types/js-yaml": "^4.0.9",
 		"@types/lodash-es": "^4.17.12",
 		"@types/node": "^20.17.14",
