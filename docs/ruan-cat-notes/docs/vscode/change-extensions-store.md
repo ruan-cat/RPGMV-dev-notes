@@ -23,7 +23,7 @@ C 盘肯定是要清理的。怎么更改其存储位置？
 
 在 E 盘的 vscode 文件夹内，进入 powershell，运行以下命令：
 
-```cmd
+```bash
 cmd /c mklink /D "C:\Users\ruanzhongnan\AppData\Roaming\Code" "E:\store\vscode\user-data\"
 cmd /c mklink /D "C:\Users\ruanzhongnan\.vscode" "E:\store\vscode\"
 ```

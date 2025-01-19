@@ -127,6 +127,7 @@ export default hopeTheme({
 		highlighter: {
 			type: "shiki",
 			transformers: [transformerTwoslash()],
+			langs: ["vue", "ts", "js", "bash", "yaml", "yml", "scss", "python"],
 		},
 	},
 

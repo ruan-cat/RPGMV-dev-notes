@@ -20,10 +20,13 @@ import piniaPluginPersistedstate, { createPersistedState } from "pinia-plugin-pe
 
 import AliceHover from "./components/alice-hover/alice-hover.vue";
 
-// const piniaUseLocalStorage =
-// 	typeof window !== "undefined"
-// 		? window.localStorage
-// 		: new LocalStorage("./scratch");
+/**
+ * 默认的 twoslash 是不会主动带上样式的 需要我们手动导入样式
+ * @see https://shiki.tmrs.site/packages/vitepress#twoslash
+ * @see https://shiki.tmrs.site/packages/twoslash
+ */
+import "@shikijs/twoslash/style-rich.css";
+import "@shikijs/twoslash/style-classic.css";
 
 export default defineClientConfig({
 	enhance: ({ app, router, siteData }) => {
