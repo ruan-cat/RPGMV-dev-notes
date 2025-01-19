@@ -13,7 +13,9 @@ import C from "@docs/demo/005-vueuse-scroll-animation/vueuse-scroll-animation.vu
 
 尝试用 vueuse 改造滚动动画，力求代码编写优雅简洁。
 
-<C />
+<ClientOnly>
+	<C />
+</ClientOnly>
 
 ## 改造思路
 
