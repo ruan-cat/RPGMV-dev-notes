@@ -9,6 +9,7 @@ title: 阮喵喵的笔记
 heroText: 阮喵喵的笔记
 tagline: 阮喵喵的博客站点。旨在于记录开发经验、练习技术。
 
+# TODO: 写一个接口请求 获取全部包的信息 并以特定格式写入到此处
 projects:
   - icon: vscode-icons:folder-type-tools
     name: "utils"
