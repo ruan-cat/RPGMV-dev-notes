@@ -10,8 +10,5 @@
 		"docs:update-package": "pnpm dlx vp-update",
 		"clear": "rimraf dist .turbo .vercel .cache .temp",
 		"rm:node_modules": "rimraf node_modules"
-	},
-	"devDependencies": {
-		"@types/lodash-es": "^4.17.12"
 	}
 }
