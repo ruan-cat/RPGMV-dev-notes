@@ -5,6 +5,9 @@
 	"license": "MIT",
 	"description": "阮喵喵自己的笔记。",
 	"scripts": {
+		"make-index-md": "node --import=tsx ./scripts/make-index-md.ts",
+		"format-index-md": "prettier --write ./docs/index.md",
+		"predocs:dev": "pnpm run make-index-md && pnpm run format-index-md",
 		"docs:dev": "vuepress-vite dev docs --clean-cache --open",
 		"build:docs": "vuepress-vite build docs",
 		"docs:update-package": "pnpm dlx vp-update",
@@ -34,7 +37,6 @@
 		"@types/node": "^20.17.16",
 		"@types/uuid": "^9.0.8",
 		"@vitejs/plugin-vue": "^4.6.2",
-		"automd": "^0.3.12",
 		"js-yaml": "^4.1.0",
 		"moment": "^2.30.1",
 		"typedoc": "^0.25.13",

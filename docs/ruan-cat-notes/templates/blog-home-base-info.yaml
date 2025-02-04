@@ -1,0 +1,12 @@
+home: true
+layout: "BlogHome"
+
+# 目前不考虑增加图标
+# icon: home
+
+title: 阮喵喵的笔记
+heroText: 阮喵喵的笔记
+tagline: 阮喵喵的博客站点。旨在于记录开发经验、练习技术。
+
+copyright: false
+footer: MIT Licensed | Copyright © 2022-present 阮喵喵
