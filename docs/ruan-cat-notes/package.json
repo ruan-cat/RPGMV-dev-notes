@@ -7,7 +7,9 @@
 	"scripts": {
 		"make-index-md": "node --import=tsx ./scripts/make-index-md.ts",
 		"format-index-md": "prettier --write ./docs/index.md",
-		"predocs:dev": "pnpm run make-index-md && pnpm run format-index-md",
+		"do-inde-md": "pnpm run make-index-md && pnpm run format-index-md",
+		"predocs:dev": "pnpm run do-inde-md",
+		"prebuild:docs": "pnpm run do-inde-md",
 		"docs:dev": "vuepress-vite dev docs --clean-cache --open",
 		"build:docs": "vuepress-vite build docs",
 		"docs:update-package": "pnpm dlx vp-update",
