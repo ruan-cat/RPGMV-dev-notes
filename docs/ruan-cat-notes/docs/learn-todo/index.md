@@ -41,24 +41,9 @@ vue2 不行，vue3 生态下可以考虑配置
 在 https://gitee.com/y_project/RuoYi-Vue 内，其顶部导航栏的搜索栏非常有用，有空可以考虑嵌套使用。
 HeaderSearch 组件
 
-## 在 vue2 和 vue3 内使用 vueuse 提供的一揽子工具
-
-### 在 vue2 怎么使用？
-
-这个例子等待学习
-https://github.com/vueuse/vueuse-vue2-example
-
 ## gasp
 
 这是什么前端动画库？怎么使用？
-
-## vscode 插件 codeium ？
-
-学习该插件的使用
-
-https://marketplace.visualstudio.com/items?itemName=Codeium.codeium
-
-https://codeium.com/
 
 ## storybook
 
@@ -73,21 +58,9 @@ https://codeium.com/
 
 - https://storybook.js.org/blog/storybook-vue3/
 
-## twoslash shiki vitepress
-
-这些技术能够让文档站点的 typescript 代码提供惊人的行内提示。有空研究。
-
-## 钻头官网增加小爱丽丝看板娘/桌宠
-
-我应该先去复现几个 vuepress 看板娘例子，随后再开始和钻头沟通相关事宜。
-
 ## vuepress 导入自定义组件
 
 在 vuepress 内导入 mo7 提供的自定义组件。学一下怎么深度定制 vuepress
-
-## 修复 md-it 的部署报错
-
-测试单仓项目，部署时出现错误。需要去处理。
 
 ## 腾讯低代码 + 机器人
 
