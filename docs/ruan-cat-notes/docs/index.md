@@ -1,4 +1,7 @@
 ---
+# 目前首页文件是自动生成的
+# 请不要直接编辑
+
 home: true
 layout: "BlogHome"
 
