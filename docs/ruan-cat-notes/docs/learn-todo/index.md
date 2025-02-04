@@ -72,3 +72,7 @@ HeaderSearch 组件
 
 - https://github.com/unjs/changelogen
 - https://github.com/antfu/changelogithub
+
+## prepublishOnly
+
+基于 prepublishOnly 怎么实现发包前的打包？怎么保证其 build 构建过程是遵循 turbo 依赖拓扑结构的？
