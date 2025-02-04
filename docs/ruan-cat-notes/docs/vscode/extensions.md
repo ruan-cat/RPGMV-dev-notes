@@ -8,12 +8,6 @@
 
 这样可以做出更加精细的插件配置学习。
 
-## 插件推荐
-
-TODO: 去看更多的 vscode 插件推荐的文章、B 站视频、知乎专栏文章、掘金等。拓展更好的 vscode 开发环境，提高工作效率
-
-https://zhuanlan.zhihu.com/p/139140492
-
 ### Zhihu On VSCode ?
 
 https://marketplace.visualstudio.com/items?itemName=niudai.vscode-zhihu
@@ -23,6 +17,12 @@ https://marketplace.visualstudio.com/items?itemName=niudai.vscode-zhihu
 ### 头部注释
 
 `vscode`的`koroFileHeader`插件可以生成代码的头部注释。手动为代码生成头部注释的快捷键是`Ctrl+Window+I`。使用快捷键`Ctrl+Shift+P`输入命令`@command:extension.fileheader`或输入命令`fileheader`也可以生成头部注释。
+
+### 不使用
+
+目前（2025-2-4）已经不使用这个插件了，这个插件生成了太多杂乱的信息。这些信息都可以被 gitlens 代替。
+
+平时开发的时候要禁用掉。很多开源项目的代码都不会带上这些头部注释的。
 
 ## vetur
 
@@ -183,17 +183,13 @@ https://github.com/formulahendry/vscode-code-runner/issues/632
 
 ![2023-02-20-11-31-06](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-20-11-31-06.png)
 
-## test - picgo
+## picgo
 
 ![2023-02-19-14-28-13](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-19-14-28-13.png)
 
 直接使用 picgo 可以直接上传 bili 的图片，可以生成出有意义的图片
+
 ![](https://article.biliimg.com/bfs/article/2731e1bc7389c6133f9363c84a9cdb282c2a277a.png)
-
-## 学习待办
-
-该插件存在显示问题，需要我们重新配置显示的图标
-![2023-02-20-14-08-42](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-20-14-08-42.png)
 
 ## 测试性质的流程图
 

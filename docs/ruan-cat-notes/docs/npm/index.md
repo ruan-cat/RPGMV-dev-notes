@@ -6,13 +6,13 @@ node 的默认包管理器。
 
 ## 清空缓存
 
-怎么清空项目的 node 缓存的？是用`npm cache clean --force`还是`npm cache verify`？
+怎么清空项目的 node 缓存的？是用 `npm cache clean --force` 还是 `npm cache verify` ？
 
 怎么清空项目的本地缓存？像这样的东西用什么命令可以快速清空？
 
 ![2023-02-20-11-18-58](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/2023-02-20-11-18-58.png)
 
-## 输出全局安装的依赖包 npm ls -g
+## 输出全局安装的依赖包
 
 - https://docs.npmjs.com/cli/v6/commands/npm-ls
 
@@ -37,9 +37,9 @@ npm ls -g --json=true --depth=0
 
 npm 包怎么标记自己为 looking for funding ？
 
-TODO: 如果自己也想让自己的包标记为 funding，对外宣布这些依赖包寻求资助，该怎么实现呢？
+如果自己也想让自己的包标记为 funding，对外宣布这些依赖包寻求资助，该怎么实现呢？
 
-与 2023-07-04 号标记的待办任务。现在（2024-10-11）有能力发包了，标记依赖包寻求资助是很容易的。小事情，有空就做。
+于 2023-07-04 号标记的任务。现在（2024-10-11）有能力发包了，标记依赖包寻求资助是很容易的。小事情，有空就做。
 
 ## `Life Cycle Scripts` npm 命令的生命周期
 
@@ -77,4 +77,10 @@ npm v vercel
 
 # pnpm也能够支持该命令简写
 pnpm v vercel
+```
+
+## 快速查询自己发布的依赖包
+
+```bash
+pnpm s @ruan-cat
 ```

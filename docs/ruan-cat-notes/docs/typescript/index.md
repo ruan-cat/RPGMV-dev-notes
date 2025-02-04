@@ -77,6 +77,10 @@ const myLocalConf = new FormRenderConfClass({
 
 如上图，希望在新建`FormRenderConfClass`对象时，对其构造函数的形参实现类型提示。目前不太懂如何编写能够被`vscode`识别的`d.ts`。
 
+### 解决方案
+
+直接换成 typescript 项目，避免为了 javascript 而写 .d.ts 文件。很低效。
+
 ## 自己写一个 Pick，返回的类型是你传进去的泛型类型和 null
 
 遇到一个问题，我定义了一个类型，定义了后端返回的数据。这些字段可能取值为 null，我该用什么写法来让这些字段适应取值可能为 null 的情况呢？
