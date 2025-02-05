@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, computed, watch, useTemplateRef } from "vue";
+import { ref, computed, watch, useTemplateRef, onMounted } from "vue";
 
 const boxItems = useTemplateRef("boxItem");
 
