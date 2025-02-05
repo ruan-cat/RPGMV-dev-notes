@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 安装pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: |
+            - recursive: true
+
+      - name: 安装node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.6.0
+          cache: pnpm
+          registry-url: "https://registry.npmjs.org"
+
+      - name: corepack手动再安装一次pnpm
+        run: corepack enable && corepack prepare pnpm@9.5.0 --activate
+
+      - name: 安装整个项目的依赖
+        run: pnpm i
+
+      - name: 打包
+        run: pnpm exec turbo build
+
+      - name: 发包
+        run: pnpm changeset publish --otp=${{ secrets.NPM_TOKEN }}
