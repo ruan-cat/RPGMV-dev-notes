@@ -22,6 +22,8 @@ vercel 的 pnpm 使用策略依赖于 pnpm-lock.yaml 文件。如果我仓库没
 
 具体示例如下：
 
+ENABLE_EXPERIMENTAL_COREPACK 取值为 1
+
 ![2024-05-17-14-23-45](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-17-14-23-45.png)
 
 ## 额度
