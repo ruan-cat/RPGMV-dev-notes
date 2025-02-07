@@ -1,0 +1,4 @@
+- name: 发包
+  run: pnpm changeset publish --otp=${{ secrets.NPM_TOKEN }}
+  env:
+    NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

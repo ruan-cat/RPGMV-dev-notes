@@ -1,0 +1,38 @@
+Run pnpm changeset publish --otp=***
+  pnpm changeset publish --otp=***
+  shell: /usr/bin/bash -e {0}
+  env:
+    PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+    NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+    NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+🦋  info npm info @ruan-cat/commitlint-config
+🦋  info npm info @ruan-cat/domains
+🦋  info npm info @ruan-cat/generate-code-workspace
+🦋  info npm info @ruan-cat/utils
+🦋  info npm info @ruan-cat/vercel-deploy-tool
+🦋  info npm info @ruan-cat/vuepress-preset-config
+🦋  info @ruan-cat/commitlint-config is being published because our local version (0.1.4) has not been published on npm
+🦋  info @ruan-cat/domains is being published because our local version (0.1.4) has not been published on npm
+🦋  warn @ruan-cat/generate-code-workspace is not being published because version 0.2.3 is already published on npm
+🦋  info @ruan-cat/utils is being published because our local version (1.4.2) has not been published on npm
+🦋  info @ruan-cat/vercel-deploy-tool is being published because our local version (0.5.9) has not been published on npm
+🦋  info @ruan-cat/vuepress-preset-config is being published because our local version (0.1.19) has not been published on npm
+🦋  info Publishing "@ruan-cat/commitlint-config" at "0.1.4"
+🦋  info Publishing "@ruan-cat/domains" at "0.1.4"
+🦋  info Publishing "@ruan-cat/utils" at "1.4.2"
+🦋  info Publishing "@ruan-cat/vercel-deploy-tool" at "0.5.9"
+🦋  info Publishing "@ruan-cat/vuepress-preset-config" at "0.1.19"
+🦋  error an error occurred while publishing @ruan-cat/commitlint-config: E404 Not Found - PUT https://registry.npmjs.org/@ruan-cat%2fcommitlint-config - Not found 
+🦋  error '@ruan-cat/commitlint-config@0.1.4' is not in this registry.
+🦋  error 
+🦋  error Note that you can also install from a
+🦋  error tarball, folder, http url, or git url.
+🦋  error npm notice Publishing to https://registry.npmjs.org/ with tag latest and public access
+🦋  error npm error code E404
+🦋  error npm error 404 Not Found - PUT https://registry.npmjs.org/@ruan-cat%2fcommitlint-config - Not found
+🦋  error npm error 404
+🦋  error npm error 404  '@ruan-cat/commitlint-config@0.1.4' is not in this registry.
+🦋  error npm error 404
+🦋  error npm error 404 Note that you can also install from a
+🦋  error npm error 404 tarball, folder, http url, or git url.
+🦋  error npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2025-02-07T14_42_32_030Z-debug-0.log
