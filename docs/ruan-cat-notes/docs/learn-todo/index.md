@@ -83,3 +83,8 @@ HeaderSearch 组件
 - https://github.com/LangbaseInc/langui
 
 我现在有 deepseek 的 key 了，尝试实现一个能够流式输出的前端交互界面。对接自己的大模型接口。
+
+## 全面替换这个过时的 cdn 代理商
+
+- https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img
+- [参考资料](../posts/jsdelivr.md)
