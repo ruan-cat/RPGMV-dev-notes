@@ -255,3 +255,13 @@ corepack install -g pnpm@latest
 ```bash
 corepack prepare pnpm@9.7.0 --activate
 ```
+
+## pnpm init
+
+快速生成 package.json 文件。快速初始化一个 node 项目
+
+::: details
+
+![2025-02-07-18-38-38](https://gh-img-store.ruan-cat.com/img/2025-02-07-18-38-38.png)
+
+:::
