@@ -76,3 +76,10 @@ HeaderSearch 组件
 ## prepublishOnly
 
 基于 prepublishOnly 怎么实现发包前的打包？怎么保证其 build 构建过程是遵循 turbo 依赖拓扑结构的？
+
+## ai 平台的接口流式输出
+
+- https://api-docs.deepseek.com/zh-cn/
+- https://github.com/LangbaseInc/langui
+
+我现在有 deepseek 的 key 了，尝试实现一个能够流式输出的前端交互界面。对接自己的大模型接口。
