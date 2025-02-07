@@ -24,6 +24,8 @@
 		"git:fetch": "git fetch -p",
 		"git:dev-2-main": "git rebase dev main",
 		"git:main-2-dev": "git rebase main dev",
+		"git:dev-2-vc": "git rebase dev vc",
+		"git:vc-2-dev": "git rebase vc dev",
 		"up-ruan-cat": "pnpm -F=* up @ruan-cat/*@latest",
 		"update-package": "pnpm dlx vp-update",
 		"turbo:update-packages": "turbo docs:update-package && pnpm update-package",
