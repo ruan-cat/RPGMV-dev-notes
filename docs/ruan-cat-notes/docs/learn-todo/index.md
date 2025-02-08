@@ -88,3 +88,25 @@ HeaderSearch 组件
 
 - https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img
 - [参考资料](../posts/jsdelivr.md)
+
+## 本站首页改成允许增加 SiteInfo 的页面
+
+<!-- <SiteInfo
+  v-for="item in $frontmatter.projects"
+  :key="item.link"
+  v-bind="item"
+/> -->
+
+寻找新的文件写入算法，根据标识符，写入文件。看看 automd 有没有特定的标识符，可以实现自主导入特定文本段的功能。
+
+或者其他按照标记符导入文本段的 node 库。
+
+预期导入 domain 包的信息。
+
+同时需要拓展 domain 包，让该依赖包有能力自主输出项目信息和描述。
+
+## 单独 md 文档直接转义输出成含有 html 和 css 样式的 md
+
+用平常的 md 语法来写文档，试图使用 markdown-it 的方式转义语法，并生成出简单的 md
+
+未来再考虑用生成产物直接上传到各大博客平台，实现含有样式的，折叠栏的文章。

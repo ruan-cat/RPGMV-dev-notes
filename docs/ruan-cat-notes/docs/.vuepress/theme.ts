@@ -177,7 +177,7 @@ export default hopeTheme({
 		 * 这里手动导入默认提供的 Badge
 		 */
 		components: {
-			components: ["BiliBili", "Badge"],
+			components: ["BiliBili", "Badge", "SiteInfo"],
 		},
 
 		// 目前有效 缺点是国内使用`algolia`速度稍慢
