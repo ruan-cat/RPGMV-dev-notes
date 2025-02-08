@@ -32,7 +32,7 @@ https://github.com/wufan-tb/AutoLabelImg/blob/master/readme_CN.md
 
 中文效果如下：
 
-![2023-06-14-10-44-43](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-14-10-44-43.png)
+![2023-06-14-10-44-43](https://gh-img-store.ruan-cat.com/img/2023-06-14-10-44-43.png)
 
 ## 打开方式
 

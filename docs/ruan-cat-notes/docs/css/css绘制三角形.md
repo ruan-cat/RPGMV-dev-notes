@@ -2,7 +2,7 @@
 
 在前端开发时，这样的的需求经常有。绘制三角形：
 
-![2023-10-25-17-11-22](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-10-25-17-11-22.png)
+![2023-10-25-17-11-22](https://gh-img-store.ruan-cat.com/img/2023-10-25-17-11-22.png)
 
 不可能总是等着 UI 切图的。前端有办法快速绘制的。
 

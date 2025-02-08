@@ -66,7 +66,7 @@ CMS，内容管理系统。我们还有更好的技术选型么？
 
 界面：
 
-![2024-08-08-11-36-35](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-08-11-36-35.jpeg)
+![2024-08-08-11-36-35](https://gh-img-store.ruan-cat.com/img/2024-08-08-11-36-35.jpeg)
 
 ## 小爱丽丝移动动效
 

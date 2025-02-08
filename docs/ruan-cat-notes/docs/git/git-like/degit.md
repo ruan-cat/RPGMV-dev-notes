@@ -34,4 +34,4 @@ set https_proxy=http://127.0.0.1:10809
 
 目前考虑使用设置全局环境变量的方式，解决此问题。
 
-![2024-12-09-08-06-57](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-12-09-08-06-57.png)
+![2024-12-09-08-06-57](https://gh-img-store.ruan-cat.com/img/2024-12-09-08-06-57.png)

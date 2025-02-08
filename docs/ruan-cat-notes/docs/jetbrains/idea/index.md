@@ -7,6 +7,6 @@
 - https://zhuanlan.zhihu.com/p/124461819
 - https://blog.csdn.net/shen251515338/article/details/102482349
 
-![2024-03-08-09-14-34](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-03-08-09-14-34.png)
+![2024-03-08-09-14-34](https://gh-img-store.ruan-cat.com/img/2024-03-08-09-14-34.png)
 
 ## javadoc ？

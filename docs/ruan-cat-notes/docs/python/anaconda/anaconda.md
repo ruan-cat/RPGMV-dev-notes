@@ -48,15 +48,15 @@ D:\dev-tool\Anaconda\Anaconda3\Scripts
 
 如下图，看不到 .condarc 文件：
 
-![2023-06-15-14-57-20](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-15-14-57-20.jpg)
+![2023-06-15-14-57-20](https://gh-img-store.ruan-cat.com/img/2023-06-15-14-57-20.jpg)
 
 运行一次 conda config 命令：
 
-![2023-06-15-14-58-09](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-15-14-58-09.jpg)
+![2023-06-15-14-58-09](https://gh-img-store.ruan-cat.com/img/2023-06-15-14-58-09.jpg)
 
 好了。可以看到了：
 
-![2023-06-15-14-58-37](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-06-15-14-58-37.jpg)
+![2023-06-15-14-58-37](https://gh-img-store.ruan-cat.com/img/2023-06-15-14-58-37.jpg)
 
 ### 镜像配置 .condarc 文件
 

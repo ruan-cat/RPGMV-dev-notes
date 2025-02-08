@@ -22,11 +22,11 @@ pnpm -r exec rm -rf node_modules
 
 1. 删除前
 
-![2024-04-30-16-45-25](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-04-30-16-45-25.png)
+![2024-04-30-16-45-25](https://gh-img-store.ruan-cat.com/img/2024-04-30-16-45-25.png)
 
 2. 删除后
 
-![2024-04-30-16-49-56](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-04-30-16-49-56.png)
+![2024-04-30-16-49-56](https://gh-img-store.ruan-cat.com/img/2024-04-30-16-49-56.png)
 
 确实有文件被删除了。
 

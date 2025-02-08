@@ -12,4 +12,4 @@
 pnpm create koishi
 ```
 
-![2023-05-05-16-06-32](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-05-16-06-32.png)
+![2023-05-05-16-06-32](https://gh-img-store.ruan-cat.com/img/2023-05-05-16-06-32.png)

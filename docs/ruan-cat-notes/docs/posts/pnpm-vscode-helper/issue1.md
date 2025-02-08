@@ -4,4 +4,4 @@
 
 具体效果如下：
 
-![2024-12-06-08-49-10](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-12-06-08-49-10.gif)
+![2024-12-06-08-49-10](https://gh-img-store.ruan-cat.com/img/2024-12-06-08-49-10.gif)

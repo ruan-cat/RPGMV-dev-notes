@@ -14,7 +14,7 @@
 nvidia-smi
 ```
 
-![2023-05-22-14-55-07](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-22-14-55-07.png)
+![2023-05-22-14-55-07](https://gh-img-store.ruan-cat.com/img/2023-05-22-14-55-07.png)
 
 ## CUDA Toolkit
 

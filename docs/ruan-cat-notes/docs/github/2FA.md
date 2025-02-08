@@ -2,7 +2,7 @@
 
 ## 原由如下
 
-![2023-08-29-10-57-31](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-08-29-10-57-31.png)
+![2023-08-29-10-57-31](https://gh-img-store.ruan-cat.com/img/2023-08-29-10-57-31.png)
 
 GitHub users are now required to enable two-factor authentication as an additional security measure. Your activity on GitHub includes you in this requirement. You will need to enable two-factor authentication on your account before October 12, 2023, or be restricted from account actions.
 
@@ -21,7 +21,7 @@ GitHub users are now required to enable two-factor authentication as an addition
 
 如下图所示：
 
-![2023-08-29-11-17-24](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-08-29-11-17-24.png)
+![2023-08-29-11-17-24](https://gh-img-store.ruan-cat.com/img/2023-08-29-11-17-24.png)
 
 Use an authentication app or browser extension to get two-factor authentication codes when prompted.
 
@@ -35,7 +35,7 @@ Use an authentication app or browser extension to get two-factor authentication 
 
 - https://github.com/settings/security
 
-![2023-08-29-11-14-37](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-08-29-11-14-37.png)
+![2023-08-29-11-14-37](https://gh-img-store.ruan-cat.com/img/2023-08-29-11-14-37.png)
 
 ### 用浏览器来扫码
 

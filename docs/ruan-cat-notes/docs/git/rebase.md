@@ -10,7 +10,7 @@
 
 我不知道操作了什么，就出现这种情况了：
 
-![2023-12-07-11-33-03](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-12-07-11-33-03.png)
+![2023-12-07-11-33-03](https://gh-img-store.ruan-cat.com/img/2023-12-07-11-33-03.png)
 
 ## 与 svn 混用时的情形？
 

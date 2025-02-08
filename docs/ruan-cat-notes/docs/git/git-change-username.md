@@ -12,23 +12,23 @@ git config --local user.name f1-阮喵喵
 
 - 设置前：
 
-![2024-05-12-22-47-15](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-22-47-15.png)
+![2024-05-12-22-47-15](https://gh-img-store.ruan-cat.com/img/2024-05-12-22-47-15.png)
 
 - 设置后：
 
-![2024-05-12-22-47-33](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-22-47-33.png)
+![2024-05-12-22-47-33](https://gh-img-store.ruan-cat.com/img/2024-05-12-22-47-33.png)
 
 - 全局配置不受影响：
 
-![2024-05-12-22-48-01](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-22-48-01.png)
+![2024-05-12-22-48-01](https://gh-img-store.ruan-cat.com/img/2024-05-12-22-48-01.png)
 
 - 本地配置受到影响：
 
-![2024-05-12-22-48-21](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-22-48-21.png)
+![2024-05-12-22-48-21](https://gh-img-store.ruan-cat.com/img/2024-05-12-22-48-21.png)
 
 - 其他项目不受影响：
 
-![2024-05-12-22-48-57](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-12-22-48-57.png)
+![2024-05-12-22-48-57](https://gh-img-store.ruan-cat.com/img/2024-05-12-22-48-57.png)
 
 ## 设置本机的用户名
 

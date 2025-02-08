@@ -15,7 +15,7 @@ TODO: 遍历查看常见的 git 忽略配置。看看之前维护项目内，有
 
 匹配文件名称开头为 tsconfig 的文件、且后缀名为.json 的文件。
 
-![2024-05-10-19-10-34](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-05-10-19-10-34.png)
+![2024-05-10-19-10-34](https://gh-img-store.ruan-cat.com/img/2024-05-10-19-10-34.png)
 
 参考资料
 

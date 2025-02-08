@@ -23,12 +23,12 @@ Vue.vscode-typescript-vue-plugin 这个插件被 2.0 版本的插件说不需要
 
 今天（2024 年 3 月 2 日）的 volar 更新，说【TypeScript Vue Plugin】已经不需要使用了。
 
-![2024-03-02-12-53-43](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-03-02-12-53-43.png)
+![2024-03-02-12-53-43](https://gh-img-store.ruan-cat.com/img/2024-03-02-12-53-43.png)
 
 Volar Takeover 已经不需要使用了，但是中文文档还没有及时更新。
 
-![2024-03-02-12-53-55](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-03-02-12-53-55.png)
+![2024-03-02-12-53-55](https://gh-img-store.ruan-cat.com/img/2024-03-02-12-53-55.png)
 
 TypeScript Vue Plugin 的文档也还没有及时同步最新的更改。
 
-![2024-03-02-12-54-10](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-03-02-12-54-10.png)
+![2024-03-02-12-54-10](https://gh-img-store.ruan-cat.com/img/2024-03-02-12-54-10.png)

@@ -41,7 +41,7 @@ StatusCodeError: 307 - {"message":"Moved Permanently","url":"https://api.github.
 
 ::: details 及时更新 github 用户名
 
-![及时更新github用户名](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-10-23-00-11-45.png)
+![及时更新github用户名](https://gh-img-store.ruan-cat.com/img/2024-10-23-00-11-45.png)
 
 :::
 

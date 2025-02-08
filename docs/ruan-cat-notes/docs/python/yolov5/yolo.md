@@ -24,11 +24,11 @@ https://github.com/ultralytics/yolov5/blob/master/README.zh-CN.md
 
 在 anaconda prompt 内进入到特定的目录内，然后开始输入命令安装。
 
-![2023-05-22-11-28-46](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-22-11-28-46.png)
+![2023-05-22-11-28-46](https://gh-img-store.ruan-cat.com/img/2023-05-22-11-28-46.png)
 
 称版本不满足。这里暂时跳过，到下一步骤。
 
-![2023-05-22-11-32-58](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-22-11-32-58.png)
+![2023-05-22-11-32-58](https://gh-img-store.ruan-cat.com/img/2023-05-22-11-32-58.png)
 
 ### 权重文件？
 
@@ -104,7 +104,7 @@ pip install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0 --e
 
 这里最终选择的是 pip 命令，结果如下：
 
-![2023-05-24-17-34-44](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2023-05-24-17-34-44.png)
+![2023-05-24-17-34-44](https://gh-img-store.ruan-cat.com/img/2023-05-24-17-34-44.png)
 
 出现错误：
 

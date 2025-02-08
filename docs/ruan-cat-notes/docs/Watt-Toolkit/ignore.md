@@ -8,7 +8,7 @@ Watt Toolkit，对来来说是重要的工具，但是有时候会被他干扰�
 
 ::: details 忽略项
 
-![不设置githubusercontent.com](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-08-28-23-16-54.png)
+![不设置githubusercontent.com](https://gh-img-store.ruan-cat.com/img/2024-08-28-23-16-54.png)
 
 :::
 
@@ -22,7 +22,7 @@ fonts.gstatic.com
 
 ::: details 现象
 
-![roadmap.sh/frontend的资源被跨域了](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-09-02-19-50-57.png)
+![roadmap.sh/frontend的资源被跨域了](https://gh-img-store.ruan-cat.com/img/2024-09-02-19-50-57.png)
 
 :::
 
@@ -30,7 +30,7 @@ fonts.gstatic.com
 
 ::: details 忽略项
 
-![不设置fonts.gstatic.com](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-09-02-19-55-54.png)
+![不设置fonts.gstatic.com](https://gh-img-store.ruan-cat.com/img/2024-09-02-19-55-54.png)
 
 :::
 
@@ -38,7 +38,7 @@ fonts.gstatic.com
 
 ::: details 恢复使用
 
-![恢复使用](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-09-02-19-56-57.png)
+![恢复使用](https://gh-img-store.ruan-cat.com/img/2024-09-02-19-56-57.png)
 
 :::
 
@@ -50,7 +50,7 @@ fonts.gstatic.com
 
 ::: details 现象
 
-![运行别人项目时，称giget报错](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-10-22-23-29-37.png)
+![运行别人项目时，称giget报错](https://gh-img-store.ruan-cat.com/img/2024-10-22-23-29-37.png)
 
 :::
 
@@ -58,7 +58,7 @@ fonts.gstatic.com
 
 ::: details 忽略项
 
-![不设置api.github.com](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-10-22-23-36-26.png)
+![不设置api.github.com](https://gh-img-store.ruan-cat.com/img/2024-10-22-23-36-26.png)
 
 :::
 
@@ -66,6 +66,6 @@ fonts.gstatic.com
 
 ::: details 恢复使用
 
-![2024-10-22-23-39-53](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-10-22-23-39-53.png)
+![2024-10-22-23-39-53](https://gh-img-store.ruan-cat.com/img/2024-10-22-23-39-53.png)
 
 :::

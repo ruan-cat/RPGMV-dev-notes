@@ -12,13 +12,13 @@ vscode 不会对 vue 文件报错。
 
 vscode 能识别出 vue 文件的路径。如下图所示：
 
-![2024-06-01-13-21-47](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-06-01-13-21-47.png)
+![2024-06-01-13-21-47](https://gh-img-store.ruan-cat.com/img/2024-06-01-13-21-47.png)
 
 ### 没设置好之前
 
 这里故意给纯 js 的 vue 组件，增加强类型检查，这里会对 vue 组件报错。
 
-![2024-06-01-19-18-22](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-06-01-19-18-22.png)
+![2024-06-01-19-18-22](https://gh-img-store.ruan-cat.com/img/2024-06-01-19-18-22.png)
 
 ```bash
 无法找到模块“@/components/table-list-use/table-text.vue”的声明文件。“e:/code/rzn/java-pilot-base/01-star-08mes/zero-one-08mes/mes-frontend/src/components/table-list-use/table-text.vue”隐式拥有 "any" 类型。
@@ -48,11 +48,11 @@ vscode 能识别出 vue 文件的路径。如下图所示：
 
 能有效的提供路径补全。不报错。
 
-![2024-06-01-19-25-54](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-06-01-19-25-54.png)
+![2024-06-01-19-25-54](https://gh-img-store.ruan-cat.com/img/2024-06-01-19-25-54.png)
 
 在移除掉刻意的类型检查注解后，关闭掉已经打开的文件，vscode 仍旧是可以正常的提供路径补全，且不报错。
 
-![2024-06-01-19-26-44](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-06-01-19-26-44.png)
+![2024-06-01-19-26-44](https://gh-img-store.ruan-cat.com/img/2024-06-01-19-26-44.png)
 
 ## 能给类型
 

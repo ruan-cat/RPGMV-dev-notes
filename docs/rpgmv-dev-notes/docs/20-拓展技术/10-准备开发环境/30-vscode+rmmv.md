@@ -16,27 +16,27 @@ shortTitle: 用vscode插件运行mv项目
 
 - [vscode 插件 ms-vscode.live-server](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
 
-![2024-01-03-11-49-01](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-01-03-11-49-01.png)
+![2024-01-03-11-49-01](https://gh-img-store.ruan-cat.com/img/2024-01-03-11-49-01.png)
 
 ### 预览项目
 
 这里以钻头的项目为例。点击侧边栏预览，开启 3000 端口，在 vscode 内预览。
 
-![2024-01-03-11-49-31](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-01-03-11-49-31.png)
+![2024-01-03-11-49-31](https://gh-img-store.ruan-cat.com/img/2024-01-03-11-49-31.png)
 
 也可以自己去其他的浏览器手动打开。如下例子所示：
 
 ### chrome
 
-![2024-01-03-11-50-08](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-01-03-11-50-08.png)
+![2024-01-03-11-50-08](https://gh-img-store.ruan-cat.com/img/2024-01-03-11-50-08.png)
 
 ### edge
 
-![2024-01-03-11-50-27](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-01-03-11-50-27.png)
+![2024-01-03-11-50-27](https://gh-img-store.ruan-cat.com/img/2024-01-03-11-50-27.png)
 
 ### QQ 浏览器
 
-![2024-01-03-11-50-42](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-01-03-11-50-42.png)
+![2024-01-03-11-50-42](https://gh-img-store.ruan-cat.com/img/2024-01-03-11-50-42.png)
 
 ## 使用 vscode 的调试功能
 
@@ -81,8 +81,8 @@ shortTitle: 用vscode插件运行mv项目
 
 启动该调试配置即可。
 
-![2024-01-03-12-41-43](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-01-03-12-41-43.png)
+![2024-01-03-12-41-43](https://gh-img-store.ruan-cat.com/img/2024-01-03-12-41-43.png)
 
 会自己打开 chrome 浏览器。可以做断点调试了。
 
-![2024-01-03-12-45-30](https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img/2024-01-03-12-45-30.png)
+![2024-01-03-12-45-30](https://gh-img-store.ruan-cat.com/img/2024-01-03-12-45-30.png)
