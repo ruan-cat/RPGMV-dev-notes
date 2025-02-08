@@ -95,6 +95,15 @@ HeaderSearch 组件
 - v0
 - blot
 
+azure 注册：https://azure.microsoft.com/
+azure AI 平台：https://ai.azure.com/
+CherryStudio：https://cherry-ai.com/
+火山引擎：https://www.volcengine.com
+硅基流动：https://www.siliconflow.com/zh/home
+OpenWeb UI: https://github.com/open-webui/open-webui
+秘塔 AI 搜索：https://metaso.cn/
+Perplexity 搜索： https://www.perplexity.ai/
+
 ## 本站首页改成允许增加 SiteInfo 的页面
 
 <!-- <SiteInfo
