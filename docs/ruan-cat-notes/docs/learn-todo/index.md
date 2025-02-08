@@ -84,10 +84,16 @@ HeaderSearch 组件
 
 我现在有 deepseek 的 key 了，尝试实现一个能够流式输出的前端交互界面。对接自己的大模型接口。
 
-## 全面替换这个过时的 cdn 代理商
+## 尝试多个 ai 客户端平台，看看能否实现预配置提示词的功能
 
-- https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img
-- [参考资料](../posts/jsdelivr.md)
+金玉良缘的需求是实现预配置提示词。如果现有的 ai 平台能实现，就先提供出来。
+
+## 探索更多的 AI 生成代码平台
+
+- cursor
+- Cline
+- v0
+- blot
 
 ## 本站首页改成允许增加 SiteInfo 的页面
 
