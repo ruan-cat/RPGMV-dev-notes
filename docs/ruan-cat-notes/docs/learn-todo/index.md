@@ -84,6 +84,16 @@ HeaderSearch 组件
 
 我现在有 deepseek 的 key 了，尝试实现一个能够流式输出的前端交互界面。对接自己的大模型接口。
 
+### 可能的参考资料
+
+- https://vscode.dev/github/Jannchie/koishi-plugin-openai-chatbot/blob/main/src/index.ts
+
+用简单的调用 api 方式，实现调接口。
+
+```js
+import { Configuration, OpenAIApi } from "openai";
+```
+
 ## 尝试多个 ai 客户端平台，看看能否实现预配置提示词的功能
 
 金玉良缘的需求是实现预配置提示词。如果现有的 ai 平台能实现，就先提供出来。
