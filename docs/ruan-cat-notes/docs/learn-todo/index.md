@@ -94,6 +94,10 @@ HeaderSearch 组件
 import { Configuration, OpenAIApi } from "openai";
 ```
 
+## langchain
+
+这是什么？为什么很多跟 ai 相关的客户端项目，都有这个东西？
+
 ## 尝试多个 ai 客户端平台，看看能否实现预配置提示词的功能
 
 金玉良缘的需求是实现预配置提示词。如果现有的 ai 平台能实现，就先提供出来。
