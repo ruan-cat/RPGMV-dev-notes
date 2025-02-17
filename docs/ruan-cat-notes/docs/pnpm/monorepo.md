@@ -56,6 +56,16 @@ pnpm -r exec rm -rf node_modules
 }
 ```
 
+### rimraf 的glob语法
+
+实测发现，使用显性的 -g 指令可以用 glob 语法完成匹配并删除。
+
+- https://github.com/isaacs/rimraf/blob/main/README.md#command-line-interface
+
+```bash
+rimraf -g '**/{node_modules,package-lock.json,pnpm-lock.yaml,yarn.lock}'
+```
+
 ## 项目存在大量重复的，通用性命令
 
 在 monorepo 实践中，发现有很多这种重复的，冗余的命令。有什么方式实现批量设置么？
