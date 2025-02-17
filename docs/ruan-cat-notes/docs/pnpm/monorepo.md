@@ -56,7 +56,7 @@ pnpm -r exec rm -rf node_modules
 }
 ```
 
-### rimraf 的glob语法
+### rimraf 的 glob 语法
 
 实测发现，使用显性的 -g 指令可以用 glob 语法完成匹配并删除。
 
