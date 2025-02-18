@@ -77,4 +77,4 @@ rimraf -g '**/{node_modules,package-lock.json,pnpm-lock.yaml,yarn.lock}'
 }
 ```
 
-pnpm 的-r 参数是否适合呢？
+pnpm 的 -r 参数是否适合呢？不适合，这个参数是递归地执行 pnpm 的命令，不能执行用户定义的命令。
