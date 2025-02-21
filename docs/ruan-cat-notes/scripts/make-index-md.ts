@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 
 import * as yaml from "js-yaml";
-import { type PackageInfo, getRuanCatPkgInfo } from "@ruan-cat/utils/src/ruan-cat-pkg-info";
+import { type PackageInfo, getRuanCatPkgInfo } from "@ruan-cat/utils/node-esm";
 
 import type { ThemeBlogHomeProjectOptions } from "vuepress-theme-hope";
 
