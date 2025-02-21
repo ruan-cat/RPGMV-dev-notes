@@ -36,3 +36,28 @@ TODO: 一个可能的方案
 - https://github.com/vitejs/vite/discussions/14490
 
 ## TypeError: Cannot destructure property 'promises' of 'empty' as it is null
+
+## issue 5370
+
+- https://github.com/vitejs/vite/issues/5370#issuecomment-2667977757
+
+这个情况相当困扰我。在 monorepo 内，vite.config.ts 无法直接导入 ts 文件。这导致我们无法直接使用 ts 来分发配置。
+
+确切来说，是 vite.config.ts 无法读取符号链接。
+
+### tsup 打包
+
+自己学 tsup，把要共享共用的代码，做成 js，供给给 vite.config.ts 使用。
+
+### 写冗余的 ts
+
+每个项目都写同样的代码，引用相对路径的 ts 文件，而不是符号链接对应的 ts。
+
+### --configLoader
+
+近期的解决方案：
+
+- https://github.com/vitejs/vite/issues/5370#issuecomment-2667977757
+- https://vite.dev/config/#configuring-vite
+
+我还是倾向于等待 vite 更新，兴许到了后期版本可以完整地解决该问题。
