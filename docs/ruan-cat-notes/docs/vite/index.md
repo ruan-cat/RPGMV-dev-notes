@@ -8,7 +8,7 @@
 
 - https://learnku.com/vuejs/t/67885
 
-## vite 识别出 node 原生 api
+## vite 使用 node api
 
 ```bash
 Error: Module "fs" has been externalized for browser compatibility. Cannot access "fs.readdirSync" in client code.  See http://vitejs.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
@@ -18,12 +18,12 @@ Error: Module "fs" has been externalized for browser compatibility. Cannot acces
 ```
 
 针对 vite 的边际问题
-https://cn.vitejs.dev/guide/troubleshooting.html#others
 
-一个可能的方案
-https://juejin.cn/post/7145383283038093319
+- https://cn.vitejs.dev/guide/troubleshooting.html#others
 
-TODO:
+TODO: 一个可能的方案
+
+- https://juejin.cn/post/7145383283038093319
 
 但是自己没空。等以后遇到 vite 开发 node 的东西时，再考虑该配置。
 

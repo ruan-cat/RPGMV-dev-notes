@@ -9,7 +9,11 @@ vite 别名配置和 tsconfig.json 别名重复了，有没有办法让 vite 自
 
 ## 具体用法
 
-@[code ts](./alias/vite.config-alias.ts)
+::: details
+
+@[code ts](./vite.config-alias.ts)
+
+:::
 
 ## 避雷
 
