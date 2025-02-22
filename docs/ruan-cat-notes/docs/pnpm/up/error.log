@@ -1,0 +1,10 @@
+PS D:\code\github-desktop-store\gh.09oa> pnpm up *@latest
+ WARN  deprecated @types/rollup-plugin-visualizer@5.0.3: This is a stub types definition. rollup-plugin-visualizer provides its own type definitions, so you do not need this installed.
+ ERR_PNPM_FETCH_404  GET https://registry.npmmirror.com/oa-frontend: Not Found - 404
+
+This error happened while installing a direct dependency of D:\code\github-desktop-store\gh.09oa
+
+oa-frontend is not in the npm registry, or you have no permission to fetch it.
+
+No authorization header was set for the request.
+Progress: resolved 77, reused 76, downloaded 1, added 0
