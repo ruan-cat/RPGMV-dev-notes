@@ -7,7 +7,9 @@
 请问下面的配置方式对么？
 
 ```ts
+// @ts-ignore
 import { defineConfig, type DefaultTheme } from "vitepress";
+// @ts-ignore
 import { importCodePlugin } from "@vuepress/markdown";
 
 export default defineConfig({
@@ -15,7 +17,9 @@ export default defineConfig({
 	 * @see https://vitepress.dev/zh/guide/markdown#advanced-configuration
 	 */
 	markdown: {
+		// @ts-ignore
 		config: (md) => {
+			// @ts-ignore
 			md.use(importCodePlugin, { handleImportPath: (str) => join(process.cwd(), str) });
 		},
 	},

@@ -228,6 +228,10 @@ PS C:\Windows\system32> pnpm -v
 
 ## 使用 corepack 安装
 
+以下内容已经过时失效，点此阅读最新的 [corepack 安装 pnpm](../corepack/index.md) 的方案。
+
+::: details 目前失效的配置
+
 - https://pnpm.io/zh/installation#使用-npm-安装
 
 ```bash
@@ -236,7 +240,13 @@ corepack use pnpm@latest
 
 这里会给 package.json 加上 packageManager。
 
+:::
+
 ## 升级 pnpm
+
+以下方案存在 bug，最新的，保守的解决方案[点此链接进入](../corepack/index.md)。
+
+::: details
 
 之前的升级方式是，pnpm 原地升级。
 
@@ -255,6 +265,8 @@ corepack install -g pnpm@latest
 ```bash
 corepack prepare pnpm@9.7.0 --activate
 ```
+
+:::
 
 ## pnpm init
 

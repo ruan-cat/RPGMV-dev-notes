@@ -91,3 +91,53 @@ COREPACK_NPM_REGISTRY=https://registry.npmmirror.com/
 ```
 
 至此已解决问题。
+
+## 安装与升级 pnpm
+
+安装失败的问题由来已久。升级和安装都经常遇到诡异的问题。
+
+1. corepack 的 key 值校验问题，在今年 1 月 27 号的时候就有相关 [issue](https://github.com/nodejs/corepack/issues/612) 了。
+
+2. 当天 1 月 27 号，[`corepack0.31.0`](https://github.com/nodejs/corepack/pull/614) 已经解决这个问题。
+
+3. 现在的 node 版本没有提供合适的 corepack 版本，如下:
+
+::: details corepack 版本过低
+
+![2025-02-27-22-26-08](https://gh-img-store.ruan-cat.com/img/2025-02-27-22-26-08.png)
+
+:::
+
+4. node20 版本下，要使用 `corepack0.31.0`，还要等到[今年 3 月 13 号](https://github.com/nodejs/corepack/issues/627#issuecomment-2685693365)。
+
+目前按照以下方案来安装 pnpm：
+
+### 准备全局的 npmrc 配置
+
+::: details 全局 .npmrc 配置
+
+```bash
+# 设置全局 corepack 的镜像源，处理corepack安装pnpm失败的故障
+# https://github.com/nodejs/corepack#environment-variables
+# https://github.com/nodejs/corepack/issues/67
+# https://github.com/nodejs/corepack/issues/572
+COREPACK_NPM_REGISTRY=https://registry.npmmirror.com/
+
+# 让corepack不检查包管理器key值的完整性
+# https://github.com/pnpm/pnpm/issues/9029#issuecomment-2629817478
+COREPACK_INTEGRITY_KEYS=0
+```
+
+:::
+
+### 具体的项目内依次运行以下命令
+
+运行以下命令：
+
+- https://github.com/pnpm/pnpm/issues/9029#issuecomment-2630882497
+
+```bash
+corepack enable
+# 这里的pnpm包版本号根据项目具体情况填写
+corepack prepare pnpm@9.15.0 --activate
+```
