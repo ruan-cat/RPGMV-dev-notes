@@ -17,8 +17,6 @@ code snippet，翻译为 `代码片段`。我们主要享受的就是 vscode 一
 
 用此工具批量生成特定规则的代码片段。
 
-TODO:
-提 issue
+### 仓库重构了
 
-- 迁移到 github
-- 部分变量名的转义。
+现在叫做 [codess](https://codess.dumogu.top/) 。

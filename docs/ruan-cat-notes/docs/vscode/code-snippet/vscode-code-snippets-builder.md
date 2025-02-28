@@ -9,3 +9,9 @@ vscode 的代码片段生成器，非常方便的管理项目中常用的代码�
 ```bash
 vcsb
 ```
+
+## 已废弃
+
+vscode-code-snippets-builder 已经被 [codess](https://codess.dumogu.top/) 所替换掉。
+
+点此阅读 [codess](./codess.md) 的笔记。
