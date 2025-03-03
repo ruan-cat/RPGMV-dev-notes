@@ -4,7 +4,7 @@
 
 ::: details
 
-![code](./code/016/error.log)
+![code log](./code/016/error.log)
 
 :::
 
