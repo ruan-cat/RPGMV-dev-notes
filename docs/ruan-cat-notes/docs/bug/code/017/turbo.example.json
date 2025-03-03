@@ -1,0 +1,31 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"tasks": {
+		"rm:types": {
+			"cache": false
+		},
+		"vite:dev": {
+			"cache": false,
+			"persistent": true,
+			"dependsOn": [
+				"rm:types"
+			]
+		},
+		"copy-changelog": {
+			"cache": false
+		},
+		"changelog-yaml": {
+			"cache": false,
+			"dependsOn": [
+				"copy-changelog"
+			]
+		},
+		"do-docs-dev": {
+			"cache": false,
+			"persistent": true,
+			"dependsOn": [
+				"changelog-yaml"
+			]
+		}
+	}
+}
