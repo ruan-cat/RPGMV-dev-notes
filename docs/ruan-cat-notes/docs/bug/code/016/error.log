@@ -1,0 +1,51 @@
+正在执行任务: pnpm run dev 
+
+
+> wms-frontend@0.2.0 dev D:\computer study\big-project-25-2\zero-one-10wms\wms-frontend
+> turbo vite:dev
+
+turbo 2.4.4
+
+ WARNING  stale pid file at "C:\\Users\\lenovo\\AppData\\Local\\Temp\\turbod\\15e7c9f45ef39440\\turbod.pid"
+• Running vite:dev
+• Remote caching disabled
+rm:types: cache bypass, force executing d03e02fbbe8dfa60
+rm:types: 
+rm:types: > wms-frontend@0.2.0 rm:types D:\computer study\big-project-25-2\zero-one-10wms\wms-frontend
+rm:types: > node --import=tsx ./scripts/del-types.ts
+rm:types: 
+rm:types: ✔ 删除类型文件 typed-router.d.ts 成功
+rm:types: ✔ 删除类型文件 auto-imports.d.ts 成功
+rm:types: ✔ 删除类型文件 components*.d.ts 成功
+vite:dev: cache bypass, force executing 92884fc91232067c
+vite:dev: 
+vite:dev: > wms-frontend@0.2.0 vite:dev D:\computer study\big-project-25-2\zero-one-10wms\wms-frontend
+vite:dev: > vite
+vite:dev: 
+vite:dev: failed to load config from D:\computer study\big-project-25-2\zero-one-10wms\wms-frontend\vite.config.ts
+vite:dev: error when starting dev server:
+vite:dev: Error: Cannot find package 'D:\computer study\big-project-25-2\zero-one-10wms\wms-frontend\node_modules\.pnpm\vite-plugin-vue-inspector@5.3.1_vite@6.2.0_@types+node@16.18.11_jiti@2.4.2_less@4.2.2_sass-em_fbrnxemlhaxu7cngn4ualw7cui\node_modules\@babel\plugin-transform-typescript\package.json' imported from D:\computer study\big-project-25-2\zero-one-10wms\wms-frontend\node_modules\.pnpm\vite-plugin-vue-inspector@5.3.1_vite@6.2.0_@types+node@16.18.11_jiti@2.4.2_less@4.2.2_sass-em_fbrnxemlhaxu7cngn4ualw7cui\node_modules\vite-plugin-vue-inspector\dist\index.mjs
+vite:dev: Did you mean to import "@babel/plugin-transform-typescript/lib/index.js"?
+vite:dev:     at legacyMainResolve (node:internal/modules/esm/resolve:215:26)
+vite:dev:     at packageResolve (node:internal/modules/esm/resolve:841:14)
+vite:dev:     at moduleResolve (node:internal/modules/esm/resolve:927:18)
+vite:dev:     at defaultResolve (node:internal/modules/esm/resolve:1157:11)
+vite:dev:     at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:383:12)
+vite:dev:     at ModuleLoader.resolve (node:internal/modules/esm/loader:352:25)
+vite:dev:     at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:227:38)
+vite:dev:     at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:87:39)
+vite:dev:     at link (node:internal/modules/esm/module_job:86:36)
+vite:dev:  ELIFECYCLE  Command failed with exit code 1.
+vite:dev: ERROR: command finished with error: command (D:\computer study\big-project-25-2\zero-one-10wms\wms-frontend\) D:\nodejs\pnpm.CMD run vite:dev exited (1)
+vite:dev: command (D:\computer study\big-project-25-2\zero-one-10wms\wms-frontend\) D:\nodejs\pnpm.CMD run vite:dev exited (1)
+
+ Tasks:    1 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    6.809s
+Failed:    //#vite:dev
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.
+
+ *  终端进程“C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -Command pnpm run dev”已终止，退出代码: 1。 
+ *  终端将被任务重用，按任意键关闭。
