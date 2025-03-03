@@ -1,3 +1,7 @@
+---
+order: 17
+---
+
 # turbo 配置的长时间运行任务应该补全 persistent 配置
 
 在同事的 mac 电脑内，出现了 turbo 命令运行 vite 本地 dev 任务时，运行完直接关闭的情况。
