@@ -10,8 +10,18 @@ dir:
 
 比如此配置，升级项目内全部满足 `@ruan-cat` 前缀的依赖，并升级到最后一个版本。
 
+### pnpm9.5.0
+
 ```bash
 pnpm up @ruan-cat/*@latest
+```
+
+### pnpm9.15.0
+
+在 pnpm9.15.0 内，无法完成升级。要写成以下形式才行，做完整的匹配：
+
+```bash
+pnpm update '@ruan-cat/*' --latest
 ```
 
 ## 升级全部依赖
