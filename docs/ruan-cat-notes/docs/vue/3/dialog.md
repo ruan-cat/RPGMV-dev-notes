@@ -6,6 +6,8 @@
 
 - https://doc.vben.pro/components/common-ui/vben-modal.html
 
+目前不清楚怎么把 vben 的代码单独作为组件库移动出来使用。该方案可以作为参考，但是不方便去落实。
+
 ## vueuse 的 createTemplatePromise 方案
 
 - https://juejin.cn/post/7293173815181738022
