@@ -38,4 +38,7 @@ projects:
   - name: domains
     desc: 为 ruancat6312.top 和 ruan-cat.com 两个域名，提供预设好的常量。旨在于管理全部的域名，便于查询和使用。
     link: https://npm.im/@ruan-cat/domains
+  - name: vitepress-preset-config
+    desc: 用于给大多数的vitepress项目提供一个预设的配置文件。
+    link: https://npm.im/@ruan-cat/vitepress-preset-config
 ---
