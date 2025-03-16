@@ -3,6 +3,8 @@ env:
   VERCEL_TOKEN: ${{ secrets.vercel_token }}
   # VERCEL_ORG_ID: ${{ secrets.vercel_orgId }}
   # VERCEL_PROJECT_ID: ${{ secrets.vercel_projectId }}
+  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
 
 on:
   push:
@@ -16,6 +18,8 @@ jobs:
     steps:
       - name: 检出分支
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: 安装pnpm
         uses: pnpm/action-setup@v4
@@ -24,7 +28,7 @@ jobs:
           # version: 9
           run_install: |
             - recursive: true
-            - args: [--global, "vercel", "@dotenvx/dotenvx", "tsx"]
+            - args: [--global, "vercel", "@dotenvx/dotenvx", "tsx", "turbo"]
 
       - name: 安装node
         uses: actions/setup-node@v4
@@ -40,6 +44,12 @@ jobs:
 
       - name: pnpm全局检查依赖包
         run: pnpm ls -g
+
+      - name: turbo login 远程登录
+        run: turbo login --token=${{env.TURBO_TOKEN}} --team=${{env.TURBO_TEAM}}
+
+      - name: turbo link 链接远程项目
+        run: turbo link --token=${{env.TURBO_TOKEN}} --scope=${{env.TURBO_TEAM}} --yes
 
       - name: 运行自写的vercel部署工具
         # https://dotenvx.com/docs/cis/github-actions#install-dotenvx
