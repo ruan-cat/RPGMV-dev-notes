@@ -32,8 +32,7 @@
 		"turbo:update-packages": "turbo docs:update-package && pnpm update-package",
 		"rm:node_modules": "pnpm -r rm:node_modules && rimraf node_modules pnpm-lock.yaml",
 		"clear": "pnpm -F=* rimraf dist .turbo .vercel .cache .temp",
-		"turbo:build-docs": "turbo build:docs",
-		"on-github-action-flow": "pnpm turbo:build-docs",
+		"on-github-action-flow": "turbo build:docs",
 		"code-workspace:create": "node --import=tsx ./scripts/generate.code-workspace.ts --name=note笔记项目",
 		"deploy-vercel": "node --import=tsx ./scripts/vercel-deploy-tool.ts"
 	},

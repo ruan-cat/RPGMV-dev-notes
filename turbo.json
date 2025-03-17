@@ -1,19 +1,11 @@
 {
 	"$schema": "https://turbo.build/schema.json",
 	"tasks": {
-		"build": {
-			"dependsOn": [
-				"^build"
-			]
-		},
 		"build:docs": {
 			"outputs": [
 				"**/dist/**",
 				"**/.vitepress/dist/**",
 				"**/.vuepress/dist/**"
-			],
-			"dependsOn": [
-				"^build"
 			]
 		},
 		"docs:update-package": {
