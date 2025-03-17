@@ -26,6 +26,7 @@ git 是有部分克隆的方式的。更加专业正式的称呼是： `sparse-c
 
 - https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/README.zh-Hans.md#部分克隆
 - https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone/
+- https://help.aliyun.com/zh/yunxiao/user-guide/introduction-to-partial-clone
 
 :::
 
