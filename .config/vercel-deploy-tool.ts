@@ -16,7 +16,9 @@ const config: Config = {
 			outputDirectory: "docs/.vuepress/dist",
 			targetCWD: "./docs/ruan-cat-notes",
 			url: domains.notes as unknown as string[],
-			// userCommands: ["pnpm -C=./docs/ruan-cat-notes build:docs"],
+			userCommands: [
+				// "pnpm -C=./docs/ruan-cat-notes build:docs"
+			],
 		},
 
 		// rmmv笔记项目
@@ -25,7 +27,9 @@ const config: Config = {
 			outputDirectory: "docs/.vuepress/dist",
 			targetCWD: "./docs/rpgmv-dev-notes",
 			url: domains["rmmv-notes"] as unknown as string[],
-			// userCommands: ["pnpm -C=./docs/rpgmv-dev-notes build:docs"],
+			userCommands: [
+				// "pnpm -C=./docs/rpgmv-dev-notes build:docs"
+			],
 		},
 	],
 };
