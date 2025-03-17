@@ -2,6 +2,7 @@
 	"$schema": "https://turbo.build/schema.json",
 	"tasks": {
 		"build:docs": {
+			"cache": true,
 			"outputs": [
 				"**/dist/**",
 				"**/.vitepress/dist/**",
