@@ -42,7 +42,7 @@ export interface ApifoxModel<T> {
 
 在本例子中，我二次包装了 axios。
 
-```ts
+```txt
 import axios from "axios";
 import qs from "qs";
 
@@ -95,7 +95,7 @@ md 写法也是类似的，如下：
 
 具体代码：
 
-```ts
+```txt
 import type { ApifoxModel } from "./types/ApifoxModel";
 import { createAxiosInstance } from "./createAxiosInstance";
 /**
