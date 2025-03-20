@@ -7,9 +7,6 @@
 		"paths": {
 			"@docs/*": [
 				"./docs/*"
-			],
-			"@source/*": [
-				"./docs/*"
 			]
 		}
 	},
