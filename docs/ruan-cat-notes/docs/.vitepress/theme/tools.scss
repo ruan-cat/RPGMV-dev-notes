@@ -17,34 +17,21 @@
 }
 
 aside.VPSidebar {
-	// nav.nav {
-	// 	counter-reset: list-number 0;
-	// 	.group {
-	// 		display: flex;
-	// 		@include before(list-number);
-	// 		.VPSidebarItem {
-	// 			flex-grow: 1;
-	// 		}
-	// 	}
-	// }
-
 	nav.nav {
 		counter-reset: list-number 0;
 
-		.group {
-			// counter-reset: list-number 0;
-			// @include before(list-number);
-			.VPSidebarItem {
+		// 每一个具体的子项 增加标号
+		.VPSidebarItem {
+			.item {
 				@include before(list-number);
 			}
 		}
 
-		.items {
-			counter-reset: list-number 0;
-		}
-
-		.item {
-			// @include before(list-number);
+		// 遇到折叠栏标记时 才认定为属于新的递归起点 开始重新计数
+		.VPSidebarItem.collapsible {
+			.items {
+				counter-reset: list-number 0;
+			}
 		}
 	}
 }
