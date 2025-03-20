@@ -49,6 +49,7 @@
 		"typescript": "^5.8.2",
 		"unplugin-auto-import": "^0.16.7",
 		"unplugin-vue-components": "^0.25.2",
+		"vite-plugin-ts-alias": "^0.1.1",
 		"vitepress": "^1.6.3"
 	}
 }
