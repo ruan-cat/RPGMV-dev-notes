@@ -45,3 +45,7 @@ auto-imports.d.ts
 
 # 我们自动生成工作区文件 所以不提交到仓库内
 *.code-workspace
+
+# 忽略vitepress的缓存文件
+*/**/.vitepress/dist
+*/**/.vitepress/cache
