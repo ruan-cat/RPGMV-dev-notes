@@ -5,7 +5,7 @@ dir:
 ---
 
 <script setup>
-import TransformRotate from "@docs/css/css-challenges/002-transform-rotate/transform-rotate.vue";
+// import TransformRotate from "@docs/css/css-challenges/002-transform-rotate/transform-rotate.vue";
 </script>
 
 # 旋转变化动效
@@ -18,7 +18,8 @@ import TransformRotate from "@docs/css/css-challenges/002-transform-rotate/trans
 
 ## 动画
 
-<TransformRotate />
+<demo vue="./transform-rotate.vue" />
+<!-- <TransformRotate /> -->
 
 ## 源码
 

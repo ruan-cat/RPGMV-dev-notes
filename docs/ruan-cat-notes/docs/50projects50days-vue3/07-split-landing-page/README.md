@@ -13,9 +13,10 @@ import C from "@docs/50projects50days-vue3/07-split-landing-page/split-landing-p
 
 ## 自写重构 demo
 
-<ClientOnly>
+<demo vue="./split-landing-page.vue" />
+<!-- <ClientOnly>
 	<C />
-</ClientOnly>
+</ClientOnly> -->
 
 ## 文章教程
 

@@ -6,16 +6,17 @@ dir:
 ---
 
 <script setup>
-import C from "@docs/demo/005-vueuse-scroll-animation/vueuse-scroll-animation.vue";
+// import C from "@docs/demo/005-vueuse-scroll-animation/vueuse-scroll-animation.vue";
 </script>
 
 # 改写滚动动画写法
 
 尝试用 vueuse 改造滚动动画，力求代码编写优雅简洁。
 
-<ClientOnly>
+<demo vue="./vueuse-scroll-animation.vue" />
+<!-- <ClientOnly>
 	<C />
-</ClientOnly>
+</ClientOnly> -->
 
 ## 改造思路
 

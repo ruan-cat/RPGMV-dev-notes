@@ -5,14 +5,15 @@ dir:
 ---
 
 <script setup>
-import FlexBoxTransition from "@docs/css/css-challenges/001-flex-box-transition/FlexBoxTransition.vue";
+// import FlexBoxTransition from "@docs/css/css-challenges/001-flex-box-transition/FlexBoxTransition.vue";
 </script>
 
 # 弹性盒变化的动效
 
 ## 动画
 
-<FlexBoxTransition />
+<demo vue="./FlexBoxTransition.vue" />
+<!-- <FlexBoxTransition /> -->
 
 ## 源码
 

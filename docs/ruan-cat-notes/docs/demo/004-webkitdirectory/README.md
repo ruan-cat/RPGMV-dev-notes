@@ -6,7 +6,7 @@ dir:
 ---
 
 <script setup>
-import WebkitdirectoryDemo from "@docs/demo/004-webkitdirectory/webkitdirectory.vue";
+// import WebkitdirectoryDemo from "@docs/demo/004-webkitdirectory/webkitdirectory.vue";
 </script>
 
 # 前端选择用户电脑的文件夹
@@ -16,6 +16,7 @@ import WebkitdirectoryDemo from "@docs/demo/004-webkitdirectory/webkitdirectory.
 
 ::: details
 
-<WebkitdirectoryDemo />
+<demo vue="./webkitdirectory.vue" />
+<!-- <WebkitdirectoryDemo /> -->
 
 :::

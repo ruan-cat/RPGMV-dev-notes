@@ -6,16 +6,17 @@ dir:
 ---
 
 <script setup>
-import C from "@docs/50projects50days-vue3/06-scroll-animation/scroll-animation.vue";
+// import C from "@docs/50projects50days-vue3/06-scroll-animation/scroll-animation.vue";
 </script>
 
 # 滚动动画
 
 ## 自写重构 demo
 
-<ClientOnly>
+<demo vue="./scroll-animation.vue" />
+<!-- <ClientOnly>
 	<C />
-</ClientOnly>
+</ClientOnly> -->
 
 ## 文章教程
 

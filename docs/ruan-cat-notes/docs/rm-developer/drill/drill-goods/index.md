@@ -1,5 +1,5 @@
 <script setup >
-import DrillGoods from "@docs/rm-developer/drill/drill-goods/DrillGoods.vue";
+// import DrillGoods from "@docs/rm-developer/drill/drill-goods/DrillGoods.vue";
 </script>
 
 # 钻头的商品管理页面
@@ -29,6 +29,7 @@ import DrillGoods from "@docs/rm-developer/drill/drill-goods/DrillGoods.vue";
 
 ## 可交互案例
 
-<ClientOnly>
+<demo vue="./DrillGoods.vue" />
+<!-- <ClientOnly>
 	<DrillGoods />
-</ClientOnly>
+</ClientOnly> -->

@@ -1,5 +1,5 @@
 <script setup>
-import LoadExcel from "@docs/js-xlsx/LoadExcel.vue";
+// import LoadExcel from "@docs/js-xlsx/LoadExcel.vue";
 </script>
 
 # js-xlsx
@@ -10,6 +10,7 @@ import LoadExcel from "@docs/js-xlsx/LoadExcel.vue";
 
 ## 自己试着实现一个文件导入和解析
 
-<ClientOnly>
+<demo vue="./LoadExcel.vue" />
+<!-- <ClientOnly>
 	<LoadExcel />
-</ClientOnly>
+</ClientOnly> -->

@@ -6,14 +6,15 @@ dir:
 ---
 
 <script setup>
-import RotatingNavigationAnimation from "@docs/50projects50days-vue3/03-rotating-navigation-animation/rotating-navigation-animation.vue";
+// import RotatingNavigationAnimation from "@docs/50projects50days-vue3/03-rotating-navigation-animation/rotating-navigation-animation.vue";
 </script>
 
 # 旋转导航动画
 
 ## 自写重构 demo
 
-<RotatingNavigationAnimation />
+<demo vue="./rotating-navigation-animation.vue" />
+<!-- <RotatingNavigationAnimation /> -->
 
 ## 文章教程
 

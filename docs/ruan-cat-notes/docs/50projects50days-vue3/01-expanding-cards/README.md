@@ -6,16 +6,17 @@ dir:
 ---
 
 <script setup>
-import ExpandingCards from "@docs/50projects50days-vue3/01-expanding-cards/ExpandingCards.vue";
+// import ExpandingCards from "@docs/50projects50days-vue3/01-expanding-cards/ExpandingCards.vue";
 </script>
 
 # 展开卡片
 
 ## 自写重构 demo
 
-<ClientOnly>
+<demo vue="./ExpandingCards.vue" />
+<!-- <ClientOnly>
 	<ExpandingCards />
-</ClientOnly>
+</ClientOnly> -->
 
 ## 官方演示 demo
 
