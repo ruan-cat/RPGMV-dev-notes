@@ -1,9 +1,50 @@
+/* 自定义配置 */
+:root {
+	--vp-sidebar-width: 23rem;
+}
+
 @mixin before($counterName) {
 	&::before {
 		display: inline-block;
+
 		min-width: 1rem;
 		margin-right: 0.8rem;
+		padding: 0.22rem 0;
+
 		counter-increment: $counterName;
 		content: counters($counterName, ".") ".";
+	}
+}
+
+aside.VPSidebar {
+	// nav.nav {
+	// 	counter-reset: list-number 0;
+	// 	.group {
+	// 		display: flex;
+	// 		@include before(list-number);
+	// 		.VPSidebarItem {
+	// 			flex-grow: 1;
+	// 		}
+	// 	}
+	// }
+
+	nav.nav {
+		counter-reset: list-number 0;
+
+		.group {
+			// counter-reset: list-number 0;
+			// @include before(list-number);
+			.VPSidebarItem {
+				@include before(list-number);
+			}
+		}
+
+		.items {
+			counter-reset: list-number 0;
+		}
+
+		.item {
+			// @include before(list-number);
+		}
 	}
 }
