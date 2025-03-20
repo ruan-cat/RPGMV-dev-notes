@@ -12,9 +12,7 @@
 		"prebuild:docs": "pnpm run do-index-md",
 		"docs:dev": "vuepress-vite dev docs --clean-cache --open",
 		"build:docs": "vuepress-vite build docs",
-		"docs:update-package": "pnpm dlx vp-update",
-		"clear": "rimraf dist .turbo .vercel .cache .temp",
-		"rm:node_modules": "rimraf node_modules"
+		"docs:update-package": "pnpm dlx vp-update"
 	},
 	"dependencies": {
 		"@vercel/analytics": "^1.5.0",
