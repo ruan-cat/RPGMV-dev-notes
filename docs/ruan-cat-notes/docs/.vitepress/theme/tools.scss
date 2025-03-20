@@ -1,0 +1,9 @@
+@mixin before($counterName) {
+	&::before {
+		display: inline-block;
+		min-width: 1rem;
+		margin-right: 0.8rem;
+		counter-increment: $counterName;
+		content: counters($counterName, ".") ".";
+	}
+}
