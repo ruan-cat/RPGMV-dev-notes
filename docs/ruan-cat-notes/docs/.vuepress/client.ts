@@ -1,25 +1,19 @@
 import { defineClientConfig } from "vuepress/client";
-
 import { inject } from "@vercel/analytics";
-
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
-
 import "animate.css";
-
 // 测试 普通样式
 // import "@ruan-cat/vuepress-preset-config/src/styles/common/index.scss";
 // 测试 爱丽丝样式
+// TODO: 待迁移到vitepress内
 import "@ruan-cat/vuepress-preset-config/src/styles/drill-style/index.scss";
 
 // https://stackoverflow.com/questions/10358100/how-to-access-localstorage-in-node-js
 // import { LocalStorage } from "node-localstorage";
-
 import { createPinia } from "pinia";
 import piniaPluginPersistedstate, { createPersistedState } from "pinia-plugin-persistedstate";
-
 import AliceHover from "./components/alice-hover/alice-hover.vue";
-
 /**
  * 默认的 twoslash 是不会主动带上样式的 需要我们手动导入样式
  * @see https://shiki.tmrs.site/packages/vitepress#twoslash
