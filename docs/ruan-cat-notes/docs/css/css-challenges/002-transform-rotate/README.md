@@ -25,6 +25,6 @@ dir:
 
 ::: details
 
-@[code vue](./transform-rotate.vue)
+<<< ./transform-rotate.vue#snipaste{vue twoslash}
 
 :::

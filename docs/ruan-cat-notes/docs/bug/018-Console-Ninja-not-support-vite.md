@@ -8,7 +8,7 @@ order: 18
 
 ::: details 社区版本不支持
 
-@[code log](./code/018/error.log)
+<<< ./code/018/error.log#snipaste{log twoslash}
 
 :::
 

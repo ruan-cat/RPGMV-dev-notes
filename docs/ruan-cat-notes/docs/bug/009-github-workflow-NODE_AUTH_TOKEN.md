@@ -10,7 +10,7 @@ order: 9
 
 ::: details E404
 
-@[code log](./code/009/error.log)
+<<< ./code/009/error.log#snipaste{log twoslash}
 
 :::
 
@@ -24,7 +24,7 @@ order: 9
 
 ::: details 主动增加 NODE_AUTH_TOKEN
 
-@[code yaml](./code/009/succ.yaml)
+<<< ./code/009/succ.yaml#snipaste{yaml twoslash}
 
 :::
 
@@ -40,7 +40,7 @@ order: 9
 
 ::: details 成功执行的日志
 
-@[code log](./code/009/succ.log)
+<<< ./code/009/succ.log#snipaste{log twoslash}
 
 :::
 

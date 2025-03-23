@@ -12,4 +12,4 @@
 
 这里仅仅是笔者个人常用的 vscode 插件，在此记录，方便在其他项目内快速配置 extensions.json 文件。
 
-@[code jsonc](./my-vscode-extensions.jsonc)
+<<< ./my-vscode-extensions.jsonc#snipaste{jsonc twoslash}

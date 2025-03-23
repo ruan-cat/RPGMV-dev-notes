@@ -6,6 +6,6 @@ scrollbar-width 和 scrollbar-color 这两个新的属性，很容易导致我�
 
 ::: details 应默认预设 scrollbar-width 和 scrollbar-color
 
-@[code scss](./-webkit-scrollbar.example.scss)
+<<< ./-webkit-scrollbar.example.scss#snipaste{scss twoslash}
 
 :::

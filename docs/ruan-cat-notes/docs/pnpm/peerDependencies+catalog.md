@@ -12,7 +12,7 @@
 
 在项目根目录的 pnpm-workspace.yaml 内：
 
-@[code yaml](./peerDependencies+catalog/pnpm-workspace.example.yaml)
+<<< ./peerDependencies+catalog/pnpm-workspace.example.yaml#snipaste{yaml twoslash}
 
 :::
 
@@ -20,7 +20,7 @@
 
 在对应子包的 package.json 内：
 
-@[code json](./peerDependencies+catalog/package.example.json)
+<<< ./peerDependencies+catalog/package.example.json#snipaste{json twoslash}
 
 :::
 

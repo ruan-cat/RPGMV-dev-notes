@@ -12,7 +12,7 @@ vite 配置开发环境时，基本上是需要配置反向代理的。下面是
 
 并且对类型 ImportMetaEnv 做拓展。
 
-@[code typescript](./env.shim.d.ts)
+<<< ./env.shim.d.ts#snipaste{typescript twoslash}
 
 :::
 
@@ -22,7 +22,7 @@ vite 配置开发环境时，基本上是需要配置反向代理的。下面是
 
 ::: details 环境变量
 
-@[code bash](./.env.development)
+<<< ./.env.development#snipaste{bash twoslash}
 
 :::
 
@@ -32,6 +32,6 @@ vite 配置开发环境时，基本上是需要配置反向代理的。下面是
 
 ::: details 配置 vite 反向代理
 
-@[code typescript](./vite.config.ts)
+<<< ./vite.config.ts#snipaste{typescript twoslash}
 
 :::

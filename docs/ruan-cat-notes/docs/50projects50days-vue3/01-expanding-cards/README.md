@@ -42,6 +42,6 @@ dir:
 
 ::: details
 
-@[code vue](./ExpandingCards.vue)
+<<< ./ExpandingCards.vue#snipaste{vue twoslash}
 
 :::

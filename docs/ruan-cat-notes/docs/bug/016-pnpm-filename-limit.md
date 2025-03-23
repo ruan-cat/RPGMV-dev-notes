@@ -8,7 +8,7 @@ order: 16
 
 ::: details
 
-@[code log](./code/016/error.log)
+<<< ./code/016/error.log#snipaste{log twoslash}
 
 :::
 

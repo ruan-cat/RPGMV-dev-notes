@@ -24,6 +24,6 @@ dir:
 
 ::: details
 
-@[code vue](./hidden-search-widget.vue)
+<<< ./hidden-search-widget.vue#snipaste{vue twoslash}
 
 :::

@@ -29,7 +29,7 @@ createTemplatePromise，用来创建 promise 风格的弹框组件。打开弹�
 
 ::: details 源码
 
-@[code vue](./demo-TemplatePromise-and-ElDialog.vue)
+<<< ./demo-TemplatePromise-and-ElDialog.vue#snipaste{vue twoslash}
 
 :::
 

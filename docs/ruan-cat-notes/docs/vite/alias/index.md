@@ -11,7 +11,7 @@ vite 别名配置和 tsconfig.json 别名重复了，有没有办法让 vite 自
 
 ::: details
 
-@[code ts](./vite.config-alias.ts)
+<<< ./vite.config-alias.ts#snipaste{ts twoslash}
 
 :::
 

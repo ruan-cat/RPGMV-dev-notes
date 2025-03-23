@@ -19,6 +19,6 @@ dir:
 
 ::: details
 
-@[code vue](./FlexBoxTransition.vue)
+<<< ./FlexBoxTransition.vue#snipaste{vue twoslash}
 
 :::

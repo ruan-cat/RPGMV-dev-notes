@@ -51,6 +51,6 @@ const ds = [
 
 ::: details
 
-@[code ts](./map.ts)
+<<< ./map.ts#snipaste{ts twoslash}
 
 :::

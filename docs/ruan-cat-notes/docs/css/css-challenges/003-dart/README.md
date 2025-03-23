@@ -23,6 +23,6 @@ dir:
 
 ::: details
 
-@[code vue](./dart.vue)
+<<< ./dart.vue#snipaste{vue twoslash}
 
 :::

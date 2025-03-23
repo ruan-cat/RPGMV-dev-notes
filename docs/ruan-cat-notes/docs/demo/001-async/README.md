@@ -9,6 +9,6 @@ dir:
 
 ::: details
 
-@[code ts](./async.ts)
+<<< ./async.ts#snipaste{ts twoslash}
 
 :::

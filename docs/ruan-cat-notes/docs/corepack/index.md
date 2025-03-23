@@ -40,7 +40,7 @@ corepack install pnpm@9.15.0 -g
 
 ::: details
 
-@[code txt](./corepack-install-global-error-log.txt)
+<<< ./corepack-install-global-error-log.txt#snipaste{txt twoslash}
 
 :::
 
@@ -62,7 +62,7 @@ corepack install pnpm@9.15.0 -g
 
 ::: details
 
-@[code txt](./pnpm_v_pnpm@9.15.0_log.txt)
+<<< ./pnpm_v_pnpm@9.15.0_log.txt#snipaste{txt twoslash}
 
 :::
 

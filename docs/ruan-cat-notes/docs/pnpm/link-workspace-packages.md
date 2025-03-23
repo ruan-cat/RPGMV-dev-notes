@@ -6,4 +6,4 @@
 
 - https://pnpm.io/zh/npmrc#link-workspace-packages
 
-@[code bash](./.npmrc)
+<<< ./.npmrc#snipaste{bash twoslash}

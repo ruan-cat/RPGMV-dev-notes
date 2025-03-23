@@ -16,7 +16,7 @@ order: 17
 
 ::: details 任务定义
 
-@[code json](./code/017/package.example.json)
+<<< ./code/017/package.example.json#snipaste{json twoslash}
 
 :::
 
@@ -26,7 +26,7 @@ order: 17
 
 ::: details 任务调度配置
 
-@[code json](./code/017/turbo.example.json)
+<<< ./code/017/turbo.example.json#snipaste{json twoslash}
 
 :::
 

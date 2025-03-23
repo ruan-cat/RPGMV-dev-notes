@@ -32,6 +32,6 @@ import C from "@docs/50projects50days-vue3/07-split-landing-page/split-landing-p
 
 ::: details
 
-@[code vue](./split-landing-page.vue)
+<<< ./split-landing-page.vue#snipaste{vue twoslash}
 
 :::

@@ -30,6 +30,6 @@ dir:
 
 ::: details
 
-@[code vue](./ProgressSteps.vue)
+<<< ./ProgressSteps.vue#snipaste{vue twoslash}
 
 :::

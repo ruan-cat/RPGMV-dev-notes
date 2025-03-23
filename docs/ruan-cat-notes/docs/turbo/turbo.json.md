@@ -25,7 +25,7 @@
 
 在 utils/turbo.json 内：
 
-@[code json](./turbo.example.json)
+<<< ./turbo.example.json#snipaste{json twoslash}
 
 :::
 
