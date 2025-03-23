@@ -6,10 +6,6 @@ order: 0
 
 重要的版本控制软件。和 svn 类似。他们统称为 VCS。
 
-## 本章节目录
-
-<Catalog />
-
 ## 入门教程
 
 - https://learngitbranching.js.org/?locale=zh_CN
