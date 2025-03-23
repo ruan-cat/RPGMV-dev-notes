@@ -39,7 +39,7 @@ https://gitlab.com/vuedoc/parser#features
 
 ### 进度
 
-相关细节[点此](vuedoc/vuedoc.md)。
+相关细节[点此](./vuedoc/index.md)。
 
 ## vuepress-apidoc <Badge type="info" text="值得商榷" />
 
