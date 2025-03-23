@@ -21,7 +21,7 @@ projects:
     link: https://npm.im/@ruan-cat/generate-code-workspace
     icon: vscode-icons:file-type-vscode
   - name: utils
-    desc: 阮喵喵工具集合。一个纯typescript库，也提供纯js文件。
+    desc: 阮喵喵工具集合。默认提供js文件，也直接提供ts文件。
     link: https://npm.im/@ruan-cat/utils
     icon: vscode-icons:folder-type-tools
   - name: vercel-deploy-tool
@@ -38,6 +38,9 @@ projects:
   - name: domains
     desc: 为 ruancat6312.top 和 ruan-cat.com 两个域名，提供预设好的常量。旨在于管理全部的域名，便于查询和使用。
     link: https://npm.im/@ruan-cat/domains
+  - name: vitepress-demo-plugin
+    desc: 阮喵喵自己照抄别人vitepress-demo-plugin的插件。纯粹自用。
+    link: https://npm.im/@ruan-cat/vitepress-demo-plugin
   - name: vitepress-preset-config
     desc: 用于给大多数的vitepress项目提供一个预设的配置文件。
     link: https://npm.im/@ruan-cat/vitepress-preset-config
