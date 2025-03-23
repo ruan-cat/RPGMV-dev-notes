@@ -49,3 +49,5 @@ auto-imports.d.ts
 # 忽略vitepress的缓存文件
 */**/.vitepress/dist
 */**/.vitepress/cache
+
+.vercel

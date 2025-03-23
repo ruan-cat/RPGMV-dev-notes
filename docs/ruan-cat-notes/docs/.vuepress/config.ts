@@ -13,8 +13,6 @@ import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
-import { typedocPlugin } from "vuepress-plugin-typedoc/next";
-
 // import typedocConf from "../../../../typedoc.config.cjs";
 
 import theme from "./theme.js";
@@ -125,9 +123,6 @@ export default defineUserConfig({
 		// 		return res;
 		// 	},
 		// }),
-		// FIXME: 高版本配置 导致bug
-		// 直接导入项目根目录下的配置文件 这样效率更高
-		// typedocPlugin(typedocConf),
 		// componentsPlugin({
 		// 	components: ["BiliBili"],
 		// }),

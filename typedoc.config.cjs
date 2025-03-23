@@ -16,8 +16,6 @@
  *
  * @description
  * https://typedoc.org/guides/options/#javascript-files
- *
- * https://github.com/tgreyuk/typedoc-plugin-markdown/tree/master/packages/vuepress-plugin-typedoc#v2x
  */
 
 // FIXME: 高版本配置 导致bug
