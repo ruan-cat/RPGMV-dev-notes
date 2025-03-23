@@ -13,7 +13,7 @@ const config: Config = {
 		// 笔记项目
 		{
 			type: "userCommands",
-			outputDirectory: "docs/.vuepress/dist",
+			outputDirectory: "docs/.vitepress/dist",
 			targetCWD: "./docs/ruan-cat-notes",
 			url: domains.notes as unknown as string[],
 			userCommands: [

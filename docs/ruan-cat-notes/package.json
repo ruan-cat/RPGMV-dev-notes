@@ -5,16 +5,16 @@
 	"license": "MIT",
 	"description": "阮喵喵自己的笔记。",
 	"scripts": {
+		"docs:dev": "vitepress dev docs --port 8080",
+		"build:docs": "vitepress build docs",
+		"docs:dev-vp": "vuepress-vite dev docs --clean-cache --open",
+		"build:docs-vp": "vuepress-vite build docs",
+		"docs:update-package": "pnpm dlx vp-update",
 		"make-index-md": "node --import=tsx ./scripts/make-index-md.ts",
 		"format-index-md": "prettier --write ./docs/index.md",
 		"do-index-md": "pnpm run make-index-md && pnpm run format-index-md",
 		"predocs:dev": "pnpm run do-index-md",
-		"prebuild:docs": "pnpm run do-index-md",
-		"docs:dev": "vuepress-vite dev docs --clean-cache --open",
-		"build:docs": "vuepress-vite build docs",
-		"docs:update-package": "pnpm dlx vp-update",
-		"docs:dev-vip": "vitepress dev docs --port 8080",
-		"build:docs-vip": "vitepress build docs"
+		"prebuild:docs": "pnpm run do-index-md"
 	},
 	"dependencies": {
 		"@vercel/analytics": "^1.5.0",
