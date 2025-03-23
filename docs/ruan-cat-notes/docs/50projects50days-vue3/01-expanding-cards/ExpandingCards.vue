@@ -1,3 +1,4 @@
+<!-- #region snippet -->
 <script lang="ts" setup>
 import { ref, computed, watch, onMounted } from "vue";
 import { v4 as uuidv4 } from "uuid";
@@ -106,6 +107,7 @@ onMounted(async () => {
 		.then((data) => {});
 });
 </script>
+<!-- #endregion snippet -->
 
 <template>
 	<section class="ExpandingCards-root">

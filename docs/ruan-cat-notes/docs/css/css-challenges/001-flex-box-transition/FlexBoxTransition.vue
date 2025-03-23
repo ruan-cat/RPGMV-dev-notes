@@ -1,3 +1,4 @@
+<!-- #region snippet -->
 <script lang="ts" setup>
 import "animate.css";
 
@@ -20,6 +21,7 @@ const classobj = computed(() => {
 	return { "has-aside": isOpenAside.value };
 });
 </script>
+<!-- #endregion snippet -->
 
 <template>
 	<section class="flex-box-transition-root">

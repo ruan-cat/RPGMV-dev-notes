@@ -1,3 +1,4 @@
+<!-- #region snippet -->
 <script lang="ts" setup>
 import { ref, computed, watch, useTemplateRef } from "vue";
 import { useToggle } from "@vueuse/core";
@@ -13,6 +14,7 @@ function open() {
 	inputRef.value.focus();
 }
 </script>
+<!-- #endregion snippet -->
 
 <template>
 	<section class="hidden-search-widget-root">

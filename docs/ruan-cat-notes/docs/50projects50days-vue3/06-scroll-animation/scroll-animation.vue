@@ -1,3 +1,4 @@
+<!-- #region snippet -->
 <script lang="ts" setup>
 import { ref, computed, watch, useTemplateRef, onMounted } from "vue";
 
@@ -25,6 +26,7 @@ onMounted(() => {
 	checkBoxes();
 });
 </script>
+<!-- #endregion snippet -->
 
 <template>
 	<section class="scroll-animation-root">
