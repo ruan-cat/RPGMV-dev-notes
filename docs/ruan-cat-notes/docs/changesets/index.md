@@ -32,7 +32,7 @@
 
 ::: details
 
-<<< ./release.yml#snipaste{yml twoslash}
+<<< ./release.yml
 
 :::
 
