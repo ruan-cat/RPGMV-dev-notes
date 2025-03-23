@@ -4,10 +4,6 @@ dir:
   link: true
 ---
 
-<script setup>
-// import Dart from "@docs/css/css-challenges/003-dart/dart.vue";
-</script>
-
 # 展开的飞镖
 
 ## 制作初衷
@@ -17,7 +13,6 @@ dir:
 ## 动画
 
 <demo vue="./dart.vue" />
-<!-- <Dart /> -->
 
 ## 源码
 

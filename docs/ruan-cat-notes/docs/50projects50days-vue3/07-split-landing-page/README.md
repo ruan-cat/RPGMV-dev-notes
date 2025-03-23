@@ -5,18 +5,11 @@ dir:
   order: 70
 ---
 
-<script setup>
-import C from "@docs/50projects50days-vue3/07-split-landing-page/split-landing-page.vue";
-</script>
-
 # 拆分登录页
 
 ## 自写重构 demo
 
 <demo vue="./split-landing-page.vue" />
-<!-- <ClientOnly>
-	<C />
-</ClientOnly> -->
 
 ## 文章教程
 

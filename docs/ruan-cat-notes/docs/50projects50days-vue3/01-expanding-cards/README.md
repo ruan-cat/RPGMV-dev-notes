@@ -5,18 +5,11 @@ dir:
   order: 10
 ---
 
-<script setup>
-// import ExpandingCards from "@docs/50projects50days-vue3/01-expanding-cards/ExpandingCards.vue";
-</script>
-
 # 展开卡片
 
 ## 自写重构 demo
 
 <demo vue="./ExpandingCards.vue" />
-<!-- <ClientOnly>
-	<ExpandingCards />
-</ClientOnly> -->
 
 ## 官方演示 demo
 

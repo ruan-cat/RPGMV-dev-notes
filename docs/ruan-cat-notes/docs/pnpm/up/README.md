@@ -36,7 +36,7 @@ pnpm up *@latest
 
 ::: details
 
-@[code](./error.log)
+<<< ./error.log
 
 :::
 

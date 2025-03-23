@@ -4,10 +4,6 @@ dir:
   link: true
 ---
 
-<script setup>
-// import TransformRotate from "@docs/css/css-challenges/002-transform-rotate/transform-rotate.vue";
-</script>
-
 # 旋转变化动效
 
 ## 制作初衷
@@ -19,7 +15,6 @@ dir:
 ## 动画
 
 <demo vue="./transform-rotate.vue" />
-<!-- <TransformRotate /> -->
 
 ## 源码
 

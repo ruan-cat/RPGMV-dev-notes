@@ -44,5 +44,6 @@
 		"**/.cache": true,
 		"**/.temp": true,
 		"**/.vercel": true,
+		"**/cache": true,
 	}
 }
