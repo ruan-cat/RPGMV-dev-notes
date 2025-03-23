@@ -25,6 +25,6 @@ dir:
 
 ::: details
 
-<<< ./split-landing-page.vue#snipaste{vue twoslash}
+<<< ./split-landing-page.vue
 
 :::

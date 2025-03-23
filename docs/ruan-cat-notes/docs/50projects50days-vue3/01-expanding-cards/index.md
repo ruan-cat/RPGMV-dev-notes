@@ -35,6 +35,6 @@ dir:
 
 ::: details
 
-<<< ./ExpandingCards.vue#snipaste{vue twoslash}
+<<< ./ExpandingCards.vue
 
 :::

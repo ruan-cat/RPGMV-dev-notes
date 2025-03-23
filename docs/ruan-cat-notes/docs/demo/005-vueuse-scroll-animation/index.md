@@ -36,6 +36,6 @@ dir:
 
 ::: details
 
-<<< ./vueuse-scroll-animation.vue#snipaste{vue twoslash}
+<<< ./vueuse-scroll-animation.vue
 
 :::

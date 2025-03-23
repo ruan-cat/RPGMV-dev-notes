@@ -19,6 +19,6 @@ dir:
 
 ::: details
 
-<<< ./rotating-navigation-animation.vue#snipaste{vue twoslash}
+<<< ./rotating-navigation-animation.vue
 
 :::

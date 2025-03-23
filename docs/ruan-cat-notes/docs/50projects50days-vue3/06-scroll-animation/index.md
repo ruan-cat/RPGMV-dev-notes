@@ -29,6 +29,6 @@ dir:
 
 ::: details
 
-<<< ./scroll-animation.vue#snipaste{vue twoslash}
+<<< ./scroll-animation.vue
 
 :::

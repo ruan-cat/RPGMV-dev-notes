@@ -19,6 +19,6 @@ dir:
 
 ::: details
 
-<<< ./hidden-search-widget.vue#snipaste{vue twoslash}
+<<< ./hidden-search-widget.vue
 
 :::

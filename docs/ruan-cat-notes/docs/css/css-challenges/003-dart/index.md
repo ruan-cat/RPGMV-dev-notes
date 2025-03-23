@@ -18,6 +18,6 @@ dir:
 
 ::: details
 
-<<< ./dart.vue#snipaste{vue twoslash}
+<<< ./dart.vue
 
 :::

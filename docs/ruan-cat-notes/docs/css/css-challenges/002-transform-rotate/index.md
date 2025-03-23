@@ -20,6 +20,6 @@ dir:
 
 ::: details
 
-<<< ./transform-rotate.vue#snipaste{vue twoslash}
+<<< ./transform-rotate.vue
 
 :::

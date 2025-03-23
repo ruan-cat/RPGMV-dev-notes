@@ -12,7 +12,7 @@ createTemplatePromise，用来创建 promise 风格的弹框组件。打开弹�
 
 ::: details 源码
 
-<<< ./demo-TemplatePromise-and-ElDialog.vue#snipaste{vue twoslash}
+<<< ./demo-TemplatePromise-and-ElDialog.vue
 
 :::
 

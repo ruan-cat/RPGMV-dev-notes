@@ -14,6 +14,6 @@ dir:
 
 ::: details
 
-<<< ./FlexBoxTransition.vue#snipaste{vue twoslash}
+<<< ./FlexBoxTransition.vue
 
 :::
