@@ -1,4 +1,3 @@
-<!-- #region snippet -->
 <script lang="ts" setup>
 import { ref, computed, watch } from "vue";
 
@@ -9,7 +8,6 @@ function rotateDart() {
 	rotation.value += 90;
 }
 </script>
-<!-- #endregion snippet -->
 
 <template>
 	<section class="dart-root">

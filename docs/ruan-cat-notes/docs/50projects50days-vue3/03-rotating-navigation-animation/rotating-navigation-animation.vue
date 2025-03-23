@@ -1,4 +1,3 @@
-<!-- #region snippet -->
 <script lang="ts" setup>
 import { ref, computed, watch } from "vue";
 import { useToggle } from "@vueuse/core";
@@ -13,7 +12,6 @@ function closeNav() {
 	setShowNav(false);
 }
 </script>
-<!-- #endregion snippet -->
 
 <template>
 	<section class="rotating-navigation-animation-root">

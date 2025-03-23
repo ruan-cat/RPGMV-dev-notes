@@ -1,4 +1,3 @@
-<!-- #region snippet -->
 <script lang="ts" setup>
 import { ref, computed, watch, useTemplateRef } from "vue";
 import { useMouseInElement } from "@vueuse/core";
@@ -16,7 +15,6 @@ const containerClass = computed(() => {
 	};
 });
 </script>
-<!-- #endregion snippet -->
 
 <template>
 	<section class="split-landing-page-root">

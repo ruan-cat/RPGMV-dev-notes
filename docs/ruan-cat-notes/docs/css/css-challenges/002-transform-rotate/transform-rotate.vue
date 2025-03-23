@@ -1,4 +1,3 @@
-<!-- #region snippet -->
 <script lang="ts" setup>
 import { ref, computed, watch } from "vue";
 
@@ -24,7 +23,6 @@ function rotateCircleNegative() {
 const rotateCirclePositiveToBtn = throttle(rotateCirclePositive, 500);
 const rotateCircleNegativeToBtn = throttle(rotateCircleNegative, 500);
 </script>
-<!-- #endregion snippet -->
 
 <template>
 	<section class="transform-rotate-root">

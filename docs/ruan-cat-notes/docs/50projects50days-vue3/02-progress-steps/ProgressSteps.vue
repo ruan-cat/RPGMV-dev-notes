@@ -1,4 +1,3 @@
-<!-- #region snippet -->
 <script lang="ts" setup>
 import { ref, computed } from "vue";
 import type { CSSProperties } from "vue";
@@ -56,7 +55,6 @@ const progressWidth = computed<CSSProperties>(() => {
 	};
 });
 </script>
-<!-- #endregion snippet -->
 
 <template>
 	<section class="ProgressSteps-root">
