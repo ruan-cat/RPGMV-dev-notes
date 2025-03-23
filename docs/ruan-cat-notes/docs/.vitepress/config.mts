@@ -17,10 +17,36 @@ const userConfig = setUserConfig({
 	title: "阮喵喵笔记",
 	description: "自己的笔记",
 	themeConfig: {
+		nav: [
+			{
+				link: "/learn-todo/",
+				text: "学习待办",
+			},
+			{
+				link: "/bug/",
+				text: "遭遇的bug",
+			},
+			{
+				link: "/git/",
+				text: "git使用",
+			},
+			{
+				link: "/demo/",
+				text: "演示用的demo",
+			},
+			{
+				link: "/css/css-challenges/",
+				text: "css训练",
+			},
+			{
+				link: "/50projects50days-vue3/",
+				text: "50天50个小项目",
+			},
+		],
 		socialLinks: [
 			{
 				icon: "github",
-				link: "https://github.com/ruan-cat",
+				link: "https://github.com/ruan-cat/RPGMV-dev-notes",
 			},
 		],
 	},
