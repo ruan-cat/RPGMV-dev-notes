@@ -44,6 +44,7 @@
 		"**/.cache": true,
 		"**/.temp": true,
 		"**/.vercel": true,
-		"**/cache": true,
+		"**/.vitepress/cache": true,
+		"**/.vitepress/dist": true,
 	}
 }
