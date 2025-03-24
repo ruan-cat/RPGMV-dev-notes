@@ -8,7 +8,7 @@ commitizen，简称 cz，他用于管控我们 git commite 提交。
 
 我手上已经有很多项目了，需要实现最低限度的初始化。
 
-0. 全局安装 commitizen
+1. 全局安装 commitizen
 
 为提高效率，需要高效率的使用 `cz` 来快速在命令行内写 commit，全局包才提供这样的功能。故我会全局安装该依赖。
 
@@ -16,24 +16,32 @@ commitizen，简称 cz，他用于管控我们 git commite 提交。
 pnpm i -g commitizen
 ```
 
-1. 安装依赖
+2. 安装依赖
 
 ```bash
 pnpm i -D commitizen cz-git
 ```
 
-2. 配置 commitizen 使用的规则
+3. 配置 commitizen 使用的规则
+
+配置规则有两种方式：
+
+::: tip 推荐方案
+
+在主要的工作目录内新建 `.czrc` 文件：
+
+<<< ./czrc.json
+
+并不需要在 git 所在的`项目根目录`内新建。在嵌套文件夹的情况下，在你的`主要工作目录`内新建文件即可。
+
+:::
+
+::: warning 不太推荐
 
 在 package.json 内：
 
-```json
-{
-	"config": {
-		"commitizen": {
-			"path": "node_modules/cz-git"
-		}
-	}
-}
-```
+<<< ./package.example.json
 
-这就可以了。
+之所以不推荐，是因为该写法毕竟要写在 package.json 内，而且是对 git 所在路径硬编码。
+
+:::
