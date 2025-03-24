@@ -147,10 +147,3 @@ zsh 是干什么的？
 是什么类型的生产力工具？
 
 有什么好用的插件？
-
-## 制作好看的 vitepress 首页
-
-模仿以下站点：
-
-- https://github.com/142vip/core-x
-- https://142vip.github.io/core-x/docs/
