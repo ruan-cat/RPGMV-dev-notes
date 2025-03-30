@@ -15,7 +15,7 @@
 ## 全面替换这个过时的 cdn 代理商
 
 - https://cdn.jsdelivr.net/gh/ruan-cat/img-store/img
-- [参考资料](../posts/jsdelivr.md)
+- [参考资料](../posts/jsdelivr/index.md)
 
 已完成替换，换成：
 
