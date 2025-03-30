@@ -13,13 +13,11 @@
 - https://blog.csdn.net/sinat_36227086/article/details/107412317
 - https://github.com/pnp/sp-dev-fx-webparts/issues/501
 
-### 具体的处理
-
-#### 本地下载
+### 本地下载
 
 去 node-sass 的发行版内，下载安装 win32-x64-72_binding.node 文件，手动下载到本地。一般就下载到本地的 node 仓库内。
 
-#### 配制命令
+### 配制命令
 
 模仿这个命令做配置
 
@@ -27,6 +25,6 @@
 npm i node-sass@3.13.1 --sass_binary_path=C:\Users\<username>\Downloads\win32-x64-57_binding.node
 ```
 
-#### 结论
+## 已废弃
 
-最终可以实现定版本的 node-sass 依赖包安装。
+这个库几乎不用了。现在直接用 sass 就行了。在 vite 项目内使用 sass 很容易，不需要在这个库上面纠结了。

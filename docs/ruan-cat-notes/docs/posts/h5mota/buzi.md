@@ -9,11 +9,9 @@
 
 ### 卡片样式？
 
-之所以要有，是因为有一些人喜欢
-https://h5mota.com/playNew.php 的卡片
+之所以要有，是因为有一些人喜欢 https://h5mota.com/playNew.php 的卡片
 
-但是另一些人喜欢
-h5mota.com/indexPre.php
+但是另一些人喜欢 h5mota.com/indexPre.php
 
 具体来说，一些人希望卡片上显示封面，而另一些人更想看通关情况和当前的榜首
 
@@ -41,3 +39,7 @@ h5mota.com/indexPre.php
 - [ ] 补全玩塔页面核心的筛选框功能
 - [ ] 收藏的塔
 - [ ] 最近游玩
+
+## 暂停
+
+已经退出 mota 开发组。上述内容放弃制作。

@@ -2,7 +2,7 @@
 
 StarCoder: 最先进的代码大模型
 
-https://juejin.cn/post/7230792322577170489
+- https://juejin.cn/post/7230792322577170489
 
 本地部署？
 提供代码段，做训练？
@@ -10,6 +10,8 @@ https://juejin.cn/post/7230792322577170489
 
 ## 进度
 
-https://github.com/bigcode-project/starcoder
+- https://github.com/bigcode-project/starcoder
 
 玩不转机器学习的技术框架。算了。
+
+随着 AI 模型日渐迭代，该需求被 cursor 所替代。

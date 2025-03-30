@@ -57,6 +57,6 @@ cdn.jsdelivr.net Package size exceeded the configured limit of 50 MB.
 
 ::: details worker 代码
 
-<<< ./jsdelivr/cloudflare-worker-for-github-img-store.js#snipaste{js twoslash}
+<<< ./cloudflare-worker-for-github-img-store.js#snipaste{js twoslash}
 
 :::
