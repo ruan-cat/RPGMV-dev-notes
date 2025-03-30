@@ -8,23 +8,25 @@
 
 ## 尝试命令
 
+```bash
 pnpm exec vp-update
-
 pnpm dlx vp-update
+```
 
 ### 成功
 
+```bash
 pnpm dlx vp-update@0.1.2
-
 pnpm dlx vp-update@0.5
+```
 
 ### 出错
 
+```bash
 pnpm dlx vp-update@0.6
-
 pnpm dlx vp-update@latest
-
 pnpm dlx vp-update@next
+```
 
 ## 独立完成 bug 测试与 pr
 
@@ -74,3 +76,7 @@ pnpm dlx vp-update@next
 	"packageManager": ">=pnpm@8.0.0"
 }
 ```
+
+## 仅在 vuepress hope 主题场景内有效
+
+目前我已经很少用 vuepress hope 主题了。vp-update 可以不用了。

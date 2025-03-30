@@ -37,3 +37,7 @@ TODO: 这篇文章称可以让 vue-cli 和 vscode 实现断点调试。等待学
 无法启动。解决方案多涉及到 `set NODE_OPTIONS=--openssl-legacy-provider` 的配置
 
 - https://blog.csdn.net/fengyuyeguirenenen/article/details/128319228
+
+## 废弃
+
+现在几乎不用 vue-cil 了。
