@@ -24,4 +24,4 @@
 
 该快捷键会和`picgo`的快捷上传相冲突，应当关闭`picgo`提供的快捷键。如下图所示：
 
-![image-20221129160352253](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20221129160352253.png)
+![image-20221129160352253](https://gh-img-store.ruan-cat.com/img/image-20221129160352253.png)

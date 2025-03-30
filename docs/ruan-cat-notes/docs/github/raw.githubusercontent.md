@@ -16,7 +16,7 @@ const t = `https://raw.githubusercontent.com/${github用户名}/${github仓库�
 
 ## 例子 2
 
-- https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20220815124718084.png
+- https://gh-img-store.ruan-cat.com/img/image-20220815124718084.png
 
 说明用户 ruan-cat 在名为 img-store 的仓库内，在 main 主分支下，存在 /img/image-20220815124718084.png 路径下的文件。这是一个可以直接访问的图片文件。
 

@@ -45,7 +45,7 @@ cdn.jsdelivr.net Package size exceeded the configured limit of 50 MB.
 
 必定可用的地址如下：
 
-- https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20220925204706126.png
+- https://gh-img-store.ruan-cat.com/img/image-20220925204706126.png
 
 期望未来能用的地址如下：
 

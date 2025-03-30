@@ -23,7 +23,7 @@
 
 让 vscode 的用户或工作区配置，识别出本地的 prettier 配置。
 
-![image-20221020100452727](https://raw.githubusercontent.com/ruan-cat/img-store/main/img/image-20221020100452727.png)
+![image-20221020100452727](https://gh-img-store.ruan-cat.com/img/image-20221020100452727.png)
 
 ## vscode + prettier + wxml
 
