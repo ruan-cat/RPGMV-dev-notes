@@ -1,6 +1,6 @@
 # type-plus
 
-类型工具库
+类型工具库。这里仅列举一些常用的类型工具。
 
 - https://github.com/unional/type-plus
 - https://unional.github.io/type-plus/

@@ -38,3 +38,7 @@ eslint 的官方博客说明了 eslint 要发生的重大变更，和 antfu 即�
 - https://eslint.org/blog/2022/08/new-config-system-part-1/
 - https://eslint.org/blog/2022/08/new-config-system-part-2/
 - https://eslint.org/blog/2022/08/new-config-system-part-3/
+
+## 基本完成
+
+现在已经基本上完成 eslint 的学习。

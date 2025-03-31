@@ -48,5 +48,6 @@
 - `git` 提交时的行尾配置用`.gitattributes`，专门解决 `git` 和 `svn` 文件系统提交时的差异问题。
 - `prettier` 及其任意插件都默认使用`.editorconfig`的配置
 
-参考资料
-https://blog.csdn.net/u010730126/article/details/107968355
+参考资料：
+
+- https://blog.csdn.net/u010730126/article/details/107968355

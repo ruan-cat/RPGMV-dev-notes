@@ -18,11 +18,13 @@
 
 - 安装依赖
   开发依赖
-  https://www.npmjs.com/package/@vue/cli-plugin-babel
-  https://www.npmjs.com/package/@vue/babel-preset-app
+
+  - https://www.npmjs.com/package/@vue/cli-plugin-babel
+  - https://www.npmjs.com/package/@vue/babel-preset-app
 
   生产依赖
-  https://www.npmjs.com/package/core-js
+
+  - https://www.npmjs.com/package/core-js
 
 - babel.config.js 配置
   ```js
@@ -35,3 +37,7 @@
   ```
 
 完成。接下来就可以直接在 vue 组件内使用高版本的 js 了，包括可选链运算符、空值合并运算符等。
+
+## 以过时
+
+在 vite + vue3 的开发中，几乎不再接触 babel 了。
