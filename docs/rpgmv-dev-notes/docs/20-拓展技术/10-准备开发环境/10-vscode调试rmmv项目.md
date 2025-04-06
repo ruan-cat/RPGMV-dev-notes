@@ -106,7 +106,7 @@ shortTitle: vscode独立运行mv项目
 具体教学可以参考以下两个 B 站教程：
 
 - [原版](https://www.bilibili.com/video/BV1jJ411c7zK)
-- [阮中楠改编版](https://www.bilibili.com/video/BV11A411n7Lq)
+- [阮喵喵改编版](https://www.bilibili.com/video/BV11A411n7Lq)
 
 ## 启动流程
 
