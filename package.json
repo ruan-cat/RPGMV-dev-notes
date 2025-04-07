@@ -11,11 +11,6 @@
 		"node": ">=20.15.1",
 		"pnpm": ">=9.5.0"
 	},
-	"config": {
-		"commitizen": {
-			"path": "node_modules/cz-git"
-		}
-	},
 	"scripts": {
 		"on-github-action-flow": "turbo build:docs",
 		"clear:deps": "rimraf -g **/{node_modules,package-lock.json,pnpm-lock.yaml}",
