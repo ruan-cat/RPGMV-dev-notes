@@ -147,3 +147,9 @@ zsh 是干什么的？
 是什么类型的生产力工具？
 
 有什么好用的插件？
+
+## 阅读`fantastic-admin`源码
+
+- https://github.com/fantastic-admin/basic
+
+这个看起来和 vben 有的一拼。有空看看源码。
