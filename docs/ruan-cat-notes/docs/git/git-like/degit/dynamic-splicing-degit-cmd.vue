@@ -10,7 +10,7 @@ const degitCommand = computed(() => {
 
 const copyToClipboard = () => {
 	if (!degitCommand.value) {
-		ElMessage.warning("请先输入有效的URL地址");
+		ElMessage.warning("请先输入文本");
 		return;
 	}
 
@@ -23,12 +23,23 @@ const copyToClipboard = () => {
 			ElMessage.error("复制到剪贴板失败，请手动复制");
 		});
 };
+
+function clear() {
+	inputUrl.value = "";
+	ElMessage.warning("输入框已清空");
+}
 </script>
 
 <template>
 	<section class="dynamic-splicing-degit-cmd-root">
 		<div class="degit-input-container">
-			<ElInput v-model="inputUrl" placeholder="请输入GitHub URL或其他degit可识别的地址" clearable>
+			<ElInput
+				v-model="inputUrl"
+				placeholder="请输入GitHub URL或其他degit可识别的地址"
+				clearable
+				@keyup.enter="copyToClipboard"
+				@keyup.esc="clear"
+			>
 				<template #append>
 					<ElButton @click="copyToClipboard" type="primary"> 生成并复制 </ElButton>
 				</template>
