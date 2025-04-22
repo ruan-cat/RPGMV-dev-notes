@@ -2,6 +2,10 @@
 order: 2
 ---
 
+<script setup>
+import DynamicSplicingDegitCmd from "./dynamic-splicing-degit-cmd.vue";
+</script>
+
 # degit
 
 degit 是一个项目克隆工具，经常用于克隆位于 github 仓库内的模板。
@@ -28,7 +32,11 @@ $env:NODE_TLS_REJECT_UNAUTHORIZED=0; degit XXX
 
 ### 动态拼接 degit 命令
 
-以下组件会帮助你拼接临时使用的环境变量：
+以下小工具会帮助你拼接临时使用的环境变量：
+
+<ClientOnly>
+	<DynamicSplicingDegitCmd />
+</ClientOnly>
 
 <!-- TODO: 待开发 -->
 
