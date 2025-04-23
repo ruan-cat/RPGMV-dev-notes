@@ -45,3 +45,7 @@ pnpm i -D commitizen cz-git
 之所以不推荐，是因为该写法毕竟要写在 package.json 内，而且是对 git 所在路径硬编码。
 
 :::
+
+## 使用自己封装的库完成快速配置
+
+可以使用我自己封装的工具包 [@ruan-cat/commitlint-config](https://github.com/ruan-cat/monorepo/tree/main/configs-package/commitlint-config) 来完成项目的 commitizen 配置。
