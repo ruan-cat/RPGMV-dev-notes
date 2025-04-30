@@ -153,3 +153,11 @@ zsh 是干什么的？
 - https://github.com/fantastic-admin/basic
 
 这个看起来和 vben 有的一拼。有空看看源码。
+
+## 学习 PlusProComponents
+
+这个对 element-plus 有二次封装。似乎很适合实现 curd。
+
+- https://plus-pro-components.com/guide/
+
+个人已经不太想重复造轮子了，封装组件好烦。
