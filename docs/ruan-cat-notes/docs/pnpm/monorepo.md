@@ -62,17 +62,17 @@ pnpm -r exec rm -rf node_modules
 
 - https://github.com/isaacs/rimraf/blob/main/README.md#command-line-interface
 
-在 window 系统内，加上引号。
+在 window 系统内，加上**单引号**。
 
 ```bash
 rimraf -g '**/{node_modules,package-lock.json,pnpm-lock.yaml,yarn.lock}'
 ```
 
-在 node 内运行命令不需要加引号。
+::: warning
 
-```bash
-rimraf -g **/{node_modules,package-lock.json,pnpm-lock.yaml,yarn.lock}
-```
+注意，即使在 node 内运行命令，也要增加**单引号**。
+
+:::
 
 ## 项目存在大量重复的，通用性命令
 
