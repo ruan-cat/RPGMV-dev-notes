@@ -1,12 +1,25 @@
 # 用 pnpm 实现 monorepo 单仓架构
 
-## 尝试先初始化一个单仓项目
+经过长时间的学习和实践，目前（2025-5-4）已经很熟悉用 pnpm+monorepo 的方式来组织项目了。
 
-- https://juejin.cn/post/7145010706063523854
+## 快速入门
 
-## 单仓下不能使用 vscode 来批量安装推荐插件了 ？
+可以用 [turborepo](https://turborepo.com/docs/getting-started/examples) 的例子来快速搭建一个 monorepo 项目，并同时学习 turbo 的任务调度。
 
-https://zhuanlan.zhihu.com/p/382536075
+也可以看这个[简短的视频](https://www.bilibili.com/video/BV1Aj411h7F2/)来学习，我当初（2023-09-27）就是看这个视频入门 monorepo 的。
+
+## 简单概述
+
+组织起来很简单。
+
+1. 写 `pnpm-workspace.yaml` 工作区配置文件。
+2. 用特定的语法来安装依赖。
+
+没了，就这样。
+
+## 其他参考资料
+
+- [`从零单排：使用pnpm创建monorepo`](https://juejin.cn/post/7145010706063523854)
 
 ## 批量删除 `node_modules` 文件夹
 
