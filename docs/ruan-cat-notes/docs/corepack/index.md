@@ -155,3 +155,29 @@ corepack install -g pnpm@latest
 ![2025-02-27-22-56-01](https://gh-img-store.ruan-cat.com/img/2025-02-27-22-56-01.png)
 
 :::
+
+## 利用 corepack 实现 node 项目控制指定版本的 pnpm 包管理器
+
+为了统一项目开发人员使用相同的包管理器，我这里使用 preinstall 钩子来管控包管理器。
+
+基于上述的 [corepack 的 key 值校验问题](https://github.com/nodejs/corepack/pull/614)，这里根据不同的情况使用不同的命令，以下是我的最佳实践：
+
+### corepack 没到 0.31.0 版本
+
+在 corepack 没到 0.31.0 版本时，用以下命令：
+
+::: details
+
+<<< ./corepack-preinstall-1.json
+
+:::
+
+### corepack 满足 0.31.0 版本
+
+在 corepack 满足所需的版本时，使用以下命令：
+
+::: details
+
+<<< ./corepack-preinstall-2.json
+
+:::
