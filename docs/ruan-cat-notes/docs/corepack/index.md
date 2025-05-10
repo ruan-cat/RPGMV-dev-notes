@@ -146,6 +146,10 @@ corepack prepare pnpm@9.15.0 --activate
 
 实测以下命令是正常可用的；
 
+```bash
+corepack install -g pnpm@latest
+```
+
 ::: details
 
 ![2025-02-27-22-56-01](https://gh-img-store.ruan-cat.com/img/2025-02-27-22-56-01.png)
