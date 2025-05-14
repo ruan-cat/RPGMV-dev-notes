@@ -19,3 +19,13 @@
 ## 识别失败的情况
 
 在项目内，vue-i18n 至少要 8 版本，typescript 至少要 5 版本才可以使用。
+
+## 疑似工作区模式的 bug
+
+在 monorepo 下，也主动配置了 `i18n-ally.enabledFrameworks` 可用框架后，项目确实能够实现自动翻译。
+
+![2025-05-14-19-07-33](https://gh-img-store.ruan-cat.com/img/2025-05-14-19-07-33.png)
+
+但是以 vscode 工作区打开项目后，翻译就失效了。
+
+![2025-05-14-19-09-50](https://gh-img-store.ruan-cat.com/img/2025-05-14-19-09-50.png)
