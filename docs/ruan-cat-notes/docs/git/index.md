@@ -219,3 +219,7 @@ To add an exception for this directory, call:
 我用 vscode 打开一个新创建的 git 项目一点问题都没有。但是用 jetbrains 的 idea 打开就有问题，直接给我报这个错误。
 
 除了按照提示增加安全目录以外，还有什么标本兼治的方式么？比如全局设置 jetbrains 公司的产品不再对 git 仓库做任何安全检查？
+
+## 退出 git bash
+
+- https://blog.csdn.net/weixin_41287260/article/details/89813851
