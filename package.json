@@ -5,11 +5,9 @@
 	"description": "笔记单仓根目录。",
 	"license": "MIT",
 	"type": "module",
-	"packageManager": "pnpm@9.10.0",
+	"packageManager": "pnpm@9.15.0",
 	"engines": {
-		"vscode": "^1.22.0",
-		"node": ">=20.15.1",
-		"pnpm": ">=9.5.0"
+		"node": ">=22.14.0"
 	},
 	"scripts": {
 		"on-github-action-flow": "turbo build:docs",
