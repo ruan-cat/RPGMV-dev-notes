@@ -15,7 +15,7 @@ const config: Config = {
 			type: "userCommands",
 			outputDirectory: "docs/.vitepress/dist",
 			targetCWD: "./docs/ruan-cat-notes",
-			url: domains.notes as unknown as string[],
+			url: domains.notesGithubWorkflow as unknown as string[],
 			userCommands: [
 				// "pnpm -C=./docs/ruan-cat-notes build:docs"
 			],
