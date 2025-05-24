@@ -6,7 +6,7 @@
 	"description": "阮喵喵自己的笔记。",
 	"scripts": {
 		"docs:dev": "vitepress dev docs --port 8080",
-		"build:docs": "vitepress build docs",
+		"build:docs": "cross-env NODE_OPTIONS=--max-old-space-size=8192 vitepress build docs",
 		"docs:dev-vp": "vuepress-vite dev docs --clean-cache --open",
 		"build:docs-vp": "vuepress-vite build docs",
 		"docs:update-package": "pnpm dlx vp-update",
