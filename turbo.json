@@ -17,6 +17,15 @@
 			"dependsOn": [
 				"^clear"
 			]
+		},
+		"do-build-note-doc": {
+			"cache": true,
+			"outputs": [
+				"docs/ruan-cat-notes/docs/.vitepress/dist/**"
+			],
+			"dependsOn": [
+				"@ruan-cat-docs/notes#build:docs"
+			]
 		}
 	}
 }
