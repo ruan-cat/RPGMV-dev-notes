@@ -28,7 +28,8 @@
 		"git:fetch": "git fetch -p",
 		"git:push": "git push --follow-tags",
 		"turbo:update-packages": "turbo docs:update-package && pnpm update-package",
-		"build:docs:note": "turbo run do-build-note-doc"
+		"build:docs:note": "turbo run do-build-note-doc",
+		"build:docs:01star": "turbo run do-build-01star-doc"
 	},
 	"dependencies": {
 		"@vercel/analytics": "^1.5.0",
