@@ -54,9 +54,9 @@ pnpm i -P http-proxy-middleware
 
 代码如下：
 
-::: details \_api\proxy.js 云函数
+::: details `_api\proxy.js` 云函数
 
-<<< ./code/020/\_api-proxy.js
+<<< ./code/020/api-proxy.js
 
 :::
 
