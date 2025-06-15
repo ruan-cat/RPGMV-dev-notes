@@ -13,7 +13,7 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@ruan-cat/vitepress-preset-config": "workspace:^",
+		"@ruan-cat/vitepress-preset-config": "^0.13.0",
 		"vitepress": "^1.6.3"
 	}
 }
