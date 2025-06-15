@@ -1,0 +1,68 @@
+ *  正在执行任务: pnpm run dev 
+
+
+> @01s-11comm/admin@6.0.0 dev D:\code\01s\202505-11community\01s-11comm\comm-frontend\apps\admin
+> turbo vite:dev
+
+turbo 2.5.3
+
+• Packages in scope: @01s-11comm/admin
+• Running vite:dev in 1 packages
+• Remote caching disabled
+@01s-11comm/admin:rm:types: cache bypass, force executing e2b2eb3b86514ac7
+@01s-11comm/admin:rm:types: 
+@01s-11comm/admin:rm:types: > @01s-11comm/admin@6.0.0 rm:types D:\code\01s\202505-11community\01s-11comm\comm-frontend\apps\admin
+@01s-11comm/admin:rm:types: > node --import=tsx ./scripts/del-types.ts
+@01s-11comm/admin:rm:types: 
+@01s-11comm/admin:rm:types: ✔ 删除类型文件 components*.d.ts 成功
+@01s-11comm/admin:rm:types: ✔ 删除类型文件 auto-imports.d.ts 成功
+@01s-11comm/admin:rm:types: ✔ 删除类型文件 typed-router.d.ts 成功
+@01s-11comm/admin:vite:dev: cache bypass, force executing ab89bc77a54c2359
+@01s-11comm/admin:vite:dev: 
+@01s-11comm/admin:vite:dev: > @01s-11comm/admin@6.0.0 vite:dev D:\code\01s\202505-11community\01s-11comm\comm-frontend\apps\admin
+@01s-11comm/admin:vite:dev: > NODE_OPTIONS=--max-old-space-size=4096 vite --configLoader runner
+@01s-11comm/admin:vite:dev: 
+@01s-11comm/admin:vite:dev:  解析的文件路径: D:\code\01s\202505-11community\01s-11comm\comm-frontend\apps\admin\src\components
+@01s-11comm/admin:vite:dev: ╭─────────────────────────────────────────────╮
+@01s-11comm/admin:vite:dev: │ 您好! 欢迎使用 pure-admin 开源项目          │
+@01s-11comm/admin:vite:dev: │ 我们为您精心准备了下面两个贴心的保姆级文档  │
+@01s-11comm/admin:vite:dev: │ https://pure-admin.cn                       │
+@01s-11comm/admin:vite:dev: │ https://pure-admin-utils.netlify.app        │
+@01s-11comm/admin:vite:dev: ╰─────────────────────────────────────────────╯
+@01s-11comm/admin:vite:dev: mk ./types/components-in-components-path.d.ts success
+@01s-11comm/admin:vite:dev: 
+@01s-11comm/admin:vite:dev: 
+@01s-11comm/admin:vite:dev:   VITE v6.3.5  ready in 5966 ms
+@01s-11comm/admin:vite:dev: 
+@01s-11comm/admin:vite:dev:   ➜  Local:   http://localhost:8080/
+@01s-11comm/admin:vite:dev:   ➜  Network: http://192.168.1.3:8080/
+@01s-11comm/admin:vite:dev:   ➜  Network: http://192.168.81.1:8080/
+@01s-11comm/admin:vite:dev:   ➜  Network: http://192.168.5.1:8080/
+@01s-11comm/admin:vite:dev:   ➜  Vue DevTools: Open http://localhost:8080/__devtools__/ as a separate window
+@01s-11comm/admin:vite:dev:   ➜  Vue DevTools: Press Alt(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
+@01s-11comm/admin:vite:dev: file:///D:/code/01s/202505-11community/01s-11comm/comm-frontend/node_modules/.pnpm/vite@6.3.5_@types+node@20.17.48_jiti@2.4.2_less@4.3.0_lightningcss@1.30.1_sass@1.89.0_tsx@4.19.4_yaml@2.8.0/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:157
+@01s-11comm/admin:vite:dev:   return p.replace(windowsSlashRE, "/");
+@01s-11comm/admin:vite:dev:            ^
+@01s-11comm/admin:vite:dev: 
+@01s-11comm/admin:vite:dev: TypeError: Cannot read properties of null (reading 'replace')
+@01s-11comm/admin:vite:dev:     at slash$1 (file:///D:/code/01s/202505-11community/01s-11comm/comm-frontend/node_modules/.pnpm/vite@6.3.5_@types+node@20.17.48_jiti@2.4.2_less@4.3.0_lightningcss@1.30.1_sass@1.89.0_tsx@4.19.4_yaml@2.8.0/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:157:12)
+@01s-11comm/admin:vite:dev:     at normalizePath$3 (file:///D:/code/01s/202505-11community/01s-11comm/comm-frontend/node_modules/.pnpm/vite@6.3.5_@types+node@20.17.48_jiti@2.4.2_less@4.3.0_lightningcss@1.30.1_sass@1.89.0_tsx@4.19.4_yaml@2.8.0/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:6591:47)
+@01s-11comm/admin:vite:dev:     at FSWatcher.<anonymous> (file:///D:/code/01s/202505-11community/01s-11comm/comm-frontend/node_modules/.pnpm/vite-plugin-autogeneration-import-file@3.0.0_vite@6.3.5_@types+node@20.17.48_jiti@2.4.2_less@_ywj2alyo75wdv2uvffyxfv7js4/node_modules/vite-plugin-autogeneration-import-file/dist/index.js:145:24)
+@01s-11comm/admin:vite:dev:     at FSWatcher.emit (node:events:518:28)
+@01s-11comm/admin:vite:dev:     at FSWatcher._handle.onchange (node:internal/fs/watchers:215:12)
+@01s-11comm/admin:vite:dev: 
+@01s-11comm/admin:vite:dev: Node.js v22.14.0
+@01s-11comm/admin:vite:dev:  ELIFECYCLE  Command failed with exit code 1.
+@01s-11comm/admin:vite:dev: ERROR: command finished with error: command (D:\code\01s\202505-11community\01s-11comm\comm-frontend\apps\admin) D:\store\nvm-desktop\22.14.0\pnpm.CMD run vite:dev exited (1)
+@01s-11comm/admin#vite:dev: command (D:\code\01s\202505-11community\01s-11comm\comm-frontend\apps\admin) D:\store\nvm-desktop\22.14.0\pnpm.CMD run vite:dev exited (1)
+
+ Tasks:    1 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    10.687s
+Failed:    @01s-11comm/admin#vite:dev
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.
+
+ *  终端进程“C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command pnpm run dev”已终止，退出代码: 1。 
+ *  终端将被任务重用，按任意键关闭。 
