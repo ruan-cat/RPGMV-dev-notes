@@ -26,6 +26,15 @@
 			"dependsOn": [
 				"@ruan-cat-docs/notes#build:docs"
 			]
+		},
+		"do-build-01star-doc": {
+			"cache": true,
+			"outputs": [
+				"docs/docs-01-star/docs/.vitepress/dist/**"
+			],
+			"dependsOn": [
+				"@ruan-cat-docs/docs-01-star#build:docs"
+			]
 		}
 	}
 }
