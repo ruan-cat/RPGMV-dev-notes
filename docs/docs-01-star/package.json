@@ -5,6 +5,7 @@
 	"description": "阮喵喵在01星球内的一些公用文档",
 	"main": "index.js",
 	"scripts": {
+		"build": "pnpm run build:docs",
 		"docs:dev": "vitepress dev docs --port 8080",
 		"build:docs": "vitepress build docs",
 		"docs:preview": "vitepress preview docs"

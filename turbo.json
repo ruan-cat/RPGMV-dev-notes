@@ -12,13 +12,29 @@
 				"^build:docs"
 			]
 		},
-		"//#deploy-on-vercel": {
-			"cache": false
-		},
-		"do-deploy": {
-			"cache": false,
+		"@ruan-cat-docs/notes#build": {},
+		"@ruan-cat-docs/rpgmv-dev-notes#build": {},
+		"@ruan-cat-docs/docs-01-star#build": {},
+		"//#do-build": {
+			"cache": true,
+			"outputs": [
+				"**/dist/**",
+				"**/.vitepress/dist/**",
+				"**/.vuepress/dist/**"
+			],
 			"dependsOn": [
-				"build:docs",
+				"@ruan-cat-docs/notes#build",
+				"@ruan-cat-docs/rpgmv-dev-notes#build",
+				"@ruan-cat-docs/docs-01-star#build"
+			]
+		},
+		"//#deploy-on-vercel": {
+			"dependsOn": [
+				"//#do-build"
+			]
+		},
+		"//#do-deploy": {
+			"dependsOn": [
 				"//#deploy-on-vercel"
 			]
 		},

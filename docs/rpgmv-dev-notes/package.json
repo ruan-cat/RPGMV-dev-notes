@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"description": "阮喵喵的rmmv开发笔记",
 	"scripts": {
+		"build": "pnpm run build:docs",
 		"docs:dev": "vitepress dev docs --port 8080",
 		"build:docs": "vitepress build docs",
 		"docs:preview": "vitepress preview docs"
