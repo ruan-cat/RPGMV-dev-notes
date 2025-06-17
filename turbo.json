@@ -12,6 +12,12 @@
 				"^build:docs"
 			]
 		},
+		"do-deploy-vercel": {
+			"cache": false,
+			"dependsOn": [
+				"//#build"
+			]
+		},
 		"docs:update-package": {
 			"cache": false,
 			"dependsOn": []
