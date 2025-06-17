@@ -7,18 +7,19 @@ const config: Config = {
 	vercelProjectId: "prj_uyMHnLoqFJAOpeBVlHZochteDZdB",
 	vercelToken: "",
 
-	afterBuildTasks: ["pnpm turbo build:docs"],
-
 	deployTargets: [
 		// 笔记项目
 		{
-			type: "userCommands",
-			outputDirectory: "docs/.vitepress/dist",
-			targetCWD: "./docs/ruan-cat-notes",
+			type: "static",
+			targetCWD: "./docs/ruan-cat-notes/docs/.vitepress/dist",
 			url: domains.notesGithubWorkflow as unknown as string[],
-			userCommands: [
-				// "pnpm -C=./docs/ruan-cat-notes build:docs"
-			],
+		},
+
+		// 01星球建议笔记
+		{
+			type: "static",
+			targetCWD: "./docs/docs-01-star/docs/.vitepress/dist",
+			url: domains["01s-doc"] as unknown as string[],
 		},
 
 		// rmmv笔记项目
