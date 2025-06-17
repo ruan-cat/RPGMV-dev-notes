@@ -12,10 +12,26 @@
 				"^build:docs"
 			]
 		},
+		"do-build-docs": {
+			"cache": false,
+			"dependsOn": [
+				"build:docs"
+			]
+		},
+		"//#deploy-vercel-scripts": {
+			"cache": false
+		},
+		"do-deploy-vercel-scripts": {
+			"cache": false,
+			"dependsOn": [
+				"//#deploy-vercel-scripts"
+			]
+		},
 		"do-deploy-vercel": {
 			"cache": false,
 			"dependsOn": [
-				"//#build"
+				"do-build-docs",
+				"do-deploy-vercel-scripts"
 			]
 		},
 		"docs:update-package": {
