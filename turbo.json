@@ -7,6 +7,9 @@
 				"**/dist/**",
 				"**/.vitepress/dist/**",
 				"**/.vuepress/dist/**"
+			],
+			"dependsOn": [
+				"^build:docs"
 			]
 		},
 		"docs:update-package": {
