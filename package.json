@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 		"build": "turbo build:docs",
-		"deploy-vercel": "turbo do-deploy-vercel",
+		"deploy": "turbo do-deploy",
 		"up-ruan-cat": "pnpm -F=* up @ruan-cat/*@latest",
 		"git:dev-2-main": "git rebase dev main && pnpm run git:push",
 		"git:main-2-dev": "git rebase main dev",
@@ -28,7 +28,7 @@
 		"corepack:pnpm": "corepack enable && corepack install",
 		"git:fetch": "git fetch -p",
 		"git:push": "git push --follow-tags",
-		"deploy-vercel-scripts": "node --import=tsx ./scripts/vercel-deploy-tool.ts",
+		"deploy-on-vercel": "node --import=tsx ./scripts/vercel-deploy-tool.ts",
 		"turbo:update-packages": "turbo docs:update-package && pnpm update-package",
 		"on-github-action-flow": "pnpm run build",
 		"build:docs:note": "turbo run do-build-note-doc",
