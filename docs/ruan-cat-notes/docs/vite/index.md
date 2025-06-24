@@ -61,3 +61,9 @@ TODO: 一个可能的方案
 - https://vite.dev/config/#configuring-vite
 
 我还是倾向于等待 vite 更新，兴许到了后期版本可以完整地解决该问题。
+
+### 已处理
+
+vite 在 6 版本的时候，提供配置参数了。可以解决该问题。
+
+- https://vite.dev/config/#configuring-vite
