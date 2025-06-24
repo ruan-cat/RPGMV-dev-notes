@@ -1,0 +1,5 @@
+> @01s-08mes/frontend@1.0.0 up-ruan-cat-2 D:\code\github-desktop-store\zero-one-mes\mes-frontend
+> pnpm update '@ruan-cat/*' --latest
+
+ ERR_PNPM_LATEST_WITH_SPEC  Specs are not allowed to be used with --latest ('@ruan-cat/*')
+ ELIFECYCLE  Command failed with exit code 1.
