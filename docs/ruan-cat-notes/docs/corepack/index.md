@@ -181,3 +181,10 @@ corepack install -g pnpm@latest
 <<< ./corepack-preinstall-2.json
 
 :::
+
+## 在 node25 内移除 corepack
+
+- https://github.com/nodejs/corepack/issues/612
+- https://socket.dev/blog/node-js-tsc-votes-to-stop-distributing-corepack
+
+这些文章说明，未来 node 将不会携带 corepack，以后应该自己想办法安装 corepack。
