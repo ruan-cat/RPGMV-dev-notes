@@ -55,4 +55,4 @@ jobs:
         # https://dotenvx.com/docs/cis/github-actions#install-dotenvx
         run: |
           curl -sfS https://dotenvx.sh/install.sh | sh
-          pnpm dotenvx run -- pnpm run deploy-vercel
+          pnpm dotenvx run -- pnpm run deploy
