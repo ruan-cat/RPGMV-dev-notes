@@ -1,0 +1,5 @@
+> @ruan-cat-10wms/root@0.0.0 up-ruan-cat-2 D:\code\github-desktop-store\gh.10wms
+> pnpm -F=* up @ruan-cat/*@latest
+
+No matches found: "-F=*"
+ ELIFECYCLE  Command failed with exit code 1.

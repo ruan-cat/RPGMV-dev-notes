@@ -56,9 +56,41 @@ pnpm up '@ruan-cat/*@latest'
 
 目前（2025-6-25），这个写法在多个项目内都能正常工作。
 
+### pnpm9.15.0 的 -F monorepo 升级依赖
+
+我手上有 2 个 monorepo 项目，这个筛选参数又莫名其妙的不通用。一个项目能用，另一个项目又不能用了。
+
+针对以下命令：
+
+```bash
+pnpm -F=* up @ruan-cat/*@latest
+```
+
+我在文档项目内，是可以正常运行的，到了别的 monorepo 项目，又不行了。
+
+::: details 使用全量筛选参数升级整个项目全部包的依赖
+
+![2025-06-25-03-32-45](https://gh-img-store.ruan-cat.com/img/2025-06-25-03-32-45.png)
+
+:::
+
+::: details 失败
+
+![2025-06-25-03-34-09](https://gh-img-store.ruan-cat.com/img/2025-06-25-03-34-09.png)
+
+又莫名其妙的提示说，没有匹配到任何子包。
+
+<<< ./error-003.log
+
+:::
+
 ### pnpm9.15.0 的 -r monorepo 升级依赖
 
-### pnpm9.15.0 的 -F monorepo 升级依赖
+针对上面 `-F=*` 参数无法筛选任何子包的错误，目前只能用更加保守的写法，完成升级：
+
+```bash
+pnpm -w up '@ruan-cat/*@latest' && pnpm -r up '@ruan-cat/*@latest'
+```
 
 ## 升级全部依赖
 
