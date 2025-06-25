@@ -19,7 +19,7 @@
 		"git:vc-2-dev": "git rebase vc dev",
 		"clear:cache": "rimraf -g '**/{dist,.turbo,.vercel,.cache,.temp}'",
 		"clear:deps": "rimraf -g '**/{node_modules,package-lock.json,pnpm-lock.yaml}'",
-		"format": "prettier --write .",
+		"format": "prettier --experimental-cli --write .",
 		"test": "vitest --ui --watch --api.port=4000",
 		"create-code-workspace": "node --import=tsx ./scripts/generate.code-workspace.ts --name=note笔记项目",
 		"update-package": "pnpm dlx vp-update",
