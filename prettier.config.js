@@ -1,7 +1,7 @@
 // @ts-check
 /** @type {import("prettier").Config} */
 const config = {
-	plugins: ["prettier-plugin-lint-md"],
+	plugins: ["prettier-plugin-lint-md", "@prettier/plugin-oxc"],
 	singleQuote: false,
 	printWidth: 120,
 	semi: true,
