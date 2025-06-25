@@ -179,3 +179,11 @@ irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaoti
 对了还有，目前这个方法就是根据新用户能免费用半个月的 pro 版本 cursor，每半个月注册一次就行。注册要用邮箱注册嘛，所以要解决邮箱不够用的问题，我用的是域名邮箱，你有一个域名 理论上就能有无限个临时邮箱了
 
 ## 风车 cursorfree
+
+## 试着自己生成一个移动端 app
+
+试试用别人的提示词，和 gemini、v0、cursor 沟通一下，生成原型图，然后制作项目。
+
+- https://juejin.cn/post/7510151175677673487
+
+试一下这一套重新开始的，小 demo 快速起步的工作流程。
