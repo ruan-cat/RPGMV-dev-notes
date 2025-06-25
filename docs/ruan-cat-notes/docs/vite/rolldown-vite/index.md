@@ -19,3 +19,13 @@
 	}
 }
 ```
+
+## 目前（2025-6-25）还不行
+
+![2025-06-25-18-38-14](https://gh-img-store.ruan-cat.com/img/2025-06-25-18-38-14.png)
+
+```bash
+$env:RUST_BACKTRACE=1; pnpm dlx rolldown-vite build --configLoader runner
+```
+
+mdd

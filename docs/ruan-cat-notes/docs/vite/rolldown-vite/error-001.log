@@ -1,0 +1,18 @@
+PS D:\code\github-desktop-store\zero-one-mes\mes-frontend> $env:RUST_BACKTRACE=1; pnpm dlx rolldown-vite build --configLoader runner
+i  解析的文件路径: D:\code\github-desktop-store\zero-one-mes\mes-frontend\src\components                  18:33:14
+rolldown-vite v7.0.0 building for production...                                                           18:33:16
+
+ WARN  Warning validate output options.                                                                   18:33:16  
+- For the "manualChunks". manualChunks is not supported. Please use advancedChunks instead.
+
+transforming (2144) node_modules\.pnpm\@babel+runtime@7.27.6\node_modules\@babel\runtime\helpers\esm\toPrimitiv
+thread 'tokio-runtime-worker' panicked at C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ropey-1.6.1\src\rope.rs:952:36:
+called `Option::unwrap()` on a `None` value
+stack backtrace:
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+
+ ERROR  ✗ Build failed in 6.14s                                                                           18:33:22  
+
+ ERROR  error during build:                                                                               18:33:22  
+called `Option::unwrap()` on a `None` value
+Error: called `Option::unwrap()` on a `None` value
