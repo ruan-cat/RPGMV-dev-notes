@@ -135,3 +135,9 @@ https://juejin.cn/post/7018810975822282760
 TODO: prettier 依赖包和 vsc 的 prettier 在格式化时的细节差异？
 
 这导致了 vue 组件在使用时，有着不同的操作行为。
+
+## --experimental-cli 和 @prettier/plugin-oxc
+
+- https://juejin.cn/post/7518931398340001802
+
+prettier 的性能优化手段，配置以上参数，安装新的插件，可以有效提高 prettier 的运行速度。
