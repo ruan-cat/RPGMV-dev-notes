@@ -24,7 +24,7 @@
 6. git 分支合并
 7. 会议纪要
 
-## 前7天的任务设计与安排
+## 前 7 天的任务设计与安排
 
 ### 阅读模板
 
@@ -35,7 +35,7 @@
 
 阅读高保真的原型，抽离出具体的业务需求。
 
-### 进入apifox、云效等平台
+### 进入 apifox、云效等平台
 
 督促组员进入平台。
 
@@ -83,7 +83,7 @@
    - 弹框案例： https://pure-admin.github.io/vue-pure-admin/#/components/dialog
 3. 表单组件。（已完成）
    - 框架的表单组件使用例子： https://pure-admin.github.io/vue-pure-admin/#/form/index
-   - PlusProComponents的form表单组件： https://plus-pro-components.com/components/form.html
+   - PlusProComponents 的 form 表单组件： https://plus-pro-components.com/components/form.html
    - 组件类型配置： https://plus-pro-components.com/components/config.html
 4. 接口请求工具`useAxios`。（已完成）
    - https://vueuse.org/integrations/useAxios/
@@ -91,17 +91,17 @@
 5. 路由**排序**配置与**重定向**。
    - 菜单排序： https://pure-admin.cn/pages/routerMenu/#菜单排序-rank
    - 重定向： https://pure-admin.cn/pages/routerMenu/#重定向-2
-6. apifox接口审核。（已完成培训）
+6. apifox 接口审核。（已完成培训）
 
 ## 组长的其他个人计划
 
 主要是对框架改造、团队管理、进度把控的计划
 
-1. 准备apifox的通用邀请链接。只读权限。（已完成）
-2. 准备MySQL、navicat、本地运行原型。（已完成）
+1. 准备 apifox 的通用邀请链接。只读权限。（已完成）
+2. 准备 MySQL、navicat、本地运行原型。（已完成）
 3. 封装筛选用的左侧侧边栏组件。
 4. 接口请求工具的接入。（已完成）
-5. 验证码插件换成01s版本。
+5. 验证码插件换成 01s 版本。
 6. 开发首页。
 7. 开发登录页。
 8. 将各个组员负责的任务拆分细化，细粒度到页面，以便确定细致的工作量。（已完成）
@@ -112,20 +112,20 @@
 
 ## 2025-6-3 之后的细粒度计划表
 
-1. √ 先完成j1的接口评审。（已完成）
-2. 复查j4 j3 j2 的接口更改情况。（正在做）
+1. √ 先完成 j1 的接口评审。（已完成）
+2. 复查 j4 j3 j2 的接口更改情况。（正在做）
 3. √ 弄二级子页面的配置。包括：侧边栏隐藏、具名路由跳转写法；（已完成）
 4. 菜单权限的字符串设计，以及各个页面的指定权限控制。（已暂停）
-5. 编写模拟假接口，实现3种用户的菜单权限控制，先实现前端假路由的权限控制。
+5. 编写模拟假接口，实现 3 种用户的菜单权限控制，先实现前端假路由的权限控制。
 6. √ 测试 vitest 配置以及接口请求工具。（已完成）
 7. 检查用户信息接口的全局存储写法。拓展全局存储写法。
 8. 封装筛选用的左侧侧边栏组件。
-9. 让AI生成出假页面，实现权限控制下进入不同版本的首页。
+9. 让 AI 生成出假页面，实现权限控制下进入不同版本的首页。
 10. 套模板编写列表页、弹框。
 
 ## 2025-6-13 之后的细粒度计划表
 
 1. 登录接口。
 2. 用户全局数据接口。
-3. 菜单sql语句生成。
-4. 数据字典的pinia全局数据制作。
+3. 菜单 sql 语句生成。
+4. 数据字典的 pinia 全局数据制作。

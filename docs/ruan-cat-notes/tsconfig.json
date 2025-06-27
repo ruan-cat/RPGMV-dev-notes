@@ -5,9 +5,7 @@
 			"element-plus/global.d.ts"
 		],
 		"paths": {
-			"@docs/*": [
-				"./docs/*"
-			]
+			"@docs/*": ["./docs/*"]
 		}
 	},
 	"include": [
@@ -22,8 +20,6 @@
 		- https://vitepress.dev/guide/using-vue#vs-code-intellisense-support
 	*/
 	"vueCompilerOptions": {
-		"vitePressExtensions": [
-			".md"
-		]
+		"vitePressExtensions": [".md"]
 	}
 }

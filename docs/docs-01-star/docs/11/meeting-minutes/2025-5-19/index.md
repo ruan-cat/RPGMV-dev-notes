@@ -21,4 +21,4 @@ git merge origin/f1
 
 :::
 
-## 再次强调git用户名取名规范
+## 再次强调 git 用户名取名规范

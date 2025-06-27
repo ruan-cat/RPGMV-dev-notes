@@ -4,8 +4,8 @@
 		{
 			"name": "f1小组分支",
 			// 参考资料 https://stackoverflow.com/questions/45439796/globbing-in-git-log-to-show-certain-branches
-			"glob": "*f1*"
-		}
+			"glob": "*f1*",
+		},
 	],
 	// Enable the ESlint flat config support
 	// (remove this if your ESLint extension above v3.0.5)
@@ -20,7 +20,7 @@
 	// Auto fix
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": "explicit",
-		"source.organizeImports": "never"
+		"source.organizeImports": "never",
 	},
 	/** 
     - https://www.cnblogs.com/sq800/p/17484485.html
@@ -28,51 +28,51 @@
 	"eslint.format.enable": true,
 	"eslint.workingDirectories": [
 		{
-			"mode": "auto"
-		}
+			"mode": "auto",
+		},
 	],
 	// Silent the stylistic rules in you IDE, but still auto fix them
 	"eslint.rules.customizations": [
 		{
 			"rule": "style/*",
-			"severity": "off"
+			"severity": "off",
 		},
 		{
 			"rule": "format/*",
-			"severity": "off"
+			"severity": "off",
 		},
 		{
 			"rule": "*-indent",
-			"severity": "off"
+			"severity": "off",
 		},
 		{
 			"rule": "*-spacing",
-			"severity": "off"
+			"severity": "off",
 		},
 		{
 			"rule": "*-spaces",
-			"severity": "off"
+			"severity": "off",
 		},
 		{
 			"rule": "*-order",
-			"severity": "off"
+			"severity": "off",
 		},
 		{
 			"rule": "*-dangle",
-			"severity": "off"
+			"severity": "off",
 		},
 		{
 			"rule": "*-newline",
-			"severity": "off"
+			"severity": "off",
 		},
 		{
 			"rule": "*quotes",
-			"severity": "off"
+			"severity": "off",
 		},
 		{
 			"rule": "*semi",
-			"severity": "off"
-		}
+			"severity": "off",
+		},
 	],
 	// Enable eslint for all supported languages
 	"eslint.validate": [
@@ -90,6 +90,6 @@
 		"xml",
 		"gql",
 		"graphql",
-		"astro"
-	]
+		"astro",
+	],
 }

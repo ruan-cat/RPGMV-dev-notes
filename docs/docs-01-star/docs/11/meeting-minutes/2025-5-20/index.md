@@ -4,7 +4,7 @@
 
 以下内容仅为大纲，不会提供过于详细的内容。
 
-## git分支操作
+## git 分支操作
 
 ## 初始化本地项目
 
@@ -20,10 +20,10 @@
 
 ## 学会配置 definePage
 
-知道那些meta信息要配置。
+知道那些 meta 信息要配置。
 
-- [definePage语法](https://uvr.esm.is/guide/extending-routes.html#definepage)
-- [pure-admin定义路由](https://pure-admin.cn/pages/routerMenu/)
+- [definePage 语法](https://uvr.esm.is/guide/extending-routes.html#definepage)
+- [pure-admin 定义路由](https://pure-admin.cn/pages/routerMenu/)
 
 ## 明确新建页面文件的规范
 
@@ -35,9 +35,9 @@
 
 推迟到以后再培训如何使用接口请求工具。
 
-## 学会使用项目内配置的git commit提交命令
+## 学会使用项目内配置的 git commit 提交命令
 
-学会在项目内使用cz提交代码，编写有意义的提交内容。
+学会在项目内使用 cz 提交代码，编写有意义的提交内容。
 
 ## 注意阅读新增的技术文档
 

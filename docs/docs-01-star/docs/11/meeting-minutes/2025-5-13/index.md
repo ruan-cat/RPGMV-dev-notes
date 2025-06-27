@@ -2,8 +2,8 @@
 
 ## 汇报进度
 
-1. 共享屏幕，在线运行monorepo架构下面的子项目。
-   - 安装正确的vscode插件
+1. 共享屏幕，在线运行 monorepo 架构下面的子项目。
+   - 安装正确的 vscode 插件
    - 选择正确的根目录安装依赖
 2. 展示自己本地克隆的云效代码仓库。
    - 展示自己单独复制粘贴出来的 `版本计划.emmx` 文件。
@@ -28,11 +28,11 @@
 
 以之前的[10wms](https://github.com/ruan-cat/10wms)项目为例子，学习必要的开发技能。
 
-### vscode设置成管理员权限
+### vscode 设置成管理员权限
 
 - https://01s-10wms-frontend-docs.ruancat6312.top/#赋予-vscode-管理员运行权限
 
-### 更改git用户名
+### 更改 git 用户名
 
 - https://docs-01-star.ruan-cat.com/attention/change-git-user-name.html
 
@@ -51,34 +51,34 @@ git fetch -p
 git merge origin/f1
 ```
 
-### 明确git操作规范
+### 明确 git 操作规范
 
-未来开发时，每一个人必须遵守以下操作规范，否则会导致git提交不同步。
+未来开发时，每一个人必须遵守以下操作规范，否则会导致 git 提交不同步。
 
 1. 先拉取远程代码。
 2. 将主分支的代码合并到自己分支内。
 3. 及时的提交代码到远程仓库。
 
-### 学习vscode插件`git graph`
+### 学习 vscode 插件`git graph`
 
-插件id： `mhutchie.git-graph`
+插件 id： `mhutchie.git-graph`
 
-学会使用合适的git历史记录查看工具，查看当前项目的提交记录。
+学会使用合适的 git 历史记录查看工具，查看当前项目的提交记录。
 
-### 了解git忽略配置
+### 了解 git 忽略配置
 
-### 认识.vscode目录下的配置文件
+### 认识.vscode 目录下的配置文件
 
-### 学会vscode常用的命令
+### 学会 vscode 常用的命令
 
 调用命令的快捷键： `Ctrl+Shift+P`
 
-1. **重启vscode**： `reloadwindow`
+1. **重启 vscode**： `reloadwindow`
 2. **打开个人用户全局配置**： `openusersetjson`
 
-### vscode登录github账户，全局同步个人配置
+### vscode 登录 github 账户，全局同步个人配置
 
-### 在monorepo内选择正确的根目录终端
+### 在 monorepo 内选择正确的根目录终端
 
 ### 安装依赖
 
@@ -90,13 +90,13 @@ pnpm i
 
 create-code-workspace 命令。
 
-### 认识vscode工作区文件
+### 认识 vscode 工作区文件
 
 `*.code-workspace`
 
 打开工作区文件，以工作区的形式打开项目。
 
-### 学会使用cz命令编写满足规范的git commit
+### 学会使用 cz 命令编写满足规范的 git commit
 
 在工作区根目录内进入终端。
 
@@ -107,9 +107,9 @@ git add .
 cz
 ```
 
-务必编写有意义的，内容清晰明确的git commit提交记录。
+务必编写有意义的，内容清晰明确的 git commit 提交记录。
 
-### 学会使用vscode集成的npm脚本菜单
+### 学会使用 vscode 集成的 npm 脚本菜单
 
 ### 运行项目
 
@@ -139,6 +139,6 @@ clear:deps 命令。
 
 请各位自己酌情安排时间，务必掌握该表内列举的技术。
 
-## git操作推荐视频
+## git 操作推荐视频
 
 - [和傻子一起写代码](https://www.bilibili.com/video/BV1udEuzrEa7/)

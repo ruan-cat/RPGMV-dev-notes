@@ -25,6 +25,6 @@
 		// 代码片段： 针对element-ui组件库的代码片段。
 		"oibit.element-ui-helper",
 		// 小工具： 根据js的json字面量，生成ts类型
-		"russell.any-type"
-	]
+		"russell.any-type",
+	],
 }

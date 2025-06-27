@@ -7,25 +7,19 @@
 		"vite:dev": {
 			"cache": false,
 			"persistent": true,
-			"dependsOn": [
-				"rm:types"
-			]
+			"dependsOn": ["rm:types"]
 		},
 		"copy-changelog": {
 			"cache": false
 		},
 		"changelog-yaml": {
 			"cache": false,
-			"dependsOn": [
-				"copy-changelog"
-			]
+			"dependsOn": ["copy-changelog"]
 		},
 		"do-docs-dev": {
 			"cache": false,
 			"persistent": true,
-			"dependsOn": [
-				"changelog-yaml"
-			]
+			"dependsOn": ["changelog-yaml"]
 		}
 	}
 }

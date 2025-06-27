@@ -6,8 +6,8 @@
 
 本次培训的重点是：
 
-1. i18n分治策略以及各个组件对 i18n 的配置。
-2. git操作。
+1. i18n 分治策略以及各个组件对 i18n 的配置。
+2. git 操作。
 3. 表格搜索栏。
 
 ## 参考例子
@@ -19,7 +19,7 @@
 - https://pure-admin.github.io/vue-pure-admin/#/form/index
 - https://plus-pro-components.com/components/config.html#valuetype-可选的表单值
 
-### 动态变化的i18n文本
+### 动态变化的 i18n 文本
 
 - https://github.com/plus-pro-components/plus-pro-components/issues/184
 
@@ -34,15 +34,15 @@
 
 ### 动态的表格表头要用`headerRenderer`而不是`label`
 
-使用响应式的语法实现动态变化的i18n文本。
+使用响应式的语法实现动态变化的 i18n 文本。
 
 - https://vscode.dev/github/pure-admin/pure-admin-table/blob/main/src/columns.tsx#L36
 
-## 全新的i18n文件分治策略
+## 全新的 i18n 文件分治策略
 
-## 不推荐使用git graph插件来修改用户名了
+## 不推荐使用 git graph 插件来修改用户名了
 
-git graph插件修改的用户名，是本机的全体用户名，而不是当前仓库的用户名。二者的作用域范围是不一样的。
+git graph 插件修改的用户名，是本机的全体用户名，而不是当前仓库的用户名。二者的作用域范围是不一样的。
 
 这导致我另一个项目的提交记录，其用户名都是不对的。受到污染的。
 
@@ -52,7 +52,7 @@ git graph插件修改的用户名，是本机的全体用户名，而不是当�
 
 :::
 
-我们应该使用具体的命令来实现当前git项目改名。
+我们应该使用具体的命令来实现当前 git 项目改名。
 
 ```bash
 git config --local user.name f1-阮喵喵

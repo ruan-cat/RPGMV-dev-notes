@@ -3,22 +3,11 @@
 		"PowerShell": {
 			"source": "PowerShell",
 			"icon": "terminal-powershell",
-			"args": [
-				"-NoLogo",
-				"-NoExit",
-				"-Command",
-				"chcp.com 65001"
-			]
+			"args": ["-NoLogo", "-NoExit", "-Command", "chcp.com 65001"]
 		},
 		"Command Prompt": {
-			"path": [
-				"${env:windir}\\Sysnative\\cmd.exe",
-				"${env:windir}\\System32\\cmd.exe"
-			],
-			"args": [
-				"/K",
-				"chcp 65001"
-			],
+			"path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+			"args": ["/K", "chcp 65001"],
 			"icon": "terminal-cmd"
 		}
 	}

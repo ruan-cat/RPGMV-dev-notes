@@ -21,11 +21,11 @@
 
 ### 没有做过大项目，也没有现成的云效账号
 
-如果你在**5月10号**之前，从来**没有参加过大项目**的，从来**没有注册过云效账号**的。请[点此进入](https://account-devops.aliyun.com/account/invite?sign=04ce6f451f36275e93d622a3d367bc05)云效的公司平台。先进入云效平台对应的公司，`零壹星球公司`。
+如果你在**5 月 10 号**之前，从来**没有参加过大项目**的，从来**没有注册过云效账号**的。请[点此进入](https://account-devops.aliyun.com/account/invite?sign=04ce6f451f36275e93d622a3d367bc05)云效的公司平台。先进入云效平台对应的公司，`零壹星球公司`。
 
 这一批人之前没有进入到`零壹星球公司`内。将由阿伟学长审批加入公司，并由学长手动分配到`11comm部门`内。
 
-加入到部门后，随后在QQ群内通知组长。由组长将你们加入到项目组内。
+加入到部门后，随后在 QQ 群内通知组长。由组长将你们加入到项目组内。
 
 1. [点击链接](https://account-devops.aliyun.com/account/invite?sign=04ce6f451f36275e93d622a3d367bc05)申请进入`零壹星球公司`。
 2. 随后尽快的，主动登录一次云效平台。否则阿伟学长无法邀请你们加入到`11comm部门`。
@@ -38,7 +38,7 @@
 
 ### 之前做过大项目，有现成的云效账号
 
-如果你曾经参加过大项目，有了现成的账号，曾经处理过云效工单的。请尽快的将已经加入到`零壹星球公司`的云效账号，填写到腾讯文档内。并在QQ群内@群主。我需要手动将你们的信息完整地报送给阿伟学长。
+如果你曾经参加过大项目，有了现成的账号，曾经处理过云效工单的。请尽快的将已经加入到`零壹星球公司`的云效账号，填写到腾讯文档内。并在 QQ 群内@群主。我需要手动将你们的信息完整地报送给阿伟学长。
 
 这批人由阿伟学长手动添加到对应的`11comm部门`内，随后我才能将这批人加入到对应的`comm-f1项目`内。
 
@@ -53,7 +53,7 @@
 
 ::: warning
 
-在5月10号之后注册的账号，不算是有现成的云效账号。
+在 5 月 10 号之后注册的账号，不算是有现成的云效账号。
 
 :::
 
@@ -71,31 +71,31 @@
 
 ### vscode
 
-安装最新版本的vscode，并确保自己的vscode处于管理员权限。
+安装最新版本的 vscode，并确保自己的 vscode 处于管理员权限。
 
-本次项目不要求使用WebStorm。你可以酌情使用webstorm。
+本次项目不要求使用 WebStorm。你可以酌情使用 webstorm。
 
-### AI编程工具
+### AI 编程工具
 
-安装 Cursor / Trae / Windsurf 任意一款。务必保证手上有一款基于vscode的AI编程IDE。
+安装 Cursor / Trae / Windsurf 任意一款。务必保证手上有一款基于 vscode 的 AI 编程 IDE。
 
-未来我们将配置目前最火热的mcp服务，利用mcp服务加速编程开发。
+未来我们将配置目前最火热的 mcp 服务，利用 mcp 服务加速编程开发。
 
 安装[Trae](https://notes.ruan-cat.com/trae/)务必安装国外版本。
 
 ### Apifox
 
-[apifox](https://apifox.com/)，接口请求工具。未来接口联调、mock数据请求的核心工具。
+[apifox](https://apifox.com/)，接口请求工具。未来接口联调、mock 数据请求的核心工具。
 
 ::: tip
 
-注册apifox账户时，务必统一自己的用户名。
+注册 apifox 账户时，务必统一自己的用户名。
 
 :::
 
-### 亿图脑图MindMaster
+### 亿图脑图 MindMaster
 
-[亿图脑图MindMaster](https://www.edrawsoft.cn/mind/ad/mindmapv12.html)，是打开 `*.emmx` 文件的工具，未来阅读 **版本计划.emmx** 文件时，就使用该软件。
+[亿图脑图 MindMaster](https://www.edrawsoft.cn/mind/ad/mindmapv12.html)，是打开 `*.emmx` 文件的工具，未来阅读 **版本计划.emmx** 文件时，就使用该软件。
 
 ## 养成阅读文档的习惯
 
@@ -129,7 +129,7 @@ git clone https://codeup.aliyun.com/zero-one-star/zero-awei/zero-one-11community
 
 ::: warning
 
-不要将 `版本计划.emmx` 提交到git仓库。不要将 `版本计划.emmx` 的任何修改提交到仓库内。这会干扰其他人的阅读。甚至有可能会损坏文件。
+不要将 `版本计划.emmx` 提交到 git 仓库。不要将 `版本计划.emmx` 的任何修改提交到仓库内。这会干扰其他人的阅读。甚至有可能会损坏文件。
 
 :::
 
@@ -159,15 +159,15 @@ git clone https://codeup.aliyun.com/zero-one-star/zero-awei/zero-one-11community
 
 ## 提前了解项目架构
 
-目前云效仓库还没有正式可用的前端项目，可以用[这个项目](https://github.com/ruan-cat/10wms)来提前熟悉项目架构，和基础的git操作。
+目前云效仓库还没有正式可用的前端项目，可以用[这个项目](https://github.com/ruan-cat/10wms)来提前熟悉项目架构，和基础的 git 操作。
 
 1. 仅允许使用 pnpm 来安装依赖。
-2. 按照根包的node版本号说明，用NVM Desktop安装对应版本的node环境。
+2. 按照根包的 node 版本号说明，用 NVM Desktop 安装对应版本的 node 环境。
 3. 运行该项目，确保你可以运行里面全部的子包。每一个子包对应的项目都可以在你本地运行。
 
 ::: warning
 
-这个项目是阮喵喵独立维护的项目，并不是本次项目的仓库。本次项目的仓库是云效平台的仓库，不是这个github仓库。
+这个项目是阮喵喵独立维护的项目，并不是本次项目的仓库。本次项目的仓库是云效平台的仓库，不是这个 github 仓库。
 
 本项目仅仅是为了帮助你上手前端项目架构的。
 
@@ -191,6 +191,6 @@ git clone https://codeup.aliyun.com/zero-one-star/zero-awei/zero-one-11community
 ## 本次会议布置的任务
 
 1. 克隆云效仓库。
-2. 克隆阮喵喵维护的github仓库，提前了解项目架构。
+2. 克隆阮喵喵维护的 github 仓库，提前了解项目架构。
 3. 有针对性的阅读`原型`和`需求脑图`。
 4. 针对性地学习 [pure-admin](https://github.com/pure-admin/vue-pure-admin) 框架。

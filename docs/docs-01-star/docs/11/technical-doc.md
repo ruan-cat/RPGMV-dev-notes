@@ -10,13 +10,13 @@
 
 :::
 
-## git多人协作实践教学视频
+## git 多人协作实践教学视频
 
 - [和傻子一起写代码](https://www.bilibili.com/video/BV1udEuzrEa7/)
 
 ## lodash
 
-lodash 是基础性质库。是javascript层面上的工具库。
+lodash 是基础性质库。是 javascript 层面上的工具库。
 
 - [merge](https://www.lodashjs.com/docs/lodash.merge)
 - [isUndefined](https://www.lodashjs.com/docs/lodash.isUndefined)
@@ -24,7 +24,7 @@ lodash 是基础性质库。是javascript层面上的工具库。
 
 ::: tip
 
-本次项目使用的是lodash-es包。暂不考虑换成其他类似的竞品。
+本次项目使用的是 lodash-es 包。暂不考虑换成其他类似的竞品。
 
 - [引入 Lodash 的最佳方式](https://juejin.cn/post/6844904116544618503)
 
@@ -43,7 +43,7 @@ lodash 是基础性质库。是javascript层面上的工具库。
 
 ## vueuse
 
-组合式api的工具。本次项目重点使用的是 useAxios 。
+组合式 api 的工具。本次项目重点使用的是 useAxios 。
 
 - [useAxios](https://vueuse.org/integrations/useAxios/)
 - [useToggle](https://vueuse.org/shared/useToggle/)
@@ -56,9 +56,9 @@ lodash 是基础性质库。是javascript层面上的工具库。
 
 ## monorepo
 
-monorepo是前端项目的一种组织方式，是一种架构。
+monorepo 是前端项目的一种组织方式，是一种架构。
 
-- [如何发布一个monorepo的npm包？](https://www.bilibili.com/video/BV1Aj411h7F2/)
+- [如何发布一个 monorepo 的 npm 包？](https://www.bilibili.com/video/BV1Aj411h7F2/)
 - https://turborepo.com/docs/crafting-your-repository
 
 ## pnpm
@@ -75,7 +75,7 @@ monorepo是前端项目的一种组织方式，是一种架构。
 
 ## turbo
 
-monorepo下的node命令调度器。
+monorepo 下的 node 命令调度器。
 
 - [配置任务](https://turborepo.com/docs/crafting-your-repository/configuring-tasks)
 

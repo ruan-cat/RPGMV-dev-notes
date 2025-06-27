@@ -18,12 +18,10 @@
 
 - 安装依赖
   开发依赖
-
   - https://www.npmjs.com/package/@vue/cli-plugin-babel
   - https://www.npmjs.com/package/@vue/babel-preset-app
 
   生产依赖
-
   - https://www.npmjs.com/package/core-js
 
 - babel.config.js 配置

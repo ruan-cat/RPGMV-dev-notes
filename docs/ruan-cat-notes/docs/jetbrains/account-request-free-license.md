@@ -35,17 +35,14 @@
  -->
 
 - https://www.jetbrains.com/shop/eform/opensource
-
   1. 在这里填写表单
 
   具体表单填写如下图所示：
 
   ![2024-02-25-17-38-14](https://gh-img-store.ruan-cat.com/img/2024-02-25-17-38-14.png)
-
   2. 填写完的反馈
 
   ![2024-02-25-17-40-16](https://gh-img-store.ruan-cat.com/img/2024-02-25-17-40-16.png)
-
   3. 邮件通知
 
   ![2024-02-25-17-41-08](https://gh-img-store.ruan-cat.com/img/2024-02-25-17-41-08.png)
