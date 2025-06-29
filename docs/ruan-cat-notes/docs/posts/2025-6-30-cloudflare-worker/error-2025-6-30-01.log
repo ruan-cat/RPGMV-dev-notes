@@ -1,0 +1,27 @@
+2025-06-29T11:09:49.363Z	Initializing build environment...
+2025-06-29T11:09:56.440Z	Success: Finished initializing build environment
+2025-06-29T11:09:56.590Z	Cloning repository...
+2025-06-29T11:09:49.363Z	Initializing build environment...
+2025-06-29T11:09:56.440Z	Success: Finished initializing build environment
+2025-06-29T11:09:56.590Z	Cloning repository...
+2025-06-29T11:09:59.617Z	Detected the following tools from environment: nodejs@22.14.0, pnpm@9.15.0
+2025-06-29T11:09:59.617Z	Installing nodejs 22.14.0
+2025-06-29T11:10:07.331Z	Installing project dependencies: bun install
+2025-06-29T11:10:07.488Z	bun install v1.2.15 (df017990)
+2025-06-29T11:10:07.521Z	Resolving dependencies
+2025-06-29T11:10:17.478Z	Resolved, downloaded and extracted [3452]
+2025-06-29T11:10:18.611Z	Saved lockfile
+2025-06-29T11:10:18.611Z	
+2025-06-29T11:10:18.611Z	$ bun run corepack:pnpm && bun x only-allow pnpm
+2025-06-29T11:10:18.617Z	$ corepack enable && corepack install
+2025-06-29T11:10:18.946Z	Adding pnpm@9.15.0 to the cache...
+2025-06-29T11:10:19.075Z	╔═════════════════════════════════════════════════════════════╗
+2025-06-29T11:10:19.075Z	║                                                             ║
+2025-06-29T11:10:19.075Z	║   Use "pnpm install" for installation in this project.      ║
+2025-06-29T11:10:19.076Z	║                                                             ║
+2025-06-29T11:10:19.076Z	║   If you don't have pnpm, install it via "npm i -g pnpm".   ║
+2025-06-29T11:10:19.076Z	║   For more details, go to https://pnpm.js.org/              ║
+2025-06-29T11:10:19.076Z	║                                                             ║
+2025-06-29T11:10:19.076Z	╚═════════════════════════════════════════════════════════════╝
+2025-06-29T11:10:19.080Z	error: preinstall script from "@01s-11comm/root" exited with 1
+2025-06-29T11:10:19.114Z	Failed: error occurred while installing tools or dependencies
