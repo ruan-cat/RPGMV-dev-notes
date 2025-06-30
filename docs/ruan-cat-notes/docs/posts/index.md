@@ -26,3 +26,7 @@
 这个东西会不会引入了太多概念了？大家觉得这个和我们现在的 useAxios 方案比起来，哪一个更加适合我们团队？
 
 - https://tanstack.com/query/latest/docs/framework/vue/overview
+
+### 对一个异步函数做包装，好像有点东西
+
+- https://tanstack.com/query/latest/docs/framework/vue/installation#use-of-composition-api-with-script-setup
