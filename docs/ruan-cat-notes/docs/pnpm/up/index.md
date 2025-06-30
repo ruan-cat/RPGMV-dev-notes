@@ -113,3 +113,15 @@ pnpm up *@latest
 ```bash
 pnpm up * @latest
 ```
+
+更加精简的写法：
+
+```bash
+pnpm up -L
+```
+
+在 monorepo 内的写法，增加 `-r` 参数即可。连同根包也能匹配到位。
+
+```bash
+pnpm -r up -L
+```
