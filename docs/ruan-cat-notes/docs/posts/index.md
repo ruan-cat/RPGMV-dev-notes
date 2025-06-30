@@ -19,7 +19,9 @@
 
 ![2025-06-30-22-59-12](https://gh-img-store.ruan-cat.com/img/2025-06-30-22-59-12.png)
 
-## @tanstack/vue-query 和 useAxios
+## 含有 vue 响应式变量的接口请求工具
+
+### @tanstack/vue-query 和 useAxios
 
 看看这个技术选型如何？对于获取接口请求的响应式变量而言，该方案有没有可行性？
 
@@ -30,3 +32,7 @@
 ### 对一个异步函数做包装，好像有点东西
 
 - https://tanstack.com/query/latest/docs/framework/vue/installation#use-of-composition-api-with-script-setup
+
+### vue-request
+
+- https://github.com/AttoJS/vue-request
