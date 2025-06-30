@@ -18,3 +18,11 @@
 - https://biomejs.dev/zh-cn/internals/language-support/
 
 ![2025-06-30-22-59-12](https://gh-img-store.ruan-cat.com/img/2025-06-30-22-59-12.png)
+
+## @tanstack/vue-query 和 useAxios
+
+看看这个技术选型如何？对于获取接口请求的响应式变量而言，该方案有没有可行性？
+
+这个东西会不会引入了太多概念了？大家觉得这个和我们现在的 useAxios 方案比起来，哪一个更加适合我们团队？
+
+- https://tanstack.com/query/latest/docs/framework/vue/overview
