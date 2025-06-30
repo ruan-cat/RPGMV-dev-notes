@@ -40,6 +40,12 @@ https://meeting.tencent.com/p/7933309962
 
 :::
 
+::: warning 腾讯会议会员过期
+
+从 6 月 11 号开始，阮喵喵的腾讯会议过期了。后续会议都是 40min 以内的。
+
+:::
+
 ## 每日例会时间
 
 每天晚上 8 点 20 分开始例会。
@@ -52,8 +58,37 @@ https://meeting.tencent.com/p/7933309962
 
 ## 项目生产环境地址
 
+项目有不同的部署流水线，故提供两种不同域名下的访问地址：
+
+### 高频部署更新
+
+- https://01s-11comm.ruan-cat.com
+- https://01s-11.ruan-cat.com
+
+::: tip 推荐访问
+
+从 2025-6-30 开始，前端项目从云效内迁移到[此仓库](https://github.com/ruan-cat/11comm/tree/dev)，且部署流水线从云效流水线换成了 cloudflare worker 流水线，故使用的域名也有变更。
+
+该域名预期在每次 dev 分支有提交时，都会触发一次部署。
+
+:::
+
+### 低频部署更新
+
 - https://01s-11comm.ruancat6312.top
 - https://01s-11.ruancat6312.top
+
+::: warning 不推荐访问
+
+该域名下的项目更新触发方式如下：
+
+- 手动运行部署命令。
+- 基于 main 分支的 github workflow 流水线文件。
+- 基于 master 分支的云效仓库代码提交。
+
+上述触发条件比较苛刻，故不推荐大家访问。
+
+:::
 
 ## 腾讯文档
 
