@@ -66,3 +66,7 @@
 - https://semantic-release.gitbook.io/semantic-release/recipes/ci-configurations/github-actions
 
 这个 github action 写的比较简单，不清楚能不能完成发包。可以试试看。代替现在的发包写法。
+
+## git clean -fdx
+
+试试看，看看能不能实现一次性删除一大堆内容？
