@@ -1,0 +1,30 @@
+Run npx changelogithub
+npm warn exec The following package was not found and will be installed: changelogithub@13.16.0
+
+changelogithub v13.16.0
+fatal: ambiguous argument '@ruan-cat/vuepress-preset-config@0.1.34...@ruan-cat/domains@0.6.5
+@ruan-cat/vuepress-preset-config@0.1.34': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+Error: Command failed: git --no-pager log "@ruan-cat/vuepress-preset-config@0.1.34...@ruan-cat/domains@0.6.5
+@ruan-cat/vuepress-preset-config@0.1.34" --pretty="----%n%s|%h|%an|%ae%n%b" --name-status
+fatal: ambiguous argument '@ruan-cat/vuepress-preset-config@0.1.34...@ruan-cat/domains@0.6.5
+@ruan-cat/vuepress-preset-config@0.1.34': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+@ruan-cat/vuepress-preset-config@0.1.34" --pretty="----%n%s|%h|%an|%ae%n%b" --name-status
+fatal: ambiguous argument '@ruan-cat/vuepress-preset-config@0.1.34...@ruan-cat/domains@0.6.5
+@ruan-cat/vuepress-preset-config@0.1.34': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at execCommand (file:///home/runner/.npm/_npx/b62f3a6189db43a0/node_modules/changelogen/dist/shared/changelogen.a79f5d5c.mjs:14:10)
+    at getGitDiff (file:///home/runner/.npm/_npx/b62f3a6189db43a0/node_modules/changelogen/dist/shared/changelogen.a79f5d5c.mjs:39:13)
+    at generate (file:///home/runner/.npm/_npx/b62f3a6189db43a0/node_modules/changelogithub/dist/shared/changelogithub.AtDj_jnB.mjs:431:28)
+    at async CAC.<anonymous> (file:///home/runner/.npm/_npx/b62f3a6189db43a0/node_modules/changelogithub/dist/cli.mjs:41:37)
+Error: Process completed with exit code 1.

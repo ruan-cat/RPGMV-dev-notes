@@ -37,15 +37,6 @@
 
 - https://github.com/AttoJS/vue-request
 
-## 生成 github release 发行版
-
-- https://github.com/unjs/changelogen
-- https://github.com/antfu/changelogithub
-
-这两个库，更加倾向于设置 github release 的发行版报告，而不是设置到 changelog 文件内。
-
-实际使用下来，在 monorepo 内，效果不好。
-
 ## 想办法同时实现 github release 和 changelog 的生成
 
 在一次提交内，实现两个 github release 的发布，并给各自的子包生成 changelog 文件。
