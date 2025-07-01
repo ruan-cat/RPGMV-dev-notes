@@ -59,3 +59,10 @@
 这个工作流，有点复杂，在 github action 内写的非常冗杂。
 
 不能学。
+
+### semantic-release
+
+- https://github.com/semantic-release/semantic-release
+- https://semantic-release.gitbook.io/semantic-release/recipes/ci-configurations/github-actions
+
+这个 github action 写的比较简单，不清楚能不能完成发包。可以试试看。代替现在的发包写法。
