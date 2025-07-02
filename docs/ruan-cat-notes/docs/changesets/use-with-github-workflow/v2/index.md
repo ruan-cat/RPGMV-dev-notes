@@ -4,8 +4,6 @@
 
 ## 总是说 404 错误
 
-changesets/action
-
 无法发包，总是说 404 错误。
 
 ```log
@@ -48,3 +46,18 @@ error npm error 404  '' is not in this registry.
 ![2025-07-01-22-16-56](https://gh-img-store.ruan-cat.com/img/2025-07-01-22-16-56.png)
 
 ![2025-07-02-18-04-43](https://gh-img-store.ruan-cat.com/img/2025-07-02-18-04-43.png)
+
+## 进度
+
+现在确实实现了基于 changesets/action 工作流的发包，但是 github release 的报告是混杂混乱的。不是短小的增量提交。
+
+要看看是不是非要实现完整的 pr 才能触发发包。
+
+## 提交变更集
+
+现在将变更集提交并合并到 main 分支内了，新建了分支，但是没有新建 pr。
+
+```log
+Error: HttpError: Validation Failed: {"resource":"PullRequest","code":"custom","message":"No commits between main and changeset-release/main"} - https://docs.github.com/rest/pulls/pulls#create-a-pull-request
+Error: Validation Failed: {"resource":"PullRequest","code":"custom","message":"No commits between main and changeset-release/main"} - https://docs.github.com/rest/pulls/pulls#create-a-pull-request
+```
