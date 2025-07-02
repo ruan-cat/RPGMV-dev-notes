@@ -39,12 +39,6 @@
 
 ## 想办法同时实现 github release 和 changelog 的生成
 
-在一次提交内，实现两个 github release 的发布，并给各自的子包生成 changelog 文件。
-
-- https://github.com/conventional-changelog/conventional-changelog/releases
-
-![2025-07-01-22-16-56](https://gh-img-store.ruan-cat.com/img/2025-07-01-22-16-56.png)
-
 ### trigensoftware/simple-release-action
 
 这个工作流，有点复杂，在 github action 内写的非常冗杂。
