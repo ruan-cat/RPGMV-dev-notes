@@ -8,6 +8,11 @@ changesets/action
 
 无法发包，总是说 404 错误。
 
+```log
+error an error occurred while publishing @xxxx/xxx: E404 Not Found - PUT https://registry.npmjs.org/@xxxx - Not found
+error npm error 404  '' is not in this registry.
+```
+
 ```yaml
 - name: 在 .npmrc 内写入token
   run: |
