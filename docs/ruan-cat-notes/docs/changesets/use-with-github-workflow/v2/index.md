@@ -61,3 +61,13 @@ error npm error 404  '' is not in this registry.
 Error: HttpError: Validation Failed: {"resource":"PullRequest","code":"custom","message":"No commits between main and changeset-release/main"} - https://docs.github.com/rest/pulls/pulls#create-a-pull-request
 Error: Validation Failed: {"resource":"PullRequest","code":"custom","message":"No commits between main and changeset-release/main"} - https://docs.github.com/rest/pulls/pulls#create-a-pull-request
 ```
+
+起因是我没有配置对正确的 version 命令。
+
+## 整个发包的操作流程
+
+- https://juejin.cn/post/7282951856514809897
+
+## 参考资料
+
+- https://juejin.cn/post/7140639347937640479
