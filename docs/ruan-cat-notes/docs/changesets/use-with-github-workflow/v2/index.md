@@ -68,6 +68,10 @@ Error: Validation Failed: {"resource":"PullRequest","code":"custom","message":"N
 
 - https://juejin.cn/post/7282951856514809897
 
+1. 提交变更集文件到 dev 内。
+2. 本地合并分支到主分支，生成 pr。
+3. 合并 pr，触发发包。
+
 ## 参考资料
 
 - https://juejin.cn/post/7140639347937640479
