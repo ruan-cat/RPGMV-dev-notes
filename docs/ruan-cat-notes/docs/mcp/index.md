@@ -45,7 +45,7 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 ```json
 {
 	"mcpServers": {
-		"promptx": {
+		"context7": {
 			"command": "cmd",
 			"args": ["/c", "npx", "-y", "@upstash/context7-mcp"]
 		}
