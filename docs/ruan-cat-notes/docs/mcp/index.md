@@ -35,3 +35,20 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 	}
 }
 ```
+
+## context7
+
+据说是一个能够索引最新内容的工具。
+
+- https://github.com/upstash/context7
+
+```json
+{
+	"mcpServers": {
+		"promptx": {
+			"command": "cmd",
+			"args": ["/c", "npx", "-y", "@upstash/context7-mcp"]
+		}
+	}
+}
+```
