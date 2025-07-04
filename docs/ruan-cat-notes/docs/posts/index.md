@@ -70,6 +70,21 @@
 
 比如：
 
-- codemirror 限定到 5 版本
+- codemirror 限定到 5 版本。因为 6 版本没有说明清楚变更了什么。况且我也不想花时间迁移配置。
+- cropperjs 限定到 1 版本。尽管有完整的[迁移日志](https://fengyuanchen.github.io/cropperjs/migration.html)，但是我不想花时间在这个包上面。
 
 这些依赖需要被锁定范围。
+
+### 某些依赖需要使用严格的 overrides 覆盖
+
+某些依赖包被明确的说明，特定版本存在严重的 bug，需要用低版本覆盖掉最新版本。
+
+比如：
+
+```yaml
+# pnpm-workspace.yaml
+overrides:
+  "css-select@^5.2.1": "5.2.0"
+```
+
+css-select ，需要严格约束到 5.2.0 版本。
