@@ -90,3 +90,12 @@ overrides:
 ```
 
 css-select ，需要严格约束到 5.2.0 版本。
+
+## antfu 发包的流程？
+
+我没有看到 antfu 的包有 changeset 变更集和 changelog 变更日志的东西。
+
+- 版本号升级 [bumpp](https://github.com/antfu-collective/bumpp)
+- 依赖构建 unbuild 或者是其他工具
+- github release 发版 changelogithub
+- 依赖升级 taze
