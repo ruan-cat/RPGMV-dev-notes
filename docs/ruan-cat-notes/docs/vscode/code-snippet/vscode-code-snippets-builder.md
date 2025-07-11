@@ -14,4 +14,4 @@ vcsb
 
 vscode-code-snippets-builder 已经被 [codess](https://codess.dumogu.top/) 所替换掉。
 
-点此阅读 [codess](./codess.md) 的笔记。
+点此阅读 [codess](./codess/index.md) 的笔记。
