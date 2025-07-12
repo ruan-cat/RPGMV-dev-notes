@@ -54,3 +54,4 @@ anyrouter 的官网成可以设置成国内镜像 `https://pmpjfbhq.cn-nb1.raina
 ## 安装 claude code 的 vscode 插件
 
 - https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code
+- https://docs.anthropic.com/en/docs/claude-code/ide-integrations
