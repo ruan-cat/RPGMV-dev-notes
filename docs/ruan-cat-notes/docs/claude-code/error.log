@@ -1,0 +1,6 @@
+找不到驱动器。名为“path”的驱动器不存在。
+所在位置 C:\Users\pc\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1:1 字符: 1
++ $path:ANTHROPIC_AUTH_TOKEN = "sk-Wc4PjwD5wbARFd2qYviemWqNVHcTMuMPPrcO ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (path:String) [], DriveNotFoundException     
+    + FullyQualifiedErrorId : DriveNotFound
