@@ -8,8 +8,10 @@ env:
   # 根据 vercel-deploy-tool 部署配置来决定是否需要以下环境变量
   # VERCEL_ORG_ID: ${{ secrets.vercel_orgId }}
   # VERCEL_PROJECT_ID: ${{ secrets.vercel_projectId }}
-  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+  # https://turborepo.com/docs/crafting-your-repository/constructing-ci#enabling-remote-caching
+  # https://vercel.com/docs/monorepos/remote-caching#use-remote-caching-from-external-ci/cd
+  TURBO_TOKEN: ${{ secrets.vercel_token }}
+  TURBO_TEAM: "ruancat-vercel-team"
 
 on:
   push:
