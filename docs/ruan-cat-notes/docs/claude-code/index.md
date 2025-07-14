@@ -55,3 +55,25 @@ anyrouter 的官网成可以设置成国内镜像 `https://pmpjfbhq.cn-nb1.raina
 
 - https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code
 - https://docs.anthropic.com/en/docs/claude-code/ide-integrations
+
+## 因为重装 git 而导致 powershell 无法启动 claude code
+
+我不知道为什么，重新安装 git 就导致 claude code 无法启动了。出现以下报错：
+
+<<< ./error-No_suitable_shell_found.log
+
+根据以下参考资料：
+
+- https://linux.do/t/topic/726007
+- https://note.com/syogaku/n/n2fb778a1c7d9
+
+总结出我需要额外配置面向 powershell 的环境变量。考虑到不想再全局的环境变量内写入太多的变量，增加心智负担，故考虑用 `code $profile` 的方式设置全局的 powershell 环境变量。
+
+多设置的环境变量如下：
+
+```bash
+$env:SHELL = "D:\dev-evn\git\bin\bash.exe"
+$env:CLAUDE_CODE_GIT_BASH_PATH = "D:\dev-evn\git\bin\bash.exe"
+```
+
+手动指定 git bash 的路径即可。
