@@ -11,7 +11,7 @@ env:
   # https://turborepo.com/docs/crafting-your-repository/constructing-ci#enabling-remote-caching
   # https://vercel.com/docs/monorepos/remote-caching#use-remote-caching-from-external-ci/cd
   TURBO_TOKEN: ${{ secrets.vercel_token }}
-  TURBO_TEAM: "ruancat-vercel-team"
+  TURBO_TEAM: "ruancat-projects"
 
 on:
   push:
