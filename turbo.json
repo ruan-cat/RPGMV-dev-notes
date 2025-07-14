@@ -2,7 +2,11 @@
 	"$schema": "https://turbo.build/schema.json",
 	"tasks": {
 		"//#pnpm:build": {
-			"cache": true
+			"cache": true,
+			"outputs": [
+				"**/.vuepress/dist/**",
+				"**/.vitepress/dist/**"
+			]
 		},
 		"//#deploy-on-vercel": {
 			"cache": false,
