@@ -125,3 +125,17 @@ pnpm up -L
 ```bash
 pnpm -r up -L
 ```
+
+::: warning 升级到 latest 不一定是最准确的
+
+有些依赖包按照 latest tag 来升级后，很容易出现严重的破坏性变更。甚至是升级后反而降低版本号的情况。
+
+为了处理这种情况，我个人采用基于 taze 的升级方式
+
+:::
+
+## 基于 taze 的升级方式
+
+详情请阅读：
+
+- https://vscode.dev/github/ruan-cat/vercel-monorepo-test/blob/dev/configs-package/taze-config/README.md
