@@ -51,3 +51,31 @@ TODO: 等待补全，目前没有实践过。
 添加后的效果如下：
 
 ![2025-07-03-21-33-58](https://gh-img-store.ruan-cat.com/img/2025-07-03-21-33-58.png)
+
+## cursor 模型封锁
+
+大约在 2025-7-17 左右，cursor 开始封锁中国大陆。
+
+### 设置 http1.1
+
+设置 http1.1 即可。如下图所示：
+
+- https://www.bilibili.com/video/BV1iputzCEvL/
+
+![2025-07-18-03-54-43](https://gh-img-store.ruan-cat.com/img/2025-07-18-03-54-43.png)
+
+### 设置配置
+
+在 cursor 内设置用户配置：
+
+- https://www.bilibili.com/video/BV17PgNzHEQv/
+
+```json
+{
+	"http.proxy": "http://localhost:10809",
+	"http.proxyStrictSSL": false,
+	"http.proxySupport": "override",
+	"http.noProxy": [],
+	"cursor.general.disableHttp2": true
+}
+```
