@@ -9,7 +9,7 @@
 		}
 	},
 	"code-runner.executorMap": {
-		"typescript": "node --import=tsx $fullFileName"
+		"typescript": "tsx $fullFileName"
 	},
 	"todo-tree.tree.disableCompactFolders": false,
 	"todo-tree.tree.showCountsInTree": true,
