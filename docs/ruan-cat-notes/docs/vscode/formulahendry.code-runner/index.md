@@ -90,6 +90,20 @@ npx ts-node-esm src\hooks\useEarlyWarningMapData\useEarlyWarningMapData.ts --fil
 }
 ```
 
+## 直接用 tsx 运行 typescript 文件
+
+目前（2025-7-18）看了很多前端仓库，意识到可以直接用 tsx 运行 typescript 文件了。
+
+上述的方案也可以改成更加精简的：
+
+```json
+{
+	"code-runner.executorMap": {
+		"typescript": "tsx $fullFileName"
+	}
+}
+```
+
 ## 运行单独的 typescript 文件
 
 上述的 code-runner 配置，本质上是配置运行 typescript 文件的 cli 命令行，目前能运行 typescript 文件的技术选型如下：
