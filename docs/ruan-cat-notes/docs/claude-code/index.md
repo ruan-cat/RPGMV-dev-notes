@@ -80,6 +80,8 @@ $env:CLAUDE_CODE_GIT_BASH_PATH = "D:\dev-evn\git\bin\bash.exe"
 
 ## 配置基于 Kimi 的 claude code
 
+- `https://aigc.bar/Claude教程/2025/07/12/kimi-k2-claude-code-guide`
+
 本质上是配置由 Kimi 提供的 token 和 baseUrl，模仿上面的配置，如下：
 
 ```bash
@@ -87,7 +89,11 @@ $env:ANTHROPIC_AUTH_TOKEN = "在kimi官网内新建的token"
 $env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/v1/messages"
 ```
 
-- `https://aigc.bar/Claude教程/2025/07/12/kimi-k2-claude-code-guide`
+### 对 ANTHROPIC_BASE_URL 有疑惑
+
+- https://platform.moonshot.cn/docs/guide/agent-support#配置-anthropic-api
+
+该文档称要配置成 `https://api.moonshot.cn/anthropic` 。
 
 ## 参考资料
 
