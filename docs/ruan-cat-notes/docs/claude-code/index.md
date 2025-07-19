@@ -83,3 +83,4 @@ $env:CLAUDE_CODE_GIT_BASH_PATH = "D:\dev-evn\git\bin\bash.exe"
 其他类似思路的参考资料：
 
 - https://www.bilibili.com/video/BV17ZuqzrE7E/
+- https://www.xmsumi.com/detail/1190
