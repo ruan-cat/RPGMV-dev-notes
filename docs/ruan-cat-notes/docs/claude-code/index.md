@@ -2,7 +2,7 @@
 
 命令行交互的 AI 编程工具，用起来有点古怪。
 
-## 注册 API key
+## 注册 anyrouter 的 API key
 
 - https://anyrouter.top/register?aff=a5MW
 
@@ -22,7 +22,7 @@ claude -v
 
 输出版本号即说明安装成功。
 
-## 全局筹备环境变量
+## 全局配置基于 anyrouter 环境变量
 
 为 window10 系统全局的 powershell 提供环境变量。
 
@@ -77,6 +77,17 @@ $env:CLAUDE_CODE_GIT_BASH_PATH = "D:\dev-evn\git\bin\bash.exe"
 ```
 
 手动指定 git bash 的路径即可。
+
+## 配置基于 Kimi 的 claude code
+
+本质上是配置由 Kimi 提供的 token 和 baseUrl，模仿上面的配置，如下：
+
+```bash
+$env:ANTHROPIC_AUTH_TOKEN = "在kimi官网内新建的token"
+$env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/v1/messages"
+```
+
+- `https://aigc.bar/Claude教程/2025/07/12/kimi-k2-claude-code-guide`
 
 ## 参考资料
 
