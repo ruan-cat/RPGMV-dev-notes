@@ -43,3 +43,18 @@ pnpm approve-builds -g
 按照要求做，然后在交互式的命令行内选择要构建的依赖包即可。
 
 这是我最反感 pnpm10 的一部分，因为默认的 postinstall 行为被关掉了，改成要求我们手动批准允许构建的依赖包。
+
+## 配置 onlyBuiltDependencies
+
+在 package.json 内的 pnpm.onlyBuiltDependencies 内提供允许预构建的依赖包。即可避免使用 `approve-builds` 命令。
+
+- https://pnpm.io/zh/settings#onlybuiltdependencies
+- https://www.pnpm.cn/next/package_json#pnpmonlybuiltdependencies
+
+### neverBuiltDependencies
+
+`neverBuiltDependencies` 和 `onlyBuiltDependencies` 是互斥的配置，目前（2025-7-21）我没有使用。
+
+- https://blog.nyaasu.top/front-end/electron_pnpm10.html
+- https://www.idzd.top/archives/2923/
+- https://github.com/pnpm/pnpm/issues/9032#issuecomment-2633440395
