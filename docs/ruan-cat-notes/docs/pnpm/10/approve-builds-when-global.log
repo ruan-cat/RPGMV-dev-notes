@@ -1,0 +1,29 @@
+C:\Users\pc\AppData\Local\pnpm\global\5:
++ @antfu/ni 23.3.1
++ @anthropic-ai/claude-code 1.0.51
++ @electron/asar 3.3.1
++ cnpm 9.4.0
++ codess 1.1.10
++ commitizen 4.3.1
++ cz-git 1.11.0
++ degit 2.8.4
++ giget 1.2.3
++ neonctl 1.37.0
++ nuxthub 0.5.18
++ pnpm 9.15.0
++ rimraf 6.0.1
++ taze 19.1.0
++ trash-cli 6.0.0
++ tsx 4.19.2
++ turbo 2.4.4
++ vercel 41.2.0
++ wrangler 4.19.2
+
+╭ Warning ──────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                               │
+│   Ignored build scripts: @parcel/watcher, esbuild, sharp, workerd.                            │
+│   Run "pnpm approve-builds -g" to pick which dependencies should be allowed to run scripts.   │
+│                                                                                               │
+╰───────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Done in 10s using pnpm v10.13.1

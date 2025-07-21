@@ -12,7 +12,7 @@
 
 我在安装全局依赖时，出现这个问题：
 
-```bash
+```log
  ERR_PNPM_VIRTUAL_STORE_DIR_MAX_LENGTH_DIFF  This modules directory was created using a different virtual-store-dir-max-length value. Run "pnpm install" to recreate the modules directory.
 ```
 
@@ -23,3 +23,23 @@ issue 说运行以下命令即可：
 ```bash
 pnpm i -g
 ```
+
+不运行这个命令，我本来就安装好的全局包，就全部丢失了。
+
+## approve-builds
+
+在我全局安装依赖时，出现这个要求：
+
+::: details 要求运行 `pnpm approve-builds -g`
+
+<<< ./approve-builds-when-global.log
+
+:::
+
+```bash
+pnpm approve-builds -g
+```
+
+按照要求做，然后在交互式的命令行内选择要构建的依赖包即可。
+
+这是我最反感 pnpm10 的一部分，因为默认的 postinstall 行为被关掉了，改成要求我们手动批准允许构建的依赖包。
