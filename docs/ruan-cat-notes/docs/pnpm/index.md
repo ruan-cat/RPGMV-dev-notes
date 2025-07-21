@@ -268,6 +268,14 @@ corepack prepare pnpm@9.7.0 --activate
 
 :::
 
+### 基于 `pnpm self-update` 命令完成全局升级
+
+我真搞不懂了，用 corepack 不能实现全局 pnpm 升级了。在 pnpm9 版本内，现在（2025-7-21）要用这个命令才能实现全局升级：
+
+```bash
+pnpm self-update
+```
+
 ## pnpm init
 
 快速生成 package.json 文件。快速初始化一个 node 项目
