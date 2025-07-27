@@ -83,3 +83,29 @@ TODO: 等待补全，目前没有实践过。
 ## mcp 配置自动审批
 
 - https://forum.cursor.com/t/how-to-allow-mcp-to-execute-automatically-in-cursor/100418
+
+![2025-07-28-07-49-59](https://gh-img-store.ruan-cat.com/img/2025-07-28-07-49-59.png)
+
+## 限额
+
+![2025-07-28-07-50-13](https://gh-img-store.ruan-cat.com/img/2025-07-28-07-50-13.png)
+
+::: details 提醒我额度不够了
+
+![2025-07-28-07-50-23](https://gh-img-store.ruan-cat.com/img/2025-07-28-07-50-23.png)
+
+```txt
+You are projected to reach your usage limits by 7/31/2025 based on your current usage. Consider switching to Auto for more requests, asking for smaller changes, or enabling pay-as-you-go to avoid interruptions until your cycle resets on 8/26/2025.
+```
+
+:::
+
+::: details 每月 20 美元额度
+
+![2025-07-28-07-51-51](https://gh-img-store.ruan-cat.com/img/2025-07-28-07-51-51.png)
+
+```txt
+Pro comes with at least $20 of included usage per month. We work closely with the model providers to make this monthly allotment as high as possible. You'll be notified in-app when you're nearing your monthly limit.
+```
+
+:::
