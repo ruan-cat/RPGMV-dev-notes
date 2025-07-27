@@ -187,3 +187,11 @@ irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaoti
 - https://juejin.cn/post/7510151175677673487
 
 试一下这一套重新开始的，小 demo 快速起步的工作流程。
+
+## deno 的边缘服务器函数
+
+- https://dash.deno.com/welcome
+- https://docs.deno.com/deploy/manual/
+- https://dash.deno.com/account
+
+有空试试看 deno 部署大量的边缘计算云函数。
