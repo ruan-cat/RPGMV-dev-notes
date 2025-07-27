@@ -79,3 +79,7 @@ TODO: 等待补全，目前没有实践过。
 	"cursor.general.disableHttp2": true
 }
 ```
+
+## mcp 配置自动审批
+
+- https://forum.cursor.com/t/how-to-allow-mcp-to-execute-automatically-in-cursor/100418
