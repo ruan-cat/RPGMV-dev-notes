@@ -52,3 +52,31 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 	}
 }
 ```
+
+## Fetch MCP Server
+
+主动访问 url，获取信息。特别是主动获取 url 提供的 md 信息。
+
+- https://smithery.ai/server/fetch-mcp
+
+```json
+{
+	"mcpServers": {
+		"fetch-mcp": {
+			"command": "cmd",
+			"args": [
+				"/c",
+				"npx",
+				"-y",
+				"@smithery/cli@latest",
+				"run",
+				"fetch-mcp",
+				"--key",
+				"需要动态生成的key",
+				"--profile",
+				"需要动态生成的值"
+			]
+		}
+	}
+}
+```
