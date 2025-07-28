@@ -195,3 +195,12 @@ irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaoti
 - https://dash.deno.com/account
 
 有空试试看 deno 部署大量的边缘计算云函数。
+
+## Task Master
+
+据说是一个 mcp，能完成 AI 的任务调度。但是看了官网文档，发现这个包既可以作为 mcp 工具，又可以作为 cli 命令行工具。
+
+- https://github.com/eyaltoledano/claude-task-master
+- https://docs.task-master.dev/docs/getting-started/quick-start/quick-start
+
+注意到官网里面说，需要供应商提供 key 才行。现在（2025-7-29）我没办法去获得有意义的 key，这个就不做了。
