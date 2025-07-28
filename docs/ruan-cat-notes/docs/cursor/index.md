@@ -1,4 +1,4 @@
-# AI 编辑器 cursor
+# cursor ，AI 编辑器
 
 ## 不要安装 blockman 插件
 
