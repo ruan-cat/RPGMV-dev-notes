@@ -23,3 +23,12 @@
 ![2024-07-17-23-38-29](https://gh-img-store.ruan-cat.com/img/2024-07-17-23-38-29.png)
 
 ![2024-07-17-23-40-03](https://gh-img-store.ruan-cat.com/img/2024-07-17-23-40-03.png)
+
+## token 过期导致的故障
+
+```log
+Error: An unexpected error occurred in link: TypeError: Cannot read properties of undefined (reading 'value')
+Error: An unexpected error occurred in build: TypeError: Cannot read properties of undefined (reading 'value')
+```
+
+部署项目时，出现莫名其妙的错误。经过检查发现是 token 过期了。
