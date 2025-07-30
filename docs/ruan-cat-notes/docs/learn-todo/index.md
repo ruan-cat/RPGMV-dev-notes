@@ -204,3 +204,8 @@ irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaoti
 - https://docs.task-master.dev/docs/getting-started/quick-start/quick-start
 
 注意到官网里面说，需要供应商提供 key 才行。现在（2025-7-29）我没办法去获得有意义的 key，这个就不做了。
+
+## AI 读代码的平台
+
+- https://zread.ai/
+- https://deepwiki.org/
