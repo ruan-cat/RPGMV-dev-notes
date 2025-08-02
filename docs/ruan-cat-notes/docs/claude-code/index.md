@@ -38,6 +38,35 @@ code $profile
 
 设置成 `$env:` 环境变量就不出错了。[参考资料](https://zhuanlan.zhihu.com/p/677577008)。
 
+## 安装 claude code 的 vscode 插件
+
+可以通过安装 vscode 插件来实现快速启动 claude code。
+
+- https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code
+- https://docs.anthropic.com/en/docs/claude-code/ide-integrations
+
+## 因为重装 git 而导致 powershell 无法启动 claude code
+
+我不知道为什么，重新安装 git 就导致 claude code 无法启动了。出现以下报错：
+
+<<< ./error-No_suitable_shell_found.log
+
+根据以下参考资料：
+
+- https://linux.do/t/topic/726007
+- https://note.com/syogaku/n/n2fb778a1c7d9
+
+总结出我需要额外配置面向 powershell 的环境变量。考虑到不想在全局的环境变量内写入太多的变量，增加心智负担，故考虑用 `code $profile` 的方式设置全局的 powershell 环境变量。
+
+多设置的环境变量如下：
+
+```bash
+$env:SHELL = "D:\dev-evn\git\bin\bash.exe"
+$env:CLAUDE_CODE_GIT_BASH_PATH = "D:\dev-evn\git\bin\bash.exe"
+```
+
+手动指定 git bash 的路径即可。
+
 ## 基于 anyrouter.top 中转商的配置
 
 ### 注册 anyrouter 的 API key
@@ -65,34 +94,7 @@ $env:ANTHROPIC_BASE_URL = "https://anyrouter.top"
 
 anyrouter 的官网成可以设置成国内镜像 `https://pmpjfbhq.cn-nb1.rainapp.top` ，但是实测下来这个无法使用。
 
-## 安装 claude code 的 vscode 插件
-
-- https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code
-- https://docs.anthropic.com/en/docs/claude-code/ide-integrations
-
-## 因为重装 git 而导致 powershell 无法启动 claude code
-
-我不知道为什么，重新安装 git 就导致 claude code 无法启动了。出现以下报错：
-
-<<< ./error-No_suitable_shell_found.log
-
-根据以下参考资料：
-
-- https://linux.do/t/topic/726007
-- https://note.com/syogaku/n/n2fb778a1c7d9
-
-总结出我需要额外配置面向 powershell 的环境变量。考虑到不想在全局的环境变量内写入太多的变量，增加心智负担，故考虑用 `code $profile` 的方式设置全局的 powershell 环境变量。
-
-多设置的环境变量如下：
-
-```bash
-$env:SHELL = "D:\dev-evn\git\bin\bash.exe"
-$env:CLAUDE_CODE_GIT_BASH_PATH = "D:\dev-evn\git\bin\bash.exe"
-```
-
-手动指定 git bash 的路径即可。
-
-## 配置基于 Kimi 的 claude code
+## 基于 Kimi 官方网站的配置
 
 - `https://aigc.bar/Claude教程/2025/07/12/kimi-k2-claude-code-guide`
 
@@ -112,6 +114,18 @@ $env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/v1/messages"
 ### 月之暗面速度太慢
 
 目前，我使用国内`月之暗面`提供的 url 地址，响应速度太慢。故不继续使用该方案。
+
+## 基于 claudeyy.com 中转商的配置
+
+- www.claudeyy.com
+- [【炸裂！Cursor 禁止中国大陆地区访问后！ClaudeCode 崛起了！无限制不限次数使用！】](https://www.bilibili.com/video/BV12NhpzTEY9/)
+
+```bash
+$env:ANTHROPIC_AUTH_TOKEN = "sk-**"
+$env:ANTHROPIC_BASE_URL = "https://www.claudeyy.com/api"
+```
+
+我没有花钱购买套餐，所以该方案只能暂时保留废弃。
 
 ## 参考资料
 
