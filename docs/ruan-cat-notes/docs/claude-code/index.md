@@ -2,12 +2,6 @@
 
 命令行交互的 AI 编程工具，用起来有点古怪。
 
-## 注册 anyrouter 的 API key
-
-- https://anyrouter.top/register?aff=a5MW
-
-去这个站点注册账号，新建一个简单的 token，后面需要配置该 token。
-
 ## 全局安装 claude code
 
 ```bash
@@ -22,9 +16,37 @@ claude -v
 
 输出版本号即说明安装成功。
 
-## 全局配置基于 anyrouter 环境变量
+## 性能基于供应商的 url
 
-为 window10 系统全局的 powershell 提供环境变量。
+经过这段时间的使用，claude code 的性能主要取决于中转商提供的 url 性能。不同的中转商，提供的性能和额度都各不相同。
+
+## 全局配置 window powershell 的环境变量
+
+以下的方案，都需要在 window 的 powershell 内配置全局的环境变量，使用以下命令设置当前电脑的全局环境变量。
+
+```bash
+code $profile
+```
+
+将在 `C:\Users\你的用户名\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` 内新建配置文件，在此处填写各个供应商提供的环境变量即可。
+
+### 环境变量必须设置成 $env: 的形式
+
+如果设置成 `$path:` 形式的环境变量，那么每次启动 powershell 时，都会出现以下报错：
+
+<<< ./error.log
+
+设置成 `$env:` 环境变量就不出错了。[参考资料](https://zhuanlan.zhihu.com/p/677577008)。
+
+## 基于 anyrouter.top 中转商的配置
+
+### 注册 anyrouter 的 API key
+
+- https://anyrouter.top/register?aff=a5MW
+
+去这个站点注册账号，新建一个简单的 token，后面需要配置该 token。
+
+### 全局配置基于 anyrouter 环境变量
 
 随意找一个终端，根据[官方文档](https://learn.microsoft.com/zh-cn/powershell/scripting/learn/shell/creating-profiles?view=powershell-7.5#adding-customizations-to-your-profile)，在确保安装 vscode 的前提下，运行命令：
 
@@ -38,14 +60,6 @@ code $profile
 $env:ANTHROPIC_AUTH_TOKEN = "在anyrouter内新建的token"
 $env:ANTHROPIC_BASE_URL = "https://anyrouter.top"
 ```
-
-### 必须设置成 $env: 的形式
-
-如果设置成 `$path:` 形式的环境变量，那么每次启动 powershell 时，都会出现以下报错：
-
-<<< ./error.log
-
-设置成 `$env:` 环境变量就不出错了。[参考资料](https://zhuanlan.zhihu.com/p/677577008)。
 
 ### ANTHROPIC_BASE_URL 不能设置成国内镜像
 
