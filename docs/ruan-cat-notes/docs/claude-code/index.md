@@ -95,6 +95,10 @@ $env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/v1/messages"
 
 该文档称要配置成 `https://api.moonshot.cn/anthropic` 。
 
+### 月之暗面速度太慢
+
+目前，我使用国内`月之暗面`提供的 url 地址，响应速度太慢。故不继续使用该方案。
+
 ## 参考资料
 
 其他类似思路的参考资料：
