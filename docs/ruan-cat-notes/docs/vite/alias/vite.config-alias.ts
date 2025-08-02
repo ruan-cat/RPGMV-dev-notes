@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 // @ts-ignore
-import tsAlias from "vite-plugin-ts-alias";
+import { tsAlias } from "@ruan-cat/vite-plugin-ts-alias";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
