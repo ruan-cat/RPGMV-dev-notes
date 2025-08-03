@@ -19,5 +19,5 @@ pnpm i -g @google/gemini-cli
 ```bash
 # gemini-cli 的 api key
 # https://github.com/google-gemini/gemini-cli#use-a-gemini-api-key
-$env:GEMINI_API_KEY="AIzaSyC5_0GSeA2XJZURzg9XLxSJDSPh7iLGarg"
+$env:GEMINI_API_KEY="***"
 ```
