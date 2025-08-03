@@ -127,6 +127,17 @@ $env:ANTHROPIC_BASE_URL = "https://www.claudeyy.com/api"
 
 我没有花钱购买套餐，所以该方案只能暂时保留废弃。
 
+## 基于 dmxapi.cn 中转商的配置
+
+- https://www.dmxapi.cn/ClaudeCode
+- http://doc.dmxapi.cn/claude-code.html
+
+```bash
+$env:ANTHROPIC_BASE_URL = "https://www.dmxapi.cn"
+```
+
+<!-- TODO: 尚未测试 -->
+
 ## 参考资料
 
 其他类似思路的参考资料：
