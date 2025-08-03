@@ -38,7 +38,7 @@ code $profile
 
 设置成 `$env:` 环境变量就不出错了。[参考资料](https://zhuanlan.zhihu.com/p/677577008)。
 
-## 安装 claude code 的 vscode 插件
+## 相关的 vscode 插件
 
 可以通过安装 vscode 插件来实现快速启动 claude code。
 

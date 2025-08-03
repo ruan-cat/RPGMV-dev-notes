@@ -21,3 +21,7 @@ pnpm i -g @google/gemini-cli
 # https://github.com/google-gemini/gemini-cli#use-a-gemini-api-key
 $env:GEMINI_API_KEY="***"
 ```
+
+## 相关的 vscode 插件
+
+- https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist
