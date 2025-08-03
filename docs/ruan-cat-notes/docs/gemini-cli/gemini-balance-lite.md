@@ -8,15 +8,9 @@
 
 - [`【边缘函数中转Gemini API，国内无限免费爽用，云函数入门实战教程】`](https://www.bilibili.com/video/BV1iv8CzVE2w/)
 
-新建 Google 项目：
-
-- https://console.cloud.google.com/projectcreate
-
-获取自己的 `gemini API key`：
-
-- https://aistudio.google.com/apikey
-
 fork 仓库然后部署即可。
 
 - https://github.com/tech-shrimp/gemini-balance-lite
 - https://github.com/ruan-cat/gemini-balance-lite
+
+## 不提供 openai 格式

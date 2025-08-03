@@ -12,6 +12,12 @@ pnpm i -g @google/gemini-cli
 
 ## 申请 key
 
+新建 Google 项目：
+
+- https://console.cloud.google.com/projectcreate
+
+获取自己的 `gemini API key`：
+
 - https://aistudio.google.com/apikey
 
 ## 环境变量
