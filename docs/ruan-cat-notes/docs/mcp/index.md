@@ -94,3 +94,13 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 	}
 }
 ```
+
+## 个人全局通用的 mcp.json
+
+尽量实现频繁更新与配置：
+
+::: details
+
+<<< ./mcp.json
+
+:::
