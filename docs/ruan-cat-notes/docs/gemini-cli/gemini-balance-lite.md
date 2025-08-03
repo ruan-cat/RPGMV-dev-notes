@@ -13,4 +13,8 @@ fork 仓库然后部署即可。
 - https://github.com/tech-shrimp/gemini-balance-lite
 - https://github.com/ruan-cat/gemini-balance-lite
 
+部署产出的自建 url 地址：
+
+- https://gemini-balance-lite-sable.vercel.app/
+
 ## 不提供 openai 格式
