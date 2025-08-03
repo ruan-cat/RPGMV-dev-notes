@@ -25,3 +25,4 @@ $env:GEMINI_API_KEY="***"
 ## 相关的 vscode 插件
 
 - https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist
+- https://developers.google.com/gemini-code-assist/docs/overview?hl=zh-cn
