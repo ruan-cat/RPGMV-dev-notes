@@ -18,3 +18,17 @@ fork 仓库：
 在 netlify 手动部署后提供的地址：
 
 - https://openai-gemini-by-ruan-cat.netlify.app
+
+## 在 cursor 内配置
+
+受视频教程启发，在 cursor 内配置自建的地址。
+
+::: details
+
+![2025-08-04-12-23-47](https://gh-img-store.ruan-cat.com/img/2025-08-04-12-23-47.png)
+
+openai 的地址配置为 `https://openai-gemini-by-ruan-cat.netlify.app/edge` ，使用边缘运行时的尾缀。
+
+key 配置为在 `aistudio.google.com` 内申请的 `gemini API key`。
+
+:::
