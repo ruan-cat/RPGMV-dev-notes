@@ -20,6 +20,14 @@ pnpm i -g @google/gemini-cli
 
 - https://aistudio.google.com/apikey
 
+在相关的文章中，都称呼为 `gemini API key`。特指在 `aistudio.google.com/apikey` 内申请的 key。
+
+### 查看 key 的使用额度
+
+如下图所示，在[用量](https://aistudio.google.com/usage)这里查看：
+
+![2025-08-04-15-33-54](https://gh-img-store.ruan-cat.com/img/2025-08-04-15-33-54.png)
+
 ## 环境变量
 
 ```bash
