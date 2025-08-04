@@ -20,3 +20,15 @@ code snippet，翻译为 `代码片段`。我们主要享受的就是 vscode 一
 ### 仓库重构了
 
 现在叫做 [codess](https://codess.dumogu.top/) 。
+
+## 个人常用的全局代码片段 `common.code-snippets`
+
+该代码片段仅命名为 `common.code-snippets` ，作为全局常用的配置。在基于 vscode 的 AI 编程工具越来越多的情况下，为了实现更好的配置复用，故在此特别声明。
+
+尽可能保证该文件及时更新：
+
+::: details
+
+<<< ./common.code-snippets
+
+:::
