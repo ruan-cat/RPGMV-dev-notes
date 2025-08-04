@@ -39,4 +39,4 @@ key 配置为在 `aistudio.google.com` 内申请的 `gemini API key`。
 
 ### 仍有缺陷
 
-在 cursor 内运行
+在 cursor 内运行时，没有办法使用高级模型，用的还是 `gemini-2.5-flash`，而不是期望的 `gemini-2.5-pro` 。
