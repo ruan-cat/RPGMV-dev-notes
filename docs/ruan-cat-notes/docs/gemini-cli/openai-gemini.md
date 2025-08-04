@@ -13,10 +13,8 @@ fork 仓库：
 - https://github.com/PublicAffairs/openai-gemini
 - https://github.com/ruan-cat/openai-gemini
 
-手动 fork，然后进入 netlify，手动导入项目并部署项目。直接点击 README 文档的 netlify 部署按钮，会创建一个新的 github 仓库，产生冗余。
+手动 fork，然后进入 netlify，手动导入项目并部署项目。直接点击 README 文档的 netlify 部署按钮，会创建一个新的 github 仓库，产生冗余。我不希望创建新的仓库，而是复用自己 fork 的仓库。
 
-在 netlify 部署后提供的地址：
+在 netlify 手动部署后提供的地址：
 
-- https://cheery-donut-fbd375.netlify.app/
-
-https://openai-gemini-by-ruan-cat.netlify.app
+- https://openai-gemini-by-ruan-cat.netlify.app
