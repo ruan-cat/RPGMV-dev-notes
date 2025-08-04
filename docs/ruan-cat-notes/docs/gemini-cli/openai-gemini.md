@@ -19,6 +19,10 @@ fork 仓库：
 
 - https://openai-gemini-by-ruan-cat.netlify.app
 
+### 暂不考虑 cloudflare 代理
+
+不敢让 cloudflare 经常性的代理该地址，怕被封号。在相关视频评论区下，经常看到 cloudflare 制作的 gemini 代理被封号了。
+
 ## 在 cursor 内配置
 
 受视频教程启发，在 cursor 内配置自建的地址。
@@ -32,3 +36,7 @@ openai 的地址配置为 `https://openai-gemini-by-ruan-cat.netlify.app/edge` �
 key 配置为在 `aistudio.google.com` 内申请的 `gemini API key`。
 
 :::
+
+### 仍有缺陷
+
+在 cursor 内运行
