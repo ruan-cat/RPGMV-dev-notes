@@ -23,6 +23,14 @@
 
 根据上述教程和注意事项，实际配置到 cursor 的 url 应为： `https://www.dmxapi.cn/v1` 。
 
+### 尾缀 v1 无效
+
+根据[常见问题](http://qa.dmxapi.com/)，应该换成 `https://www.dmxapi.cn` ，无尾缀的情况。
+
+![2025-08-04-16-41-03](https://gh-img-store.ruan-cat.com/img/2025-08-04-16-41-03.png)
+
+在 cursor 内我们配置的是 openai 格式的地址，要满足要求才行。
+
 ### 增加正确的模型名称
 
 ::: details 获取正确的模型名称
