@@ -13,7 +13,9 @@
 - http://doc.dmxapi.cn/cursor.html
 - http://cursor.dmxapi.cn/
 
-### 差异化的 baseUrl
+### 供应商文档非常混乱
+
+#### 教程 1
 
 - http://doc.dmxapi.cn/baseurl.html
 
@@ -23,19 +25,24 @@
 
 根据上述教程和注意事项，实际配置到 cursor 的 url 应为： `https://www.dmxapi.cn/v1` 。
 
-::: danger 不应增加尾缀
-
 增加 v1 尾缀就错了，无法在 cursor 内完成 key 的校验。
 
-:::
-
-### 尾缀 v1 无效
+#### 教程 2
 
 根据[常见问题](http://qa.dmxapi.com/)，应该换成 `https://www.dmxapi.cn` ，无尾缀的情况。
 
 ![2025-08-04-16-41-03](https://gh-img-store.ruan-cat.com/img/2025-08-04-16-41-03.png)
 
 在 cursor 内我们配置的是 openai 格式的地址，要满足要求才行。
+
+### 根据不同的情况，配置不同的 baseUrl
+
+上述文档确实是很前后矛盾的，经过实验，我们应该这样动态的，手动更改 baseUrl 才行。
+
+分为`验证`和`使用`，两个不同的场景来配置 baseUrl。先验证，后使用。
+
+- key 值验证时 ： https://www.dmxapi.cn
+- 使用时 ： https://www.dmxapi.cn/v1
 
 ### 增加正确的模型名称
 
@@ -46,6 +53,12 @@
 用关键词 `DMXAPI` 来搜索。
 
 ![2025-08-04-16-16-21](https://gh-img-store.ruan-cat.com/img/2025-08-04-16-16-21.png)
+
+:::
+
+::: warning 国内版域名 `dmxapi.cn` 供应商才需要选择模型
+
+经过国际版的充值和实验，发现仅仅只有国内版的供应商，才需要选择 `DMXAPI` 关键词的模型。
 
 :::
 
