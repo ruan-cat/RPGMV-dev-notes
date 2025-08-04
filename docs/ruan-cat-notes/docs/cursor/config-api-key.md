@@ -23,6 +23,12 @@
 
 根据上述教程和注意事项，实际配置到 cursor 的 url 应为： `https://www.dmxapi.cn/v1` 。
 
+::: danger 不应增加尾缀
+
+增加 v1 尾缀就错了，无法在 cursor 内完成 key 的校验。
+
+:::
+
 ### 尾缀 v1 无效
 
 根据[常见问题](http://qa.dmxapi.com/)，应该换成 `https://www.dmxapi.cn` ，无尾缀的情况。
