@@ -69,30 +69,16 @@ $env:CLAUDE_CODE_GIT_BASH_PATH = "D:\dev-evn\git\bin\bash.exe"
 
 ## 基于 anyrouter.top 中转商的配置
 
-### 注册 anyrouter 的 API key
-
-- https://anyrouter.top/register?aff=a5MW
-
-去这个站点注册账号，新建一个简单的 token，后面需要配置该 token。
-
-### 全局配置基于 anyrouter 环境变量
-
-随意找一个终端，根据[官方文档](https://learn.microsoft.com/zh-cn/powershell/scripting/learn/shell/creating-profiles?view=powershell-7.5#adding-customizations-to-your-profile)，在确保安装 vscode 的前提下，运行命令：
-
-```bash
-code $profile
-```
-
-将在 `C:\Users\你的用户名\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` 内新建配置文件，在此处填写环境变量。
+- 注册账号并获得 key： https://anyrouter.top/register?aff=a5MW
 
 ```bash
 $env:ANTHROPIC_AUTH_TOKEN = "在anyrouter内新建的token"
 $env:ANTHROPIC_BASE_URL = "https://anyrouter.top"
 ```
 
-### ANTHROPIC_BASE_URL 不能设置成国内镜像
+### 注意事项
 
-anyrouter 的官网成可以设置成国内镜像 `https://pmpjfbhq.cn-nb1.rainapp.top` ，但是实测下来这个无法使用。
+1. **ANTHROPIC_BASE_URL 不能设置成国内镜像**： anyrouter 的官网成可以设置成国内镜像 `https://pmpjfbhq.cn-nb1.rainapp.top` ，但是实测下来这个无法使用。
 
 ## 基于 Kimi 官方网站的配置
 
@@ -117,7 +103,7 @@ $env:ANTHROPIC_BASE_URL = "https://api.moonshot.cn/v1/messages"
 
 ## 基于 claudeyy.com 中转商的配置
 
-- www.claudeyy.com
+- https://www.claudeyy.com
 - [【炸裂！Cursor 禁止中国大陆地区访问后！ClaudeCode 崛起了！无限制不限次数使用！】](https://www.bilibili.com/video/BV12NhpzTEY9/)
 
 ```bash
@@ -137,6 +123,23 @@ $env:ANTHROPIC_BASE_URL = "https://www.dmxapi.cn"
 ```
 
 <!-- TODO: 尚未测试 -->
+
+## 基于 aicodemirror.com 中转商的配置
+
+- 获取 key： https://www.aicodemirror.com/dashboard/apikeys
+- window 环境不生效需要手动删除文件重置： https://www.aicodemirror.com/dashboard/official-installation/windows
+
+```bash
+$env:ANTHROPIC_AUTH_TOKEN = "sk-**"
+$env:ANTHROPIC_API_KEY = "sk-**"
+$env:ANTHROPIC_BASE_URL = "https://api.aicodemirror.com/api/claudecode"
+```
+
+### 注意事项
+
+1. 这个供应商提供**免费额度**。
+2. 不能使用任何形式的翻墙。这个站点的 baseUrl 都不能翻墙，不能开启任何翻墙，TUN 不能开启，任何节点都不能选取。
+3. 需要额外多配置一个 `ANTHROPIC_API_KEY` ，这和其他供应商有所不同。
 
 ## 参考资料
 
