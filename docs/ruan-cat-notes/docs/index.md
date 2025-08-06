@@ -38,6 +38,12 @@ projects:
   - name: domains
     desc: 为 ruancat6312.top 和 ruan-cat.com 两个域名，提供预设好的常量。旨在于管理全部的域名，便于查询和使用。
     link: https://npm.im/@ruan-cat/domains
+  - name: taze-config
+    desc: 阮喵喵自用的 taze.config.ts 配置。
+    link: https://npm.im/@ruan-cat/taze-config
+  - name: vite-plugin-ts-alias
+    desc: 将 tsconfig.paths 配置转换成 vite 的 alias 路径别名。
+    link: https://npm.im/@ruan-cat/vite-plugin-ts-alias
   - name: vitepress-demo-plugin
     desc: 阮喵喵自己照抄别人vitepress-demo-plugin的插件。纯粹自用。
     link: https://npm.im/@ruan-cat/vitepress-demo-plugin
