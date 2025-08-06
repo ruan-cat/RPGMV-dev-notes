@@ -93,3 +93,5 @@ $evn:RUSTUP_UPDATE_ROOT="https://mirrors.ustc.edu.cn/rust-static/rustup"
 cargo --version
 rustc --version
 ```
+
+![2025-08-06-11-00-49](https://gh-img-store.ruan-cat.com/img/2025-08-06-11-00-49.png)
