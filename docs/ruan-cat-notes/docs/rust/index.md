@@ -23,4 +23,28 @@
 
 ![2025-08-06-09-21-29](https://gh-img-store.ruan-cat.com/img/2025-08-06-09-21-29.png)
 
+### 选择语言包
+
+![2025-08-06-09-22-58](https://gh-img-store.ruan-cat.com/img/2025-08-06-09-22-58.png)
+
+### Visual Studio 二次安装时共享组件、工具和 SDK 安装位置不能更改
+
+如果你不是二次安装，请跳过此步骤。
+
+如图，无法更改：
+
+![2025-08-06-10-03-26](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-03-26.png)
+
+按照教程要求；
+
+- https://zhuanlan.zhihu.com/p/612259470
+
+`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`
+
+![2025-08-06-10-04-04](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-04-04.png)
+
+更改注册表后，内容有效。
+
+![2025-08-06-10-05-59](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-05-59.png)
+
 ###
