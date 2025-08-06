@@ -15,7 +15,7 @@
 		"format-index-md": "prettier --write ./docs/index.md",
 		"do-index-md": "pnpm run make-index-md && pnpm run format-index-md",
 		"notuse--predocs:dev": "pnpm run do-index-md",
-		"prebuild:docs": "pnpm run do-index-md"
+		"notuse--prebuild:docs": "pnpm run do-index-md"
 	},
 	"dependencies": {
 		"@vercel/analytics": "^1.5.0",
