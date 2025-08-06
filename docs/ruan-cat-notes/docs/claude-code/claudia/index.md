@@ -5,6 +5,10 @@
 - https://www.aivi.fyi/aiagents/introduce-Claudia
 - [`【🚀Claudia让你丢掉Cursor告别命令行！Claude Code终于有GUI了！专为Claude Code打造最强可视化界面保姆级教程！可视化项目管理】`](https://www.bilibili.com/video/BV16D34zpEGu/)
 
+## 动机
+
+折腾这个工具的目的，是为了拥有更好的 claude code 使用体验。
+
 ## 本地运行项目，出错
 
 ::: details 缺少 ico 文件
