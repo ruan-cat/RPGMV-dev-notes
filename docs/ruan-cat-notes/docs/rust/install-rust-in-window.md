@@ -70,8 +70,16 @@ $evn:RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
 $evn:RUSTUP_UPDATE_ROOT="https://mirrors.ustc.edu.cn/rust-static/rustup"
 ```
 
-## 安装 rust，环境变量不对
+## 安装 rust 并手动重设一次环境变量
 
 ![2025-08-06-10-36-13](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-36-13.png)
 
-CARGO_HOME
+重设 `CARGO_HOME` 和 `RUSTUP_HOME` 环境变量。
+
+### CARGO_HOME
+
+![2025-08-06-10-45-18](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-45-18.png)
+
+### RUSTUP_HOME
+
+![2025-08-06-10-45-28](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-45-28.png)
