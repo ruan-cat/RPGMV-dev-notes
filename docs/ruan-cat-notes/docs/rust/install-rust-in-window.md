@@ -57,18 +57,19 @@
 
 - https://www.sunzhongwei.com/windows-11-install-rust-with-china-mirror
 
-运行以下命令：
+在环境变量这里设置，才有效：
 
+![2025-08-06-10-55-20](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-55-20.png)
+
+<!-- 运行以下命令：
 ```bash
 code $profile
 ```
-
 在用户的全局环境变量内，设置 rust 的镜像站点：
-
 ```bash
 $evn:RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
 $evn:RUSTUP_UPDATE_ROOT="https://mirrors.ustc.edu.cn/rust-static/rustup"
-```
+``` -->
 
 ## 安装 rust 并手动重设一次环境变量
 
