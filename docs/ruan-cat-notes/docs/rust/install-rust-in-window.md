@@ -84,3 +84,12 @@ $evn:RUSTUP_UPDATE_ROOT="https://mirrors.ustc.edu.cn/rust-static/rustup"
 ### RUSTUP_HOME
 
 ![2025-08-06-10-45-28](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-45-28.png)
+
+## 验证是否安装成功
+
+按照[教程](https://juejin.cn/post/7219656530235670588)，运行：
+
+```bash
+cargo --version
+rustc --version
+```
