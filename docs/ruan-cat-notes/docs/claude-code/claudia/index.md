@@ -5,6 +5,22 @@
 - https://www.aivi.fyi/aiagents/introduce-Claudia
 - [`【🚀Claudia让你丢掉Cursor告别命令行！Claude Code终于有GUI了！专为Claude Code打造最强可视化界面保姆级教程！可视化项目管理】`](https://www.bilibili.com/video/BV16D34zpEGu/)
 
-这个方案，目前（2025-8-3）用起来，感觉很粗糙，还需要本地自己打包编译 tauri 项目。相当于凭空又多出来了一个沟通中间层。
+## 本地运行项目，出错
 
-TODO: 暂时不继续跟进落实了，不清楚这些方案保质期能否长一些。不想折腾一下，过几个星期又作废没用了。
+::: details 缺少 ico 文件
+
+<<< ./error.log
+
+:::
+
+相关 issue：
+
+- https://github.com/getAsterisk/claudia/issues/256
+
+解决方案：
+
+- https://github.com/getAsterisk/claudia/issues/188#issuecomment-3111755644
+
+```bash
+npx @tauri-apps/cli icon .\src-tauri\icons\icon.png
+```
