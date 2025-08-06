@@ -47,4 +47,19 @@
 
 ![2025-08-06-10-05-59](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-05-59.png)
 
-###
+### 安装 rustup-init.exe
+
+按照官网，安装完 `Microsoft C++ 生成工具` 之后，就要下载并运行 `rustup-init.exe` 。
+
+![2025-08-06-10-12-33](https://gh-img-store.ruan-cat.com/img/2025-08-06-10-12-33.png)
+
+### 配置全局的 rust 环境变量
+
+<!-- TODO: -->
+
+- https://www.sunzhongwei.com/windows-11-install-rust-with-china-mirror
+
+```bash
+$ENV:RUSTUP_DIST_SERVER='https://mirrors.ustc.edu.cn/rust-static'
+$ENV:RUSTUP_UPDATE_ROOT='https://mirrors.ustc.edu.cn/rust-static/rustup'
+```
