@@ -14,7 +14,7 @@
 		"make-index-md": "tsx ./scripts/make-index-md.ts",
 		"format-index-md": "prettier --write ./docs/index.md",
 		"do-index-md": "pnpm run make-index-md && pnpm run format-index-md",
-		"predocs:dev": "pnpm run do-index-md",
+		"notuse--predocs:dev": "pnpm run do-index-md",
 		"prebuild:docs": "pnpm run do-index-md"
 	},
 	"dependencies": {
