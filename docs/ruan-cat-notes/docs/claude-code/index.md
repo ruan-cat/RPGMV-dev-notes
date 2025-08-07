@@ -117,9 +117,11 @@ $env:ANTHROPIC_BASE_URL = "https://www.claudeyy.com/api"
 ## 基于 dmxapi.cn 中转商的配置
 
 - https://www.dmxapi.cn/ClaudeCode
-- http://doc.dmxapi.cn/claude-code.html
+- 配置文档： http://doc.dmxapi.cn/claude-code.html
+- 获取 key： https://www.dmxapi.cn/token
 
 ```bash
+$env:ANTHROPIC_AUTH_TOKEN = "sk-**"
 $env:ANTHROPIC_BASE_URL = "https://www.dmxapi.cn"
 ```
 
