@@ -1,2 +1,7 @@
 packages:
-  - "docs/*"
+  - docs/*
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - vue-demi
