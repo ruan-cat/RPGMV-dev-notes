@@ -111,7 +111,7 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 ```json
 {
 	"mcpServers": {
-		"context7": {
+		"fetch-mcp": {
 			"command": "cmd",
 			"args": ["/c", "npx", "-y", "@tokenizin/mcp-npx-fetch"]
 		}
