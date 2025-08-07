@@ -51,6 +51,18 @@ better-sqlite3_binary_host_mirror=https://registry.npmmirror.com/-/binary/better
 
 :::
 
+## 面向 electron、electron-builder 和 better-sqlite3 的常见镜像源配置
+
+- https://juejin.cn/post/7356214996760461323
+
+下载的都是是二进制文件。
+
+```bash
+electron_mirror=https://registry.npmmirror.com/-/binary/electron/
+electron_builder_binaries_mirror=https://registry.npmmirror.com/-/binary/electron-builder-binaries/
+better_sqlite3_binary_host=https://registry.npmmirror.com/-/binary/better-sqlite3
+```
+
 ## 代理问题
 
 安装其他依赖时，称存在代理问题。
