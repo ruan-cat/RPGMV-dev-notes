@@ -1,5 +1,7 @@
 # claudia，claude code 的可视化桌面应用
 
+claudia，是面向 claude code 的可视化桌面应用。基于 tarui 技术。目前（2025-8-7）需要人为下载仓库源码，手动安装 rust 环境完成 exe 打包。
+
 - https://claudiacode.com/
 - https://github.com/getAsterisk/claudia
 - https://www.aivi.fyi/aiagents/introduce-Claudia
