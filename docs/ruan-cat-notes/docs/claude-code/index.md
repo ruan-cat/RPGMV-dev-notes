@@ -55,6 +55,7 @@ code $profile
 
 - https://linux.do/t/topic/726007
 - https://note.com/syogaku/n/n2fb778a1c7d9
+- 官方教程： https://docs.anthropic.com/zh-CN/docs/claude-code/setup#windows-设置
 
 总结出我需要额外配置面向 powershell 的环境变量。考虑到不想在全局的环境变量内写入太多的变量，增加心智负担，故考虑用 `code $profile` 的方式设置全局的 powershell 环境变量。
 
