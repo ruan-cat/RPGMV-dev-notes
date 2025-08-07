@@ -125,7 +125,7 @@ $env:ANTHROPIC_AUTH_TOKEN = "sk-**"
 $env:ANTHROPIC_BASE_URL = "https://www.dmxapi.cn"
 ```
 
-<!-- TODO: 尚未测试 -->
+这是一个国内中转商，可以付费，确实能用，但是用 token 确实太多了。
 
 ## 基于 aicodemirror.com 中转商的配置
 
