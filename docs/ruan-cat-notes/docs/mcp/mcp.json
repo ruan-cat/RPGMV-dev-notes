@@ -32,9 +32,7 @@
 				"run",
 				"fetch-mcp",
 				"--key",
-				"15fed4e6-18ae-4d4e-b350-9b7a4c770b79",
-				"--profile",
-				"surprising-mule-i2eCh2"
+				"15fed4e6-18ae-4d4e-b350-9b7a4c770b79"
 			],
 			"autoApprove": [
 				"fetch_markdown"
