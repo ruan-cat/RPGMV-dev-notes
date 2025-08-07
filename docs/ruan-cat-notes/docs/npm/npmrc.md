@@ -1,4 +1,4 @@
-# .npmrc
+# .npmrc ，npm 包管理器的配置文件
 
 .npmrc 是 node 项目针对于 npm 包管理器的配置文件，可以配置 npm 命令行的一些变量，也可以配置依赖包下载的镜像。
 
@@ -117,3 +117,5 @@ jobs:
 ```bash
 @ruan-cat:registry=https://registry.npmjs.org/
 ```
+
+## node25 即将不允许 npmrc 提供镜像源配置
