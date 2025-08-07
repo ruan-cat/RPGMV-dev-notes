@@ -95,6 +95,12 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 }
 ```
 
+::: warning 不推荐
+
+这个 mcp 工具是需要远程连接 smithery 的服务器的，经常出现连接失败的情况。故不打算继续使用该 mcp 了。换另外一个本地的，也能够获取 markdown 文档的 mcp。
+
+:::
+
 ## 个人全局通用的 mcp.json
 
 尽量实现频繁更新与配置：
