@@ -101,6 +101,24 @@ apifox 的官方 mcp，用于链接 apifox 文档。主要用于读取 apifox �
 
 :::
 
+## MCP NPX Fetch
+
+- https://glama.ai/mcp/servers/@tokenizin-agency/mcp-npx-fetch?locale=zh-CN#readme-md
+- https://github.com/tokenizin-agency/mcp-npx-fetch
+
+只提供本地版：
+
+```json
+{
+	"mcpServers": {
+		"context7": {
+			"command": "cmd",
+			"args": ["/c", "npx", "-y", "@tokenizin/mcp-npx-fetch"]
+		}
+	}
+}
+```
+
 ## 个人全局通用的 mcp.json
 
 尽量实现频繁更新与配置：
