@@ -7,3 +7,15 @@
 据说是更换 claude code 内部的模型，一个典型的做法是换成 gemini。
 
 试着用该方案，实现数个免费代理商的轮询，确保更换配置时丝滑顺畅。而不是手动切换配置文件的 key 值，很麻烦低效。
+
+## 全局安装
+
+```bash
+pnpm i -g @musistudio/claude-code-router
+```
+
+## 配置全局的 .claude-code-router/config.json 配置文件
+
+claude-code-proxy 的配置文件在全局的 `.claude-code-router/config.json` 内。
+
+## 基于
