@@ -17,4 +17,8 @@ fork 仓库然后部署即可。
 
 - https://gemini-balance-lite-sable.vercel.app/
 
+在 cloudflare 内代理的地址；
+
+- https://gemini-balance-lite.ruan-cat.com/
+
 ## 不提供 openai 格式
