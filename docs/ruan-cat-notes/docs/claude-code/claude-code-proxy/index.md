@@ -18,6 +18,14 @@ pnpm i -g @musistudio/claude-code-router
 
 claude-code-proxy 的配置文件在全局的 `.claude-code-router/config.json` 内。
 
+这是目前的配置文件，尽量保证及时更新：
+
+::: details 最新的 .claude-code-router/config.json 配置文件
+
+<<< ./config.json
+
+:::
+
 ## 基于 gemini-balance-lite 方案的中转商配置
 
 gemini-balance-lite 是一个使用边缘云函数实现的自建 gemini 轮询代理方案，点此阅读[自建教程笔记](../../gemini-cli/gemini-balance-lite/index.md)。
