@@ -1,0 +1,21 @@
+PS D:\code\github-desktop-store\gh.notes> ccr start
+undefined
+Loaded JSON config from: C:\Users\pc\.claude-code-router\config.json
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open 'C:\Users\pc\.claude-code-router\logs\ccr-2025-08-10T14:09:40.873Z.log'
+    at async open (node:internal/fs/promises:638:25)
+    at async RotatingFileStream.reopen (C:\Users\pc\AppData\Local\pnpm\global\5\.pnpm\@musistudio+claude-code-rou_8eebba572d89aedbba82aa7d5c79c13c\node_modules\@musistudio\claude-code-router\dist\cli.js:77186:14)
+Emitted 'error' event on RotatingFileStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\pc\\.claude-code-router\\logs\\ccr-2025-08-10T14:09:40.873Z.log'
+}
+
+Node.js v22.14.0
