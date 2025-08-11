@@ -1,5 +1,9 @@
 # cursor ，AI 编辑器
 
+## 下载
+
+- https://cursor.com/cn
+
 ## 不要安装 blockman 插件
 
 vscode 的 blockman 插件阻碍了选择的代码段高亮。造成交互效果差，无法得知那些东西被选择到。
