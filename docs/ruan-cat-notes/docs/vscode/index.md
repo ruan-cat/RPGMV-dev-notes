@@ -111,3 +111,9 @@ vscode 文件重命名后 gutter indicators 无查看任何内容
 目前选择的是 office viewer ，能查看就行了。暂时不考虑在 vscode 内编辑 office 的文件。
 
 截止目前（2024-12-5），已经移除此插件。该插件导致了 vscode 无法使用复制粘贴快捷键的严重 bug。
+
+## 在 window 右键内，添加用 vscode 打开的按钮
+
+改注册表即可。
+
+- https://blog.csdn.net/Beihai_Van/article/details/138591394
