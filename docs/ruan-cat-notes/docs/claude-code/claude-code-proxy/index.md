@@ -39,3 +39,7 @@ gemini-balance-lite 是一个使用边缘云函数实现的自建 gemini 轮询�
 在 window 内无法启动，莫名其妙报错。
 
 <<< ./error-1.log
+
+## 被卡住了
+
+因为 claude-code-proxy 在 window 环境内无法运行，故放弃该方案。除非被解决。

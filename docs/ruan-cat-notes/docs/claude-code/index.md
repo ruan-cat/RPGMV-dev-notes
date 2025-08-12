@@ -154,5 +154,3 @@ $env:ANTHROPIC_BASE_URL = "https://api.aicodemirror.com/api/claudecode"
 ## 拓展待办
 
 1. 阅读官方文档、掌握核心概念： https://docs.anthropic.com/zh-CN/home
-2. 中文版、electron 版本的 claudia 应用： https://github.com/Haleclipse/Claudiatron
-3. 更换 claude code 的代理，实现免费站点的额度轮询： https://github.com/musistudio/claude-code-router/blob/main/README_zh.md
