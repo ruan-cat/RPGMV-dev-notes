@@ -43,3 +43,7 @@ gemini-balance-lite 是一个使用边缘云函数实现的自建 gemini 轮询�
 ## 被卡住了
 
 因为 claude-code-proxy 在 window 环境内无法运行，故放弃该方案。除非被解决。
+
+## 又可以继续登录了
+
+在我不使用任何 key 和 baseUrl，使用官方账号登录时，该工具又可以正常使用了。
