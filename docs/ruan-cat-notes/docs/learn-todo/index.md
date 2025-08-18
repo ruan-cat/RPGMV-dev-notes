@@ -197,3 +197,15 @@ zsh 是干什么的？
 
 - https://zread.ai/
 - https://deepwiki.org/
+
+## 发包日志包含提交记录
+
+实现 github release 的日志包含 git commit ：
+
+standard-version + cz-git
+
+验证这个方案。
+
+## doskey
+
+好像是 window 命令的别名方案。
