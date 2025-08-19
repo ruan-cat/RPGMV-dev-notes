@@ -204,7 +204,9 @@ zsh 是干什么的？
 
 standard-version + cz-git
 
-验证这个方案。
+[standard-version](https://github.com/conventional-changelog/standard-version)，不能继续弄，这个库已经被声明弃用了。
+
+继任者 [release-please](https://github.com/googleapis/release-please) ，也不能落实。因为触发 pr 合并的 github workflow 工作流，我已经选择了 [changesets/action](https://github.com/changesets/action) ，所以不太可能换装成这个方案实现 pr 写入 git commit。
 
 ## doskey
 
