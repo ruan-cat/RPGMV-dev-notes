@@ -210,6 +210,15 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 
 继任者 [release-please](https://github.com/googleapis/release-please) ，也不能落实。因为触发 pr 合并的 github workflow 工作流，我已经选择了 [changesets/action](https://github.com/changesets/action) ，所以不太可能换装成这个方案实现 pr 写入 git commit。
 
+### 发包日志生成工具
+
+需要参考注意的仓库：
+
+- changelogen
+- changelogithub
+- conventional-changelog-conventionalcommits
+- conventional-recommended-bump
+
 ## doskey
 
 好像是 window 命令的别名方案。
