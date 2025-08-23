@@ -72,3 +72,19 @@ on:
 <<< ./error-2025-7-1-02.log
 
 :::
+
+## 对上述失败情况的思考
+
+通过翻查源码和 issue 得知，changelogithub 是基于 changelogen 的，而 changelogen 本身目前还不支持纯粹的 monorepo。
+
+现在使用的，基于 changeset 的发包方案，是多标签的发包方案。是传统意义上的 monorepo 项目发包方案。
+
+而 changelogen 事实上是单标签发包方案，monorepo 里面的子包都不是独立的，都是附属于某款具体的依赖包上面的。发包时，这些附属包的版本号也是跟随主包的版本号的。
+
+changelogen 目前作为 tsdown 的 vue 组件库默认模版内使用的发包工具，仅考虑单包单标签的发包场景。
+
+该差异才导致了上述实践失败。
+
+## 不如暂停
+
+changelogen 有专门的 issue 和 pr，实现对正统 monorepo 方案的支持，实现对 changeset 的支持时，就不需要上述的折腾了。
