@@ -113,3 +113,10 @@ Pro comes with at least $20 of included usage per month. We work closely with th
 ```
 
 :::
+
+### 糟糕的限额情况
+
+随着 cursor 的计费情况每况愈下，现在（2025-8-23）我用 cursor 的主要是为了：
+
+- tab 自动补全
+- git commit 生成
