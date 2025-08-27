@@ -1,9 +1,11 @@
 {
 	"name": "@ruan-cat-docs/docs-01-star",
-	"private": true,
-	"version": "0.0.1",
 	"description": "阮喵喵在01星球内的一些公用文档",
+	"homepage": "https://docs-01-star.ruan-cat.com/",
+	"version": "0.0.1",
+	"type": "module",
 	"main": "index.js",
+	"private": true,
 	"scripts": {
 		"build": "turbo build:docs",
 		"docs:dev": "vitepress dev docs --port 8080",
@@ -11,8 +13,8 @@
 		"docs:preview": "vitepress preview docs"
 	},
 	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"author": "ruan-cat",
+	"license": "MIT",
 	"devDependencies": {
 		"@ruan-cat/vitepress-preset-config": "^1.1.0",
 		"vitepress": "^1.6.4"
