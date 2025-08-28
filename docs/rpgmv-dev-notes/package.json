@@ -6,7 +6,7 @@
 	"description": "阮喵喵的rmmv开发笔记",
 	"scripts": {
 		"build": "turbo build:docs",
-		"docs:dev": "vitepress dev docs --port 8080",
+		"docs:dev": "vitepress dev docs",
 		"build:docs": "vitepress build docs",
 		"docs:preview": "vitepress preview docs"
 	},
