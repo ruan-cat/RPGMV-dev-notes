@@ -75,7 +75,8 @@
 		"./.github/**/*.md",
 		// 包含gemini的提示词文件
 		"GEMINI.md",
-		"README.md"
+		"README.md",
+		"CLAUDE.md"
 	],
 	/* 模仿其他项目加上的排除配置 */
 	"exclude": [
