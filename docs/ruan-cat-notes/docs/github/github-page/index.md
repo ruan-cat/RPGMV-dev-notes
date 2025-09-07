@@ -12,10 +12,14 @@
 
 需要避免写入 token。而我之前的方案都是需要配置 token 的。
 
-## 该方案似乎要求提供很多的仓库
+### 该方案似乎要求提供很多的仓库
 
 - https://github.com/orgs/vuepress-theme-hope/repositories
 
 hope 主题有很多基于 github page 的页面，但是这些页面都和很多纯粹的静态文档仓库相对应。
 
 如果使用他的方案，那么我也要创建很多仓库，用于存储多个网站项目。这不太能接受。
+
+### 最新方案
+
+TODO: 等待补全
