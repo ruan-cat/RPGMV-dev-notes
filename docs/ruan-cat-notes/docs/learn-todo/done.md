@@ -38,5 +38,5 @@
 
 ### 已完成
 
-- pr https://github.com/Open-Yami-Community/awesome-yami/pull/3
-- 掘金文章
+- [pr](https://github.com/Open-Yami-Community/awesome-yami/pull/3)
+- [掘金文章](https://juejin.cn/post/7546565160363507739)
