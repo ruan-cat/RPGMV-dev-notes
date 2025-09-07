@@ -57,3 +57,7 @@ npx create-cloudflare@latest
 ```
 
 经过实验，替换的命令均为等效命令。
+
+## 使用 cloudflare worker 实现域名重定向
+
+[点此阅读全文](../posts/2025-9-7-use-cloudflare-worker-redirect/index.md)。
