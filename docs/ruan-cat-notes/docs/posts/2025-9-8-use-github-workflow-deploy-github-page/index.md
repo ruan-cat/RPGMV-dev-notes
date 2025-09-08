@@ -163,7 +163,7 @@ jobs:
 
 ## 下一步的优化项？
 
-目前实现 github page 部署时，使用的工作流需要经过 `actions/configure-pages` 、`actions/upload-pages-artifact` 和 `actions/deploy-pages` 这三个工作流协作才能实现部署。他们分别实现配置、上传文件、和部署页面。有没有可能使用那种更加精简的部署工作流配置方案？降低配置复杂度？
+目前实现 github page 部署时，使用的工作流需要经过 [`actions/configure-pages`](https://github.com/actions/configure-pages) 、[`actions/upload-pages-artifact`](https://github.com/actions/upload-pages-artifact) 和 [`actions/deploy-pages`](https://github.com/actions/deploy-pages) 这三个工作流协作才能实现部署。他们分别实现配置、上传文件、和部署页面。有没有可能使用那种更加精简的部署工作流配置方案？降低配置复杂度？
 
 ### 可能的技术选型
 
