@@ -1,0 +1,3 @@
+/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+/home/runner/setup-pnpm/node_modules/.bin/store/v10
+Error: Dependencies lock file is not found in /home/runner/work/*** . Supported file patterns: pnpm-lock.yaml
