@@ -3,11 +3,13 @@ juejin: https://juejin.cn/post/7547547103168020530
 desc: 使用 github workflow 工作流部署 github page 页面，减少诸如 vercel 的部署平台提供的免费额度使用，并减少自定义域名维护时的心智负担。
 ---
 
-# 使用 github workflow 部署 github page
+# 配置 github workflow 工作流文件，实现仓库自动更新 github page 站点
 
 ## 动机
 
 随着个人技术的学习，我拥有越来越多的 github 仓库了。对于每一个前端项目，往往都需要提供一个 url 链接，来访问页面。
+
+我需要用合适的方式来部署项目，并提供 url 访问地址。
 
 ## 技术选型
 
@@ -19,9 +21,11 @@ desc: 使用 github workflow 工作流部署 github page 页面，减少诸如 v
 
 我更希望用这些云平台部署边缘计算函数，而不是部署项目。
 
-### 少使用 vercel 平台
+### 减少对 vercel 平台的使用
 
-vercel 平台是好东西，但是针对免费用户，其额度是每天允许部署 100 次。我在某些 github workflow 内集成了基于 vercel cli 的部署方式，使得一次提交就可以触发多个项目的部署，加剧了额度消耗。因此每天 100 次的部署额度对我来说仍旧是杯水车薪。
+vercel 平台是好东西，但是针对免费用户，其额度是每天允许部署 100 次。我在某些 github workflow 内集成了基于 vercel cli 的部署方式，使得一次提交就可以触发多个项目的部署，加剧了额度消耗。比如在某个 monorepo 仓库内触发一次部署，vercel 平台就会同时触发 5 个不同子项目的部署。在高强度触发部署时，vercel 平台的额度就显得不够用了。按照这样计算，某个高消耗的仓库一天最多触发 20 次更新。
+
+除开特定项目能够高强度消耗额度，我还有很多 github 仓库都会使用到 vercel 平台。因此每天 100 次的部署额度对我来说仍旧是杯水车薪。
 
 除非在某些需要快速部署、任意部署的场景内，否则我是尽量避免直接使用 vercel 的。
 
@@ -41,9 +45,9 @@ vercel 平台是好东西，但是针对免费用户，其额度是每天允许�
 
 ## 实施方案
 
-按照以下步骤即可实现部署。
+在理清楚思路后，就按照以下步骤即可实现部署。
 
-### 开启 github 仓库允许 github action 生成 github page
+### 一、开启 github 仓库允许 github action 生成 github page 的配置
 
 我们首先需要去 github 仓库内做配置。
 
@@ -65,7 +69,7 @@ Error: HttpError: Not Found
 
 ![2025-09-08-21-27-29](https://gh-img-store.ruan-cat.com/img/2025-09-08-21-27-29.png)
 
-### 编写工作流
+### 二、编写工作流文件
 
 在项目内，新建 `.github\workflows\deploy-github-page.yaml` 工作流文件，随后推送到 github 仓库即可。
 
