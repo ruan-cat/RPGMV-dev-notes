@@ -40,3 +40,12 @@
 
 - [pr](https://github.com/Open-Yami-Community/awesome-yami/pull/3)
 - [掘金文章](https://juejin.cn/post/7546565160363507739)
+
+## 制作便于查询 stars 的网站
+
+1. https://github.com/ruan-cat/stars-list 拿到数据，制作网站。
+2. 搞清楚 github pages 的工作流，打包然后直接走工作流，先部署到 github pages 内。
+
+### 已完成
+
+- https://ruan-cat.github.io/stars-list

@@ -226,9 +226,3 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 ## 配置 deepwiki 的 badge 实现每周自动重新索引 AI 阅读报告
 
 - https://deepwiki.com/badge-maker?url=https%3A%2F%2Fdeepwiki.com%2Funjs%2Fchangelogen%2F4.1-configuration-system
-
-## 制作便于查询 stars 的网站
-
-1. https://github.com/ruan-cat/stars-list 拿到数据，制作网站。
-2. 搞清楚 github pages 的工作流，打包然后直接走工作流，先部署到 github pages 内。
-3. 用 cloudflare worker 来完成域名绑定和部署。
