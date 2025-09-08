@@ -1,8 +1,8 @@
 ---
 order: 21
+juejin: https://juejin.cn/post/7547425901317242918
+desc: 在使用 actions/setup-node 工作流安装 pnpm 缓存时，遇到找不到 pnpm-lock.yaml 的故障。在该工作流前运行一次 pnpm install 安装依赖即可。
 ---
-
-<!-- TODO: 掘金发文 -->
 
 # 使用 github workflow 的 `actions/setup-node` 工作流，安装 pnpm 失败的 bug
 
