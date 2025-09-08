@@ -1,9 +1,7 @@
 ---
-juejin: 111
-desc: 11
+juejin: https://juejin.cn/post/7547547103168020530
+desc: 使用 github workflow 工作流部署 github page 页面，减少诸如 vercel 的部署平台提供的免费额度使用，并减少自定义域名维护时的心智负担。
 ---
-
-<!-- TODO: 编写完整的文章，并准备发文。 -->
 
 # 使用 github workflow 部署 github page
 
