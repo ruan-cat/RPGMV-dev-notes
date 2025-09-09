@@ -30,6 +30,7 @@
 		"pnpm:build": "pnpm -F=* run build",
 		"deploy-on-vercel": "tsx ./scripts/vercel-deploy-tool.ts",
 		"on-github-action-flow": "pnpm run build",
+		"ci": "pnpm run build",
 		"build:docs:note": "turbo run do-build-note-doc",
 		"build:docs:01star": "turbo run do-build-01star-doc"
 	},
