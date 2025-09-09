@@ -10,7 +10,7 @@
 			]
 		},
 		"//#do-build": {
-			"cache": false,
+			"cache": true,
 			"outputs": [
 				"**/.vuepress/dist/**",
 				"**/.vitepress/dist/**"
