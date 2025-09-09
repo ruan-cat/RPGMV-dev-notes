@@ -3,8 +3,8 @@ import { ElSwitch } from "element-plus";
 import { ref } from "vue";
 import { useVModel } from "@vueuse/core";
 
-import { useMode } from "../hooks/use-mode.js";
-import type { Mode } from "../hooks/use-mode.js";
+import { useMode } from "../hooks/use-mode";
+import type { Mode } from "../hooks/use-mode";
 
 import IconsInfo from "./Icons/IconsInfo.vue";
 import IconsSettings from "./Icons/IconsSettings.vue";

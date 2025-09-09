@@ -10,4 +10,4 @@ order: 5
 
 ## 解决方案
 
-[点此看详情](../picgo/upload-fail-with-github.md)。
+[点此看详情](../sundry/picgo/upload-fail-with-github.md)。

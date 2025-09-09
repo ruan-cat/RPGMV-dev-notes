@@ -6,8 +6,8 @@ import * as XLSX from "xlsx";
 import { ElTable, ElMessage, ElTableColumn, ElButton, ElForm, ElFormItem, type FormRules } from "element-plus";
 import { debounce } from "lodash-es";
 
-import { useMode } from "../hooks/use-mode.js";
-import { useSingleCommodity, type Commodity } from "../stores/use-single-commodity.js";
+import { useMode } from "../hooks/use-mode";
+import { useSingleCommodity, type Commodity } from "../stores/use-single-commodity";
 import SwitchMode from "./SwitchMode.vue";
 
 const { commodity } = storeToRefs(useSingleCommodity());

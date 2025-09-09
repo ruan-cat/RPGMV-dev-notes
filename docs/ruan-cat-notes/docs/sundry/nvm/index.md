@@ -10,7 +10,7 @@
 
 新的工具提供了可视化的操作界面，更加友好清晰，易于管控。
 
-[点此学习新的工具。](../nvm-desktop/index.md)
+[点此学习新的工具。](../../nvm-desktop/index.md)
 
 ### 从 nvm-windows 到 nvm-desktop
 
