@@ -1,11 +1,24 @@
 {
 	"$schema": "https://turbo.build/schema.json",
+	"ui": "tui",
 	"tasks": {
 		"//#pnpm:build": {
 			"cache": true,
 			"outputs": [
 				"**/.vuepress/dist/**",
 				"**/.vitepress/dist/**"
+			]
+		},
+		"//#do-build": {
+			"cache": false,
+			"outputs": [
+				"**/.vuepress/dist/**",
+				"**/.vitepress/dist/**"
+			],
+			"dependsOn": [
+				"@ruan-cat-docs/notes#build:docs",
+				"@ruan-cat-docs/docs-01-star#build:docs",
+				"@ruan-cat-docs/rpgmv-dev-notes#build:docs"
 			]
 		},
 		"//#deploy-on-vercel": {
