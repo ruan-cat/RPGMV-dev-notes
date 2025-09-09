@@ -1,4 +1,4 @@
-# 为 github 仓库添加 deepwiki 的访问链接和 badge 徽章的 AI 提示词
+# 为 github 仓库添加 deepwiki 的访问链接和 badge 徽章
 
 请深度思考。
 
