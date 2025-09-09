@@ -185,10 +185,6 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 
 好像是 window 命令的别名方案。
 
-## 配置 deepwiki 的 badge 实现每周自动重新索引 AI 阅读报告
-
-- https://deepwiki.com/badge-maker
-
 ## FormCreate 和 FcDesigner Pro 是不一样的
 
 一个免费开源，另一个要收费。看清楚。

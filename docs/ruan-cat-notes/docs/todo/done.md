@@ -82,3 +82,7 @@
 ### 已放弃
 
 注意到官网里面说，需要供应商提供 key 才行。现在（2025-7-29）我没办法去获得有意义的 key，这个就不做了。
+
+## 配置 deepwiki 的 badge 实现每周自动重新索引 AI 阅读报告
+
+- https://deepwiki.com/badge-maker
