@@ -43,10 +43,6 @@ vue2 不行，vue3 生态下可以考虑配置
 在 https://gitee.com/y_project/RuoYi-Vue 内，其顶部导航栏的搜索栏非常有用，有空可以考虑嵌套使用。
 HeaderSearch 组件
 
-## gasp
-
-这是什么前端动画库？怎么使用？
-
 ## storybook
 
 这是一个实现组件库的工具。可以考虑以下的技术栈实现组件库：
@@ -60,20 +56,9 @@ HeaderSearch 组件
 
 - https://storybook.js.org/blog/storybook-vue3/
 
-## vuepress 导入自定义组件
-
-在 vuepress 内导入 mo7 提供的自定义组件。学一下怎么深度定制 vuepress
-
 ## 腾讯低代码 + 机器人
 
 用低代码平台和机器人来实现通知功能？比如企业微信机器人，QQ 机器人的通知功能？
-
-## 类似的提交库
-
-学习以下的提交工具库，搞清楚该如何使用。
-
-- https://github.com/unjs/changelogen
-- https://github.com/antfu/changelogithub
 
 ## prepublishOnly
 
@@ -119,22 +104,6 @@ CherryStudio：https://cherry-ai.com/
 OpenWeb UI: https://github.com/open-webui/open-webui
 秘塔 AI 搜索：https://metaso.cn/
 Perplexity 搜索： https://www.perplexity.ai/
-
-## 本站首页改成允许增加 SiteInfo 的页面
-
-<!-- <SiteInfo
-  v-for="item in $frontmatter.projects"
-  :key="item.link"
-  v-bind="item"
-/> -->
-
-寻找新的文件写入算法，根据标识符，写入文件。看看 automd 有没有特定的标识符，可以实现自主导入特定文本段的功能。
-
-或者其他按照标记符导入文本段的 node 库。
-
-预期导入 domain 包的信息。
-
-同时需要拓展 domain 包，让该依赖包有能力自主输出项目信息和描述。
 
 ## 单独 md 文档直接转义输出成含有 html 和 css 样式的 md
 

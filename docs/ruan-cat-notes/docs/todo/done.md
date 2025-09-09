@@ -49,3 +49,25 @@
 ### 已完成
 
 - https://ruan-cat.github.io/stars-list
+
+## 本站首页改成允许增加 SiteInfo 的页面
+
+<!-- <SiteInfo
+  v-for="item in $frontmatter.projects"
+  :key="item.link"
+  v-bind="item"
+/> -->
+
+寻找新的文件写入算法，根据标识符，写入文件。看看 automd 有没有特定的标识符，可以实现自主导入特定文本段的功能。
+
+或者其他按照标记符导入文本段的 node 库。
+
+预期导入 domain 包的信息。
+
+同时需要拓展 domain 包，让该依赖包有能力自主输出项目信息和描述。
+
+### 已放弃
+
+本站不作为本人的项目集合展示平台。不展示作品了。
+
+有另外的域名专门展示可以访问的作品集。[点此访问](https://dm.ruan-cat.com/)。
