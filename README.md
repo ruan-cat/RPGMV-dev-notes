@@ -1,5 +1,7 @@
 # 阮喵喵的笔记 📚
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ruan-cat/notes)
+
 这是一个基于 **pnpm workspaces** 和 **Turbo** 构建编排的 monorepo 文档项目，管理多个基于 VitePress 的文档站点，包含个人笔记、RPGMV 开发文档和团队文档。
 
 ## 📋 项目概览
