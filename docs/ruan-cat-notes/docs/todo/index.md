@@ -187,7 +187,7 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 
 ## 配置 deepwiki 的 badge 实现每周自动重新索引 AI 阅读报告
 
-- https://deepwiki.com/badge-maker?url=https%3A%2F%2Fdeepwiki.com%2Funjs%2Fchangelogen%2F4.1-configuration-system
+- https://deepwiki.com/badge-maker
 
 ## FormCreate 和 FcDesigner Pro 是不一样的
 
