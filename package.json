@@ -22,7 +22,6 @@
 		"format": "prettier --experimental-cli --write .",
 		"test": "vitest --ui --watch --api.port=4000",
 		"create-code-workspace": "tsx ./scripts/generate.code-workspace.ts --name=note笔记项目",
-		"update-package": "pnpm dlx vp-update",
 		"preinstall": "npm run corepack:pnpm",
 		"old-preinstall": "npx only-allow pnpm && npm run corepack:pnpm",
 		"corepack:pnpm": "corepack enable && corepack install",
@@ -30,7 +29,6 @@
 		"git:push": "git push --follow-tags",
 		"pnpm:build": "pnpm -F=* run build",
 		"deploy-on-vercel": "tsx ./scripts/vercel-deploy-tool.ts",
-		"turbo:update-packages": "turbo docs:update-package && pnpm update-package",
 		"on-github-action-flow": "pnpm run build",
 		"build:docs:note": "turbo run do-build-note-doc",
 		"build:docs:01star": "turbo run do-build-01star-doc"
