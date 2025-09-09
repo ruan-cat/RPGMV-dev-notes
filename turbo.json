@@ -24,7 +24,7 @@
 		"//#deploy-on-vercel": {
 			"cache": false,
 			"dependsOn": [
-				"//#pnpm:build"
+				"//#do-build"
 			]
 		},
 		"//#do-deploy": {
@@ -32,10 +32,6 @@
 			"dependsOn": [
 				"//#deploy-on-vercel"
 			]
-		},
-		"docs:update-package": {
-			"cache": false,
-			"dependsOn": []
 		},
 		"clear": {
 			"dependsOn": [
