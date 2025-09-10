@@ -140,8 +140,6 @@ ModuleNotFoundError: No module named 'yaml'
 
 ## 早停机制（Early Stopping）
 
-TODO: 待学习
-
 - https://blog.csdn.net/flyfish1986/article/details/120163286
 
 ```bash

@@ -30,7 +30,6 @@ const inactiveValue = ref<Mode>("edit");
 
 <template>
 	<section>
-		<!-- TODO: 学习使用 vue-i18n v9 来实现集中管理的文本管理 -->
 		<!-- active-text="查看详情"
 			inactive-text="编辑数据" -->
 		<ElSwitch

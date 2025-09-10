@@ -1,7 +1,5 @@
 # 解释器
 
-TODO
-
 py 和 python 有什么区别？为什么在 anaconda 环境下，两个版本不一样的？
 
 ```bash
