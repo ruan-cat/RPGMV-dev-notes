@@ -34,10 +34,6 @@ export default defineUserConfig({
 			lang: "zh-CN",
 			title: "阮喵喵笔记",
 			description: "自己的笔记",
-
-			// https://theme-hope.vuejs.press/zh/config/theme/i18n.html
-			// TODO 想设置这个名称 右侧侧边栏名称？
-			// metaLocales
 		},
 	},
 
