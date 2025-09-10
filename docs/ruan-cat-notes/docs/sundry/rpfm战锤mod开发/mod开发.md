@@ -48,9 +48,3 @@ all_campaign_experience
 | unbreakable               | 永不战败           |
 | wallbreaker               | 破墙者             |
 |                           |                    |
-
-[] 射击精度
-
--[x] 子弹速度
-
--[x] 装填速度

@@ -1,16 +1,16 @@
 # volar 插件在每次 vscode 工作区内的固定配置
 
-参考资料
-https://cn.vuejs.org/guide/typescript/overview.html#volar-takeover-mode
+::: warning 已过时
+
+volar 插件现在不需要我们关闭掉 vscode 的 typescript 语言功能了。
+
+:::
+
+- https://cn.vuejs.org/guide/typescript/overview.html#volar-takeover-mode
 
 在 vscode 的插件拓展内，搜索 `@builtin typescript`，在工作区内把插件 `JavaScript 和 TypeScript 的语言功能`关掉。仅需要实现工作区内禁用插件即可。
 
 `vscode.typescript-language-features`
-
-## 能否实现工作区固定配置？
-
-有疑惑
-实现一个 vue3 的 vscode 工作区配置文件，固定安装 volar，禁用 vetur，配置 volar？
 
 ## bug v4.1.2
 
