@@ -13,8 +13,6 @@ import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
-// import typedocConf from "../../../../typedoc.config.cjs";
-
 import theme from "./theme.js";
 
 const __filename = fileURLToPath(import.meta.url);
