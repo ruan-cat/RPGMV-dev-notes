@@ -263,7 +263,7 @@ CUDA Toolkit 安装教程（Windows）
 
 https://blog.csdn.net/qq_42951560/article/details/116131410
 
-## TODO 尝试实现 docker 镜像安装 pytorch 环境
+## 尝试实现 docker 镜像安装 pytorch 环境
 
 bing keys：
 
