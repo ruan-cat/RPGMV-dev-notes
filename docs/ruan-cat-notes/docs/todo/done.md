@@ -86,3 +86,5 @@
 ## 配置 deepwiki 的 badge 实现每周自动重新索引 AI 阅读报告
 
 - https://deepwiki.com/badge-maker
+
+### 已完成
