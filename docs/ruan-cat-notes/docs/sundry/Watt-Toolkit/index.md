@@ -2,6 +2,12 @@
 
 Watt Toolkit，对我来说是重要的工具。但是有时候会被他干扰，有些地址需要忽略掉。
 
+## 下载安装
+
+下载链接如下：
+
+- https://steampp.net/
+
 ## raw.githubusercontent.com
 
 会影响 giget 的接口请求。
