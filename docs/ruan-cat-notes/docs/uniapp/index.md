@@ -21,3 +21,16 @@
 - https://github.com/dcloudio/uni-app/issues/4350
 
 不清楚现在最新版本的 uniapp 能否升级 pinia 到最新版本。
+
+## 初始化基于 vite 的项目
+
+- https://uniapp.dcloud.net.cn/quickstart-cli.html
+- https://github.com/dcloudio/uni-preset-vue/tree/vite
+
+官网初始化模板命令：
+
+注意官方模板用的是 `vite` 分支的内容，并不是主分支的内容。
+
+```bash
+npx degit dcloudio/uni-preset-vue#vite-ts my-vue3-project
+```
