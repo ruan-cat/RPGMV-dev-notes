@@ -8,3 +8,9 @@
 ## 可以以 github page 的方式部署一个单独的接口服务
 
 - https://nitro.build/deploy/providers/github-pages
+
+## 跨域？
+
+- https://juejin.cn/post/7387539709218209842
+
+## 新建中间件？
