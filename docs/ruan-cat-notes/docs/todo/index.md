@@ -159,6 +159,7 @@ zsh 是干什么的？
 
 - https://zread.ai/
 - https://deepwiki.org/
+- https://opendeep.wiki/
 
 ## 发包日志包含提交记录
 
