@@ -69,3 +69,23 @@ fonts.gstatic.com
 ![2024-10-22-23-39-53](https://gh-img-store.ruan-cat.com/img/2024-10-22-23-39-53.png)
 
 :::
+
+## github.com （push）
+
+情况有所变化，之前我使用本工具时，一直以来用的都是配置 `github.com` 要被代理的。近期（2025-9-11）发现，在使用 v2rayN 的 TUN 模式时，无法 push 提交了。一定会出现以下错误：
+
+```log
+fatal: unable to access 'https://github.com/ruan-cat/uni-app-monorepo.git/': The requested URL returned error: 403
+```
+
+忽略 github.com 站点的加速即可。也算是告别这个配置了。这个配置，我印象里，大概用了 3 年吧。如今取消配置了。
+
+不知道是不是 911 的缘故，导致美国国内服务器很敏感，无法提交。先关掉本配置，在另行观察。
+
+### 忽略项
+
+::: details 忽略 `github.com` 的加速
+
+![2025-09-11-18-48-57](https://gh-img-store.ruan-cat.com/img/2025-09-11-18-48-57.png)
+
+:::
