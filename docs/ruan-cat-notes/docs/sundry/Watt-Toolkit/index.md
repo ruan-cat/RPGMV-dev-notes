@@ -1,6 +1,6 @@
-# 需要忽略的配置
+# Watt Toolkit，简易免费的翻墙代理加速工具
 
-Watt Toolkit，对来来说是重要的工具，但是有时候会被他干扰。有些地址需要忽略掉。
+Watt Toolkit，对我来说是重要的工具。但是有时候会被他干扰，有些地址需要忽略掉。
 
 ## raw.githubusercontent.com
 
