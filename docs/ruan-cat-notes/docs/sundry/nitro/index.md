@@ -5,6 +5,13 @@
 - 官网 https://nitro.build/
 - 仓库 https://github.com/nitrojs/nitro
 
+## 内部依赖于 h3
+
+nitro 是对 h3 的二次封装，部分文档应该阅读 h3
+
+- 官网 https://h3.dev/
+- 仓库 https://github.com/h3js/h3
+
 ## 可以以 github page 的方式部署一个单独的接口服务
 
 - https://nitro.build/deploy/providers/github-pages
@@ -14,3 +21,12 @@
 - https://juejin.cn/post/7387539709218209842
 
 ## 新建中间件？
+
+- https://nitro.zhcndoc.com/guide/routing#中间件
+- https://nitro.build/guide/routing#middleware
+
+概念性问题：什么时候新建：
+
+- 缓存？
+- 日志？
+- 跨域？
