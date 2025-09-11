@@ -50,7 +50,7 @@
 		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.382",
+		"@iconify/json": "^2.2.383",
 		"@iconify/vue": "^5.0.0",
 		"@prettier/plugin-oxc": "^0.0.4",
 		"@ruan-cat/commitlint-config": "^2.0.0",

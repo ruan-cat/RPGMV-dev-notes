@@ -32,7 +32,7 @@
 		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.382",
+		"@iconify/json": "^2.2.383",
 		"@iconify/vue": "^5.0.0",
 		"@ruan-cat/utils": "^4.10.0",
 		"@ruan-cat/vitepress-preset-config": "^2.3.0",
