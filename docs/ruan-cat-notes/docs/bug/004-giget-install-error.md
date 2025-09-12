@@ -22,4 +22,4 @@ Error: Failed to download https://api.github.com/repos/benjamn/recast/tarball/v0
 
 ## 解决方案
 
-处理 [api.github.com](../sundry/Watt-Toolkit/ignore.md#api-github-com) 的问题即可。
+处理 [api.github.com](../sundry/Watt-Toolkit/index.md#apigithubcom) 的问题即可。
