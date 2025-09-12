@@ -84,11 +84,18 @@ fonts.gstatic.com
 fatal: unable to access 'https://github.com/ruan-cat/uni-app-monorepo.git/': The requested URL returned error: 403
 ```
 
-忽略 github.com 站点的加速即可。也算是告别这个配置了。这个配置，我印象里，大概用了 3 年吧。如今取消配置了。
+### 根据是否开启 v2rayN 的 TUN 模式决定是否开启 `github.com` 的加速
 
-不知道是不是 911 的缘故，导致美国国内服务器很敏感，无法提交。先关掉本配置，在另行观察。
+为了使用 claude code 的模型，这里我需要开启 v2rayN 的 TUN 模式。
 
-### 忽略项
+经过实验，发现二者配置是互斥的。
+
+| 是否开启 TUN 模式？ | 是否开启 github.com 代理？ |
+| :-----------------: | :------------------------: |
+|         是          |             否             |
+|         否          |             是             |
+
+### 在 Watt Toolkit 内忽略目标项
 
 ::: details 忽略 `github.com` 的加速
 
