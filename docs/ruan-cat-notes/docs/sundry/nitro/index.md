@@ -5,6 +5,12 @@
 - 官网 https://nitro.build/
 - 仓库 https://github.com/nitrojs/nitro
 
+## 安装依赖
+
+```bash
+pnpm i -D nitropack
+```
+
 ## 内部依赖于 h3
 
 nitro 是对 h3 的二次封装，部分文档应该阅读 h3
