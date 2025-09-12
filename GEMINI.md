@@ -5,6 +5,7 @@
 此项目结构为一个 pnpm 工作区（workspace），所有的文档包都存放在 `docs` 目录中。`docs` 目录下的每一个包都是一个独立的 VitePress 站点。
 
 主要的文档站点包括：
+
 - `@ruan-cat-docs/docs-01-star`：01-star 团队的公开文档。
 - `@ruan-cat-docs/rpgmv-dev-notes`：关于 RPG Maker MV 的开发笔记。
 - `@ruan-cat-docs/notes`：Ruan Cat 的个人笔记。

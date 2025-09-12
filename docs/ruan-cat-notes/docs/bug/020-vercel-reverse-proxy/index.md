@@ -1,4 +1,3 @@
-
 # 基于 vercel 边缘函数解决 vercel.json 配置的反向代理方案失效的新方案
 
 [之前的方案](./007-vercel-reverse-proxy.md)没用了。被迫用新的方案实现接口的反向代理。

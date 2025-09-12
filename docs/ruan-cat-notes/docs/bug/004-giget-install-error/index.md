@@ -1,4 +1,3 @@
-
 # giget 无法下载，给项目安装依赖报错
 
 我想阅读[别人的仓库](https://github.com/unjs/magicast)，安装依赖就报错了。

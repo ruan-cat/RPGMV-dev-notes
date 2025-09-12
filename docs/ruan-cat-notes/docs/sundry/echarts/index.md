@@ -35,10 +35,10 @@ const chartInstance = ref(null);
 const chartOpions = {};
 
 onMounted(() => {
-    // 在获取到dom时，初始化实例
-    chartInstance.value = echarts.init(chartRef.value);
+	// 在获取到dom时，初始化实例
+	chartInstance.value = echarts.init(chartRef.value);
 
-    // 设置值
-    chartInstance.value.setOption(chartOpions);
+	// 设置值
+	chartInstance.value.setOption(chartOpions);
 });
 ```
