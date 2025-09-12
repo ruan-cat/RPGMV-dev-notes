@@ -12,6 +12,15 @@ nitro 是对 h3 的二次封装，部分文档应该阅读 h3
 - 官网 https://h3.dev/
 - 仓库 https://github.com/h3js/h3
 
+## 快速初始化模板
+
+- 文档 https://nitro.build/guide#quick-start
+- 仓库 https://github.com/nitrojs/starter
+
+```bash
+pnpm dlx giget@latest nitro nitro-app --install
+```
+
 ## 可以以 github page 的方式部署一个单独的接口服务
 
 - https://nitro.build/deploy/providers/github-pages
