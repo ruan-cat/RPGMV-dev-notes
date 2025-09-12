@@ -21,6 +21,16 @@ nitro 是对 h3 的二次封装，部分文档应该阅读 h3
 pnpm dlx giget@latest nitro nitro-app --install
 ```
 
+### vercel 平台提供的模板
+
+vercel 本身也提供一个简单的平台，实现 nitro 项目初始化。
+
+- 文档： https://vercel.com/docs/frameworks/backend/nitro
+
+```bash
+vc init nitro
+```
+
 ## 可以以 github page 的方式部署一个单独的接口服务
 
 - https://nitro.build/deploy/providers/github-pages
