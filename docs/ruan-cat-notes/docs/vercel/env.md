@@ -43,6 +43,9 @@ vercel 平台有很多环境变量，为了实现特殊的需求，需要部署�
 
 配置 `ENABLE_EXPERIMENTAL_COREPACK` 环境变量即可。
 
+- 文档： https://vercel.com/docs/builds/configure-a-build#corepack
+- 博客： https://vercel.com/changelog/corepack-experimental-is-now-available
+
 具体示例如下：
 
 ```bash
