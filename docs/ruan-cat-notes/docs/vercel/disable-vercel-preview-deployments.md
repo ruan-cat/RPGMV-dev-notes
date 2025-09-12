@@ -28,3 +28,4 @@
 ## 其他方式
 
 - https://www.cnblogs.com/duanguyuan/p/16126649.html
+- https://stackoverflow.com/questions/68232548/how-can-i-stop-vercel-preview-deployments-from-appearing-on-pull-requests
