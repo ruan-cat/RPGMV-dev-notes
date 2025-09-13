@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 阅读11智慧社区项目
-      link: /11
+      link: /11comm
     - theme: alt
       text: 在github内查看
       link: https://github.com/ruan-cat/RPGMV-dev-notes/tree/dev/docs/docs-01-star
