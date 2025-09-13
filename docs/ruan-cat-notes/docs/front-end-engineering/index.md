@@ -2,6 +2,8 @@
 
 `前端工程化`包含了很多内容。
 
+<!-- TODO: 逐步完善笔记 并掘金发文 -->
+
 ## 参考资料
 
 TODO: 认为这个仓库值得学习。看看人家是怎么实现配置的。
@@ -12,7 +14,15 @@ TODO: 认为这个仓库值得学习。看看人家是怎么实现配置的。
 
 TODO: `前端工程化`肯定有别人整理好的总结、入门概论等。需要去收集并阅读一遍。
 
-## simple-git-hooks
+- https://blog.csdn.net/qq_42611074/article/details/129085588
+
+## 前言
+
+前端工程化，涉及到了很多包的配置。推荐你按照文章脉络，一步一步安装依赖，渐进式的理解每一个包的用途，以及注意事项。
+
+<!-- TODO: 生成一个 mermaid 流程图 -->
+
+## simple-git-hooks ，基于 git hooks 的钩子库
 
 用来创建 git 钩子的。我们用 git 钩子来做各种事情，比如在 commit 信息钩子，提交前钩子内做事情。
 
@@ -90,4 +100,19 @@ ls .git/hooks
 
 - [`Note for npm package developers`](https://github.com/toplenboren/simple-git-hooks/blob/master/README.md#note-for-npm-package-developers)
 
-###
+### 其他 git 钩子
+
+最出名的是 `husky` 。但本文不对此做过多说明，请自行学习。
+
+- 仓库： https://github.com/typicode/husky
+- 官网： https://typicode.github.io/husky/zh/
+
+## lint-staged ，在 git 暂存区内执行任务的库
+
+lint-staged ，是一个借助 glob 语法匹配 git 暂存区文件并执行命令的库。
+
+- 仓库： https://github.com/lint-staged/lint-staged
+
+我们不可能在每次提交前，都对整个项目做 lint 和 format。其时间成本太大了。如果我们高频率的提交代码，那么每次提交的时候都会卡住自己。
+
+常见的用法是把 `lint-staged` 配置到 `pre-commit` 钩子内，在提交前对暂存区的文件做处理。
