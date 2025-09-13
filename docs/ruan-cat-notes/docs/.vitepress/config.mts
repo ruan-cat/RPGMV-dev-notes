@@ -47,7 +47,7 @@ const userConfig = setUserConfig({
 		socialLinks: [
 			{
 				icon: "github",
-				link: "https://github.com/ruan-cat/RPGMV-dev-notes",
+				link: "https://github.com/ruan-cat/notes",
 			},
 		],
 	},

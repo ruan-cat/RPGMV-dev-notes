@@ -37,7 +37,7 @@ export default hopeTheme({
 	// logo: '/logo.svg',
 	logo: undefined,
 
-	repo: "ruan-cat/RPGMV-dev-notes",
+	repo: "ruan-cat/notes",
 
 	docsDir: "docs",
 
@@ -149,7 +149,7 @@ export default hopeTheme({
 			 * Using Giscus
 			 */
 			provider: "Giscus",
-			repo: "ruan-cat/RPGMV-dev-notes",
+			repo: "ruan-cat/notes",
 			repoId: "R_kgDOH7md9w",
 			category: "Announcements",
 			categoryId: "DIC_kwDOH7md984CRo_I",

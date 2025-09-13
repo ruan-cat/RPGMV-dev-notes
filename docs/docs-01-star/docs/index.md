@@ -14,5 +14,5 @@ hero:
       link: /11comm
     - theme: alt
       text: 在github内查看
-      link: https://github.com/ruan-cat/RPGMV-dev-notes/tree/dev/docs/docs-01-star
+      link: https://github.com/ruan-cat/notes/tree/dev/docs/docs-01-star
 ---
