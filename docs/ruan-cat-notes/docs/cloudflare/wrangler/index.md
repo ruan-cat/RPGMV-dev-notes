@@ -14,4 +14,12 @@ pnpm i -D wrangler
 
 ## 部署服务 cloudflare worker 服务失败
 
+在我运行完 nitro 的部署命令后，提示我部署到 cloudflare 时，需要运行以下命令，举例如下：
+
+```bash
+wrangler deploy .output/server/index.mjs --assets .output/public
+```
+
+该命令直接运行，会要求打开浏览器，做验证。但是验证经常不通过，控制台卡死在哪里。
+
 <!--  -->
