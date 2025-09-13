@@ -223,3 +223,7 @@ To add an exception for this directory, call:
 ## 退出 git bash
 
 - https://blog.csdn.net/weixin_41287260/article/details/89813851
+
+按 Esc 键退出编辑模式，大写英文模式下输入 ZZ ，然后回车。
+
+##
