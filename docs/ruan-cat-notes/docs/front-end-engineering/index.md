@@ -47,13 +47,7 @@ pnpm i -D simple-git-hooks
 
 举例如下：
 
-```js
-export default {
-	// "commit-msg": "npx --no-install commitlint --edit '$1'",
-	"pre-commit": "npx lint-staged",
-	"pre-push": "pnpm run format",
-};
-```
+<<< ./code/simple-git-hooks.mjs
 
 这里就不赘述可以配置的钩子选项，和 git hooks 的概念了，详情可以看以下文章。
 
@@ -129,19 +123,22 @@ pnpm i -D lint-staged
 
 举例如下：
 
-```js
-/**
- * @filename: lint-staged.config.js
- * @description 用于配置lint-staged的配置文件。
- * @type {import('lint-staged').Configuration}
- * @see https://github.com/lint-staged/lint-staged/blob/main/README.md#typescript
- */
-export default {
-	/** @see https://github.com/lint-staged/lint-staged/blob/main/README.md#automatically-fix-code-style-with-prettier-for-any-format-prettier-supports */
-	"*": "prettier --ignore-unknown --experimental-cli --write",
-};
-```
+<<< ./code/lint-staged.config.js
 
 ## commitlint ，对 git commit 信息做格式检查的库
 
 常见的用法是把 `commitlint` 配置到 `commit-msg` 钩子内，对提交信息做 lint 校验检查。
+
+- 仓库： https://github.com/conventional-changelog/commitlint
+- 官网： https://commitlint.js.org/
+
+### 安装
+
+```bash
+pnpm i -D commitlint
+```
+
+### 参考资料
+
+- https://juejin.cn/post/7068988460899500040
+- [`《约定式提交规范详解.simple-git-hooks》`](https://juejin.cn/post/7381372081915166739#heading-8)
