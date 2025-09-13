@@ -156,7 +156,7 @@ C:\Windows\system32>\store\pnpm\global-dir\5\node_modules\pnpm\bin\pnpm.cjs" i -
 ## 安装后无法被识别到
 
 ```plain
-PS E:\code\rzn\personal-proj\RPGMV-dev-notes> pnpm -v
+PS E:\code\rzn\personal-proj\notes> pnpm -v
 pnpm : 无法将“pnpm”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
 所在位置 行:1 字符: 1
 + pnpm -v
