@@ -226,4 +226,12 @@ To add an exception for this directory, call:
 
 按 Esc 键退出编辑模式，大写英文模式下输入 ZZ ，然后回车。
 
-##
+## clone 项目时，总是要输入用户名和密码
+
+- https://blog.csdn.net/lemonzjk/article/details/135330630
+
+设置 git 保存凭证即可。
+
+```bash
+git config --global credential.helper store
+```
