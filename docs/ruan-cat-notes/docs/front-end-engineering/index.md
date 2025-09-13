@@ -116,3 +116,32 @@ lint-staged ，是一个借助 glob 语法匹配 git 暂存区文件并执行命
 我们不可能在每次提交前，都对整个项目做 lint 和 format。其时间成本太大了。如果我们高频率的提交代码，那么每次提交的时候都会卡住自己。
 
 常见的用法是把 `lint-staged` 配置到 `pre-commit` 钩子内，在提交前对暂存区的文件做处理。
+
+### 安装
+
+```bash
+pnpm i -D lint-staged
+```
+
+### 配置格式化规则文件
+
+按照[官方文档](https://github.com/lint-staged/lint-staged/blob/main/README.md#configuration)对配置文件的格式说明，这里推荐大家在项目根目录下面新建 `lint-staged.config.js` 文件。推荐大家新建含有 typescript 类型的配置文件。
+
+举例如下：
+
+```js
+/**
+ * @filename: lint-staged.config.js
+ * @description 用于配置lint-staged的配置文件。
+ * @type {import('lint-staged').Configuration}
+ * @see https://github.com/lint-staged/lint-staged/blob/main/README.md#typescript
+ */
+export default {
+	/** @see https://github.com/lint-staged/lint-staged/blob/main/README.md#automatically-fix-code-style-with-prettier-for-any-format-prettier-supports */
+	"*": "prettier --ignore-unknown --experimental-cli --write",
+};
+```
+
+## commitlint ，对 git commit 信息做格式检查的库
+
+常见的用法是把 `commitlint` 配置到 `commit-msg` 钩子内，对提交信息做 lint 校验检查。
