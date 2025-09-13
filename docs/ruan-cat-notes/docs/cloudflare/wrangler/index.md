@@ -11,3 +11,7 @@ pnpm i -D wrangler
 ### 高频更新
 
 该包是高频率更新的。很多云服务厂商的 node 包，都是高频率更新的。
+
+## 部署服务 cloudflare worker 服务失败
+
+<!--  -->
