@@ -51,4 +51,4 @@ dir:
 
 - [BiliBili](https://space.bilibili.com/359907572)
 - [GitHub](https://github.com/RuanZhongNan)
-- [Gitee](https://gitee.com/HechiCollegeComputerAssociation)
+- [Gitee](https://gitee.com/ruan-cat)

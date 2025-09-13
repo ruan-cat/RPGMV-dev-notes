@@ -94,7 +94,7 @@ export default hopeTheme({
 	blog: {
 		medias: {
 			BiliBili: "https://space.bilibili.com/359907572",
-			Gitee: "https://gitee.com/HechiCollegeComputerAssociation",
+			Gitee: "https://gitee.com/ruan-cat",
 			GitHub: "https://github.com/ruan-cat",
 		},
 	},
