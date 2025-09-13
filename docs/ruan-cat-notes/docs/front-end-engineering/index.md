@@ -138,7 +138,24 @@ pnpm i -D lint-staged
 pnpm i -D commitlint
 ```
 
+### 配置文件
+
+内容太多了。这里篇幅有限。
+
+<!-- TODO: 提供链接说明 -->
+
+### 与 simple-git-hooks 配置
+
+关键配置：
+
+```bash
+commitlint --edit ${1}
+```
+
+和 simple-git-hooks 配置时，一定要提供 `--edit ${1}` 的参数，否则无法获取数据。
+
 ### 参考资料
 
 - https://juejin.cn/post/7068988460899500040
 - [`《约定式提交规范详解.simple-git-hooks》`](https://juejin.cn/post/7381372081915166739#heading-8)
+- [`整合 simple-git-hooks？`](https://fabric.modyqyw.top/zh-Hans/guide/git/commitlint.html#整合-simple-git-hooks)
