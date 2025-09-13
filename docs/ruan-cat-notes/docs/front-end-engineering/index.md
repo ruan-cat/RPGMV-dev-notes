@@ -49,9 +49,13 @@ export default {
 
 - [`《用simple-git-hooks防止同事提交垃圾代码》`](https://juejin.cn/post/7455229927191805992)
 
+#### 定义文件的后缀名必须是 `.mjs` 而不是 `.js`
+
+如果定义了 `simple-git-hooks.js` 文件，那么后续在运行 `npx simple-git-hooks` 命令时，会直接出错。导致生成失败。
+
 ### 配置命令行
 
-常见用法是，在 package.json 的 `postinstall` 钩子内，主动运行该命令，生成
+常见用法是，在 package.json 的 `postinstall` 钩子内，主动运行该命令，生成 git hooks 文件。
 
 ```json
 {
@@ -61,3 +65,29 @@ export default {
 	}
 }
 ```
+
+在我们安装完依赖后，就会主动运行 `postinstall` 钩子，生成存放在本地 `.git` 文件夹的 git hooks 文件。
+
+用文件输出命令检查生成内容。
+
+```bash
+ls .git/hooks
+```
+
+生成效果如图所示，是可以看到生成了名为 `pre-commit` 和 `pre-push` 的文件的。
+
+![2025-09-14-01-23-01](https://gh-img-store.ruan-cat.com/img/2025-09-14-01-23-01.png)
+
+#### github workflow 流水线运行正常
+
+在 github workflow 内，该配置确实能够正常的生成文件，不会引发错误，可以放心使用。
+
+#### 对外发包的 package.json 不要配置 `postinstall` 钩子
+
+请阅读以下官方文档，这里不做赘述。
+
+如果你的项目不考虑发包，那么可以跳过此部分，无需考虑。
+
+- [`Note for npm package developers`](https://github.com/toplenboren/simple-git-hooks/blob/master/README.md#note-for-npm-package-developers)
+
+###
