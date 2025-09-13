@@ -5,8 +5,7 @@
 运行命令：
 
 ```bash
-npx apifox-swagger apifox-swagger --projectId=6386631
---outdir=./output --token=***
+npx apifox-swagger apifox-swagger --projectId=6386631 --outdir=./output --token=***
 ```
 
 报错如下：
