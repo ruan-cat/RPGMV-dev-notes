@@ -92,7 +92,7 @@ git config --local --list
 
 ```plain
 > git pull --tags origin hope
-> fatal: unable to access 'https://github.com/RuanZhongNan/notes.git/': SSL certificate problem: unable to get local issuer certificate
+> fatal: unable to access 'https://github.com/ruan-cat/notes.git/': SSL certificate problem: unable to get local issuer certificate
 ```
 
 ## 更改本机全局的默认主分支名称
