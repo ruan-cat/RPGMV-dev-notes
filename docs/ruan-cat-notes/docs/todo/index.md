@@ -249,3 +249,7 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 ## openapi-ts-request ？
 
 - https://github.com/openapi-ui/openapi-ts-request
+
+## alova ？
+
+- https://alova.js.org/zh-CN/tutorial/getting-started/introduce
