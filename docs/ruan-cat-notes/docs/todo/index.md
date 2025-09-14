@@ -238,8 +238,14 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 
 ## 基于 taze 的依赖更新工作流配置
 
+<!-- 低优先级 -->
+
 期望实现利用 github action 检查并升级 node 项目依赖。
 
 - https://docs.github.com/zh/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions?learn=dependency_version_updates
 
 确保手上的项目一定是时刻保持最新版本的依赖。特别是我自己封装的那一些包。
+
+## openapi-ts-request ？
+
+- https://github.com/openapi-ui/openapi-ts-request
