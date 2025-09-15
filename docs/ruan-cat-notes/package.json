@@ -32,7 +32,7 @@
 		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.383",
+		"@iconify/json": "^2.2.384",
 		"@iconify/vue": "^5.0.0",
 		"@ruan-cat/utils": "^4.11.0",
 		"@ruan-cat/vitepress-preset-config": "^2.3.0",
@@ -44,7 +44,7 @@
 		"js-yaml": "^4.1.0",
 		"moment": "^2.30.1",
 		"sass": "^1.92.1",
-		"typedoc": "^0.28.12",
+		"typedoc": "^0.28.13",
 		"typedoc-plugin-markdown": "^4.8.1",
 		"typescript": "^5.9.2",
 		"unplugin-auto-import": "^20.1.0",
