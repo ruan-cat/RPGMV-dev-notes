@@ -253,3 +253,7 @@ standard-version 会要求新建配置文件 `.versionrc` 。声明那些 commit
 ## alova ？
 
 - https://alova.js.org/zh-CN/tutorial/getting-started/introduce
+
+## 整体入门基于 node 的全栈导论文章？
+
+- https://juejin.cn/column/7424070052998414374
