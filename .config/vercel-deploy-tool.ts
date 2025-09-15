@@ -1,5 +1,5 @@
 import { type Config } from "@ruan-cat/vercel-deploy-tool/src/config.ts";
-import { domains } from "@ruan-cat/domains";
+import { getDomains, domains } from "@ruan-cat/domains";
 
 const config: Config = {
 	vercelProjetName: "rpgmv-dev-notes-betd",
@@ -12,6 +12,7 @@ const config: Config = {
 		{
 			type: "static",
 			targetCWD: "./docs/ruan-cat-notes/docs/.vitepress/dist",
+			// TODO: 这里需要修改为 getDomains 函数
 			url: domains.notesGithubWorkflow as unknown as string[],
 		},
 
@@ -19,7 +20,7 @@ const config: Config = {
 		{
 			type: "static",
 			targetCWD: "./docs/docs-01-star/docs/.vitepress/dist",
-			url: domains["01s-doc"] as unknown as string[],
+			url: getDomains("01s-doc"),
 		},
 
 		// rmmv笔记项目
