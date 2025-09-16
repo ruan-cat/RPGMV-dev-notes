@@ -5,6 +5,10 @@
 - 官网 https://nitro.build/
 - 仓库 https://github.com/nitrojs/nitro
 
+## 自己长期更新跟进的学习性质仓库
+
+- https://github.com/ruan-cat/learn-nitro-starter-with-vercel
+
 ## 安装依赖
 
 ```bash
