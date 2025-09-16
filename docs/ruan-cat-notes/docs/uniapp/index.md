@@ -11,6 +11,7 @@
 准备选定一个合适的项目模板。未来遇到 uniapp 的具体业务项目模板时，以选定的基础模板作为基架，用 AI 工具逐步迁移生成项目。
 
 - https://github.com/uni-helper/vitesse-uni-app
+- https://github.com/unibest-tech/unibest
 
 ## 担忧
 
