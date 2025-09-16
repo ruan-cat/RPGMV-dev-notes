@@ -20,7 +20,7 @@ const userConfig = setUserConfig({
 	themeConfig: {
 		nav: [
 			{
-				link: "/learn-todo/",
+				link: "/todo/",
 				text: "学习待办",
 			},
 			{

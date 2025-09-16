@@ -55,7 +55,7 @@ export default hopeTheme({
 			icon: "flat-color-icons:timeline",
 		},
 		{
-			link: "/learn-todo/",
+			link: "/todo/",
 			text: "学习待办",
 			icon: "flat-color-icons:todo-list",
 		},
