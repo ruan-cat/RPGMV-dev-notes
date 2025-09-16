@@ -34,3 +34,9 @@
 ```bash
 npx degit dcloudio/uni-preset-vue#vite-ts my-vue3-project
 ```
+
+## 学习 uniapp 的核心概念？
+
+TODO: 学习 uniapp ，我需要掌握那些核心概念？
+
+- tabBar
