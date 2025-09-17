@@ -12,9 +12,9 @@
 
 ![2025-09-16-02-05-55](https://gh-img-store.ruan-cat.com/img/2025-09-16-02-05-55.png)
 
-### TUN 模式，且不开启系统代理
+### TUN 模式，且开启系统代理
 
-![2025-09-16-02-06-45](https://gh-img-store.ruan-cat.com/img/2025-09-16-02-06-45.png)
+![2025-09-17-11-28-20](https://gh-img-store.ruan-cat.com/img/2025-09-17-11-28-20.png)
 
 ### 开启规则模式，不开启全局模式
 
