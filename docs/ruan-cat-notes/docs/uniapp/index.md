@@ -41,6 +41,13 @@ npx degit dcloudio/uni-preset-vue#vite-ts my-vue3-project
 - https://github.com/dcloudio/uni-app/issues/4755
 - [`为什么在微信小程序上使用Popup、ActionSheet、DropDownItem等弹出框组件包裹Slider、Tabs等组件时，Slider、Tabs表现异常？`][(https://wot-ui.cn/guide/common-problems.html#为什么在微信小程序上使用 popup、actionsheet、dropdownitem 等弹出框组件包裹 slider、tabs 等组件时-slider、tabs 表现异常](https://wot-ui.cn/guide/common-problems.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%8A%E4%BD%BF%E7%94%A8popup%E3%80%81actionsheet%E3%80%81dropdownitem%E7%AD%89%E5%BC%B9%E5%87%BA%E6%A1%86%E7%BB%84%E4%BB%B6%E5%8C%85%E8%A3%B9slider%E3%80%81tabs%E7%AD%89%E7%BB%84%E4%BB%B6%E6%97%B6-slider%E3%80%81tabs%E8%A1%A8%E7%8E%B0%E5%BC%82%E5%B8%B8)
 
+### 用不了高版本的 vueuse 么？
+
+- https://github.com/dcloudio/uni-app/issues/4604
+- https://uni-helper.js.org/uni-use/guide/installation
+
+我看文章，说要自己弄垫片处理。看起来很麻烦。
+
 ## 各种疑问
 
 ### uniapp 新建页面时，可以新建为小写的 index.vue 么？ 页面文件命名为大写 Index.vue 有什么要求么？
