@@ -21,7 +21,12 @@
 
 - https://github.com/dcloudio/uni-app/issues/4350
 
-不清楚现在最新版本的 uniapp 能否升级 pinia 到最新版本。
+不清楚现在最新版本的 uniapp 能否升级 pinia 到最新版本。按照 issue 的说法，看起来最新版的 uniapp 可以升级最新版。
+
+### slot 插槽组件还能继续使用 v-if 来实现动态渲染么？
+
+- https://github.com/dcloudio/uni-app/issues/4755
+- [`为什么在微信小程序上使用Popup、ActionSheet、DropDownItem等弹出框组件包裹Slider、Tabs等组件时，Slider、Tabs表现异常？`][(https://wot-ui.cn/guide/common-problems.html#为什么在微信小程序上使用 popup、actionsheet、dropdownitem 等弹出框组件包裹 slider、tabs 等组件时-slider、tabs 表现异常](https://wot-ui.cn/guide/common-problems.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%8A%E4%BD%BF%E7%94%A8popup%E3%80%81actionsheet%E3%80%81dropdownitem%E7%AD%89%E5%BC%B9%E5%87%BA%E6%A1%86%E7%BB%84%E4%BB%B6%E5%8C%85%E8%A3%B9slider%E3%80%81tabs%E7%AD%89%E7%BB%84%E4%BB%B6%E6%97%B6-slider%E3%80%81tabs%E8%A1%A8%E7%8E%B0%E5%BC%82%E5%B8%B8)
 
 ## 初始化基于 vite 的项目
 
